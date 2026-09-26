@@ -24,10 +24,10 @@ function getProductDetails(p) {
     }
   }
 
-  // Canonical schema & seed paths
-  const schemaPath = `Website Templates/${matchedDir || repoSlug}/supabase/schema.sql`;
-  const seedPath = `Website Templates/${matchedDir || repoSlug}/supabase/seed.sql`;
-  const repoUrl = `https://github.com/gcoinstash-cmd/${repoSlug}`;
+  const repoName = (p.id === 1 || repoSlug === 'stride-mb') ? 'stride-manhattan-beach' : repoSlug;
+  const repoUrl = `https://github.com/gcoinstash-cmd/${repoName}`;
+  const schemaPath = `supabase/schema.sql`;
+  const seedPath = `supabase/seed.sql`;
   const demoUrl = p.preview_url || `https://${repoSlug}.onrender.com`;
 
   return {
@@ -154,12 +154,18 @@ To provide verifiable proof of production multi-tenant capability, a reference t
 | Core Technology | Version | License | Copyleft Risk | Institutional Diligence Status |
 | :--- | :---: | :---: | :---: | :--- |
 | **React / React-DOM** | \`18.3.1 / 19.0.0\` | MIT | 0% (None) | Permissive commercial redistribution |
-| **TypeScript** | \`5.7.x\` | Apache-2.0 | 0% (None) | Permissive commercial redistribution |
+| **TypeScript** | \`5.7.x / 5.8.x\` | Apache-2.0 | 0% (None) | Permissive commercial redistribution |
 | **Tailwind CSS** | \`3.4.x / 4.x\` | MIT | 0% (None) | Permissive commercial redistribution |
+| **PostCSS** | \`8.5.x\` | MIT | 0% (None) | Permissive commercial redistribution |
+| **Autoprefixer** | \`10.4.x\` | MIT | 0% (None) | Permissive commercial redistribution |
 | **Vite** | \`5.4.x / 6.x\` | MIT | 0% (None) | Permissive commercial redistribution |
-| **Lucide React** | \`0.475.x\` | ISC | 0% (None) | Permissive commercial redistribution |
+| **Lucide React** | \`0.475.x / 0.546.x\` | ISC | 0% (None) | Permissive commercial redistribution |
 | **Supabase JS Client** | \`2.48.x\` | MIT | 0% (None) | Permissive commercial redistribution |
-| **Framer Motion** | \`11.x\` | MIT | 0% (None) | Permissive commercial redistribution |
+| **Clsx** | \`2.1.x\` | MIT | 0% (None) | Permissive commercial redistribution |
+| **Tailwind Merge** | \`2.6.x\` | MIT | 0% (None) | Permissive commercial redistribution |
+| **Framer Motion** | \`11.x / 12.x\` | MIT | 0% (None) | Permissive commercial redistribution |
+| **@vitejs/plugin-react** | \`4.3.x / 5.x\` | MIT | 0% (None) | Permissive commercial redistribution |
+| **esbuild** | \`0.25.x\` | MIT | 0% (None) | Permissive commercial redistribution |
 
 * **Copyleft (GPL) Contamination Audit**: **0% GPL / AGPL / LGPL dependencies**. 100% of the codebase uses permissive licenses (MIT, Apache-2.0, ISC, BSD-3-Clause), guaranteeing unencumbered commercial transfer under standard APA representations and warranties.
 

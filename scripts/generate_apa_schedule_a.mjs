@@ -39,11 +39,12 @@ manifest.products.forEach(p => {
   const classLevel = 'L3-SUPABASE-READY';
   const sector = p.vertical;
   const archetype = `"${p.archetype_name || 'Archetype A: Dense Operational Console'}"`;
-  const repoUrl = `https://github.com/gcoinstash-cmd/${repoSlug}`;
+  const repoName = (p.id === 1 || repoSlug === 'stride-mb') ? 'stride-manhattan-beach' : repoSlug;
+  const repoUrl = `https://github.com/gcoinstash-cmd/${repoName}`;
   const defaultBranch = 'main';
   const previewUrl = p.preview_url || `https://${repoSlug}.onrender.com`;
-  const schemaPath = `Website Templates/${matchedDir || repoSlug}/supabase/schema.sql`;
-  const seedPath = `Website Templates/${matchedDir || repoSlug}/supabase/seed.sql`;
+  const schemaPath = `supabase/schema.sql`;
+  const seedPath = `supabase/seed.sql`;
   const rlsStatus = '"RLS ENABLED (DEMO POLICIES + ISOLATION HARNESS)"';
 
   csvRows.push([
@@ -63,7 +64,7 @@ manifest.products.forEach(p => {
   ].join(','));
 
   markdownRows.push(
-    `| ${assetId} | \`${slug}\` | **${p.name}** | \`${classLevel}\` | ${sector} | ${p.archetype_id || 'A'} | [\`${repoSlug}\`](${repoUrl}) | \`${defaultBranch}\` | [Demo](${previewUrl}) | \`schema.sql\` | \`seed.sql\` | Level 3 Verified |`
+    `| ${assetId} | \`${slug}\` | **${p.name}** | \`${classLevel}\` | ${sector} | ${p.archetype_id || 'A'} | [\`${repoName}\`](${repoUrl}) | \`${defaultBranch}\` | [Demo](${previewUrl}) | \`supabase/schema.sql\` | \`supabase/seed.sql\` | Level 3 Verified |`
   );
 });
 
