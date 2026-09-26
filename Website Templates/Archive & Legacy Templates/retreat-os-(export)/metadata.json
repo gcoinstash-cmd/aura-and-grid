@@ -1,0 +1,6 @@
+{
+  "name": "Retreat OS",
+  "description": "Premium website template system for boutique hosts, including interactive seasonal retreat portfolios, expert credentials profiles, and a high-converting intake portal with automatic host metrics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

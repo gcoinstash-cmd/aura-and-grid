@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --color-charcoal: #1A1817;
+  --color-clay: #AC5D3F;
+  --color-gold: #DEC49D;
+  --color-sand: #F7F3EE;
+
+  --font-serif: "Playfair Display", serif;
+  --font-editorial: "Lora", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+}
+
+/* Global 400ms transition for smooth theme switching of text, backgrounds, and borders without layout shifting */
+.theme-transition,
+.theme-transition *,
+.theme-transition *::before,
+.theme-transition *::after {
+  transition-property: color, background-color, border-color, stroke, fill, border-style, border-width;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 400ms !important;
+}
+
+/* Cinematic slow-scale for primary image containers */
+@keyframes slow-ken-burns {
+  0% {
+    transform: scale(1.01);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1.01);
+  }
+}
+
+.animate-cinematic-zoom {
+  animation: slow-ken-burns 14s ease-in-out infinite;
+}
+

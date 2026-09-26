@@ -1,0 +1,6 @@
+{
+  "name": "Perspective",
+  "description": "A luxury editorial portfolio template for architects, featuring structured grids, blueprint views, and spec tables.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

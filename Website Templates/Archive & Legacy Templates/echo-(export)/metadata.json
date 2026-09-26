@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Echo",
+  "description": "A sophisticated, dark-themed audio player, hardware inventory, and track archive for producers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

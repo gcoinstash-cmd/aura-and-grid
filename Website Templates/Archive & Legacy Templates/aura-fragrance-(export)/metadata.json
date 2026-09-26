@@ -1,0 +1,6 @@
+{
+  "name": "Aura Fragrance Scent Profile",
+  "description": "An interactive, highly accessible fine fragrance olfactory architecture displaying top, heart, and base notes with clean modern craft styling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

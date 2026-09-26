@@ -1,0 +1,6 @@
+{
+  "name": "Done Enough",
+  "description": "An ADHD-friendly, minimalist, gamified AI finish coach for creators, founders, students, and busy parents who struggle with task paralysis, overthinking, and perfectionism.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

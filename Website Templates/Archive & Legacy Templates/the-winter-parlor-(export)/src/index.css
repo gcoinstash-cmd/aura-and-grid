@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-obsidian-950: #080807;
+  --color-obsidian-900: #111110;
+  --color-obsidian-800: #1b1b1a;
+  --color-obsidian-700: #272725;
+
+  --color-cream-50: #faf8f5;
+  --color-cream-100: #faf5ea;
+  --color-cream-200: #f2ecd9;
+  --color-cream-300: #e5ddc8;
+
+  --color-stone-light: #bcb9b1;
+  --color-stone-muted: #8a8780;
+  --color-stone-dark: #585651;
+
+  --font-serif: "Cormorant Garamond", "Playfair Display", Didot, Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --letter-spacing-tightest: -0.04em;
+  --letter-spacing-tighter: -0.02em;
+  --letter-spacing-wide: 0.08em;
+  --letter-spacing-wider: 0.15em;
+  --letter-spacing-widest: 0.25em;
+  --letter-spacing-editorial: 0.36em;
+
+  --border-radius-none: 0;
+  --border-radius-DEFAULT: 0;
+  --border-radius-sm: 0;
+  --border-radius-md: 0;
+  --border-radius-lg: 0;
+}
+
+/* Base custom styles to reinforce luxury print feel */
+body {
+  background-color: #080807;
+  color: #faf8f5;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom fine grain background texture */
+.grain-bg::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.018;
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Custom print media queries to guarantee high-end tableside white paper menus */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    background-image: none !important;
+    color: #000000 !important;
+  }
+}
+
+/* Hide scrollbars elegantly on editorial fixed modules */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

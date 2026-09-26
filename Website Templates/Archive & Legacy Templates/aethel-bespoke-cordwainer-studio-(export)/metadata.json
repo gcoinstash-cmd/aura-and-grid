@@ -1,0 +1,6 @@
+{
+  "name": "Aethel Bespoke Cordwainer Studio",
+  "description": "An elite bespoke Goodyear-welted footwear atelier and interactive template system featuring modular lookbooks, custom fitting engines, and interactive craft anatomy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

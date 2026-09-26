@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@300;400;500;700&family=JetBrains+Mono:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-display: "Space Grotesk", sans-serif;
+
+  --color-obsidian: #121212;
+  --color-slate-dark: #191919;
+  --color-border-dark: #262626;
+  --color-gold-muted: #c5a85c;
+  --color-cream-light: #faf9f6;
+
+  --color-stone-105: #eeeeeb;
+  --color-stone-150: #e2e1dc;
+  --color-stone-250: #d0ceca;
+  --color-stone-350: #b5b3ae;
+  --color-stone-450: #9a9893;
+  --color-stone-550: #7d7a75;
+  --color-stone-605: #64615d;
+  --color-stone-650: #4e4b48;
+  --color-stone-850: #242220;
+}
+
+/* Custom background grid element to recreate luxury architecture boards */
+.grid-bg {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+}
+
+/* Radial spotlight effect */
+.spotlight-bg {
+  background: radial-gradient(circle at 50% 0%, rgba(197, 168, 92, 0.06) 0%, transparent 60%);
+}
+
+/* Noise overlay effect */
+.noise-overlay {
+  position: relative;
+}
+.noise-overlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.02;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
+/* Base custom classes to support fluid custom audio visualizers */
+@keyframes bar-bounce {
+  0%, 100% { transform: scaleY(0.3); }
+  50% { transform: scaleY(1); }
+}
+
+.visualizer-bar {
+  animation: bar-bounce 1.2s ease-in-out infinite;
+}
+
+.visualizer-bar-delayed {
+  animation: bar-bounce 1s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+
+.visualizer-bar-fast {
+  animation: bar-bounce 0.8s ease-in-out infinite;
+  animation-delay: 0.15s;
+}
+
+/* Remove default scrollbar clutter but maintain scroll mechanics */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 9px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a3a;
+}

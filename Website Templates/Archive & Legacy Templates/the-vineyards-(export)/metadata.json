@@ -1,0 +1,6 @@
+{
+  "name": "Palmdale Crest Townhomes",
+  "description": "A elegant high-contrast community portal for the residents of Palmdale Crest Townhomes, CA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "The Velvet Note",
+  "description": "An intimate subterranean venue for live jazz, late-night dining, and craft cocktails in a warm, cinematic space.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

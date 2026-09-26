@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+!dist/litigation-ops-os/
+!dist/litigation-ops-os/**
+.DS_Store
+*.zip
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.tmp
+dist/_quarantine_duplicates/

@@ -1,0 +1,6 @@
+{
+  "name": "Midnight Express",
+  "description": "Premium dark-theme Chinese Drive-Thru with high-end luxury automotive styling and neon pink accents.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

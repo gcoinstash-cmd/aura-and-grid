@@ -1,0 +1,6 @@
+{
+  "name": "Focus OS",
+  "description": "A luxury minimalist, single-column ADHD focus planner designed for absolute cognitive clarity.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

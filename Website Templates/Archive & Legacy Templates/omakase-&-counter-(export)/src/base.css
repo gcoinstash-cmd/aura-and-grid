@@ -1,0 +1,126 @@
+/* Import Google Fonts for luxury typography */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Noto+Sans+JP:wght@300;400&family=Inter:wght@300;400&display=swap');
+
+/* CSS Variable Root Layer / Design System Tokens */
+:root {
+  --sumi-ink: #121212;
+  --raw-silk: #E8E4DC;
+  --muted-charcoal: #2C2C2A;
+  
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", "Noto Sans JP", sans-serif;
+}
+
+/* Global Reset and Base Styles */
+html {
+  background-color: var(--sumi-ink);
+  color: var(--raw-silk);
+  font-family: var(--font-sans);
+  font-weight: 300;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--sumi-ink);
+  color: var(--raw-silk);
+  min-height: 100vh;
+}
+
+/* Typographic Hierarchies (lowercase luxury branding per guidelines) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  color: var(--raw-silk);
+  margin-top: 0;
+  text-transform: lowercase;
+}
+
+h1 {
+  font-size: clamp(2.25rem, 5vw, 3.75rem);
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  line-height: 1.35;
+}
+
+p, span, li, a {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  color: var(--raw-silk);
+  opacity: 0.85; /* Subtle reduction for pure reading luxury, not too bright */
+}
+
+a {
+  transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+/* Base Form Reset and Sharp Corner Discipline */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid var(--muted-charcoal);
+  border-radius: 0px !important; /* Strictly sharp corners */
+  padding: 0.75rem 1.25rem;
+  outline: none;
+  box-shadow: none !important;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+button {
+  cursor: pointer;
+  text-transform: lowercase;
+  letter-spacing: 0.1em;
+  font-family: var(--font-serif);
+}
+
+button:focus-visible, input:focus, select:focus, textarea:focus {
+  border-color: var(--raw-silk);
+  outline: none;
+}
+
+/* Horizontal & Vertical Rules for Micro-Borders */
+hr {
+  border: 0;
+  border-top: 1px solid var(--muted-charcoal);
+  margin: 0;
+}
+
+/* Custom Scrollbar to match Sumi Ink */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sumi-ink);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--muted-charcoal);
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--raw-silk);
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Neon Lotus - Downtown Chinese Bistro",
+  "description": "A trendy, modern Chinese food landing page featuring vibrant downtown vibes, elevated street food, and sleek, neon-inspired design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

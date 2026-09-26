@@ -1,0 +1,8 @@
+{
+  "name": "Zen Portfolio Dashboard",
+  "description": "A high-performance minimalist financial analysis dashboard focusing on Free Cash Flow and Return on Capital metrics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

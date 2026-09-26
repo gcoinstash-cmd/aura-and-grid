@@ -1,0 +1,79 @@
+/*
+================================================================================
+  AURA & GRID — INTUITIVE LUXURY DESIGN SYSTEM
+================================================================================
+  This block contains the core editable tokens:
+  - Base Obsidian Surface Color (#0B0B0B)
+  - Muted Charcoal Layer Accents
+  - Handcrafted Gold-Leaf Branded Colors
+  - Global Editorial Monospace and Serif Font Configurations
+================================================================================
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Montserrat:wght@200;300;400;500;600&family=Italianno&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* --- CUSTOM LUXURY PALETTE --- */
+  /* Primary Obsidian Base Layer */
+  --color-obsidian: #0B0B0B;
+  
+  /* Muted Charcoal Layering (Canvas Depths & Cards) */
+  --color-dark-gray: #0C0C0C;
+  --color-charcoal-deep: #121212;
+  --color-charcoal: #1C1C1C;
+  --color-charcoal-light: #2C2C2C;
+  
+  /* Rich Gold-Leaf Branding Accents */
+  --color-gold: #D4AF37;
+  --color-gold-muted: #A3842C;
+  
+  /* Clean Platinum & Stark White Accents */
+  --color-platinum: #E5E5E5;
+  --color-stark-white: #FFFFFF;
+  
+  /* --- TYPOGRAPHY DECLARATIONS --- */
+  /* Classical Editorial Serif (Cormorant Garamond / Celebratory Lines) */
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  /* Technical Modernist Sans-Serif (Montserrat / Clean Precision) */
+  --font-sans: "Montserrat", "Inter", sans-serif;
+  /* Calligraphic Flourish Script (Italianno / Event Accents) */
+  --font-script: "Italianno", cursive;
+}
+
+/* Custom premium scrollbars and selections */
+::selection {
+  background-color: #D4AF37;
+  color: #050505;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0B0B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1C1C1C;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+html, body {
+  background-color: var(--color-obsidian);
+  color: #FFFFFF;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  letter-spacing: 0.05em;
+}
+
+/* Fine-grain atmosphere texture overlay */
+.grain-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.035'/%3E%3C/svg%3E");
+  pointer-events: none;
+}

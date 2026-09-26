@@ -1,0 +1,205 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+
+  /* Premium Bespoke Metallic Palette: Champagne and Bronzed Gold */
+  --color-gold-50: #FAF8F5;
+  --color-gold-100: #F4EFEB;
+  --color-gold-200: #E6DCD2;
+  --color-gold-300: #D8C2AC;
+  --color-gold-400: #C5A880; /* Core Luxury Gold Accent */
+  --color-gold-500: #B39265;
+  --color-gold-600: #97784E;
+  --color-gold-700: #745B3A;
+  --color-gold-800: #513E27;
+  --color-gold-900: #302416;
+
+  /* Obsidian Obsidian tones for true black-box experience */
+  --color-neutral-950: #050505;
+  --color-neutral-900: #0B0B0B;
+  --color-neutral-850: #121212;
+  --color-neutral-800: #1A1A1A;
+
+  /* Centralized Brand Custom Tokens: Yūgen Premium */
+  --color-yugen-bg: #050505;
+  --color-yugen-gold: #C5A880;
+  --color-yugen-charcoal: #0F0F0F;
+  --color-yugen-border: rgba(255, 255, 255, 0.05);
+
+  --font-display-serif: "Cormorant Garamond", serif;
+  --font-geometric-ui: "Plus Jakarta Sans", sans-serif;
+
+  --ease-editorial: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-editorial: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  :root {
+    /* Pure CSS variables for developer customization and flipping DX */
+    --luxury-gold: #C5A880;
+    --luxury-bronze: #B39265;
+    --obsidian-black: #050505;
+    --chamber-charcoal: #0B0B0B;
+    --fine-border: rgba(255, 255, 255, 0.05);
+    
+    /* Cinematic easing functions */
+    --ease-editorial: cubic-bezier(0.16, 1, 0.3, 1); /* ultra-smooth scroll/fade */
+    --ease-spring: cubic-bezier(0.43, 0.13, 0.23, 0.96);
+    
+    /* Luxury typography scaling */
+    --tracking-extreme: 0.35em;
+    --tracking-medium: 0.15em;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #050505;
+    color: #E6DCD2;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Luxury thin scrollbar */
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #050505;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #262626;
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-gold-400);
+  }
+}
+
+/* Explicit custom utilities for developers flipping this template */
+@layer utilities {
+  .theme-dark-zen {
+    background-color: #050505;
+    color: #e5e5e5;
+  }
+  
+  .section-padding-tier-1 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    @media (max-width: 768px) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+  
+  .section-padding-tier-2 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    @media (max-width: 768px) {
+      padding-top: 4.5rem;
+      padding-bottom: 4.5rem;
+    }
+  }
+
+  /* TEXT UTILITIES */
+  .text-uppercase-tracking {
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-extreme);
+    font-family: var(--font-sans);
+  }
+
+  .text-serif-display {
+    font-family: var(--font-serif);
+    font-weight: 300;
+  }
+
+  /* BACKGROUNDS */
+  .bg-neutral-deep-dark {
+    background-color: #050505;
+  }
+
+  .bg-chamber-soft {
+    background-color: #0B0B0B;
+  }
+
+  /* BORDERS */
+  .border-top-clean {
+    border-top: 1px solid var(--fine-border);
+  }
+
+  /* COMPONENT: Custom Dotted Connector for High-Tickets */
+  .menu-dotted-connector {
+    flex-grow: 1;
+    border-bottom: 1px dotted rgba(197, 168, 128, 0.25);
+    margin: 0 1rem;
+    position: relative;
+    top: -4px;
+  }
+
+  /* UX Interaction Animations & Transitions */
+  .cinematic-fade {
+    opacity: 0;
+    animation: editorialFadeIn 1.4s var(--ease-editorial) forwards;
+  }
+
+  .link-interactive-gold {
+    position: relative;
+    transition: color 0.4s var(--ease-editorial);
+  }
+
+  .link-interactive-gold::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--luxury-gold);
+    transform-origin: bottom right;
+    transition: transform 0.4s var(--ease-editorial);
+  }
+
+  .link-interactive-gold:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  /* Architectural custom inputs */
+  .form-input-clean {
+    background-color: #0B0B0B;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.4s var(--ease-editorial);
+    outline: none;
+  }
+
+  .form-input-clean:focus {
+    border-color: var(--luxury-gold);
+    box-shadow: 0 0 15px rgba(197, 168, 128, 0.05);
+    background-color: #121212;
+  }
+}
+
+/* Atmospheric elements */
+.grain-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.015'/%3E%3C/svg%3E");
+}
+
+/* Animations declarations */
+@keyframes editorialFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

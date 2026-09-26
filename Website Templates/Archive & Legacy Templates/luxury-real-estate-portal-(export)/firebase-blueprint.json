@@ -1,0 +1,124 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile with role details.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "The unique user ID" },
+        "name": { "type": "string", "description": "Display name of the user" },
+        "email": { "type": "string", "format": "email", "description": "Verified email of the user" },
+        "role": { "type": "string", "enum": ["client", "broker"], "description": "Access control role" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Profile creation timestamp" }
+      },
+      "required": ["uid", "name", "email", "role", "createdAt"]
+    },
+    "Property": {
+      "title": "Property",
+      "description": "Premium luxury property listing details.",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "description": "Title of the listing" },
+        "description": { "type": "string", "description": "Detailed architectural layout and writeup" },
+        "price": { "type": "number", "description": "Listing price in USD" },
+        "location": { "type": "string", "description": "Location description" },
+        "bedrooms": { "type": "number", "description": "Number of bedrooms" },
+        "bathrooms": { "type": "number", "description": "Number of bathrooms" },
+        "sqft": { "type": "number", "description": "Square footage of the property" },
+        "images": { "type": "array", "description": "Urls to high-res stunning listing image mockups" },
+        "status": { "type": "string", "enum": ["available", "pending", "sold"], "description": "Listing availability" },
+        "amenities": { "type": "array", "description": "Exclusive listing amenities" },
+        "brokerId": { "type": "string", "description": "UID of the listing broker" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["title", "description", "price", "location", "bedrooms", "bathrooms", "sqft", "images", "status", "amenities", "brokerId", "createdAt"]
+    },
+    "Inquiry": {
+      "title": "Inquiry",
+      "description": "A luxury buyer inquiry lead for a specific property.",
+      "type": "object",
+      "properties": {
+        "propertyId": { "type": "string", "description": "Referenced property ID" },
+        "senderId": { "type": "string", "description": "UID of the inquiring client" },
+        "senderName": { "type": "string", "description": "Name of inquirer" },
+        "senderEmail": { "type": "string", "description": "Email of inquirer" },
+        "message": { "type": "string", "description": "Personalized inquiry details" },
+        "status": { "type": "string", "enum": ["new", "in_progress", "contacted", "closed"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["propertyId", "senderId", "senderName", "senderEmail", "message", "status", "createdAt"]
+    },
+    "MaintenanceRequest": {
+      "title": "MaintenanceRequest",
+      "description": "A premium resident maintenance request.",
+      "type": "object",
+      "properties": {
+        "propertyId": { "type": "string", "description": "Referenced property ID" },
+        "tenantId": { "type": "string", "description": "UID of the tenant" },
+        "title": { "type": "string", "description": "Brief description of issue" },
+        "description": { "type": "string", "description": "Full repair specs" },
+        "urgency": { "type": "string", "enum": ["low", "medium", "high", "emergency"] },
+        "status": { "type": "string", "enum": ["pending", "scheduled", "completed"] },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "scheduledDate": { "type": "string", "format": "date-time" }
+      },
+      "required": ["propertyId", "tenantId", "title", "description", "urgency", "status", "createdAt"]
+    },
+    "Appointment": {
+      "title": "Appointment",
+      "description": "A private showing/consultation scheduling setup.",
+      "type": "object",
+      "properties": {
+        "propertyId": { "type": "string" },
+        "clientId": { "type": "string" },
+        "clientName": { "type": "string" },
+        "clientEmail": { "type": "string" },
+        "brokerId": { "type": "string" },
+        "datetime": { "type": "string", "format": "date-time" },
+        "status": { "type": "string", "enum": ["requested", "confirmed", "cancelled"] },
+        "notes": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["propertyId", "clientId", "clientName", "clientEmail", "brokerId", "datetime", "status", "createdAt"]
+    },
+    "Document": {
+      "title": "Document",
+      "description": "Resident document, lease, or transaction document.",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "fileUrl": { "type": "string" },
+        "clientId": { "type": "string" },
+        "uploadedBy": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["title", "fileUrl", "clientId", "uploadedBy", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User roles and display names mapping to Auth accounts."
+    },
+    "/properties/{propertyId}": {
+      "schema": "Property",
+      "description": "Exclusive listings of residential real estate."
+    },
+    "/inquiries/{inquiryId}": {
+      "schema": "Inquiry",
+      "description": "Buyer inquiries submitted to brokers for listing."
+    },
+    "/maintenanceRequests/{requestId}": {
+      "schema": "MaintenanceRequest",
+      "description": "Tenant-filed digital service requests."
+    },
+    "/appointments/{appointmentId}": {
+      "schema": "Appointment",
+      "description": "Private consulting scheduler events."
+    },
+    "/documents/{documentId}": {
+      "schema": "Document",
+      "description": "Secure storage link records for contract documents."
+    }
+  }
+}

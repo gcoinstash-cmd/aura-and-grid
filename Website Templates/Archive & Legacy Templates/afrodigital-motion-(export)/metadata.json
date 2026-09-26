@@ -1,0 +1,6 @@
+{
+  "name": "AfroDigital Motion",
+  "description": "Zen-minimalist digital animation studio specializing in kid-friendly personal finance content.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

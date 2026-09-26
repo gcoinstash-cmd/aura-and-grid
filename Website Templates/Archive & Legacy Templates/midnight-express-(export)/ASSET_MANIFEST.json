@@ -1,0 +1,67 @@
+{
+  "project": "THE MIDNIGHT EXPRESS",
+  "version": "1.0.0",
+  "description": "Premium developer-first asset blueprint and structural layout constraints manifest for high-end digital hospitality and telemetry menus.",
+  "image_specifications": {
+    "hero_banner": {
+      "aspect_ratio": "16:9",
+      "recommended_dimensions": "1920x1080",
+      "formats": ["webp", "jpg"],
+      "compression_target": "quality-85",
+      "description": "Background ambient and immersive environment canvases for wide viewport cinematic projection."
+    },
+    "product_cards": {
+      "aspect_ratio": "1:1",
+      "recommended_dimensions": "800x800",
+      "formats": ["webp", "png"],
+      "compression_target": "quality-80",
+      "description": "High-contrast square food and product images utilizing dark food photography or blueprint vector accents."
+    },
+    "feature_banners": {
+      "aspect_ratio": "21:9",
+      "recommended_dimensions": "1200x512",
+      "formats": ["webp", "png"],
+      "compression_target": "quality-85",
+      "description": "Asymmetric widescreen feature drop displays with integrated text safe zones."
+    }
+  },
+  "audio_specifications": {
+    "synthesizer_hums": {
+      "idle_drone_frequency": "80.0Hz",
+      "active_harmonic": "160.0Hz",
+      "format": "WebAudio Live Synthesis",
+      "description": "Fully programmatic ambient engine hum to eliminate large background audio assets."
+    },
+    "ui_interactions": {
+      "chime_parameters": {
+        "format": "wav",
+        "sample_rate": "44.1kHz",
+        "bit_depth": "16-bit",
+        "duration": "0.35s",
+        "description": "High-pitched premium laser/neon click chime confirmation audio asset."
+      },
+      "sizzle_feedback": {
+        "format": "programmatic",
+        "description": "Subtle thermal white noise burst simulating food contact with hot steel wok grids."
+      },
+      "hardware_thud": {
+        "format": "wav",
+        "duration": "0.15s",
+        "description": "Low-frequency heavy sub thud confirming transactional status or state changes."
+      }
+    }
+  },
+  "stylistic_constraints": {
+    "color_palette": {
+      "canvas_background": "#050505",
+      "primary_hot_accent": "#FF3366",
+      "cyber_success_green": "#00FF66",
+      "dark_borders": "#161616"
+    },
+    "typography": {
+      "display": "Space Grotesk / Outfit",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Luxury Real Estate Portal",
+  "description": "A premium, zen-minimalist real estate template with advanced property filtering, client scheduling, and broker dashboard features powered by Firebase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

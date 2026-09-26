@@ -1,0 +1,21 @@
+{
+  "name": "aura-and-grid-storefront-engine",
+  "version": "1.0.0",
+  "description": "Storefront Engine for Aura & Grid - Digital architecture and web templates",
+  "type": "module",
+  "scripts": {
+    "publish:draft": "node scripts/publish-gumroad.mjs --draft",
+    "publish:live": "node scripts/publish-gumroad.mjs --live"
+  },
+  "keywords": [
+    "gumroad",
+    "templates",
+    "storefront"
+  ],
+  "author": "Aura & Grid",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "playwright": "^1.63.0"
+  }
+}

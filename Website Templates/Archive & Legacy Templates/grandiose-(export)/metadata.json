@@ -1,0 +1,6 @@
+{
+  "name": "Grandiose",
+  "description": "A high-ticket, high-contrast digital editorial template for elite event planners, featuring bespoke RSVP management and curated vendor directories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

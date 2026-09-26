@@ -1,0 +1,6 @@
+{
+  "name": "Diamond Cuts Barber Salon",
+  "description": "Premium, Zen Minimalist website for Diamond Cuts Barber Salon featuring a curated lookbook, streamlined service pillars, and instant appointment booking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

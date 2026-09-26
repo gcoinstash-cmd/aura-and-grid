@@ -1,0 +1,8 @@
+{
+  "name": "BBQ Pit — Premium Smoked Meats",
+  "description": "Authentic Texas BBQ with a premium, minimalist aesthetic. Experience the art of low and slow smoking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

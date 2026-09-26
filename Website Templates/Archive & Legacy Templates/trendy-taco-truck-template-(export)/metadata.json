@@ -1,0 +1,6 @@
+{
+  "name": "Trendy Taco Truck Template",
+  "description": "Premium landing page template for trendy taco trucks featuring an interactive menu builder, live location tracker, and high-ticket catering booking system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

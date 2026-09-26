@@ -1,0 +1,852 @@
+[
+  {
+    "id": 1,
+    "name": "STRIDE MB",
+    "slug": "stride-mb",
+    "dir": "stride-manhattan-beach",
+    "preview_url": "https://stride-manhattan-beach.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daobdo740ujc73el384g",
+    "repo": "stride-manhattan-beach"
+  },
+  {
+    "id": 2,
+    "name": "THE VAULT",
+    "slug": "the-vault",
+    "dir": "the-vault",
+    "preview_url": "https://the-vault-studio.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-dapgh8qjnfac738d1rl0",
+    "repo": "the-vault-studio"
+  },
+  {
+    "id": 3,
+    "name": "VELOCITY",
+    "slug": "velocity-os",
+    "dir": "velocity",
+    "preview_url": "https://velocity-exotic-fleet.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daph4d60tbcc73dc7q8g",
+    "repo": "velocity-exotic-fleet"
+  },
+  {
+    "id": 4,
+    "name": "APEX CLUB",
+    "slug": "apex-club-os",
+    "dir": "apex-club",
+    "preview_url": "https://apex-fight-club.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daphlhnf3r2c73emh3v0",
+    "repo": "apex-fight-club"
+  },
+  {
+    "id": 5,
+    "name": "ELEVATE CAPITAL",
+    "slug": "elevate-capital-os",
+    "dir": "elevate-capital",
+    "preview_url": "https://elevate-capital-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-dapjlu67bikc73fo1jv0",
+    "repo": "elevate-capital-os"
+  },
+  {
+    "id": 6,
+    "name": "OBSIDIAN LAB",
+    "slug": "obsidian-lab-os",
+    "dir": "obsidian-lab",
+    "preview_url": "https://obsidian-slow-bar.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-dapjvg3bc2fs73b0jqag",
+    "repo": "obsidian-slow-bar"
+  },
+  {
+    "id": 7,
+    "name": "THE ENCLAVE",
+    "slug": "the-enclave-os",
+    "dir": "the-enclave",
+    "preview_url": "https://the-enclave-villas.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-dapkeagu01pc73cv1sf0",
+    "repo": "the-enclave-villas"
+  },
+  {
+    "id": 8,
+    "name": "AURA MEDSPA",
+    "slug": "aura-medspa-os",
+    "dir": "aura-medspa",
+    "preview_url": "https://aura-medspa-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-dapksg0473hc73c2v7d0",
+    "repo": "aura-medspa-os"
+  },
+  {
+    "id": 9,
+    "name": "ROYAL APEX",
+    "slug": "royal-apex-os",
+    "dir": "royal-apex",
+    "preview_url": "https://royal-apex-atelier.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daplbh8473hc73c4jmk0",
+    "repo": "royal-apex-atelier"
+  },
+  {
+    "id": 10,
+    "name": "AURA RESERVE",
+    "slug": "aura-reserve-os",
+    "dir": "aura-reserve",
+    "preview_url": "https://aura-reserve-estate.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-dapn0hk9v7es73972s60",
+    "repo": "aura-reserve-estate"
+  },
+  {
+    "id": 11,
+    "name": "MONOLITH STUDIO",
+    "slug": "monolith-studio-os",
+    "dir": "monolith-studio",
+    "preview_url": "https://monolith-studio-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-dapp0fmgekts73em7fq0",
+    "repo": "monolith-studio-os"
+  },
+  {
+    "id": 12,
+    "name": "KINETIC LAB",
+    "slug": "kinetic-lab-os",
+    "dir": "kinetic-lab",
+    "preview_url": "https://kinetic-lab-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-dapp7n3bc2fs73bif7m0",
+    "repo": "kinetic-lab-os"
+  },
+  {
+    "id": 13,
+    "name": "THE VELVET NOTE",
+    "slug": "the-velvet-note-os",
+    "dir": "the-velvet-note",
+    "preview_url": "https://the-velvet-note-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-dappj2h42hec73do9gsg",
+    "repo": "the-velvet-note-os"
+  },
+  {
+    "id": 14,
+    "name": "AURA RETREAT OS",
+    "slug": "retreat-os",
+    "dir": "retreat-os",
+    "preview_url": "https://retreat-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-dappusbtqb8s73dcm2u0",
+    "repo": "retreat-os"
+  },
+  {
+    "id": 15,
+    "name": "OMAKASE & COUNTER",
+    "slug": "omakase-counter-os",
+    "dir": "omakase-counter",
+    "preview_url": "https://omakase-counter-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-dapq8t2d0e5s73a1pfv0",
+    "repo": "omakase-counter-os"
+  },
+  {
+    "id": 16,
+    "name": "AETHEL BESPOKE",
+    "slug": "aethel-bespoke-os",
+    "dir": "aethel-bespoke",
+    "preview_url": "https://aethel-bespoke-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-dapqg0e7bikc738f1la0",
+    "repo": "aethel-bespoke-os"
+  },
+  {
+    "id": 17,
+    "name": "AURA APOTHECARY",
+    "slug": "aura-apothecary-os",
+    "dir": "aura-apothecary",
+    "preview_url": "https://aura-apothecary-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-dapqqnnlk1mc73cjnf80",
+    "repo": "aura-apothecary-os"
+  },
+  {
+    "id": 18,
+    "name": "THE WINTER PARLOR",
+    "slug": "the-winter-parlor-os",
+    "dir": "the-winter-parlor",
+    "preview_url": "https://the-winter-parlor-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daprc5142hec73du0q3g",
+    "repo": "the-winter-parlor-os"
+  },
+  {
+    "id": 19,
+    "name": "MOTIONSCALE",
+    "slug": "motionscale-os",
+    "dir": "motionscale",
+    "preview_url": "https://motionscale-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daq35t7lk1mc73bj47u0",
+    "repo": "motionscale-os"
+  },
+  {
+    "id": 20,
+    "name": "AURA SUPPER CLUB",
+    "slug": "aura-supper-club-os",
+    "dir": "aura-supper-club",
+    "preview_url": "https://aura-supper-club-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daq6jls9v7es73c0qi60",
+    "repo": "aura-supper-club-os"
+  },
+  {
+    "id": 21,
+    "name": "NEO SHINJUKU",
+    "slug": "neo-shinjuku-os",
+    "dir": "neo-shinjuku",
+    "preview_url": "https://neo-shinjuku-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daq9kmk9v7es73cc4a5g",
+    "repo": "neo-shinjuku-os"
+  },
+  {
+    "id": 22,
+    "name": "NEON LOTUS",
+    "slug": "neon-lotus-os",
+    "dir": "neon-lotus",
+    "preview_url": "https://neon-lotus-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqb5kgu01pc73fhi880",
+    "repo": "neon-lotus-os"
+  },
+  {
+    "id": 23,
+    "name": "APEX TUNING",
+    "slug": "apex-tuning-os",
+    "dir": "apex-tuning",
+    "preview_url": "https://apex-tuning-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqc3a8jo6nc73dtniqg",
+    "repo": "apex-tuning-os"
+  },
+  {
+    "id": 24,
+    "name": "VILLA OBSIDIAN",
+    "slug": "villa-obsidian-os",
+    "dir": "villa-obsidian",
+    "preview_url": "https://villa-obsidian-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqde8bncjis739iu6eg",
+    "repo": "villa-obsidian-os"
+  },
+  {
+    "id": 25,
+    "name": "AFRODIGITAL MOTION",
+    "slug": "afrodigital-motion-os",
+    "dir": "afrodigital-motion",
+    "preview_url": "https://afrodigital-motion-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqdmclg1s2s7383nn1g",
+    "repo": "afrodigital-motion-os"
+  },
+  {
+    "id": 26,
+    "name": "BURGER LAB",
+    "slug": "burger-lab-os",
+    "dir": "burger-lab",
+    "preview_url": "https://burger-lab-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqe9mid0e5s73a919fg",
+    "repo": "burger-lab-os"
+  },
+  {
+    "id": 27,
+    "name": "AURA FRAGRANCE",
+    "slug": "aura-fragrance-os",
+    "dir": "aura-fragrance",
+    "preview_url": "https://aura-fragrance-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqeo0k9v7es73ctjss0",
+    "repo": "aura-fragrance-os"
+  },
+  {
+    "id": 28,
+    "name": "FOCUS ARCHITECTURE",
+    "slug": "focus-architecture-os",
+    "dir": "focus-architecture",
+    "preview_url": "https://focus-architecture-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqeqvvf3r2c73b3otbg",
+    "repo": "focus-architecture-os"
+  },
+  {
+    "id": 29,
+    "name": "THE VINEYARDS",
+    "slug": "the-vineyards-os",
+    "dir": "the-vineyards",
+    "preview_url": "https://the-vineyards-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqetm67bikc738971pg",
+    "repo": "the-vineyards-os"
+  },
+  {
+    "id": 30,
+    "name": "FAMILY LEGACY WEALTH",
+    "slug": "family-legacy-wealth-os",
+    "dir": "family-legacy-wealth",
+    "preview_url": "https://family-legacy-wealth-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqevt0jo6nc73e74msg",
+    "repo": "family-legacy-wealth-os"
+  },
+  {
+    "id": 31,
+    "name": "DIAMOND CUTS",
+    "slug": "diamond-cuts-os",
+    "dir": "diamond-cuts",
+    "preview_url": "https://diamond-cuts-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqf29s9v7es73cuqh3g",
+    "repo": "diamond-cuts-os"
+  },
+  {
+    "id": 32,
+    "name": "CROWN & COLLECTIVE",
+    "slug": "crown-collective-os",
+    "dir": "crown-collective",
+    "preview_url": "https://crown-collective-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqfj7bncjis739q26hg",
+    "repo": "crown-collective-os"
+  },
+  {
+    "id": 33,
+    "name": "COMMERCIAL FINANCE ENGINE",
+    "slug": "commercial-finance-os",
+    "dir": "commercial-finance",
+    "preview_url": "https://commercial-finance-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqfmtlg1s2s738acq30",
+    "repo": "commercial-finance-os"
+  },
+  {
+    "id": 34,
+    "name": "HIGH-TICKET OFFER ARCHITECT",
+    "slug": "high-ticket-studio-os",
+    "dir": "high-ticket-studio",
+    "preview_url": "https://high-ticket-studio-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqfpbu7bikc738c6dc0",
+    "repo": "high-ticket-studio-os"
+  },
+  {
+    "id": 35,
+    "name": "BBQ PIT",
+    "slug": "bbq-pit-os",
+    "dir": "bbq-pit",
+    "preview_url": "https://bbq-pit-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqfs8gu01pc73816gi0",
+    "repo": "bbq-pit-os"
+  },
+  {
+    "id": 36,
+    "name": "STUDIO VÉRONIQUE LA",
+    "slug": "studio-veronique-os",
+    "dir": "studio-veronique",
+    "preview_url": "https://studio-veronique-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqfttk9v7es73d1s1lg",
+    "repo": "studio-veronique-os"
+  },
+  {
+    "id": 37,
+    "name": "PIZZA PARLOR OS",
+    "slug": "pizza-parlor-os",
+    "dir": "pizza-parlor",
+    "preview_url": "https://pizza-parlor-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqgaotg1s2s738cc0f0",
+    "repo": "pizza-parlor-os"
+  },
+  {
+    "id": 38,
+    "name": "NOCTURNE NIGHTLIFE OS",
+    "slug": "premium-nightlife-os",
+    "dir": "premium-nightlife",
+    "preview_url": "https://premium-nightlife-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqgc85g1s2s738cgnf0",
+    "repo": "premium-nightlife-os"
+  },
+  {
+    "id": 39,
+    "name": "ZENITH ELITE AGENCY OS",
+    "slug": "zenith-agency-os",
+    "dir": "zenith-agency",
+    "preview_url": "https://zenith-agency-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqgdj5g1s2s738ckulg",
+    "repo": "zenith-agency-os"
+  },
+  {
+    "id": 40,
+    "name": "STREET CULTURE KITCHEN OS",
+    "slug": "street-culture-kitchen-os",
+    "dir": "street-culture-kitchen",
+    "preview_url": "https://street-culture-kitchen-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqgft8jo6nc73ec653g",
+    "repo": "street-culture-kitchen-os"
+  },
+  {
+    "id": 41,
+    "name": "SATSTACKER ASSET VAULT OS",
+    "slug": "satstacker-os",
+    "dir": "satstacker",
+    "preview_url": "https://satstacker-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqghrojo6nc73ecbt10",
+    "repo": "satstacker-os"
+  },
+  {
+    "id": 42,
+    "name": "AUTO REPAIR SHOP OS",
+    "slug": "auto-repair-shop-os",
+    "dir": "auto-repair-shop",
+    "preview_url": "https://auto-repair-shop-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqh6lvlk1mc73ej65ng",
+    "repo": "auto-repair-shop-os"
+  },
+  {
+    "id": 43,
+    "name": "SPA TREATMENT OS",
+    "slug": "spa-treatment-os",
+    "dir": "spa-treatment",
+    "preview_url": "https://spa-treatment-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqn1j9srm7s73dmho20",
+    "repo": "spa-treatment-os"
+  },
+  {
+    "id": 44,
+    "name": "SOUL & SPICE OS",
+    "slug": "soul-and-spice-os",
+    "dir": "soul-and-spice",
+    "preview_url": "https://soul-and-spice-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqn4i0473hc73bpkv70",
+    "repo": "soul-and-spice-os"
+  },
+  {
+    "id": 45,
+    "name": "RESONANCE CULINARY ARCHIVE OS",
+    "slug": "resonance-culinary-os",
+    "dir": "resonance-culinary",
+    "preview_url": "https://gcoinstash-cmd.github.io/resonance-culinary-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "resonance-culinary-os"
+  },
+  {
+    "id": 46,
+    "name": "HERITAGE & HONEY OS",
+    "slug": "heritage-and-honey-os",
+    "dir": "heritage-and-honey",
+    "preview_url": "https://heritage-and-honey-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqn89bktnus73bgc5kg",
+    "repo": "heritage-and-honey-os"
+  },
+  {
+    "id": 47,
+    "name": "LUXURY REAL ESTATE PORTAL OS",
+    "slug": "luxury-real-estate-portal-os",
+    "dir": "luxury-real-estate-portal",
+    "preview_url": "https://luxury-real-estate-portal-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqntmflot8c73fc7ffg",
+    "repo": "luxury-real-estate-portal-os"
+  },
+  {
+    "id": 48,
+    "name": "MIDNIGHT EXPRESS OS",
+    "slug": "midnight-express-os",
+    "dir": "midnight-express",
+    "preview_url": "https://midnight-express-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqo2t7lk1mc73eg0380",
+    "repo": "midnight-express-os"
+  },
+  {
+    "id": 49,
+    "name": "REAL ESTATE ANALYTICS HUB OS",
+    "slug": "real-estate-analytics-hub-os",
+    "dir": "real-estate-analytics-hub",
+    "preview_url": "https://real-estate-analytics-hub-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqo4d67bikc7385lle0",
+    "repo": "real-estate-analytics-hub-os"
+  },
+  {
+    "id": 50,
+    "name": "CULINARY OPERATIONAL WORKSPACE OS",
+    "slug": "culinary-workspace-os",
+    "dir": "culinary-workspace",
+    "preview_url": "https://culinary-workspace-os.onrender.com",
+    "isRender": true,
+    "renderServiceId": "srv-daqo5onlot8c73fd26m0",
+    "repo": "culinary-workspace-os"
+  },
+  {
+    "id": 51,
+    "name": "TRENDY TACO TRUCK OS",
+    "slug": "trendy-taco-truck-os",
+    "dir": "trendy-taco-truck",
+    "preview_url": "https://gcoinstash-cmd.github.io/trendy-taco-truck-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "trendy-taco-truck-os"
+  },
+  {
+    "id": 52,
+    "name": "YŪGEN SENSORY OS",
+    "slug": "yugen-sensory-os",
+    "dir": "yugen-sensory-os",
+    "preview_url": "https://gcoinstash-cmd.github.io/yugen-sensory-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "yugen-sensory-os"
+  },
+  {
+    "id": 53,
+    "name": "LITTLE ROOTS WELLNESS OS",
+    "slug": "little-roots-wellness-os",
+    "dir": "little-roots-wellness",
+    "preview_url": "https://gcoinstash-cmd.github.io/little-roots-wellness-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "little-roots-wellness-os"
+  },
+  {
+    "id": 54,
+    "name": "HOSPITALITY ROI ENGINE OS",
+    "slug": "hospitality-roi-engine-os",
+    "dir": "hospitality-roi-engine",
+    "preview_url": "https://gcoinstash-cmd.github.io/hospitality-roi-engine-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "hospitality-roi-engine-os"
+  },
+  {
+    "id": 55,
+    "name": "ZEN CAPITAL OS",
+    "slug": "zen-capital-os",
+    "dir": "zen-capital-os",
+    "preview_url": "https://gcoinstash-cmd.github.io/zen-capital-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "zen-capital-os"
+  },
+  {
+    "id": 56,
+    "name": "HVAC DISPATCH OS",
+    "slug": "hvac-dispatch-os",
+    "dir": "hvac-dispatch",
+    "preview_url": "https://gcoinstash-cmd.github.io/hvac-dispatch-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "hvac-dispatch-os"
+  },
+  {
+    "id": 57,
+    "name": "ROOFING ESTIMATOR OS",
+    "slug": "roofing-estimator-os",
+    "dir": "roofing-estimator",
+    "preview_url": "https://gcoinstash-cmd.github.io/roofing-estimator-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "roofing-estimator-os"
+  },
+  {
+    "id": 58,
+    "name": "HYDROFORCE PLUMBING OPS OS",
+    "slug": "plumbing-ops-os",
+    "dir": "plumbing-ops",
+    "preview_url": "https://gcoinstash-cmd.github.io/plumbing-ops-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "plumbing-ops-os"
+  },
+  {
+    "id": 59,
+    "name": "HELIOS SOLAR INSTALL & PERMIT OS",
+    "slug": "solar-install-os",
+    "dir": "solar-install",
+    "preview_url": "https://gcoinstash-cmd.github.io/solar-install-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "solar-install-os"
+  },
+  {
+    "id": 60,
+    "name": "VOLTGRID ELECTRICAL DISPATCH OS",
+    "slug": "electrical-dispatch-os",
+    "dir": "electrical-dispatch",
+    "preview_url": "https://gcoinstash-cmd.github.io/electrical-dispatch-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "electrical-dispatch-os"
+  },
+  {
+    "id": 61,
+    "name": "BOUTIQUE DENTAL OS",
+    "slug": "boutique-dental-os",
+    "dir": "boutique-dental",
+    "preview_url": "https://gcoinstash-cmd.github.io/boutique-dental-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "boutique-dental-os"
+  },
+  {
+    "id": 62,
+    "name": "VETERINARY HOSPITAL OS",
+    "slug": "veterinary-hospital-os",
+    "dir": "veterinary-hospital",
+    "preview_url": "https://gcoinstash-cmd.github.io/veterinary-hospital-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "veterinary-hospital-os"
+  },
+  {
+    "id": 63,
+    "name": "AURA PROTOCOL FUNCTIONAL MEDICINE OS",
+    "slug": "functional-medicine-os",
+    "dir": "functional-medicine",
+    "preview_url": "https://gcoinstash-cmd.github.io/functional-medicine-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "functional-medicine-os"
+  },
+  {
+    "id": 64,
+    "name": "KINETIC SPINE & SPORTS PT OS",
+    "slug": "physical-therapy-os",
+    "dir": "physical-therapy",
+    "preview_url": "https://gcoinstash-cmd.github.io/physical-therapy-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "physical-therapy-os"
+  },
+  {
+    "id": 65,
+    "name": "HYPERBARIC & RECOVERY LAB OS",
+    "slug": "recovery-spa-os",
+    "dir": "recovery-spa",
+    "preview_url": "https://gcoinstash-cmd.github.io/recovery-spa-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "recovery-spa-os"
+  },
+  {
+    "id": 66,
+    "name": "BOUTIQUE LAW OS",
+    "slug": "boutique-law-os",
+    "dir": "boutique-law",
+    "preview_url": "https://gcoinstash-cmd.github.io/boutique-law-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "boutique-law-os"
+  },
+  {
+    "id": 67,
+    "name": "M&A ADVISORY OS",
+    "slug": "ma-advisory-os",
+    "dir": "ma-advisory",
+    "preview_url": "https://gcoinstash-cmd.github.io/ma-advisory-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "ma-advisory-os"
+  },
+  {
+    "id": 68,
+    "name": "EXECUTIVE SEARCH OS",
+    "slug": "executive-search-os",
+    "dir": "executive-search",
+    "preview_url": "https://gcoinstash-cmd.github.io/executive-search-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "executive-search-os"
+  },
+  {
+    "id": 69,
+    "name": "WEALTH FAMILY OFFICE OS",
+    "slug": "wealth-family-office-os",
+    "dir": "wealth-family-office",
+    "preview_url": "https://gcoinstash-cmd.github.io/wealth-family-office-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "wealth-family-office-os"
+  },
+  {
+    "id": 70,
+    "name": "LITIGATION OPS OS",
+    "slug": "litigation-ops-os",
+    "dir": "litigation-ops",
+    "preview_url": "https://gcoinstash-cmd.github.io/litigation-ops-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "litigation-ops-os"
+  },
+  {
+    "id": 71,
+    "name": "HEAVY PLANT RENTAL OS",
+    "slug": "heavy-plant-rental-os",
+    "dir": "heavy-plant-rental",
+    "preview_url": "https://gcoinstash-cmd.github.io/heavy-plant-rental-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "heavy-plant-rental-os"
+  },
+  {
+    "id": 72,
+    "name": "FREIGHT BROKER DISPATCH OS",
+    "slug": "freight-broker-dispatch-os",
+    "dir": "freight-broker-dispatch",
+    "preview_url": "https://gcoinstash-cmd.github.io/freight-broker-dispatch-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "freight-broker-dispatch-os"
+  },
+  {
+    "id": 73,
+    "name": "AVIATION CHARTER OS",
+    "slug": "aviation-charter-os",
+    "dir": "aviation-charter",
+    "preview_url": "https://gcoinstash-cmd.github.io/aviation-charter-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "aviation-charter-os"
+  },
+  {
+    "id": 74,
+    "name": "COLD CHAIN STORAGE OS",
+    "slug": "cold-chain-storage-os",
+    "dir": "cold-chain-storage",
+    "preview_url": "https://gcoinstash-cmd.github.io/cold-chain-storage-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "cold-chain-storage-os"
+  },
+  {
+    "id": 75,
+    "name": "CRANE & RIGGING OPS OS",
+    "slug": "crane-rigging-ops-os",
+    "dir": "crane-rigging-ops",
+    "preview_url": "https://gcoinstash-cmd.github.io/crane-rigging-ops-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "crane-rigging-ops-os"
+  },
+  {
+    "id": 76,
+    "name": "CERAMIC SHIELD & PPF OS",
+    "slug": "ceramic-shield-ppf-os",
+    "dir": "ceramic-shield-ppf",
+    "preview_url": "https://gcoinstash-cmd.github.io/ceramic-shield-ppf-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "ceramic-shield-ppf-os"
+  },
+  {
+    "id": 77,
+    "name": "MOBILE DETAIL DISPATCH OS",
+    "slug": "mobile-detail-dispatch-os",
+    "dir": "mobile-detail-dispatch",
+    "preview_url": "https://gcoinstash-cmd.github.io/mobile-detail-dispatch-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "mobile-detail-dispatch-os"
+  },
+  {
+    "id": 78,
+    "name": "CINEGRIP EQUIPMENT OS",
+    "slug": "cinegrip-equipment-os",
+    "dir": "cinegrip-equipment",
+    "preview_url": "https://gcoinstash-cmd.github.io/cinegrip-equipment-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "cinegrip-equipment-os"
+  },
+  {
+    "id": 79,
+    "name": "CUSTOM INK STUDIO OS",
+    "slug": "custom-ink-studio-os",
+    "dir": "custom-ink-studio",
+    "preview_url": "https://gcoinstash-cmd.github.io/custom-ink-studio-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "custom-ink-studio-os"
+  },
+  {
+    "id": 80,
+    "name": "COMBAT RECOVERY LAB OS",
+    "slug": "combat-recovery-lab-os",
+    "dir": "combat-recovery-lab",
+    "preview_url": "https://gcoinstash-cmd.github.io/combat-recovery-lab-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "combat-recovery-lab-os"
+  },
+  {
+    "id": 81,
+    "name": "FINE DINING OS",
+    "slug": "fine-dining-matrix-os",
+    "dir": "fine-dining-matrix",
+    "preview_url": "https://gcoinstash-cmd.github.io/fine-dining-matrix-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "fine-dining-matrix-os"
+  },
+  {
+    "id": 82,
+    "name": "MEDSPA CLINIC OS",
+    "slug": "medspa-clinic-os",
+    "dir": "medspa-clinic-os",
+    "preview_url": "https://gcoinstash-cmd.github.io/medspa-clinic-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "medspa-clinic-os"
+  },
+  {
+    "id": 83,
+    "name": "SUPERYACHT CHARTER OS",
+    "slug": "superyacht-charter-os",
+    "dir": "superyacht-charter-os",
+    "preview_url": "https://gcoinstash-cmd.github.io/superyacht-charter-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "superyacht-charter-os"
+  },
+  {
+    "id": 84,
+    "name": "LUXURY HOROLOGY VAULT OS",
+    "slug": "luxury-horology-vault-os",
+    "dir": "luxury-horology-vault",
+    "preview_url": "https://gcoinstash-cmd.github.io/luxury-horology-vault-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "luxury-horology-vault-os"
+  },
+  {
+    "id": 85,
+    "name": "PRIVATE VILLA ESTATE OS",
+    "slug": "private-villa-estate-os",
+    "dir": "private-villa-estate",
+    "preview_url": "https://gcoinstash-cmd.github.io/private-villa-estate-os/",
+    "isRender": false,
+    "renderServiceId": null,
+    "repo": "private-villa-estate-os"
+  }
+]

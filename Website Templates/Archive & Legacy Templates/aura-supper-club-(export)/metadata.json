@@ -1,0 +1,6 @@
+{
+  "name": "Aura Supper Club",
+  "description": "A premium, high-contrast digital presence for an upscale indoor-outdoor South Los Angeles soul food supper club.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

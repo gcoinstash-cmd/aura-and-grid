@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Exclusive "Golden Hour Eclipse" Color Palette */
+  --color-obsidian: #0B0B0C;
+  --color-charcoal: #161618;
+  --color-terracotta: #C86A4B;
+  --color-terracotta-hover: #D47959;
+  --color-gold: #D4AF37;
+  --color-gold-hover: #EBC046;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-obsidian);
+    color: #F3F4F6; /* text-gray-100 */
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  /* Elegant, minimal custom vertical scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0B0B0C;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #161618;
+    border: 1px solid #C86A4B;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #D4AF37;
+  }
+}

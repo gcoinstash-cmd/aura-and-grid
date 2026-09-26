@@ -1,0 +1,6 @@
+{
+  "name": "Pizza Parlor",
+  "description": "A luxury modern Italian pizza parlor experience featuring an artisan menu, custom pizza builder, table reservations, and real-time order tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

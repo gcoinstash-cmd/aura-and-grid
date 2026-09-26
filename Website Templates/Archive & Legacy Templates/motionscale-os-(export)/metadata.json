@@ -1,0 +1,6 @@
+{
+  "name": "MotionScale OS",
+  "description": "High-end creative production and motion design studio operating system command center, featuring interactive rendering timelines, asset libraries, client portal security audits, billing, and Gemini AI brief generation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

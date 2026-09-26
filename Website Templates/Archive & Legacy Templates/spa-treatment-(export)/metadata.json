@@ -1,0 +1,6 @@
+{
+  "name": "Spa Treatment Menu",
+  "description": "A boutique spa treatment menu featuring premium serif typography, adaptive accordion details, elegant dotted row pricing, and a smooth tactile design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

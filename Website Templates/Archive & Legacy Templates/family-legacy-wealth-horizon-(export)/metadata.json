@@ -1,0 +1,8 @@
+{
+  "name": "Family Legacy Wealth Horizon",
+  "description": "An elegant, Zen Minimalist organizer for multi-generational wealth tracking, visual allowance logs, and compound interest interactive projections, with complete blueprint mappings for Notion & Google Sheets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

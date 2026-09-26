@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-forest: #1B3A2D;
+  --color-brand-terracotta: #C4622D;
+  --color-brand-cream: #FAF7F2;
+  --color-brand-gold: #D4A843;
+  --color-brand-moss: #2A4E3F;
+  --color-brand-sand: #F2EFE8;
+  --color-brand-charcoal: #2C2724;
+}
+
+/* Custom scroll behavior and styling additions */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background-color: var(--color-brand-gold);
+  color: var(--color-brand-forest);
+}
+
+/* Natural Tones Custom Styling & Layout Classes */
+.natural-tones-nav-border {
+  border-bottom: 1px solid rgba(212, 168, 67, 0.35);
+}
+
+.natural-tones-hero-title {
+  border-left: 4px solid var(--color-brand-gold);
+  padding-left: 24px;
+}
+
+.natural-tones-section-title {
+  font-family: var(--font-serif);
+  color: var(--color-brand-terracotta);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.natural-tones-section-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--color-brand-gold);
+  opacity: 0.5;
+}
+
+.natural-tones-pillar-card {
+  border-top: 3px solid var(--color-brand-forest) !important;
+  border-radius: 4px !important;
+}
+
+.natural-tones-program-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.natural-tones-program-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--color-brand-terracotta);
+  z-index: 10;
+}
+
+.natural-tones-accent-stamp {
+  width: 104px;
+  height: 104px;
+  border: 1px solid var(--color-brand-gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-brand-gold);
+  transform: rotate(-15deg);
+  font-family: var(--font-mono);
+  font-weight: 500;
+  background-color: rgba(27, 58, 45, 0.2);
+  line-height: 1.4;
+}

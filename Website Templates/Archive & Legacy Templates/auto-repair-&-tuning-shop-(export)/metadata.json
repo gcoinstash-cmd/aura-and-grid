@@ -1,0 +1,6 @@
+{
+  "name": "Auto Repair & Tuning Shop",
+  "description": "Premium modern conversion-optimized landing page, interactive booking dashboard, live repair status tracker, and pricing matrices for high-end auto repair and custom tuning shops.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

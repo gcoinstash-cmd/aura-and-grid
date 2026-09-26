@@ -1,0 +1,6 @@
+{
+  "name": "Legacy OS",
+  "description": "Elite operational and wealth workspace for high-ticket entrepreneurs, creators, and agency owners.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

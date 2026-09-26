@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-bronze-light: #A38E6B;
+  --color-bronze-dark: #6D5B41;
+  --color-bone: #FAF8F5;
+  --color-stone-light: #F4F1EC;
+  --color-stone-base: #ECE7DF;
+  --color-stone-dark: #D9D2C5;
+  --color-graphite-light: #444444;
+  --color-graphite-dark: #1A1A1A;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-bone);
+    color: var(--color-graphite-dark);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Thin elegant scrollbar congruent with blueprint theme */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-bone);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-stone-dark);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-bronze-light);
+  }
+}
+
+/* Dynamic grid line overlay */
+.bg-grid-lines {
+  background-image: linear-gradient(to right, rgba(140, 122, 91, 0.04) 1px, transparent 1px);
+  background-size: 8.333333% 100%;
+}
+
+.bg-blueprint-grid {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+

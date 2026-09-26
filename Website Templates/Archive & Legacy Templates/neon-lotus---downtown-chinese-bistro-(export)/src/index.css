@@ -1,0 +1,69 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  /* Typography */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  /* Semantic Brand Palette */
+  --color-neon-blue: var(--color-brand-accent-1, #00f2ff);
+  --color-neon-red: var(--color-brand-accent-2, #ff3e3e);
+  --color-neon-pink: var(--color-brand-accent-3, #f24be1);
+  
+  /* Core Surfaces */
+  --color-charcoal: var(--color-charcoal, #121212);
+  --color-bone: var(--color-bone, #f5f5f0);
+
+  /* Animation Tokens */
+  --animation-shimmer: shimmer 2.5s infinite linear;
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+}
+
+@layer base {
+  :root {
+    /* Commercial Customization Layer: These variables allow easy theme swapping for buyers */
+    --color-brand-accent-1: #00f2ff; /* Primary Neon */
+    --color-brand-accent-2: #ff3e3e; /* Secondary/Warning Neon */
+    --color-brand-accent-3: #f24be1; /* Tertiary/Highlight Neon */
+    --color-surface-bg: #121212;
+    --color-surface-text: #f5f5f0;
+  }
+
+  body {
+    @apply bg-charcoal text-bone font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .animate-shimmer {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.05) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 200% 100%;
+    animation: var(--animation-shimmer);
+  }
+
+  /* High-fidelity Glow Effects */
+  .text-glow-blue {
+    text-shadow: 0 0 10px rgba(0, 242, 255, 0.5), 0 0 20px rgba(0, 242, 255, 0.3);
+  }
+  .text-glow-red {
+    text-shadow: 0 0 10px rgba(255, 62, 62, 0.5), 0 0 20px rgba(255, 62, 62, 0.3);
+  }
+  
+  @media (max-width: 768px) {
+    .text-glow-blue {
+      text-shadow: 0 0 4px rgba(0, 242, 255, 0.15);
+    }
+    .text-glow-red {
+      text-shadow: 0 0 4px rgba(255, 62, 62, 0.15);
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Remix: Yugen Template",
+  "description": "An elite, ultra-luxury, zen-minimalist landing page and booking template for high-end dining sanctuaries, private Omakase bars, and sensory culinary experiences.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

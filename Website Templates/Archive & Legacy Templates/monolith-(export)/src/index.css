@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Cormorant Garamond", serif;
+  --font-mono: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-brand-olive: #8b947c;
+  --color-brand-gold: #c3b091;
+  --color-brand-sand: #d1c7bd;
+  --color-brand-charcoal: #0a0a0a;
+  --color-brand-graphite: #121212;
+  --color-brand-silver: #a3a3a3;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #050505;
+  color: #f5f5f5;
+  font-family: var(--font-sans);
+}
+
+/* Custom subtle high-end scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-container:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
+/* Minimal styling utilities for editorial alignment */
+.editorial-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* Custom premium scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090d12;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Ambient glow subtle animations */
+@keyframes breathingGlow {
+  0%, 100% {
+    opacity: 0.15;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.25;
+    transform: scale(1.08);
+  }
+}
+
+.animate-glow-slow {
+  animation: breathingGlow 12s ease-in-out infinite;
+}
+
+/* Base application window overrides for luxury dark-mode integrity */
+html, body {
+  background-color: #020617; /* bg-slate-950 */
+  color: #e2e8f0;            /* slate-200 */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overscroll-behavior: none; /* Disable elastic rubber-banding scroll actions */
+  -webkit-tap-highlight-color: transparent; /* Remove default blue tap overlay on mobile */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Immersive canvas text selection styling */
+::selection {
+  background-color: rgba(245, 158, 11, 0.15); /* Soft premium amber highlight tint */
+  color: #ffffff;
+}
+
+/* Clean, non-disruptive keyboard focus indicator */
+*:focus-visible {
+  outline: 1px solid rgba(245, 158, 11, 0.4);
+  outline-offset: 2px;
+}
+

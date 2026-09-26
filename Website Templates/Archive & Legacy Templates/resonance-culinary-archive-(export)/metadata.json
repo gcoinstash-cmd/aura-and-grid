@@ -1,0 +1,6 @@
+{
+  "name": "Resonance Culinary Archive",
+  "description": "An ultra-premium, high-end editorial culinary magazine and sensory presentation celebrating historic Black American foodways, private supper clubs, and curated gastronomic curation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

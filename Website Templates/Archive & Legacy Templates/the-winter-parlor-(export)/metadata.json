@@ -1,0 +1,6 @@
+{
+  "name": "Boutique Dining Configurator",
+  "description": "A luxury editorial, zen-minimalist boutique dining design system and theme config.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

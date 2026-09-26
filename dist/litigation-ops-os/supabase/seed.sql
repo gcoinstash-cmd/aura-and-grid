@@ -1,0 +1,13 @@
+-- LITIGATION OPS OS Sample Seed Data
+
+INSERT INTO public.litigation_dockets (case_name, jurisdiction, claim_amount, stage, trial_date, lead_counsel, status, key_issues, image_url)
+VALUES
+('Vanguard Energy Corp v. Apex Petrochemical Global', 'U.S. DISTRICT COURT // S.D.N.Y.', '$185,000,000 Damages Claim', 'Expert Witness Discovery & Daubert Sprints', 'November 2026 Trial Setting', 'Sullivan & Vance LLP (Special Trial Counsel)', 'WAR ROOM ACTIVE // FAST TRACK', '["Breach of Long-Term Supply Agreement", "Trade Secret Misappropriation (Offshore Refineries)", "Forensic Accounting Expert Report Exchanged", "Motion to Compel Unredacted Executive SMS Granted"]'::jsonb, 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80'),
+('In re: Sovereign Cloudworks Governance Litigation', 'DELAWARE COURT OF CHANCERY', '$240,000,000 Derivative Action', 'Special Litigation Committee & Dispositive Motions', 'February 2027 Hearing Window', 'Chancery Trial Advocates PLLC', 'MEDIATION PROTOCOL ACTIVE', '["Breach of Fiduciary Duty of Loyalty (Controller Buyout)", "Valuation Discount Forensics (Fairness Opinion Audit)", "Deposition of Board Audit Chair Completed", "Confidential Data Room Access Under Protective Order"]'::jsonb, 'https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?auto=format&fit=crop&w=800&q=80'),
+('NeuralTech IP Holdings v. Quantum Systems Inc.', 'U.S. DISTRICT COURT // W.D. TEX. (PATENT DOCKET)', '$155,000,000 Royalty & Injunction', 'Markman Claim Construction Order Issued', 'January 2027 Jury Trial', 'Apex IP Trial Litigators', 'MARKMAN VICTORY // 4 OF 4 CLAIMS', '["Hardware Accelerator Architecture Infringement", "Willful Infringement Treble Damages Exposure", "Source Code Inspection Completed Under Clean Room", "Foreign Companion Action In Unified Patent Court (Munich)"]'::jsonb, 'https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80');
+
+INSERT INTO public.ediscovery_documents (bates_range, document_title, custodian, hash_sha256, privilege_status)
+VALUES
+('APX-0014890 - APX-0014920', 'Executive Strategy Memorandum (Project Vulcan)', 'Chief Executive Officer', 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'PRODUCED UNREDACTED'),
+('APX-0021045 - APX-0021080', 'Internal Board Audit Findings on Supply Disruptions', 'General Counsel', 'ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb', 'PRIVILEGED - REDACTED'),
+('APX-0033100 - APX-0033150', 'Forensic Accounting Damage Assessment Workpapers', 'Expert Forensic CPA', '3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d', 'EXPERT REPORT');

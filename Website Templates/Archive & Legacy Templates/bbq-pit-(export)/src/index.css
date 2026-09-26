@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  
+  --color-charcoal: #0f0f0f;
+  --color-patina: #5D8B8B;
+  --color-burnt-orange: #d17a22;
+  --color-cloud-dancer: #f0ece2;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-charcoal text-cloud-dancer/80 font-sans selection:bg-patina/30;
+  }
+}
+
+/* Custom sleek scrollbar for Dark Premium Smokehouse */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f0f0f;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e1e1e;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5D8B8B;
+}
+
+.glass {
+  @apply bg-white/5 backdrop-blur-md border border-cloud-dancer/10;
+}
+
+/* Custom Native Date & Time Picker Styling for Dark Premium Smokehouse */
+input[type="date"],
+input[type="time"] {
+  position: relative;
+  min-height: 3.5rem;
+}
+
+/* Make sure the native text aligns and has premium coloring */
+input[type="date"]::-webkit-datetime-edit,
+input[type="time"]::-webkit-datetime-edit {
+  color: #f0ece2;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+}
+
+/* Subtle placeholder state when not filled or selected */
+input[type="date"]:invalid::-webkit-datetime-edit,
+input[type="time"]:invalid::-webkit-datetime-edit {
+  color: rgba(240, 236, 226, 0.4);
+}
+
+/* style the picker arrow/icon gracefully inside dark background */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(59%) sepia(17%) saturate(542%) hue-rotate(130deg) brightness(91%) contrast(85%); /* Maps black to Patina #5D8B8B */
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  padding: 4px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover,
+input[type="time"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}
+
+/* Style field separator slashes/colons nicely */
+input[type="date"]::-webkit-datetime-edit-text,
+input[type="time"]::-webkit-datetime-edit-text {
+  color: rgba(240, 236, 226, 0.3);
+  padding: 0 0.125rem;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.section-spacing {
+  @apply py-24 md:py-32;
+}

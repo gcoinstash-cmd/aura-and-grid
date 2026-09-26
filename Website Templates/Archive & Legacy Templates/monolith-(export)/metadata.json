@@ -1,0 +1,6 @@
+{
+  "name": "Monolith",
+  "description": "Premium one-page website template for PR agencies, communications consultancies, and executive visibility firms built with a dark editorial aesthetic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

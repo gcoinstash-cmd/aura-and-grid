@@ -1,0 +1,6 @@
+{
+  "name": "Little Roots Learning Center",
+  "description": "Premium culturally affirming daycare center in Los Angeles for the next generation of greatness, offering infant care, toddler discovery, and Pre-K academy programs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  /* Rich Agave: Dusty sage & succulent green */
+  --color-agave-50: #F2F6F3;
+  --color-agave-100: #E1E9E4;
+  --color-agave-200: #C3D2CB;
+  --color-agave-300: #A3BAB0;
+  --color-agave-400: #7E9D8F;
+  --color-agave-500: #5F7F70;
+  --color-agave-600: #4B6559;
+  --color-agave-700: #394C43;
+  --color-agave-800: #28352F;
+  --color-agave-950: #121916;
+  
+  /* Smoky Chipotle: Smoked brick red & roasted terracotta */
+  --color-chipotle-50: #FAF4F2;
+  --color-chipotle-100: #F5E8E4;
+  --color-chipotle-400: #D68870;
+  --color-chipotle-500: #BC5639;
+  --color-chipotle-600: #9C4329;
+  --color-chipotle-700: #7C321C;
+  --color-chipotle-950: #33130A;
+  
+  /* Deep Earthy Grounds */
+  --color-obsidian: #0D0C0B;
+  --color-charcoal: #171513;
+  
+  /* Editorial Earth & Sand: Linen whites, soft sands, warm barks, and roasted loam */
+  --color-zinc-50: #FAF9F6;
+  --color-zinc-100: #F4EFE6;
+  --color-zinc-200: #EADFCD;
+  --color-zinc-300: #D6C7B1;
+  --color-zinc-400: #BAAA91;
+  --color-zinc-500: #988771;
+  --color-zinc-600: #766856;
+  --color-zinc-700: #574D3F;
+  --color-zinc-800: #3F382E;
+  --color-zinc-850: #2E2822;
+  --color-zinc-900: #1D1B18;
+  --color-zinc-950: #11100F;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-obsidian);
+    color: var(--color-zinc-300);
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom scrollbar for premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-obsidian);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-zinc-800);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-zinc-700);
+}
+

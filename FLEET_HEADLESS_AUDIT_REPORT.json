@@ -1,0 +1,235 @@
+[
+  {
+    "id": 1,
+    "name": "STRIDE MB",
+    "url": "https://stride-manhattan-beach.onrender.com",
+    "admin_url": "https://stride-manhattan-beach.onrender.com/admin",
+    "archetype": "A",
+    "http_status": 200,
+    "root_font_size": "18px",
+    "body_font_size": "20.25px",
+    "anchor_issues": [],
+    "overflow_mobile": false,
+    "admin_passkey_found": true,
+    "console_errors": [],
+    "axe_violations": [],
+    "verdict": "PASS",
+    "p0_issues": [],
+    "p1_issues": []
+  },
+  {
+    "id": 2,
+    "name": "THE VAULT",
+    "url": "https://the-vault-studio.onrender.com",
+    "admin_url": "https://the-vault-studio.onrender.com/admin",
+    "archetype": "B",
+    "http_status": 200,
+    "root_font_size": "16px",
+    "body_font_size": "18px",
+    "anchor_issues": [],
+    "overflow_mobile": false,
+    "admin_passkey_found": true,
+    "console_errors": [],
+    "axe_violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "count": 3
+      }
+    ],
+    "verdict": "NEEDS_POLISH",
+    "p0_issues": [],
+    "p1_issues": [
+      "Axe severe accessibility violations: color-contrast"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "VELOCITY",
+    "url": "https://velocity-exotic-fleet.onrender.com",
+    "admin_url": "https://velocity-exotic-fleet.onrender.com/admin",
+    "archetype": "A",
+    "http_status": 200,
+    "root_font_size": "16px",
+    "body_font_size": "18px",
+    "anchor_issues": [],
+    "overflow_mobile": false,
+    "admin_passkey_found": true,
+    "console_errors": [],
+    "axe_violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "count": 3
+      }
+    ],
+    "verdict": "NEEDS_POLISH",
+    "p0_issues": [],
+    "p1_issues": [
+      "Axe severe accessibility violations: color-contrast"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "APEX CLUB",
+    "url": "https://apex-fight-club.onrender.com",
+    "admin_url": "https://apex-fight-club.onrender.com/admin",
+    "archetype": "D",
+    "http_status": 200,
+    "root_font_size": "16px",
+    "body_font_size": "16px",
+    "anchor_issues": [],
+    "overflow_mobile": true,
+    "admin_passkey_found": true,
+    "console_errors": [],
+    "axe_violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "count": 6
+      },
+      {
+        "id": "image-alt",
+        "impact": "critical",
+        "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+        "count": 3
+      }
+    ],
+    "verdict": "NEEDS_POLISH",
+    "p0_issues": [],
+    "p1_issues": [
+      "Axe severe accessibility violations: color-contrast, image-alt",
+      "Horizontal overflow detected at 375px mobile viewport"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "ELEVATE CAPITAL",
+    "url": "https://elevate-capital-os.onrender.com",
+    "admin_url": "https://elevate-capital-os.onrender.com",
+    "archetype": "C",
+    "http_status": 200,
+    "root_font_size": "18px",
+    "body_font_size": "15.75px",
+    "anchor_issues": [],
+    "overflow_mobile": false,
+    "admin_passkey_found": false,
+    "console_errors": [],
+    "axe_violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "count": 48
+      },
+      {
+        "id": "label",
+        "impact": "critical",
+        "description": "Ensure every form element has a label",
+        "count": 3
+      }
+    ],
+    "verdict": "NEEDS_POLISH",
+    "p0_issues": [],
+    "p1_issues": [
+      "Axe severe accessibility violations: color-contrast, label",
+      "1-click demo passkey auto-fill button not detected on /admin route"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "OBSIDIAN LAB",
+    "url": "https://obsidian-slow-bar.onrender.com",
+    "admin_url": "https://obsidian-slow-bar.onrender.com",
+    "archetype": "D",
+    "http_status": 200,
+    "root_font_size": "16px",
+    "body_font_size": "16px",
+    "anchor_issues": [],
+    "overflow_mobile": false,
+    "admin_passkey_found": true,
+    "console_errors": [],
+    "axe_violations": [
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "description": "Ensure buttons have discernible text",
+        "count": 2
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "count": 20
+      },
+      {
+        "id": "select-name",
+        "impact": "critical",
+        "description": "Ensure select element has an accessible name",
+        "count": 9
+      }
+    ],
+    "verdict": "NEEDS_POLISH",
+    "p0_issues": [],
+    "p1_issues": [
+      "Axe severe accessibility violations: button-name, color-contrast, select-name"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "THE ENCLAVE",
+    "url": "https://the-enclave-villas.onrender.com",
+    "admin_url": "https://the-enclave-villas.onrender.com/admin",
+    "archetype": "E",
+    "http_status": 200,
+    "root_font_size": "16px",
+    "body_font_size": "14px",
+    "anchor_issues": [],
+    "overflow_mobile": false,
+    "admin_passkey_found": true,
+    "console_errors": [],
+    "axe_violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "count": 11
+      }
+    ],
+    "verdict": "NEEDS_POLISH",
+    "p0_issues": [],
+    "p1_issues": [
+      "Axe severe accessibility violations: color-contrast"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "AURA MEDSPA",
+    "url": "https://aura-medspa-os.onrender.com",
+    "admin_url": "https://aura-medspa-os.onrender.com/admin",
+    "archetype": "C",
+    "http_status": 200,
+    "root_font_size": "18px",
+    "body_font_size": "20.25px",
+    "anchor_issues": [],
+    "overflow_mobile": false,
+    "admin_passkey_found": true,
+    "console_errors": [],
+    "axe_violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "count": 10
+      }
+    ],
+    "verdict": "NEEDS_POLISH",
+    "p0_issues": [],
+    "p1_issues": [
+      "Axe severe accessibility violations: color-contrast"
+    ]
+  }
+]

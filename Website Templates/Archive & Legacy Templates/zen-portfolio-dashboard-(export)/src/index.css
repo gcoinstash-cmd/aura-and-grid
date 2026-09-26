@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-brand-bg: var(--bg-color);
+  --color-brand-primary: #059669;
+  --color-brand-secondary: #0F172A;
+  --color-brand-card: var(--card-color);
+  --color-brand-border: var(--border-color);
+  --color-brand-text: var(--text-color);
+  --color-brand-text-muted: var(--text-muted-color);
+  --color-brand-text-heading: var(--text-heading-color);
+}
+
+:root {
+  --bg-color: #F8FAFC;
+  --card-color: #FFFFFF;
+  --border-color: #E2E8F0;
+  --text-color: #1E293B;
+  --text-muted-color: #94A3B8;
+  --text-heading-color: #0F172A;
+}
+
+.dark {
+  --bg-color: #0E1117;
+  --card-color: #161B22;
+  --border-color: #30363D;
+  --text-color: #E6EDF3;
+  --text-muted-color: #8B949E;
+  --text-heading-color: #FAFAFA;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-bg text-brand-text font-sans antialiased transition-colors duration-500;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    padding: 0 !important;
+  }
+  .zen-card {
+    box-shadow: none !important;
+    border: 1px solid #E2E8F0 !important;
+    break-inside: avoid;
+  }
+}
+
+.zen-card {
+  @apply bg-brand-card border border-brand-border rounded-2xl p-6 shadow-sm transition-all duration-300 hover:shadow-md hover:border-brand-primary/20;
+}
+
+.zen-metric-label {
+  @apply text-[10px] font-bold uppercase tracking-widest text-brand-text-muted mb-1;
+}
+
+.zen-metric-value {
+  @apply text-3xl font-display font-semibold text-brand-text-heading;
+}

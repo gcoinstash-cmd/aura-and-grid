@@ -1,0 +1,6 @@
+{
+  "name": "Omakase & Counter",
+  "description": "An elegant, zen-minimalist digital asset representing the ultra-luxury hospitality and culinary craft of Omakase & Counter.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,2271 @@
+/* ==========================================================================
+   Import Web Fonts
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ==========================================================================
+   CSS Custom Properties (Variables)
+   ========================================================================== */
+:root {
+  /* Colors - Luxury Modern Italian Theme */
+  --color-bg: #FCFBF9;                      /* Crisp non-pure Italian warm white */
+  --color-bg-alt: #F4F0E8;                  /* Slightly deeper cream for transitions */
+  --color-primary-dark: #1E1E1E;            /* Luxurious charcoal black */
+  --color-primary-muted: #5E5B54;          /* Warm earthy stone gray */
+  --color-accent-red: #D13B2E;              /* Vibrant classic Neapolitan tomato red */
+  --color-accent-red-hover: #AF291D;
+  --color-accent-red-light: #FBF0EF;
+  --color-secondary-olive: #3C4A3E;         /* Luxurious deep olive green */
+  --color-secondary-olive-hover: #2B352C;
+  --color-secondary-olive-light: #ECEFEF;
+  --color-card-bg: #FFFFFF;
+  --color-card-border: #E8E3D7;             /* Subtle warm grout/stone outline */
+  --color-gold: #C29E57;                    /* Rich olive-gold accent for details */
+  --color-success: #2A6F3C;                 /* Sweet basil leaf green */
+  --color-success-light: #EEF7F0;
+  --color-white: #FFFFFF;
+
+  /* Typography */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Spacing System */
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-xxl: 3rem;
+  --space-xxxl: 4.5rem;
+
+  /* Borders & Radius */
+  --radius-xs: 2px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-circle: 50%;
+  --radius-pill: 9999px;
+  --border-thin: 1px solid var(--color-card-border);
+  --border-thick: 2px solid var(--color-primary-dark);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(30, 30, 30, 0.04);
+  --shadow-md: 0 8px 16px rgba(30, 30, 30, 0.06);
+  --shadow-lg: 0 16px 32px rgba(30, 30, 30, 0.1);
+  --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ==========================================================================
+   Base styles & Resets
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root, .parlor {
+  height: auto !important;
+  min-height: 100% !important;
+  overflow: visible !important;
+  background-color: var(--color-bg) !important;
+}
+
+body {
+  color: var(--color-primary-dark);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Heading Typography rules */
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+/* ==========================================================================
+   BLOCK: Parlor (Application Layout Wrapper)
+   ========================================================================== */
+.parlor {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: var(--space-md) var(--space-md) var(--space-xxl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.parlor__header-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  border-bottom: var(--border-thin);
+  padding-bottom: var(--space-md);
+}
+
+.parlor__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+@media (min-width: 1024px) {
+  .parlor__container {
+    grid-template-columns: 1.4fr 0.6fr; /* Elegant fluid proportions */
+  }
+}
+
+.parlor__main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.parlor__sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  background-color: var(--color-card-bg);
+  border: var(--border-thin);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: var(--space-md);
+}
+
+/* ==========================================================================
+   BLOCK: Brand Header 
+   ========================================================================== */
+.brand-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.brand-header__logo-block {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.brand-header__symbol {
+  width: 44px;
+  height: 44px;
+  background-color: var(--color-accent-red);
+  border-radius: var(--radius-circle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 2px solid var(--color-secondary-olive);
+}
+
+.brand-header__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-header__title {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--color-primary-dark);
+}
+
+.brand-header__tagline {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-primary-muted);
+}
+
+.brand-header__meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.brand-header__stat-pill {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-xs) var(--space-sm);
+  background-color: var(--color-bg-alt);
+  border-radius: var(--radius-pill);
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--color-primary-muted);
+  border: var(--border-thin);
+}
+
+.brand-header__stat-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-circle);
+  background-color: var(--color-success);
+  display: inline-block;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.3); opacity: 0.6; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* ==========================================================================
+   BLOCK: Hero Banner
+   ========================================================================== */
+.hero-banner {
+  background-color: var(--color-secondary-olive);
+  color: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl) var(--space-lg);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .hero-banner {
+    grid-template-columns: 1.2fr 1fr;
+    padding: var(--space-xxl) var(--space-xl);
+  }
+}
+
+/* Ornamental flourishes for modern classic Italian feel */
+.hero-banner::before {
+  content: "PIZZA ARTIGIANALE";
+  position: absolute;
+  top: 5px;
+  right: -30px;
+  font-size: 4.5rem;
+  font-family: var(--font-serif);
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  color: rgba(255, 255, 255, 0.03);
+  writing-mode: vertical-rl;
+  pointer-events: none;
+}
+
+.hero-banner__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  z-index: 2;
+}
+
+.hero-banner__badge {
+  align-self: flex-start;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold);
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.hero-banner__title {
+  font-size: 2.2rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+@media (min-width: 768px) {
+  .hero-banner__title {
+    font-size: 3rem;
+  }
+}
+
+.hero-banner__title-accent {
+  color: var(--color-accent-red);
+  font-style: italic;
+}
+
+.hero-banner__desc {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 480px;
+}
+
+.hero-banner__cta-row {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: var(--space-sm);
+}
+
+.hero-banner__btn {
+  padding: 10px 20px;
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: var(--transition-fast);
+}
+
+.hero-banner__btn--primary {
+  background-color: var(--color-accent-red);
+  color: var(--color-white);
+}
+
+.hero-banner__btn--primary:hover {
+  background-color: var(--color-accent-red-hover);
+}
+
+.hero-banner__btn--secondary {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--color-white);
+}
+
+.hero-banner__btn--secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: var(--color-white);
+}
+
+.hero-banner__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-banner__donut-ring {
+  width: 220px;
+  height: 220px;
+  border: 2px dashed rgba(194, 158, 87, 0.4);
+  border-radius: var(--radius-circle);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotateSlow 24s linear infinite;
+}
+
+@keyframes rotateSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.hero-banner__pizza-graphic {
+  width: 170px;
+  height: 170px;
+  background: radial-gradient(circle, var(--color-accent-red) 60%, var(--color-gold) 65%, #DFB474 100%);
+  border-radius: var(--radius-circle);
+  position: absolute;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  border: 4px solid var(--color-primary-dark);
+}
+
+.hero-banner__basil-leaf {
+  position: absolute;
+  background-color: var(--color-success);
+  width: 14px;
+  height: 28px;
+  border-radius: 50% 0 / 50% 0;
+  transform: rotate(45deg);
+}
+
+.hero-banner__basil-leaf--1 { top: 40px; left: 50px; }
+.hero-banner__basil-leaf--2 { top: 120px; left: 130px; transform: rotate(-75deg); }
+.hero-banner__basil-leaf--3 { top: 90px; left: 30px; transform: rotate(180deg); }
+
+
+/* ==========================================================================
+   BLOCK: Navigation Tabs
+   ========================================================================== */
+.pizzeria-tabs {
+  display: flex;
+  border-bottom: var(--border-thin);
+  gap: var(--space-md);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.pizzeria-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.pizzeria-tabs__trigger {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  padding: var(--space-sm) var(--space-xs);
+  color: var(--color-primary-muted);
+  position: relative;
+  transition: var(--transition-fast);
+  white-space: nowrap;
+}
+
+.pizzeria-tabs__trigger:hover {
+  color: var(--color-primary-dark);
+}
+
+.pizzeria-tabs__trigger--active {
+  color: var(--color-accent-red);
+  font-weight: 500;
+}
+
+.pizzeria-tabs__trigger--active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  background-color: var(--color-accent-red);
+}
+
+
+/* ==========================================================================
+   BLOCK: Artisan Menu Section
+   ========================================================================== */
+.artisan-menu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.artisan-menu__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.artisan-menu__filter-btn {
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  background-color: var(--color-bg-alt);
+  border: 1px solid transparent;
+  color: var(--color-primary-muted);
+  transition: var(--transition-fast);
+}
+
+.artisan-menu__filter-btn:hover {
+  background-color: var(--color-card-border);
+  color: var(--color-primary-dark);
+}
+
+.artisan-menu__filter-btn--active {
+  background-color: var(--color-secondary-olive);
+  color: var(--color-white);
+  font-weight: 500;
+}
+
+.artisan-menu__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+@media (min-width: 640px) {
+  .artisan-menu__grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
+/* ==========================================================================
+   BLOCK: Pizza Card Component 
+   ========================================================================== */
+.pizza-card {
+  background-color: var(--color-card-bg);
+  border: var(--border-thin);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color var(--transition-fast), box-shadow var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.pizza-card--hidden {
+  opacity: 0 !important;
+  transform: scale(0.92) !important;
+  pointer-events: none;
+}
+
+.pizza-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-gold);
+}
+
+.pizza-card__media {
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-bg-alt);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pizza-card__img-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.pizza-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-slow);
+}
+
+.pizza-card:hover .pizza-card__image {
+  transform: scale(1.05);
+}
+
+/* Fallback vector image for pizza card */
+.pizza-card__graphics-fallback {
+  width: 130px;
+  height: 130px;
+  background: radial-gradient(circle, #DF3828 50%, #E8B964 100%);
+  border-radius: var(--radius-circle);
+  border: 4px solid var(--color-secondary-olive);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+}
+
+.pizza-card__badges {
+  position: absolute;
+  top: var(--space-sm);
+  left: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xxs);
+  z-index: 2;
+}
+
+.pizza-card__badge-tag {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.pizza-card__badge-tag--vegan {
+  background-color: #2F6B3E; /* Soft emerald */
+}
+
+.pizza-card__badge-tag--spicy {
+  background-color: var(--color-accent-red);
+}
+
+.pizza-card__badge-tag--veg {
+  background-color: #557A3C;
+}
+
+.pizza-card__badge-tag--gf {
+  background-color: var(--color-gold);
+}
+
+.pizza-card__header-price {
+  position: absolute;
+  bottom: var(--space-sm);
+  right: var(--space-sm);
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.pizza-card__content {
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: var(--space-xs);
+}
+
+.pizza-card__titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.pizza-card__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-primary-dark);
+}
+
+.pizza-card__italian-name {
+  font-family: var(--font-serif);
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--color-primary-muted);
+}
+
+.pizza-card__desc {
+  font-size: 0.82rem;
+  color: var(--color-primary-muted);
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.pizza-card__footer {
+  margin-top: var(--space-sm);
+  border-top: 1px dashed var(--color-card-border);
+  padding-top: var(--space-sm);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pizza-card__price-tag {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--color-accent-red);
+}
+
+.pizza-card__button {
+  background-color: var(--color-secondary-olive);
+  color: var(--color-white);
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  transition: var(--transition-fast);
+}
+
+.pizza-card__button:hover {
+  background-color: var(--color-secondary-olive-hover);
+}
+
+
+/* ==========================================================================
+   BLOCK: Artisan Pizza Lab (Interactive Builder)
+   ========================================================================== */
+.builder {
+  background-color: var(--color-card-bg);
+  border: var(--border-thin);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 840px) {
+  .builder {
+    grid-template-columns: 1fr 1.11fr;
+    padding: var(--space-lg);
+  }
+}
+
+.builder__canvas-pane {
+  background-color: var(--color-bg-alt);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 340px;
+  position: relative;
+  border: 1px solid rgba(30, 30, 30, 0.04);
+}
+
+.builder__canvas-title {
+  position: absolute;
+  top: var(--space-md);
+  left: var(--space-md);
+  display: flex;
+  flex-direction: column;
+}
+
+.builder__canvas-heading {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+}
+
+.builder__canvas-subheading {
+  font-size: 0.7rem;
+  font-family: var(--font-mono);
+  color: var(--color-primary-muted);
+  text-transform: uppercase;
+}
+
+/* The visual wood platter */
+.builder__platter {
+  width: 250px;
+  height: 250px;
+  background-color: #C39967;
+  border-radius: var(--radius-circle);
+  box-shadow: 0 10px 25px rgba(30, 30, 30, 0.15), inset 0 2px 6px rgba(255,255,255,0.2);
+  border: 4px solid #AF8351;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .builder__platter {
+    width: 270px;
+    height: 270px;
+  }
+}
+
+/* Pizza Crust */
+.builder__crust {
+  width: 90%;
+  height: 90%;
+  border-radius: var(--radius-circle);
+  background: radial-gradient(circle, #F1D4A6 60%, #DFB77D 80%, #C99147 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform var(--transition-normal);
+}
+
+/* Modifiers for Crust Styles */
+.builder__crust--gluten-free {
+  border: 3px dashed var(--color-gold);
+}
+
+.builder__crust--thin-crispy {
+  transform: scale(0.96);
+}
+
+/* Pizza Sauce Base overlay */
+.builder__sauce-layer {
+  width: 82%;
+  height: 82%;
+  border-radius: var(--radius-circle);
+  position: absolute;
+  z-index: 1;
+  transition: var(--transition-normal);
+  box-shadow: inset 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.builder__sauce-layer--san-marzano {
+  background-color: #C12A1F; /* Vivid deep tomato */
+  background-image: radial-gradient(#C12A1F 60%, #E0352A 90%);
+}
+
+.builder__sauce-layer--bianco-cream {
+  background-color: #FAF2DF; /* White cream base */
+  border: 1px solid #EFE4CC;
+}
+
+.builder__sauce-layer--basil-pesto {
+  background-color: #557139; /* Rich herbal green */
+  background-image: radial-gradient(#557139 60%, #688C45 90%);
+}
+
+.builder__sauce-layer--none {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* Pizza Cheese Base overlay */
+.builder__cheese-layer {
+  width: 76%;
+  height: 76%;
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.builder__cheese-spot {
+  position: absolute;
+  background-color: #FFFDF3;
+  width: 14px;
+  height: 12px;
+  border-radius: 40% 60% 50% 50% / 60% 40% 60% 40%;
+  box-shadow: 0 1.5px 3px rgba(30, 30, 30, 0.15);
+  animation: meltIn 0.4s ease-out forwards;
+}
+
+/* Melted cheese bubbles styling for different cheeses */
+.builder__cheese-spot--buffalo {
+  width: 22px;
+  height: 19px;
+  background-color: #FFFFFA;
+  box-shadow: 0 2px 4px rgba(30, 30, 30, 0.2);
+}
+
+.builder__cheese-spot--gorgonzola {
+  width: 13px;
+  height: 11px;
+  background-color: #E8ECE3;
+  border: 1px dashed #A4C1B6;
+}
+
+.builder__cheese-spot--vegan {
+  width: 15px;
+  height: 10px;
+  background-color: #FAF4DE;
+}
+
+@keyframes meltIn {
+  from { transform: scale(0.2); opacity: 0; }
+  to { transform: scale(1); opacity: 0.95; }
+}
+
+/* Floating Ingredient dot overlays */
+.builder__topping-spot {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-circle);
+  z-index: 3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  animation: dropTopping 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes dropTopping {
+  0% { transform: translateY(-30px) scale(1.6); opacity: 0; }
+  100% { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+/* Custom visual icons for various topping types on pizza canvas */
+.builder__topping-spot--prosciutto {
+  background: linear-gradient(135deg, #DF7169 0%, #B53F38 100%);
+  width: 26px;
+  height: 12px;
+  border-radius: var(--radius-pill);
+}
+
+.builder__topping-spot--salami {
+  background: radial-gradient(circle, #A51A12 40%, #82100A 100%);
+  border: 1px dotted #DDC08E;
+  width: 18px;
+  height: 18px;
+}
+
+.builder__topping-spot--basil {
+  background-color: #3B753A;
+  border-radius: 50% 0 / 50% 0;
+  width: 12px;
+  height: 20px;
+  transform: rotate(35deg);
+}
+
+.builder__topping-spot--mushroom {
+  background-color: #DFDAD3;
+  border: 1px solid #AEA79B;
+  width: 15px;
+  height: 11px;
+  border-radius: 8px 8px 3px 3px;
+}
+
+.builder__topping-spot--onion {
+  background-color: transparent;
+  border: 2.5px solid #84305D;
+  border-radius: var(--radius-circle);
+  width: 16px;
+  height: 16px;
+}
+
+.builder__topping-spot--olives {
+  background-color: #1A1A1A;
+  border-radius: var(--radius-circle);
+  border: 1px solid #4F4F4F;
+  width: 10px;
+  height: 10px;
+}
+
+.builder__topping-spot--truffle {
+  background-color: rgba(194, 158, 87, 0.5);
+  border: 1px solid #C29E57;
+  width: 6px;
+  height: 6px;
+  box-shadow: none;
+}
+
+.builder__topping-spot--arugula {
+  background-color: #4C823B;
+  width: 6px;
+  height: 22px;
+  border-radius: var(--radius-pill);
+  transform: rotate(-15deg);
+}
+
+/* Canvas prices panel */
+.builder__price-badge {
+  position: absolute;
+  bottom: var(--space-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+/* Builder Control Panel Column */
+.builder__controls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  max-height: 520px;
+  overflow-y: auto;
+  padding-right: var(--space-xs);
+}
+
+.builder__controls::-webkit-scrollbar {
+  width: 4px;
+}
+.builder__controls::-webkit-scrollbar-thumb {
+  background-color: var(--color-card-border);
+  border-radius: var(--radius-pill);
+}
+
+.builder__group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.builder__group-heading {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-primary-muted);
+  border-bottom: 1px solid var(--color-card-border);
+  padding-bottom: 4px;
+}
+
+.builder__choices-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xs);
+}
+
+.builder__choices-grid--toppings {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.builder__choice-box {
+  background-color: var(--color-bg);
+  border: var(--border-thin);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm);
+  text-align: center;
+  transition: var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xxs);
+  cursor: pointer;
+}
+
+.builder__choice-box:hover {
+  border-color: var(--color-primary-dark);
+  background-color: var(--color-secondary-olive-light);
+}
+
+.builder__choice-box--selected {
+  border-color: var(--color-accent-red);
+  background-color: var(--color-accent-red-light);
+  box-shadow: 0 0 0 1px var(--color-accent-red);
+}
+
+.builder__choice-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-primary-dark);
+}
+
+.builder__choice-subtitle {
+  font-size: 0.65rem;
+  color: var(--color-primary-muted);
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+.builder__choice-price {
+  font-size: 0.72rem;
+  font-family: var(--font-mono);
+  color: var(--color-accent-red);
+}
+
+/* Custom interactive checkbox row for toppings list */
+.builder__topping-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-xs) var(--space-sm);
+  background-color: var(--color-bg);
+  border: var(--border-thin);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.builder__topping-row:hover {
+  background-color: var(--color-secondary-olive-light);
+  border-color: var(--color-secondary-olive);
+}
+
+.builder__topping-row--active {
+  background-color: var(--color-secondary-olive-light);
+  border-color: var(--color-secondary-olive);
+}
+
+.builder__topping-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.builder__topping-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-circle);
+}
+
+.builder__topping-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.builder__topping-title {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.builder__topping-italian {
+  font-family: var(--font-serif);
+  font-size: 0.68rem;
+  font-style: italic;
+  color: var(--color-primary-muted);
+}
+
+.builder__topping-price {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--color-accent-red);
+}
+
+.builder__submit-card {
+  border-top: 1px dashed var(--color-card-border);
+  padding-top: var(--space-md);
+  margin-top: var(--space-xs);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.builder__price-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.builder__summary-text {
+  font-size: 0.85rem;
+  color: var(--color-primary-muted);
+}
+
+.builder__summary-price {
+  font-size: 1.3rem;
+  font-family: var(--font-serif);
+  font-weight: bold;
+  color: var(--color-primary-dark);
+}
+
+.builder__add-btn {
+  background-color: var(--color-accent-red);
+  color: var(--color-white);
+  padding: 11px;
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  font-size: 0.85rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  transition: var(--transition-fast);
+}
+
+.builder__add-btn:hover {
+  background-color: var(--color-accent-red-hover);
+}
+
+
+/* ==========================================================================
+   BLOCK: Tavolo Reservation Form
+   ========================================================================== */
+.reservation-block {
+  background-color: var(--color-card-bg);
+  border: var(--border-thin);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  box-shadow: var(--shadow-sm);
+}
+
+@media (min-width: 768px) {
+  .reservation-block {
+    padding: var(--space-lg);
+  }
+}
+
+.reservation-block__heading {
+  margin-bottom: var(--space-xs);
+}
+
+.reservation-block__subtitle {
+  font-size: 0.85rem;
+  color: var(--color-primary-muted);
+  margin-bottom: var(--space-lg);
+}
+
+.reservation-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+@media (min-width: 640px) {
+  .reservation-form {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.reservation-form__group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xxs);
+}
+
+.reservation-form__group--full-width {
+  grid-column: 1 / -1;
+}
+
+.reservation-form__label {
+  font-size: 0.78rem;
+  font-family: var(--font-mono);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-primary-muted);
+}
+
+.reservation-form__input,
+.reservation-form__select,
+.reservation-form__textarea {
+  background-color: var(--color-bg);
+  border: var(--border-thin);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  font-size: 0.85rem;
+  color: var(--color-primary-dark);
+  transition: var(--transition-fast);
+}
+
+.reservation-form__input:focus,
+.reservation-form__select:focus,
+.reservation-form__textarea:focus {
+  border-color: var(--color-secondary-olive);
+  background-color: var(--color-white);
+  box-shadow: 0 0 0 3px var(--color-secondary-olive-light);
+}
+
+.reservation-form__textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Zone Seating selector with Cards */
+.reservation-zones {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xs);
+  margin-top: var(--space-xxs);
+}
+
+.reservation-zones__card {
+  background-color: var(--color-bg);
+  border: var(--border-thin);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm);
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.reservation-zones__card:hover {
+  background-color: var(--color-secondary-olive-light);
+  border-color: var(--color-secondary-olive);
+}
+
+.reservation-zones__card--selected {
+  background-color: var(--color-secondary-olive-light);
+  border-color: var(--color-secondary-olive);
+  box-shadow: 0 0 0 1px var(--color-secondary-olive);
+}
+
+.reservation-zones__title {
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.reservation-zones__desc {
+  font-size: 0.65rem;
+  color: var(--color-primary-muted);
+}
+
+.reservation-form__btn {
+  background-color: var(--color-secondary-olive);
+  color: var(--color-white);
+  padding: 12px;
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  font-size: 0.85rem;
+  text-align: center;
+  transition: var(--transition-fast);
+  border: none;
+  cursor: pointer;
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+}
+
+.reservation-form__btn:hover {
+  background-color: var(--color-secondary-olive-hover);
+}
+
+/* Elegant Reservation Ticket (Success View) */
+.reservation-ticket {
+  border: 1px solid #D2C8B4;
+  background-color: #FAF8F2;
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* Classic ticket jagged edge look in CSS */
+.reservation-ticket::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: repeating-linear-gradient(90deg, #D13B2E 0px, #D13B2E 10px, #3C4A3E 10px, #3C4A3E 20px, #FAF8F2 20px, #FAF8F2 30px);
+}
+
+.reservation-ticket__brand {
+  text-align: center;
+  margin-bottom: var(--space-md);
+}
+
+.reservation-ticket__pizzeria {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.reservation-ticket__italian-sub {
+  font-size: 0.62rem;
+  font-family: var(--font-mono);
+  letter-spacing: 0.2em;
+  color: var(--color-primary-muted);
+  text-transform: uppercase;
+  margin-top: -3px;
+}
+
+.reservation-ticket__separator {
+  height: 1px;
+  border-bottom: 1px dashed #D2C8B4;
+  margin: var(--space-md) 0;
+}
+
+.reservation-ticket__body-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.reservation-ticket__label {
+  font-size: 0.65rem;
+  font-family: var(--font-mono);
+  color: var(--color-primary-muted);
+  text-transform: uppercase;
+}
+
+.reservation-ticket__value {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.reservation-ticket__value--full {
+  grid-column: 1 / -1;
+}
+
+.reservation-ticket__seal {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--color-success);
+  border: 1px solid var(--color-success);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  width: fit-content;
+  margin: var(--space-md) auto 0;
+  transform: rotate(-4deg);
+}
+
+.reservation-ticket__footer-btn {
+  margin-top: var(--space-lg);
+  width: 100%;
+  padding: 8px;
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  text-align: center;
+  transition: var(--transition-fast);
+}
+
+.reservation-ticket__footer-btn:hover {
+  background-color: #000000;
+}
+
+
+/* ==========================================================================
+   BLOCK: Il Carrello / Shopping Cart (In Sidebar)
+   ========================================================================== */
+.pizzeria-cart {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.pizzeria-cart__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--color-primary-dark);
+  padding-bottom: var(--space-sm);
+}
+
+.pizzeria-cart__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.pizzeria-cart__count-badge {
+  background-color: var(--color-accent-red);
+  color: var(--color-white);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  padding: 2px 7px;
+  border-radius: var(--radius-pill);
+}
+
+/* Empty State */
+.pizzeria-cart__empty {
+  padding: var(--space-xl) var(--space-sm);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.pizzeria-cart__empty-title {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.pizzeria-cart__empty-desc {
+  font-size: 0.78rem;
+  color: var(--color-primary-muted);
+}
+
+/* Cart Item List */
+.pizzeria-cart__list {
+  display: flex;
+  flex-direction: column;
+  max-height: 290px;
+  overflow-y: auto;
+  gap: var(--space-sm);
+  padding-right: 2px;
+}
+
+.pizzeria-cart__list::-webkit-scrollbar {
+  width: 3px;
+}
+.pizzeria-cart__list::-webkit-scrollbar-thumb {
+  background-color: var(--color-card-border);
+}
+
+.pizzeria-cart__item {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-xs);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px dashed var(--color-card-border);
+}
+
+.pizzeria-cart__item-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.pizzeria-cart__item-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.pizzeria-cart__item-italian {
+  font-family: var(--font-serif);
+  font-size: 0.72rem;
+  font-style: italic;
+  color: var(--color-primary-muted);
+}
+
+.pizzeria-cart__item-custom-desc {
+  font-size: 0.68rem;
+  color: var(--color-gold);
+  line-height: normal;
+  margin-top: 2px;
+}
+
+.pizzeria-cart__item-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-top: var(--space-xs);
+}
+
+.pizzeria-cart__qty-btn {
+  width: 22px;
+  height: 22px;
+  border-radius: var(--radius-sm);
+  border: var(--border-thin);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-fast);
+}
+
+.pizzeria-cart__qty-btn:hover {
+  background-color: var(--color-bg-alt);
+  border-color: var(--color-primary-dark);
+}
+
+.pizzeria-cart__qty-val {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  min-width: 14px;
+  text-align: center;
+}
+
+.pizzeria-cart__item-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.pizzeria-cart__item-price {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-primary-dark);
+}
+
+.pizzeria-cart__item-remove {
+  color: var(--color-primary-muted);
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+
+.pizzeria-cart__item-remove:hover {
+  color: var(--color-accent-red);
+}
+
+/* Checkout summary */
+.pizzeria-cart__summary {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xxs);
+  border-top: 1px solid var(--color-primary-dark);
+  padding-top: var(--space-sm);
+  margin-top: var(--space-xs);
+}
+
+.pizzeria-cart__summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--color-primary-muted);
+}
+
+.pizzeria-cart__summary-row--total {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--color-primary-dark);
+  font-weight: 600;
+  border-top: 1px dashed var(--color-card-border);
+  padding-top: var(--space-xs);
+  margin-top: var(--space-xxs);
+}
+
+.pizzeria-cart__checkout-btn {
+  background-color: var(--color-accent-red);
+  color: var(--color-white);
+  padding: 10px;
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  margin-top: var(--space-sm);
+  transition: var(--transition-fast);
+}
+
+.pizzeria-cart__checkout-btn:hover {
+  background-color: var(--color-accent-red-hover);
+}
+
+
+/* ==========================================================================
+   BLOCK: Live Kitchen Tracker (Timeline in Sidebar)
+   ========================================================================== */
+.kitchen-tracker {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.kitchen-tracker__heading {
+  border-bottom: 2px solid var(--color-secondary-olive);
+  padding-bottom: var(--space-sm);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kitchen-tracker__title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--color-secondary-olive);
+}
+
+.kitchen-tracker__indicator {
+  font-size: 0.65rem;
+  font-family: var(--font-mono);
+  background-color: var(--color-success-light);
+  color: var(--color-success);
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+}
+
+.kitchen-tracker__pizzaiolo-card {
+  background-color: var(--color-bg-alt);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.kitchen-tracker__avatar-circle {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-white);
+  border: 1.5px solid var(--color-gold);
+  border-radius: var(--radius-circle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--color-secondary-olive);
+}
+
+.kitchen-tracker__chef-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.kitchen-tracker__chef-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.kitchen-tracker__chef-sub {
+  font-size: 0.65rem;
+  color: var(--color-primary-muted);
+}
+
+/* Progress List */
+.kitchen-tracker__steps {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: var(--space-sm);
+  margin-left: 12px;
+}
+
+/* Dynamic vertical connector line */
+.kitchen-tracker__steps::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 5px;
+  width: 1.5px;
+  background-color: var(--color-card-border);
+  z-index: 1;
+}
+
+.kitchen-tracker__step {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  position: relative;
+  z-index: 2;
+}
+
+.kitchen-tracker__node {
+  width: 12px;
+  height: 12px;
+  border-radius: var(--radius-circle);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-card-border);
+  margin-top: 5px;
+  transition: var(--transition-fast);
+}
+
+.kitchen-tracker__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.kitchen-tracker__step-title {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-primary-muted);
+}
+
+.kitchen-tracker__step-desc {
+  font-size: 0.68rem;
+  color: rgba(30, 30, 30, 0.4);
+}
+
+/* Modifiers for step completion and active status */
+.kitchen-tracker__step--completed .kitchen-tracker__node {
+  background-color: var(--color-success);
+  border-color: var(--color-success);
+}
+.kitchen-tracker__step--completed .kitchen-tracker__step-title {
+  color: var(--color-primary-dark);
+  text-decoration: line-through;
+  opacity: 0.55;
+}
+
+.kitchen-tracker__step--active .kitchen-tracker__node {
+  background-color: var(--color-accent-red);
+  border-color: var(--color-accent-red);
+  box-shadow: 0 0 0 3.5px var(--color-accent-red-light);
+  animation: pulseNode 1.4s infinite;
+}
+
+@keyframes pulseNode {
+  0% { box-shadow: 0 0 0 0px rgba(209, 59, 46, 0.4); }
+  70% { box-shadow: 0 0 0 6px rgba(209, 59, 46, 0); }
+  100% { box-shadow: 0 0 0 0px rgba(209, 59, 46, 0); }
+}
+
+.kitchen-tracker__step--active .kitchen-tracker__step-title {
+  color: var(--color-accent-red);
+  font-weight: 600;
+}
+.kitchen-tracker__step--active .kitchen-tracker__step-desc {
+  color: var(--color-primary-dark);
+}
+
+/* Manual progress simulator buttons */
+.kitchen-tracker__debug-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px dashed var(--color-card-border);
+  padding-top: var(--space-sm);
+  margin-top: var(--space-xs);
+}
+
+.kitchen-tracker__debug-info {
+  font-size: 0.62rem;
+  font-family: var(--font-mono);
+  color: var(--color-primary-muted);
+}
+
+.kitchen-tracker__debug-btn {
+  background-color: var(--color-bg-alt);
+  color: var(--color-primary-dark);
+  border: var(--border-thin);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  padding: 3px 8px;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.kitchen-tracker__debug-btn:hover {
+  background-color: var(--color-secondary-olive);
+  color: var(--color-white);
+}
+
+.kitchen-tracker__reset-btn {
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+  width: 100%;
+  padding: 10px;
+  border-radius: var(--radius-md);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: center;
+  transition: var(--transition-fast);
+}
+
+.kitchen-tracker__reset-btn:hover {
+  background-color: var(--color-secondary-olive);
+}
+
+
+/* ==========================================================================
+   BLOCK: Elegant Footer 
+   ========================================================================== */
+.pizzeria-footer {
+  margin-top: var(--space-xl);
+  border-top: var(--border-thin);
+  padding-top: var(--space-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.pizzeria-footer__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.pizzeria-footer__copyright {
+  font-size: 0.72rem;
+  color: var(--color-primary-muted);
+}
+
+.pizzeria-footer__brand {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+.pizzeria-footer__right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.pizzeria-footer__link {
+  font-size: 0.72rem;
+  color: var(--color-primary-muted);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.pizzeria-footer__link:hover {
+  color: var(--color-accent-red);
+}
+
+/* Adjusting tabs scrolling buttons */
+.tabs__scroll-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* ==========================================================================
+   BLOCK: Accessible Customizer Modal Component (Vanilla JS)
+   ========================================================================== */
+.pizzeria-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(28, 25, 23, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  padding: var(--space-md);
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow-y: auto;
+}
+
+.pizzeria-modal-backdrop--visible {
+  opacity: 1;
+}
+
+.pizzeria-modal-card {
+  background-color: #FAF6F0; /* Soft luxury off-white */
+  border: 1px solid rgba(135, 116, 92, 0.25);
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 840px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.5), 0 10px 20px -10px rgba(0, 0, 0, 0.2);
+  transform: scale(0.95) translateY(10px);
+  opacity: 0;
+  transition: opacity 0.32s cubic-bezier(0.16, 1, 0.3, 1), transform 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+  color: var(--color-text-dark);
+}
+
+.pizzeria-modal-card:focus {
+  outline: none;
+}
+
+.pizzeria-modal-card--visible {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .pizzeria-modal-card {
+    grid-template-columns: 1.1fr 1.3fr;
+    max-height: 85vh;
+  }
+}
+
+/* Close dialog trigger button */
+.modal-close-button {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  background-color: rgba(250, 246, 240, 0.9);
+  border: 1px solid rgba(135, 116, 92, 0.25);
+  border-radius: var(--radius-circle);
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 105;
+  color: #1C1917;
+  transition: var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+}
+
+.modal-close-button:hover {
+  background-color: #FFFFFF;
+  color: var(--color-accent-red);
+  transform: scale(1.05);
+}
+
+.modal-close-button:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+/* Left Column: Visual Area */
+.modal-media-pane {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+  background-color: #1C1917;
+}
+
+@media (min-width: 768px) {
+  .modal-media-pane {
+    height: 100%;
+    min-height: 480px;
+  }
+}
+
+.modal-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pizzeria-modal-card:hover .modal-hero-image {
+  transform: scale(1.06);
+}
+
+.modal-image-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(28, 25, 23, 0.8) 0%, rgba(28, 25, 23, 0) 60%);
+  pointer-events: none;
+}
+
+.modal-brand-badge {
+  position: absolute;
+  top: var(--space-md);
+  left: var(--space-md);
+  background-color: var(--color-gold);
+  color: var(--color-white);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  font-weight: bold;
+}
+
+/* Right Column: Interaction details view */
+.modal-controls-pane {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.modal-header-intro {
+  margin-bottom: var(--space-sm);
+}
+
+.modal-italian-subtitle {
+  color: var(--color-gold);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+  display: block;
+}
+
+.modal-item-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #1C1917;
+  letter-spacing: -0.01em;
+  margin-bottom: var(--space-xs);
+}
+
+.modal-item-desc {
+  font-size: 0.88rem;
+  color: var(--color-primary-muted);
+  line-height: 1.5;
+}
+
+.modal-divider {
+  height: 1px;
+  background: rgba(135, 116, 92, 0.15);
+  margin: var(--space-md) 0;
+}
+
+/* Ingredient pills grid style */
+.modal-section {
+  margin-bottom: var(--space-md);
+}
+
+.modal-section-title {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #1C1917;
+  margin-bottom: var(--space-xs);
+}
+
+.modal-ingredients-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.modal-ingredient-pill {
+  background: rgba(135, 116, 92, 0.07);
+  color: #57534E;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(135, 116, 92, 0.15);
+  font-weight: 500;
+}
+
+.modal-allergens-wrapper {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  margin-bottom: 28px !important;
+}
+
+.modal-allergen-tag {
+  background-color: #FEF2F2;
+  color: #B91C1C;
+  border: 1px solid #FEE2E2;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.02em;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.modal-allergen-tag--none {
+  background-color: #F0FDF4;
+  color: #15803D;
+  border-color: #DCFCE7;
+}
+
+/* Modifiers Forms & inputs layout */
+.modal-customization-group {
+  margin-bottom: var(--space-md);
+}
+
+.modal-group-title {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #1C1917;
+  margin-bottom: var(--space-xs);
+}
+
+.modal-radio-options, .modal-checkbox-options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xxs);
+}
+
+.modal-option-label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  background-color: #FAF6F0;
+  border: 1px solid rgba(135, 116, 92, 0.18);
+  border-radius: var(--radius-sm);
+  padding: var(--space-xs) var(--space-sm);
+  font-size: 0.85rem;
+  color: #44403C;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.modal-option-label:hover {
+  background-color: #F5EFEB;
+  border-color: var(--color-gold);
+}
+
+.modal-option-label input[type="radio"],
+.modal-option-label input[type="checkbox"] {
+  accent-color: var(--color-gold);
+  width: var(--space-sm);
+  height: var(--space-sm);
+  cursor: pointer;
+}
+
+/* Checkout Bottom Dock inside Modal */
+.modal-checkout-dock {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 16px !important;
+  margin-top: 24px !important;
+  background: #F5EFEB !important;
+  padding: var(--space-md) !important;
+  border-radius: var(--radius-md) !important;
+  border: 1px solid rgba(135, 116, 92, 0.2) !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.modal-checkout-dock * {
+  box-sizing: border-box !important;
+}
+
+.modal-quantity-adjuster {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  border: 1px solid rgba(135, 116, 92, 0.4) !important;
+  background-color: #ffffff !important;
+  border-radius: var(--radius-sm) !important;
+  overflow: hidden !important;
+  flex-shrink: 0 !important;
+  flex-grow: 0 !important;
+  width: 120px !important;
+  min-width: 120px !important;
+  max-width: 120px !important;
+  height: 40px !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+  z-index: 10 !important;
+  padding: 2px !important;
+}
+
+.modal-qty-btn {
+  background: none !important;
+  border: none !important;
+  width: 32px !important;
+  height: 32px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #1C1917 !important;
+  cursor: pointer !important;
+  transition: var(--transition-fast) !important;
+  flex-shrink: 0 !important;
+  box-sizing: border-box !important;
+}
+
+.modal-qty-btn:hover {
+  background-color: #EFE6DD !important;
+  color: var(--color-accent-red) !important;
+}
+
+.modal-qty-display {
+  font-family: var(--font-mono) !important;
+  font-size: 0.95rem !important;
+  font-weight: bold !important;
+  padding: 0 var(--space-xs) !important;
+  min-width: 24px !important;
+  text-align: center !important;
+  flex-grow: 1 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  line-height: normal !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+}
+
+.modal-action-submit {
+  flex-grow: 1 !important;
+  flex-shrink: 1 !important;
+  min-width: 0 !important;
+  height: 40px !important;
+  background-color: var(--color-secondary-olive) !important;
+  color: var(--color-white) !important;
+  border: none !important;
+  border-radius: var(--radius-sm) !important;
+  padding: 0 var(--space-sm) !important;
+  font-family: var(--font-serif) !important;
+  font-weight: bold !important;
+  font-size: 0.95rem !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  cursor: pointer !important;
+  transition: var(--transition-fast) !important;
+  box-shadow: 0 4px 10px rgba(47, 107, 62, 0.2) !important;
+  box-sizing: border-box !important;
+}
+
+.modal-action-submit:hover {
+  background-color: #2F6B3E; /* Hover green */
+  transform: translateY(-1px);
+  box-shadow: 0 6px 15px rgba(47, 107, 62, 0.25);
+}
+
+.modal-action-submit:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+#modal-total-display {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 2px 10px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+/* Cursor pointer and pristine hover enhancements for cards */
+.pizza-card {
+  cursor: pointer;
+}
+
+.pizza-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 36px -12px rgba(28, 25, 23, 0.45), 0 4px 10px -2px rgba(28, 25, 23, 0.08);
+}
+

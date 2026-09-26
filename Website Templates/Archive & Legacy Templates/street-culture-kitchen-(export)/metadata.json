@@ -1,0 +1,6 @@
+{
+  "name": "Street Culture Kitchen",
+  "description": "A premium editorial culinary platform featuring high-contrast street art aesthetics, specialized street-style menu, interactive catering experiences, and bold typographic style.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

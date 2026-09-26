@@ -1,0 +1,6 @@
+{
+  "name": "SatStacker",
+  "description": "A premium, gaming-inspired, ADHD-friendly Bitcoin utility featuring streamlined Satoshi-to-BTC converters, customizable price alerts, automated strategy scheduling, and zero-latency sound feedback.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

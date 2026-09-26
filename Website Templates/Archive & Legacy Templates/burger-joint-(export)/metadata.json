@@ -1,0 +1,8 @@
+{
+  "name": "Burger Joint - Premium Modern Diner",
+  "description": "A high-end restaurant template featuring gourmet burgers, interactive menus, and a retro-modern aesthetic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", "Inter", ui-sans-serif, system-ui;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom scrollbars for a clean look */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #404040;
+}
+
+/* Custom scanning line overlay for cyber-noir vibe */
+.cyber-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+/* Accent glow styles */
+.glow-green {
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.4);
+}
+
+.glow-cyan {
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+}
+
+.glow-red {
+  text-shadow: 0 0 10px rgba(255, 62, 62, 0.4);
+}
+
+@keyframes dsp-pulse-green-kf {
+  0%, 100% {
+    border-color: rgba(0, 255, 65, 0.15);
+    box-shadow: 0 0 4px rgba(0, 255, 65, 0.05);
+  }
+  50% {
+    border-color: rgba(0, 255, 65, 0.65);
+    box-shadow: 0 0 12px rgba(0, 255, 65, 0.25), inset 0 0 3px rgba(0, 255, 65, 0.05);
+  }
+}
+.dsp-pulse-green {
+  animation: dsp-pulse-green-kf 1.2s infinite ease-in-out;
+  border-radius: 4px;
+}
+
+@keyframes dsp-pulse-cyan-kf {
+  0%, 100% {
+    border-color: rgba(0, 240, 255, 0.15);
+    box-shadow: 0 0 4px rgba(0, 240, 255, 0.05);
+  }
+  50% {
+    border-color: rgba(0, 240, 255, 0.65);
+    box-shadow: 0 0 12px rgba(0, 240, 255, 0.25), inset 0 0 3px rgba(0, 240, 255, 0.05);
+  }
+}
+.dsp-pulse-cyan {
+  animation: dsp-pulse-cyan-kf 1.2s infinite ease-in-out;
+  border-radius: 4px;
+}
+
+@keyframes dsp-pulse-purple-kf {
+  0%, 100% {
+    border-color: rgba(192, 132, 252, 0.15);
+    box-shadow: 0 0 4px rgba(192, 132, 252, 0.05);
+  }
+  50% {
+    border-color: rgba(192, 132, 252, 0.65);
+    box-shadow: 0 0 12px rgba(192, 132, 252, 0.25), inset 0 0 3px rgba(192, 132, 252, 0.05);
+  }
+}
+.dsp-pulse-purple {
+  animation: dsp-pulse-purple-kf 1.2s infinite ease-in-out;
+  border-radius: 4px;
+}
+
+@keyframes dsp-pulse-amber-kf {
+  0%, 100% {
+    border-color: rgba(245, 158, 11, 0.15);
+    box-shadow: 0 0 4px rgba(245, 158, 11, 0.05);
+  }
+  50% {
+    border-color: rgba(245, 158, 11, 0.65);
+    box-shadow: 0 0 12px rgba(245, 158, 11, 0.25), inset 0 0 3px rgba(245, 158, 11, 0.05);
+  }
+}
+.dsp-pulse-amber {
+  animation: dsp-pulse-amber-kf 1.2s infinite ease-in-out;
+  border-radius: 4px;
+}
+
+@keyframes patch-flow-kf {
+  from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.animate-patch-flow {
+  animation: patch-flow-kf 4s linear infinite;
+}
+
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  15% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+.scanline::after {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  z-index: 99999;
+  background-size: 100% 4px, 6px 100%;
+  pointer-events: none;
+}

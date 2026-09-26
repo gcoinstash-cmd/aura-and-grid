@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-neon-pink: #FF00FF;
+  --color-neon-cyan: #00FFFF;
+  --color-carbon-950: #050505;
+  --color-carbon-900: #080808;
+  --color-carbon-800: #121212;
+  
+  --animate-glitch: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  --animate-scanline: scanline 8s linear infinite;
+}
+
+.theme-terminal {
+  --color-neon-cyan: #00ff00 !important;
+  --color-neon-pink: #00ff00 !important;
+  --color-carbon-950: #000000 !important;
+  --color-carbon-900: #000000 !important;
+  --color-carbon-800: #000000 !important;
+}
+
+.theme-terminal body {
+  background-color: #000000 !important;
+  color: #00ff00 !important;
+}
+
+/* Force text, borders, and icons to phosphor green */
+.theme-terminal .text-white,
+.theme-terminal .text-slate-100,
+.theme-terminal h1,
+.theme-terminal h2,
+.theme-terminal h3,
+.theme-terminal h4 {
+  color: #00ff00 !important;
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.5) !important;
+}
+
+.theme-terminal p,
+.theme-terminal .text-white\/90,
+.theme-terminal .text-white\/80,
+.theme-terminal .text-white\/70,
+.theme-terminal .text-white\/65,
+.theme-terminal .text-white\/60,
+.theme-terminal .text-white\/50 {
+  color: rgba(0, 255, 0, 0.8) !important;
+  text-shadow: 0 0 3px rgba(0, 255, 0, 0.3) !important;
+}
+
+.theme-terminal .text-white\/40,
+.theme-terminal .text-white\/30,
+.theme-terminal .text-white\/20,
+.theme-terminal .text-white\/10 {
+  color: rgba(0, 255, 0, 0.5) !important;
+}
+
+/* All borders in terminal mode */
+.theme-terminal .border-white\/5,
+.theme-terminal .border-white\/10,
+.theme-terminal .border-neon-cyan\/20,
+.theme-terminal .border-neon-cyan\/30,
+.theme-terminal .border-neon-pink\/20,
+.theme-terminal .border-dashed {
+  border-color: rgba(0, 255, 0, 0.3) !important;
+}
+
+.theme-terminal .border-neon-cyan,
+.theme-terminal .border-neon-pink {
+  border-color: #00ff00 !important;
+}
+
+.theme-terminal .btn-editorial {
+  background-color: transparent !important;
+  color: #00ff00 !important;
+  border: 1px solid #00ff00 !important;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5), inset 0 0 10px rgba(0, 255, 0, 0.2) !important;
+  text-shadow: 0 0 5px #00ff00 !important;
+}
+
+.theme-terminal .btn-editorial:hover {
+  background-color: rgba(0, 255, 0, 0.1) !important;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.8), inset 0 0 15px rgba(0, 255, 0, 0.3) !important;
+}
+
+.theme-terminal .btn-reservation {
+  background-color: transparent !important;
+  color: #00ff00 !important;
+  border: 2px solid #00ff00 !important;
+  box-shadow: 
+    0 0 15px rgba(0, 255, 0, 0.5),
+    0 0 30px rgba(0, 255, 0, 0.2),
+    inset 0 0 8px rgba(0, 255, 0, 0.3) !important;
+  text-shadow: 0 0 8px rgba(0, 255, 0, 0.8) !important;
+}
+
+.theme-terminal .btn-reservation:hover {
+  background-color: rgba(0, 255, 0, 0.15) !important;
+  box-shadow: 
+    0 0 25px rgba(0, 255, 0, 0.8),
+    0 0 35px rgba(0, 255, 0, 0.3),
+    inset 0 0 10px rgba(0, 255, 0, 0.5) !important;
+}
+
+/* Floating card background colors in terminal */
+.theme-terminal .bg-black\/60,
+.theme-terminal .bg-black\/40,
+.theme-terminal .bg-black\/80,
+.theme-terminal .bg-black {
+  background-color: rgba(0, 0, 0, 0.85) !important;
+  border-color: rgba(0, 255, 0, 0.2) !important;
+}
+
+.theme-terminal .bg-neon-cyan\/10,
+.theme-terminal .bg-neon-cyan\/5 {
+  background-color: rgba(0, 255, 0, 0.05) !important;
+}
+
+.theme-terminal svg {
+  stroke: #00ff00 !important;
+}
+
+/* Glitch animation green glow overrides */
+.theme-terminal .text-glitch {
+  text-shadow: 2px 2px 0px rgba(0, 255, 0, 0.7) !important;
+}
+
+/* OVERDRIVE MODE: Tactical warning colors */
+.theme-overdrive {
+  --color-neon-cyan: #ff5500 !important;
+  --color-neon-pink: #ff0033 !important;
+}
+
+.theme-overdrive .btn-editorial {
+  background-color: #ff5500 !important;
+  color: #000000 !important;
+  border: 1px solid #000000 !important;
+  box-shadow: 6px 6px 0px #ff0033 !important;
+}
+
+.theme-overdrive .btn-editorial:hover {
+  background-color: #ff0033 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 12px rgba(255, 0, 51, 0.5) !important;
+}
+
+.theme-overdrive .btn-reservation {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  color: #ff5500 !important;
+  border-color: #ff5500 !important;
+  box-shadow: 
+    0 0 15px rgba(255, 85, 0, 0.45),
+    0 0 30px rgba(255, 0, 51, 0.15),
+    inset 0 0 8px rgba(255, 85, 0, 0.25) !important;
+  text-shadow: 0 0 8px rgba(255, 85, 0, 0.5) !important;
+}
+
+.theme-overdrive .btn-reservation:hover {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  color: #ff0033 !important;
+  border-color: #ff0033 !important;
+  box-shadow: 
+    0 0 20px rgba(255, 0, 51, 0.65),
+    0 0 40px rgba(255, 85, 0, 0.25),
+    inset 0 0 10px rgba(255, 0, 51, 0.4) !important;
+  text-shadow: 0 0 8px rgba(255, 0, 51, 0.7) !important;
+}
+
+.theme-overdrive .text-glitch {
+  text-shadow: 2px 2px 0px #ff0033 !important;
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  45% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+@keyframes glitch-effect {
+  0%, 95% {
+    clip-path: inset(0 0 0 0);
+    transform: translate(0) skew(0deg);
+    filter: none;
+  }
+  96% {
+    clip-path: inset(15% 0 70% 0);
+    transform: translate(-4px, -2px) skew(-3deg);
+    filter: hue-rotate(90deg) saturate(1.5) contrast(1.2);
+  }
+  97% {
+    clip-path: inset(60% 0 15% 0);
+    transform: translate(4px, 2px) skew(4deg);
+    filter: contrast(1.8) brightness(1.3);
+  }
+  98% {
+    clip-path: inset(45% 0 45% 0);
+    transform: translate(-2px, 3px) skew(-2deg);
+    filter: hue-rotate(-60deg) saturate(1.8);
+  }
+  99% {
+    clip-path: inset(10% 0 85% 0);
+    transform: translate(3px, -3px) skew(2deg);
+    filter: invert(0.1);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+    transform: translate(0) skew(0deg);
+    filter: none;
+  }
+}
+
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+@layer base {
+  body {
+    @apply bg-carbon-950 text-slate-100 font-sans selection:bg-neon-cyan selection:text-carbon-950;
+    margin: 0;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-mono uppercase tracking-tighter;
+  }
+}
+
+@layer components {
+  .editorial-card {
+    @apply bg-black/60 backdrop-blur-xl border border-neon-cyan/30;
+  }
+
+  .scanline-full {
+    background: repeating-linear-gradient(rgba(0,0,0,0) 0px, rgba(0,0,0,0) 1px, rgba(0,255,255,0.03) 2px, rgba(0,255,255,0.03) 3px);
+    background-size: 100% 4px;
+    pointer-events: none;
+    z-index: 50;
+  }
+
+  .text-glitch {
+    text-shadow: 2px 2px 0px #FF00FF;
+  }
+
+  .btn-editorial {
+    @apply px-10 py-4 bg-neon-cyan text-black font-mono font-bold uppercase tracking-[0.2em] hover:bg-neon-pink hover:text-white border border-black transition-all shadow-[6px_6px_0px_#FF00FF] active:shadow-none active:translate-x-[4px] active:translate-y-[4px] relative overflow-hidden;
+  }
+
+  .btn-reservation {
+    @apply px-10 py-4 bg-black/40 text-neon-cyan font-mono font-bold uppercase tracking-[0.2em] border-2 border-neon-cyan transition-all relative overflow-hidden;
+    box-shadow: 
+      0 0 15px rgba(0, 255, 255, 0.45),
+      0 0 30px rgba(255, 0, 255, 0.15),
+      inset 0 0 8px rgba(0, 255, 255, 0.25);
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.5);
+  }
+
+  .btn-reservation:hover {
+    @apply text-neon-pink border-neon-pink bg-black/60;
+    box-shadow: 
+      0 0 20px rgba(255, 0, 255, 0.65),
+      0 0 40px rgba(0, 255, 255, 0.25),
+      inset 0 0 10px rgba(255, 0, 255, 0.4);
+    text-shadow: 0 0 8px rgba(255, 0, 255, 0.7);
+  }
+
+  .btn-reservation:active {
+    transform: scale(0.97);
+  }
+
+  .protocol-subtitle {
+    letter-spacing: -0.05em !important;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .gallery-glitch {
+    animation: glitch-effect 4s infinite linear;
+  }
+
+  .premium-menu-item {
+    @apply flex justify-between items-end border-b border-white/10 pb-4 hover:border-neon-cyan/50 transition-colors;
+  }
+
+  .hud-overlay {
+    background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.4) 100%);
+    pointer-events: none;
+  }
+}
+
+.vertical-rl {
+  writing-mode: vertical-rl;
+}
