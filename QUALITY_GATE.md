@@ -191,3 +191,17 @@ No template repository may be scaffolded until the Creative Director approves th
 2. Flat top-fold browser screenshots are strictly disqualified.
 3. Every generated image asset must be verified via terminal `ls -lh` to confirm a file size > 50 KB.
 
+---
+
+## PART 7: THE ZERO-DEFECT PRE-REVENUE AUDIT CEILING (6 IMMUTABLE FACTORY GATES)
+To permanently eliminate external audit friction and guarantee that every blueprint achieves the institutional audit ceiling (8.0–8.3 FMV Tier) at creation time, every digital operating system must satisfy the 6 Immutable Production Gates detailed in `protocols/INSTITUTIONAL_PRODUCTION_STANDARD.md`:
+1. **Gate 1 (Build Reproducibility)**: AST fragment validity in `src/App.tsx`, committed `package-lock.json`, and clean `npm ci && npm run build` exit code 0.
+2. **Gate 2 (Database Schema Topology)**: Non-empty `supabase/schema.sql` (with RLS enabled) and `supabase/seed.sql`.
+3. **Gate 3 (Chain-of-Title & Permissive IP)**: Root `LICENSE` file with MIT text, `"license": "MIT"` in package manifest, and 0% copyleft exposure.
+4. **Gate 4 (DOM Claim Normalization)**: Mandatory Level 3 Blueprint lexicon; strict ban on "100% Production Ready" or "WCAG AA Certified".
+5. **Gate 5 (Telemetry & Denominator Invariants)**: Strict Retail Shelf MSRP = $N \times \$199$, internal sectors sum to total $N$, HTTP 200 on live preview.
+6. **Gate 6 (APA Schedule A Ingestion)**: 13-column row added to `docs/APA_SCHEDULE_A.csv` and `docs/TECHNICAL_DATA_ROOM.md` with repo-relative `supabase/` paths.
+
+Automated verification command: `node scripts/verify_institutional_standard.mjs [slug]`. Assets passing this gate are declared Institutional Diligence Approved upon creation without external Perplexity dependency.
+
+
