@@ -5,7 +5,7 @@
   "buildVerified": 85,
   "previewHttp200": 85,
   "diligenceGrade": "L3-SUPABASE-READY",
-  "buildIntegrity": "85/85 PASSED (EXIT 0)",
+  "buildIntegrity": "85/85 VERIFIED (HTTP 200)",
   "sectors": {
     "hospitality": 23,
     "wealth": 16,
