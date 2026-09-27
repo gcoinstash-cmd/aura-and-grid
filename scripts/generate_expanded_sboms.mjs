@@ -249,7 +249,8 @@ const spdxDoc = {
       licenseDeclared: "MIT",
       copyrightText: "Copyright (c) 2026 ZoMae Media LLC",
       summary: "85-Blueprint Full-Stack Commercial Web Operating Systems Fleet",
-      description: "Standardized React, TypeScript, Tailwind CSS, and Supabase PostgreSQL full-stack blueprints with 0% copyleft (GPL) exposure."
+      description: "Standardized React, TypeScript, Tailwind CSS, and Supabase PostgreSQL full-stack blueprints with 0% copyleft (GPL) exposure.",
+      comment: "Inventoried shared and direct dependency sets contain 0% GPL/AGPL copyleft exposure."
     },
     ...packages.map(p => ({
       SPDXID: p.spdxId,
@@ -302,7 +303,7 @@ const cdxDoc = {
       "bom-ref": "pkg:npm/aura-and-grid-fleet@1.0.0",
       name: "aura-and-grid-fleet",
       version: "1.0.0",
-      description: "85 Single-Tenant Full-Stack Operating System Blueprints with Turnkey Supabase Schemas and 0% Copyleft Risk",
+      description: "85 Single-Tenant Full-Stack Operating System Blueprints with Turnkey Supabase Schemas. Inventoried shared and direct dependency sets contain 0% GPL/AGPL copyleft exposure.",
       licenses: [
         {
           license: {
