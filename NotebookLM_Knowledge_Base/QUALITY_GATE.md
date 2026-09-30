@@ -1,8 +1,9 @@
 # QUALITY_GATE.md — The Consolidated Six-Layer Governance Architecture & Master Diligence Framework
 
 **Entity**: Aura & Grid Storefront Engine & The Ghost Factory™ Foundry  
-**Scope**: All 85 Existing Operating System Templates & Future Catalog Expansions (500–5,000 Assets)  
-**Valuation Protection Target**: Defend Fair-Market Institutional Corridors ($25,000–$45,000 Baseline, $35,000 Walk-Away Reserve)  
+**Scope**: All 85 Existing Operating System Blueprints & 500-Asset Roadmap Target  
+**Valuation Standard**: Grounded Orderly Fair-Market Valuation ($25,500–$40,375, Best Planning Value: ~$33,000) & Dual-Track Protocol  
+**Retention Floor**: 80% Minimum Retained Floor (Current: 68 Assets Retained / Max 17 Micro-APAs)  
 
 ---
 
@@ -61,7 +62,7 @@ To prevent valuation markdowns caused by repetitive 3-column card layouts, every
 
 ## PART 2: THE MASTER DILIGENCE FRAMEWORK (3-TIER RELEASE GATE)
 
-Every digital asset within the portfolio is governed by a three-stage release gate to defend fair-market valuation corridors ($25,000–$45,000 baseline, $35,000 walk-away reserve):
+Every digital asset within the portfolio is governed by a three-stage release gate to defend orderly fair-market valuation ($25,500–$40,375 orderly range, ~$33,000 planning value) and support Dual-Track pricing:
 
 ```
  [ TIER 1: BUYER-DEMO READY ]       ──> HTTP 200 + Smooth Anchors + 1-Click Passkey + Zero P0s
@@ -103,20 +104,19 @@ Every digital asset within the portfolio is governed by a three-stage release ga
 ```
  [ THE BOSS BATTLE RADAR: FLEET SCORE BREAKDOWN ]
     │
-    ├── 🟢 S-TIER CHAMPIONS (9.6–10.0 / 10)  ──> Zero P0/P1 defects. Certified for max valuation ($700–$1,370/app).
+    ├── 🟢 S-TIER CHAMPIONS (9.6–10.0 / 10)  ──> Zero P0/P1 defects. Certified for Track 1 ($4,500 anchor) or Flagship Gate.
     ├── 🟡 A-TIER POLISH (8.0–9.5 / 10)     ──> Non-breaking typography/contrast tweaks. Queued for batch patch.
     └── 🔴 P0 BOSS BATTLES (< 8.0 / 10)      ──> 404s, broken routing, or unlinked passkeys. Deployment BLOCKED.
 ```
 
-### Institutional Valuation & Anti-Lowball Defense Formula
-1. **Mathematical NAV Verification**:
-   $$\text{Real Digital Asset Value (NAV)} = \sum_{i=1}^{N} \text{Asset Valuation}_i$$
-   Every template certified at **🟢 S-Tier (9.6–10.0)** carries a legally defensible asset value of **$700 to $1,370 per operating system**, supporting:
-   - **50-App Agency Vault / Vertical Slice**: $35,000 – $65,000 baseline valuation ($35,000 walk-away reserve).
-   - **85-App Foundry Fleet**: $59,500 – $97,750 fair market valuation corridor.
-   - **500-App Saturation Catalog (Phase 4)**: $350,000 – $685,000 asset value ($1.2M–$2.5M on cash flow multiple).
-   - **3,000-Asset Holding Foundry (Phase 6)**: $2,100,000 – $4,110,000 asset value ($4.5M exit multiple).
-   - **5,000-Asset Master Digital Conglomerate (Phase 7)**: $3,500,000 – $6,850,000 asset value ($8.75M exit multiple).
+### Institutional Valuation & Grounded Dual-Track Defense
+1. **Orderly Fair-Market Valuation Standard**:
+   $$\text{Catalog Fair-Market Value} = \$25,500 – \$40,375 \quad (\text{Best Single Planning Value: } \sim\$33,000)$$
+   Every template certified at **🟢 S-Tier (9.6–10.0)** satisfies the baseline technical floor, eliminating technical due diligence discounts.
+   - **Track 1 — Lean Rapid-Sale (Default)**: $199 Retail / $599 Team Seat / Exclusive Buyout Floor: $3,800–$6,500 (Anchor: **$4,500**).
+   - **Track 2 — Flagship $10K+ (Selective Tier-1)**: $1,500–$3,500 Flagship License / Entry Exclusive Buyout Anchor: **$14,500** ($10,000–$18,000 range) / Full Buyout: $18,000–$35,000 / Strategic Acquisition: $35,000–$75,000+.
+   - **80% Minimum Retained Floor**: Always retain at least 80% of the collection (Current: 68 assets permanently kept / max 17 transfer capacity; at 500 assets: 400 permanently kept / max 100 transfer capacity).
+   - **Micro-APA Scope**: Transfers defined rights/code to **one specific asset only**. A micro-APA never transfers GhostFactoryOS, Aura & Grid, shared IP, or the full portfolio.
 
 2. **Zero-Discount Due Diligence Guarantee**:
    Institutional private equity funds, aggregators, and agency buyers use automated scanners (Lighthouse, Axe-Core, Playwright) to find minor bugs and justify 30%–60% purchase price discounts. By enforcing 100% automated pass rates across all 6 structural layers and maintaining a clean **Boss Battle Radar** audit trail, buyers have **zero legal, technical, or financial grounds to mark down portfolio valuation**.
@@ -190,4 +190,18 @@ No template repository may be scaffolded until the Creative Director approves th
 1. Gumroad Cover (`cover.png` — 1280x720) and Thumbnail (`thumbnail.png` — 600x600) must be rendered using dedicated HTML canvas mockups featuring elevated containers, title typography, and metadata badges.
 2. Flat top-fold browser screenshots are strictly disqualified.
 3. Every generated image asset must be verified via terminal `ls -lh` to confirm a file size > 50 KB.
+
+---
+
+## PART 7: THE ZERO-DEFECT PRE-REVENUE AUDIT CEILING (6 IMMUTABLE FACTORY GATES)
+To permanently eliminate external audit friction and guarantee that every blueprint achieves the institutional audit ceiling (8.0–8.3 FMV Tier) at creation time, every digital operating system must satisfy the 6 Immutable Production Gates detailed in `protocols/INSTITUTIONAL_PRODUCTION_STANDARD.md`:
+1. **Gate 1 (Build Reproducibility)**: AST fragment validity in `src/App.tsx`, committed `package-lock.json`, and clean `npm ci && npm run build` exit code 0.
+2. **Gate 2 (Database Schema Topology)**: Non-empty `supabase/schema.sql` (with RLS enabled) and `supabase/seed.sql`.
+3. **Gate 3 (Chain-of-Title & Permissive IP)**: Root `LICENSE` file with MIT text, `"license": "MIT"` in package manifest, and 0% copyleft exposure.
+4. **Gate 4 (DOM Claim Normalization)**: Mandatory Level 3 Blueprint lexicon; strict ban on "100% Production Ready" or "WCAG AA Certified".
+5. **Gate 5 (Telemetry & Denominator Invariants)**: Strict Retail Shelf MSRP = $N \times \$199$, internal sectors sum to total $N$, HTTP 200 on live preview.
+6. **Gate 6 (APA Schedule A Ingestion)**: 13-column row added to `docs/APA_SCHEDULE_A.csv` and `docs/TECHNICAL_DATA_ROOM.md` with repo-relative `supabase/` paths.
+
+Automated verification command: `node scripts/verify_institutional_standard.mjs [slug]`. Assets passing this gate are declared Institutional Diligence Approved upon creation without external Perplexity dependency.
+
 

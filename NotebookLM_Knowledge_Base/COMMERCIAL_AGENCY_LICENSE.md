@@ -60,17 +60,17 @@ Any violation of Section 2 constitutes immediate and automatic termination of th
 
 ---
 
-## 4. Institutional Valuation Consensus & Liquidation Matrix
+## 4. Valuation Appraisal & Dual-Track Pricing Protocol
 
-For financial reporting, private equity inquiries, and balance sheet auditing, the 85-app portfolio is evaluated under the following calibrated framework:
+For commercial deal architecture, agency discussions, and asset valuation, the portfolio operates under the following grounded v2 protocol:
 
-| Valuation Layer | Valuation Range | Transaction Definition & Market Context |
+| Valuation Layer | Valuation Range / Anchor | Transaction Definition & Market Context |
 |:---|:---:|:---|
-| **1. Emergency Wholesale Cash** | **$10,000 – $25,000** | 72-hour all-cash distress liquidation to an opportunistic aggregator. |
-| **2. Realistic Strategic Close** | **$30,000 – $55,000** | Center of gravity ($35k–$45k) for a negotiated LOI with an agency network or operator. |
-| **3. Private Strategic Ask** | **$45,000 – $75,000** | Advertised price in confidential private deal rooms (Acquire.com / Direct B2B). |
-| **4. Replacement Labor Narrative** | **$340,000 – $850,000+** | Pitch deck engineering context ($4k–$10k/app traditional outsourced dev cost). |
-| **5. Internal Walk-Away Reserve** | **$35,000 Minimum** | Minimum cash threshold for full master IP transfer; holding is mathematically superior below this figure. |
+| **Orderly Fair-Market Value** | **$25,500 – $40,375** | Pre-revenue catalog appraisal (Best single planning value: **~$33,000**). |
+| **Track 1 Exclusive Buyout** | **$3,800 – $6,500** | Standard prototype single-asset micro-APA (Anchor: **$4,500**). |
+| **Track 2 Flagship Buyout** | **$10,000 – $18,000** | Elite domain-heavy single-asset micro-APA entry anchor (**$14,500**); full: $18k–$35k; strategic: $35k–$75k+. |
+| **Replacement Labor Benchmark**| **$340,000 – $850,000** | Engineering benchmark ($4,000–$10,000/app traditional outsourced dev cost). |
+| **80% Minimum Retained Floor** | **68 Assets Minimum** | Minimum 80% retained floor enforced; max 17 transfer capacity. Never sell factory or showroom IP. |
 
 ---
 

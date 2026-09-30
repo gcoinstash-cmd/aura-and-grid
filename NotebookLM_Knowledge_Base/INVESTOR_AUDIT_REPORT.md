@@ -1,9 +1,10 @@
-# Operational Due Diligence Audit & Investment Memo
+# Operational Due Diligence Audit & Investment Memo v2
 
-**Entity:** Ghost Factory™ / Aura & Grid  
-**Asset Fleet:** 85 Functional Full-Stack Niche Operating System Blueprints  
+**Entity:** GhostFactoryOS / Aura & Grid  
+**Asset Fleet:** 85 Pre-Revenue Full-Stack Niche Operating System Blueprints  
 **Audit Standard:** Institutional Micro-Acquisition & Technical Asset Valuation  
 **Date:** September 2026  
+**Retention Floor:** 80% Minimum Retained Floor Enforced (68 Assets Retained / Max 17 Micro-APAs)  
 
 ---
 
@@ -28,17 +29,29 @@
 
 ---
 
-## 3. Commercial Valuation Appraisal
+## 3. Commercial Valuation Appraisal & Dual-Track Protocol
 
-### Current Market Reality (Pre-Revenue Inventory)
-* **Code Replacement Cost (Agency Benchmark):** The quoted development cost for a single production-ready full-stack application typically ranges from $20,000 to $50,000+. The theoretical replacement value of 85 standalone web apps is substantial on paper.
-* **Secondary Market Liquidation Value (Acquire.com / Flippa):** Without active cash flow, institutional private equity will not bid. The catalog trades as an unmonetized Asset Purchase Agreement (APA).
-  * **Current Valuation Band:** **$15,000 – $35,000** (Bulk Codebase Asset Sale).
+### 3.1 Current Market Reality (Pre-Revenue Inventory)
+* **Audited Code Replacement Cost:** The quoted development cost for a single full-stack application typically ranges from $4,000 to $10,000+. Across 85 assets, replacement engineering labor is benchmarked at **$340,000 – $850,000**.
+* **Current Orderly Fair-Market Value Estimate:**
+  * **Orderly Fair-Market Valuation Band:** **$25,500 – $40,375**
+  * **Best Single Planning Value:** **~$33,000**
+  * **Retail Shelf Replacement MSRP:** **$16,915** ($199 × 85 assets)
 
-### 90-Day Execution Target (Post-Revenue Validation)
-1. **Direct Retail Storefront (Gumroad):** 85 individual templates priced at $99 to $150+. Selling 40 units/month generates **$4,000–$6,000/month**.
-2. **Wholesale Agency Vault:** 10 boutique agencies purchasing the $1,499 commercial license generates **$14,990 in upfront cash flow**.
-3. **Portfolio Re-Rating:** Demonstrating $8,000 to $12,000 in monthly catalog revenue re-rates the enterprise value to **$150,000 – $250,000+** on private micro-private equity exchanges.
+### 3.2 Dual-Track Pricing Protocol
+1. **Track 1 — Lean Rapid-Sale (Default Standard)**:
+   * Retail MSRP: **$199**
+   * Commercial Team Seat: **$599**
+   * Exclusive Buyout Floor: **$3,800 – $6,500** (Anchor: **$4,500**)
+2. **Track 2 — Flagship $10K+ (Selective Tier-1)**:
+   * Flagship Commercial License: **$1,500 – $3,500**
+   * Entry Exclusive Buyout Anchor: **$14,500** ($10,000 – $18,000 range)
+   * Full Asset Buyout: **$18,000 – $35,000** | Strategic Acquisition: **$35,000 – $75,000+**
+   * Qualification Gate: Requires 8–15 interactive screens, domain physics solvers, operator journeys, and simulated-data disclosures.
+
+### 3.3 Portfolio Governance & 80% Retained Floor
+* **Retention Floor**: Minimum **68 assets** remain permanently in the factory. Maximum transfer capacity is strictly **17 assets**.
+* **Micro-APA Scope**: Transfers defined rights/code to **one specific asset only**. A micro-APA never transfers GhostFactoryOS, Aura & Grid, shared IP, or the full portfolio.
 
 ---
 
