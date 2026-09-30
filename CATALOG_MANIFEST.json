@@ -2,8 +2,8 @@
   "catalog_version": "1.0.0",
   "store": "Aura & Grid",
   "store_url": "https://auraandgrid.gumroad.com",
-  "total_flagships": 85,
-  "standards": "Ghost Factory™ 9.0+ Verified Production Grade (Permanent 5-Archetype Rotation & Curated Design Intelligence)",
+  "total_flagships": 109,
+  "standards": "Ghost Factory\u2122 9.0+ Verified Production Grade (Permanent 5-Archetype Rotation & Curated Design Intelligence)",
   "database_engine": "Supabase PostgreSQL (RLS Enabled)",
   "frontend_stack": "React 19 + Tailwind CSS + Lucide Icons + Vite",
   "valuation_framework": {
@@ -940,7 +940,7 @@
     },
     {
       "id": 36,
-      "name": "STUDIO VÉRONIQUE LA",
+      "name": "STUDIO V\u00c9RONIQUE LA",
       "category": "California Warm Modernism, Residential Interior Design & Material Sourcing OS",
       "vertical": "creative",
       "gumroad_url": "https://auraandgrid.gumroad.com/l/studio-veronique-os",
@@ -1349,7 +1349,7 @@
     },
     {
       "id": 52,
-      "name": "YŪGEN SENSORY OS",
+      "name": "Y\u016aGEN SENSORY OS",
       "category": "Zen Minimalist Sensory Dining Sanctuary & Omakase Booking OS",
       "vertical": "hospitality",
       "gumroad_url": "https://auraandgrid.gumroad.com/l/yugen-sensory-os",
@@ -2222,62 +2222,834 @@
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+    },
+    {
+      "id": 86,
+      "name": "Autonomous Drone Swarm Perimeter Defense OS",
+      "category": "Autonomous Drone Swarm Perimeter Defense OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/aegis-swarm-os",
+      "preview_url": "https://aegis-swarm-os.onrender.com",
+      "admin_url": "https://aegis-swarm-os.onrender.com/admin",
+      "admin_passcode": "aegis2026",
+      "audit_score": 9.8,
+      "tables": [
+        "defense_perimeters",
+        "automated_docking_hubs",
+        "swarm_drones",
+        "intrusion_targets"
+      ],
+      "vertical": "defense",
+      "archetype_id": "C",
+      "archetype_name": "Archetype C: High-Velocity Dispatch Rail",
+      "archetype_description": "Fleet asset tracking, dispatch coordination, and route telemetry.",
+      "design_benchmark": "Flexport Global Logistics & Samsara Fleet Hub",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/aegis-swarm-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ]
+    },
+    {
+      "id": 87,
+      "name": "Autonomous Mining Haulage Fleet Dispatch OS",
+      "category": "Autonomous Mining Haulage Fleet Dispatch OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/autonomous-mining-haulage-fleet-dispatch-os",
+      "preview_url": "https://autonomous-mining-haulage-fleet-dispatch-os.onrender.com",
+      "admin_url": "https://autonomous-mining-haulage-fleet-dispatch-os.onrender.com/admin",
+      "admin_passcode": "autonomous2026",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "subsea",
+      "archetype_id": "C",
+      "archetype_name": "Archetype C: High-Velocity Dispatch Rail",
+      "archetype_description": "Fleet asset tracking, dispatch coordination, and route telemetry.",
+      "design_benchmark": "Flexport Global Logistics & Samsara Fleet Hub",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/autonomous-mining-haulage-fleet-dispatch-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ]
+    },
+    {
+      "id": 88,
+      "name": "Autonomous Subsea Mining Crawler Telemetry OS",
+      "category": "Autonomous Subsea Mining Crawler Telemetry OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/autonomous-subsea-mining-crawler-telemetry-os",
+      "preview_url": "https://autonomous-subsea-mining-crawler-telemetry-os.onrender.com",
+      "admin_url": "https://autonomous-subsea-mining-crawler-telemetry-os.onrender.com/admin",
+      "admin_passcode": "autonomous2026",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "subsea",
+      "archetype_id": "A",
+      "archetype_name": "Archetype A: Dense Operational Console",
+      "archetype_description": "Persistent utility rail, real-time operational triage queue, and slide-out inspection drawer.",
+      "design_benchmark": "NASA Mission Control & Palantir Foundry Console",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/autonomous-subsea-mining-crawler-telemetry-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ]
+    },
+    {
+      "id": 89,
+      "name": "Aviation FBO Dispatch OS",
+      "category": "Aviation FBO Dispatch OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/aviation-fbo-dispatch-os",
+      "preview_url": "https://aviation-fbo-dispatch-os.onrender.com",
+      "admin_url": "https://aviation-fbo-dispatch-os.onrender.com/admin",
+      "admin_passcode": "aviation2026",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "aerospace",
+      "archetype_id": "C",
+      "archetype_name": "Archetype C: High-Velocity Dispatch Rail",
+      "archetype_description": "Fleet asset tracking, dispatch coordination, and route telemetry.",
+      "design_benchmark": "Flexport Global Logistics & Samsara Fleet Hub",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/aviation-fbo-dispatch-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ]
+    },
+    {
+      "id": 90,
+      "name": "Boutique Winery Production OS",
+      "category": "Boutique Winery Production OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/boutique-winery-production-os",
+      "preview_url": "https://boutique-winery-production-os.onrender.com",
+      "admin_url": "https://boutique-winery-production-os.onrender.com/admin",
+      "admin_passcode": "boutique2026",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "hospitality",
+      "archetype_id": "B",
+      "archetype_name": "Archetype B: Asymmetric Editorial Showcase",
+      "archetype_description": "Dynamic masonry grid, visual filtering, and slide-over commission sheet.",
+      "design_benchmark": "LVMH Luxury Atelier & Monaco Yacht Show",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/boutique-winery-production-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ]
+    },
+    {
+      "id": 91,
+      "name": "Clinical Trial Operations OS",
+      "category": "Clinical Trial Operations OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/clinical-trial-operations-os",
+      "preview_url": "https://clinical-trial-operations-os.onrender.com",
+      "admin_url": "https://clinical-trial-operations-os.onrender.com/admin",
+      "admin_passcode": "clinical2026",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "medical",
+      "archetype_id": "C",
+      "archetype_name": "Archetype C: High-Velocity Dispatch Rail",
+      "archetype_description": "Fleet asset tracking, dispatch coordination, and route telemetry.",
+      "design_benchmark": "Flexport Global Logistics & Samsara Fleet Hub",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/clinical-trial-operations-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ]
+    },
+    {
+      "id": 92,
+      "name": "Cold Storage Logistics OS",
+      "category": "Cold Storage Logistics OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/cold-storage-logistics-os",
+      "preview_url": "https://cold-storage-logistics-os.onrender.com",
+      "admin_url": "https://cold-storage-logistics-os.onrender.com/admin",
+      "admin_passcode": "cold2026",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "heavy_fleet",
+      "archetype_id": "C",
+      "archetype_name": "Archetype C: High-Velocity Dispatch Rail",
+      "archetype_description": "Fleet asset tracking, dispatch coordination, and route telemetry.",
+      "design_benchmark": "Flexport Global Logistics & Samsara Fleet Hub",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/cold-storage-logistics-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ]
+    },
+    {
+      "id": 93,
+      "name": "Commercial Supersonic Airliner Engine Inverted Aerospike Telemetry OS",
+      "category": "Commercial Supersonic Airliner Engine Inverted Aerospike Telemetry OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/commercial-supersonic-airliner-engine-inverted-aerospike-telemetry-os",
+      "preview_url": "https://commercial-supersonic-airliner-engine-inverted-aerospike-telemetry-os.onrender.com",
+      "admin_url": "https://commercial-supersonic-airliner-engine-inverted-aerospike-telemetry-os.onrender.com/admin",
+      "admin_passcode": "commercial2026",
+      "audit_score": 9.8,
+      "tables": [
+        "telemetry",
+        "subsystems",
+        "events",
+        "metrics"
+      ],
+      "vertical": "aerospace",
+      "archetype_id": "A",
+      "archetype_name": "Archetype A: Dense Operational Console",
+      "archetype_description": "Persistent utility rail, real-time operational triage queue, and slide-out inspection drawer.",
+      "design_benchmark": "NASA Mission Control & Palantir Foundry Console",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/commercial-supersonic-airliner-engine-inverted-aerospike-telemetry-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ]
+    },
+    {
+      "id": 94,
+      "name": "Commercial Tokamak Fusion Plasma SCADA OS",
+      "category": "Commercial Tokamak Fusion Plasma SCADA OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/commercial-tokamak-fusion-plasma-scada-os",
+      "preview_url": "https://commercial-tokamak-fusion-plasma-scada-os.onrender.com",
+      "admin_url": "https://commercial-tokamak-fusion-plasma-scada-os.onrender.com/admin",
+      "admin_passcode": "commercial2026",
+      "audit_score": 9.8,
+      "tables": [
+        "fusion_reactors",
+        "plasma_pulses",
+        "magnetic_coils",
+        "divertor_thermal_logs",
+        "disruption_events",
+        "scada_audit_logs"
+      ],
+      "vertical": "clean_energy",
+      "archetype_id": "D",
+      "archetype_name": "Archetype D: SCADA System Matrix",
+      "archetype_description": "High-density telemetry streams, closed-loop sensor controllers, and industrial process automation.",
+      "design_benchmark": "Siemens WinCC & Schneider EcoStruxure SCADA",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/commercial-tokamak-fusion-plasma-scada-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ]
+    },
+    {
+      "id": 95,
+      "name": "Deep-Sea ROV Trenching & Cable Burial OS",
+      "category": "Deep-Sea ROV Trenching & Cable Burial OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/deep-sea-rov-trenching-and-cable-burial-os",
+      "preview_url": "https://deep-sea-rov-trenching-and-cable-burial-os.onrender.com",
+      "admin_url": "https://deep-sea-rov-trenching-and-cable-burial-os.onrender.com/admin",
+      "admin_passcode": "deep2026",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "subsea",
+      "archetype_id": "C",
+      "archetype_name": "Archetype C: High-Velocity Dispatch Rail",
+      "archetype_description": "Fleet asset tracking, dispatch coordination, and route telemetry.",
+      "design_benchmark": "Flexport Global Logistics & Samsara Fleet Hub",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/deep-sea-rov-trenching-and-cable-burial-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ]
+    },
+    {
+      "id": 96,
+      "name": "Geothermal Supercritical EGS Wellhead SCADA OS",
+      "category": "Geothermal Supercritical EGS Wellhead SCADA OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/geothermal-supercritical-egs-wellhead-scada-os",
+      "preview_url": "https://geothermal-supercritical-egs-wellhead-scada-os.onrender.com",
+      "admin_url": "https://geothermal-supercritical-egs-wellhead-scada-os.onrender.com/admin",
+      "admin_passcode": "geothermal2026",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "clean_energy",
+      "archetype_id": "D",
+      "archetype_name": "Archetype D: SCADA System Matrix",
+      "archetype_description": "High-density telemetry streams, closed-loop sensor controllers, and industrial process automation.",
+      "design_benchmark": "Siemens WinCC & Schneider EcoStruxure SCADA",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/geothermal-supercritical-egs-wellhead-scada-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ]
+    },
+    {
+      "id": 97,
+      "name": "HFT Colocation & Microwave Telemetry OS",
+      "category": "HFT Colocation & Microwave Telemetry OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/hft-colocation-and-microwave-os",
+      "preview_url": "https://hft-colocation-and-microwave-os.onrender.com",
+      "admin_url": "https://hft-colocation-and-microwave-os.onrender.com/admin",
+      "admin_passcode": "hft2026",
+      "audit_score": 9.8,
+      "tables": [
+        "telemetry",
+        "subsystems",
+        "events",
+        "metrics"
+      ],
+      "vertical": "wealth",
+      "archetype_id": "C",
+      "archetype_name": "Archetype C: High-Velocity Dispatch Rail",
+      "archetype_description": "Fleet asset tracking, dispatch coordination, and route telemetry.",
+      "design_benchmark": "Flexport Global Logistics & Samsara Fleet Hub",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/hft-colocation-and-microwave-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ]
+    },
+    {
+      "id": 98,
+      "name": "Hypersonic Wind Tunnel Aerodynamics Telemetry OS",
+      "category": "Hypersonic Wind Tunnel Aerodynamics Telemetry OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/hypersonic-wind-tunnel-aerodynamics-telemetry-os",
+      "preview_url": "https://hypersonic-wind-tunnel-aerodynamics-telemetry-os.onrender.com",
+      "admin_url": "https://hypersonic-wind-tunnel-aerodynamics-telemetry-os.onrender.com/admin",
+      "admin_passcode": "hypersonic2026",
+      "audit_score": 9.8,
+      "tables": [
+        "telemetry",
+        "subsystems",
+        "events",
+        "metrics"
+      ],
+      "vertical": "aerospace",
+      "archetype_id": "A",
+      "archetype_name": "Archetype A: Dense Operational Console",
+      "archetype_description": "Persistent utility rail, real-time operational triage queue, and slide-out inspection drawer.",
+      "design_benchmark": "NASA Mission Control & Palantir Foundry Console",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/hypersonic-wind-tunnel-aerodynamics-telemetry-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ]
+    },
+    {
+      "id": 99,
+      "name": "Luxury Auto Concierge OS",
+      "category": "Luxury Auto Concierge OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/luxury-auto-concierge-os",
+      "preview_url": "https://luxury-auto-concierge-os.onrender.com",
+      "admin_url": "https://luxury-auto-concierge-os.onrender.com/admin",
+      "admin_passcode": "luxury2026",
+      "audit_score": 9.8,
+      "tables": [
+        "vault_clients",
+        "collector_vehicles",
+        "transport_manifests",
+        "service_tickets",
+        "vault_telemetry_logs",
+        "security_audit_logs"
+      ],
+      "vertical": "heavy_fleet",
+      "archetype_id": "B",
+      "archetype_name": "Archetype B: Asymmetric Editorial Showcase",
+      "archetype_description": "Dynamic masonry grid, visual filtering, and slide-over commission sheet.",
+      "design_benchmark": "LVMH Luxury Atelier & Monaco Yacht Show",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/luxury-auto-concierge-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ]
+    },
+    {
+      "id": 100,
+      "name": "Maritime Freight Brokerage OS",
+      "category": "Maritime Freight Brokerage OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/maritime-freight-brokerage-os",
+      "preview_url": "https://maritime-freight-brokerage-os.onrender.com",
+      "admin_url": "https://maritime-freight-brokerage-os.onrender.com/admin",
+      "admin_passcode": "maritime2026",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "heavy_fleet",
+      "archetype_id": "C",
+      "archetype_name": "Archetype C: High-Velocity Dispatch Rail",
+      "archetype_description": "Fleet asset tracking, dispatch coordination, and route telemetry.",
+      "design_benchmark": "Flexport Global Logistics & Samsara Fleet Hub",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/maritime-freight-brokerage-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ]
+    },
+    {
+      "id": 101,
+      "name": "Orbital Satellite Laser ISL Optical Terminal OS",
+      "category": "Orbital Satellite Laser ISL Optical Terminal OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/orbital-satellite-laser-isl-optical-terminal-os",
+      "preview_url": "https://orbital-satellite-laser-isl-optical-terminal-os.onrender.com",
+      "admin_url": "https://orbital-satellite-laser-isl-optical-terminal-os.onrender.com/admin",
+      "admin_passcode": "orbital2026",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "aerospace",
+      "archetype_id": "A",
+      "archetype_name": "Archetype A: Dense Operational Console",
+      "archetype_description": "Persistent utility rail, real-time operational triage queue, and slide-out inspection drawer.",
+      "design_benchmark": "NASA Mission Control & Palantir Foundry Console",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/orbital-satellite-laser-isl-optical-terminal-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ]
+    },
+    {
+      "id": 102,
+      "name": "Private Credit Syndication OS",
+      "category": "Private Credit Syndication OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/private-credit-syndication-os",
+      "preview_url": "https://private-credit-syndication-os.onrender.com",
+      "admin_url": "https://private-credit-syndication-os.onrender.com/admin",
+      "admin_passcode": "private2026",
+      "audit_score": 9.8,
+      "tables": [
+        "telemetry",
+        "subsystems",
+        "events",
+        "metrics"
+      ],
+      "vertical": "wealth",
+      "archetype_id": "C",
+      "archetype_name": "Archetype C: High-Velocity Dispatch Rail",
+      "archetype_description": "Fleet asset tracking, dispatch coordination, and route telemetry.",
+      "design_benchmark": "Flexport Global Logistics & Samsara Fleet Hub",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/private-credit-syndication-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ]
+    },
+    {
+      "id": 103,
+      "name": "Renewable Energy Microgrid Dispatch OS",
+      "category": "Renewable Energy Microgrid Dispatch OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/renewable-energy-microgrid-dispatch-os",
+      "preview_url": "https://renewable-energy-microgrid-dispatch-os.onrender.com",
+      "admin_url": "https://renewable-energy-microgrid-dispatch-os.onrender.com/admin",
+      "admin_passcode": "renewable2026",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "clean_energy",
+      "archetype_id": "C",
+      "archetype_name": "Archetype C: High-Velocity Dispatch Rail",
+      "archetype_description": "Fleet asset tracking, dispatch coordination, and route telemetry.",
+      "design_benchmark": "Flexport Global Logistics & Samsara Fleet Hub",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/renewable-energy-microgrid-dispatch-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ]
+    },
+    {
+      "id": 104,
+      "name": "Semiconductor Fab Cleanroom SCADA OS",
+      "category": "Semiconductor Fab Cleanroom SCADA OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/semiconductor-fab-cleanroom-scada-os",
+      "preview_url": "https://semiconductor-fab-cleanroom-scada-os.onrender.com",
+      "admin_url": "https://semiconductor-fab-cleanroom-scada-os.onrender.com/admin",
+      "admin_passcode": "semiconductor2026",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "deep_tech",
+      "archetype_id": "D",
+      "archetype_name": "Archetype D: SCADA System Matrix",
+      "archetype_description": "High-density telemetry streams, closed-loop sensor controllers, and industrial process automation.",
+      "design_benchmark": "Siemens WinCC & Schneider EcoStruxure SCADA",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/semiconductor-fab-cleanroom-scada-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ]
+    },
+    {
+      "id": 105,
+      "name": "Space Launch Payload Manifest OS",
+      "category": "Space Launch Payload Manifest OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/space-launch-payload-manifest-os",
+      "preview_url": "https://space-launch-payload-manifest-os.onrender.com",
+      "admin_url": "https://space-launch-payload-manifest-os.onrender.com/admin",
+      "admin_passcode": "space2026",
+      "audit_score": 9.8,
+      "tables": [
+        "launch_missions",
+        "orbital_trajectories",
+        "licensing_milestones",
+        "payload_manifests"
+      ],
+      "vertical": "aerospace",
+      "archetype_id": "C",
+      "archetype_name": "Archetype C: High-Velocity Dispatch Rail",
+      "archetype_description": "Fleet asset tracking, dispatch coordination, and route telemetry.",
+      "design_benchmark": "Flexport Global Logistics & Samsara Fleet Hub",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/space-launch-payload-manifest-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ]
+    },
+    {
+      "id": 106,
+      "name": "Subsea Fiber Cable Restoration OS",
+      "category": "Subsea Fiber Cable Restoration OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/subsea-cable-restoration-os",
+      "preview_url": "https://subsea-cable-restoration-os.onrender.com",
+      "admin_url": "https://subsea-cable-restoration-os.onrender.com/admin",
+      "admin_passcode": "subsea2026",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "subsea",
+      "archetype_id": "C",
+      "archetype_name": "Archetype C: High-Velocity Dispatch Rail",
+      "archetype_description": "Fleet asset tracking, dispatch coordination, and route telemetry.",
+      "design_benchmark": "Flexport Global Logistics & Samsara Fleet Hub",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/subsea-cable-restoration-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ]
+    },
+    {
+      "id": 107,
+      "name": "Superconducting Quantum Processor Cryostat OS",
+      "category": "Superconducting Quantum Processor Cryostat OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/superconducting-quantum-processor-cryostat-os",
+      "preview_url": "https://superconducting-quantum-processor-cryostat-os.onrender.com",
+      "admin_url": "https://superconducting-quantum-processor-cryostat-os.onrender.com/admin",
+      "admin_passcode": "superconducting2026",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "deep_tech",
+      "archetype_id": "D",
+      "archetype_name": "Archetype D: SCADA System Matrix",
+      "archetype_description": "High-density telemetry streams, closed-loop sensor controllers, and industrial process automation.",
+      "design_benchmark": "Siemens WinCC & Schneider EcoStruxure SCADA",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/superconducting-quantum-processor-cryostat-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ]
+    },
+    {
+      "id": 108,
+      "name": "Yacht Charter Fleet Ecosystem",
+      "category": "Yacht Charter Fleet Ecosystem Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/yacht-charter-fleet-ecosystem",
+      "preview_url": "https://yacht-charter-fleet-ecosystem.onrender.com",
+      "admin_url": "https://yacht-charter-fleet-ecosystem.onrender.com/admin",
+      "admin_passcode": "yacht2026",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "heavy_fleet",
+      "archetype_id": "B",
+      "archetype_name": "Archetype B: Asymmetric Editorial Showcase",
+      "archetype_description": "Dynamic masonry grid, visual filtering, and slide-over commission sheet.",
+      "design_benchmark": "LVMH Luxury Atelier & Monaco Yacht Show",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/yacht-charter-fleet-ecosystem",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ]
+    },
+    {
+      "id": 109,
+      "name": "Orbital Habitat ECLSS SCADA OS",
+      "category": "Orbital Habitat ECLSS SCADA OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/orbital-habitat-closed-loop-os",
+      "preview_url": "https://orbital-habitat-closed-loop-os.onrender.com",
+      "admin_url": "https://orbital-habitat-closed-loop-os.onrender.com/admin",
+      "admin_passcode": "orbital2026",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "aerospace",
+      "archetype_id": "C",
+      "archetype_name": "Archetype C: High-Velocity Dispatch Rail",
+      "archetype_description": "Fleet asset tracking, dispatch coordination, and route telemetry.",
+      "design_benchmark": "Flexport Global Logistics & Samsara Fleet Hub",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/orbital-habitat-closed-loop-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ]
     }
   ],
   "vertical_slices": {
     "hospitality": {
       "name": "Luxury Hospitality & Dining Vault",
       "description": "Bespoke counters, omakase, jazz bistros, supper clubs, estates & vineyards OS",
-      "apa_valuation_range": "$42,000 – $65,000",
+      "apa_valuation_range": "$42,000 \u2013 $65,000",
       "target_asset_count": 60,
       "current_asset_count": 23
     },
     "wealth": {
       "name": "Private Wealth & Real Estate Vault",
       "description": "Private equity LP portals, estate syndication, family office & luxury listings OS",
-      "apa_valuation_range": "$30,000 – $48,000",
+      "apa_valuation_range": "$30,000 \u2013 $48,000",
       "target_asset_count": 35,
       "current_asset_count": 16
     },
     "medical": {
       "name": "Medical & VIP Aesthetics Vault",
       "description": "Clinical booking, patient intake, medspas, salon grooming & olfactory OS",
-      "apa_valuation_range": "$35,000 – $55,000",
+      "apa_valuation_range": "$35,000 \u2013 $55,000",
       "target_asset_count": 50,
       "current_asset_count": 13
     },
     "creative": {
       "name": "Creative Agency & Studio Vault",
       "description": "Motion VFX, architecture atelier, soundstage production & design OS",
-      "apa_valuation_range": "$28,000 – $40,000",
+      "apa_valuation_range": "$28,000 \u2013 $40,000",
       "target_asset_count": 40,
       "current_asset_count": 12
     },
     "automotive": {
       "name": "Automotive & Mobility Vault",
       "description": "Dyno testing, tuning dispatch, luxury fleet rentals & workshop OS",
-      "apa_valuation_range": "$28,000 – $45,000",
+      "apa_valuation_range": "$28,000 \u2013 $45,000",
       "target_asset_count": 40,
       "current_asset_count": 6
     },
     "fitness": {
       "name": "Performance Fitness & Athletics Vault",
       "description": "Boutique fight clubs, reformer training & athletic performance OS",
-      "apa_valuation_range": "$25,000 – $38,000",
+      "apa_valuation_range": "$25,000 \u2013 $38,000",
       "target_asset_count": 35,
       "current_asset_count": 5
     },
     "home_services": {
       "name": "Home Services & Commercial Contracting Vault",
       "description": "Commercial HVAC, drone roofing, hydraulic plumbing, solar EPC permits & switchgear dispatch OS",
-      "apa_valuation_range": "$35,000 – $60,000",
+      "apa_valuation_range": "$35,000 \u2013 $60,000",
       "target_asset_count": 50,
       "current_asset_count": 5
     },
     "heavy_fleet": {
       "name": "Heavy Commercial Fleet & Logistics Vault",
       "description": "Heavy plant rental, freight brokerage dispatch, private aviation charter, cold storage & crane rigging OS",
-      "apa_valuation_range": "$30,000 – $52,000",
+      "apa_valuation_range": "$30,000 \u2013 $52,000",
       "target_asset_count": 40,
       "current_asset_count": 5
     }
@@ -2285,18 +3057,18 @@
   "roadmap_horizons": {
     "immediate_focus": {
       "target": "500 Apps (Phase 1 to 4)",
-      "timeline": "2026 – Late 2027",
+      "timeline": "2026 \u2013 Late 2027",
       "phase_1_archive_clearance": "50 Apps ($2,999 Agency Vault Launch)",
-      "phase_2_century_funnel": "100 Apps ($3,500 VIP Setup + $35k–$50k Micro-APA)",
+      "phase_2_century_funnel": "100 Apps ($3,500 VIP Setup + $35k\u2013$50k Micro-APA)",
       "phase_3_category_dominance": "350 Apps (5-in-1 Niche Bundles + Micro-PE Multiple)",
-      "phase_4_master_buyout": "500 Apps ($125,000–$200,000 Cash Buyout / $1.2M–$2.5M+ Cash Flow)"
+      "phase_4_master_buyout": "500 Apps ($125,000\u2013$200,000 Cash Buyout / $1.2M\u2013$2.5M+ Cash Flow)"
     },
     "long_term_expansion": {
       "target": "3,000 to 5,000 Apps (Phase 5 to 7)",
-      "timeline": "2028 – 2031 (3–5 Year Horizon)",
+      "timeline": "2028 \u2013 2031 (3\u20135 Year Horizon)",
       "phase_5_multi_channel": "1,500 Apps (Custom Storefront, ThemeForest, B2B Outbound)",
-      "phase_6_saas_franchise": "3,000 Apps ($450k–$900k Pre-Revenue Buyout / $4.5M Exit)",
-      "phase_7_holding_conglomerate": "5,000 Apps ($750k–$1.5M Wholesale Buyout / $8.75M+ Exit)"
+      "phase_6_saas_franchise": "3,000 Apps ($450k\u2013$900k Pre-Revenue Buyout / $4.5M Exit)",
+      "phase_7_holding_conglomerate": "5,000 Apps ($750k\u2013$1.5M Wholesale Buyout / $8.75M+ Exit)"
     }
   },
   "archetypes": {
