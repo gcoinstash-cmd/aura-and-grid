@@ -223,7 +223,7 @@ const renderedCardsHtml = publicProducts.map(p => {
             Specs
           </button>
           <a href="${escapeHtml(p.commercial_checkout_url)}" target="_blank" class="py-2.5 px-3 rounded ${p.checkout_active ? 'bg-gold/15 border-gold/40 text-gold hover:bg-gold hover:text-black' : 'bg-white/10 border-white/20 text-neutral-300 hover:bg-white hover:text-black'} border font-semibold transition-all">
-            ${p.checkout_active ? '$150 ➔' : 'Vault ➔'}
+            ${p.checkout_active ? '$199 ➔' : 'Vault ➔'}
           </a>
         </div>
       </div>`;
