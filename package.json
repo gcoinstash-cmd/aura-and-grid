@@ -1,6 +1,6 @@
 {
   "name": "aura-and-grid-storefront-engine",
-  "version": "1.0.0",
+  "version": "1.2.0-diligence-cleared",
   "description": "Storefront Engine for Aura & Grid - Digital architecture and web templates",
   "type": "module",
   "scripts": {

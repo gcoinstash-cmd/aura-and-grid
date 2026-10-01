@@ -86,6 +86,18 @@ assert(!showroomHtml.includes('WCAG AA Certified'), 'site/index.html has no unve
 assert(showroomHtml.includes('v=9.6-diligence'), 'site/index.html contains cache-busting version parameter v=9.6-diligence');
 assert(consoleDistHtml.includes('v=9.6-diligence'), 'tools/ghost-factory-console/dist/index.html contains cache-busting version parameter v=9.6-diligence');
 
+// 7. Validate v1.2.0-diligence-cleared Frozen Release Version
+const rootPkg = JSON.parse(fs.readFileSync(path.join(rootDir, 'package.json'), 'utf8'));
+assert(rootPkg.version === '1.2.0-diligence-cleared', 'root package.json version === 1.2.0-diligence-cleared');
+
+const consolePkg = JSON.parse(fs.readFileSync(path.join(rootDir, 'tools', 'ghost-factory-console', 'package.json'), 'utf8'));
+assert(consolePkg.version === '1.2.0-diligence-cleared', 'tools/ghost-factory-console/package.json version === 1.2.0-diligence-cleared');
+
+assert(manifest.catalog_version === '1.2.0-diligence-cleared', 'CATALOG_MANIFEST.json catalog_version === 1.2.0-diligence-cleared');
+assert(catalogContent.includes('"catalog_version": "1.2.0-diligence-cleared"'), 'catalogData.ts catalog_version === 1.2.0-diligence-cleared');
+assert(showroomHtml.includes('v1.2.0-diligence-cleared'), 'site/index.html contains v1.2.0-diligence-cleared version lock');
+assert(consoleDistHtml.includes('v1.2.0-diligence-cleared'), 'tools/ghost-factory-console/dist/index.html contains v1.2.0-diligence-cleared build badge');
+
 console.log('\n-------------------------------------------------------');
 console.log(`📊 Diligence Validation Summary: ${passCount} Passed, ${failCount} Failed.`);
 console.log('-------------------------------------------------------\n');
