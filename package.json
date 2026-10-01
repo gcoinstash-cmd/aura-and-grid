@@ -7,6 +7,7 @@
     "build": "node scripts/site/build_public_showroom.mjs && cd tools/ghost-factory-console && npm run build",
     "sync:master": "node scripts/sync_master.mjs",
     "sync:watch": "node scripts/sync_master.mjs --watch",
+    "verify:diligence": "node scripts/verify_diligence_build.mjs",
     "publish:draft": "node scripts/publish-gumroad.mjs --draft",
     "publish:live": "node scripts/publish-gumroad.mjs --live"
   },
