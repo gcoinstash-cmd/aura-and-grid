@@ -87,10 +87,10 @@ A **micro-APA** means a small asset purchase agreement where a buyer acquires ow
 
 Current portfolio facts:
 
-- Current total assets: **109 pre-revenue digital assets** (85 Track 1 Lean Rapid-Sale + 24 Track 2 Flagship Tier-1)
+- Current total assets: **110 pre-revenue digital assets** (85 Track 1 Lean Rapid-Sale + 25 Track 2 Flagship Tier-1)
 - Long-term target: **500 high-quality, distinct, cataloged assets**
 - Minimum retained floor: **80% of the collection at every stage**
-- Current minimum retained floor: **87 assets**
+- Current minimum retained floor: **88 assets**
 - Current maximum ownership-transfer capacity: **22 assets**
 - At 500 assets: minimum retained floor is **400 assets**
 - At 500 assets: maximum ownership-transfer capacity is **100 assets**
@@ -112,18 +112,18 @@ Protect permanently:
 
 ## CURRENT PORTFOLIO VALUATION
 
-The full 109-asset collection is **pre-revenue**.
-Composition: **85 Track 1 Lean Rapid-Sale Assets** + **24 Track 2 Flagship Tier-1 SCADA/Deep Tech Assets**.
+The full 110-asset collection is **pre-revenue**.
+Composition: **85 Track 1 Lean Rapid-Sale Assets** + **25 Track 2 Flagship Tier-1 SCADA/Deep Tech Assets**.
 
 Current orderly fair-market value estimate:
 
-- **$85,500–$148,375**
-- Best single planning value: **about $115,000**
-- Direct B2B Ask (Data Room Target): **$145,000–$185,000**
-- Realistic Accepted Offer (Quick-Close Wire / LOI): **$95,000–$125,000**
-- Dev Replacement Cost: **$700,000–$1,690,000**
+- **$105,000–$235,250**
+- Best single planning value: **about $160,000**
+- Direct B2B Ask (Data Room Target): **$195,000–$265,000**
+- Realistic Accepted Offer (Quick-Close Wire / LOI): **$135,000–$175,000**
+- Dev Replacement Cost: **$715,000–$2,020,000**
 
-Do not present the collection as 109 proven SaaS businesses.
+Do not present the collection as 110 proven SaaS businesses.
 
 Do not claim verified revenue, customers, retention, profit, uptime, security audits, compliance, or production status unless evidence exists.
 
@@ -347,6 +347,7 @@ These 24 assets are classified under the Flagship $10K+ Track ($14,500 Buyout An
 | #107 Superconducting Quantum Processor Cryostat OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
 | #108 Yacht Charter Fleet Ecosystem | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
 | #109 Orbital Habitat ECLSS SCADA OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #110 Orbital In-Space Cryogenic Propellant Depot SCADA OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
 
 ## OFFER DESIGN RULES
 

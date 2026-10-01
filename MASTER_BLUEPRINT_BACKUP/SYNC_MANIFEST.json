@@ -1,5 +1,5 @@
 {
-  "sync_timestamp": "2026-10-01T10:04:56.458Z",
+  "sync_timestamp": "2026-10-01T10:12:20.422Z",
   "version": "v2.0-master-sync",
   "status": "ALL_SYNCED",
   "pricing_protocol": {
@@ -35,8 +35,8 @@
   },
   "total_files_synced": 14,
   "checksums": {
-    "AGENTS.md": "38e605b4b99bb0dc8dba956cb5eb60f3643da98e9ffcc895ab03f9705d05fb16",
-    "GEMINI.md": "38e605b4b99bb0dc8dba956cb5eb60f3643da98e9ffcc895ab03f9705d05fb16",
+    "AGENTS.md": "ebc38856cbac5a44eb3225cc7904d5c49b324ff8a13ed95a5bfbc33c2c044724",
+    "GEMINI.md": "ebc38856cbac5a44eb3225cc7904d5c49b324ff8a13ed95a5bfbc33c2c044724",
     "instructions.txt": "2745808d0db0aefd33cb03e3dac2facf78ba70b5aab341da568acc588b33191b",
     "ghostfactory-master.md": "2745808d0db0aefd33cb03e3dac2facf78ba70b5aab341da568acc588b33191b",
     "GHOSTFACTORY_V2_MASTER_SYNC.md": "437bb09f16e51daccaeacf2471c4a3d7ba0d21110bf39e2d7a2e48d19851e95b",
