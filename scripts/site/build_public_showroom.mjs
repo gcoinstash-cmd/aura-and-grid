@@ -58,6 +58,9 @@ function isRegulatedSector(product) {
     return true;
   }
   if (product.id >= 86) return true;
+  if (['hospitality', 'creative', 'fitness'].includes(product.vertical)) {
+    return false;
+  }
   const combined = `${product.name} ${product.category || ''} ${product.vertical || ''} ${product.archetype_name || ''}`.toLowerCase();
   const regulatedRegexes = [
     /\bclinical\b/, /\btrial\b/, /\bmedical\b/, /\bmedicine\b/, /\bmedspa\b/,

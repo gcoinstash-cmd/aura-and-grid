@@ -293,7 +293,7 @@
         "vintage_allocations",
         "vault_lockers"
       ],
-      "vertical": "wealth",
+      "vertical": "hospitality",
       "archetype_id": "D",
       "archetype_name": "Archetype D: Timeline & Station Reservation Grid",
       "archetype_description": "Interactive day/hour time-slot matrix, capacity/station status indicators, and instant seat/pod booking for Michelin dining, private clubs, and recovery labs.",
@@ -304,7 +304,7 @@
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
       "truth_badge": "Interactive Prototype // Simulated Data Only",
-      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 11,
@@ -400,7 +400,7 @@
         "accommodation_tiers",
         "cohort_applications"
       ],
-      "vertical": "medical",
+      "vertical": "hospitality",
       "archetype_id": "D",
       "archetype_name": "Archetype D: Timeline & Station Reservation Grid",
       "archetype_description": "Interactive day/hour time-slot matrix, capacity/station status indicators, and instant seat/pod booking for Michelin dining, private clubs, and recovery labs.",
@@ -411,7 +411,7 @@
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
       "truth_badge": "Interactive Prototype // Simulated Data Only",
-      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 15,
@@ -478,7 +478,7 @@
         "raw_essence_vault",
         "house_signatures"
       ],
-      "vertical": "medical",
+      "vertical": "creative",
       "archetype_id": "C",
       "archetype_name": "Archetype C: Step-by-Step Calculator / Wizard",
       "archetype_description": "Stateful multi-stage progression stepper, interactive pricing/spec tally, and stage-by-stage validation for underwriting, legal retainers, and clinical intake.",
@@ -489,7 +489,7 @@
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
       "truth_badge": "Interactive Prototype // Simulated Data Only",
-      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 18,
@@ -656,7 +656,7 @@
       "id": 24,
       "name": "VILLA OBSIDIAN",
       "category": "Ultra-Luxury Architectural Estates & Private Villa OS",
-      "vertical": "wealth",
+      "vertical": "hospitality",
       "gumroad_url": "https://auraandgrid.gumroad.com/l/villa-obsidian-os",
       "preview_url": "https://villa-obsidian-os.onrender.com",
       "admin_url": "https://villa-obsidian-os.onrender.com",
@@ -678,7 +678,7 @@
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
       "truth_badge": "Interactive Prototype // Simulated Data Only",
-      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 25,
@@ -739,7 +739,7 @@
       "id": 27,
       "name": "AURA FRAGRANCE",
       "category": "Haute Parfumerie, Bespoke Scent Formulation & Olfactory Atelier OS",
-      "vertical": "medical",
+      "vertical": "creative",
       "gumroad_url": "https://auraandgrid.gumroad.com/l/aura-fragrance-os",
       "preview_url": "https://aura-fragrance-os.onrender.com",
       "admin_url": "https://aura-fragrance-os.onrender.com/admin",
@@ -760,7 +760,7 @@
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
       "truth_badge": "Interactive Prototype // Simulated Data Only",
-      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 28,
@@ -846,7 +846,7 @@
       "id": 31,
       "name": "DIAMOND CUTS",
       "category": "Luxury Barber Salon, Chair Scheduling & Grooming Atelier Floor OS",
-      "vertical": "medical",
+      "vertical": "creative",
       "gumroad_url": "https://auraandgrid.gumroad.com/l/diamond-cuts-os",
       "preview_url": "https://diamond-cuts-os.onrender.com",
       "admin_url": "https://diamond-cuts-os.onrender.com/admin",
@@ -866,13 +866,13 @@
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
       "truth_badge": "Interactive Prototype // Simulated Data Only",
-      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 32,
       "name": "CROWN & COLLECTIVE",
       "category": "Boutique Barber Atelier, VIP Chair Booking & Haircare Goods OS",
-      "vertical": "medical",
+      "vertical": "creative",
       "gumroad_url": "https://auraandgrid.gumroad.com/l/crown-collective-os",
       "preview_url": "https://crown-collective-os.onrender.com",
       "admin_url": "https://crown-collective-os.onrender.com/admin",
@@ -893,7 +893,7 @@
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
       "truth_badge": "Interactive Prototype // Simulated Data Only",
-      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 33,
@@ -1165,7 +1165,7 @@
       "id": 43,
       "name": "SPA TREATMENT OS",
       "category": "Ultra-Luxury Spa Treatment, Ritual Booking & Wellness Sanctuary OS",
-      "vertical": "medical",
+      "vertical": "hospitality",
       "gumroad_url": "https://auraandgrid.gumroad.com/l/spa-treatment-os",
       "preview_url": "https://spa-treatment-os.onrender.com",
       "admin_url": "https://spa-treatment-os.onrender.com/admin",
@@ -1186,7 +1186,7 @@
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
       "truth_badge": "Interactive Prototype // Simulated Data Only",
-      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 44,
@@ -2258,7 +2258,7 @@
       "id": 84,
       "name": "LUXURY HOROLOGY VAULT OS",
       "category": "Chrono Inspection, Caliber Specs & Provenance Certificate OS",
-      "vertical": "wealth",
+      "vertical": "creative",
       "gumroad_url": "https://auraandgrid.gumroad.com/l/luxury-horology-vault-os",
       "preview_url": "https://gcoinstash-cmd.github.io/luxury-horology-vault-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/luxury-horology-vault-os/admin",
@@ -2279,7 +2279,7 @@
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
       "truth_badge": "Interactive Prototype // Simulated Data Only",
-      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 85,
@@ -3160,28 +3160,28 @@
       "description": "Bespoke counters, omakase, jazz bistros, supper clubs, estates & vineyards OS",
       "apa_valuation_range": "$42,000 – $65,000",
       "target_asset_count": 60,
-      "current_asset_count": 23
+      "current_asset_count": 27
     },
     "wealth": {
       "name": "Private Wealth & Real Estate Vault",
       "description": "Private equity LP portals, estate syndication, family office & luxury listings OS",
       "apa_valuation_range": "$30,000 – $48,000",
       "target_asset_count": 35,
-      "current_asset_count": 16
+      "current_asset_count": 13
     },
     "medical": {
       "name": "Medical & VIP Aesthetics Vault",
       "description": "Clinical booking, patient intake, medspas, salon grooming & olfactory OS",
       "apa_valuation_range": "$35,000 – $55,000",
       "target_asset_count": 50,
-      "current_asset_count": 13
+      "current_asset_count": 7
     },
     "creative": {
       "name": "Creative Agency & Studio Vault",
       "description": "Motion VFX, architecture atelier, soundstage production & design OS",
       "apa_valuation_range": "$28,000 – $40,000",
       "target_asset_count": 40,
-      "current_asset_count": 12
+      "current_asset_count": 17
     },
     "automotive": {
       "name": "Automotive & Mobility Vault",
@@ -3304,25 +3304,25 @@
     "vertical_slices": [
       {
         "name": "Luxury Hospitality & Dining Vault",
-        "appsCount": 23,
+        "appsCount": 27,
         "zipFile": "luxury-hospitality-dining-vault-23.zip",
         "sizeMb": "1.7"
       },
       {
         "name": "Private Wealth & Real Estate Vault",
-        "appsCount": 16,
+        "appsCount": 13,
         "zipFile": "private-wealth-real-estate-vault-16.zip",
         "sizeMb": "1.2"
       },
       {
         "name": "Medical & VIP Aesthetics Vault",
-        "appsCount": 13,
+        "appsCount": 7,
         "zipFile": "medical-aesthetics-vault-13.zip",
         "sizeMb": "1.2"
       },
       {
         "name": "Creative Agency & Studio Vault",
-        "appsCount": 12,
+        "appsCount": 17,
         "zipFile": "creative-agency-studio-vault-12.zip",
         "sizeMb": "0.9"
       },
