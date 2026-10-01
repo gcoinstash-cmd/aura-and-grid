@@ -87,11 +87,11 @@ A **micro-APA** means a small asset purchase agreement where a buyer acquires ow
 
 Current portfolio facts:
 
-- Current total assets: **85 pre-revenue digital assets**
+- Current total assets: **110 pre-revenue digital assets** (85 Track 1 Lean Rapid-Sale + 25 Track 2 Flagship Tier-1)
 - Long-term target: **500 high-quality, distinct, cataloged assets**
 - Minimum retained floor: **80% of the collection at every stage**
-- Current minimum retained floor: **68 assets**
-- Current maximum ownership-transfer capacity: **17 assets**
+- Current minimum retained floor: **88 assets**
+- Current maximum ownership-transfer capacity: **22 assets**
 - At 500 assets: minimum retained floor is **400 assets**
 - At 500 assets: maximum ownership-transfer capacity is **100 assets**
 
@@ -112,14 +112,18 @@ Protect permanently:
 
 ## CURRENT PORTFOLIO VALUATION
 
-The full 85-asset collection is **pre-revenue**.
+The full 110-asset collection is **pre-revenue**.
+Composition: **85 Track 1 Lean Rapid-Sale Assets** + **25 Track 2 Flagship Tier-1 SCADA/Deep Tech Assets**.
 
 Current orderly fair-market value estimate:
 
-- **$25,500–$40,375**
-- Best single planning value: **about $33,000**
+- **$105,000–$235,250**
+- Best single planning value: **about $160,000**
+- Direct B2B Ask (Data Room Target): **$195,000–$265,000**
+- Realistic Accepted Offer (Quick-Close Wire / LOI): **$135,000–$175,000**
+- Dev Replacement Cost: **$715,000–$2,020,000**
 
-Do not present the collection as 85 proven SaaS businesses.
+Do not present the collection as 110 proven SaaS businesses.
 
 Do not claim verified revenue, customers, retention, profit, uptime, security audits, compliance, or production status unless evidence exists.
 
@@ -313,20 +317,37 @@ Every micro-APA must include:
 - No claims beyond verified evidence
 - Clear statement that the asset uses simulated/sample data and is not a production system
 
-## CURRENT FLAGSHIP CANDIDATES
+## CURRENT FLAGSHIP FLEET (TRACK 2 — 24 ELITE MODELS)
 
-These assets are candidates for the Flagship $10K+ Track after passing the qualification gate:
+These 24 assets are classified under the Flagship $10K+ Track ($14,500 Buyout Anchor / $1,500–$3,500 Commercial License):
 
-| Asset | Flagship license | Entry exclusive buyout | Full asset buyout | Strategic acquisition |
+| Asset | Flagship License | Entry Exclusive Buyout | Full Asset Buyout | Strategic Acquisition |
 |---|---:|---:|---:|---:|
-| Autonomous Subsea Mining Crawler Telemetry OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
-| Geothermal Supercritical EGS Wellhead SCADA OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
-| Orbital Satellite Laser ISL Optical Terminal OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
-| Hypersonic Wind Tunnel Aerodynamics Telemetry OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
-| AEGIS-SWARM OS — Drone Perimeter Security | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
-| Orbital Habitat Closed-Loop ECLSS SCADA OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
-
-Asset 109, **Orbital Habitat Closed-Loop ECLSS SCADA OS**, is a **Flagship Candidate**, not automatically a flagship. It must pass the qualification gate first.
+| #86 Autonomous Drone Swarm Perimeter Defense OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #87 Autonomous Mining Haulage Fleet Dispatch OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #88 Autonomous Subsea Mining Crawler Telemetry OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #89 Aviation FBO Dispatch OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #90 Boutique Winery Production OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #91 Clinical Trial Operations OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #92 Cold Storage Logistics OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #93 Commercial Supersonic Airliner Engine Inverted Aerospike Telemetry OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #94 Commercial Tokamak Fusion Plasma SCADA OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #95 Deep-Sea ROV Trenching & Cable Burial OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #96 Geothermal Supercritical EGS Wellhead SCADA OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #97 HFT Colocation & Microwave Telemetry OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #98 Hypersonic Wind Tunnel Aerodynamics Telemetry OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #99 Luxury Auto Concierge OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #100 Maritime Freight Brokerage OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #101 Orbital Satellite Laser ISL Optical Terminal OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #102 Private Credit Syndication OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #103 Renewable Energy Microgrid Dispatch OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #104 Semiconductor Fab Cleanroom SCADA OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #105 Space Launch Payload Manifest OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #106 Subsea Fiber Cable Restoration OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #107 Superconducting Quantum Processor Cryostat OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #108 Yacht Charter Fleet Ecosystem | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #109 Orbital Habitat ECLSS SCADA OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #110 Orbital In-Space Cryogenic Propellant Depot SCADA OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
 
 ## OFFER DESIGN RULES
 
@@ -374,9 +395,12 @@ The dashboard must automatically enforce the **80% retention floor**.
 - Never confuse a license with ownership.
 - Never publish unsupported claims about revenue, security, compliance, performance, or production status.
 
-## AGENT SYNC RULE
+## AGENT SYNC RULE & ULTIMATE SYNCHRONIZATION ENGINE
 
-If connected to GhostFactoryOS, Aura & Grid, Google Drive, Notion, GitHub, or another workspace, always check the latest available data before answering portfolio, inventory, valuation, or sales questions.
+Whenever any master file, strategy document, or system prompt is modified:
+1. Immediately run `npm run sync:master` (or `node scripts/sync_master.mjs`) to keep all local copies, `MASTER_BLUEPRINT_BACKUP/`, Desktop Staging, and Google Drive in 100% lockstep.
+2. Background daemon (`com.ghostfactory.master-sync`) runs every 5 minutes as a failsafe to guarantee zero file drift.
+3. If connected to GhostFactoryOS, Aura & Grid, Google Drive, Notion, GitHub, or another workspace, always check the latest available data before answering portfolio, inventory, valuation, or sales questions.
 
 If data is unavailable, say exactly what is missing and list the exact records needed:
 

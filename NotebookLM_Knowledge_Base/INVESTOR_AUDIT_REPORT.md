@@ -1,10 +1,10 @@
 # Operational Due Diligence Audit & Investment Memo v2
 
 **Entity:** GhostFactoryOS / Aura & Grid  
-**Asset Fleet:** 85 Pre-Revenue Full-Stack Niche Operating System Blueprints  
+**Asset Fleet:** 110 Pre-Revenue Full-Stack Niche Operating System Blueprints (85 Track 1 + 25 Track 2)  
 **Audit Standard:** Institutional Micro-Acquisition & Technical Asset Valuation  
 **Date:** September 2026  
-**Retention Floor:** 80% Minimum Retained Floor Enforced (68 Assets Retained / Max 17 Micro-APAs)  
+**Retention Floor:** 80% Minimum Retained Floor Enforced (88 Assets Retained / Max 22 Micro-APAs)  
 
 ---
 
@@ -12,7 +12,7 @@
 
 | Evaluation Category | Institutional Grade | Current Status |
 | :--- | :---: | :--- |
-| **A. Technical Codebase & Architecture** | **A-** | Standardized stack, verified HTTP 200 routing, active RLS policies, clean modular architecture. |
+| **A. Technical Codebase & Architecture** | **A-** | Standardized stack, verified HTTP 200 routing across 110 endpoints, active RLS policies, clean modular architecture. |
 | **B. Pipeline Engineering & Scalability** | **B+** | Automated batch scaffolding, unified manifest telemetry, headless audit test suites. |
 | **C. Product Packaging & Presentation** | **C+** | Master sector archetypes defined; marketing visual covers require individual layout enforcement. |
 | **D. Commercial Monetization & Distribution** | **D** | Pre-revenue digital inventory; zero verified recurring cash flow, active stripe webhooks, or documented outbound conversions. |
@@ -32,11 +32,13 @@
 ## 3. Commercial Valuation Appraisal & Dual-Track Protocol
 
 ### 3.1 Current Market Reality (Pre-Revenue Inventory)
-* **Audited Code Replacement Cost:** The quoted development cost for a single full-stack application typically ranges from $4,000 to $10,000+. Across 85 assets, replacement engineering labor is benchmarked at **$340,000 – $850,000**.
+* **Audited Code Replacement Cost:** The quoted development cost for a single full-stack application typically ranges from $4,000 to $10,000+. Across 110 assets (including 25 multi-screen SCADA flagships), replacement engineering labor is benchmarked at **$715,000 – $2,020,000**.
 * **Current Orderly Fair-Market Value Estimate:**
-  * **Orderly Fair-Market Valuation Band:** **$25,500 – $40,375**
-  * **Best Single Planning Value:** **~$33,000**
-  * **Retail Shelf Replacement MSRP:** **$16,915** ($199 × 85 assets)
+  * **Orderly Fair-Market Valuation Band:** **$105,000 – $235,250**
+  * **Best Single Planning Value:** **~$160,000**
+  * **Direct B2B Ask (Data Room Target):** **$195,000 – $265,000**
+  * **Realistic Accepted Offer (Quick-Close Wire / LOI):** **$135,000 – $175,000**
+  * **Retail Shelf Replacement MSRP:** **$54,415** (85 × $199 + 25 × $1,500)
 
 ### 3.2 Dual-Track Pricing Protocol
 1. **Track 1 — Lean Rapid-Sale (Default Standard)**:
@@ -50,7 +52,7 @@
    * Qualification Gate: Requires 8–15 interactive screens, domain physics solvers, operator journeys, and simulated-data disclosures.
 
 ### 3.3 Portfolio Governance & 80% Retained Floor
-* **Retention Floor**: Minimum **68 assets** remain permanently in the factory. Maximum transfer capacity is strictly **17 assets**.
+* **Retention Floor**: Minimum **88 assets** remain permanently in the factory. Maximum transfer capacity is strictly **22 assets**.
 * **Micro-APA Scope**: Transfers defined rights/code to **one specific asset only**. A micro-APA never transfers GhostFactoryOS, Aura & Grid, shared IP, or the full portfolio.
 
 ---

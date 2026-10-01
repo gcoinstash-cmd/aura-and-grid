@@ -1,10 +1,10 @@
 # Commercial Agency Whitelabel License & Terms of Service
 ## ZoMae Media LLC / Aura & Grid™ Master Foundry
 
-**Document Version**: 2.1 (85-Fleet Calibrated Edition)  
+**Document Version**: 2.2 (109-Fleet Calibrated Edition)  
 **Grantor**: ZoMae Media LLC (Parent Holding Entity)  
 **Licensing Engine**: Aura & Grid™ Digital Commerce Gateway  
-**Catalog Status**: 85 Verified Full-Stack Operating System (OS) Flagships (0 P0 Defects, 9.49 Fleet Average)  
+**Catalog Status**: 109 Verified Full-Stack Operating System (OS) Flagships (85 Track 1 + 24 Track 2)  
 
 ---
 
@@ -66,11 +66,11 @@ For commercial deal architecture, agency discussions, and asset valuation, the p
 
 | Valuation Layer | Valuation Range / Anchor | Transaction Definition & Market Context |
 |:---|:---:|:---|
-| **Orderly Fair-Market Value** | **$25,500 – $40,375** | Pre-revenue catalog appraisal (Best single planning value: **~$33,000**). |
+| **Orderly Fair-Market Value** | **$85,500 – $148,375** | Pre-revenue catalog appraisal (Best single planning value: **~$115,000**). |
 | **Track 1 Exclusive Buyout** | **$3,800 – $6,500** | Standard prototype single-asset micro-APA (Anchor: **$4,500**). |
 | **Track 2 Flagship Buyout** | **$10,000 – $18,000** | Elite domain-heavy single-asset micro-APA entry anchor (**$14,500**); full: $18k–$35k; strategic: $35k–$75k+. |
-| **Replacement Labor Benchmark**| **$340,000 – $850,000** | Engineering benchmark ($4,000–$10,000/app traditional outsourced dev cost). |
-| **80% Minimum Retained Floor** | **68 Assets Minimum** | Minimum 80% retained floor enforced; max 17 transfer capacity. Never sell factory or showroom IP. |
+| **Replacement Labor Benchmark**| **$700,000 – $1,690,000** | Engineering benchmark for 109 custom applications ($4,000–$15,000/app dev cost). |
+| **80% Minimum Retained Floor** | **87 Assets Minimum** | Minimum 80% retained floor enforced; max 22 transfer capacity. Never sell factory or showroom IP. |
 
 ---
 

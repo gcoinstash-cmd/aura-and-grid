@@ -5,15 +5,15 @@
 - **Aura & Grid**: Public premium showroom and digital dealership for interactive demos, source-code licenses, managed leases, agency fleet licenses, bespoke deployments, support plans, and selective micro-APAs.
 - **Digital Asset Metaphor**: The portfolio is managed as an elite "digital car collection" inside a video game—manufactured with high precision and leased, licensed, or selectively transferred.
 - **Target Scale**: 500 cataloged assets.
-- **Current Portfolio Scale**: **109 pre-revenue digital assets** (85 Track 1 Lean Rapid-Sale + 24 Track 2 Flagship Tier-1).
+- **Current Portfolio Scale**: **110 pre-revenue digital assets** (85 Track 1 Lean Rapid-Sale + 25 Track 2 Flagship Tier-1).
 
 ---
 
 ## 2. Portfolio Status & 80% Retention Floor Rule
 
 The portfolio strictly enforces an **80% Minimum Retained Floor** across all operational phases:
-- **Current Collection (109 assets)**:
-  - Minimum Retained Floor: **87 assets** permanently kept in the foundry.
+- **Current Collection (110 assets)**:
+  - Minimum Retained Floor: **88 assets** permanently kept in the foundry.
   - Maximum Transfer Capacity: **22 assets** eligible for selective micro-APAs.
 - **At 500 Assets Target**:
   - Minimum Retained Floor: **400 assets** permanently kept.
@@ -27,18 +27,18 @@ The portfolio strictly enforces an **80% Minimum Retained Floor** across all ope
 
 ## 3. Current Pre-Revenue Portfolio Valuation
 
-The full 109-asset collection is currently **pre-revenue**. It is valued on orderly fair-market fundamentals:
+The full 110-asset collection is currently **pre-revenue**. It is valued on orderly fair-market fundamentals:
 
 | Metric | Valuation Range | Anchor / Planning Value | Notes |
 |:---|:---:|:---:|:---|
-| **Orderly Fair-Market Value** | **$85,500 – $148,375** | **~$115,000** | Grounded pre-revenue appraisal for the 109-asset catalog |
-| **Direct B2B Ask (Data Room)** | **$145,000 – $185,000** | **$165,000** | Asking target for enterprise / private equity rollup |
-| **Realistic Accepted Offer** | **$95,000 – $125,000** | **$110,000** | Quick-close wire / cash-in-hand negotiated buyout |
-| **Retail Shelf Replacement MSRP** | **$52,915** | $199 T1 / $1,500 T2 | Catalog MSRP sum (85 × $199 + 24 × $1,500) |
-| **Labor Replacement Estimate** | **$700,000 – $1,690,000** | **~$1.15M** | Traditional outsourced engineering payroll avoided |
+| **Orderly Fair-Market Value** | **$105,000 – $235,250** | **~$160,000** | Grounded pre-revenue appraisal for the 110-asset catalog |
+| **Direct B2B Ask (Data Room)** | **$195,000 – $265,000** | **$225,000** | Asking target for enterprise / private equity rollup |
+| **Realistic Accepted Offer** | **$135,000 – $175,000** | **$150,000** | Quick-close wire / cash-in-hand negotiated buyout |
+| **Retail Shelf Replacement MSRP** | **$54,415** | $199 T1 / $1,500 T2 | Catalog MSRP sum (85 × $199 + 25 × $1,500) |
+| **Labor Replacement Estimate** | **$715,000 – $2,020,000** | **~$1.35M** | Traditional outsourced engineering payroll avoided |
 
 > [!CAUTION]
-> Do not present the collection as 109 proven SaaS businesses. No verified revenue, customers, retention, profit, uptime, security audits, compliance, or production status may be claimed without deterministic proof.
+> Do not present the collection as 110 proven SaaS businesses. No verified revenue, customers, retention, profit, uptime, security audits, compliance, or production status may be claimed without deterministic proof.
 
 ---
 
@@ -124,5 +124,5 @@ To maintain institutional diligence standards, all public copy and documentation
 
 ## 7. Next 3 Moves
 1. **Enforce Dual-Track Pricing in All Offers**: Default all standard assets to Track 1 ($4,500 buyout anchor / $199 retail).
-2. **Audit Flagship Candidates Against Qualification Gate**: Qualify Candidate 109 (Orbital Habitat Closed-Loop ECLSS SCADA OS) and other heavy industrial prototypes prior to Flagship Track 2 pricing.
-3. **Protect 80% Retained Floor**: Continuously track and enforce the 68-asset retention floor in GhostFactoryOS console telemetry.
+2. **Audit Flagship Candidates Against Qualification Gate**: Qualify Candidate 109 (Orbital Habitat Closed-Loop ECLSS SCADA OS), Candidate 110 (Orbital In-Space Cryogenic Propellant Depot SCADA OS), and other heavy industrial prototypes prior to Flagship Track 2 pricing.
+3. **Protect 80% Retained Floor**: Continuously track and enforce the 88-asset retention floor in GhostFactoryOS console telemetry.

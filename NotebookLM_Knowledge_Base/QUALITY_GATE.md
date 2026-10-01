@@ -1,9 +1,9 @@
 # QUALITY_GATE.md — The Consolidated Six-Layer Governance Architecture & Master Diligence Framework
 
 **Entity**: Aura & Grid Storefront Engine & The Ghost Factory™ Foundry  
-**Scope**: All 85 Existing Operating System Blueprints & 500-Asset Roadmap Target  
-**Valuation Standard**: Grounded Orderly Fair-Market Valuation ($25,500–$40,375, Best Planning Value: ~$33,000) & Dual-Track Protocol  
-**Retention Floor**: 80% Minimum Retained Floor (Current: 68 Assets Retained / Max 17 Micro-APAs)  
+**Scope**: All 109 Existing Operating System Blueprints (85 Track 1 + 24 Track 2) & 500-Asset Roadmap Target  
+**Valuation Standard**: Grounded Orderly Fair-Market Valuation ($85,500–$148,375, Best Planning Value: ~$115,000) & Dual-Track Protocol  
+**Retention Floor**: 80% Minimum Retained Floor (Current: 87 Assets Retained / Max 22 Micro-APAs)  
 
 ---
 
@@ -62,7 +62,7 @@ To prevent valuation markdowns caused by repetitive 3-column card layouts, every
 
 ## PART 2: THE MASTER DILIGENCE FRAMEWORK (3-TIER RELEASE GATE)
 
-Every digital asset within the portfolio is governed by a three-stage release gate to defend orderly fair-market valuation ($25,500–$40,375 orderly range, ~$33,000 planning value) and support Dual-Track pricing:
+Every digital asset within the portfolio is governed by a three-stage release gate to defend orderly fair-market valuation ($85,500–$148,375 orderly range, ~$115,000 planning value) and support Dual-Track pricing:
 
 ```
  [ TIER 1: BUYER-DEMO READY ]       ──> HTTP 200 + Smooth Anchors + 1-Click Passkey + Zero P0s
@@ -94,7 +94,7 @@ Every digital asset within the portfolio is governed by a three-stage release ga
 
 ## PART 3: OPERATIONAL EXECUTION PROTOCOL
 1. **Memory & Rule Locking**: Permanently inject and enforce this framework in `AGENTS.md`, `GEMINI.md`, `QUALITY_GATE.md`, and `MASTER_BUSINESS_PLAN.md`.
-2. **Headless Execution**: Use the Playwright + Axe-Core automated auditor (`scripts/audit/run_fleet_audit.mjs`) to verify all 85 flagships and future batch expansions up to 3,000–5,000 assets.
+2. **Headless Execution**: Use the Playwright + Axe-Core automated auditor (`scripts/audit/run_fleet_audit.mjs`) to verify all 109 flagships and future batch expansions up to 3,000–5,000 assets.
 3. **Continuous Remediation Pipeline**: Systematically patch defects in order of priority (P0 Routing/Passkeys -> P1 Accessibility/Contrast -> P2 UI Polish) until 100% of targets achieve S-Tier certification.
 
 ---
@@ -111,11 +111,11 @@ Every digital asset within the portfolio is governed by a three-stage release ga
 
 ### Institutional Valuation & Grounded Dual-Track Defense
 1. **Orderly Fair-Market Valuation Standard**:
-   $$\text{Catalog Fair-Market Value} = \$25,500 – \$40,375 \quad (\text{Best Single Planning Value: } \sim\$33,000)$$
+   $$\text{Catalog Fair-Market Value} = \$85,500 – \$148,375 \quad (\text{Best Single Planning Value: } \sim\$115,000)$$
    Every template certified at **🟢 S-Tier (9.6–10.0)** satisfies the baseline technical floor, eliminating technical due diligence discounts.
    - **Track 1 — Lean Rapid-Sale (Default)**: $199 Retail / $599 Team Seat / Exclusive Buyout Floor: $3,800–$6,500 (Anchor: **$4,500**).
    - **Track 2 — Flagship $10K+ (Selective Tier-1)**: $1,500–$3,500 Flagship License / Entry Exclusive Buyout Anchor: **$14,500** ($10,000–$18,000 range) / Full Buyout: $18,000–$35,000 / Strategic Acquisition: $35,000–$75,000+.
-   - **80% Minimum Retained Floor**: Always retain at least 80% of the collection (Current: 68 assets permanently kept / max 17 transfer capacity; at 500 assets: 400 permanently kept / max 100 transfer capacity).
+   - **80% Minimum Retained Floor**: Always retain at least 80% of the collection (Current: 87 assets permanently kept / max 22 transfer capacity; at 500 assets: 400 permanently kept / max 100 transfer capacity).
    - **Micro-APA Scope**: Transfers defined rights/code to **one specific asset only**. A micro-APA never transfers GhostFactoryOS, Aura & Grid, shared IP, or the full portfolio.
 
 2. **Zero-Discount Due Diligence Guarantee**:

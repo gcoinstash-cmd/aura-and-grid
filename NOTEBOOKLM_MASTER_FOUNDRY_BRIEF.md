@@ -9,15 +9,15 @@
 - **Private Foundry Engine**: **GhostFactoryOS** — Private digital factory, portfolio command center, inventory system, licensing ledger, maintenance tracker, and operations dashboard.
 - **Commercial Showroom & Dealership**: **Aura & Grid** — Public premium showroom and digital dealership for interactive demos, source-code licenses, managed leases, agency fleet licenses, bespoke deployments, support plans, and selective micro-APAs.
 - **Mental Model**: The digital software portfolio is an elite **"digital car collection"** inside a video game—manufactured with high precision and leased, licensed, or selectively transferred.
-- **Catalog Status**: **109 pre-revenue digital assets** (85 Track 1 Lean Rapid-Sale + 24 Track 2 Flagship Tier-1, target: 500 cataloged assets).
+- **Catalog Status**: **110 pre-revenue digital assets** (85 Track 1 Lean Rapid-Sale + 25 Track 2 Flagship Tier-1, target: 500 cataloged assets).
 
 ---
 
 ## 2. Portfolio Status & 80% Retention Floor Rule
 
 The foundry strictly maintains an **80% Minimum Retained Floor** at all stages:
-- **Current Fleet (109 Assets)**:
-  - Minimum Retained Floor: **87 assets** permanently kept in the foundry.
+- **Current Fleet (110 Assets)**:
+  - Minimum Retained Floor: **88 assets** permanently kept in the foundry.
   - Maximum Transfer Capacity: **22 assets** eligible for selective micro-APAs.
 - **Target Fleet (500 Assets)**:
   - Minimum Retained Floor: **400 assets** permanently kept.
@@ -29,18 +29,18 @@ The foundry strictly maintains an **80% Minimum Retained Floor** at all stages:
 
 ## 3. Current Valuation Reality (Pre-Revenue Inventory)
 
-The full 109-asset collection is currently **pre-revenue**:
+The full 110-asset collection is currently **pre-revenue**:
 
 | Valuation Tier | Value Range | Planning Value / Anchor | Description |
 |:---|:---:|:---:|:---|
-| **Orderly Fair-Market Value** | **$85,500 – $148,375** | **~$115,000** | Grounded pre-revenue appraisal for the 109-asset catalog |
-| **Direct B2B Ask (Data Room)** | **$145,000 – $185,000** | **$165,000** | Asking target for enterprise / PE strategic acquirers |
-| **Realistic Accepted Offer** | **$95,000 – $125,000** | **$110,000** | Quick-close wire / cash-in-hand negotiated buyout |
-| **Retail Shelf Replacement MSRP** | **$52,915** | $199 T1 / $1,500 T2 | Catalog MSRP sum (85 × $199 + 24 × $1,500) |
-| **Engineering Labor Replacement** | **$700,000 – $1,690,000** | **~$1.15M** | Traditional outsourced engineering payroll avoided |
+| **Orderly Fair-Market Value** | **$105,000 – $235,250** | **~$160,000** | Grounded pre-revenue appraisal for the 110-asset catalog |
+| **Direct B2B Ask (Data Room)** | **$195,000 – $265,000** | **$225,000** | Asking target for enterprise / PE strategic acquirers |
+| **Realistic Accepted Offer** | **$135,000 – $175,000** | **$150,000** | Quick-close wire / cash-in-hand negotiated buyout |
+| **Retail Shelf Replacement MSRP** | **$54,415** | $199 T1 / $1,500 T2 | Catalog MSRP sum (85 × $199 + 25 × $1,500) |
+| **Engineering Labor Replacement** | **$715,000 – $2,020,000** | **~$1.35M** | Traditional outsourced engineering payroll avoided |
 
 > [!CAUTION]
-> Do not present the collection as 109 proven SaaS businesses. No verified revenue, customers, retention, profit, uptime, security audits, compliance, or live production operations may be claimed without deterministic proof.
+> Do not present the collection as 110 proven SaaS businesses. No verified revenue, customers, retention, profit, uptime, security audits, compliance, or live production operations may be claimed without deterministic proof.
 
 ---
 
@@ -80,9 +80,9 @@ Elite, domain-heavy assets passing the Flagship Qualification Gate:
 
 ---
 
-## 5. Current Flagship Fleet (Track 2 — 24 Elite Models)
+## 5. Current Flagship Fleet (Track 2 — 25 Elite Models)
 
-These 24 assets are classified under the Flagship $10K+ Track ($14,500 Buyout Anchor / $1,500–$3,500 Commercial License):
+These 25 assets are classified under the Flagship $10K+ Track ($14,500 Buyout Anchor / $1,500–$3,500 Commercial License):
 
 | Asset | Flagship License | Entry Exclusive Buyout | Full Asset Buyout | Strategic Acquisition |
 |:---|---:|---:|---:|---:|
@@ -110,6 +110,7 @@ These 24 assets are classified under the Flagship $10K+ Track ($14,500 Buyout An
 | **#107 Quantum Processor Cryostat OS** | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
 | **#108 Yacht Charter Fleet Ecosystem** | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
 | **#109 Orbital Habitat ECLSS SCADA OS** | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| **#110 Orbital In-Space Cryogenic Propellant Depot SCADA OS** | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
 
 ---
 
@@ -124,7 +125,7 @@ Always use accurate, verifiable labels:
 ## 7. The Master Analogy Playbook: 4 Real-World Mental Models
 
 ### Analogy 1: The Exotic Supercar Dealership (Showroom & Fleet Leasing)
-Imagine an exotic dealership showroom holding **85 high-performance supercar chassis**:
+Imagine an exotic dealership showroom holding **110 high-performance supercar chassis**:
 - **Carbon Body**: Responsive React 19 + Tailwind CSS obsidian UI (`#0A0A0B`).
 - **Engine**: Turnkey PostgreSQL database (Supabase with Row-Level Security).
 - **Valet Key**: Frictionless 1-click `/admin` passkey demo gate (`<slug>2026`).
@@ -147,4 +148,4 @@ In a coin shop, selling a physical coin depletes inventory. In a software foundr
 ## 8. Next 3 Moves
 1. **Upload v2 Sync Document to NotebookLM**: Ingest `GHOSTFACTORY_V2_MASTER_SYNC.md` as the primary source.
 2. **Standardize Commercial Offers**: Apply Track 1 ($4,500 anchor) and Track 2 ($14,500 anchor) across all deal sheets.
-3. **Monitor 80% Retained Inventory**: Ensure 68+ assets remain permanently protected in GhostFactoryOS.
+3. **Monitor 80% Retained Inventory**: Ensure 88+ assets remain permanently protected in GhostFactoryOS.

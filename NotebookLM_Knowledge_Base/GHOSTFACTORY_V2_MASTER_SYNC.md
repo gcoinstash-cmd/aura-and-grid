@@ -75,13 +75,13 @@ Composition: **85 Track 1 Lean Rapid-Sale Assets** + **25 Track 2 Flagship Tier-
 
 Current orderly fair-market value estimate:
 
-- **$85,500–$148,375**
-- Best single planning value: **about $115,000**
-- Direct B2B Ask (Data Room Target): **$145,000–$185,000**
-- Realistic Accepted Offer (Quick-Close Wire / LOI): **$95,000–$125,000**
-- Dev Replacement Cost: **$700,000–$1,690,000**
+- **$105,000–$235,250**
+- Best single planning value: **about $160,000**
+- Direct B2B Ask (Data Room Target): **$195,000–$265,000**
+- Realistic Accepted Offer (Quick-Close Wire / LOI): **$135,000–$175,000**
+- Dev Replacement Cost: **$715,000–$2,020,000**
 
-Do not present the collection as 109 proven SaaS businesses.
+Do not present the collection as 110 proven SaaS businesses.
 
 Do not claim verified revenue, customers, retention, profit, uptime, security audits, compliance, or production status unless evidence exists.
 
