@@ -58,7 +58,9 @@
       "status_badge": "Active Checkout",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/stride-mb",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 2,
@@ -83,7 +85,9 @@
       "status_badge": "Active Checkout",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/the-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 3,
@@ -108,7 +112,9 @@
       "status_badge": "Active Checkout",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/velocity-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 4,
@@ -133,7 +139,9 @@
       "status_badge": "Active Checkout",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/apex-club-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 5,
@@ -158,7 +166,9 @@
       "status_badge": "Active Checkout",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/elevate-capital-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 6,
@@ -183,7 +193,9 @@
       "status_badge": "Active Checkout",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/obsidian-lab-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 7,
@@ -209,7 +221,9 @@
       "status_badge": "Active Checkout",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/the-enclave-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 8,
@@ -234,7 +248,9 @@
       "status_badge": "Active Checkout",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/aura-medspa-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 9,
@@ -259,7 +275,9 @@
       "status_badge": "Active Checkout",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/royal-apex-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 10,
@@ -284,7 +302,9 @@
       "status_badge": "Active Checkout",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/aura-reserve-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 11,
@@ -309,7 +329,9 @@
       "status_badge": "Active Checkout",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/monolith-studio-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 12,
@@ -334,7 +356,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 13,
@@ -359,7 +383,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 14,
@@ -383,7 +409,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 15,
@@ -407,7 +435,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 16,
@@ -431,7 +461,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 17,
@@ -455,7 +487,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 18,
@@ -479,7 +513,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 19,
@@ -504,7 +540,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 20,
@@ -529,7 +567,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 21,
@@ -554,7 +594,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 22,
@@ -579,7 +621,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 23,
@@ -604,7 +648,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 24,
@@ -630,7 +676,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 25,
@@ -655,7 +703,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 26,
@@ -681,7 +731,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 27,
@@ -706,7 +758,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 28,
@@ -731,7 +785,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 29,
@@ -756,7 +812,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 30,
@@ -780,7 +838,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 31,
@@ -804,7 +864,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 32,
@@ -829,7 +891,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 33,
@@ -853,7 +917,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 34,
@@ -877,7 +943,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 35,
@@ -901,7 +969,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 36,
@@ -925,7 +995,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 37,
@@ -950,7 +1022,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 38,
@@ -975,7 +1049,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 39,
@@ -1000,7 +1076,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 40,
@@ -1025,7 +1103,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 41,
@@ -1050,7 +1130,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 42,
@@ -1075,7 +1157,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 43,
@@ -1100,7 +1184,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 44,
@@ -1124,7 +1210,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 45,
@@ -1149,7 +1237,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 46,
@@ -1173,7 +1263,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 47,
@@ -1198,7 +1290,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 48,
@@ -1222,7 +1316,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 49,
@@ -1245,7 +1341,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 50,
@@ -1269,7 +1367,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 51,
@@ -1294,7 +1394,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 52,
@@ -1318,7 +1420,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 53,
@@ -1342,7 +1446,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 54,
@@ -1366,7 +1472,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 55,
@@ -1390,7 +1498,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 56,
@@ -1415,7 +1525,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 57,
@@ -1440,7 +1552,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 58,
@@ -1465,7 +1579,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 59,
@@ -1490,7 +1606,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 60,
@@ -1515,7 +1633,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 61,
@@ -1540,7 +1660,9 @@
       "status_badge": "Active Checkout",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/boutique-dental-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 62,
@@ -1565,7 +1687,9 @@
       "status_badge": "Active Checkout",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/veterinary-hospital-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 63,
@@ -1590,7 +1714,9 @@
       "status_badge": "Active Checkout",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/functional-medicine-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 64,
@@ -1615,7 +1741,9 @@
       "status_badge": "Active Checkout",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/physical-therapy-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 65,
@@ -1640,7 +1768,9 @@
       "status_badge": "Active Checkout",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/recovery-spa-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 66,
@@ -1665,7 +1795,9 @@
       "status_badge": "Active Checkout",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/boutique-law-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 67,
@@ -1689,7 +1821,9 @@
       "status_badge": "Active Checkout",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/ma-advisory-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 68,
@@ -1713,7 +1847,9 @@
       "status_badge": "Active Checkout",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/executive-search-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 69,
@@ -1737,7 +1873,9 @@
       "status_badge": "Active Checkout",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/wealth-family-office-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 70,
@@ -1761,7 +1899,9 @@
       "status_badge": "Active Checkout",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/litigation-ops-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 71,
@@ -1786,7 +1926,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 72,
@@ -1811,7 +1953,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 73,
@@ -1836,7 +1980,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 74,
@@ -1861,7 +2007,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 75,
@@ -1886,7 +2034,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 76,
@@ -1911,7 +2061,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 77,
@@ -1936,7 +2088,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 78,
@@ -1961,7 +2115,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 79,
@@ -1986,7 +2142,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 80,
@@ -2011,7 +2169,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 81,
@@ -2036,7 +2196,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 82,
@@ -2061,7 +2223,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 83,
@@ -2086,7 +2250,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 84,
@@ -2111,7 +2277,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 85,
@@ -2136,7 +2304,9 @@
       "status_badge": "Packaged / Deployment Ready",
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
-      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)"
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 86,
@@ -2169,7 +2339,9 @@
       "exclusive_buyout_range": [
         10000,
         18000
-      ]
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 87,
@@ -2199,7 +2371,9 @@
       "exclusive_buyout_range": [
         10000,
         18000
-      ]
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 88,
@@ -2229,7 +2403,9 @@
       "exclusive_buyout_range": [
         10000,
         18000
-      ]
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 89,
@@ -2259,7 +2435,9 @@
       "exclusive_buyout_range": [
         10000,
         18000
-      ]
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 90,
@@ -2289,7 +2467,9 @@
       "exclusive_buyout_range": [
         10000,
         18000
-      ]
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 91,
@@ -2319,7 +2499,9 @@
       "exclusive_buyout_range": [
         10000,
         18000
-      ]
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 92,
@@ -2349,7 +2531,9 @@
       "exclusive_buyout_range": [
         10000,
         18000
-      ]
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 93,
@@ -2382,7 +2566,9 @@
       "exclusive_buyout_range": [
         10000,
         18000
-      ]
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 94,
@@ -2417,7 +2603,9 @@
       "exclusive_buyout_range": [
         10000,
         18000
-      ]
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 95,
@@ -2447,7 +2635,9 @@
       "exclusive_buyout_range": [
         10000,
         18000
-      ]
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 96,
@@ -2477,7 +2667,9 @@
       "exclusive_buyout_range": [
         10000,
         18000
-      ]
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 97,
@@ -2510,7 +2702,9 @@
       "exclusive_buyout_range": [
         10000,
         18000
-      ]
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 98,
@@ -2543,7 +2737,9 @@
       "exclusive_buyout_range": [
         10000,
         18000
-      ]
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 99,
@@ -2578,7 +2774,9 @@
       "exclusive_buyout_range": [
         10000,
         18000
-      ]
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 100,
@@ -2608,7 +2806,9 @@
       "exclusive_buyout_range": [
         10000,
         18000
-      ]
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 101,
@@ -2638,7 +2838,9 @@
       "exclusive_buyout_range": [
         10000,
         18000
-      ]
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 102,
@@ -2671,7 +2873,9 @@
       "exclusive_buyout_range": [
         10000,
         18000
-      ]
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 103,
@@ -2701,7 +2905,9 @@
       "exclusive_buyout_range": [
         10000,
         18000
-      ]
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 104,
@@ -2731,7 +2937,9 @@
       "exclusive_buyout_range": [
         10000,
         18000
-      ]
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 105,
@@ -2764,7 +2972,9 @@
       "exclusive_buyout_range": [
         10000,
         18000
-      ]
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 106,
@@ -2794,7 +3004,9 @@
       "exclusive_buyout_range": [
         10000,
         18000
-      ]
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 107,
@@ -2824,7 +3036,9 @@
       "exclusive_buyout_range": [
         10000,
         18000
-      ]
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 108,
@@ -2854,7 +3068,9 @@
       "exclusive_buyout_range": [
         10000,
         18000
-      ]
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 109,
@@ -2884,7 +3100,9 @@
       "exclusive_buyout_range": [
         10000,
         18000
-      ]
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     }
   ],
   "vertical_slices": {

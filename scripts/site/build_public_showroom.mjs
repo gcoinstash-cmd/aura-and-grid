@@ -91,7 +91,9 @@ manifest.products.forEach(p => {
     cover_image: coverRelPath,
     tables: p.tables || ['profiles', 'audit_logs', 'orders'],
     archetype_name: p.archetype_name ? p.archetype_name.split(':')[1]?.trim() || p.archetype_name : 'Dense Operational Console',
-    design_benchmark: p.design_benchmark || 'Industry Standard Bespoke UI'
+    design_benchmark: p.design_benchmark || 'Industry Standard Bespoke UI',
+    truth_badge: p.truth_badge || 'Interactive Prototype // Simulated Data Only',
+    disclaimer: p.disclaimer || 'SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE'
   });
 });
 
@@ -471,6 +473,12 @@ const showroomHtml = `<!DOCTYPE html>
         <div class="flex justify-between"><span class="text-neutral-500">Relational Tables:</span> <span class="text-gold" id="modalTables">Tables</span></div>
       </div>
 
+      <!-- Regulatory & Truth Disclaimer Box -->
+      <div class="p-3 bg-amber-950/40 border border-amber-500/40 rounded-lg text-amber-200 text-xs font-mono mb-4 leading-relaxed flex items-start space-x-2">
+        <span class="text-amber-400 font-bold shrink-0">⚠</span>
+        <div id="modalDisclaimer" class="leading-normal">SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE</div>
+      </div>
+
       <div class="flex gap-3">
         <a href="#" id="modalLiveDemo" target="_blank" class="flex-1 py-3 rounded-lg bg-panel hairline-border hover:border-gold/50 text-white font-medium text-xs text-center uppercase tracking-wider transition-all">Launch Live Demo ↗</a>
         <a href="#" id="modalGumroad" target="_blank" class="flex-1 py-3 rounded-lg bg-gold hover:bg-[#b0936b] text-black font-bold text-xs text-center uppercase tracking-wider transition-all">License ($150) ➔</a>
@@ -522,7 +530,26 @@ const showroomHtml = `<!DOCTYPE html>
             <div class="p-6">
               <div class="text-[11px] font-mono text-neutral-500 uppercase tracking-widest mb-1.5">\${p.archetype_name}</div>
               <h3 class="text-xl font-serif font-bold text-white mb-2 leading-snug">\${p.name}</h3>
-              <p class="text-xs text-neutral-400 line-clamp-2 mb-4 leading-relaxed">\${p.category}</p>
+              
+              <!-- High-Contrast Universal Truth Pill Badge -->
+              <div class="my-2">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-amber-400 text-black font-black text-[10px] font-mono uppercase tracking-wider shadow-sm">
+                  [SIMULATED DATA PROTOTYPE]
+                </span>
+              </div>
+
+              <p class="text-xs text-neutral-400 line-clamp-2 mb-3 leading-relaxed">\${p.category}</p>
+
+              <!-- Expandable Compliance Details Drawer -->
+              <details class="mt-3 pt-2 border-t border-white/5 group">
+                <summary class="text-[10px] font-mono text-neutral-400 hover:text-neutral-200 cursor-pointer flex items-center justify-between select-none">
+                  <span>Truth & Compliance</span>
+                  <span class="text-neutral-500 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <div class="mt-2 p-2.5 rounded bg-amber-950/40 border border-amber-500/30 text-amber-200 text-[10px] font-mono leading-relaxed">
+                  \${p.disclaimer}
+                </div>
+              </details>
             </div>
           </div>
 
@@ -572,6 +599,7 @@ const showroomHtml = `<!DOCTYPE html>
       document.getElementById('modalBenchmark').innerText = p.design_benchmark;
       document.getElementById('modalArchetype').innerText = p.archetype_name;
       document.getElementById('modalTables').innerText = p.tables.join(', ');
+      document.getElementById('modalDisclaimer').innerText = p.disclaimer || "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE";
       document.getElementById('modalLiveDemo').href = p.preview_url;
       document.getElementById('modalGumroad').href = p.commercial_checkout_url;
       document.getElementById('modalGumroad').innerText = p.checkout_active ? 'License Blueprint ($150) ➔' : 'Acquire in Agency Vault ($1,499) ➔';
