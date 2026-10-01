@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --obsidian: #0A0C12;
+  --surface: #111520;
+  --border: #1E2A3A;
+  --ramp-blue: #3B82F6;
+  --fuel-amber: #F59E0B;
+  --status-green: #22C55E;
+  --alert-red: #EF4444;
+  --text-primary: #F1F5F9;
+  --text-muted: #64748B;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  background: var(--obsidian);
+  color: var(--text-primary);
+  font-family: 'Space Grotesk', sans-serif;
+  overflow: hidden;
+}
+
+/* Scrollable panels */
+.scroll-panel {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+.scroll-panel::-webkit-scrollbar { width: 4px; }
+.scroll-panel::-webkit-scrollbar-track { background: transparent; }
+.scroll-panel::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+/* Status pulses */
+@keyframes pulse-green {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+.pulse-green { animation: pulse-green 2s ease-in-out infinite; }

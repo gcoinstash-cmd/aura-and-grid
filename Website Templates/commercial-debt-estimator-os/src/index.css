@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --obsidian: #080A0E;
+  --surface: #0E131F;
+  --border: #1C2638;
+  --bank-cyan: #00D4FF;
+  --bank-blue: #1E40AF;
+  --text-main: #F1F5F9;
+  --text-muted: #64748B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  min-height: 100%;
+  background-color: var(--obsidian);
+  color: var(--text-main);
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-serif {
+  font-family: 'Newsreader', Georgia, serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.scroll-panel {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+.scroll-panel::-webkit-scrollbar {
+  width: 4px;
+}
+.scroll-panel::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scroll-panel::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 2px;
+}

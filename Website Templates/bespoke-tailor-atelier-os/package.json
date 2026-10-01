@@ -1,0 +1,30 @@
+{
+  "name": "bespoke-tailor-atelier-os",
+  "version": "1.0.0",
+  "description": "Bespoke Tailor Atelier OS — Savile Row Commission Management, Fabric Library & Client Measurement Dossier",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^6.26.0",
+    "lucide-react": "^0.441.0",
+    "@supabase/supabase-js": "^2.45.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.8"
+  }
+}

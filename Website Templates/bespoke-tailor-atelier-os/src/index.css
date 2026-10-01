@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --obsidian: #08090C;
+  --surface: #0E1117;
+  --border: #1C2230;
+  --atelier-gold: #C5A880;
+  --atelier-muted: #8E785C;
+  --text-main: #EDEDED;
+  --text-dim: #717D96;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  min-height: 100%;
+  background-color: var(--obsidian);
+  color: var(--text-main);
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+}
+
+.font-serif {
+  font-family: 'Bodoni Moda', Georgia, serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.scroll-panel {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+.scroll-panel::-webkit-scrollbar {
+  width: 4px;
+}
+.scroll-panel::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scroll-panel::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 2px;
+}
