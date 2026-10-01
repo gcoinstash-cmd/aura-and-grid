@@ -4,6 +4,7 @@
  * Ghost Factory™ — Public Brand Showroom Compiler
  * Builds an isolated, decoupled public showroom for Aura & Grid (site/index.html)
  * Extracts public metadata from CATALOG_MANIFEST.json and copies canonical covers into site/assets/covers/
+ * Statically pre-renders all 110 blueprint cards with 100% visible Truth Badges and Compliance Drawers.
  */
 
 import fs from 'node:fs';
@@ -43,8 +44,55 @@ const sectorMap = {
   creative: 'Creative & Media Studios',
   home_services: 'Trades & Operations',
   heavy_fleet: 'Trades & Operations',
-  fitness: 'Performance & Athletics'
+  fitness: 'Performance & Athletics',
+  defense: 'Deep Tech & SCADA',
+  subsea: 'Deep Tech & SCADA',
+  aerospace: 'Deep Tech & SCADA',
+  clean_energy: 'Deep Tech & SCADA',
+  deep_tech: 'Deep Tech & SCADA'
 };
+
+function isRegulatedSector(product) {
+  const s = sectorMap[product.vertical] || '';
+  if (s === 'Clinical & Aesthetics' || s === 'Legal, Wealth & Advisory' || s === 'Deep Tech & SCADA') {
+    return true;
+  }
+  if (product.id >= 86) return true;
+  const combined = `${product.name} ${product.category || ''} ${product.vertical || ''} ${product.archetype_name || ''}`.toLowerCase();
+  const regulatedRegexes = [
+    /\bclinical\b/, /\btrial\b/, /\bmedical\b/, /\bmedicine\b/, /\bmedspa\b/,
+    /\bdental\b/, /\bdentist\b/, /\bveterinary\b/, /\bvet\b/, /\bhospital\b(?!ity)/,
+    /\bhealth\b/, /\bhyperbaric\b/, /\brecovery\b/, /\bwellness\b/, /\bclinic\b/,
+    /\btherapy\b/, /\bphysio\b/, /\bdoctor\b/, /\bpharma\b/, /\bbiotech\b/,
+    /\bcredit\b/, /\bsyndication\b/, /\bwealth\b/, /\bfinance\b/, /\bcapital\b/,
+    /\bdebt\b/, /\bbank\b/, /\bfamily office\b/, /\bfund\b/, /\bsatstacker\b/,
+    /\bloan\b/, /\bmortgage\b/, /\bsecurities\b/, /\bm&a\b/, /\badvisory\b/,
+    /\bfinancial\b/, /\btreasury\b/, /\blegal\b/, /\blitigation\b/, /\blaw\b/,
+    /\battorney\b/, /\bcounsel\b/, /\bcompliance\b/, /\baviation\b/, /\bfbo\b/,
+    /\baerospace\b/, /\bsupersonic\b/, /\bdrone\b/, /\bswarm\b/, /\bdefense\b/,
+    /\bperimeter defense\b/, /\bmining\b/, /\bhaulage\b/, /\bcrawler\b/,
+    /\btokamak\b/, /\bfusion\b/, /\bplasma\b/, /\bgeothermal\b/, /\begs\b/,
+    /\bwellhead\b/, /\bhft\b/, /\bcolocation\b/, /\bmicrowave\b/, /\bwind tunnel\b/,
+    /\bhypersonic\b/, /\blaser isl\b/, /\boptical terminal\b/, /\bmicrogrid\b/,
+    /\bcleanroom\b/, /\bsemiconductor\b/, /\bfab\b/, /\bpayload manifest\b/,
+    /\bspace launch\b/, /\bsubsea\b/, /\bcable burial\b/, /\btrenching\b/,
+    /\bcable restoration\b/, /\bcryostat\b/, /\bquantum processor\b/,
+    /\bsuperconducting\b/, /\beclss\b/, /\borbital habitat\b/, /\bpropellant depot\b/,
+    /\bcryogenic\b/, /\bin-space\b/, /\brov\b/, /\baerospike\b/, /\bscada\b/,
+    /\btelemetry\b/
+  ];
+  return regulatedRegexes.some(r => r.test(combined));
+}
+
+function escapeHtml(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
 
 const publicProducts = [];
 let coversCopied = 0;
@@ -76,12 +124,11 @@ manifest.products.forEach(p => {
     }
   }
 
-  // Strictly sanitized public representation
   publicProducts.push({
     id: p.id,
     name: p.name,
     category: p.category,
-    sector: sectorMap[p.vertical] || 'Specialized Industry',
+    sector: sectorMap[p.vertical] || (p.id >= 86 ? 'Deep Tech & SCADA' : 'Specialized Operations'),
     vertical: p.vertical,
     preview_url: p.preview_url,
     gumroad_url: p.gumroad_url || 'https://auraandgrid.gumroad.com',
@@ -91,13 +138,85 @@ manifest.products.forEach(p => {
     cover_image: coverRelPath,
     tables: p.tables || ['profiles', 'audit_logs', 'orders'],
     archetype_name: p.archetype_name ? p.archetype_name.split(':')[1]?.trim() || p.archetype_name : 'Dense Operational Console',
-    design_benchmark: p.design_benchmark || 'Industry Standard Bespoke UI',
-    truth_badge: p.truth_badge || 'Interactive Prototype // Simulated Data Only',
-    disclaimer: p.disclaimer || 'SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE'
+    design_benchmark: p.design_benchmark || 'Industry Standard Bespoke UI'
   });
 });
 
 console.log(`📸 Copied ${coversCopied} / ${publicProducts.length} canonical cover graphics into site/assets/covers/`);
+
+// Pre-render all 110 cards into static DOM
+const renderedCardsHtml = publicProducts.map(p => {
+  const isRegulated = isRegulatedSector(p);
+  const disclaimerText = isRegulated
+    ? "TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE. NOT PRODUCTION OR ADVICE."
+    : "TECHNICAL PROTOTYPE ONLY — FOR CONCEPT DEMONSTRATION USE. NOT PRODUCTION OR ADVICE.";
+
+  return `
+      <!-- Blueprint Card #${p.id} -->
+      <div class="product-card rounded-xl bg-card hairline-border overflow-hidden card-glow transition-all flex flex-col justify-between"
+           data-id="${p.id}"
+           data-name="${escapeHtml(p.name)}"
+           data-category="${escapeHtml(p.category)}"
+           data-sector="${escapeHtml(p.sector)}"
+           data-benchmark="${escapeHtml(p.design_benchmark)}"
+           data-archetype="${escapeHtml(p.archetype_name)}"
+           data-tables="${escapeHtml(p.tables ? p.tables.join(', ') : '')}"
+           data-preview="${escapeHtml(p.preview_url)}"
+           data-checkout="${escapeHtml(p.commercial_checkout_url)}"
+           data-active="${p.checkout_active ? '1' : '0'}">
+        <div>
+          <!-- Cover Mockup Window -->
+          <div class="relative bg-obsidian border-b border-white/5 aspect-[16/9] overflow-hidden group">
+            <img src="${p.cover_image}" alt="${escapeHtml(p.name)}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'640\\' height=\\'360\\' viewBox=\\'0 0 640 360\\'><rect width=\\'640\\' height=\\'360\\' fill=\\'%23111317\\'/><text x=\\'50%\\' y=\\'50%\\' fill=\\'%23C5A880\\' font-family=\\'serif\\' font-size=\\'20\\' font-weight=\\'bold\\' text-anchor=\\'middle\\' dominant-baseline=\\'middle\\'>AURA &amp; GRID // BLUEPRINT</text></svg>'">
+            <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/70 backdrop-blur-md border border-white/10 text-[10px] font-mono uppercase text-gold">
+              ${escapeHtml(p.sector)}
+            </div>
+            <div class="absolute top-3 right-3 px-2 py-0.5 rounded ${p.checkout_active ? 'bg-emerald/20 border-emerald/40 text-emerald' : 'bg-gold/20 border-gold/40 text-gold'} border text-[10px] font-mono font-bold">
+              ${p.checkout_active ? 'ACTIVE CHECKOUT' : 'PACKAGED'}
+            </div>
+          </div>
+
+          <!-- Card Body -->
+          <div class="p-6">
+            <div class="text-[11px] font-mono text-neutral-500 uppercase tracking-widest mb-1.5">${escapeHtml(p.archetype_name)}</div>
+            <h3 class="text-xl font-serif font-bold text-white mb-2 leading-snug">${escapeHtml(p.name)}</h3>
+            
+            <!-- High-Contrast Universal Truth Pill Badge (Visible plain text in DOM) -->
+            <div class="my-2">
+              <span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-amber-400 text-black font-black text-[10px] font-mono uppercase tracking-wider shadow-sm">
+                [SIMULATED DATA PROTOTYPE]
+              </span>
+            </div>
+
+            <p class="text-xs text-neutral-400 line-clamp-2 mb-3 leading-relaxed">${escapeHtml(p.category)}</p>
+
+            <!-- Expandable Compliance Details Drawer -->
+            <details class="mt-3 pt-2 border-t border-white/5 group">
+              <summary class="text-[10px] font-mono text-neutral-400 hover:text-neutral-200 cursor-pointer flex items-center justify-between select-none">
+                <span>Truth & Compliance</span>
+                <span class="text-neutral-500 group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <div class="mt-2 p-2.5 rounded bg-amber-950/40 border border-amber-500/30 text-amber-200 text-[10px] font-mono leading-relaxed">
+                ${disclaimerText}
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <!-- Card Actions -->
+        <div class="p-6 pt-0 border-t border-white/5 mt-4 flex items-center justify-between gap-3 text-xs font-mono">
+          <a href="${escapeHtml(p.preview_url)}" target="_blank" class="flex-1 py-2.5 rounded bg-panel hairline-border hover:border-gold/40 text-center text-white font-medium hover:text-gold transition-all">
+            Live Demo ↗
+          </a>
+          <button onclick="openModal(this)" class="px-3 py-2.5 rounded bg-white/5 hover:bg-white/10 text-neutral-400 hover:text-white transition-all cursor-pointer">
+            Specs
+          </button>
+          <a href="${escapeHtml(p.commercial_checkout_url)}" target="_blank" class="py-2.5 px-3 rounded ${p.checkout_active ? 'bg-gold/15 border-gold/40 text-gold hover:bg-gold hover:text-black' : 'bg-white/10 border-white/20 text-neutral-300 hover:bg-white hover:text-black'} border font-semibold transition-all">
+            ${p.checkout_active ? '$150 ➔' : 'Vault ➔'}
+          </a>
+        </div>
+      </div>`;
+}).join('\n');
 
 // Compile standalone public showroom HTML
 const showroomHtml = `<!DOCTYPE html>
@@ -106,7 +225,7 @@ const showroomHtml = `<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aura & Grid — The Institutional Software Foundry for Modern Agencies</title>
-  <meta name="description" content="A curated fleet of 85 production-ready, specialized operating system blueprints engineered on React 19, Tailwind CSS, and Supabase PostgreSQL with active Row Level Security.">
+  <meta name="description" content="A curated fleet of 110 production-ready, specialized operating system blueprints engineered on React 19, Tailwind CSS, and Supabase PostgreSQL with active Row Level Security.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -170,11 +289,11 @@ const showroomHtml = `<!DOCTYPE html>
           A
         </div>
         <span class="font-cinzel tracking-widest text-lg font-bold text-white">AURA &amp; GRID</span>
-        <span class="hidden sm:inline-block text-[11px] font-mono uppercase tracking-widest px-2 py-0.5 rounded bg-white/5 border border-white/10 text-neutral-400">Foundry // 85 OS</span>
+        <span class="hidden sm:inline-block text-[11px] font-mono uppercase tracking-widest px-2 py-0.5 rounded bg-white/5 border border-white/10 text-neutral-400">Foundry // 110 OS</span>
       </div>
 
       <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-neutral-400">
-        <a href="#catalog" class="hover:text-gold transition-colors">Fleet Catalog (85)</a>
+        <a href="#catalog" class="hover:text-gold transition-colors">Fleet Catalog (110)</a>
         <a href="#vault" class="hover:text-gold transition-colors">Agency Vault ($1,499)</a>
         <a href="#architecture" class="hover:text-gold transition-colors">Architecture &amp; RLS</a>
         <a href="#licensing" class="hover:text-gold transition-colors">Whitelabel Terms</a>
@@ -196,7 +315,7 @@ const showroomHtml = `<!DOCTYPE html>
       
       <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-gold/10 border border-gold/30 text-gold text-xs font-mono uppercase tracking-widest mb-8">
         <span class="w-2 h-2 rounded-full bg-emerald animate-pulse"></span>
-        <span>Founding Agency Cohort // 85 Turnkey Blueprints</span>
+        <span>Founding Agency Cohort // 110 Turnkey Blueprints</span>
       </div>
 
       <h1 class="text-4xl sm:text-6xl lg:text-7xl font-serif font-bold tracking-tight text-white mb-6 leading-[1.1]">
@@ -210,7 +329,7 @@ const showroomHtml = `<!DOCTYPE html>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
         <a href="#catalog" class="w-full sm:w-auto px-8 py-3.5 rounded-lg bg-white text-black font-semibold text-sm hover:bg-neutral-200 transition-all flex items-center justify-center space-x-2">
-          <span>Explore 85 Blueprints</span>
+          <span>Explore 110 Blueprints</span>
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </a>
         <a href="#vault" class="w-full sm:w-auto px-8 py-3.5 rounded-lg bg-panel hairline-border hover:border-gold/50 text-white font-medium text-sm transition-all flex items-center justify-center space-x-2">
@@ -223,7 +342,7 @@ const showroomHtml = `<!DOCTYPE html>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto text-left font-mono">
         <div class="p-4 rounded-lg bg-panel hairline-border">
           <div class="text-xs uppercase text-neutral-500 mb-1">Fleet Inventory</div>
-          <div class="text-xl font-bold text-white">85 Blueprints</div>
+          <div class="text-xl font-bold text-white">110 Blueprints</div>
           <div class="text-[11px] text-emerald mt-1">● 100% Production Ready</div>
         </div>
         <div class="p-4 rounded-lg bg-panel hairline-border">
@@ -263,13 +382,13 @@ const showroomHtml = `<!DOCTYPE html>
             </h2>
             
             <p class="text-neutral-300 text-base sm:text-lg leading-relaxed mb-8">
-              Gain perpetual, commercial whitelabel rights to all 85 single-tenant operating system blueprints in our foundry. Package them into your agency proposals, bill clients $3,500 to $5,000+ per custom setup, and keep 100% of your billables.
+              Gain perpetual, commercial whitelabel rights to all single-tenant operating system blueprints in our foundry. Package them into your agency proposals, bill clients $3,500 to $5,000+ per custom setup, and keep 100% of your billables.
             </p>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 text-sm">
               <div class="flex items-start space-x-3 text-neutral-300">
                 <span class="text-emerald font-bold">✓</span>
-                <span><strong>85 Standalone Codebases</strong> with full source code & components.</span>
+                <span><strong>110 Standalone Codebases</strong> with full source code & components.</span>
               </div>
               <div class="flex items-start space-x-3 text-neutral-300">
                 <span class="text-emerald font-bold">✓</span>
@@ -313,13 +432,13 @@ const showroomHtml = `<!DOCTYPE html>
     </div>
   </section>
 
-  <!-- ================= PUBLIC FLEET CATALOG (85 BLUEPRINTS) ================= -->
+  <!-- ================= PUBLIC FLEET CATALOG (110 BLUEPRINTS) ================= -->
   <section id="catalog" class="py-24 px-6 max-w-7xl mx-auto">
     <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
       <div>
         <div class="text-xs font-mono uppercase tracking-widest text-gold mb-2">Production Catalog</div>
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white">The Verified Fleet Index</h2>
-        <p class="text-neutral-400 text-sm mt-2">Filter and inspect 85 production-ready operating system blueprints across 7 specialized industry sectors.</p>
+        <p class="text-neutral-400 text-sm mt-2">Filter and inspect 110 production-ready operating system blueprints across 8 specialized industry sectors.</p>
       </div>
 
       <!-- Search Input -->
@@ -330,7 +449,7 @@ const showroomHtml = `<!DOCTYPE html>
 
     <!-- Sector Filter Pills -->
     <div class="flex flex-wrap gap-2 mb-10 text-xs font-medium" id="filterContainer">
-      <button class="filter-btn active px-4 py-2 rounded-full bg-gold text-black font-semibold transition-all" data-sector="all">All Sectors (85)</button>
+      <button class="filter-btn active px-4 py-2 rounded-full bg-gold text-black font-semibold transition-all" data-sector="all">All Sectors (110)</button>
       <button class="filter-btn px-4 py-2 rounded-full bg-card hairline-border text-neutral-300 hover:text-white transition-all" data-sector="Hospitality & Dining">Hospitality &amp; Dining</button>
       <button class="filter-btn px-4 py-2 rounded-full bg-card hairline-border text-neutral-300 hover:text-white transition-all" data-sector="Legal, Wealth & Advisory">Legal, Wealth &amp; Advisory</button>
       <button class="filter-btn px-4 py-2 rounded-full bg-card hairline-border text-neutral-300 hover:text-white transition-all" data-sector="Clinical & Aesthetics">Clinical &amp; Aesthetics</button>
@@ -338,11 +457,12 @@ const showroomHtml = `<!DOCTYPE html>
       <button class="filter-btn px-4 py-2 rounded-full bg-card hairline-border text-neutral-300 hover:text-white transition-all" data-sector="Creative & Media Studios">Creative &amp; Studios</button>
       <button class="filter-btn px-4 py-2 rounded-full bg-card hairline-border text-neutral-300 hover:text-white transition-all" data-sector="Trades & Operations">Trades &amp; Operations</button>
       <button class="filter-btn px-4 py-2 rounded-full bg-card hairline-border text-neutral-300 hover:text-white transition-all" data-sector="Performance & Athletics">Performance &amp; Athletics</button>
+      <button class="filter-btn px-4 py-2 rounded-full bg-card hairline-border text-neutral-300 hover:text-white transition-all" data-sector="Deep Tech & SCADA">Deep Tech &amp; SCADA</button>
     </div>
 
-    <!-- Catalog Cards Grid -->
+    <!-- Catalog Cards Grid (Pre-rendered 110 Blueprints) -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="productsGrid">
-      <!-- Injected via JavaScript -->
+${renderedCardsHtml}
     </div>
 
     <div id="noResults" class="hidden text-center py-20">
@@ -451,7 +571,7 @@ const showroomHtml = `<!DOCTYPE html>
         <span>— Digital Software Foundry. An asset holding of ZoMae Media LLC.</span>
       </div>
       <div class="flex items-center space-x-6">
-        <a href="#catalog" class="hover:text-white transition-colors">Catalog (85)</a>
+        <a href="#catalog" class="hover:text-white transition-colors">Catalog (110)</a>
         <a href="#vault" class="hover:text-white transition-colors">Agency Vault ($1,499)</a>
         <a href="https://auraandgrid.gumroad.com" target="_blank" class="hover:text-white transition-colors">Gumroad Storefront ↗</a>
       </div>
@@ -476,7 +596,7 @@ const showroomHtml = `<!DOCTYPE html>
       <!-- Regulatory & Truth Disclaimer Box -->
       <div class="p-3 bg-amber-950/40 border border-amber-500/40 rounded-lg text-amber-200 text-xs font-mono mb-4 leading-relaxed flex items-start space-x-2">
         <span class="text-amber-400 font-bold shrink-0">⚠</span>
-        <div id="modalDisclaimer" class="leading-normal">SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE</div>
+        <div id="modalDisclaimer" class="leading-normal">TECHNICAL PROTOTYPE ONLY — FOR CONCEPT DEMONSTRATION USE. NOT PRODUCTION OR ADVICE.</div>
       </div>
 
       <div class="flex gap-3">
@@ -488,85 +608,35 @@ const showroomHtml = `<!DOCTYPE html>
 
   <!-- ================= CLIENT SCRIPT ================= -->
   <script>
-    const products = ${JSON.stringify(publicProducts)};
     let activeSector = 'all';
     let searchQuery = '';
 
-    const grid = document.getElementById('productsGrid');
     const noResults = document.getElementById('noResults');
 
-    function renderProducts() {
-      const filtered = products.filter(p => {
-        const matchesSector = activeSector === 'all' || p.sector === activeSector;
-        const matchesSearch = searchQuery === '' || 
-          p.name.toLowerCase().includes(searchQuery) ||
-          p.category.toLowerCase().includes(searchQuery) ||
-          p.sector.toLowerCase().includes(searchQuery);
-        return matchesSector && matchesSearch;
+    function filterCards() {
+      let visibleCount = 0;
+      const cards = document.querySelectorAll('#productsGrid .product-card');
+      cards.forEach(card => {
+        const sector = card.getAttribute('data-sector') || '';
+        const name = (card.getAttribute('data-name') || '').toLowerCase();
+        const cat = (card.getAttribute('data-category') || '').toLowerCase();
+        
+        const matchesSector = (activeSector === 'all' || sector === activeSector);
+        const matchesSearch = (!searchQuery || name.includes(searchQuery) || cat.includes(searchQuery) || sector.toLowerCase().includes(searchQuery));
+        
+        if (matchesSector && matchesSearch) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
       });
 
-      if (filtered.length === 0) {
-        grid.innerHTML = '';
+      if (visibleCount === 0) {
         noResults.classList.remove('hidden');
-        return;
+      } else {
+        noResults.classList.add('hidden');
       }
-
-      noResults.classList.add('hidden');
-      grid.innerHTML = filtered.map(p => \`
-        <div class="rounded-xl bg-card hairline-border overflow-hidden card-glow transition-all flex flex-col justify-between">
-          <div>
-            <!-- Cover Mockup Window -->
-            <div class="relative bg-obsidian border-b border-white/5 aspect-[16/9] overflow-hidden group">
-              <img src="\${p.cover_image}" alt="\${p.name}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'640\\' height=\\'360\\' viewBox=\\'0 0 640 360\\'><rect width=\\'640\\' height=\\'360\\' fill=\\'%23111317\\'/><text x=\\'50%\\' y=\\'50%\\' fill=\\'%23C5A880\\' font-family=\\'serif\\' font-size=\\'20\\' font-weight=\\'bold\\' text-anchor=\\'middle\\' dominant-baseline=\\'middle\\'>AURA &amp; GRID // BLUEPRINT</text></svg>'">
-              <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/70 backdrop-blur-md border border-white/10 text-[10px] font-mono uppercase text-gold">
-                \${p.sector}
-              </div>
-              <div class="absolute top-3 right-3 px-2 py-0.5 rounded \${p.checkout_active ? 'bg-emerald/20 border-emerald/40 text-emerald' : 'bg-gold/20 border-gold/40 text-gold'} border text-[10px] font-mono font-bold">
-                \${p.checkout_active ? 'ACTIVE CHECKOUT' : 'PACKAGED'}
-              </div>
-            </div>
-
-            <!-- Card Body -->
-            <div class="p-6">
-              <div class="text-[11px] font-mono text-neutral-500 uppercase tracking-widest mb-1.5">\${p.archetype_name}</div>
-              <h3 class="text-xl font-serif font-bold text-white mb-2 leading-snug">\${p.name}</h3>
-              
-              <!-- High-Contrast Universal Truth Pill Badge -->
-              <div class="my-2">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-amber-400 text-black font-black text-[10px] font-mono uppercase tracking-wider shadow-sm">
-                  [SIMULATED DATA PROTOTYPE]
-                </span>
-              </div>
-
-              <p class="text-xs text-neutral-400 line-clamp-2 mb-3 leading-relaxed">\${p.category}</p>
-
-              <!-- Expandable Compliance Details Drawer -->
-              <details class="mt-3 pt-2 border-t border-white/5 group">
-                <summary class="text-[10px] font-mono text-neutral-400 hover:text-neutral-200 cursor-pointer flex items-center justify-between select-none">
-                  <span>Truth & Compliance</span>
-                  <span class="text-neutral-500 group-open:rotate-180 transition-transform">▼</span>
-                </summary>
-                <div class="mt-2 p-2.5 rounded bg-amber-950/40 border border-amber-500/30 text-amber-200 text-[10px] font-mono leading-relaxed">
-                  \${p.disclaimer}
-                </div>
-              </details>
-            </div>
-          </div>
-
-          <!-- Card Actions -->
-          <div class="p-6 pt-0 border-t border-white/5 mt-4 flex items-center justify-between gap-3 text-xs font-mono">
-            <a href="\${p.preview_url}" target="_blank" class="flex-1 py-2.5 rounded bg-panel hairline-border hover:border-gold/40 text-center text-white font-medium hover:text-gold transition-all">
-              Live Demo ↗
-            </a>
-            <button onclick="openModal(\${p.id})" class="px-3 py-2.5 rounded bg-white/5 hover:bg-white/10 text-neutral-400 hover:text-white transition-all">
-              Specs
-            </button>
-            <a href="\${p.commercial_checkout_url}" target="_blank" class="py-2.5 px-3 rounded \${p.checkout_active ? 'bg-gold/15 border-gold/40 text-gold hover:bg-gold hover:text-black' : 'bg-white/10 border-white/20 text-neutral-300 hover:bg-white hover:text-black'} border font-semibold transition-all">
-              \${p.checkout_active ? '$150 ➔' : 'Vault ➔'}
-            </a>
-          </div>
-        </div>
-      \`).join('');
     }
 
     // Filter Buttons
@@ -579,30 +649,32 @@ const showroomHtml = `<!DOCTYPE html>
         btn.classList.add('bg-gold', 'text-black', 'font-semibold');
         btn.classList.remove('bg-card', 'text-neutral-300');
         activeSector = btn.getAttribute('data-sector');
-        renderProducts();
+        filterCards();
       });
     });
 
     // Search Input
     document.getElementById('searchInput').addEventListener('input', (e) => {
       searchQuery = e.target.value.toLowerCase().trim();
-      renderProducts();
+      filterCards();
     });
 
     // Modal Helpers
-    function openModal(id) {
-      const p = products.find(x => x.id === id);
-      if (!p) return;
-      document.getElementById('modalSector').innerText = p.sector;
-      document.getElementById('modalTitle').innerText = p.name;
-      document.getElementById('modalCategory').innerText = p.category;
-      document.getElementById('modalBenchmark').innerText = p.design_benchmark;
-      document.getElementById('modalArchetype').innerText = p.archetype_name;
-      document.getElementById('modalTables').innerText = p.tables.join(', ');
-      document.getElementById('modalDisclaimer').innerText = p.disclaimer || "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE";
-      document.getElementById('modalLiveDemo').href = p.preview_url;
-      document.getElementById('modalGumroad').href = p.commercial_checkout_url;
-      document.getElementById('modalGumroad').innerText = p.checkout_active ? 'License Blueprint ($150) ➔' : 'Acquire in Agency Vault ($1,499) ➔';
+    function openModal(btn) {
+      const card = btn.closest('.product-card');
+      if (!card) return;
+      document.getElementById('modalSector').innerText = card.getAttribute('data-sector') || '';
+      document.getElementById('modalTitle').innerText = card.getAttribute('data-name') || '';
+      document.getElementById('modalCategory').innerText = card.getAttribute('data-category') || '';
+      document.getElementById('modalBenchmark').innerText = card.getAttribute('data-benchmark') || '';
+      document.getElementById('modalArchetype').innerText = card.getAttribute('data-archetype') || '';
+      document.getElementById('modalTables').innerText = card.getAttribute('data-tables') || '';
+      const discEl = card.querySelector('details div');
+      document.getElementById('modalDisclaimer').innerText = discEl ? discEl.innerText.trim() : '';
+      document.getElementById('modalLiveDemo').href = card.getAttribute('data-preview') || '#';
+      document.getElementById('modalGumroad').href = card.getAttribute('data-checkout') || '#';
+      const isActive = card.getAttribute('data-active') === '1';
+      document.getElementById('modalGumroad').innerText = isActive ? 'License Blueprint ($150) ➔' : 'Acquire in Agency Vault ($1,499) ➔';
       document.getElementById('specModal').classList.remove('hidden');
     }
 
@@ -613,9 +685,6 @@ const showroomHtml = `<!DOCTYPE html>
     document.getElementById('specModal').addEventListener('click', (e) => {
       if (e.target.id === 'specModal') closeModal();
     });
-
-    // Initial Render
-    renderProducts();
   </script>
 </body>
 </html>
