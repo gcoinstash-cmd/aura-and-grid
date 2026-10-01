@@ -45,10 +45,10 @@ A **micro-APA** means a small asset purchase agreement where a buyer acquires ow
 
 Current portfolio facts:
 
-- Current total assets: **109 pre-revenue digital assets** (expanded from 85)
+- Current total assets: **110 pre-revenue digital assets** (expanded from 85)
 - Long-term target: **500 high-quality, distinct, cataloged assets**
 - Minimum retained floor: **80% of the collection at every stage**
-- Current minimum retained floor: **87 assets**
+- Current minimum retained floor: **88 assets**
 - Current maximum ownership-transfer capacity: **22 assets**
 - At 500 assets: minimum retained floor is **400 assets**
 - At 500 assets: maximum ownership-transfer capacity is **100 assets**
@@ -70,8 +70,8 @@ Protect permanently:
 
 ## CURRENT PORTFOLIO VALUATION
 
-The full 109-asset collection is **pre-revenue**.
-Composition: **85 Track 1 Lean Rapid-Sale Assets** + **24 Track 2 Flagship Tier-1 Elite SCADA/Deep Tech Assets**.
+The full 110-asset collection is **pre-revenue**.
+Composition: **85 Track 1 Lean Rapid-Sale Assets** + **25 Track 2 Flagship Tier-1 Elite SCADA/Deep Tech Assets**.
 
 Current orderly fair-market value estimate:
 
@@ -275,9 +275,9 @@ Every micro-APA must include:
 - No claims beyond verified evidence
 - Clear statement that the asset uses simulated/sample data and is not a production system
 
-## CURRENT FLAGSHIP FLEET (TRACK 2 — 24 ELITE MODELS)
+## CURRENT FLAGSHIP FLEET (TRACK 2 — 25 ELITE MODELS)
 
-These 24 assets are classified under **Track 2 — Flagship Candidate** ($14,500 Buyout Anchor / $1,500–$3,500 Commercial License):
+These 25 assets are classified under **Track 2 — Flagship Candidate** ($14,500 Buyout Anchor / $1,500–$3,500 Commercial License):
 
 | Asset | Flagship License | Entry Exclusive Buyout | Full Asset Buyout | Strategic Acquisition |
 |---|---:|---:|---:|---:|
@@ -305,8 +305,9 @@ These 24 assets are classified under **Track 2 — Flagship Candidate** ($14,500
 | #107 Superconducting Quantum Processor Cryostat OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
 | #108 Yacht Charter Fleet Ecosystem | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
 | #109 Orbital Habitat ECLSS SCADA OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #110 Orbital In-Space Cryogenic Propellant Depot SCADA OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
 
-### TRACK 2 FLAGSHIP CANDIDATE INVENTORY LEDGER (ASSETS 086 TO 109)
+### TRACK 2 FLAGSHIP CANDIDATE INVENTORY LEDGER (ASSETS 086 TO 110)
 
 - **Classification:** `pricing_track: "Track 2 - Flagship Candidate"`
 - **Product Truth Label:** `Interactive Prototype (Simulated Data Only) — Awaiting Flagship Qualification Audit`
@@ -338,6 +339,33 @@ These 24 assets are classified under **Track 2 — Flagship Candidate** ($14,500
   - [x] Distinct visual identity & dark SCADA benchmark
   - [x] 8–15 interactive screens / sub-panels (Gas loop, water loop, alarm triage, diagnostics)
   - [x] Domain physics & stoichiometric calculation engine
+  - [x] Complete operator journey (Triage → Diagnostics → Override → Log)
+  - [x] Realistic simulated terminology & live mock telemetry
+  - [x] Walkthrough concept brief & GitHub source blueprint
+  - [x] Mandatory Product Truth disclosure (Simulated sample data; not flight-certified)
+
+#### Master Ledger Highlight: Asset 110
+- **Asset ID:** `Asset_110`
+- **Product Name:** Orbital In-Space Cryogenic Propellant Depot SCADA OS
+- **Category:** Orbital In-Space Cryogenic Propellant Depot SCADA OS Console
+- **Vertical:** Aerospace / Orbital SCADA (LEO 450 km Methalox Refueling Node)
+- **Pricing Track:** `Track 2 - Flagship Candidate`
+- **Status Badge:** `Track 2 Flagship Candidate`
+- **Product Truth Label:** `Interactive Prototype (Simulated Data Only) — Awaiting Flagship Qualification Audit`
+- **Commercial Flagship License:** $1,500 – $3,500
+- **Entry Exclusive Buyout Anchor:** $14,500 (Range: $10,000 – $18,000)
+- **Full Asset Buyout Range:** $18,000 – $35,000
+- **Strategic Acquisition Range:** $35,000 – $75,000+
+- **Demo Preview URL:** `https://orbital-cryo-depot-scada-os.onrender.com`
+- **Admin Dashboard URL:** `https://orbital-cryo-depot-scada-os.onrender.com/admin`
+- **Admin Passcode:** `cryo2026`
+- **Audit Score:** 9.9 / 10.0 (Mythic Candidate Tier)
+- **Database Schema Tables:** `depot_stations`, `cryo_tanks`, `cryo_cooling_loops`, `propellant_transfers`, `telemetry_snaps`
+- **Qualification Gate Audit Status:**
+  - [x] Specific high-stakes B2B workflow (Zero-Boil-Off Methalox thermodynamic SCADA & autonomous docking)
+  - [x] Distinct visual identity & dark SCADA benchmark (NASA Mission Control / Palantir Foundry Console)
+  - [x] 8–15 interactive screens / sub-panels (Tank thermodynamic telemetry, active cryo-coolers, docking ports, transfer telemetry)
+  - [x] Domain physics & thermodynamic mass boil-off calculation engine
   - [x] Complete operator journey (Triage → Diagnostics → Override → Log)
   - [x] Realistic simulated terminology & live mock telemetry
   - [x] Walkthrough concept brief & GitHub source blueprint

@@ -1,5 +1,5 @@
 {
-  "sync_timestamp": "2026-10-01T09:36:03.892Z",
+  "sync_timestamp": "2026-10-01T10:04:56.458Z",
   "version": "v2.0-master-sync",
   "status": "ALL_SYNCED",
   "pricing_protocol": {
@@ -39,7 +39,7 @@
     "GEMINI.md": "38e605b4b99bb0dc8dba956cb5eb60f3643da98e9ffcc895ab03f9705d05fb16",
     "instructions.txt": "2745808d0db0aefd33cb03e3dac2facf78ba70b5aab341da568acc588b33191b",
     "ghostfactory-master.md": "2745808d0db0aefd33cb03e3dac2facf78ba70b5aab341da568acc588b33191b",
-    "GHOSTFACTORY_V2_MASTER_SYNC.md": "863706f192893ffe2b30d7ffb68273d961abc770e691610e742c009a68baade2",
+    "GHOSTFACTORY_V2_MASTER_SYNC.md": "437bb09f16e51daccaeacf2471c4a3d7ba0d21110bf39e2d7a2e48d19851e95b",
     "BUSINESS_MODEL_AND_FOUNDRY_STRATEGY.md": "5345ae7c97854be6412a3bf24fe2fcbcb59a7c4a11e6bce3dd3c22c27b582544",
     "MASTER_BUSINESS_PLAN.md": "4c73fbb3a58cb8ed9d8458f0ca9375ecd5430ed4a82f784ffbc811c54ca41d3a",
     "NOTEBOOKLM_MASTER_FOUNDRY_BRIEF.md": "ad561c0d3d77771e97d13b14dc8637628233a69e8b54e0aa8d9949ebf55d3310",
@@ -53,7 +53,6 @@
   "synced_destinations": [
     "/Users/gmane/Documents/ZoMae Media LLC/Aura & Grid/MASTER_BLUEPRINT_BACKUP",
     "/Users/gmane/Desktop/Ghost_Factory_Staging/MASTER_BLUEPRINT_BACKUP",
-    "/Users/gmane/Google Drive/My Drive/MASTER_BLUEPRINT_BACKUP",
     "/Users/gmane/Library/CloudStorage/GoogleDrive-gcoinstash@gmail.com/My Drive/MASTER_BLUEPRINT_BACKUP"
   ]
 }

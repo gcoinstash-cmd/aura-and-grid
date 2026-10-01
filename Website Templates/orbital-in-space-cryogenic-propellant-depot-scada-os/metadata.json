@@ -1,0 +1,6 @@
+{
+  "name": "Orbital In-Space Cryogenic Propellant Depot SCADA OS",
+  "description": "Zero-Boil-Off (ZBO) Methalox Refueling Node • LEO 450 km operational telemetry HUD and thermodynamic SCADA console.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
