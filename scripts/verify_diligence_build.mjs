@@ -63,7 +63,7 @@ const truthComplianceMatches = (showroomHtml.match(/Truth & Compliance/g) || [])
 assert(truthComplianceMatches === 110, `site/index.html contains exact 110 Truth & Compliance drawer occurrences (Actual: ${truthComplianceMatches})`);
 
 const regulatedDisclaimerMatches = (showroomHtml.match(/NOT CERTIFIED FOR CLINICAL\/LEGAL\/FINANCIAL USE/g) || []).length;
-assert(regulatedDisclaimerMatches === 48, `site/index.html contains exact 48 Regulated Sector disclaimers (Actual: ${regulatedDisclaimerMatches})`);
+assert(regulatedDisclaimerMatches === 60, `site/index.html contains exact 60 Regulated Sector disclaimers (Actual: ${regulatedDisclaimerMatches})`);
 
 // 4. Validate Best For Buyer Qualification Targeting
 const manifestBestForMatches = (manifest.products || []).filter(p => p.best_for && p.best_for.startsWith('Best for:')).length;

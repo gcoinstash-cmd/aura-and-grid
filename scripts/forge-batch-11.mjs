@@ -1189,15 +1189,16 @@ async function runAutopilot() {
   const manifestPath = path.join(ROOT_DIR, 'CATALOG_MANIFEST.json');
   const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
 
-  manifest.total_flagships = 75;
-  manifest.valuation_framework.total_products = 75;
+  manifest.total_flagships = Math.max(manifest.total_flagships || 0, 75);
+  if (manifest.valuation_framework) {
+    manifest.valuation_framework.total_products = 75;
+  }
 
   // Add heavy_fleet vertical if not present
   if (!manifest.vertical_slices.heavy_fleet) {
     manifest.vertical_slices.heavy_fleet = {
       name: "Heavy Commercial Fleet & Logistics Vault",
       description: "Heavy plant rental, freight brokerage dispatch, private aviation charter, cold storage & crane rigging OS",
-      apa_valuation_range: "$30,000 – $52,000",
       target_asset_count: 40,
       current_asset_count: 5
     };

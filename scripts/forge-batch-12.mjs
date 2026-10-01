@@ -1192,8 +1192,10 @@ async function runAutopilot() {
   const manifestPath = path.join(ROOT_DIR, 'CATALOG_MANIFEST.json');
   const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
 
-  manifest.total_flagships = 80;
-  manifest.valuation_framework.total_products = 80;
+  manifest.total_flagships = Math.max(manifest.total_flagships || 0, 80);
+  if (manifest.valuation_framework) {
+    manifest.valuation_framework.total_products = 80;
+  }
 
   // Update vertical counts
   if (manifest.vertical_slices.automotive) {

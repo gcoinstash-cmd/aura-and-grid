@@ -39,91 +39,58 @@ if (liveIds.size === 0) {
 
 console.log(`🔍 Verified ${liveIds.size} active Gumroad products out of ${manifest.products.length}.`);
 
-// 1. Correct Arithmetic & Pricing Telemetry
-manifest.valuation_framework = {
-  total_products: 85,
-  agency_whitelabel_vault_per_license: 2999,
-  retail_shelf_msrp_starter_ui: 6715, // $79 * 85
-  retail_shelf_msrp_full_stack: 16915, // $199 * 85 (RECONCILED FROM $13,930)
-  pre_revenue_liquidation_protocol: {
-    fire_sale_24_72h: {
-      per_product_min: 250,
-      per_product_max: 368,
-      fleet_total_min: 21250, // 250 * 85
-      fleet_total_max: 31280  // 368 * 85
-    },
-    quick_close_7_14d: {
-      per_product_min: 500,
-      per_product_max: 736,
-      fleet_total_min: 42500, // 500 * 85
-      fleet_total_max: 62560  // 736 * 85
-    },
-    marketplace_listing_30_45d: {
-      per_product_min: 789,
-      per_product_max: 1157,
-      fleet_total_min: 67065, // 789 * 85
-      fleet_total_max: 98345  // 1157 * 85
-    }
-  },
-  pre_revenue_apa_target_anchor: 59000,
-  post_traction_apa_cash_floor: 35000
-};
+// 1. Private Valuation Data Protection
+if (manifest.valuation_framework) {
+  delete manifest.valuation_framework;
+}
 
 // 2. Reconcile Vertical Asset Counts to Exactly 85
 manifest.vertical_slices = {
   hospitality: {
     name: "Luxury Hospitality & Dining Vault",
     description: "Bespoke counters, omakase, jazz bistros, supper clubs, estates & vineyards OS",
-    apa_valuation_range: "$42,000 – $65,000",
     target_asset_count: 60,
     current_asset_count: 23
   },
   wealth: {
     name: "Private Wealth & Real Estate Vault",
     description: "Private equity LP portals, estate syndication, family office & luxury listings OS",
-    apa_valuation_range: "$30,000 – $48,000",
     target_asset_count: 35,
     current_asset_count: 16
   },
   medical: {
     name: "Medical & VIP Aesthetics Vault",
     description: "Clinical booking, patient intake, medspas, salon grooming & olfactory OS",
-    apa_valuation_range: "$35,000 – $55,000",
     target_asset_count: 50,
     current_asset_count: 13
   },
   creative: {
     name: "Creative Agency & Studio Vault",
     description: "Motion VFX, architecture atelier, soundstage production & design OS",
-    apa_valuation_range: "$28,000 – $40,000",
     target_asset_count: 40,
     current_asset_count: 12
   },
   automotive: {
     name: "Automotive & Mobility Vault",
     description: "Dyno testing, tuning dispatch, luxury fleet rentals & workshop OS",
-    apa_valuation_range: "$28,000 – $45,000",
     target_asset_count: 40,
     current_asset_count: 6
   },
   fitness: {
     name: "Performance Fitness & Athletics Vault",
     description: "Boutique fight clubs, reformer training & athletic performance OS",
-    apa_valuation_range: "$25,000 – $38,000",
     target_asset_count: 35,
     current_asset_count: 5
   },
   home_services: {
     name: "Home Services & Commercial Contracting Vault",
     description: "Commercial HVAC, drone roofing, hydraulic plumbing, solar EPC permits & switchgear dispatch OS",
-    apa_valuation_range: "$35,000 – $60,000",
     target_asset_count: 50,
     current_asset_count: 5
   },
   heavy_fleet: {
     name: "Heavy Commercial Fleet & Logistics Vault",
     description: "Heavy plant rental, freight brokerage dispatch, private aviation charter, cold storage & crane rigging OS",
-    apa_valuation_range: "$30,000 – $52,000",
     target_asset_count: 40,
     current_asset_count: 5
   }
