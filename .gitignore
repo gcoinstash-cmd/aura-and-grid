@@ -15,3 +15,5 @@ yarn-error.log*
 dist/_quarantine_duplicates/
 scratch/
 .tmp.driveupload/
+Ghost_Factory_Staging/
+ghost-factory-staging

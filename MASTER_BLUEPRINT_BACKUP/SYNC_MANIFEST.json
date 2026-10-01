@@ -1,5 +1,5 @@
 {
-  "sync_timestamp": "2026-10-01T20:48:30.988Z",
+  "sync_timestamp": "2026-10-01T21:01:04.650Z",
   "version": "v2.0-master-sync",
   "status": "ALL_SYNCED",
   "pricing_protocol": {
@@ -52,7 +52,7 @@
   },
   "synced_destinations": [
     "/Users/gmane/Documents/ZoMae Media LLC/Aura & Grid/MASTER_BLUEPRINT_BACKUP",
-    "/Users/gmane/Desktop/Ghost_Factory_Staging/MASTER_BLUEPRINT_BACKUP",
+    "/Users/gmane/Documents/ZoMae Media LLC/Aura & Grid/Ghost_Factory_Staging/MASTER_BLUEPRINT_BACKUP",
     "/Users/gmane/Google Drive/My Drive/MASTER_BLUEPRINT_BACKUP",
     "/Users/gmane/Library/CloudStorage/GoogleDrive-gcoinstash@gmail.com/My Drive/MASTER_BLUEPRINT_BACKUP"
   ]

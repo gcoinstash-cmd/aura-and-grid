@@ -52,11 +52,11 @@ function getDestinationDirs() {
     // 3. Dist Vaults
     { id: 'dist_vaults', path: path.join(ROOT_DIR, 'dist', 'vaults'), mustExist: false },
     
-    // 4. Desktop Staging Master Backup
-    { id: 'desktop_staging_backup', path: path.join(home, 'Desktop', 'Ghost_Factory_Staging', 'MASTER_BLUEPRINT_BACKUP'), mustExist: false },
+    // 4. In-Workspace Staging Master Backup (Moved from Desktop into Aura & Grid)
+    { id: 'workspace_staging_backup', path: path.join(ROOT_DIR, 'Ghost_Factory_Staging', 'MASTER_BLUEPRINT_BACKUP'), mustExist: false },
     
-    // 5. Desktop Staging Root
-    { id: 'desktop_staging_root', path: path.join(home, 'Desktop', 'Ghost_Factory_Staging'), mustExist: false },
+    // 5. In-Workspace Staging Root
+    { id: 'workspace_staging_root', path: path.join(ROOT_DIR, 'Ghost_Factory_Staging'), mustExist: false },
     
     // 6. Google Drive symlink/folder (standard Mac mount)
     { id: 'gdrive_standard_backup', path: path.join(home, 'Google Drive', 'My Drive', 'MASTER_BLUEPRINT_BACKUP'), checkParent: path.join(home, 'Google Drive', 'My Drive') },
@@ -142,10 +142,10 @@ export function runMasterSync() {
   // Copy specific sync files to other key folders
   const syncFile = verifiedSources.find(f => f.destName === 'GHOSTFACTORY_V2_MASTER_SYNC.md');
   if (syncFile) {
-    // Desktop root
-    const desktopRoot = path.join(os.homedir(), 'Desktop', 'Ghost_Factory_Staging');
-    if (fs.existsSync(desktopRoot)) {
-      fs.copyFileSync(syncFile.fullSrc, path.join(desktopRoot, 'GHOSTFACTORY_V2_MASTER_SYNC.md'));
+    // Workspace staging root
+    const stagingRoot = path.join(ROOT_DIR, 'Ghost_Factory_Staging');
+    if (fs.existsSync(stagingRoot)) {
+      fs.copyFileSync(syncFile.fullSrc, path.join(stagingRoot, 'GHOSTFACTORY_V2_MASTER_SYNC.md'));
     }
     // NotebookLM Knowledge Base
     const nblmKb = path.join(ROOT_DIR, 'NotebookLM_Knowledge_Base');
