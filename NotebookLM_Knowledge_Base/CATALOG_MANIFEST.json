@@ -2,33 +2,33 @@
   "catalog_version": "1.0.0",
   "store": "Aura & Grid",
   "store_url": "https://auraandgrid.gumroad.com",
-  "total_flagships": 85,
+  "total_flagships": 110,
   "standards": "Ghost Factory™ 9.0+ Verified Production Grade (Permanent 5-Archetype Rotation & Curated Design Intelligence)",
   "database_engine": "Supabase PostgreSQL (RLS Enabled)",
   "frontend_stack": "React 19 + Tailwind CSS + Lucide Icons + Vite",
   "valuation_framework": {
     "total_products": 85,
     "agency_whitelabel_vault_per_license": 2999,
-    "retail_shelf_msrp_starter_ui": 5530,
-    "retail_shelf_msrp_full_stack": 13930,
+    "retail_shelf_msrp_starter_ui": 6715,
+    "retail_shelf_msrp_full_stack": 16915,
     "pre_revenue_liquidation_protocol": {
       "fire_sale_24_72h": {
         "per_product_min": 250,
         "per_product_max": 368,
-        "fleet_total_min": 17500,
-        "fleet_total_max": 25789
+        "fleet_total_min": 21250,
+        "fleet_total_max": 31280
       },
       "quick_close_7_14d": {
         "per_product_min": 500,
         "per_product_max": 736,
-        "fleet_total_min": 35000,
-        "fleet_total_max": 51579
+        "fleet_total_min": 42500,
+        "fleet_total_max": 62560
       },
       "marketplace_listing_30_45d": {
         "per_product_min": 789,
         "per_product_max": 1157,
-        "fleet_total_min": 55230,
-        "fleet_total_max": 80990
+        "fleet_total_min": 67065,
+        "fleet_total_max": 98345
       }
     },
     "pre_revenue_apa_target_anchor": 59000,
@@ -42,7 +42,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/stride-mb",
       "preview_url": "https://stride-manhattan-beach.onrender.com",
       "admin_url": "https://stride-manhattan-beach.onrender.com/admin",
-      "admin_passcode": "stridemb2026",
       "audit_score": 9.6,
       "tables": [
         "classes",
@@ -54,7 +53,14 @@
       "archetype_id": "A",
       "archetype_name": "Archetype A: Dense Operational Console",
       "archetype_description": "Persistent utility rail, real-time operational triage queue, and slide-out master-detail inspection drawer for high-velocity dispatch and logistics.",
-      "design_benchmark": "Sneaker Con & Flight Club Authentication Console"
+      "design_benchmark": "Sneaker Con & Flight Club Authentication Console",
+      "checkout_active": true,
+      "status_badge": "Active Checkout",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/stride-mb",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 2,
@@ -63,7 +69,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/the-vault",
       "preview_url": "https://the-vault-studio.onrender.com",
       "admin_url": "https://the-vault-studio.onrender.com/admin",
-      "admin_passcode": "vault2026",
       "audit_score": 9.6,
       "tables": [
         "studios",
@@ -75,7 +80,14 @@
       "archetype_id": "B",
       "archetype_name": "Archetype B: Asymmetric Editorial Showcase",
       "archetype_description": "Dynamic masonry grid, visual filtering, editorial typography, and slide-over commission sheet for high-end ateliers, creative studios, and maritime showcases.",
-      "design_benchmark": "Abbey Road & Sunset Sound Editorial Showcase"
+      "design_benchmark": "Abbey Road & Sunset Sound Editorial Showcase",
+      "checkout_active": true,
+      "status_badge": "Active Checkout",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/the-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 3,
@@ -84,7 +96,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/velocity-os",
       "preview_url": "https://velocity-exotic-fleet.onrender.com",
       "admin_url": "https://velocity-exotic-fleet.onrender.com/admin",
-      "admin_passcode": "velocity2026",
       "audit_score": 9.7,
       "tables": [
         "vehicles",
@@ -96,7 +107,14 @@
       "archetype_id": "A",
       "archetype_name": "Archetype A: Dense Operational Console",
       "archetype_description": "Persistent utility rail, real-time operational triage queue, and slide-out master-detail inspection drawer for high-velocity dispatch and logistics.",
-      "design_benchmark": "Exotic Fleet Telematics & GPS Triage"
+      "design_benchmark": "Exotic Fleet Telematics & GPS Triage",
+      "checkout_active": true,
+      "status_badge": "Active Checkout",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/velocity-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 4,
@@ -105,7 +123,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/apex-club-os",
       "preview_url": "https://apex-fight-club.onrender.com",
       "admin_url": "https://apex-fight-club.onrender.com/admin",
-      "admin_passcode": "apex2026",
       "audit_score": 9.8,
       "tables": [
         "roster",
@@ -117,7 +134,14 @@
       "archetype_id": "D",
       "archetype_name": "Archetype D: Timeline & Station Reservation Grid",
       "archetype_description": "Interactive day/hour time-slot matrix, capacity/station status indicators, and instant seat/pod booking for Michelin dining, private clubs, and recovery labs.",
-      "design_benchmark": "UFC Performance Institute Sparring Matrix"
+      "design_benchmark": "UFC Performance Institute Sparring Matrix",
+      "checkout_active": true,
+      "status_badge": "Active Checkout",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/apex-club-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 5,
@@ -126,7 +150,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/elevate-capital-os",
       "preview_url": "https://elevate-capital-os.onrender.com",
       "admin_url": "https://elevate-capital-os.onrender.com",
-      "admin_passcode": "elevate2026",
       "audit_score": 9.8,
       "tables": [
         "funds",
@@ -138,7 +161,14 @@
       "archetype_id": "C",
       "archetype_name": "Archetype C: Step-by-Step Calculator / Wizard",
       "archetype_description": "Stateful multi-stage progression stepper, interactive pricing/spec tally, and stage-by-stage validation for underwriting, legal retainers, and clinical intake.",
-      "design_benchmark": "Carta LP Subscription & Capital Underwriting Wizard"
+      "design_benchmark": "Carta LP Subscription & Capital Underwriting Wizard",
+      "checkout_active": true,
+      "status_badge": "Active Checkout",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/elevate-capital-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 6,
@@ -147,7 +177,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/obsidian-lab-os",
       "preview_url": "https://obsidian-slow-bar.onrender.com",
       "admin_url": "https://obsidian-slow-bar.onrender.com",
-      "admin_passcode": "obsidian2026",
       "audit_score": 9.8,
       "tables": [
         "beans",
@@ -159,7 +188,14 @@
       "archetype_id": "D",
       "archetype_name": "Archetype D: Timeline & Station Reservation Grid",
       "archetype_description": "Interactive day/hour time-slot matrix, capacity/station status indicators, and instant seat/pod booking for Michelin dining, private clubs, and recovery labs.",
-      "design_benchmark": "Blue Bottle Slow Bar & Pour-Over Station Grid"
+      "design_benchmark": "Blue Bottle Slow Bar & Pour-Over Station Grid",
+      "checkout_active": true,
+      "status_badge": "Active Checkout",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/obsidian-lab-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 7,
@@ -168,7 +204,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/the-enclave-os",
       "preview_url": "https://the-enclave-villas.onrender.com",
       "admin_url": "https://the-enclave-villas.onrender.com/admin",
-      "admin_passcode": "enclave2026",
       "audit_score": 9.8,
       "tables": [
         "properties",
@@ -181,7 +216,14 @@
       "archetype_id": "E",
       "archetype_name": "Archetype E: Split-Screen Spec & Proof Panel",
       "archetype_description": "Fixed left media inspection preview, right scrollable technical breakdown, cryptographic proof logs, and provenance vault for horology, wealth, and fine art.",
-      "design_benchmark": "Sotheby's International Realty Deed Provenance Panel"
+      "design_benchmark": "Sotheby's International Realty Deed Provenance Panel",
+      "checkout_active": true,
+      "status_badge": "Active Checkout",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/the-enclave-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 8,
@@ -190,7 +232,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/aura-medspa-os",
       "preview_url": "https://aura-medspa-os.onrender.com",
       "admin_url": "https://aura-medspa-os.onrender.com/admin",
-      "admin_passcode": "medspa2026",
       "audit_score": 9.8,
       "tables": [
         "profiles",
@@ -202,7 +243,14 @@
       "archetype_id": "C",
       "archetype_name": "Archetype C: Step-by-Step Calculator / Wizard",
       "archetype_description": "Stateful multi-stage progression stepper, interactive pricing/spec tally, and stage-by-stage validation for underwriting, legal retainers, and clinical intake.",
-      "design_benchmark": "Beverly Hills Laser & Injectable Protocol Wizard"
+      "design_benchmark": "Beverly Hills Laser & Injectable Protocol Wizard",
+      "checkout_active": true,
+      "status_badge": "Active Checkout",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/aura-medspa-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 9,
@@ -211,7 +259,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/royal-apex-os",
       "preview_url": "https://royal-apex-atelier.onrender.com",
       "admin_url": "https://royal-apex-atelier.onrender.com/admin",
-      "admin_passcode": "royal2026",
       "audit_score": 9.8,
       "tables": [
         "profiles",
@@ -223,7 +270,14 @@
       "archetype_id": "B",
       "archetype_name": "Archetype B: Asymmetric Editorial Showcase",
       "archetype_description": "Dynamic masonry grid, visual filtering, editorial typography, and slide-over commission sheet for high-end ateliers, creative studios, and maritime showcases.",
-      "design_benchmark": "Chanel Haute Couture Atelier Showcase"
+      "design_benchmark": "Chanel Haute Couture Atelier Showcase",
+      "checkout_active": true,
+      "status_badge": "Active Checkout",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/royal-apex-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 10,
@@ -232,7 +286,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/aura-reserve-os",
       "preview_url": "https://aura-reserve-estate.onrender.com",
       "admin_url": "https://aura-reserve-estate.onrender.com/admin",
-      "admin_passcode": "reserve2026",
       "audit_score": 9.8,
       "tables": [
         "patron_profiles",
@@ -244,7 +297,14 @@
       "archetype_id": "D",
       "archetype_name": "Archetype D: Timeline & Station Reservation Grid",
       "archetype_description": "Interactive day/hour time-slot matrix, capacity/station status indicators, and instant seat/pod booking for Michelin dining, private clubs, and recovery labs.",
-      "design_benchmark": "Napa Valley Allocation & Cellar Tasting Grid"
+      "design_benchmark": "Napa Valley Allocation & Cellar Tasting Grid",
+      "checkout_active": true,
+      "status_badge": "Active Checkout",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/aura-reserve-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 11,
@@ -253,7 +313,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/monolith-studio-os",
       "preview_url": "https://monolith-studio-os.onrender.com",
       "admin_url": "https://monolith-studio-os.onrender.com/admin",
-      "admin_passcode": "monolith2026",
       "audit_score": 9.8,
       "tables": [
         "architect_clients",
@@ -265,7 +324,14 @@
       "archetype_id": "E",
       "archetype_name": "Archetype E: Split-Screen Spec & Proof Panel",
       "archetype_description": "Fixed left media inspection preview, right scrollable technical breakdown, cryptographic proof logs, and provenance vault for horology, wealth, and fine art.",
-      "design_benchmark": "Dolby Atmos Master Track Acoustic Spec Panel"
+      "design_benchmark": "Dolby Atmos Master Track Acoustic Spec Panel",
+      "checkout_active": true,
+      "status_badge": "Active Checkout",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/monolith-studio-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 12,
@@ -274,7 +340,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/kinetic-lab-os",
       "preview_url": "https://kinetic-lab-os.onrender.com",
       "admin_url": "https://kinetic-lab-os.onrender.com/admin",
-      "admin_passcode": "kinetic2026",
       "audit_score": 9.8,
       "tables": [
         "athlete_profiles",
@@ -286,7 +351,14 @@
       "archetype_id": "D",
       "archetype_name": "Archetype D: Timeline & Station Reservation Grid",
       "archetype_description": "Interactive day/hour time-slot matrix, capacity/station status indicators, and instant seat/pod booking for Michelin dining, private clubs, and recovery labs.",
-      "design_benchmark": "Equinox Biometric Cryo & POD Station Grid"
+      "design_benchmark": "Equinox Biometric Cryo & POD Station Grid",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 13,
@@ -295,7 +367,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/the-velvet-note-os",
       "preview_url": "https://the-velvet-note-os.onrender.com",
       "admin_url": "https://the-velvet-note-os.onrender.com/admin",
-      "admin_passcode": "velvet2026",
       "audit_score": 9.8,
       "tables": [
         "vip_reservations",
@@ -307,7 +378,14 @@
       "archetype_id": "D",
       "archetype_name": "Archetype D: Timeline & Station Reservation Grid",
       "archetype_description": "Interactive day/hour time-slot matrix, capacity/station status indicators, and instant seat/pod booking for Michelin dining, private clubs, and recovery labs.",
-      "design_benchmark": "Blue Note NYC Jazz Table Reservation Matrix"
+      "design_benchmark": "Blue Note NYC Jazz Table Reservation Matrix",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 14,
@@ -316,7 +394,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/retreat-os",
       "preview_url": "https://retreat-os.onrender.com",
       "admin_url": "https://retreat-os.onrender.com/admin",
-      "admin_passcode": "retreat2026",
       "audit_score": 9.8,
       "tables": [
         "retreat_programs",
@@ -327,7 +404,14 @@
       "archetype_id": "D",
       "archetype_name": "Archetype D: Timeline & Station Reservation Grid",
       "archetype_description": "Interactive day/hour time-slot matrix, capacity/station status indicators, and instant seat/pod booking for Michelin dining, private clubs, and recovery labs.",
-      "design_benchmark": "Amanjena Thermal Bathhouse Schedule Matrix"
+      "design_benchmark": "Amanjena Thermal Bathhouse Schedule Matrix",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 15,
@@ -336,7 +420,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/omakase-counter-os",
       "preview_url": "https://omakase-counter-os.onrender.com",
       "admin_url": "https://omakase-counter-os.onrender.com/admin",
-      "admin_passcode": "omakase2026",
       "audit_score": 9.8,
       "tables": [
         "counter_reservations",
@@ -347,7 +430,14 @@
       "archetype_id": "D",
       "archetype_name": "Archetype D: Timeline & Station Reservation Grid",
       "archetype_description": "Interactive day/hour time-slot matrix, capacity/station status indicators, and instant seat/pod booking for Michelin dining, private clubs, and recovery labs.",
-      "design_benchmark": "Sukiyabashi Jiro 10-Seat Counter Matrix"
+      "design_benchmark": "Sukiyabashi Jiro 10-Seat Counter Matrix",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 16,
@@ -356,7 +446,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/aethel-bespoke-os",
       "preview_url": "https://aethel-bespoke-os.onrender.com",
       "admin_url": "https://aethel-bespoke-os.onrender.com/admin",
-      "admin_passcode": "aethel2026",
       "audit_score": 9.8,
       "tables": [
         "bespoke_commissions",
@@ -367,7 +456,14 @@
       "archetype_id": "B",
       "archetype_name": "Archetype B: Asymmetric Editorial Showcase",
       "archetype_description": "Dynamic masonry grid, visual filtering, editorial typography, and slide-over commission sheet for high-end ateliers, creative studios, and maritime showcases.",
-      "design_benchmark": "Savile Row Bespoke Suiting Editorial"
+      "design_benchmark": "Savile Row Bespoke Suiting Editorial",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 17,
@@ -376,7 +472,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/aura-apothecary-os",
       "preview_url": "https://aura-apothecary-os.onrender.com",
       "admin_url": "https://aura-apothecary-os.onrender.com/admin",
-      "admin_passcode": "apothecary2026",
       "audit_score": 9.8,
       "tables": [
         "perfume_formulations",
@@ -387,7 +482,14 @@
       "archetype_id": "C",
       "archetype_name": "Archetype C: Step-by-Step Calculator / Wizard",
       "archetype_description": "Stateful multi-stage progression stepper, interactive pricing/spec tally, and stage-by-stage validation for underwriting, legal retainers, and clinical intake.",
-      "design_benchmark": "Officina Profumo Botanical Tincture Wizard"
+      "design_benchmark": "Officina Profumo Botanical Tincture Wizard",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 18,
@@ -396,7 +498,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/the-winter-parlor-os",
       "preview_url": "https://the-winter-parlor-os.onrender.com",
       "admin_url": "https://the-winter-parlor-os.onrender.com/admin",
-      "admin_passcode": "parlor2026",
       "audit_score": 9.8,
       "tables": [
         "parlor_reservations",
@@ -407,7 +508,14 @@
       "archetype_id": "B",
       "archetype_name": "Archetype B: Asymmetric Editorial Showcase",
       "archetype_description": "Dynamic masonry grid, visual filtering, editorial typography, and slide-over commission sheet for high-end ateliers, creative studios, and maritime showcases.",
-      "design_benchmark": "St. Moritz Alpine Parlor Editorial Showcase"
+      "design_benchmark": "St. Moritz Alpine Parlor Editorial Showcase",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 19,
@@ -416,7 +524,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/motionscale-os",
       "preview_url": "https://motionscale-os.onrender.com",
       "admin_url": "https://motionscale-os.onrender.com/admin",
-      "admin_passcode": "motionscale2026",
       "audit_score": 9.8,
       "tables": [
         "projects",
@@ -428,7 +535,14 @@
       "archetype_id": "B",
       "archetype_name": "Archetype B: Asymmetric Editorial Showcase",
       "archetype_description": "Dynamic masonry grid, visual filtering, editorial typography, and slide-over commission sheet for high-end ateliers, creative studios, and maritime showcases.",
-      "design_benchmark": "Framestore VFX Reel & 3D Pipeline Showcase"
+      "design_benchmark": "Framestore VFX Reel & 3D Pipeline Showcase",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 20,
@@ -437,7 +551,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/aura-supper-club-os",
       "preview_url": "https://aura-supper-club-os.onrender.com",
       "admin_url": "https://aura-supper-club-os.onrender.com/admin",
-      "admin_passcode": "supperclub2026",
       "audit_score": 9.8,
       "tables": [
         "supper_reservations",
@@ -449,7 +562,14 @@
       "archetype_id": "D",
       "archetype_name": "Archetype D: Timeline & Station Reservation Grid",
       "archetype_description": "Interactive day/hour time-slot matrix, capacity/station status indicators, and instant seat/pod booking for Michelin dining, private clubs, and recovery labs.",
-      "design_benchmark": "Rao's NYC Secret Speakeasy Reservation Matrix"
+      "design_benchmark": "Rao's NYC Secret Speakeasy Reservation Matrix",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 21,
@@ -458,7 +578,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/neo-shinjuku-os",
       "preview_url": "https://neo-shinjuku-os.onrender.com",
       "admin_url": "https://neo-shinjuku-os.onrender.com/admin",
-      "admin_passcode": "shinjuku2026",
       "audit_score": 9.8,
       "tables": [
         "izakaya_reservations",
@@ -470,7 +589,14 @@
       "archetype_id": "D",
       "archetype_name": "Archetype D: Timeline & Station Reservation Grid",
       "archetype_description": "Interactive day/hour time-slot matrix, capacity/station status indicators, and instant seat/pod booking for Michelin dining, private clubs, and recovery labs.",
-      "design_benchmark": "Tokyo Shinjuku Golden Gai Izakaya Grid"
+      "design_benchmark": "Tokyo Shinjuku Golden Gai Izakaya Grid",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 22,
@@ -479,7 +605,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/neon-lotus-os",
       "preview_url": "https://neon-lotus-os.onrender.com",
       "admin_url": "https://neon-lotus-os.onrender.com/admin",
-      "admin_passcode": "lotus2026",
       "audit_score": 9.8,
       "tables": [
         "bistro_reservations",
@@ -491,7 +616,14 @@
       "archetype_id": "D",
       "archetype_name": "Archetype D: Timeline & Station Reservation Grid",
       "archetype_description": "Interactive day/hour time-slot matrix, capacity/station status indicators, and instant seat/pod booking for Michelin dining, private clubs, and recovery labs.",
-      "design_benchmark": "Indochine French-Vietnamese Bistro Grid"
+      "design_benchmark": "Indochine French-Vietnamese Bistro Grid",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 23,
@@ -500,7 +632,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/apex-tuning-os",
       "preview_url": "https://apex-tuning-os.onrender.com",
       "admin_url": "https://apex-tuning-os.onrender.com",
-      "admin_passcode": "apextuning2026",
       "audit_score": 9.8,
       "tables": [
         "work_orders",
@@ -512,7 +643,14 @@
       "archetype_id": "A",
       "archetype_name": "Archetype A: Dense Operational Console",
       "archetype_description": "Persistent utility rail, real-time operational triage queue, and slide-out master-detail inspection drawer for high-velocity dispatch and logistics.",
-      "design_benchmark": "Hennessey Performance Dyno Dispatch Console"
+      "design_benchmark": "Hennessey Performance Dyno Dispatch Console",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 24,
@@ -522,7 +660,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/villa-obsidian-os",
       "preview_url": "https://villa-obsidian-os.onrender.com",
       "admin_url": "https://villa-obsidian-os.onrender.com",
-      "admin_passcode": "villa2026",
       "audit_score": 9.8,
       "tables": [
         "properties",
@@ -534,7 +671,14 @@
       "archetype_id": "E",
       "archetype_name": "Archetype E: Split-Screen Spec & Proof Panel",
       "archetype_description": "Fixed left media inspection preview, right scrollable technical breakdown, cryptographic proof logs, and provenance vault for horology, wealth, and fine art.",
-      "design_benchmark": "Architectural Digest Structural Spec Vault"
+      "design_benchmark": "Architectural Digest Structural Spec Vault",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 25,
@@ -544,7 +688,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/afrodigital-motion-os",
       "preview_url": "https://afrodigital-motion-os.onrender.com",
       "admin_url": "https://afrodigital-motion-os.onrender.com",
-      "admin_passcode": "motion2026",
       "audit_score": 9.8,
       "tables": [
         "production_pipelines",
@@ -555,7 +698,14 @@
       "archetype_id": "B",
       "archetype_name": "Archetype B: Asymmetric Editorial Showcase",
       "archetype_description": "Dynamic masonry grid, visual filtering, editorial typography, and slide-over commission sheet for high-end ateliers, creative studios, and maritime showcases.",
-      "design_benchmark": "Pixar Renderfarm & 3D Rigging Showcase"
+      "design_benchmark": "Pixar Renderfarm & 3D Rigging Showcase",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 26,
@@ -563,9 +713,8 @@
       "category": "Craft Smash Burger, Fast-Casual Ordering & Kitchen Dispatch OS",
       "vertical": "hospitality",
       "gumroad_url": "https://auraandgrid.gumroad.com/l/burger-lab-os",
-      "preview_url": "https://burger-lab-os.onrender.com",
-      "admin_url": "https://burger-lab-os.onrender.com/admin",
-      "admin_passcode": "burger2026",
+      "preview_url": "https://gcoinstash-cmd.github.io/burger-lab-os/",
+      "admin_url": "https://gcoinstash-cmd.github.io/burger-lab-os/admin/",
       "audit_score": 9.8,
       "tables": [
         "menu_items",
@@ -577,7 +726,14 @@
       "archetype_id": "A",
       "archetype_name": "Archetype A: Dense Operational Console",
       "archetype_description": "Persistent utility rail, real-time operational triage queue, and slide-out master-detail inspection drawer for high-velocity dispatch and logistics.",
-      "design_benchmark": "Shake Shack Kitchen Display System Console"
+      "design_benchmark": "Shake Shack Kitchen Display System Console",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 27,
@@ -587,7 +743,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/aura-fragrance-os",
       "preview_url": "https://aura-fragrance-os.onrender.com",
       "admin_url": "https://aura-fragrance-os.onrender.com/admin",
-      "admin_passcode": "fragrance2026",
       "audit_score": 9.8,
       "tables": [
         "fragrance_catalog",
@@ -598,7 +753,14 @@
       "archetype_id": "B",
       "archetype_name": "Archetype B: Asymmetric Editorial Showcase",
       "archetype_description": "Dynamic masonry grid, visual filtering, editorial typography, and slide-over commission sheet for high-end ateliers, creative studios, and maritime showcases.",
-      "design_benchmark": "Kilian Paris Olfactory Scent Pyramid Showcase"
+      "design_benchmark": "Kilian Paris Olfactory Scent Pyramid Showcase",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 28,
@@ -608,7 +770,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/focus-architecture-os",
       "preview_url": "https://focus-architecture-os.onrender.com",
       "admin_url": "https://focus-architecture-os.onrender.com/admin",
-      "admin_passcode": "focus2026",
       "audit_score": 9.8,
       "tables": [
         "architectural_projects",
@@ -619,7 +780,14 @@
       "archetype_id": "C",
       "archetype_name": "Archetype C: Step-by-Step Calculator / Wizard",
       "archetype_description": "Stateful multi-stage progression stepper, interactive pricing/spec tally, and stage-by-stage validation for underwriting, legal retainers, and clinical intake.",
-      "design_benchmark": "Foster + Partners Architectural Scope Wizard"
+      "design_benchmark": "Foster + Partners Architectural Scope Wizard",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 29,
@@ -629,7 +797,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/the-vineyards-os",
       "preview_url": "https://the-vineyards-os.onrender.com",
       "admin_url": "https://the-vineyards-os.onrender.com/admin",
-      "admin_passcode": "vineyards2026",
       "audit_score": 9.8,
       "tables": [
         "wine_allocations",
@@ -640,7 +807,14 @@
       "archetype_id": "D",
       "archetype_name": "Archetype D: Timeline & Station Reservation Grid",
       "archetype_description": "Interactive day/hour time-slot matrix, capacity/station status indicators, and instant seat/pod booking for Michelin dining, private clubs, and recovery labs.",
-      "design_benchmark": "Bordeaux Premier Cru Allocation Matrix"
+      "design_benchmark": "Bordeaux Premier Cru Allocation Matrix",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 30,
@@ -650,7 +824,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/family-legacy-wealth-os",
       "preview_url": "https://family-legacy-wealth-os.onrender.com",
       "admin_url": "https://family-legacy-wealth-os.onrender.com/admin",
-      "admin_passcode": "legacy2026",
       "audit_score": 9.8,
       "tables": [
         "legacy_goals",
@@ -660,7 +833,14 @@
       "archetype_id": "E",
       "archetype_name": "Archetype E: Split-Screen Spec & Proof Panel",
       "archetype_description": "Fixed left media inspection preview, right scrollable technical breakdown, cryptographic proof logs, and provenance vault for horology, wealth, and fine art.",
-      "design_benchmark": "Rockefeller Family Trust Ledger Panel"
+      "design_benchmark": "Rockefeller Family Trust Ledger Panel",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 31,
@@ -670,7 +850,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/diamond-cuts-os",
       "preview_url": "https://diamond-cuts-os.onrender.com",
       "admin_url": "https://diamond-cuts-os.onrender.com/admin",
-      "admin_passcode": "diamond2026",
       "audit_score": 9.8,
       "tables": [
         "appointments",
@@ -680,7 +859,14 @@
       "archetype_id": "D",
       "archetype_name": "Archetype D: Timeline & Station Reservation Grid",
       "archetype_description": "Interactive day/hour time-slot matrix, capacity/station status indicators, and instant seat/pod booking for Michelin dining, private clubs, and recovery labs.",
-      "design_benchmark": "Truefitt & Hill 30-Min Barber Chair Matrix"
+      "design_benchmark": "Truefitt & Hill 30-Min Barber Chair Matrix",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 32,
@@ -690,7 +876,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/crown-collective-os",
       "preview_url": "https://crown-collective-os.onrender.com",
       "admin_url": "https://crown-collective-os.onrender.com/admin",
-      "admin_passcode": "crown2026",
       "audit_score": 9.8,
       "tables": [
         "appointments",
@@ -701,7 +886,14 @@
       "archetype_id": "B",
       "archetype_name": "Archetype B: Asymmetric Editorial Showcase",
       "archetype_description": "Dynamic masonry grid, visual filtering, editorial typography, and slide-over commission sheet for high-end ateliers, creative studios, and maritime showcases.",
-      "design_benchmark": "Blind Barber VIP Grooming Goods Showcase"
+      "design_benchmark": "Blind Barber VIP Grooming Goods Showcase",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 33,
@@ -711,7 +903,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/commercial-finance-os",
       "preview_url": "https://commercial-finance-os.onrender.com",
       "admin_url": "https://commercial-finance-os.onrender.com/admin",
-      "admin_passcode": "finance2026",
       "audit_score": 9.8,
       "tables": [
         "underwriting_deals",
@@ -721,7 +912,14 @@
       "archetype_id": "C",
       "archetype_name": "Archetype C: Step-by-Step Calculator / Wizard",
       "archetype_description": "Stateful multi-stage progression stepper, interactive pricing/spec tally, and stage-by-stage validation for underwriting, legal retainers, and clinical intake.",
-      "design_benchmark": "Walker & Dunlop Commercial DSCR Underwriting Wizard"
+      "design_benchmark": "Walker & Dunlop Commercial DSCR Underwriting Wizard",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 34,
@@ -731,7 +929,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/high-ticket-studio-os",
       "preview_url": "https://high-ticket-studio-os.onrender.com",
       "admin_url": "https://high-ticket-studio-os.onrender.com/admin",
-      "admin_passcode": "architect2026",
       "audit_score": 9.8,
       "tables": [
         "offer_blueprints",
@@ -741,7 +938,14 @@
       "archetype_id": "E",
       "archetype_name": "Archetype E: Split-Screen Spec & Proof Panel",
       "archetype_description": "Fixed left media inspection preview, right scrollable technical breakdown, cryptographic proof logs, and provenance vault for horology, wealth, and fine art.",
-      "design_benchmark": "McKinsey High-Ticket Advisory Deal Blueprint"
+      "design_benchmark": "McKinsey High-Ticket Advisory Deal Blueprint",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 35,
@@ -751,7 +955,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/bbq-pit-os",
       "preview_url": "https://bbq-pit-os.onrender.com",
       "admin_url": "https://bbq-pit-os.onrender.com/admin",
-      "admin_passcode": "bbq2026",
       "audit_score": 9.8,
       "tables": [
         "smoker_pits",
@@ -761,7 +964,14 @@
       "archetype_id": "A",
       "archetype_name": "Archetype A: Dense Operational Console",
       "archetype_description": "Persistent utility rail, real-time operational triage queue, and slide-out master-detail inspection drawer for high-velocity dispatch and logistics.",
-      "design_benchmark": "Franklin Barbecue Pitmaster Probe Telemetry Console"
+      "design_benchmark": "Franklin Barbecue Pitmaster Probe Telemetry Console",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 36,
@@ -771,7 +981,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/studio-veronique-os",
       "preview_url": "https://studio-veronique-os.onrender.com",
       "admin_url": "https://studio-veronique-os.onrender.com/admin",
-      "admin_passcode": "veronique2026",
       "audit_score": 9.8,
       "tables": [
         "design_projects",
@@ -781,7 +990,14 @@
       "archetype_id": "B",
       "archetype_name": "Archetype B: Asymmetric Editorial Showcase",
       "archetype_description": "Dynamic masonry grid, visual filtering, editorial typography, and slide-over commission sheet for high-end ateliers, creative studios, and maritime showcases.",
-      "design_benchmark": "Kelly Wearstler California Modernism Showcase"
+      "design_benchmark": "Kelly Wearstler California Modernism Showcase",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 37,
@@ -791,7 +1007,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/pizza-parlor-os",
       "preview_url": "https://pizza-parlor-os.onrender.com",
       "admin_url": "https://pizza-parlor-os.onrender.com/admin",
-      "admin_passcode": "pizza2026",
       "audit_score": 9.8,
       "tables": [
         "dough_fermentation_logs",
@@ -802,7 +1017,14 @@
       "archetype_id": "D",
       "archetype_name": "Archetype D: Timeline & Station Reservation Grid",
       "archetype_description": "Interactive day/hour time-slot matrix, capacity/station status indicators, and instant seat/pod booking for Michelin dining, private clubs, and recovery labs.",
-      "design_benchmark": "L'Antica Pizzeria da Michele Fermentation Matrix"
+      "design_benchmark": "L'Antica Pizzeria da Michele Fermentation Matrix",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 38,
@@ -812,7 +1034,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/premium-nightlife-os",
       "preview_url": "https://premium-nightlife-os.onrender.com",
       "admin_url": "https://premium-nightlife-os.onrender.com/admin",
-      "admin_passcode": "nightlife2026",
       "audit_score": 9.8,
       "tables": [
         "vip_tables",
@@ -823,7 +1044,14 @@
       "archetype_id": "C",
       "archetype_name": "Archetype C: Step-by-Step Calculator / Wizard",
       "archetype_description": "Stateful multi-stage progression stepper, interactive pricing/spec tally, and stage-by-stage validation for underwriting, legal retainers, and clinical intake.",
-      "design_benchmark": "LIV Miami VIP Bottle Minimum & Table Wizard"
+      "design_benchmark": "LIV Miami VIP Bottle Minimum & Table Wizard",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 39,
@@ -833,7 +1061,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/zenith-agency-os",
       "preview_url": "https://zenith-agency-os.onrender.com",
       "admin_url": "https://zenith-agency-os.onrender.com/admin",
-      "admin_passcode": "zenith2026",
       "audit_score": 9.8,
       "tables": [
         "client_intake",
@@ -844,7 +1071,14 @@
       "archetype_id": "E",
       "archetype_name": "Archetype E: Split-Screen Spec & Proof Panel",
       "archetype_description": "Fixed left media inspection preview, right scrollable technical breakdown, cryptographic proof logs, and provenance vault for horology, wealth, and fine art.",
-      "design_benchmark": "Pentagram Brand Identity Asset Spec Panel"
+      "design_benchmark": "Pentagram Brand Identity Asset Spec Panel",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 40,
@@ -854,7 +1088,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/street-culture-kitchen-os",
       "preview_url": "https://street-culture-kitchen-os.onrender.com",
       "admin_url": "https://street-culture-kitchen-os.onrender.com/admin",
-      "admin_passcode": "street2026",
       "audit_score": 9.8,
       "tables": [
         "truck_status",
@@ -865,7 +1098,14 @@
       "archetype_id": "B",
       "archetype_name": "Archetype B: Asymmetric Editorial Showcase",
       "archetype_description": "Dynamic masonry grid, visual filtering, editorial typography, and slide-over commission sheet for high-end ateliers, creative studios, and maritime showcases.",
-      "design_benchmark": "Supreme NYC Street Food Drop Editorial"
+      "design_benchmark": "Supreme NYC Street Food Drop Editorial",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 41,
@@ -875,7 +1115,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/satstacker-os",
       "preview_url": "https://satstacker-os.onrender.com",
       "admin_url": "https://satstacker-os.onrender.com/admin",
-      "admin_passcode": "satstacker2026",
       "audit_score": 9.8,
       "tables": [
         "users",
@@ -886,7 +1125,14 @@
       "archetype_id": "E",
       "archetype_name": "Archetype E: Split-Screen Spec & Proof Panel",
       "archetype_description": "Fixed left media inspection preview, right scrollable technical breakdown, cryptographic proof logs, and provenance vault for horology, wealth, and fine art.",
-      "design_benchmark": "Trezor & Ledger Cold Storage UTXO Proof Panel"
+      "design_benchmark": "Trezor & Ledger Cold Storage UTXO Proof Panel",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 42,
@@ -896,7 +1142,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/auto-repair-shop-os",
       "preview_url": "https://auto-repair-shop-os.onrender.com",
       "admin_url": "https://auto-repair-shop-os.onrender.com/admin",
-      "admin_passcode": "autorepair2026",
       "audit_score": 9.8,
       "tables": [
         "service_bookings",
@@ -907,7 +1152,14 @@
       "archetype_id": "A",
       "archetype_name": "Archetype A: Dense Operational Console",
       "archetype_description": "Persistent utility rail, real-time operational triage queue, and slide-out master-detail inspection drawer for high-velocity dispatch and logistics.",
-      "design_benchmark": "RWB Porsche Tuning Bay Dispatch Console"
+      "design_benchmark": "RWB Porsche Tuning Bay Dispatch Console",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 43,
@@ -917,7 +1169,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/spa-treatment-os",
       "preview_url": "https://spa-treatment-os.onrender.com",
       "admin_url": "https://spa-treatment-os.onrender.com/admin",
-      "admin_passcode": "spatreatment2026",
       "audit_score": 9.8,
       "tables": [
         "reservations",
@@ -928,7 +1179,14 @@
       "archetype_id": "D",
       "archetype_name": "Archetype D: Timeline & Station Reservation Grid",
       "archetype_description": "Interactive day/hour time-slot matrix, capacity/station status indicators, and instant seat/pod booking for Michelin dining, private clubs, and recovery labs.",
-      "design_benchmark": "Banja Bathhouse Hydrotherapy Grid"
+      "design_benchmark": "Banja Bathhouse Hydrotherapy Grid",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 44,
@@ -938,7 +1196,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/soul-and-spice-os",
       "preview_url": "https://soul-and-spice-os.onrender.com",
       "admin_url": "https://soul-and-spice-os.onrender.com/admin",
-      "admin_passcode": "soulspice2026",
       "audit_score": 9.8,
       "tables": [
         "catering_orders",
@@ -948,7 +1205,14 @@
       "archetype_id": "D",
       "archetype_name": "Archetype D: Timeline & Station Reservation Grid",
       "archetype_description": "Interactive day/hour time-slot matrix, capacity/station status indicators, and instant seat/pod booking for Michelin dining, private clubs, and recovery labs.",
-      "design_benchmark": "Marcus Samuelsson Heritage Chef Reservation Matrix"
+      "design_benchmark": "Marcus Samuelsson Heritage Chef Reservation Matrix",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 45,
@@ -958,7 +1222,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/resonance-culinary-os",
       "preview_url": "https://gcoinstash-cmd.github.io/resonance-culinary-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/resonance-culinary-os/admin",
-      "admin_passcode": "resonance2026",
       "audit_score": 9.8,
       "tables": [
         "culinary_chapters",
@@ -969,7 +1232,14 @@
       "archetype_id": "B",
       "archetype_name": "Archetype B: Asymmetric Editorial Showcase",
       "archetype_description": "Dynamic masonry grid, visual filtering, editorial typography, and slide-over commission sheet for high-end ateliers, creative studios, and maritime showcases.",
-      "design_benchmark": "James Beard Foundation Culinary Archive Editorial"
+      "design_benchmark": "James Beard Foundation Culinary Archive Editorial",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 46,
@@ -979,7 +1249,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/heritage-and-honey-os",
       "preview_url": "https://heritage-and-honey-os.onrender.com",
       "admin_url": "https://heritage-and-honey-os.onrender.com/admin",
-      "admin_passcode": "heritage2026",
       "audit_score": 9.8,
       "tables": [
         "reservations",
@@ -989,7 +1258,14 @@
       "archetype_id": "E",
       "archetype_name": "Archetype E: Split-Screen Spec & Proof Panel",
       "archetype_description": "Fixed left media inspection preview, right scrollable technical breakdown, cryptographic proof logs, and provenance vault for horology, wealth, and fine art.",
-      "design_benchmark": "Blue Hill at Stone Barns Sourcing Proof Panel"
+      "design_benchmark": "Blue Hill at Stone Barns Sourcing Proof Panel",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 47,
@@ -999,7 +1275,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/luxury-real-estate-portal-os",
       "preview_url": "https://luxury-real-estate-portal-os.onrender.com",
       "admin_url": "https://luxury-real-estate-portal-os.onrender.com/admin",
-      "admin_passcode": "estate2026",
       "audit_score": 9.8,
       "tables": [
         "properties",
@@ -1010,7 +1285,14 @@
       "archetype_id": "B",
       "archetype_name": "Archetype B: Asymmetric Editorial Showcase",
       "archetype_description": "Dynamic masonry grid, visual filtering, editorial typography, and slide-over commission sheet for high-end ateliers, creative studios, and maritime showcases.",
-      "design_benchmark": "Architectural Digest Bel-Air Mega-Estate Showcase"
+      "design_benchmark": "Architectural Digest Bel-Air Mega-Estate Showcase",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 48,
@@ -1020,7 +1302,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/midnight-express-os",
       "preview_url": "https://midnight-express-os.onrender.com",
       "admin_url": "https://midnight-express-os.onrender.com/admin",
-      "admin_passcode": "midnight2026",
       "audit_score": 9.8,
       "tables": [
         "orders",
@@ -1030,7 +1311,14 @@
       "archetype_id": "A",
       "archetype_name": "Archetype A: Dense Operational Console",
       "archetype_description": "Persistent utility rail, real-time operational triage queue, and slide-out master-detail inspection drawer for high-velocity dispatch and logistics.",
-      "design_benchmark": "In-N-Out Supercar Drive-Thru RFID Dispatch"
+      "design_benchmark": "In-N-Out Supercar Drive-Thru RFID Dispatch",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 49,
@@ -1040,7 +1328,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/real-estate-analytics-hub-os",
       "preview_url": "https://real-estate-analytics-hub-os.onrender.com",
       "admin_url": "https://real-estate-analytics-hub-os.onrender.com/admin",
-      "admin_passcode": "analytics2026",
       "audit_score": 9.8,
       "tables": [
         "underwritten_deals",
@@ -1049,7 +1336,14 @@
       "archetype_id": "C",
       "archetype_name": "Archetype C: Step-by-Step Calculator / Wizard",
       "archetype_description": "Stateful multi-stage progression stepper, interactive pricing/spec tally, and stage-by-stage validation for underwriting, legal retainers, and clinical intake.",
-      "design_benchmark": "CoStar 10-Year Pro-Forma DCF Underwriting Engine"
+      "design_benchmark": "CoStar 10-Year Pro-Forma DCF Underwriting Engine",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 50,
@@ -1059,7 +1353,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/culinary-workspace-os",
       "preview_url": "https://culinary-workspace-os.onrender.com",
       "admin_url": "https://culinary-workspace-os.onrender.com/admin",
-      "admin_passcode": "culinary2026",
       "audit_score": 9.9,
       "tables": [
         "banquet_bookings",
@@ -1069,7 +1362,14 @@
       "archetype_id": "A",
       "archetype_name": "Archetype A: Dense Operational Console",
       "archetype_description": "Persistent utility rail, real-time operational triage queue, and slide-out master-detail inspection drawer for high-velocity dispatch and logistics.",
-      "design_benchmark": "Eleven Madison Park BOH Station Velocity Console"
+      "design_benchmark": "Eleven Madison Park BOH Station Velocity Console",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 51,
@@ -1079,7 +1379,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/trendy-taco-truck-os",
       "preview_url": "https://gcoinstash-cmd.github.io/trendy-taco-truck-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/trendy-taco-truck-os/admin/",
-      "admin_passcode": "tacotruck2026",
       "audit_score": 9.9,
       "tables": [
         "truck_location",
@@ -1090,7 +1389,14 @@
       "archetype_id": "A",
       "archetype_name": "Archetype A: Dense Operational Console",
       "archetype_description": "Persistent utility rail, real-time operational triage queue, and slide-out master-detail inspection drawer for high-velocity dispatch and logistics.",
-      "design_benchmark": "Kogi BBQ Live GPS Food Truck Dispatch Console"
+      "design_benchmark": "Kogi BBQ Live GPS Food Truck Dispatch Console",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 52,
@@ -1100,7 +1406,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/yugen-sensory-os",
       "preview_url": "https://gcoinstash-cmd.github.io/yugen-sensory-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/yugen-sensory-os/admin/",
-      "admin_passcode": "yugen2026",
       "audit_score": 9.9,
       "tables": [
         "reservations",
@@ -1110,7 +1415,14 @@
       "archetype_id": "B",
       "archetype_name": "Archetype B: Asymmetric Editorial Showcase",
       "archetype_description": "Dynamic masonry grid, visual filtering, editorial typography, and slide-over commission sheet for high-end ateliers, creative studios, and maritime showcases.",
-      "design_benchmark": "Ryokan Kyoto Sensory Omakase Editorial Showcase"
+      "design_benchmark": "Ryokan Kyoto Sensory Omakase Editorial Showcase",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 53,
@@ -1120,7 +1432,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/little-roots-wellness-os",
       "preview_url": "https://gcoinstash-cmd.github.io/little-roots-wellness-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/little-roots-wellness-os/admin/",
-      "admin_passcode": "roots2026",
       "audit_score": 9.9,
       "tables": [
         "admissions_waitlist",
@@ -1130,7 +1441,14 @@
       "archetype_id": "C",
       "archetype_name": "Archetype C: Step-by-Step Calculator / Wizard",
       "archetype_description": "Stateful multi-stage progression stepper, interactive pricing/spec tally, and stage-by-stage validation for underwriting, legal retainers, and clinical intake.",
-      "design_benchmark": "Montessori Early Developmental Milestone Wizard"
+      "design_benchmark": "Montessori Early Developmental Milestone Wizard",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 54,
@@ -1140,7 +1458,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/hospitality-roi-engine-os",
       "preview_url": "https://gcoinstash-cmd.github.io/hospitality-roi-engine-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/hospitality-roi-engine-os/admin/",
-      "admin_passcode": "roi2026",
       "audit_score": 9.9,
       "tables": [
         "proforma_projects",
@@ -1150,7 +1467,14 @@
       "archetype_id": "C",
       "archetype_name": "Archetype C: Step-by-Step Calculator / Wizard",
       "archetype_description": "Stateful multi-stage progression stepper, interactive pricing/spec tally, and stage-by-stage validation for underwriting, legal retainers, and clinical intake.",
-      "design_benchmark": "Four Seasons RevPASH & CapEx Yield Calculator"
+      "design_benchmark": "Four Seasons RevPASH & CapEx Yield Calculator",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 55,
@@ -1160,7 +1484,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/zen-capital-os",
       "preview_url": "https://gcoinstash-cmd.github.io/zen-capital-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/zen-capital-os/admin/",
-      "admin_passcode": "zencapital2026",
       "audit_score": 9.9,
       "tables": [
         "portfolio_holdings",
@@ -1170,7 +1493,14 @@
       "archetype_id": "E",
       "archetype_name": "Archetype E: Split-Screen Spec & Proof Panel",
       "archetype_description": "Fixed left media inspection preview, right scrollable technical breakdown, cryptographic proof logs, and provenance vault for horology, wealth, and fine art.",
-      "design_benchmark": "Berkshire Hathaway Capital Compounding Terminal Panel"
+      "design_benchmark": "Berkshire Hathaway Capital Compounding Terminal Panel",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 56,
@@ -1180,7 +1510,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/hvac-dispatch-os",
       "preview_url": "https://gcoinstash-cmd.github.io/hvac-dispatch-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/hvac-dispatch-os/admin/",
-      "admin_passcode": "hvac2026",
       "audit_score": 9.8,
       "tables": [
         "hvac_work_orders",
@@ -1191,7 +1520,14 @@
       "archetype_id": "A",
       "archetype_name": "Archetype A: Dense Operational Console",
       "archetype_description": "Persistent utility rail, real-time operational triage queue, and slide-out master-detail inspection drawer for high-velocity dispatch and logistics.",
-      "design_benchmark": "Carrier Chiller Plant & Commercial Dispatch Console"
+      "design_benchmark": "Carrier Chiller Plant & Commercial Dispatch Console",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 57,
@@ -1201,7 +1537,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/roofing-estimator-os",
       "preview_url": "https://gcoinstash-cmd.github.io/roofing-estimator-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/roofing-estimator-os/admin/",
-      "admin_passcode": "roofing2026",
       "audit_score": 9.8,
       "tables": [
         "roofing_estimates",
@@ -1212,7 +1547,14 @@
       "archetype_id": "C",
       "archetype_name": "Archetype C: Step-by-Step Calculator / Wizard",
       "archetype_description": "Stateful multi-stage progression stepper, interactive pricing/spec tally, and stage-by-stage validation for underwriting, legal retainers, and clinical intake.",
-      "design_benchmark": "EagleView Drone Scope & Roofing Estimator Wizard"
+      "design_benchmark": "EagleView Drone Scope & Roofing Estimator Wizard",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 58,
@@ -1222,7 +1564,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/plumbing-ops-os",
       "preview_url": "https://gcoinstash-cmd.github.io/plumbing-ops-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/plumbing-ops-os/admin/",
-      "admin_passcode": "plumbing2026",
       "audit_score": 9.8,
       "tables": [
         "emergency_tickets",
@@ -1233,7 +1574,14 @@
       "archetype_id": "A",
       "archetype_name": "Archetype A: Dense Operational Console",
       "archetype_description": "Persistent utility rail, real-time operational triage queue, and slide-out master-detail inspection drawer for high-velocity dispatch and logistics.",
-      "design_benchmark": "Roto-Rooter Commercial Hydraulic Ops Console"
+      "design_benchmark": "Roto-Rooter Commercial Hydraulic Ops Console",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 59,
@@ -1243,7 +1591,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/solar-install-os",
       "preview_url": "https://gcoinstash-cmd.github.io/solar-install-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/solar-install-os/admin/",
-      "admin_passcode": "solar2026",
       "audit_score": 9.8,
       "tables": [
         "solar_projects",
@@ -1254,7 +1601,14 @@
       "archetype_id": "D",
       "archetype_name": "Archetype D: Timeline & Station Reservation Grid",
       "archetype_description": "Interactive day/hour time-slot matrix, capacity/station status indicators, and instant seat/pod booking for Michelin dining, private clubs, and recovery labs.",
-      "design_benchmark": "Sunrun Commercial PV Sizing & AHJ Permit Grid"
+      "design_benchmark": "Sunrun Commercial PV Sizing & AHJ Permit Grid",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 60,
@@ -1264,7 +1618,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/electrical-dispatch-os",
       "preview_url": "https://gcoinstash-cmd.github.io/electrical-dispatch-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/electrical-dispatch-os/admin/",
-      "admin_passcode": "electric2026",
       "audit_score": 9.8,
       "tables": [
         "electrical_work_orders",
@@ -1275,7 +1628,14 @@
       "archetype_id": "A",
       "archetype_name": "Archetype A: Dense Operational Console",
       "archetype_description": "Persistent utility rail, real-time operational triage queue, and slide-out master-detail inspection drawer for high-velocity dispatch and logistics.",
-      "design_benchmark": "ABB Medium-Voltage Switchgear & EV Crew Console"
+      "design_benchmark": "ABB Medium-Voltage Switchgear & EV Crew Console",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 61,
@@ -1285,7 +1645,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/boutique-dental-os",
       "preview_url": "https://gcoinstash-cmd.github.io/boutique-dental-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/boutique-dental-os/admin/",
-      "admin_passcode": "dental2026",
       "audit_score": 9.8,
       "tables": [
         "dental_patients",
@@ -1296,7 +1655,14 @@
       "archetype_id": "D",
       "archetype_name": "Archetype D: Timeline & Station Reservation Grid",
       "archetype_description": "Interactive day/hour time-slot matrix, capacity/station status indicators, and instant seat/pod booking for Michelin dining, private clubs, and recovery labs.",
-      "design_benchmark": "Pacific Dental Operatory Chair Scheduling Matrix"
+      "design_benchmark": "Pacific Dental Operatory Chair Scheduling Matrix",
+      "checkout_active": true,
+      "status_badge": "Active Checkout",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/boutique-dental-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 62,
@@ -1306,7 +1672,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/veterinary-hospital-os",
       "preview_url": "https://gcoinstash-cmd.github.io/veterinary-hospital-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/veterinary-hospital-os/admin/",
-      "admin_passcode": "vet2026",
       "audit_score": 9.8,
       "tables": [
         "pet_patients",
@@ -1317,7 +1682,14 @@
       "archetype_id": "B",
       "archetype_name": "Archetype B: Asymmetric Editorial Showcase",
       "archetype_description": "Dynamic masonry grid, visual filtering, editorial typography, and slide-over commission sheet for high-end ateliers, creative studios, and maritime showcases.",
-      "design_benchmark": "VCA Animal Hospital Emergency Case Showcase"
+      "design_benchmark": "VCA Animal Hospital Emergency Case Showcase",
+      "checkout_active": true,
+      "status_badge": "Active Checkout",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/veterinary-hospital-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 63,
@@ -1327,7 +1699,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/functional-medicine-os",
       "preview_url": "https://gcoinstash-cmd.github.io/functional-medicine-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/functional-medicine-os/admin/",
-      "admin_passcode": "functional2026",
       "audit_score": 9.8,
       "tables": [
         "patients",
@@ -1338,7 +1709,14 @@
       "archetype_id": "C",
       "archetype_name": "Archetype C: Step-by-Step Calculator / Wizard",
       "archetype_description": "Stateful multi-stage progression stepper, interactive pricing/spec tally, and stage-by-stage validation for underwriting, legal retainers, and clinical intake.",
-      "design_benchmark": "Dr. Mark Hyman Epigenetic Longevity Protocol Wizard"
+      "design_benchmark": "Dr. Mark Hyman Epigenetic Longevity Protocol Wizard",
+      "checkout_active": true,
+      "status_badge": "Active Checkout",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/functional-medicine-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 64,
@@ -1348,7 +1726,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/physical-therapy-os",
       "preview_url": "https://gcoinstash-cmd.github.io/physical-therapy-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/physical-therapy-os/admin/",
-      "admin_passcode": "pt2026",
       "audit_score": 9.8,
       "tables": [
         "pt_patients",
@@ -1359,7 +1736,14 @@
       "archetype_id": "D",
       "archetype_name": "Archetype D: Timeline & Station Reservation Grid",
       "archetype_description": "Interactive day/hour time-slot matrix, capacity/station status indicators, and instant seat/pod booking for Michelin dining, private clubs, and recovery labs.",
-      "design_benchmark": "EXOS Athletic Rehabilitation Station Grid"
+      "design_benchmark": "EXOS Athletic Rehabilitation Station Grid",
+      "checkout_active": true,
+      "status_badge": "Active Checkout",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/physical-therapy-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 65,
@@ -1369,7 +1753,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/recovery-spa-os",
       "preview_url": "https://gcoinstash-cmd.github.io/recovery-spa-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/recovery-spa-os/admin/",
-      "admin_passcode": "recovery2026",
       "audit_score": 9.8,
       "tables": [
         "recovery_members",
@@ -1380,7 +1763,14 @@
       "archetype_id": "D",
       "archetype_name": "Archetype D: Timeline & Station Reservation Grid",
       "archetype_description": "Interactive day/hour time-slot matrix, capacity/station status indicators, and instant seat/pod booking for Michelin dining, private clubs, and recovery labs.",
-      "design_benchmark": "Next Health Thermal Contrast & IV Lounge Grid"
+      "design_benchmark": "Next Health Thermal Contrast & IV Lounge Grid",
+      "checkout_active": true,
+      "status_badge": "Active Checkout",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/recovery-spa-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 66,
@@ -1390,7 +1780,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/boutique-law-os",
       "preview_url": "https://gcoinstash-cmd.github.io/boutique-law-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/boutique-law-os/admin/",
-      "admin_passcode": "law2026",
       "audit_score": 9.8,
       "tables": [
         "legal_matters",
@@ -1401,7 +1790,14 @@
       "archetype_id": "C",
       "archetype_name": "Archetype C: Step-by-Step Calculator / Wizard",
       "archetype_description": "Stateful multi-stage progression stepper, interactive pricing/spec tally, and stage-by-stage validation for underwriting, legal retainers, and clinical intake.",
-      "design_benchmark": "Skadden Arps Commercial Trial Retainer Wizard"
+      "design_benchmark": "Skadden Arps Commercial Trial Retainer Wizard",
+      "checkout_active": true,
+      "status_badge": "Active Checkout",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/boutique-law-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 67,
@@ -1411,7 +1807,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/ma-advisory-os",
       "preview_url": "https://gcoinstash-cmd.github.io/ma-advisory-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/ma-advisory-os/admin/",
-      "admin_passcode": "ma2026",
       "audit_score": 9.8,
       "tables": [
         "deal_mandates",
@@ -1421,7 +1816,14 @@
       "archetype_id": "C",
       "archetype_name": "Archetype C: Step-by-Step Calculator / Wizard",
       "archetype_description": "Stateful multi-stage progression stepper, interactive pricing/spec tally, and stage-by-stage validation for underwriting, legal retainers, and clinical intake.",
-      "design_benchmark": "Goldman Sachs Lower Middle-Market M&A VDR Stepper"
+      "design_benchmark": "Goldman Sachs Lower Middle-Market M&A VDR Stepper",
+      "checkout_active": true,
+      "status_badge": "Active Checkout",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/ma-advisory-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 68,
@@ -1431,7 +1833,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/executive-search-os",
       "preview_url": "https://gcoinstash-cmd.github.io/executive-search-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/executive-search-os/admin/",
-      "admin_passcode": "search2026",
       "audit_score": 9.8,
       "tables": [
         "retained_mandates",
@@ -1441,7 +1842,14 @@
       "archetype_id": "C",
       "archetype_name": "Archetype C: Step-by-Step Calculator / Wizard",
       "archetype_description": "Stateful multi-stage progression stepper, interactive pricing/spec tally, and stage-by-stage validation for underwriting, legal retainers, and clinical intake.",
-      "design_benchmark": "Korn Ferry Retained C-Suite Placement Stepper"
+      "design_benchmark": "Korn Ferry Retained C-Suite Placement Stepper",
+      "checkout_active": true,
+      "status_badge": "Active Checkout",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/executive-search-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 69,
@@ -1451,7 +1859,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/wealth-family-office-os",
       "preview_url": "https://gcoinstash-cmd.github.io/wealth-family-office-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/wealth-family-office-os/admin/",
-      "admin_passcode": "familyoffice2026",
       "audit_score": 9.8,
       "tables": [
         "direct_syndicates",
@@ -1461,7 +1868,14 @@
       "archetype_id": "E",
       "archetype_name": "Archetype E: Split-Screen Spec & Proof Panel",
       "archetype_description": "Fixed left media inspection preview, right scrollable technical breakdown, cryptographic proof logs, and provenance vault for horology, wealth, and fine art.",
-      "design_benchmark": "Cambridge Associates Sovereign Wealth Spec Panel"
+      "design_benchmark": "Cambridge Associates Sovereign Wealth Spec Panel",
+      "checkout_active": true,
+      "status_badge": "Active Checkout",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/wealth-family-office-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 70,
@@ -1471,7 +1885,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/litigation-ops-os",
       "preview_url": "https://gcoinstash-cmd.github.io/litigation-ops-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/litigation-ops-os/admin/",
-      "admin_passcode": "litigation2026",
       "audit_score": 9.8,
       "tables": [
         "litigation_dockets",
@@ -1481,7 +1894,14 @@
       "archetype_id": "E",
       "archetype_name": "Archetype E: Split-Screen Spec & Proof Panel",
       "archetype_description": "Fixed left media inspection preview, right scrollable technical breakdown, cryptographic proof logs, and provenance vault for horology, wealth, and fine art.",
-      "design_benchmark": "FTI Consulting Commercial Trial E-Discovery War Room"
+      "design_benchmark": "FTI Consulting Commercial Trial E-Discovery War Room",
+      "checkout_active": true,
+      "status_badge": "Active Checkout",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/litigation-ops-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 71,
@@ -1491,7 +1911,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/heavy-plant-rental-os",
       "preview_url": "https://gcoinstash-cmd.github.io/heavy-plant-rental-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/heavy-plant-rental-os/admin/",
-      "admin_passcode": "plant2026",
       "audit_score": 9.8,
       "tables": [
         "machinery_fleet",
@@ -1502,7 +1921,14 @@
       "archetype_id": "A",
       "archetype_name": "Archetype A: Dense Operational Console",
       "archetype_description": "Persistent utility rail, real-time operational triage queue, and slide-out master-detail inspection drawer for high-velocity dispatch and logistics.",
-      "design_benchmark": "United Rentals Heavy Fleet Telematics Console"
+      "design_benchmark": "United Rentals Heavy Fleet Telematics Console",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 72,
@@ -1512,7 +1938,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/freight-broker-dispatch-os",
       "preview_url": "https://gcoinstash-cmd.github.io/freight-broker-dispatch-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/freight-broker-dispatch-os/admin/",
-      "admin_passcode": "freight2026",
       "audit_score": 9.8,
       "tables": [
         "load_board",
@@ -1523,7 +1948,14 @@
       "archetype_id": "C",
       "archetype_name": "Archetype C: Step-by-Step Calculator / Wizard",
       "archetype_description": "Persistent utility rail, real-time operational triage queue, and slide-out master-detail inspection drawer for high-velocity dispatch and logistics.",
-      "design_benchmark": "C.H. Robinson Intermodal Freight Margin & Route Stepper"
+      "design_benchmark": "C.H. Robinson Intermodal Freight Margin & Route Stepper",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 73,
@@ -1533,7 +1965,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/aviation-charter-os",
       "preview_url": "https://gcoinstash-cmd.github.io/aviation-charter-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/aviation-charter-os/admin/",
-      "admin_passcode": "aviation2026",
       "audit_score": 9.8,
       "tables": [
         "aircraft_fleet",
@@ -1544,7 +1975,14 @@
       "archetype_id": "B",
       "archetype_name": "Archetype B: Asymmetric Editorial Showcase",
       "archetype_description": "Stateful multi-stage progression stepper, interactive pricing/spec tally, and stage-by-stage validation for underwriting, legal retainers, and clinical intake.",
-      "design_benchmark": "NetJets Bespoke Fleet & Charter Flight Showcase"
+      "design_benchmark": "NetJets Bespoke Fleet & Charter Flight Showcase",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 74,
@@ -1554,7 +1992,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/cold-chain-storage-os",
       "preview_url": "https://gcoinstash-cmd.github.io/cold-chain-storage-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/cold-chain-storage-os/admin/",
-      "admin_passcode": "coldchain2026",
       "audit_score": 9.8,
       "tables": [
         "cold_storage_zones",
@@ -1565,7 +2002,14 @@
       "archetype_id": "D",
       "archetype_name": "Archetype D: Timeline & Station Reservation Grid",
       "archetype_description": "Persistent utility rail, real-time operational triage queue, and slide-out master-detail inspection drawer for high-velocity dispatch and logistics.",
-      "design_benchmark": "Lineage Logistics 24-Hour Reefer Dock Reservation Matrix"
+      "design_benchmark": "Lineage Logistics 24-Hour Reefer Dock Reservation Matrix",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 75,
@@ -1575,7 +2019,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/crane-rigging-ops-os",
       "preview_url": "https://gcoinstash-cmd.github.io/crane-rigging-ops-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/crane-rigging-ops-os/admin/",
-      "admin_passcode": "crane2026",
       "audit_score": 9.8,
       "tables": [
         "crane_inventory",
@@ -1586,7 +2029,14 @@
       "archetype_id": "E",
       "archetype_name": "Archetype E: Split-Screen Spec & Proof Panel",
       "archetype_description": "Persistent utility rail, real-time operational triage queue, and slide-out master-detail inspection drawer for high-velocity dispatch and logistics.",
-      "design_benchmark": "Mammoet Heavy Lift Load Radius & OSHA Proof Panel"
+      "design_benchmark": "Mammoet Heavy Lift Load Radius & OSHA Proof Panel",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 76,
@@ -1596,7 +2046,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/ceramic-shield-ppf-os",
       "preview_url": "https://gcoinstash-cmd.github.io/ceramic-shield-ppf-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/ceramic-shield-ppf-os/admin/",
-      "admin_passcode": "ceramic2026",
       "audit_score": 9.8,
       "tables": [
         "paint_inspections",
@@ -1607,7 +2056,14 @@
       "archetype_id": "C",
       "archetype_name": "Archetype C: Step-by-Step Calculator / Wizard",
       "archetype_description": "Stateful multi-stage progression stepper, interactive pricing/spec tally, and stage-by-stage validation for underwriting, legal retainers, and clinical intake.",
-      "design_benchmark": "XPEL Automotive Multi-Stage Coverage & Cleanroom Stepper"
+      "design_benchmark": "XPEL Automotive Multi-Stage Coverage & Cleanroom Stepper",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 77,
@@ -1617,7 +2073,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/mobile-detail-dispatch-os",
       "preview_url": "https://gcoinstash-cmd.github.io/mobile-detail-dispatch-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/mobile-detail-dispatch-os/admin/",
-      "admin_passcode": "detail2026",
       "audit_score": 9.8,
       "tables": [
         "mobile_vans",
@@ -1628,7 +2083,14 @@
       "archetype_id": "A",
       "archetype_name": "Archetype A: Dense Operational Console",
       "archetype_description": "Persistent utility rail, real-time operational triage queue, and slide-out master-detail inspection drawer for high-velocity dispatch and logistics.",
-      "design_benchmark": "Samsara Mobile Fleet DI Water & Triage Dispatch Console"
+      "design_benchmark": "Samsara Mobile Fleet DI Water & Triage Dispatch Console",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 78,
@@ -1638,7 +2100,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/cinegrip-equipment-os",
       "preview_url": "https://gcoinstash-cmd.github.io/cinegrip-equipment-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/cinegrip-equipment-os/admin/",
-      "admin_passcode": "cinegrip2026",
       "audit_score": 9.8,
       "tables": [
         "gear_inventory",
@@ -1649,7 +2110,14 @@
       "archetype_id": "E",
       "archetype_name": "Archetype E: Split-Screen Spec & Proof Panel",
       "archetype_description": "Dynamic masonry grid, visual filtering, editorial typography, and slide-over commission sheet for high-end ateliers, creative studios, and maritime showcases.",
-      "design_benchmark": "ARRI Rental Cinema Grip & COI Insurance Proof Panel"
+      "design_benchmark": "ARRI Rental Cinema Grip & COI Insurance Proof Panel",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 79,
@@ -1659,7 +2127,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/custom-ink-studio-os",
       "preview_url": "https://gcoinstash-cmd.github.io/custom-ink-studio-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/custom-ink-studio-os/admin/",
-      "admin_passcode": "customink2026",
       "audit_score": 9.8,
       "tables": [
         "artist_roster",
@@ -1670,7 +2137,14 @@
       "archetype_id": "B",
       "archetype_name": "Archetype B: Asymmetric Editorial Showcase",
       "archetype_description": "Dynamic masonry grid, visual filtering, editorial typography, and slide-over commission sheet for high-end ateliers, creative studios, and maritime showcases.",
-      "design_benchmark": "Bang Bang NYC Resident Tattoo Flash Editorial Grid"
+      "design_benchmark": "Bang Bang NYC Resident Tattoo Flash Editorial Grid",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 80,
@@ -1680,7 +2154,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/combat-recovery-lab-os",
       "preview_url": "https://gcoinstash-cmd.github.io/combat-recovery-lab-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/combat-recovery-lab-os/admin/",
-      "admin_passcode": "recovery2026",
       "audit_score": 9.8,
       "tables": [
         "recovery_modalities",
@@ -1691,7 +2164,14 @@
       "archetype_id": "D",
       "archetype_name": "Archetype D: Timeline & Station Reservation Grid",
       "archetype_description": "Interactive day/hour time-slot matrix, capacity/station status indicators, and instant seat/pod booking for Michelin dining, private clubs, and recovery labs.",
-      "design_benchmark": "UFC Performance Institute Cryo & Contrast Chamber Matrix"
+      "design_benchmark": "UFC Performance Institute Cryo & Contrast Chamber Matrix",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 81,
@@ -1701,7 +2181,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/fine-dining-matrix-os",
       "preview_url": "https://gcoinstash-cmd.github.io/fine-dining-matrix-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/fine-dining-matrix-os/admin",
-      "admin_passcode": "finedining2026",
       "audit_score": 9.8,
       "tables": [
         "dining_tables",
@@ -1712,7 +2191,14 @@
       "archetype_id": "D",
       "archetype_name": "Archetype D: Timeline & Station Reservation Grid",
       "archetype_description": "Interactive day/hour time-slot matrix, capacity/station status indicators, and instant seat/pod booking for Michelin dining, private clubs, and recovery labs.",
-      "design_benchmark": "SevenRooms 24-Seat Michelin Timeline Matrix"
+      "design_benchmark": "SevenRooms 24-Seat Michelin Timeline Matrix",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 82,
@@ -1722,7 +2208,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/medspa-clinic-os",
       "preview_url": "https://gcoinstash-cmd.github.io/medspa-clinic-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/medspa-clinic-os/admin",
-      "admin_passcode": "medspaclinic2026",
       "audit_score": 9.8,
       "tables": [
         "patients",
@@ -1733,7 +2218,14 @@
       "archetype_id": "C",
       "archetype_name": "Archetype C: Step-by-Step Calculator / Wizard",
       "archetype_description": "Stateful multi-stage progression stepper, interactive pricing/spec tally, and stage-by-stage validation for underwriting, legal retainers, and clinical intake.",
-      "design_benchmark": "Beverly Hills Plastic Surgery Treatment Intake Wizard"
+      "design_benchmark": "Beverly Hills Plastic Surgery Treatment Intake Wizard",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 83,
@@ -1743,7 +2235,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/superyacht-charter-os",
       "preview_url": "https://gcoinstash-cmd.github.io/superyacht-charter-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/superyacht-charter-os/admin",
-      "admin_passcode": "yacht2026",
       "audit_score": 9.8,
       "tables": [
         "yachts",
@@ -1754,7 +2245,14 @@
       "archetype_id": "B",
       "archetype_name": "Archetype B: Asymmetric Editorial Showcase",
       "archetype_description": "Dynamic masonry grid, visual filtering, editorial typography, and slide-over commission sheet for high-end ateliers, creative studios, and maritime showcases.",
-      "design_benchmark": "Fraser Yachts Monaco Asymmetric Editorial Showcase"
+      "design_benchmark": "Fraser Yachts Monaco Asymmetric Editorial Showcase",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
     },
     {
       "id": 84,
@@ -1764,7 +2262,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/luxury-horology-vault-os",
       "preview_url": "https://gcoinstash-cmd.github.io/luxury-horology-vault-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/luxury-horology-vault-os/admin",
-      "admin_passcode": "horology2026",
       "audit_score": 9.8,
       "tables": [
         "timepieces",
@@ -1775,7 +2272,14 @@
       "archetype_id": "E",
       "archetype_name": "Archetype E: Split-Screen Spec & Proof Panel",
       "archetype_description": "Fixed left media inspection preview, right scrollable technical breakdown, cryptographic proof logs, and provenance vault for horology, wealth, and fine art.",
-      "design_benchmark": "Chrono24 Split-Screen Inspection Loupe & Caliber Vault"
+      "design_benchmark": "Chrono24 Split-Screen Inspection Loupe & Caliber Vault",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     },
     {
       "id": 85,
@@ -1785,7 +2289,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/private-villa-estate-os",
       "preview_url": "https://gcoinstash-cmd.github.io/private-villa-estate-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/private-villa-estate-os/admin",
-      "admin_passcode": "villaestate2026",
       "audit_score": 9.8,
       "tables": [
         "estates",
@@ -1796,37 +2299,882 @@
       "archetype_id": "A",
       "archetype_name": "Archetype A: Dense Operational Console",
       "archetype_description": "Persistent utility rail, real-time operational triage queue, and slide-out master-detail inspection drawer for high-velocity dispatch and logistics.",
-      "design_benchmark": "Aman Resorts Private Villa Concierge & Butler Console"
+      "design_benchmark": "Aman Resorts Private Villa Concierge & Butler Console",
+      "checkout_active": false,
+      "status_badge": "Packaged / Deployment Ready",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/agency-whitelabel-vault",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: Supabase-Ready Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
+    },
+    {
+      "id": 86,
+      "name": "Autonomous Drone Swarm Perimeter Defense OS",
+      "category": "Autonomous Drone Swarm Perimeter Defense OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/aegis-swarm-os",
+      "preview_url": "https://aegis-swarm-os.onrender.com",
+      "admin_url": "https://aegis-swarm-os.onrender.com/admin",
+      "audit_score": 9.8,
+      "tables": [
+        "defense_perimeters",
+        "automated_docking_hubs",
+        "swarm_drones",
+        "intrusion_targets"
+      ],
+      "vertical": "defense",
+      "archetype_id": "C",
+      "archetype_name": "Archetype C: High-Velocity Dispatch Rail",
+      "archetype_description": "Fleet asset tracking, dispatch coordination, and route telemetry.",
+      "design_benchmark": "Flexport Global Logistics & Samsara Fleet Hub",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/aegis-swarm-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
+    },
+    {
+      "id": 87,
+      "name": "Autonomous Mining Haulage Fleet Dispatch OS",
+      "category": "Autonomous Mining Haulage Fleet Dispatch OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/autonomous-mining-haulage-fleet-dispatch-os",
+      "preview_url": "https://autonomous-mining-haulage-fleet-dispatch-os.onrender.com",
+      "admin_url": "https://autonomous-mining-haulage-fleet-dispatch-os.onrender.com/admin",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "subsea",
+      "archetype_id": "C",
+      "archetype_name": "Archetype C: High-Velocity Dispatch Rail",
+      "archetype_description": "Fleet asset tracking, dispatch coordination, and route telemetry.",
+      "design_benchmark": "Flexport Global Logistics & Samsara Fleet Hub",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/autonomous-mining-haulage-fleet-dispatch-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
+    },
+    {
+      "id": 88,
+      "name": "Autonomous Subsea Mining Crawler Telemetry OS",
+      "category": "Autonomous Subsea Mining Crawler Telemetry OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/autonomous-subsea-mining-crawler-telemetry-os",
+      "preview_url": "https://autonomous-subsea-mining-crawler-telemetry-os.onrender.com",
+      "admin_url": "https://autonomous-subsea-mining-crawler-telemetry-os.onrender.com/admin",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "subsea",
+      "archetype_id": "A",
+      "archetype_name": "Archetype A: Dense Operational Console",
+      "archetype_description": "Persistent utility rail, real-time operational triage queue, and slide-out inspection drawer.",
+      "design_benchmark": "NASA Mission Control & Palantir Foundry Console",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/autonomous-subsea-mining-crawler-telemetry-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
+    },
+    {
+      "id": 89,
+      "name": "Aviation FBO Dispatch OS",
+      "category": "Aviation FBO Dispatch OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/aviation-fbo-dispatch-os",
+      "preview_url": "https://aviation-fbo-dispatch-os.onrender.com",
+      "admin_url": "https://aviation-fbo-dispatch-os.onrender.com/admin",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "aerospace",
+      "archetype_id": "C",
+      "archetype_name": "Archetype C: High-Velocity Dispatch Rail",
+      "archetype_description": "Fleet asset tracking, dispatch coordination, and route telemetry.",
+      "design_benchmark": "Flexport Global Logistics & Samsara Fleet Hub",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/aviation-fbo-dispatch-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
+    },
+    {
+      "id": 90,
+      "name": "Boutique Winery Production OS",
+      "category": "Boutique Winery Production OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/boutique-winery-production-os",
+      "preview_url": "https://boutique-winery-production-os.onrender.com",
+      "admin_url": "https://boutique-winery-production-os.onrender.com/admin",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "hospitality",
+      "archetype_id": "B",
+      "archetype_name": "Archetype B: Asymmetric Editorial Showcase",
+      "archetype_description": "Dynamic masonry grid, visual filtering, and slide-over commission sheet.",
+      "design_benchmark": "LVMH Luxury Atelier & Monaco Yacht Show",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/boutique-winery-production-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
+    },
+    {
+      "id": 91,
+      "name": "Clinical Trial Operations OS",
+      "category": "Clinical Trial Operations OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/clinical-trial-operations-os",
+      "preview_url": "https://clinical-trial-operations-os.onrender.com",
+      "admin_url": "https://clinical-trial-operations-os.onrender.com/admin",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "medical",
+      "archetype_id": "C",
+      "archetype_name": "Archetype C: High-Velocity Dispatch Rail",
+      "archetype_description": "Fleet asset tracking, dispatch coordination, and route telemetry.",
+      "design_benchmark": "Flexport Global Logistics & Samsara Fleet Hub",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/clinical-trial-operations-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
+    },
+    {
+      "id": 92,
+      "name": "Cold Storage Logistics OS",
+      "category": "Cold Storage Logistics OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/cold-storage-logistics-os",
+      "preview_url": "https://cold-storage-logistics-os.onrender.com",
+      "admin_url": "https://cold-storage-logistics-os.onrender.com/admin",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "heavy_fleet",
+      "archetype_id": "C",
+      "archetype_name": "Archetype C: High-Velocity Dispatch Rail",
+      "archetype_description": "Fleet asset tracking, dispatch coordination, and route telemetry.",
+      "design_benchmark": "Flexport Global Logistics & Samsara Fleet Hub",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/cold-storage-logistics-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
+    },
+    {
+      "id": 93,
+      "name": "Commercial Supersonic Airliner Engine Inverted Aerospike Telemetry OS",
+      "category": "Commercial Supersonic Airliner Engine Inverted Aerospike Telemetry OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/commercial-supersonic-airliner-engine-inverted-aerospike-telemetry-os",
+      "preview_url": "https://commercial-supersonic-airliner-engine-inverted-aerospike-telemetry-os.onrender.com",
+      "admin_url": "https://commercial-supersonic-airliner-engine-inverted-aerospike-telemetry-os.onrender.com/admin",
+      "audit_score": 9.8,
+      "tables": [
+        "telemetry",
+        "subsystems",
+        "events",
+        "metrics"
+      ],
+      "vertical": "aerospace",
+      "archetype_id": "A",
+      "archetype_name": "Archetype A: Dense Operational Console",
+      "archetype_description": "Persistent utility rail, real-time operational triage queue, and slide-out inspection drawer.",
+      "design_benchmark": "NASA Mission Control & Palantir Foundry Console",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/commercial-supersonic-airliner-engine-inverted-aerospike-telemetry-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
+    },
+    {
+      "id": 94,
+      "name": "Commercial Tokamak Fusion Plasma SCADA OS",
+      "category": "Commercial Tokamak Fusion Plasma SCADA OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/commercial-tokamak-fusion-plasma-scada-os",
+      "preview_url": "https://commercial-tokamak-fusion-plasma-scada-os.onrender.com",
+      "admin_url": "https://commercial-tokamak-fusion-plasma-scada-os.onrender.com/admin",
+      "audit_score": 9.8,
+      "tables": [
+        "fusion_reactors",
+        "plasma_pulses",
+        "magnetic_coils",
+        "divertor_thermal_logs",
+        "disruption_events",
+        "scada_audit_logs"
+      ],
+      "vertical": "clean_energy",
+      "archetype_id": "D",
+      "archetype_name": "Archetype D: SCADA System Matrix",
+      "archetype_description": "High-density telemetry streams, closed-loop sensor controllers, and industrial process automation.",
+      "design_benchmark": "Siemens WinCC & Schneider EcoStruxure SCADA",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/commercial-tokamak-fusion-plasma-scada-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
+    },
+    {
+      "id": 95,
+      "name": "Deep-Sea ROV Trenching & Cable Burial OS",
+      "category": "Deep-Sea ROV Trenching & Cable Burial OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/deep-sea-rov-trenching-and-cable-burial-os",
+      "preview_url": "https://deep-sea-rov-trenching-and-cable-burial-os.onrender.com",
+      "admin_url": "https://deep-sea-rov-trenching-and-cable-burial-os.onrender.com/admin",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "subsea",
+      "archetype_id": "C",
+      "archetype_name": "Archetype C: High-Velocity Dispatch Rail",
+      "archetype_description": "Fleet asset tracking, dispatch coordination, and route telemetry.",
+      "design_benchmark": "Flexport Global Logistics & Samsara Fleet Hub",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/deep-sea-rov-trenching-and-cable-burial-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
+    },
+    {
+      "id": 96,
+      "name": "Geothermal Supercritical EGS Wellhead SCADA OS",
+      "category": "Geothermal Supercritical EGS Wellhead SCADA OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/geothermal-supercritical-egs-wellhead-scada-os",
+      "preview_url": "https://geothermal-supercritical-egs-wellhead-scada-os.onrender.com",
+      "admin_url": "https://geothermal-supercritical-egs-wellhead-scada-os.onrender.com/admin",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "clean_energy",
+      "archetype_id": "D",
+      "archetype_name": "Archetype D: SCADA System Matrix",
+      "archetype_description": "High-density telemetry streams, closed-loop sensor controllers, and industrial process automation.",
+      "design_benchmark": "Siemens WinCC & Schneider EcoStruxure SCADA",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/geothermal-supercritical-egs-wellhead-scada-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
+    },
+    {
+      "id": 97,
+      "name": "HFT Colocation & Microwave Telemetry OS",
+      "category": "HFT Colocation & Microwave Telemetry OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/hft-colocation-and-microwave-os",
+      "preview_url": "https://hft-colocation-and-microwave-os.onrender.com",
+      "admin_url": "https://hft-colocation-and-microwave-os.onrender.com/admin",
+      "audit_score": 9.8,
+      "tables": [
+        "telemetry",
+        "subsystems",
+        "events",
+        "metrics"
+      ],
+      "vertical": "wealth",
+      "archetype_id": "C",
+      "archetype_name": "Archetype C: High-Velocity Dispatch Rail",
+      "archetype_description": "Fleet asset tracking, dispatch coordination, and route telemetry.",
+      "design_benchmark": "Flexport Global Logistics & Samsara Fleet Hub",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/hft-colocation-and-microwave-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
+    },
+    {
+      "id": 98,
+      "name": "Hypersonic Wind Tunnel Aerodynamics Telemetry OS",
+      "category": "Hypersonic Wind Tunnel Aerodynamics Telemetry OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/hypersonic-wind-tunnel-aerodynamics-telemetry-os",
+      "preview_url": "https://hypersonic-wind-tunnel-aerodynamics-telemetry-os.onrender.com",
+      "admin_url": "https://hypersonic-wind-tunnel-aerodynamics-telemetry-os.onrender.com/admin",
+      "audit_score": 9.8,
+      "tables": [
+        "telemetry",
+        "subsystems",
+        "events",
+        "metrics"
+      ],
+      "vertical": "aerospace",
+      "archetype_id": "A",
+      "archetype_name": "Archetype A: Dense Operational Console",
+      "archetype_description": "Persistent utility rail, real-time operational triage queue, and slide-out inspection drawer.",
+      "design_benchmark": "NASA Mission Control & Palantir Foundry Console",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/hypersonic-wind-tunnel-aerodynamics-telemetry-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
+    },
+    {
+      "id": 99,
+      "name": "Luxury Auto Concierge OS",
+      "category": "Luxury Auto Concierge OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/luxury-auto-concierge-os",
+      "preview_url": "https://luxury-auto-concierge-os.onrender.com",
+      "admin_url": "https://luxury-auto-concierge-os.onrender.com/admin",
+      "audit_score": 9.8,
+      "tables": [
+        "vault_clients",
+        "collector_vehicles",
+        "transport_manifests",
+        "service_tickets",
+        "vault_telemetry_logs",
+        "security_audit_logs"
+      ],
+      "vertical": "heavy_fleet",
+      "archetype_id": "B",
+      "archetype_name": "Archetype B: Asymmetric Editorial Showcase",
+      "archetype_description": "Dynamic masonry grid, visual filtering, and slide-over commission sheet.",
+      "design_benchmark": "LVMH Luxury Atelier & Monaco Yacht Show",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/luxury-auto-concierge-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
+    },
+    {
+      "id": 100,
+      "name": "Maritime Freight Brokerage OS",
+      "category": "Maritime Freight Brokerage OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/maritime-freight-brokerage-os",
+      "preview_url": "https://maritime-freight-brokerage-os.onrender.com",
+      "admin_url": "https://maritime-freight-brokerage-os.onrender.com/admin",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "heavy_fleet",
+      "archetype_id": "C",
+      "archetype_name": "Archetype C: High-Velocity Dispatch Rail",
+      "archetype_description": "Fleet asset tracking, dispatch coordination, and route telemetry.",
+      "design_benchmark": "Flexport Global Logistics & Samsara Fleet Hub",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/maritime-freight-brokerage-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
+    },
+    {
+      "id": 101,
+      "name": "Orbital Satellite Laser ISL Optical Terminal OS",
+      "category": "Orbital Satellite Laser ISL Optical Terminal OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/orbital-satellite-laser-isl-optical-terminal-os",
+      "preview_url": "https://orbital-satellite-laser-isl-optical-terminal-os.onrender.com",
+      "admin_url": "https://orbital-satellite-laser-isl-optical-terminal-os.onrender.com/admin",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "aerospace",
+      "archetype_id": "A",
+      "archetype_name": "Archetype A: Dense Operational Console",
+      "archetype_description": "Persistent utility rail, real-time operational triage queue, and slide-out inspection drawer.",
+      "design_benchmark": "NASA Mission Control & Palantir Foundry Console",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/orbital-satellite-laser-isl-optical-terminal-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
+    },
+    {
+      "id": 102,
+      "name": "Private Credit Syndication OS",
+      "category": "Private Credit Syndication OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/private-credit-syndication-os",
+      "preview_url": "https://private-credit-syndication-os.onrender.com",
+      "admin_url": "https://private-credit-syndication-os.onrender.com/admin",
+      "audit_score": 9.8,
+      "tables": [
+        "telemetry",
+        "subsystems",
+        "events",
+        "metrics"
+      ],
+      "vertical": "wealth",
+      "archetype_id": "C",
+      "archetype_name": "Archetype C: High-Velocity Dispatch Rail",
+      "archetype_description": "Fleet asset tracking, dispatch coordination, and route telemetry.",
+      "design_benchmark": "Flexport Global Logistics & Samsara Fleet Hub",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/private-credit-syndication-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
+    },
+    {
+      "id": 103,
+      "name": "Renewable Energy Microgrid Dispatch OS",
+      "category": "Renewable Energy Microgrid Dispatch OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/renewable-energy-microgrid-dispatch-os",
+      "preview_url": "https://renewable-energy-microgrid-dispatch-os.onrender.com",
+      "admin_url": "https://renewable-energy-microgrid-dispatch-os.onrender.com/admin",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "clean_energy",
+      "archetype_id": "C",
+      "archetype_name": "Archetype C: High-Velocity Dispatch Rail",
+      "archetype_description": "Fleet asset tracking, dispatch coordination, and route telemetry.",
+      "design_benchmark": "Flexport Global Logistics & Samsara Fleet Hub",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/renewable-energy-microgrid-dispatch-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
+    },
+    {
+      "id": 104,
+      "name": "Semiconductor Fab Cleanroom SCADA OS",
+      "category": "Semiconductor Fab Cleanroom SCADA OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/semiconductor-fab-cleanroom-scada-os",
+      "preview_url": "https://semiconductor-fab-cleanroom-scada-os.onrender.com",
+      "admin_url": "https://semiconductor-fab-cleanroom-scada-os.onrender.com/admin",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "deep_tech",
+      "archetype_id": "D",
+      "archetype_name": "Archetype D: SCADA System Matrix",
+      "archetype_description": "High-density telemetry streams, closed-loop sensor controllers, and industrial process automation.",
+      "design_benchmark": "Siemens WinCC & Schneider EcoStruxure SCADA",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/semiconductor-fab-cleanroom-scada-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
+    },
+    {
+      "id": 105,
+      "name": "Space Launch Payload Manifest OS",
+      "category": "Space Launch Payload Manifest OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/space-launch-payload-manifest-os",
+      "preview_url": "https://space-launch-payload-manifest-os.onrender.com",
+      "admin_url": "https://space-launch-payload-manifest-os.onrender.com/admin",
+      "audit_score": 9.8,
+      "tables": [
+        "launch_missions",
+        "orbital_trajectories",
+        "licensing_milestones",
+        "payload_manifests"
+      ],
+      "vertical": "aerospace",
+      "archetype_id": "C",
+      "archetype_name": "Archetype C: High-Velocity Dispatch Rail",
+      "archetype_description": "Fleet asset tracking, dispatch coordination, and route telemetry.",
+      "design_benchmark": "Flexport Global Logistics & Samsara Fleet Hub",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/space-launch-payload-manifest-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
+    },
+    {
+      "id": 106,
+      "name": "Subsea Fiber Cable Restoration OS",
+      "category": "Subsea Fiber Cable Restoration OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/subsea-cable-restoration-os",
+      "preview_url": "https://subsea-cable-restoration-os.onrender.com",
+      "admin_url": "https://subsea-cable-restoration-os.onrender.com/admin",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "subsea",
+      "archetype_id": "C",
+      "archetype_name": "Archetype C: High-Velocity Dispatch Rail",
+      "archetype_description": "Fleet asset tracking, dispatch coordination, and route telemetry.",
+      "design_benchmark": "Flexport Global Logistics & Samsara Fleet Hub",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/subsea-cable-restoration-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
+    },
+    {
+      "id": 107,
+      "name": "Superconducting Quantum Processor Cryostat OS",
+      "category": "Superconducting Quantum Processor Cryostat OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/superconducting-quantum-processor-cryostat-os",
+      "preview_url": "https://superconducting-quantum-processor-cryostat-os.onrender.com",
+      "admin_url": "https://superconducting-quantum-processor-cryostat-os.onrender.com/admin",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "deep_tech",
+      "archetype_id": "D",
+      "archetype_name": "Archetype D: SCADA System Matrix",
+      "archetype_description": "High-density telemetry streams, closed-loop sensor controllers, and industrial process automation.",
+      "design_benchmark": "Siemens WinCC & Schneider EcoStruxure SCADA",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/superconducting-quantum-processor-cryostat-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
+    },
+    {
+      "id": 108,
+      "name": "Yacht Charter Fleet Ecosystem",
+      "category": "Yacht Charter Fleet Ecosystem Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/yacht-charter-fleet-ecosystem",
+      "preview_url": "https://yacht-charter-fleet-ecosystem.onrender.com",
+      "admin_url": "https://yacht-charter-fleet-ecosystem.onrender.com/admin",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "heavy_fleet",
+      "archetype_id": "B",
+      "archetype_name": "Archetype B: Asymmetric Editorial Showcase",
+      "archetype_description": "Dynamic masonry grid, visual filtering, and slide-over commission sheet.",
+      "design_benchmark": "LVMH Luxury Atelier & Monaco Yacht Show",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/yacht-charter-fleet-ecosystem",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
+    },
+    {
+      "id": 109,
+      "name": "Orbital Habitat ECLSS SCADA OS",
+      "category": "Orbital Habitat ECLSS SCADA OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/orbital-habitat-closed-loop-os",
+      "preview_url": "https://orbital-habitat-closed-loop-os.onrender.com",
+      "admin_url": "https://orbital-habitat-closed-loop-os.onrender.com/admin",
+      "audit_score": 9.8,
+      "tables": [
+        "IF"
+      ],
+      "vertical": "aerospace",
+      "archetype_id": "C",
+      "archetype_name": "Archetype C: High-Velocity Dispatch Rail",
+      "archetype_description": "Fleet asset tracking, dispatch coordination, and route telemetry.",
+      "design_benchmark": "Flexport Global Logistics & Samsara Fleet Hub",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/orbital-habitat-closed-loop-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE"
+    },
+    {
+      "id": 110,
+      "name": "Orbital In-Space Cryogenic Propellant Depot SCADA OS",
+      "category": "Orbital In-Space Cryogenic Propellant Depot SCADA OS Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/orbital-cryo-depot-scada-os",
+      "preview_url": "https://orbital-cryo-depot-scada-os.onrender.com",
+      "admin_url": "https://orbital-cryo-depot-scada-os.onrender.com/admin",
+      "audit_score": 9.9,
+      "tables": [
+        "depot_stations",
+        "cryo_tanks",
+        "cryo_cooling_loops",
+        "propellant_transfers",
+        "telemetry_snaps"
+      ],
+      "vertical": "aerospace",
+      "archetype_id": "A",
+      "archetype_name": "Archetype A: Dense Operational Console",
+      "archetype_description": "Persistent utility rail, simulated operational triage queue, and slide-out inspection drawer.",
+      "design_benchmark": "NASA Mission Control & Palantir Foundry Console",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/orbital-cryo-depot-scada-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "flagship_license_range": [
+        1500,
+        3500
+      ],
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "full_asset_buyout_range": [
+        18000,
+        35000
+      ],
+      "strategic_acquisition_range": [
+        35000,
+        75000
+      ],
+      "truth_label": "Interactive Prototype (Simulated Data Only) — Awaiting Flagship Qualification Audit",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE — TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE."
     }
   ],
   "vertical_slices": {
-    "medical": {
-      "name": "Medical & VIP Aesthetics Vault",
-      "description": "Clinical booking, patient intake, medspas, salon grooming & olfactory OS",
-      "apa_valuation_range": "$35,000 – $55,000",
-      "target_asset_count": 50,
-      "current_asset_count": 11
-    },
-    "automotive": {
-      "name": "Automotive & Mobility Vault",
-      "description": "Dyno testing, tuning dispatch, luxury fleet rentals & workshop OS",
-      "apa_valuation_range": "$28,000 – $45,000",
-      "target_asset_count": 40,
-      "current_asset_count": 5
-    },
     "hospitality": {
       "name": "Luxury Hospitality & Dining Vault",
       "description": "Bespoke counters, omakase, jazz bistros, supper clubs, estates & vineyards OS",
       "apa_valuation_range": "$42,000 – $65,000",
       "target_asset_count": 60,
-      "current_asset_count": 19
+      "current_asset_count": 23
     },
     "wealth": {
       "name": "Private Wealth & Real Estate Vault",
       "description": "Private equity LP portals, estate syndication, family office & luxury listings OS",
       "apa_valuation_range": "$30,000 – $48,000",
       "target_asset_count": 35,
-      "current_asset_count": 15
+      "current_asset_count": 16
+    },
+    "medical": {
+      "name": "Medical & VIP Aesthetics Vault",
+      "description": "Clinical booking, patient intake, medspas, salon grooming & olfactory OS",
+      "apa_valuation_range": "$35,000 – $55,000",
+      "target_asset_count": 50,
+      "current_asset_count": 13
     },
     "creative": {
       "name": "Creative Agency & Studio Vault",
@@ -1834,6 +3182,13 @@
       "apa_valuation_range": "$28,000 – $40,000",
       "target_asset_count": 40,
       "current_asset_count": 12
+    },
+    "automotive": {
+      "name": "Automotive & Mobility Vault",
+      "description": "Dyno testing, tuning dispatch, luxury fleet rentals & workshop OS",
+      "apa_valuation_range": "$28,000 – $45,000",
+      "target_asset_count": 40,
+      "current_asset_count": 6
     },
     "fitness": {
       "name": "Performance Fitness & Athletics Vault",
@@ -1931,5 +3286,70 @@
         "Christie's Provenance"
       ]
     }
+  },
+  "vaults": {
+    "master_agency_vault_85": {
+      "name": "Aura & Grid Master Agency Whitelabel Vault (85 Flagships)",
+      "total_apps": 85,
+      "license_price": 2999,
+      "archive_path": "dist/vaults/master-agency-vault-85.zip",
+      "description": "Complete 85-asset production catalog with turnkey Supabase PostgreSQL schemas, RLS policies, and commercial whitelabel deployment license."
+    },
+    "phase_1_agency_vault_50": {
+      "name": "Phase 1 Agency Whitelabel Vault (50 Flagships)",
+      "total_apps": 50,
+      "license_price": 1999,
+      "archive_path": "dist/vaults/phase-1-agency-vault-50.zip"
+    },
+    "vertical_slices": [
+      {
+        "name": "Luxury Hospitality & Dining Vault",
+        "appsCount": 23,
+        "zipFile": "luxury-hospitality-dining-vault-23.zip",
+        "sizeMb": "1.7"
+      },
+      {
+        "name": "Private Wealth & Real Estate Vault",
+        "appsCount": 16,
+        "zipFile": "private-wealth-real-estate-vault-16.zip",
+        "sizeMb": "1.2"
+      },
+      {
+        "name": "Medical & VIP Aesthetics Vault",
+        "appsCount": 13,
+        "zipFile": "medical-aesthetics-vault-13.zip",
+        "sizeMb": "1.2"
+      },
+      {
+        "name": "Creative Agency & Studio Vault",
+        "appsCount": 12,
+        "zipFile": "creative-agency-studio-vault-12.zip",
+        "sizeMb": "0.9"
+      },
+      {
+        "name": "Automotive & Mobility Vault",
+        "appsCount": 6,
+        "zipFile": "automotive-mobility-vault-6.zip",
+        "sizeMb": "0.4"
+      },
+      {
+        "name": "Performance Fitness & Athletics Vault",
+        "appsCount": 5,
+        "zipFile": "performance-fitness-athletics-vault-5.zip",
+        "sizeMb": "2.4"
+      },
+      {
+        "name": "Home Services & Contracting Vault",
+        "appsCount": 5,
+        "zipFile": "home-services-contracting-vault-5.zip",
+        "sizeMb": "0.3"
+      },
+      {
+        "name": "Heavy Commercial Fleet Vault",
+        "appsCount": 5,
+        "zipFile": "heavy-commercial-fleet-vault-5.zip",
+        "sizeMb": "0.4"
+      }
+    ]
   }
 }
