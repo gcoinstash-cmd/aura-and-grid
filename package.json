@@ -4,6 +4,8 @@
   "description": "Storefront Engine for Aura & Grid - Digital architecture and web templates",
   "type": "module",
   "scripts": {
+    "sync:master": "node scripts/sync_master.mjs",
+    "sync:watch": "node scripts/sync_master.mjs --watch",
     "publish:draft": "node scripts/publish-gumroad.mjs --draft",
     "publish:live": "node scripts/publish-gumroad.mjs --live"
   },

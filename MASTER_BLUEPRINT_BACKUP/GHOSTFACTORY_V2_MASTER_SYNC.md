@@ -277,7 +277,7 @@ Every micro-APA must include:
 
 ## CURRENT FLAGSHIP FLEET (TRACK 2 — 24 ELITE MODELS)
 
-These 24 assets are classified under the Flagship $10K+ Track ($14,500 Buyout Anchor / $1,500–$3,500 Commercial License):
+These 24 assets are classified under **Track 2 — Flagship Candidate** ($14,500 Buyout Anchor / $1,500–$3,500 Commercial License):
 
 | Asset | Flagship License | Entry Exclusive Buyout | Full Asset Buyout | Strategic Acquisition |
 |---|---:|---:|---:|---:|
@@ -305,6 +305,43 @@ These 24 assets are classified under the Flagship $10K+ Track ($14,500 Buyout An
 | #107 Superconducting Quantum Processor Cryostat OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
 | #108 Yacht Charter Fleet Ecosystem | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
 | #109 Orbital Habitat ECLSS SCADA OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+
+### TRACK 2 FLAGSHIP CANDIDATE INVENTORY LEDGER (ASSETS 086 TO 109)
+
+- **Classification:** `pricing_track: "Track 2 - Flagship Candidate"`
+- **Product Truth Label:** `Interactive Prototype (Simulated Data Only) — Awaiting Flagship Qualification Audit`
+- **Valuation Parameters:**
+  - Flagship Commercial License: $1,500 – $3,500
+  - Entry Exclusive Buyout Anchor: $14,500 (Floor Range: $10,000 – $18,000)
+  - Full Asset Buyout: $18,000 – $35,000
+  - Strategic Acquisition: $35,000 – $75,000+
+
+#### Master Ledger Highlight: Asset 109
+- **Asset ID:** `Asset_109`
+- **Product Name:** Orbital Habitat ECLSS SCADA OS
+- **Category:** Orbital Habitat ECLSS SCADA OS Console
+- **Vertical:** Aerospace / Deep Tech SCADA (Closed-Loop Life Support)
+- **Pricing Track:** `Track 2 - Flagship Candidate`
+- **Status Badge:** `Track 2 Flagship Candidate`
+- **Product Truth Label:** `Interactive Prototype (Simulated Data Only) — Awaiting Flagship Qualification Audit`
+- **Commercial Flagship License:** $1,500 – $3,500
+- **Entry Exclusive Buyout Anchor:** $14,500 (Range: $10,000 – $18,000)
+- **Full Asset Buyout Range:** $18,000 – $35,000
+- **Strategic Acquisition Range:** $35,000 – $75,000+
+- **Demo Preview URL:** `https://orbital-habitat-closed-loop-os.onrender.com`
+- **Admin Dashboard URL:** `https://orbital-habitat-closed-loop-os.onrender.com/admin`
+- **Admin Passcode:** `orbital2026`
+- **Audit Score:** 9.8 / 10.0 (Mythic Candidate Tier)
+- **Database Schema Tables:** `sabatier_reactors`, `oxygen_generation_assemblies`, `co2_scrubbers`, `water_recovery_loops`
+- **Qualification Gate Audit Status:**
+  - [x] Specific high-stakes B2B workflow (Closed-loop Sabatier & electrolysis mass balance)
+  - [x] Distinct visual identity & dark SCADA benchmark
+  - [x] 8–15 interactive screens / sub-panels (Gas loop, water loop, alarm triage, diagnostics)
+  - [x] Domain physics & stoichiometric calculation engine
+  - [x] Complete operator journey (Triage → Diagnostics → Override → Log)
+  - [x] Realistic simulated terminology & live mock telemetry
+  - [x] Walkthrough concept brief & GitHub source blueprint
+  - [x] Mandatory Product Truth disclosure (Simulated sample data; not flight-certified)
 
 ## OFFER DESIGN RULES
 
