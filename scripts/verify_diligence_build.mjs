@@ -65,12 +65,25 @@ assert(truthComplianceMatches === 110, `site/index.html contains exact 110 Truth
 const regulatedDisclaimerMatches = (showroomHtml.match(/NOT CERTIFIED FOR CLINICAL\/LEGAL\/FINANCIAL USE/g) || []).length;
 assert(regulatedDisclaimerMatches === 48, `site/index.html contains exact 48 Regulated Sector disclaimers (Actual: ${regulatedDisclaimerMatches})`);
 
-// 4. Validate cache-busting version parameter v=9.6-diligence
-assert(showroomHtml.includes('v=9.6-diligence'), 'site/index.html contains cache-busting version parameter v=9.6-diligence');
+// 4. Validate Best For Buyer Qualification Targeting
+const manifestBestForMatches = (manifest.products || []).filter(p => p.best_for && p.best_for.startsWith('Best for:')).length;
+assert(manifestBestForMatches === 110, `CATALOG_MANIFEST.json contains 110 valid "best_for" target strings (Actual: ${manifestBestForMatches})`);
+
+const showroomBestForMatches = (showroomHtml.match(/Best For:/g) || []).length;
+assert(showroomBestForMatches >= 110, `site/index.html contains >= 110 Best For qualification occurrences (Actual: ${showroomBestForMatches})`);
 
 const consoleDistHtmlPath = path.join(rootDir, 'tools', 'ghost-factory-console', 'dist', 'index.html');
 assert(fs.existsSync(consoleDistHtmlPath), 'tools/ghost-factory-console/dist/index.html build artifact exists');
 const consoleDistHtml = fs.readFileSync(consoleDistHtmlPath, 'utf8');
+const consoleBestForMatches = (consoleDistHtml.match(/Best For:/g) || []).length;
+assert(consoleBestForMatches === 110, `tools/ghost-factory-console/dist/index.html contains exact 110 Best For occurrences (Actual: ${consoleBestForMatches})`);
+
+// 5. Validate Truthful Proof & Zero Prohibited Claims
+assert(!showroomHtml.includes('100% Production Ready'), 'site/index.html has no unverified "100% Production Ready" claim');
+assert(!showroomHtml.includes('WCAG AA Certified'), 'site/index.html has no unverified "WCAG AA Certified" claim');
+
+// 6. Validate cache-busting version parameter v=9.6-diligence
+assert(showroomHtml.includes('v=9.6-diligence'), 'site/index.html contains cache-busting version parameter v=9.6-diligence');
 assert(consoleDistHtml.includes('v=9.6-diligence'), 'tools/ghost-factory-console/dist/index.html contains cache-busting version parameter v=9.6-diligence');
 
 console.log('\n-------------------------------------------------------');

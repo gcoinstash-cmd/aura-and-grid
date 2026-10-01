@@ -139,6 +139,7 @@ manifest.products.forEach(p => {
     status_badge: p.status_badge || 'Active Checkout',
     commercial_checkout_url: p.commercial_checkout_url || 'https://auraandgrid.gumroad.com/l/agency-whitelabel-vault',
     cover_image: coverRelPath,
+    best_for: p.best_for || '',
     tables: p.tables || ['profiles', 'audit_logs', 'orders'],
     archetype_name: p.archetype_name ? p.archetype_name.split(':')[1]?.trim() || p.archetype_name : 'Dense Operational Console',
     design_benchmark: p.design_benchmark || 'Industry Standard Bespoke UI'
@@ -164,6 +165,7 @@ const renderedCardsHtml = publicProducts.map(p => {
            data-benchmark="${escapeHtml(p.design_benchmark)}"
            data-archetype="${escapeHtml(p.archetype_name)}"
            data-tables="${escapeHtml(p.tables ? p.tables.join(', ') : '')}"
+           data-bestfor="${escapeHtml(p.best_for || '')}"
            data-preview="${escapeHtml(p.preview_url)}"
            data-checkout="${escapeHtml(p.commercial_checkout_url)}"
            data-active="${p.checkout_active ? '1' : '0'}">
@@ -192,6 +194,12 @@ const renderedCardsHtml = publicProducts.map(p => {
             </div>
 
             <p class="text-xs text-neutral-400 line-clamp-2 mb-3 leading-relaxed">${escapeHtml(p.category)}</p>
+
+            <!-- Buyer Qualification Row: Best For (Directly above deliverables & compliance) -->
+            <div class="mb-3 px-3 py-2 rounded-lg bg-black/60 border border-white/10 text-xs font-mono flex items-start gap-1.5">
+              <span class="text-gold font-bold uppercase tracking-wider shrink-0 text-[10px]">Best For:</span>
+              <span class="text-neutral-200 text-[11px] leading-snug">${escapeHtml(p.best_for ? p.best_for.replace(/^Best for:\s*/i, '') : 'Commercial agency client adaptation')}</span>
+            </div>
 
             <!-- Expandable Compliance Details Drawer -->
             <details class="mt-3 pt-2 border-t border-white/5 group">
@@ -228,7 +236,7 @@ const showroomHtml = `<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aura & Grid — The Institutional Software Foundry for Modern Agencies</title>
-  <meta name="description" content="A curated fleet of 110 production-ready, specialized operating system blueprints engineered on React 19, Tailwind CSS, and Supabase PostgreSQL with active Row Level Security.">
+  <meta name="description" content="A curated fleet of 110 deployable commercial web operating system blueprints engineered on React 19, Tailwind CSS, and Supabase PostgreSQL with active Row Level Security.">
   <meta name="version" content="9.6-diligence">
   <meta name="telemetry:diligence" content="v=9.6-diligence">
   <link rel="canonical" href="https://auraandgrid.com/?v=9.6-diligence">
@@ -330,7 +338,7 @@ const showroomHtml = `<!DOCTYPE html>
       </h1>
 
       <p class="max-w-3xl mx-auto text-lg sm:text-xl text-neutral-400 font-normal leading-relaxed mb-10">
-        Skip 6 to 8 weeks of custom developer payroll. Deploy production-grade, single-tenant web operating systems for high-ticket clients with turnkey Supabase PostgreSQL schemas, active Row Level Security, and zero recurring platform royalties.
+        Skip 6 to 8 weeks of custom developer payroll. Deploy turnkey single-tenant web operating system blueprints for high-ticket clients with Supabase PostgreSQL schemas, active Row Level Security patterns, and zero recurring platform royalties.
       </p>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
@@ -349,12 +357,12 @@ const showroomHtml = `<!DOCTYPE html>
         <div class="p-4 rounded-lg bg-panel hairline-border">
           <div class="text-xs uppercase text-neutral-500 mb-1">Fleet Inventory</div>
           <div class="text-xl font-bold text-white">110 Blueprints</div>
-          <div class="text-[11px] text-emerald mt-1">● 100% Production Ready</div>
+          <div class="text-[11px] text-emerald mt-1">● 110 Verified Blueprints</div>
         </div>
         <div class="p-4 rounded-lg bg-panel hairline-border">
-          <div class="text-xs uppercase text-neutral-500 mb-1">Accessibility Floor</div>
-          <div class="text-xl font-bold text-white">WCAG AA Certified</div>
-          <div class="text-[11px] text-neutral-400 mt-1">4.5:1 Contrast Floor</div>
+          <div class="text-xs uppercase text-neutral-500 mb-1">Architecture Stack</div>
+          <div class="text-xl font-bold text-white">React 19 + Vite</div>
+          <div class="text-[11px] text-neutral-400 mt-1">Modular Component Tree</div>
         </div>
         <div class="p-4 rounded-lg bg-panel hairline-border">
           <div class="text-xs uppercase text-neutral-500 mb-1">Database Engine</div>
@@ -380,7 +388,7 @@ const showroomHtml = `<!DOCTYPE html>
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div class="lg:col-span-7">
             <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-gold/15 border border-gold/30 text-gold text-xs font-mono uppercase tracking-widest mb-6">
-              <span>Limited to 10 Agency Partners</span>
+              <span>Commercial Agency Whitelabel Pack</span>
             </div>
             
             <h2 class="text-3xl sm:text-5xl font-serif font-bold text-white mb-6">
@@ -444,7 +452,7 @@ const showroomHtml = `<!DOCTYPE html>
       <div>
         <div class="text-xs font-mono uppercase tracking-widest text-gold mb-2">Production Catalog</div>
         <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white">The Verified Fleet Index</h2>
-        <p class="text-neutral-400 text-sm mt-2">Filter and inspect 110 production-ready operating system blueprints across 8 specialized industry sectors.</p>
+        <p class="text-neutral-400 text-sm mt-2">Filter and inspect 110 deployable commercial web operating system blueprints across specialized industry sectors.</p>
       </div>
 
       <!-- Search Input -->
@@ -595,6 +603,7 @@ ${renderedCardsHtml}
       <div class="space-y-3 text-xs font-mono mb-8 bg-obsidian p-4 rounded-lg hairline-border">
         <div class="flex justify-between"><span class="text-neutral-500">Design Benchmark:</span> <span class="text-white" id="modalBenchmark">Benchmark</span></div>
         <div class="flex justify-between"><span class="text-neutral-500">UI Archetype:</span> <span class="text-white" id="modalArchetype">Archetype</span></div>
+        <div class="flex justify-between"><span class="text-neutral-500">Best For:</span> <span class="text-gold font-medium text-right ml-2" id="modalBestFor">Target</span></div>
         <div class="flex justify-between"><span class="text-neutral-500">Database Engine:</span> <span class="text-emerald">Supabase PostgreSQL + RLS</span></div>
         <div class="flex justify-between"><span class="text-neutral-500">Relational Tables:</span> <span class="text-gold" id="modalTables">Tables</span></div>
       </div>
@@ -607,7 +616,7 @@ ${renderedCardsHtml}
 
       <div class="flex gap-3">
         <a href="#" id="modalLiveDemo" target="_blank" class="flex-1 py-3 rounded-lg bg-panel hairline-border hover:border-gold/50 text-white font-medium text-xs text-center uppercase tracking-wider transition-all">Launch Live Demo ↗</a>
-        <a href="#" id="modalGumroad" target="_blank" class="flex-1 py-3 rounded-lg bg-gold hover:bg-[#b0936b] text-black font-bold text-xs text-center uppercase tracking-wider transition-all">License ($150) ➔</a>
+        <a href="#" id="modalGumroad" target="_blank" class="flex-1 py-3 rounded-lg bg-gold hover:bg-[#b0936b] text-black font-bold text-xs text-center uppercase tracking-wider transition-all">License Blueprint ($199) ➔</a>
       </div>
     </div>
   </div>
@@ -674,13 +683,14 @@ ${renderedCardsHtml}
       document.getElementById('modalCategory').innerText = card.getAttribute('data-category') || '';
       document.getElementById('modalBenchmark').innerText = card.getAttribute('data-benchmark') || '';
       document.getElementById('modalArchetype').innerText = card.getAttribute('data-archetype') || '';
+      document.getElementById('modalBestFor').innerText = card.getAttribute('data-bestfor') ? card.getAttribute('data-bestfor').replace(/^Best for:\s*/i, '') : 'Commercial agency client adaptation';
       document.getElementById('modalTables').innerText = card.getAttribute('data-tables') || '';
       const discEl = card.querySelector('details div');
       document.getElementById('modalDisclaimer').innerText = discEl ? discEl.innerText.trim() : '';
       document.getElementById('modalLiveDemo').href = card.getAttribute('data-preview') || '#';
       document.getElementById('modalGumroad').href = card.getAttribute('data-checkout') || '#';
       const isActive = card.getAttribute('data-active') === '1';
-      document.getElementById('modalGumroad').innerText = isActive ? 'License Blueprint ($150) ➔' : 'Acquire in Agency Vault ($1,499) ➔';
+      document.getElementById('modalGumroad').innerText = isActive ? 'License Blueprint ($199) ➔' : 'Acquire in Agency Vault ($1,499) ➔';
       document.getElementById('specModal').classList.remove('hidden');
     }
 
