@@ -17,3 +17,6 @@ scratch/
 .tmp.driveupload/
 Ghost_Factory_Staging/
 ghost-factory-staging
+MASTER_BLUEPRINT_BACKUP/VALUATION_FRAMEWORK_PRIVATE.json
+MASTER_BLUEPRINT_BACKUP/portfolio-metrics.json
+*PRIVATE*.json

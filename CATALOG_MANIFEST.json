@@ -6,34 +6,6 @@
   "standards": "Ghost Factory™ 9.0+ Verified Production Grade (Permanent 5-Archetype Rotation & Curated Design Intelligence)",
   "database_engine": "Supabase PostgreSQL (RLS Enabled)",
   "frontend_stack": "React 19 + Tailwind CSS + Lucide Icons + Vite",
-  "valuation_framework": {
-    "total_products": 85,
-    "agency_whitelabel_vault_per_license": 2999,
-    "retail_shelf_msrp_starter_ui": 6715,
-    "retail_shelf_msrp_full_stack": 16915,
-    "pre_revenue_liquidation_protocol": {
-      "fire_sale_24_72h": {
-        "per_product_min": 250,
-        "per_product_max": 368,
-        "fleet_total_min": 21250,
-        "fleet_total_max": 31280
-      },
-      "quick_close_7_14d": {
-        "per_product_min": 500,
-        "per_product_max": 736,
-        "fleet_total_min": 42500,
-        "fleet_total_max": 62560
-      },
-      "marketplace_listing_30_45d": {
-        "per_product_min": 789,
-        "per_product_max": 1157,
-        "fleet_total_min": 67065,
-        "fleet_total_max": 98345
-      }
-    },
-    "pre_revenue_apa_target_anchor": 59000,
-    "post_traction_apa_cash_floor": 35000
-  },
   "products": [
     {
       "id": 1,
@@ -3268,75 +3240,50 @@
     "hospitality": {
       "name": "Luxury Hospitality & Dining Vault",
       "description": "Bespoke counters, omakase, jazz bistros, supper clubs, estates & vineyards OS",
-      "apa_valuation_range": "$42,000 – $65,000",
       "target_asset_count": 60,
       "current_asset_count": 27
     },
     "wealth": {
       "name": "Private Wealth & Real Estate Vault",
       "description": "Private equity LP portals, estate syndication, family office & luxury listings OS",
-      "apa_valuation_range": "$30,000 – $48,000",
       "target_asset_count": 35,
       "current_asset_count": 13
     },
     "medical": {
       "name": "Medical & VIP Aesthetics Vault",
       "description": "Clinical booking, patient intake, medspas, salon grooming & olfactory OS",
-      "apa_valuation_range": "$35,000 – $55,000",
       "target_asset_count": 50,
       "current_asset_count": 7
     },
     "creative": {
       "name": "Creative Agency & Studio Vault",
       "description": "Motion VFX, architecture atelier, soundstage production & design OS",
-      "apa_valuation_range": "$28,000 – $40,000",
       "target_asset_count": 40,
       "current_asset_count": 17
     },
     "automotive": {
       "name": "Automotive & Mobility Vault",
       "description": "Dyno testing, tuning dispatch, luxury fleet rentals & workshop OS",
-      "apa_valuation_range": "$28,000 – $45,000",
       "target_asset_count": 40,
       "current_asset_count": 6
     },
     "fitness": {
       "name": "Performance Fitness & Athletics Vault",
       "description": "Boutique fight clubs, reformer training & athletic performance OS",
-      "apa_valuation_range": "$25,000 – $38,000",
       "target_asset_count": 35,
       "current_asset_count": 5
     },
     "home_services": {
       "name": "Home Services & Commercial Contracting Vault",
       "description": "Commercial HVAC, drone roofing, hydraulic plumbing, solar EPC permits & switchgear dispatch OS",
-      "apa_valuation_range": "$35,000 – $60,000",
       "target_asset_count": 50,
       "current_asset_count": 5
     },
     "heavy_fleet": {
       "name": "Heavy Commercial Fleet & Logistics Vault",
       "description": "Heavy plant rental, freight brokerage dispatch, private aviation charter, cold storage & crane rigging OS",
-      "apa_valuation_range": "$30,000 – $52,000",
       "target_asset_count": 40,
       "current_asset_count": 5
-    }
-  },
-  "roadmap_horizons": {
-    "immediate_focus": {
-      "target": "500 Apps (Phase 1 to 4)",
-      "timeline": "2026 – Late 2027",
-      "phase_1_archive_clearance": "50 Apps ($2,999 Agency Vault Launch)",
-      "phase_2_century_funnel": "100 Apps ($3,500 VIP Setup + $35k–$50k Micro-APA)",
-      "phase_3_category_dominance": "350 Apps (5-in-1 Niche Bundles + Micro-PE Multiple)",
-      "phase_4_master_buyout": "500 Apps ($125,000–$200,000 Cash Buyout / $1.2M–$2.5M+ Cash Flow)"
-    },
-    "long_term_expansion": {
-      "target": "3,000 to 5,000 Apps (Phase 5 to 7)",
-      "timeline": "2028 – 2031 (3–5 Year Horizon)",
-      "phase_5_multi_channel": "1,500 Apps (Custom Storefront, ThemeForest, B2B Outbound)",
-      "phase_6_saas_franchise": "3,000 Apps ($450k–$900k Pre-Revenue Buyout / $4.5M Exit)",
-      "phase_7_holding_conglomerate": "5,000 Apps ($750k–$1.5M Wholesale Buyout / $8.75M+ Exit)"
     }
   },
   "archetypes": {

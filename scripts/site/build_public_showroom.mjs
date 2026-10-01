@@ -140,6 +140,8 @@ manifest.products.forEach(p => {
     commercial_checkout_url: p.commercial_checkout_url || 'https://auraandgrid.gumroad.com/l/agency-whitelabel-vault',
     cover_image: coverRelPath,
     best_for: p.best_for || '',
+    pricing_track: p.pricing_track,
+    flagship_qualified: p.flagship_qualified,
     tables: p.tables || ['profiles', 'audit_logs', 'orders'],
     archetype_name: p.archetype_name ? p.archetype_name.split(':')[1]?.trim() || p.archetype_name : 'Dense Operational Console',
     design_benchmark: p.design_benchmark || 'Industry Standard Bespoke UI'
@@ -151,6 +153,7 @@ console.log(`📸 Copied ${coversCopied} / ${publicProducts.length} canonical co
 // Pre-render all 110 cards into static DOM
 const renderedCardsHtml = publicProducts.map(p => {
   const isRegulated = isRegulatedSector(p);
+  const isTrack2 = Boolean(p.flagship_qualified) || (p.pricing_track && p.pricing_track.includes('Track 2')) || p.id >= 86;
   const disclaimerText = isRegulated
     ? "TECHNICAL PROTOTYPE ONLY — NOT CERTIFIED FOR CLINICAL/LEGAL/FINANCIAL USE. NOT PRODUCTION OR ADVICE."
     : "TECHNICAL PROTOTYPE ONLY — FOR CONCEPT DEMONSTRATION USE. NOT PRODUCTION OR ADVICE.";
@@ -199,6 +202,49 @@ const renderedCardsHtml = publicProducts.map(p => {
             <div class="mb-3 px-3 py-2 rounded-lg bg-black/60 border border-white/10 text-xs font-mono flex items-start gap-1.5">
               <span class="text-gold font-bold uppercase tracking-wider shrink-0 text-[10px]">Best For:</span>
               <span class="text-neutral-200 text-[11px] leading-snug">${escapeHtml(p.best_for ? p.best_for.replace(/^Best for:\s*/i, '') : 'Commercial agency client adaptation')}</span>
+            </div>
+
+            <!-- Dual-Track Dealership Window Sticker Grid -->
+            <div class="mb-3 p-3 rounded-lg border text-xs font-mono ${isTrack2 ? 'bg-amber-950/20 border-amber-500/40 text-amber-200' : 'bg-emerald-950/20 border-emerald-500/40 text-emerald-200'}">
+              <div class="flex items-center justify-between mb-2">
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider ${isTrack2 ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40' : 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40'}">
+                  ${isTrack2 ? 'Track 2 // Flagship Tier-1' : 'Track 1 // Lean Rapid-Sale'}
+                </span>
+                <span class="text-[10px] text-neutral-400 font-medium">
+                  ${isTrack2 ? 'SCADA / Deep Tech' : 'Turnkey Template'}
+                </span>
+              </div>
+              ${isTrack2 ? `
+              <div class="space-y-1 text-[11px]">
+                <div class="flex justify-between">
+                  <span class="text-neutral-400">Commercial License:</span>
+                  <span class="text-amber-300 font-bold">$1,500 – $3,500 USD</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-neutral-400">Buyout Anchor:</span>
+                  <span class="text-amber-400 font-bold">$14,500 USD</span>
+                </div>
+                <div class="flex justify-between text-[10px] text-neutral-400 border-t border-amber-500/15 pt-1">
+                  <span>Buyout Range:</span>
+                  <span class="text-amber-200/80">$10,000 – $18,000 USD</span>
+                </div>
+              </div>
+              ` : `
+              <div class="space-y-1 text-[11px]">
+                <div class="flex justify-between">
+                  <span class="text-neutral-400">Retail License:</span>
+                  <span class="text-emerald-300 font-bold">$199 USD</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-neutral-400">Multi-Seat Team Pass:</span>
+                  <span class="text-cyan-300 font-bold">$599 USD</span>
+                </div>
+                <div class="flex justify-between text-[10px] text-neutral-400 border-t border-emerald-500/15 pt-1">
+                  <span>Exclusive Buyout Floor:</span>
+                  <span class="text-emerald-300 font-bold">$3,800 – $6,500 ($4,500 Anchor)</span>
+                </div>
+              </div>
+              `}
             </div>
 
             <!-- Expandable Compliance Details Drawer -->
