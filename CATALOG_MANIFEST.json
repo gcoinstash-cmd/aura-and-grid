@@ -3,7 +3,7 @@
   "store": "Aura & Grid",
   "store_url": "https://auraandgrid.gumroad.com",
   "total_flagships": 109,
-  "standards": "Ghost Factory\u2122 9.0+ Verified Production Grade (Permanent 5-Archetype Rotation & Curated Design Intelligence)",
+  "standards": "Ghost Factory™ 9.0+ Verified Production Grade (Permanent 5-Archetype Rotation & Curated Design Intelligence)",
   "database_engine": "Supabase PostgreSQL (RLS Enabled)",
   "frontend_stack": "React 19 + Tailwind CSS + Lucide Icons + Vite",
   "valuation_framework": {
@@ -42,7 +42,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/stride-mb",
       "preview_url": "https://stride-manhattan-beach.onrender.com",
       "admin_url": "https://stride-manhattan-beach.onrender.com/admin",
-      "admin_passcode": "stridemb2026",
       "audit_score": 9.6,
       "tables": [
         "classes",
@@ -68,7 +67,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/the-vault",
       "preview_url": "https://the-vault-studio.onrender.com",
       "admin_url": "https://the-vault-studio.onrender.com/admin",
-      "admin_passcode": "vault2026",
       "audit_score": 9.6,
       "tables": [
         "studios",
@@ -94,7 +92,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/velocity-os",
       "preview_url": "https://velocity-exotic-fleet.onrender.com",
       "admin_url": "https://velocity-exotic-fleet.onrender.com/admin",
-      "admin_passcode": "velocity2026",
       "audit_score": 9.7,
       "tables": [
         "vehicles",
@@ -120,7 +117,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/apex-club-os",
       "preview_url": "https://apex-fight-club.onrender.com",
       "admin_url": "https://apex-fight-club.onrender.com/admin",
-      "admin_passcode": "apex2026",
       "audit_score": 9.8,
       "tables": [
         "roster",
@@ -146,7 +142,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/elevate-capital-os",
       "preview_url": "https://elevate-capital-os.onrender.com",
       "admin_url": "https://elevate-capital-os.onrender.com",
-      "admin_passcode": "elevate2026",
       "audit_score": 9.8,
       "tables": [
         "funds",
@@ -172,7 +167,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/obsidian-lab-os",
       "preview_url": "https://obsidian-slow-bar.onrender.com",
       "admin_url": "https://obsidian-slow-bar.onrender.com",
-      "admin_passcode": "obsidian2026",
       "audit_score": 9.8,
       "tables": [
         "beans",
@@ -198,7 +192,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/the-enclave-os",
       "preview_url": "https://the-enclave-villas.onrender.com",
       "admin_url": "https://the-enclave-villas.onrender.com/admin",
-      "admin_passcode": "enclave2026",
       "audit_score": 9.8,
       "tables": [
         "properties",
@@ -225,7 +218,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/aura-medspa-os",
       "preview_url": "https://aura-medspa-os.onrender.com",
       "admin_url": "https://aura-medspa-os.onrender.com/admin",
-      "admin_passcode": "medspa2026",
       "audit_score": 9.8,
       "tables": [
         "profiles",
@@ -251,7 +243,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/royal-apex-os",
       "preview_url": "https://royal-apex-atelier.onrender.com",
       "admin_url": "https://royal-apex-atelier.onrender.com/admin",
-      "admin_passcode": "royal2026",
       "audit_score": 9.8,
       "tables": [
         "profiles",
@@ -277,7 +268,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/aura-reserve-os",
       "preview_url": "https://aura-reserve-estate.onrender.com",
       "admin_url": "https://aura-reserve-estate.onrender.com/admin",
-      "admin_passcode": "reserve2026",
       "audit_score": 9.8,
       "tables": [
         "patron_profiles",
@@ -303,7 +293,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/monolith-studio-os",
       "preview_url": "https://monolith-studio-os.onrender.com",
       "admin_url": "https://monolith-studio-os.onrender.com/admin",
-      "admin_passcode": "monolith2026",
       "audit_score": 9.8,
       "tables": [
         "architect_clients",
@@ -329,7 +318,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/kinetic-lab-os",
       "preview_url": "https://kinetic-lab-os.onrender.com",
       "admin_url": "https://kinetic-lab-os.onrender.com/admin",
-      "admin_passcode": "kinetic2026",
       "audit_score": 9.8,
       "tables": [
         "athlete_profiles",
@@ -355,7 +343,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/the-velvet-note-os",
       "preview_url": "https://the-velvet-note-os.onrender.com",
       "admin_url": "https://the-velvet-note-os.onrender.com/admin",
-      "admin_passcode": "velvet2026",
       "audit_score": 9.8,
       "tables": [
         "vip_reservations",
@@ -381,7 +368,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/retreat-os",
       "preview_url": "https://retreat-os.onrender.com",
       "admin_url": "https://retreat-os.onrender.com/admin",
-      "admin_passcode": "retreat2026",
       "audit_score": 9.8,
       "tables": [
         "retreat_programs",
@@ -406,7 +392,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/omakase-counter-os",
       "preview_url": "https://omakase-counter-os.onrender.com",
       "admin_url": "https://omakase-counter-os.onrender.com/admin",
-      "admin_passcode": "omakase2026",
       "audit_score": 9.8,
       "tables": [
         "counter_reservations",
@@ -431,7 +416,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/aethel-bespoke-os",
       "preview_url": "https://aethel-bespoke-os.onrender.com",
       "admin_url": "https://aethel-bespoke-os.onrender.com/admin",
-      "admin_passcode": "aethel2026",
       "audit_score": 9.8,
       "tables": [
         "bespoke_commissions",
@@ -456,7 +440,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/aura-apothecary-os",
       "preview_url": "https://aura-apothecary-os.onrender.com",
       "admin_url": "https://aura-apothecary-os.onrender.com/admin",
-      "admin_passcode": "apothecary2026",
       "audit_score": 9.8,
       "tables": [
         "perfume_formulations",
@@ -481,7 +464,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/the-winter-parlor-os",
       "preview_url": "https://the-winter-parlor-os.onrender.com",
       "admin_url": "https://the-winter-parlor-os.onrender.com/admin",
-      "admin_passcode": "parlor2026",
       "audit_score": 9.8,
       "tables": [
         "parlor_reservations",
@@ -506,7 +488,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/motionscale-os",
       "preview_url": "https://motionscale-os.onrender.com",
       "admin_url": "https://motionscale-os.onrender.com/admin",
-      "admin_passcode": "motionscale2026",
       "audit_score": 9.8,
       "tables": [
         "projects",
@@ -532,7 +513,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/aura-supper-club-os",
       "preview_url": "https://aura-supper-club-os.onrender.com",
       "admin_url": "https://aura-supper-club-os.onrender.com/admin",
-      "admin_passcode": "supperclub2026",
       "audit_score": 9.8,
       "tables": [
         "supper_reservations",
@@ -558,7 +538,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/neo-shinjuku-os",
       "preview_url": "https://neo-shinjuku-os.onrender.com",
       "admin_url": "https://neo-shinjuku-os.onrender.com/admin",
-      "admin_passcode": "shinjuku2026",
       "audit_score": 9.8,
       "tables": [
         "izakaya_reservations",
@@ -584,7 +563,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/neon-lotus-os",
       "preview_url": "https://neon-lotus-os.onrender.com",
       "admin_url": "https://neon-lotus-os.onrender.com/admin",
-      "admin_passcode": "lotus2026",
       "audit_score": 9.8,
       "tables": [
         "bistro_reservations",
@@ -610,7 +588,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/apex-tuning-os",
       "preview_url": "https://apex-tuning-os.onrender.com",
       "admin_url": "https://apex-tuning-os.onrender.com",
-      "admin_passcode": "apextuning2026",
       "audit_score": 9.8,
       "tables": [
         "work_orders",
@@ -637,7 +614,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/villa-obsidian-os",
       "preview_url": "https://villa-obsidian-os.onrender.com",
       "admin_url": "https://villa-obsidian-os.onrender.com",
-      "admin_passcode": "villa2026",
       "audit_score": 9.8,
       "tables": [
         "properties",
@@ -664,7 +640,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/afrodigital-motion-os",
       "preview_url": "https://afrodigital-motion-os.onrender.com",
       "admin_url": "https://afrodigital-motion-os.onrender.com",
-      "admin_passcode": "motion2026",
       "audit_score": 9.8,
       "tables": [
         "production_pipelines",
@@ -690,7 +665,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/burger-lab-os",
       "preview_url": "https://gcoinstash-cmd.github.io/burger-lab-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/burger-lab-os/admin/",
-      "admin_passcode": "burger2026",
       "audit_score": 9.8,
       "tables": [
         "menu_items",
@@ -717,7 +691,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/aura-fragrance-os",
       "preview_url": "https://aura-fragrance-os.onrender.com",
       "admin_url": "https://aura-fragrance-os.onrender.com/admin",
-      "admin_passcode": "fragrance2026",
       "audit_score": 9.8,
       "tables": [
         "fragrance_catalog",
@@ -743,7 +716,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/focus-architecture-os",
       "preview_url": "https://focus-architecture-os.onrender.com",
       "admin_url": "https://focus-architecture-os.onrender.com/admin",
-      "admin_passcode": "focus2026",
       "audit_score": 9.8,
       "tables": [
         "architectural_projects",
@@ -769,7 +741,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/the-vineyards-os",
       "preview_url": "https://the-vineyards-os.onrender.com",
       "admin_url": "https://the-vineyards-os.onrender.com/admin",
-      "admin_passcode": "vineyards2026",
       "audit_score": 9.8,
       "tables": [
         "wine_allocations",
@@ -795,7 +766,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/family-legacy-wealth-os",
       "preview_url": "https://family-legacy-wealth-os.onrender.com",
       "admin_url": "https://family-legacy-wealth-os.onrender.com/admin",
-      "admin_passcode": "legacy2026",
       "audit_score": 9.8,
       "tables": [
         "legacy_goals",
@@ -820,7 +790,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/diamond-cuts-os",
       "preview_url": "https://diamond-cuts-os.onrender.com",
       "admin_url": "https://diamond-cuts-os.onrender.com/admin",
-      "admin_passcode": "diamond2026",
       "audit_score": 9.8,
       "tables": [
         "appointments",
@@ -845,7 +814,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/crown-collective-os",
       "preview_url": "https://crown-collective-os.onrender.com",
       "admin_url": "https://crown-collective-os.onrender.com/admin",
-      "admin_passcode": "crown2026",
       "audit_score": 9.8,
       "tables": [
         "appointments",
@@ -871,7 +839,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/commercial-finance-os",
       "preview_url": "https://commercial-finance-os.onrender.com",
       "admin_url": "https://commercial-finance-os.onrender.com/admin",
-      "admin_passcode": "finance2026",
       "audit_score": 9.8,
       "tables": [
         "underwriting_deals",
@@ -896,7 +863,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/high-ticket-studio-os",
       "preview_url": "https://high-ticket-studio-os.onrender.com",
       "admin_url": "https://high-ticket-studio-os.onrender.com/admin",
-      "admin_passcode": "architect2026",
       "audit_score": 9.8,
       "tables": [
         "offer_blueprints",
@@ -921,7 +887,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/bbq-pit-os",
       "preview_url": "https://bbq-pit-os.onrender.com",
       "admin_url": "https://bbq-pit-os.onrender.com/admin",
-      "admin_passcode": "bbq2026",
       "audit_score": 9.8,
       "tables": [
         "smoker_pits",
@@ -940,13 +905,12 @@
     },
     {
       "id": 36,
-      "name": "STUDIO V\u00c9RONIQUE LA",
+      "name": "STUDIO VÉRONIQUE LA",
       "category": "California Warm Modernism, Residential Interior Design & Material Sourcing OS",
       "vertical": "creative",
       "gumroad_url": "https://auraandgrid.gumroad.com/l/studio-veronique-os",
       "preview_url": "https://studio-veronique-os.onrender.com",
       "admin_url": "https://studio-veronique-os.onrender.com/admin",
-      "admin_passcode": "veronique2026",
       "audit_score": 9.8,
       "tables": [
         "design_projects",
@@ -971,7 +935,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/pizza-parlor-os",
       "preview_url": "https://pizza-parlor-os.onrender.com",
       "admin_url": "https://pizza-parlor-os.onrender.com/admin",
-      "admin_passcode": "pizza2026",
       "audit_score": 9.8,
       "tables": [
         "dough_fermentation_logs",
@@ -997,7 +960,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/premium-nightlife-os",
       "preview_url": "https://premium-nightlife-os.onrender.com",
       "admin_url": "https://premium-nightlife-os.onrender.com/admin",
-      "admin_passcode": "nightlife2026",
       "audit_score": 9.8,
       "tables": [
         "vip_tables",
@@ -1023,7 +985,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/zenith-agency-os",
       "preview_url": "https://zenith-agency-os.onrender.com",
       "admin_url": "https://zenith-agency-os.onrender.com/admin",
-      "admin_passcode": "zenith2026",
       "audit_score": 9.8,
       "tables": [
         "client_intake",
@@ -1049,7 +1010,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/street-culture-kitchen-os",
       "preview_url": "https://street-culture-kitchen-os.onrender.com",
       "admin_url": "https://street-culture-kitchen-os.onrender.com/admin",
-      "admin_passcode": "street2026",
       "audit_score": 9.8,
       "tables": [
         "truck_status",
@@ -1075,7 +1035,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/satstacker-os",
       "preview_url": "https://satstacker-os.onrender.com",
       "admin_url": "https://satstacker-os.onrender.com/admin",
-      "admin_passcode": "satstacker2026",
       "audit_score": 9.8,
       "tables": [
         "users",
@@ -1101,7 +1060,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/auto-repair-shop-os",
       "preview_url": "https://auto-repair-shop-os.onrender.com",
       "admin_url": "https://auto-repair-shop-os.onrender.com/admin",
-      "admin_passcode": "autorepair2026",
       "audit_score": 9.8,
       "tables": [
         "service_bookings",
@@ -1127,7 +1085,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/spa-treatment-os",
       "preview_url": "https://spa-treatment-os.onrender.com",
       "admin_url": "https://spa-treatment-os.onrender.com/admin",
-      "admin_passcode": "spatreatment2026",
       "audit_score": 9.8,
       "tables": [
         "reservations",
@@ -1153,7 +1110,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/soul-and-spice-os",
       "preview_url": "https://soul-and-spice-os.onrender.com",
       "admin_url": "https://soul-and-spice-os.onrender.com/admin",
-      "admin_passcode": "soulspice2026",
       "audit_score": 9.8,
       "tables": [
         "catering_orders",
@@ -1178,7 +1134,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/resonance-culinary-os",
       "preview_url": "https://gcoinstash-cmd.github.io/resonance-culinary-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/resonance-culinary-os/admin",
-      "admin_passcode": "resonance2026",
       "audit_score": 9.8,
       "tables": [
         "culinary_chapters",
@@ -1204,7 +1159,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/heritage-and-honey-os",
       "preview_url": "https://heritage-and-honey-os.onrender.com",
       "admin_url": "https://heritage-and-honey-os.onrender.com/admin",
-      "admin_passcode": "heritage2026",
       "audit_score": 9.8,
       "tables": [
         "reservations",
@@ -1229,7 +1183,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/luxury-real-estate-portal-os",
       "preview_url": "https://luxury-real-estate-portal-os.onrender.com",
       "admin_url": "https://luxury-real-estate-portal-os.onrender.com/admin",
-      "admin_passcode": "estate2026",
       "audit_score": 9.8,
       "tables": [
         "properties",
@@ -1255,7 +1208,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/midnight-express-os",
       "preview_url": "https://midnight-express-os.onrender.com",
       "admin_url": "https://midnight-express-os.onrender.com/admin",
-      "admin_passcode": "midnight2026",
       "audit_score": 9.8,
       "tables": [
         "orders",
@@ -1280,7 +1232,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/real-estate-analytics-hub-os",
       "preview_url": "https://real-estate-analytics-hub-os.onrender.com",
       "admin_url": "https://real-estate-analytics-hub-os.onrender.com/admin",
-      "admin_passcode": "analytics2026",
       "audit_score": 9.8,
       "tables": [
         "underwritten_deals",
@@ -1304,7 +1255,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/culinary-workspace-os",
       "preview_url": "https://culinary-workspace-os.onrender.com",
       "admin_url": "https://culinary-workspace-os.onrender.com/admin",
-      "admin_passcode": "culinary2026",
       "audit_score": 9.9,
       "tables": [
         "banquet_bookings",
@@ -1329,7 +1279,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/trendy-taco-truck-os",
       "preview_url": "https://gcoinstash-cmd.github.io/trendy-taco-truck-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/trendy-taco-truck-os/admin/",
-      "admin_passcode": "tacotruck2026",
       "audit_score": 9.9,
       "tables": [
         "truck_location",
@@ -1349,13 +1298,12 @@
     },
     {
       "id": 52,
-      "name": "Y\u016aGEN SENSORY OS",
+      "name": "YŪGEN SENSORY OS",
       "category": "Zen Minimalist Sensory Dining Sanctuary & Omakase Booking OS",
       "vertical": "hospitality",
       "gumroad_url": "https://auraandgrid.gumroad.com/l/yugen-sensory-os",
       "preview_url": "https://gcoinstash-cmd.github.io/yugen-sensory-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/yugen-sensory-os/admin/",
-      "admin_passcode": "yugen2026",
       "audit_score": 9.9,
       "tables": [
         "reservations",
@@ -1380,7 +1328,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/little-roots-wellness-os",
       "preview_url": "https://gcoinstash-cmd.github.io/little-roots-wellness-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/little-roots-wellness-os/admin/",
-      "admin_passcode": "roots2026",
       "audit_score": 9.9,
       "tables": [
         "admissions_waitlist",
@@ -1405,7 +1352,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/hospitality-roi-engine-os",
       "preview_url": "https://gcoinstash-cmd.github.io/hospitality-roi-engine-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/hospitality-roi-engine-os/admin/",
-      "admin_passcode": "roi2026",
       "audit_score": 9.9,
       "tables": [
         "proforma_projects",
@@ -1430,7 +1376,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/zen-capital-os",
       "preview_url": "https://gcoinstash-cmd.github.io/zen-capital-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/zen-capital-os/admin/",
-      "admin_passcode": "zencapital2026",
       "audit_score": 9.9,
       "tables": [
         "portfolio_holdings",
@@ -1455,7 +1400,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/hvac-dispatch-os",
       "preview_url": "https://gcoinstash-cmd.github.io/hvac-dispatch-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/hvac-dispatch-os/admin/",
-      "admin_passcode": "hvac2026",
       "audit_score": 9.8,
       "tables": [
         "hvac_work_orders",
@@ -1481,7 +1425,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/roofing-estimator-os",
       "preview_url": "https://gcoinstash-cmd.github.io/roofing-estimator-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/roofing-estimator-os/admin/",
-      "admin_passcode": "roofing2026",
       "audit_score": 9.8,
       "tables": [
         "roofing_estimates",
@@ -1507,7 +1450,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/plumbing-ops-os",
       "preview_url": "https://gcoinstash-cmd.github.io/plumbing-ops-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/plumbing-ops-os/admin/",
-      "admin_passcode": "plumbing2026",
       "audit_score": 9.8,
       "tables": [
         "emergency_tickets",
@@ -1533,7 +1475,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/solar-install-os",
       "preview_url": "https://gcoinstash-cmd.github.io/solar-install-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/solar-install-os/admin/",
-      "admin_passcode": "solar2026",
       "audit_score": 9.8,
       "tables": [
         "solar_projects",
@@ -1559,7 +1500,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/electrical-dispatch-os",
       "preview_url": "https://gcoinstash-cmd.github.io/electrical-dispatch-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/electrical-dispatch-os/admin/",
-      "admin_passcode": "electric2026",
       "audit_score": 9.8,
       "tables": [
         "electrical_work_orders",
@@ -1585,7 +1525,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/boutique-dental-os",
       "preview_url": "https://gcoinstash-cmd.github.io/boutique-dental-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/boutique-dental-os/admin/",
-      "admin_passcode": "dental2026",
       "audit_score": 9.8,
       "tables": [
         "dental_patients",
@@ -1611,7 +1550,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/veterinary-hospital-os",
       "preview_url": "https://gcoinstash-cmd.github.io/veterinary-hospital-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/veterinary-hospital-os/admin/",
-      "admin_passcode": "vet2026",
       "audit_score": 9.8,
       "tables": [
         "pet_patients",
@@ -1637,7 +1575,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/functional-medicine-os",
       "preview_url": "https://gcoinstash-cmd.github.io/functional-medicine-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/functional-medicine-os/admin/",
-      "admin_passcode": "functional2026",
       "audit_score": 9.8,
       "tables": [
         "patients",
@@ -1663,7 +1600,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/physical-therapy-os",
       "preview_url": "https://gcoinstash-cmd.github.io/physical-therapy-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/physical-therapy-os/admin/",
-      "admin_passcode": "pt2026",
       "audit_score": 9.8,
       "tables": [
         "pt_patients",
@@ -1689,7 +1625,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/recovery-spa-os",
       "preview_url": "https://gcoinstash-cmd.github.io/recovery-spa-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/recovery-spa-os/admin/",
-      "admin_passcode": "recovery2026",
       "audit_score": 9.8,
       "tables": [
         "recovery_members",
@@ -1715,7 +1650,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/boutique-law-os",
       "preview_url": "https://gcoinstash-cmd.github.io/boutique-law-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/boutique-law-os/admin/",
-      "admin_passcode": "law2026",
       "audit_score": 9.8,
       "tables": [
         "legal_matters",
@@ -1741,7 +1675,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/ma-advisory-os",
       "preview_url": "https://gcoinstash-cmd.github.io/ma-advisory-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/ma-advisory-os/admin/",
-      "admin_passcode": "ma2026",
       "audit_score": 9.8,
       "tables": [
         "deal_mandates",
@@ -1766,7 +1699,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/executive-search-os",
       "preview_url": "https://gcoinstash-cmd.github.io/executive-search-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/executive-search-os/admin/",
-      "admin_passcode": "search2026",
       "audit_score": 9.8,
       "tables": [
         "retained_mandates",
@@ -1791,7 +1723,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/wealth-family-office-os",
       "preview_url": "https://gcoinstash-cmd.github.io/wealth-family-office-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/wealth-family-office-os/admin/",
-      "admin_passcode": "familyoffice2026",
       "audit_score": 9.8,
       "tables": [
         "direct_syndicates",
@@ -1816,7 +1747,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/litigation-ops-os",
       "preview_url": "https://gcoinstash-cmd.github.io/litigation-ops-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/litigation-ops-os/admin/",
-      "admin_passcode": "litigation2026",
       "audit_score": 9.8,
       "tables": [
         "litigation_dockets",
@@ -1841,7 +1771,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/heavy-plant-rental-os",
       "preview_url": "https://gcoinstash-cmd.github.io/heavy-plant-rental-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/heavy-plant-rental-os/admin/",
-      "admin_passcode": "plant2026",
       "audit_score": 9.8,
       "tables": [
         "machinery_fleet",
@@ -1867,7 +1796,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/freight-broker-dispatch-os",
       "preview_url": "https://gcoinstash-cmd.github.io/freight-broker-dispatch-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/freight-broker-dispatch-os/admin/",
-      "admin_passcode": "freight2026",
       "audit_score": 9.8,
       "tables": [
         "load_board",
@@ -1893,7 +1821,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/aviation-charter-os",
       "preview_url": "https://gcoinstash-cmd.github.io/aviation-charter-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/aviation-charter-os/admin/",
-      "admin_passcode": "aviation2026",
       "audit_score": 9.8,
       "tables": [
         "aircraft_fleet",
@@ -1919,7 +1846,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/cold-chain-storage-os",
       "preview_url": "https://gcoinstash-cmd.github.io/cold-chain-storage-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/cold-chain-storage-os/admin/",
-      "admin_passcode": "coldchain2026",
       "audit_score": 9.8,
       "tables": [
         "cold_storage_zones",
@@ -1945,7 +1871,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/crane-rigging-ops-os",
       "preview_url": "https://gcoinstash-cmd.github.io/crane-rigging-ops-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/crane-rigging-ops-os/admin/",
-      "admin_passcode": "crane2026",
       "audit_score": 9.8,
       "tables": [
         "crane_inventory",
@@ -1971,7 +1896,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/ceramic-shield-ppf-os",
       "preview_url": "https://gcoinstash-cmd.github.io/ceramic-shield-ppf-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/ceramic-shield-ppf-os/admin/",
-      "admin_passcode": "ceramic2026",
       "audit_score": 9.8,
       "tables": [
         "paint_inspections",
@@ -1997,7 +1921,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/mobile-detail-dispatch-os",
       "preview_url": "https://gcoinstash-cmd.github.io/mobile-detail-dispatch-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/mobile-detail-dispatch-os/admin/",
-      "admin_passcode": "detail2026",
       "audit_score": 9.8,
       "tables": [
         "mobile_vans",
@@ -2023,7 +1946,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/cinegrip-equipment-os",
       "preview_url": "https://gcoinstash-cmd.github.io/cinegrip-equipment-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/cinegrip-equipment-os/admin/",
-      "admin_passcode": "cinegrip2026",
       "audit_score": 9.8,
       "tables": [
         "gear_inventory",
@@ -2049,7 +1971,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/custom-ink-studio-os",
       "preview_url": "https://gcoinstash-cmd.github.io/custom-ink-studio-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/custom-ink-studio-os/admin/",
-      "admin_passcode": "customink2026",
       "audit_score": 9.8,
       "tables": [
         "artist_roster",
@@ -2075,7 +1996,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/combat-recovery-lab-os",
       "preview_url": "https://gcoinstash-cmd.github.io/combat-recovery-lab-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/combat-recovery-lab-os/admin/",
-      "admin_passcode": "recovery2026",
       "audit_score": 9.8,
       "tables": [
         "recovery_modalities",
@@ -2101,7 +2021,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/fine-dining-matrix-os",
       "preview_url": "https://gcoinstash-cmd.github.io/fine-dining-matrix-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/fine-dining-matrix-os/admin",
-      "admin_passcode": "finedining2026",
       "audit_score": 9.8,
       "tables": [
         "dining_tables",
@@ -2127,7 +2046,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/medspa-clinic-os",
       "preview_url": "https://gcoinstash-cmd.github.io/medspa-clinic-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/medspa-clinic-os/admin",
-      "admin_passcode": "medspaclinic2026",
       "audit_score": 9.8,
       "tables": [
         "patients",
@@ -2153,7 +2071,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/superyacht-charter-os",
       "preview_url": "https://gcoinstash-cmd.github.io/superyacht-charter-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/superyacht-charter-os/admin",
-      "admin_passcode": "yacht2026",
       "audit_score": 9.8,
       "tables": [
         "yachts",
@@ -2179,7 +2096,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/luxury-horology-vault-os",
       "preview_url": "https://gcoinstash-cmd.github.io/luxury-horology-vault-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/luxury-horology-vault-os/admin",
-      "admin_passcode": "horology2026",
       "audit_score": 9.8,
       "tables": [
         "timepieces",
@@ -2205,7 +2121,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/private-villa-estate-os",
       "preview_url": "https://gcoinstash-cmd.github.io/private-villa-estate-os/",
       "admin_url": "https://gcoinstash-cmd.github.io/private-villa-estate-os/admin",
-      "admin_passcode": "villaestate2026",
       "audit_score": 9.8,
       "tables": [
         "estates",
@@ -2230,7 +2145,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/aegis-swarm-os",
       "preview_url": "https://aegis-swarm-os.onrender.com",
       "admin_url": "https://aegis-swarm-os.onrender.com/admin",
-      "admin_passcode": "aegis2026",
       "audit_score": 9.8,
       "tables": [
         "defense_perimeters",
@@ -2248,7 +2162,7 @@
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/aegis-swarm-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
-      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "pricing_track": "Track 2 — Flagship Tier-1 (,500 Anchor)",
       "flagship_qualified": true,
       "flagship_license_msrp": 1500,
       "exclusive_buyout_anchor": 14500,
@@ -2264,7 +2178,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/autonomous-mining-haulage-fleet-dispatch-os",
       "preview_url": "https://autonomous-mining-haulage-fleet-dispatch-os.onrender.com",
       "admin_url": "https://autonomous-mining-haulage-fleet-dispatch-os.onrender.com/admin",
-      "admin_passcode": "autonomous2026",
       "audit_score": 9.8,
       "tables": [
         "IF"
@@ -2279,7 +2192,7 @@
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/autonomous-mining-haulage-fleet-dispatch-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
-      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "pricing_track": "Track 2 — Flagship Tier-1 (,500 Anchor)",
       "flagship_qualified": true,
       "flagship_license_msrp": 1500,
       "exclusive_buyout_anchor": 14500,
@@ -2295,7 +2208,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/autonomous-subsea-mining-crawler-telemetry-os",
       "preview_url": "https://autonomous-subsea-mining-crawler-telemetry-os.onrender.com",
       "admin_url": "https://autonomous-subsea-mining-crawler-telemetry-os.onrender.com/admin",
-      "admin_passcode": "autonomous2026",
       "audit_score": 9.8,
       "tables": [
         "IF"
@@ -2310,7 +2222,7 @@
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/autonomous-subsea-mining-crawler-telemetry-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
-      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "pricing_track": "Track 2 — Flagship Tier-1 (,500 Anchor)",
       "flagship_qualified": true,
       "flagship_license_msrp": 1500,
       "exclusive_buyout_anchor": 14500,
@@ -2326,7 +2238,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/aviation-fbo-dispatch-os",
       "preview_url": "https://aviation-fbo-dispatch-os.onrender.com",
       "admin_url": "https://aviation-fbo-dispatch-os.onrender.com/admin",
-      "admin_passcode": "aviation2026",
       "audit_score": 9.8,
       "tables": [
         "IF"
@@ -2341,7 +2252,7 @@
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/aviation-fbo-dispatch-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
-      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "pricing_track": "Track 2 — Flagship Tier-1 (,500 Anchor)",
       "flagship_qualified": true,
       "flagship_license_msrp": 1500,
       "exclusive_buyout_anchor": 14500,
@@ -2357,7 +2268,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/boutique-winery-production-os",
       "preview_url": "https://boutique-winery-production-os.onrender.com",
       "admin_url": "https://boutique-winery-production-os.onrender.com/admin",
-      "admin_passcode": "boutique2026",
       "audit_score": 9.8,
       "tables": [
         "IF"
@@ -2372,7 +2282,7 @@
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/boutique-winery-production-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
-      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "pricing_track": "Track 2 — Flagship Tier-1 (,500 Anchor)",
       "flagship_qualified": true,
       "flagship_license_msrp": 1500,
       "exclusive_buyout_anchor": 14500,
@@ -2388,7 +2298,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/clinical-trial-operations-os",
       "preview_url": "https://clinical-trial-operations-os.onrender.com",
       "admin_url": "https://clinical-trial-operations-os.onrender.com/admin",
-      "admin_passcode": "clinical2026",
       "audit_score": 9.8,
       "tables": [
         "IF"
@@ -2403,7 +2312,7 @@
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/clinical-trial-operations-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
-      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "pricing_track": "Track 2 — Flagship Tier-1 (,500 Anchor)",
       "flagship_qualified": true,
       "flagship_license_msrp": 1500,
       "exclusive_buyout_anchor": 14500,
@@ -2419,7 +2328,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/cold-storage-logistics-os",
       "preview_url": "https://cold-storage-logistics-os.onrender.com",
       "admin_url": "https://cold-storage-logistics-os.onrender.com/admin",
-      "admin_passcode": "cold2026",
       "audit_score": 9.8,
       "tables": [
         "IF"
@@ -2434,7 +2342,7 @@
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/cold-storage-logistics-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
-      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "pricing_track": "Track 2 — Flagship Tier-1 (,500 Anchor)",
       "flagship_qualified": true,
       "flagship_license_msrp": 1500,
       "exclusive_buyout_anchor": 14500,
@@ -2450,7 +2358,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/commercial-supersonic-airliner-engine-inverted-aerospike-telemetry-os",
       "preview_url": "https://commercial-supersonic-airliner-engine-inverted-aerospike-telemetry-os.onrender.com",
       "admin_url": "https://commercial-supersonic-airliner-engine-inverted-aerospike-telemetry-os.onrender.com/admin",
-      "admin_passcode": "commercial2026",
       "audit_score": 9.8,
       "tables": [
         "telemetry",
@@ -2468,7 +2375,7 @@
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/commercial-supersonic-airliner-engine-inverted-aerospike-telemetry-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
-      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "pricing_track": "Track 2 — Flagship Tier-1 (,500 Anchor)",
       "flagship_qualified": true,
       "flagship_license_msrp": 1500,
       "exclusive_buyout_anchor": 14500,
@@ -2484,7 +2391,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/commercial-tokamak-fusion-plasma-scada-os",
       "preview_url": "https://commercial-tokamak-fusion-plasma-scada-os.onrender.com",
       "admin_url": "https://commercial-tokamak-fusion-plasma-scada-os.onrender.com/admin",
-      "admin_passcode": "commercial2026",
       "audit_score": 9.8,
       "tables": [
         "fusion_reactors",
@@ -2504,7 +2410,7 @@
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/commercial-tokamak-fusion-plasma-scada-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
-      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "pricing_track": "Track 2 — Flagship Tier-1 (,500 Anchor)",
       "flagship_qualified": true,
       "flagship_license_msrp": 1500,
       "exclusive_buyout_anchor": 14500,
@@ -2520,7 +2426,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/deep-sea-rov-trenching-and-cable-burial-os",
       "preview_url": "https://deep-sea-rov-trenching-and-cable-burial-os.onrender.com",
       "admin_url": "https://deep-sea-rov-trenching-and-cable-burial-os.onrender.com/admin",
-      "admin_passcode": "deep2026",
       "audit_score": 9.8,
       "tables": [
         "IF"
@@ -2535,7 +2440,7 @@
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/deep-sea-rov-trenching-and-cable-burial-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
-      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "pricing_track": "Track 2 — Flagship Tier-1 (,500 Anchor)",
       "flagship_qualified": true,
       "flagship_license_msrp": 1500,
       "exclusive_buyout_anchor": 14500,
@@ -2551,7 +2456,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/geothermal-supercritical-egs-wellhead-scada-os",
       "preview_url": "https://geothermal-supercritical-egs-wellhead-scada-os.onrender.com",
       "admin_url": "https://geothermal-supercritical-egs-wellhead-scada-os.onrender.com/admin",
-      "admin_passcode": "geothermal2026",
       "audit_score": 9.8,
       "tables": [
         "IF"
@@ -2566,7 +2470,7 @@
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/geothermal-supercritical-egs-wellhead-scada-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
-      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "pricing_track": "Track 2 — Flagship Tier-1 (,500 Anchor)",
       "flagship_qualified": true,
       "flagship_license_msrp": 1500,
       "exclusive_buyout_anchor": 14500,
@@ -2582,7 +2486,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/hft-colocation-and-microwave-os",
       "preview_url": "https://hft-colocation-and-microwave-os.onrender.com",
       "admin_url": "https://hft-colocation-and-microwave-os.onrender.com/admin",
-      "admin_passcode": "hft2026",
       "audit_score": 9.8,
       "tables": [
         "telemetry",
@@ -2600,7 +2503,7 @@
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/hft-colocation-and-microwave-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
-      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "pricing_track": "Track 2 — Flagship Tier-1 (,500 Anchor)",
       "flagship_qualified": true,
       "flagship_license_msrp": 1500,
       "exclusive_buyout_anchor": 14500,
@@ -2616,7 +2519,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/hypersonic-wind-tunnel-aerodynamics-telemetry-os",
       "preview_url": "https://hypersonic-wind-tunnel-aerodynamics-telemetry-os.onrender.com",
       "admin_url": "https://hypersonic-wind-tunnel-aerodynamics-telemetry-os.onrender.com/admin",
-      "admin_passcode": "hypersonic2026",
       "audit_score": 9.8,
       "tables": [
         "telemetry",
@@ -2634,7 +2536,7 @@
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/hypersonic-wind-tunnel-aerodynamics-telemetry-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
-      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "pricing_track": "Track 2 — Flagship Tier-1 (,500 Anchor)",
       "flagship_qualified": true,
       "flagship_license_msrp": 1500,
       "exclusive_buyout_anchor": 14500,
@@ -2650,7 +2552,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/luxury-auto-concierge-os",
       "preview_url": "https://luxury-auto-concierge-os.onrender.com",
       "admin_url": "https://luxury-auto-concierge-os.onrender.com/admin",
-      "admin_passcode": "luxury2026",
       "audit_score": 9.8,
       "tables": [
         "vault_clients",
@@ -2670,7 +2571,7 @@
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/luxury-auto-concierge-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
-      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "pricing_track": "Track 2 — Flagship Tier-1 (,500 Anchor)",
       "flagship_qualified": true,
       "flagship_license_msrp": 1500,
       "exclusive_buyout_anchor": 14500,
@@ -2686,7 +2587,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/maritime-freight-brokerage-os",
       "preview_url": "https://maritime-freight-brokerage-os.onrender.com",
       "admin_url": "https://maritime-freight-brokerage-os.onrender.com/admin",
-      "admin_passcode": "maritime2026",
       "audit_score": 9.8,
       "tables": [
         "IF"
@@ -2701,7 +2601,7 @@
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/maritime-freight-brokerage-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
-      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "pricing_track": "Track 2 — Flagship Tier-1 (,500 Anchor)",
       "flagship_qualified": true,
       "flagship_license_msrp": 1500,
       "exclusive_buyout_anchor": 14500,
@@ -2717,7 +2617,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/orbital-satellite-laser-isl-optical-terminal-os",
       "preview_url": "https://orbital-satellite-laser-isl-optical-terminal-os.onrender.com",
       "admin_url": "https://orbital-satellite-laser-isl-optical-terminal-os.onrender.com/admin",
-      "admin_passcode": "orbital2026",
       "audit_score": 9.8,
       "tables": [
         "IF"
@@ -2732,7 +2631,7 @@
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/orbital-satellite-laser-isl-optical-terminal-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
-      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "pricing_track": "Track 2 — Flagship Tier-1 (,500 Anchor)",
       "flagship_qualified": true,
       "flagship_license_msrp": 1500,
       "exclusive_buyout_anchor": 14500,
@@ -2748,7 +2647,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/private-credit-syndication-os",
       "preview_url": "https://private-credit-syndication-os.onrender.com",
       "admin_url": "https://private-credit-syndication-os.onrender.com/admin",
-      "admin_passcode": "private2026",
       "audit_score": 9.8,
       "tables": [
         "telemetry",
@@ -2766,7 +2664,7 @@
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/private-credit-syndication-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
-      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "pricing_track": "Track 2 — Flagship Tier-1 (,500 Anchor)",
       "flagship_qualified": true,
       "flagship_license_msrp": 1500,
       "exclusive_buyout_anchor": 14500,
@@ -2782,7 +2680,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/renewable-energy-microgrid-dispatch-os",
       "preview_url": "https://renewable-energy-microgrid-dispatch-os.onrender.com",
       "admin_url": "https://renewable-energy-microgrid-dispatch-os.onrender.com/admin",
-      "admin_passcode": "renewable2026",
       "audit_score": 9.8,
       "tables": [
         "IF"
@@ -2797,7 +2694,7 @@
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/renewable-energy-microgrid-dispatch-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
-      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "pricing_track": "Track 2 — Flagship Tier-1 (,500 Anchor)",
       "flagship_qualified": true,
       "flagship_license_msrp": 1500,
       "exclusive_buyout_anchor": 14500,
@@ -2813,7 +2710,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/semiconductor-fab-cleanroom-scada-os",
       "preview_url": "https://semiconductor-fab-cleanroom-scada-os.onrender.com",
       "admin_url": "https://semiconductor-fab-cleanroom-scada-os.onrender.com/admin",
-      "admin_passcode": "semiconductor2026",
       "audit_score": 9.8,
       "tables": [
         "IF"
@@ -2828,7 +2724,7 @@
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/semiconductor-fab-cleanroom-scada-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
-      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "pricing_track": "Track 2 — Flagship Tier-1 (,500 Anchor)",
       "flagship_qualified": true,
       "flagship_license_msrp": 1500,
       "exclusive_buyout_anchor": 14500,
@@ -2844,7 +2740,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/space-launch-payload-manifest-os",
       "preview_url": "https://space-launch-payload-manifest-os.onrender.com",
       "admin_url": "https://space-launch-payload-manifest-os.onrender.com/admin",
-      "admin_passcode": "space2026",
       "audit_score": 9.8,
       "tables": [
         "launch_missions",
@@ -2862,7 +2757,7 @@
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/space-launch-payload-manifest-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
-      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "pricing_track": "Track 2 — Flagship Tier-1 (,500 Anchor)",
       "flagship_qualified": true,
       "flagship_license_msrp": 1500,
       "exclusive_buyout_anchor": 14500,
@@ -2878,7 +2773,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/subsea-cable-restoration-os",
       "preview_url": "https://subsea-cable-restoration-os.onrender.com",
       "admin_url": "https://subsea-cable-restoration-os.onrender.com/admin",
-      "admin_passcode": "subsea2026",
       "audit_score": 9.8,
       "tables": [
         "IF"
@@ -2893,7 +2787,7 @@
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/subsea-cable-restoration-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
-      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "pricing_track": "Track 2 — Flagship Tier-1 (,500 Anchor)",
       "flagship_qualified": true,
       "flagship_license_msrp": 1500,
       "exclusive_buyout_anchor": 14500,
@@ -2909,7 +2803,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/superconducting-quantum-processor-cryostat-os",
       "preview_url": "https://superconducting-quantum-processor-cryostat-os.onrender.com",
       "admin_url": "https://superconducting-quantum-processor-cryostat-os.onrender.com/admin",
-      "admin_passcode": "superconducting2026",
       "audit_score": 9.8,
       "tables": [
         "IF"
@@ -2924,7 +2817,7 @@
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/superconducting-quantum-processor-cryostat-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
-      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "pricing_track": "Track 2 — Flagship Tier-1 (,500 Anchor)",
       "flagship_qualified": true,
       "flagship_license_msrp": 1500,
       "exclusive_buyout_anchor": 14500,
@@ -2940,7 +2833,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/yacht-charter-fleet-ecosystem",
       "preview_url": "https://yacht-charter-fleet-ecosystem.onrender.com",
       "admin_url": "https://yacht-charter-fleet-ecosystem.onrender.com/admin",
-      "admin_passcode": "yacht2026",
       "audit_score": 9.8,
       "tables": [
         "IF"
@@ -2955,7 +2847,7 @@
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/yacht-charter-fleet-ecosystem",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
-      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "pricing_track": "Track 2 — Flagship Tier-1 (,500 Anchor)",
       "flagship_qualified": true,
       "flagship_license_msrp": 1500,
       "exclusive_buyout_anchor": 14500,
@@ -2971,7 +2863,6 @@
       "gumroad_url": "https://auraandgrid.gumroad.com/l/orbital-habitat-closed-loop-os",
       "preview_url": "https://orbital-habitat-closed-loop-os.onrender.com",
       "admin_url": "https://orbital-habitat-closed-loop-os.onrender.com/admin",
-      "admin_passcode": "orbital2026",
       "audit_score": 9.8,
       "tables": [
         "IF"
@@ -2986,7 +2877,7 @@
       "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/orbital-habitat-closed-loop-os",
       "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
       "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
-      "pricing_track": "Track 2 \u2014 Flagship Tier-1 (,500 Anchor)",
+      "pricing_track": "Track 2 — Flagship Tier-1 (,500 Anchor)",
       "flagship_qualified": true,
       "flagship_license_msrp": 1500,
       "exclusive_buyout_anchor": 14500,
@@ -3000,56 +2891,56 @@
     "hospitality": {
       "name": "Luxury Hospitality & Dining Vault",
       "description": "Bespoke counters, omakase, jazz bistros, supper clubs, estates & vineyards OS",
-      "apa_valuation_range": "$42,000 \u2013 $65,000",
+      "apa_valuation_range": "$42,000 – $65,000",
       "target_asset_count": 60,
       "current_asset_count": 23
     },
     "wealth": {
       "name": "Private Wealth & Real Estate Vault",
       "description": "Private equity LP portals, estate syndication, family office & luxury listings OS",
-      "apa_valuation_range": "$30,000 \u2013 $48,000",
+      "apa_valuation_range": "$30,000 – $48,000",
       "target_asset_count": 35,
       "current_asset_count": 16
     },
     "medical": {
       "name": "Medical & VIP Aesthetics Vault",
       "description": "Clinical booking, patient intake, medspas, salon grooming & olfactory OS",
-      "apa_valuation_range": "$35,000 \u2013 $55,000",
+      "apa_valuation_range": "$35,000 – $55,000",
       "target_asset_count": 50,
       "current_asset_count": 13
     },
     "creative": {
       "name": "Creative Agency & Studio Vault",
       "description": "Motion VFX, architecture atelier, soundstage production & design OS",
-      "apa_valuation_range": "$28,000 \u2013 $40,000",
+      "apa_valuation_range": "$28,000 – $40,000",
       "target_asset_count": 40,
       "current_asset_count": 12
     },
     "automotive": {
       "name": "Automotive & Mobility Vault",
       "description": "Dyno testing, tuning dispatch, luxury fleet rentals & workshop OS",
-      "apa_valuation_range": "$28,000 \u2013 $45,000",
+      "apa_valuation_range": "$28,000 – $45,000",
       "target_asset_count": 40,
       "current_asset_count": 6
     },
     "fitness": {
       "name": "Performance Fitness & Athletics Vault",
       "description": "Boutique fight clubs, reformer training & athletic performance OS",
-      "apa_valuation_range": "$25,000 \u2013 $38,000",
+      "apa_valuation_range": "$25,000 – $38,000",
       "target_asset_count": 35,
       "current_asset_count": 5
     },
     "home_services": {
       "name": "Home Services & Commercial Contracting Vault",
       "description": "Commercial HVAC, drone roofing, hydraulic plumbing, solar EPC permits & switchgear dispatch OS",
-      "apa_valuation_range": "$35,000 \u2013 $60,000",
+      "apa_valuation_range": "$35,000 – $60,000",
       "target_asset_count": 50,
       "current_asset_count": 5
     },
     "heavy_fleet": {
       "name": "Heavy Commercial Fleet & Logistics Vault",
       "description": "Heavy plant rental, freight brokerage dispatch, private aviation charter, cold storage & crane rigging OS",
-      "apa_valuation_range": "$30,000 \u2013 $52,000",
+      "apa_valuation_range": "$30,000 – $52,000",
       "target_asset_count": 40,
       "current_asset_count": 5
     }
@@ -3057,18 +2948,18 @@
   "roadmap_horizons": {
     "immediate_focus": {
       "target": "500 Apps (Phase 1 to 4)",
-      "timeline": "2026 \u2013 Late 2027",
+      "timeline": "2026 – Late 2027",
       "phase_1_archive_clearance": "50 Apps ($2,999 Agency Vault Launch)",
-      "phase_2_century_funnel": "100 Apps ($3,500 VIP Setup + $35k\u2013$50k Micro-APA)",
+      "phase_2_century_funnel": "100 Apps ($3,500 VIP Setup + $35k–$50k Micro-APA)",
       "phase_3_category_dominance": "350 Apps (5-in-1 Niche Bundles + Micro-PE Multiple)",
-      "phase_4_master_buyout": "500 Apps ($125,000\u2013$200,000 Cash Buyout / $1.2M\u2013$2.5M+ Cash Flow)"
+      "phase_4_master_buyout": "500 Apps ($125,000–$200,000 Cash Buyout / $1.2M–$2.5M+ Cash Flow)"
     },
     "long_term_expansion": {
       "target": "3,000 to 5,000 Apps (Phase 5 to 7)",
-      "timeline": "2028 \u2013 2031 (3\u20135 Year Horizon)",
+      "timeline": "2028 – 2031 (3–5 Year Horizon)",
       "phase_5_multi_channel": "1,500 Apps (Custom Storefront, ThemeForest, B2B Outbound)",
-      "phase_6_saas_franchise": "3,000 Apps ($450k\u2013$900k Pre-Revenue Buyout / $4.5M Exit)",
-      "phase_7_holding_conglomerate": "5,000 Apps ($750k\u2013$1.5M Wholesale Buyout / $8.75M+ Exit)"
+      "phase_6_saas_franchise": "3,000 Apps ($450k–$900k Pre-Revenue Buyout / $4.5M Exit)",
+      "phase_7_holding_conglomerate": "5,000 Apps ($750k–$1.5M Wholesale Buyout / $8.75M+ Exit)"
     }
   },
   "archetypes": {
