@@ -19,6 +19,8 @@ CREATE TABLE IF NOT EXISTS eclss_telemetry (
     relative_humidity_pct NUMERIC(5,2) NOT NULL DEFAULT 45.00,
     trace_contaminant_ppm NUMERIC(6,3) NOT NULL DEFAULT 0.012,
     operational_status VARCHAR(32) NOT NULL DEFAULT 'NOMINAL_CIRCULATION',
+    -- Sabatier closed-loop CO2 methanation bypass valve (Flagship Gate Criterion #4: Domain Physics Solver)
+    sabatier_bypass_valve VARCHAR(30) NOT NULL DEFAULT 'NOMINAL_FLOW',
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
@@ -79,12 +81,30 @@ CREATE TABLE IF NOT EXISTS atmospheric_sensors (
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
+-- 6. Sabatier Reactor Bypass Valve Telemetry (Flagship Gate Criterion #4)
+-- Stoichiometric CO2 + 4H2 -> CH4 + 2H2O closed-loop mass balance bypass
+CREATE TABLE IF NOT EXISTS sabatier_bypass_valves (
+    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    valve_tag VARCHAR(64) NOT NULL UNIQUE DEFAULT 'SAB-BPV-109-ALPHA',
+    bypass_state VARCHAR(32) NOT NULL DEFAULT 'NOMINAL_FLOW',
+    flow_rate_kg_hr NUMERIC(6,3) NOT NULL DEFAULT 1.250,
+    differential_pressure_kpa NUMERIC(6,2) NOT NULL DEFAULT 14.20,
+    purge_temperature_kelvin NUMERIC(5,2) NOT NULL DEFAULT 420.15,
+    stoichiometric_ratio_h2_co2 NUMERIC(4,2) NOT NULL DEFAULT 4.05,
+    methanation_efficiency_pct NUMERIC(5,2) NOT NULL DEFAULT 98.40,
+    emergency_override_engaged BOOLEAN NOT NULL DEFAULT FALSE,
+    last_actuation_time TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
 -- Indexes for performance
 CREATE INDEX IF NOT EXISTS idx_eclss_telemetry_time ON eclss_telemetry(created_at DESC);
 CREATE INDEX IF NOT EXISTS idx_o2_regen_loop_tag ON o2_regeneration_loops(loop_tag);
 CREATE INDEX IF NOT EXISTS idx_water_recovery_assembly ON water_recovery_systems(assembly_code);
 CREATE INDEX IF NOT EXISTS idx_co2_scrubber_bed ON co2_scrubber_beds(bed_identifier);
 CREATE INDEX IF NOT EXISTS idx_atmospheric_sensors_cluster ON atmospheric_sensors(sensor_cluster);
+CREATE INDEX IF NOT EXISTS idx_sabatier_bypass_valves_tag ON sabatier_bypass_valves(valve_tag);
 
 -- Explicit Row Level Security (RLS) Enablement
 ALTER TABLE eclss_telemetry ENABLE ROW LEVEL SECURITY;
@@ -92,6 +112,7 @@ ALTER TABLE o2_regeneration_loops ENABLE ROW LEVEL SECURITY;
 ALTER TABLE water_recovery_systems ENABLE ROW LEVEL SECURITY;
 ALTER TABLE co2_scrubber_beds ENABLE ROW LEVEL SECURITY;
 ALTER TABLE atmospheric_sensors ENABLE ROW LEVEL SECURITY;
+ALTER TABLE sabatier_bypass_valves ENABLE ROW LEVEL SECURITY;
 
 -- Default permissive read-access policy for institutional SCADA operators
 DO $$
@@ -110,5 +131,8 @@ BEGIN
     END IF;
     IF NOT EXISTS (SELECT 1 FROM pg_policies WHERE policyname = 'allow_authenticated_read_sensors') THEN
         CREATE POLICY allow_authenticated_read_sensors ON atmospheric_sensors FOR SELECT USING (true);
+    END IF;
+    IF NOT EXISTS (SELECT 1 FROM pg_policies WHERE policyname = 'allow_authenticated_read_sabatier') THEN
+        CREATE POLICY allow_authenticated_read_sabatier ON sabatier_bypass_valves FOR SELECT USING (true);
     END IF;
 END $$;
