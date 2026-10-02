@@ -966,7 +966,7 @@
     {
       "id": 33,
       "name": "COMMERCIAL FINANCE ENGINE",
-      "category": "Real Estate Analytics, Commercial Debt Underwriting & Property Valuation OS",
+      "category": "Real Estate Analytics, Commercial Debt Underwriting & Property Appraisal OS",
       "vertical": "wealth",
       "gumroad_url": "https://auraandgrid.gumroad.com/l/commercial-finance-os",
       "preview_url": "https://commercial-finance-os.onrender.com",
@@ -1621,7 +1621,7 @@
       "audit_score": 9.9,
       "tables": [
         "portfolio_holdings",
-        "fcf_valuation_models",
+        "fcf_cash_flow_models",
         "lp_capital_calls"
       ],
       "archetype_id": "E",
