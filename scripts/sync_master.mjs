@@ -39,6 +39,7 @@ const MASTER_FILES = [
   { src: 'AUDIT_SNAPSHOT.md', destName: 'AUDIT_SNAPSHOT.md' },
   { src: 'docs/COMMERCIAL_POSITIONING.md', destName: 'COMMERCIAL_POSITIONING.md' },
   { src: 'docs/INVESTOR_AUDIT_REPORT.md', destName: 'INVESTOR_AUDIT_REPORT.md' },
+  { src: 'docs/AUDIT_360_VERIFIED_REPORT.md', destName: 'AUDIT_360_VERIFIED_REPORT.md' },
 ];
 
 function getDestinationDirs() {
