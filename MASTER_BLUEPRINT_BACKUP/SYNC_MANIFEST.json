@@ -1,5 +1,5 @@
 {
-  "sync_timestamp": "2026-10-02T08:44:37.851Z",
+  "sync_timestamp": "2026-10-02T08:58:23.710Z",
   "version": "v2.0-master-sync",
   "status": "ALL_SYNCED",
   "portfolio_facts": {
@@ -66,7 +66,7 @@
     "GEMINI.md": "040cdd13ea8564ced41d08df67e6ac33ad7f1a4c0bc8c57b03f85c23af4de8a9",
     "instructions.txt": "2745808d0db0aefd33cb03e3dac2facf78ba70b5aab341da568acc588b33191b",
     "ghostfactory-master.md": "2745808d0db0aefd33cb03e3dac2facf78ba70b5aab341da568acc588b33191b",
-    "GHOSTFACTORY_V2_MASTER_SYNC.md": "2987fa41e1f9c97e5d84a8727945a3d7ce457a3bf43a76342b3c9337f9b4a5fb",
+    "GHOSTFACTORY_V2_MASTER_SYNC.md": "9ceeaf82cb39d003589daa691d9a5cd2156f87656652235a0619fa566d1292d0",
     "BUSINESS_MODEL_AND_FOUNDRY_STRATEGY.md": "69508dc60986f27fb6316b5c4e068a4c207eb62a9bd7ee8c81a82593b5492610",
     "MASTER_BUSINESS_PLAN.md": "39fbfbf5a26bf7441389fa8f0afe57ce547593369d37d6fb58ab6c49d91a6d7c",
     "NOTEBOOKLM_MASTER_FOUNDRY_BRIEF.md": "4bfe3eec2c30fc5e9ba9e59b5dede3420d65083bd38be749129c0a1d05998b9a",
