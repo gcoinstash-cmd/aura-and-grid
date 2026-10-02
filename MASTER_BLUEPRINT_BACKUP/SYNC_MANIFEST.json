@@ -1,5 +1,5 @@
 {
-  "sync_timestamp": "2026-10-02T06:45:02.923Z",
+  "sync_timestamp": "2026-10-02T06:55:40.630Z",
   "version": "v2.0-master-sync",
   "status": "ALL_SYNCED",
   "portfolio_facts": {
@@ -62,8 +62,8 @@
   },
   "total_files_synced": 15,
   "checksums": {
-    "AGENTS.md": "ebc38856cbac5a44eb3225cc7904d5c49b324ff8a13ed95a5bfbc33c2c044724",
-    "GEMINI.md": "ebc38856cbac5a44eb3225cc7904d5c49b324ff8a13ed95a5bfbc33c2c044724",
+    "AGENTS.md": "040cdd13ea8564ced41d08df67e6ac33ad7f1a4c0bc8c57b03f85c23af4de8a9",
+    "GEMINI.md": "040cdd13ea8564ced41d08df67e6ac33ad7f1a4c0bc8c57b03f85c23af4de8a9",
     "instructions.txt": "2745808d0db0aefd33cb03e3dac2facf78ba70b5aab341da568acc588b33191b",
     "ghostfactory-master.md": "2745808d0db0aefd33cb03e3dac2facf78ba70b5aab341da568acc588b33191b",
     "GHOSTFACTORY_V2_MASTER_SYNC.md": "b47301e213142c4dbc60165a94cfd9c0835d4217b77be70971ebfc59f246e3df",
