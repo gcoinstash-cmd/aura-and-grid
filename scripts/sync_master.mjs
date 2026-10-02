@@ -187,12 +187,12 @@ export function runMasterSync() {
     version: 'v2.0-master-sync',
     status: 'ALL_SYNCED',
     portfolio_facts: {
-      total_catalog_assets: 110,
-      track_1_lean_rapid_sale_assets: 85,
-      track_2_flagship_tier_1_assets: 25,
+      total_catalog_assets: 114,
+      track_1_lean_rapid_sale_assets: 86,
+      track_2_flagship_tier_1_assets: 28,
       retention_floor_percent: 80,
-      retained_floor_assets: 88,
-      max_apa_capacity_assets: 22,
+      retained_floor_assets: 91,
+      max_apa_capacity_assets: 23,
     },
     pricing_protocol: {
       track_1_lean_rapid_sale: {
