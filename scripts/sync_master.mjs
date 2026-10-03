@@ -8,7 +8,7 @@
  * 2. Local Backup (MASTER_BLUEPRINT_BACKUP)
  * 3. NotebookLM Knowledge Base
  * 4. Dist Vaults
- * 5. Desktop Staging (~/Desktop/Ghost_Factory_Staging/)
+ * 5. Workspace Staging (./Ghost_Factory_Staging/)
  * 6. Google Drive (~/Google Drive/My Drive/ & CloudStorage)
  */
 
