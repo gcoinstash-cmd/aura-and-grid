@@ -4,7 +4,23 @@ import cp from 'child_process';
 import https from 'https';
 
 const BASE_DIR = '/Users/gmane/Documents/ZoMae Media LLC/Aura & Grid';
-const RENDER_API_KEY = 'rnd_3pCxLrgqyehIYQOzdEV032faU1ie';
+
+function getEnv(key) {
+  if (process.env[key]) return process.env[key];
+  const envPath = path.join(BASE_DIR, '.env');
+  if (fs.existsSync(envPath)) {
+    const lines = fs.readFileSync(envPath, 'utf8').split('\n');
+    for (const line of lines) {
+      const match = line.trim().match(/^([^=]+)=(.*)$/);
+      if (match && match[1].trim() === key) {
+        return match[2].trim().replace(/^["']|["']$/g, '');
+      }
+    }
+  }
+  return '';
+}
+
+const RENDER_API_KEY = getEnv('RENDER_API_KEY');
 const GIT_ENV = {
   ...process.env,
   DEVELOPER_DIR: '/Library/Developer/CommandLineTools',
