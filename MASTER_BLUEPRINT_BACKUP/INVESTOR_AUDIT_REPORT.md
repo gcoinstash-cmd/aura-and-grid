@@ -1,10 +1,10 @@
 # Operational Due Diligence Audit & Investment Memo v2
 
 **Entity:** GhostFactoryOS / Aura & Grid  
-**Asset Fleet:** 110 Pre-Revenue Full-Stack Niche Operating System Blueprints (85 Track 1 + 25 Track 2)  
+**Asset Fleet:** 114 Pre-Revenue Full-Stack Niche Operating System Blueprints (86 Track 1 + 28 Track 2)  
 **Audit Standard:** Institutional Micro-Acquisition & Technical Asset Valuation  
-**Date:** September 2026  
-**Retention Floor:** 80% Minimum Retained Floor Enforced (88 Assets Retained / Max 22 Micro-APAs)  
+**Date:** October 2026  
+**Retention Floor:** 80% Minimum Retained Floor Enforced (91 Assets Retained / Max 23 Micro-APAs)  
 
 ---
 
@@ -12,7 +12,7 @@
 
 | Evaluation Category | Institutional Grade | Current Status |
 | :--- | :---: | :--- |
-| **A. Technical Codebase & Architecture** | **A-** | Standardized stack, verified HTTP 200 routing across 110 endpoints, active RLS policies, clean modular architecture. |
+| **A. Technical Codebase & Architecture** | **A-** | Standardized stack, verified HTTP 200 routing across 114 endpoints, active RLS policies, clean modular architecture. |
 | **B. Pipeline Engineering & Scalability** | **B+** | Automated batch scaffolding, unified manifest telemetry, headless audit test suites. |
 | **C. Product Packaging & Presentation** | **C+** | Master sector archetypes defined; marketing visual covers require individual layout enforcement. |
 | **D. Commercial Monetization & Distribution** | **D** | Pre-revenue digital inventory; zero verified recurring cash flow, active stripe webhooks, or documented outbound conversions. |
@@ -32,13 +32,15 @@
 ## 3. Commercial Valuation Appraisal & Dual-Track Protocol
 
 ### 3.1 Current Market Reality (Pre-Revenue Inventory)
-* **Audited Code Replacement Cost:** The quoted development cost for a single full-stack application typically ranges from $4,000 to $10,000+. Across 110 assets (including 25 multi-screen SCADA flagships), replacement engineering labor is benchmarked at **$715,000 – $2,020,000**.
+* **Audited Code Replacement Cost:** The quoted development cost for a single full-stack application typically ranges from $4,000 to $10,000+. Across 114 assets (including 28 multi-screen SCADA flagships), replacement engineering labor is benchmarked at **$965,000 – $1,760,000** (4,250+ engineering hours @ $150–$250/hr).
 * **Current Orderly Fair-Market Value Estimate:**
-  * **Orderly Fair-Market Valuation Band:** **$105,000 – $235,250**
-  * **Best Single Planning Value:** **~$160,000**
+  * **Strategic Acquisition Ceiling:** **$1,490,000 – $2,850,000+** (Deep-tech niche monopoly premium)
+  * **Dev Agency Replacement Benchmark:** **$965,000 – $1,760,000**
+  * **Strategic Buyout Anchor:** **$721,000** ($608,000 – $1,040,000 range)
   * **Direct B2B Ask (Data Room Target):** **$195,000 – $265,000**
   * **Realistic Accepted Offer (Quick-Close Wire / LOI):** **$135,000 – $175,000**
-  * **Retail Shelf Replacement MSRP:** **$54,415** (85 × $199 + 25 × $1,500)
+  * **Distress / Quick-Sale Floor:** **$128,000 – $246,000**
+  * **Retail Shelf Replacement MSRP:** **$59,114** (86 × $199 + 28 × $1,500)
 
 ### 3.2 Dual-Track Pricing Protocol
 1. **Track 1 — Lean Rapid-Sale (Default Standard)**:
@@ -52,7 +54,7 @@
    * Qualification Gate: Requires 8–15 interactive screens, domain physics solvers, operator journeys, and simulated-data disclosures.
 
 ### 3.3 Portfolio Governance & 80% Retained Floor
-* **Retention Floor**: Minimum **88 assets** remain permanently in the factory. Maximum transfer capacity is strictly **22 assets**.
+* **Retention Floor**: Minimum **91 assets** remain permanently in the factory. Maximum transfer capacity is strictly **23 assets**.
 * **Micro-APA Scope**: Transfers defined rights/code to **one specific asset only**. A micro-APA never transfers GhostFactoryOS, Aura & Grid, shared IP, or the full portfolio.
 
 ---

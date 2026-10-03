@@ -3,14 +3,14 @@
 
 **Document Version**: 2.0 (Dual-Track Valuation & Portfolio Retention Edition)  
 **Parent Entity**: ZoMae Media LLC  
-**Target Catalog**: 110 Pre-Revenue Full-Stack Operating System (OS) Blueprints (85 Track 1 + 25 Track 2 / Target: 500 Assets)  
-**Retention Floor**: 80% Minimum Retained Floor (Current: 88 Assets Retained / Max 22 Micro-APAs)  
+**Target Catalog**: 114 Pre-Revenue Full-Stack Operating System (OS) Blueprints (86 Track 1 + 28 Track 2 / Target: 500 Assets)  
+**Retention Floor**: 80% Minimum Retained Floor (Current: 91 Assets Retained / Max 23 Micro-APAs)  
 
 ---
 
 ## 1. Executive Framing: Software as an Industrial Asset Class
 
-The Aura & Grid catalog is not a collection of consumer hobbyist templates. It is an **industrial inventory of standardized digital blueprints** engineered to eliminate $700,000+ in traditional software development payroll for agencies, rollup operators, and enterprise teams.
+The Aura & Grid catalog is not a collection of consumer hobbyist templates. It is an **industrial inventory of standardized digital blueprints** engineered to eliminate $900,000+ in traditional software development payroll for agencies, rollup operators, and enterprise teams.
 
 ```
  [ THE 3 DISTRIBUTION PILLARS ]
@@ -24,7 +24,7 @@ The Aura & Grid catalog is not a collection of consumer hobbyist templates. It i
 
 ## 2. Analogy 1: The Exotic Supercar Dealership (Showroom & Fleet Licensing)
 
-Imagine owning an ultra-luxury automotive showroom holding **110 precision-engineered supercar chassis** (Porsche GT3s, Ferrari race rigs, McLaren hypercars, plus 25 SCADA-grade hyper-prototypes):
+Imagine owning an ultra-luxury automotive showroom holding **114 precision-engineered supercar chassis** (Porsche GT3s, Ferrari race rigs, McLaren hypercars, plus 28 SCADA-grade hyper-prototypes):
 
 ### 2.1 The Anatomy of Each Vehicle:
 * **The Aerodynamic Carbon Body**: High-contrast, responsive React + Tailwind CSS obsidian dark-mode interface (`#0A0A0B`).
@@ -45,21 +45,21 @@ Imagine owning an ultra-luxury automotive showroom holding **110 precision-engin
    * A client acquires exclusive title to **one specific digital vehicle** via a micro-APA:
      - **Track 1 (Default)**: $3,800–$6,500 (Anchor: **$4,500**).
      - **Track 2 (Flagship $10K+ Tier-1)**: $10,000–$18,000 entry (Anchor: **$14,500**), $18,000–$35,000 full buyout, $35,000–$75,000+ strategic acquisition.
-   * **Strict Boundary**: A micro-APA **NEVER** transfers the showroom (Aura & Grid), the factory (GhostFactoryOS), shared components, design tokens, or the full collection. The foundry always enforces the **80% retention floor** (minimum 88 assets permanently kept).
+   * **Strict Boundary**: A micro-APA **NEVER** transfers the showroom (Aura & Grid), the factory (GhostFactoryOS), shared components, design tokens, or the full collection. The foundry always enforces the **80% retention floor** (minimum 91 assets permanently kept).
 
 ---
 
 ## 3. Analogy 2: The Pro Esports Dev Studio (Reusable Game Engines)
 
-* **The Mental Model**: Like Epic Games or Unreal Engine studios that engineered 85 modular game modes.
+* **The Mental Model**: Like Epic Games or Unreal Engine studios that engineered modular game modes.
 * **Why It Works**: Game studios do not code a custom 3D physics engine from scratch for every game title; they build atop proven engines.
-* **Foundry Application**: The 85 operating systems serve as modular "commerce game engines" for high-ticket verticals (aesthetic medicine, exotic fleet management, private aviation, luxury estates). Agencies buy the engines to deploy client portals in 2 hours instead of 6 months.
+* **Foundry Application**: The 86 operating systems serve as modular "commerce game engines" for high-ticket verticals (aesthetic medicine, exotic fleet management, private aviation, luxury estates). Agencies buy the engines to deploy client portals in 2 hours instead of 6 months.
 
 ---
 
 ## 4. Analogy 3: The Music Producer Beat Vault (BeatStars Model)
 
-* **The Non-Exclusive Lease ($199 – $2,999)**: A platinum producer maintains a vault of 85 fully mixed and mastered instrumentals. Multiple independent artists license the same beat for their songs. The producer retains 100% ownership of the master track while generating recurring cash flow. (Identical to your Agency Whitelabel License).
+* **The Non-Exclusive Lease ($199 – $2,999)**: A platinum producer maintains a vault of 86 fully mixed and mastered instrumentals. Multiple independent artists license the same beat for their songs. The producer retains 100% ownership of the master track while generating recurring cash flow. (Identical to your Agency Whitelabel License).
 * **The Exclusive Buyout ($4,500 Track 1 Anchor / $14,500 Track 2 Anchor)**: A record label or artist buys 100% exclusive master rights to **one specific track**, taking only that single track off the commercial shelf.
 
 ---
@@ -75,9 +75,9 @@ Imagine owning an ultra-luxury automotive showroom holding **110 precision-engin
 
 ## 6. Cold Reality: Separation of Technical Floor vs. Commercial Valuation
 
-1. **The Technical Baseline Floor**: Passing all 110 applications through automated Playwright + Axe-Core testing (0 P0 defects, 9.49+ average) guarantees that the software compiles, runs, and will not be disqualified during buyer technical due diligence.
+1. **The Technical Baseline Floor**: Passing all 114 applications through automated Playwright + Axe-Core testing (0 P0 defects, 9.7/10 score) guarantees that the software compiles, runs, and will not be disqualified during buyer technical due diligence.
 2. **The Commercial Exit Valuation**: Code health alone does not guarantee a high buyout. Actual institutional exit valuation requires **verifiable business metrics**: signed agency licenses, paying end-users, distribution volume, and audited revenue deposits.
-3. **Current Pre-Revenue Valuation**: The orderly fair-market value of the 110-asset collection is estimated at **$105,000 – $235,250** (Best planning value: **~$160,000**). Direct B2B asking target is **$195,000 – $265,000**. Realistic accepted offer is **$135,000 – $175,000**. Dev replacement labor is **$715,000 – $2,020,000**.
+3. **Current Pre-Revenue Valuation**: The orderly fair-market value of the 114-asset collection is anchored at **$721,000** ($608,000 – $1,040,000 range), with a deep-tech strategic monopoly ceiling of **$1.49M – $2.85M+**. Direct B2B asking target is **$195,000 – $265,000**. Realistic accepted offer is **$135,000 – $175,000**. Dev replacement labor benchmark is **$965,000 – $1,760,000** (4,250+ engineering hours @ $150–$250/hr).
 
 ---
 *ZoMae Media LLC © 2026. All Rights Reserved.*

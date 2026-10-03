@@ -10,7 +10,7 @@
 ## 1. System Identity: Factory vs. Dealership
 - GhostFactoryOS (The Factory): Private digital manufacturing plant, garage HUD, inventory engine, maintenance bay, and private deal room.
 - Aura & Grid (The Dealership): Public buyer-facing glass showroom for browsing digital blueprints, purchasing commercial licenses, and launching live interactive demos.
-- The "Digital Car Collection": 110 specialized software assets treated like high-performance virtual concept vehicles.
+- The "Digital Car Collection": 114 specialized software assets treated like high-performance virtual concept vehicles.
 
 ---
 

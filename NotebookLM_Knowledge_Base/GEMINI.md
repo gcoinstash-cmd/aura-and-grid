@@ -124,7 +124,7 @@ Current orderly fair-market value estimate:
 - Direct B2B Ask (Data Room Target): **$195,000–$265,000**
 - Realistic Accepted Offer (Quick-Close Wire / LOI): **$135,000–$175,000**
 
-Do not present the collection as 110 proven SaaS businesses.
+Do not present the collection as 114 proven SaaS businesses.
 
 Do not claim verified revenue, customers, retention, profit, uptime, security audits, compliance, or production status unless evidence exists.
 

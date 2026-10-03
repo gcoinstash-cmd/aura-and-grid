@@ -45,11 +45,11 @@ A **micro-APA** means a small asset purchase agreement where a buyer acquires ow
 
 Current portfolio facts:
 
-- Current total assets: **110 pre-revenue digital assets** (expanded from 85)
+- Current total assets: **114 pre-revenue digital assets** (86 Track 1 Lean Rapid-Sale + 28 Track 2 Flagship Tier-1)
 - Long-term target: **500 high-quality, distinct, cataloged assets**
 - Minimum retained floor: **80% of the collection at every stage**
-- Current minimum retained floor: **88 assets**
-- Current maximum ownership-transfer capacity: **22 assets**
+- Current minimum retained floor: **91 assets**
+- Current maximum ownership-transfer capacity: **23 assets**
 - At 500 assets: minimum retained floor is **400 assets**
 - At 500 assets: maximum ownership-transfer capacity is **100 assets**
 
@@ -70,18 +70,19 @@ Protect permanently:
 
 ## CURRENT PORTFOLIO VALUATION
 
-The full 110-asset collection is **pre-revenue**.
-Composition: **85 Track 1 Lean Rapid-Sale Assets** + **25 Track 2 Flagship Tier-1 Elite SCADA/Deep Tech Assets**.
+The full 114-asset collection is **pre-revenue**.
+Composition: **86 Track 1 Lean Rapid-Sale Assets** + **28 Track 2 Flagship Tier-1 SCADA/Deep Tech Assets**.
 
 Current orderly fair-market value estimate:
 
-- **$105,000–$235,250**
-- Best single planning value: **about $160,000**
+- Strategic Acquisition Ceiling: **$1,490,000–$2,850,000+**
+- Dev Replacement Cost: **$965,000–$1,760,000**
+- Strategic Buyout Anchor: **$721,000** ($608,000–$1,040,000 range)
+- Distress / Quick-Sale Floor: **$128,000–$246,000**
 - Direct B2B Ask (Data Room Target): **$195,000–$265,000**
 - Realistic Accepted Offer (Quick-Close Wire / LOI): **$135,000–$175,000**
-- Dev Replacement Cost: **$715,000–$2,020,000**
 
-Do not present the collection as 110 proven SaaS businesses.
+Do not present the collection as 114 proven SaaS businesses.
 
 Do not claim verified revenue, customers, retention, profit, uptime, security audits, compliance, or production status unless evidence exists.
 
@@ -275,9 +276,9 @@ Every micro-APA must include:
 - No claims beyond verified evidence
 - Clear statement that the asset uses simulated/sample data and is not a production system
 
-## CURRENT FLAGSHIP FLEET (TRACK 2 — 25 ELITE MODELS)
+## CURRENT FLAGSHIP FLEET (TRACK 2 — 28 ELITE MODELS)
 
-These 25 assets are classified under **Track 2 — Flagship Candidate** ($14,500 Buyout Anchor / $1,500–$3,500 Commercial License):
+These 28 assets are classified under **Track 2 — Flagship Candidate** ($14,500 Buyout Anchor / $1,500–$3,500 Commercial License):
 
 | Asset | Flagship License | Entry Exclusive Buyout | Full Asset Buyout | Strategic Acquisition |
 |---|---:|---:|---:|---:|
@@ -306,8 +307,11 @@ These 25 assets are classified under **Track 2 — Flagship Candidate** ($14,500
 | #108 Yacht Charter Fleet Ecosystem | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
 | #109 Orbital Habitat ECLSS SCADA OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
 | #110 Orbital In-Space Cryogenic Propellant Depot SCADA OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #111 Commercial Tokamak Fusion Plasma SCADA OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #113 Superconducting Quantum Processor Cryostat OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
+| #114 Commercial Lunar Regolith ISRU Refining Plant SCADA OS | $1,500–$3,500 | $14,500 | $18,000–$35,000 | $35,000–$75,000+ |
 
-### TRACK 2 FLAGSHIP CANDIDATE INVENTORY LEDGER (ASSETS 086 TO 110)
+### TRACK 2 FLAGSHIP CANDIDATE INVENTORY LEDGER (ASSETS 086 TO 114)
 
 - **Classification:** `pricing_track: "Track 2 - Flagship Candidate"`
 - **Product Truth Label:** `Interactive Prototype (Simulated Data Only) — Awaiting Flagship Qualification Audit`
@@ -490,22 +494,22 @@ Then wait for my request.
 
 ## AUDIT 360 BASELINE STATUS (VERIFIED 9.7/10)
 
-**Audit Sealed:** 2026-10-02 | **Commit:** `7e43696` | **Build:** `index-iMVwGL6Q.js` | **Version:** v1.3.1
+**Audit Sealed:** 2026-10-02 | **Version:** v1.5.0
 
 ### Fleet Baseline Parameters
 | Parameter | Value |
 |---|---|
-| Total Fleet | **110 Digital Vehicles** (85 Track 1 Lean Models + 25 Track 2 Flagship Models) |
-| 80% Retention Lock | **88 Units Permanently Vaulted** / Max 22 Micro-APA Transferable Units |
+| Total Fleet | **114 Digital Vehicles** (86 Track 1 Lean Models + 28 Track 2 Flagship Models) |
+| 80% Retention Lock | **91 Units Permanently Vaulted** / Max 23 Micro-APA Transferable Units |
 | Audit Score | **9.7 / 10 — Institutional Pass** |
 
 ### Valuation Baseline (Pre-Revenue)
 | Metric | Range |
 |---|---|
-| Distress / Quick-Sale Floor | **$118.5k – $228.0k** (40–60% buyer discount liquidation scenario) |
-| Strategic Buyout Anchor | **$673.0k** ($562.0k – $976.5k range) |
-| Strategic Acquisition Ceiling | **$1.38M – $2.64M+** (Deep-tech niche monopoly premium) |
-| Dev Agency Replacement Benchmark | **$890.0k – $1.62M** (4,000+ engineering hours @ $150–$250/hr) |
+| Distress / Quick-Sale Floor | **$128.0k – $246.0k** (40–60% buyer discount liquidation scenario) |
+| Strategic Buyout Anchor | **$721.0k** ($608.0k – $1.04M range) |
+| Strategic Acquisition Ceiling | **$1.49M – $2.85M+** (Deep-tech niche monopoly premium) |
+| Dev Agency Replacement Benchmark | **$965.0k – $1.76M** (4,250+ engineering hours @ $150–$250/hr) |
 | Annualized FMV (Licensing) | **$54.4k – $121.3k / yr** |
 | Direct B2B Enterprise Ask | **$88.0k – $155.0k / yr** |
 | Realistic Close (Target) | **$62.0k – $104.8k / yr** |
@@ -516,11 +520,11 @@ Then wait for my request.
 | Architecture | Two-Faced Separation Active (Public Showroom vs. Private Deal Room) |
 | Integrity | Zero Public Passkeys, Ephemeral Demo Routing Enabled |
 | Ergonomics | Mobile Viewport 44px Touch Targets Enforced (`maximum-scale=1.0`) |
-| Security | 80% Retention Floor Hard-Locked (Max 22 Units Transferable) |
+| Security | 80% Retention Floor Hard-Locked (Max 23 Units Transferable) |
 | Product Truth | Simulated Data Demos & Technical Prototypes Only (No live compliance certification implied) |
 | Claim Audit | 0 forbidden claims in customer-facing components |
-| License Matrix | 110/110 license-consistent |
-| Flagship Gate | 25/25 flagships meet Gate #4 |
-| Build Exit Code | 0 — Vite `index-Bj6x1kQ8.js` (475.95 kB) |
+| License Matrix | 114/114 license-consistent |
+| Flagship Gate | 28/28 flagships meet Gate #4 |
+| Build Exit Code | 0 — Vite (Compiled production bundle) |
 
 > **INTERNAL SCENARIO MODELING ONLY — PRE-REVENUE ASSET PORTFOLIO — VALUES ARE ESTIMATES FOR MANAGEMENT STRATEGY AND NOT GUARANTEED MARKET APPRAISALS.**
