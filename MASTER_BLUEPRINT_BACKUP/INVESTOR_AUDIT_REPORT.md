@@ -39,7 +39,7 @@
   * **Strategic Buyout Anchor:** **$721,000** ($608,000 – $1,040,000 range)
   * **Direct B2B Ask (Data Room Target):** **$195,000 – $265,000**
   * **Realistic Accepted Offer (Quick-Close Wire / LOI):** **$135,000 – $175,000**
-  * **Distress / Quick-Sale Floor:** **$128,000 – $246,000**
+  * **Distress / Quick-Sale Floor:** **$75,000 – $115,000** (50–70% buyer liquidation cash floor)
   * **Retail Shelf Replacement MSRP:** **$59,114** (86 × $199 + 28 × $1,500)
 
 ### 3.2 Dual-Track Pricing Protocol

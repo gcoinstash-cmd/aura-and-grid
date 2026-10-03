@@ -41,7 +41,7 @@
 - Realistic Accepted Offer (Target Close): $62,000 – $104,750 / year
 
 ### Section 2: Exclusive Buyout & Dev Replacement Hub
-- Distress / Quick-Sale Buyer Cash Floor: $128,000 – $246,000 (40–60% buyer discount liquidation scenario)
+- Distress / Quick-Sale Buyer Cash Floor: $75,000 – $115,000 (50–70% buyer liquidation cash floor)
 - Dual-Track Strategic Buyout Range: $608,000 – $1,040,000 (Planning Anchor: $721,000)
 - Strategic Deep-Tech Monopoly Ceiling: $1,490,000 – $2,850,000+
 - Dev Agency Replacement Benchmark: $965,000 – $1,760,000 (4,250+ engineering hours @ $150–$250/hr)

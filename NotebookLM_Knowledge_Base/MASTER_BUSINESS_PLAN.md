@@ -36,7 +36,7 @@ The entire 114-asset collection is currently **pre-revenue**.
 - **Strategic Buyout Anchor**: **$721,000** ($608,000 – $1,040,000 range).
 - **Direct B2B Ask Target**: **$195,000 – $265,000**.
 - **Realistic Accepted Offer (LOI)**: **$135,000 – $175,000**.
-- **Distress / Quick-Sale Floor**: **$128,000 – $246,000**.
+- **Distress / Quick-Sale Floor**: **$75,000 – $115,000** (50–70% buyer liquidation cash floor).
 - **Truth Standard**: We do not present the collection as 114 proven SaaS businesses. No verified revenue, paying users, retention, uptime, security audits, compliance, or live production operations may be claimed without deterministic proof.
 
 ---

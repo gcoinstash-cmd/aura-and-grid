@@ -38,7 +38,7 @@ The full 114-asset collection is currently **pre-revenue**:
 | **Strategic Buyout Anchor** | **$608,000 – $1,040,000** | **$721,000** | Structured enterprise portfolio buyout |
 | **Direct B2B Ask (Data Room)** | **$195,000 – $265,000** | **$225,000** | Asking target for enterprise / PE strategic acquirers |
 | **Realistic Accepted Offer** | **$135,000 – $175,000** | **$150,000** | Quick-close wire / cash-in-hand negotiated buyout |
-| **Distress / Quick-Sale Floor** | **$128,000 – $246,000** | **$187,000** | 40–60% buyer discount liquidation scenario |
+| **Distress / Quick-Sale Floor** | **$75,000 – $115,000** | **$95,000** | 50–70% buyer liquidation cash floor (below negotiated targets) |
 | **Retail Shelf Replacement MSRP** | **$59,114** | $199 T1 / $1,500 T2 | Catalog MSRP sum (86 × $199 + 28 × $1,500) |
 
 > [!CAUTION]

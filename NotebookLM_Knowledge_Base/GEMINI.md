@@ -120,9 +120,9 @@ Current orderly fair-market value estimate:
 - Strategic Acquisition Ceiling: **$1,490,000–$2,850,000+**
 - Dev Replacement Cost: **$965,000–$1,760,000**
 - Strategic Buyout Anchor: **$721,000** ($608,000–$1,040,000 range)
-- Distress / Quick-Sale Floor: **$128,000–$246,000**
 - Direct B2B Ask (Data Room Target): **$195,000–$265,000**
 - Realistic Accepted Offer (Quick-Close Wire / LOI): **$135,000–$175,000**
+- Distress / Quick-Sale Floor: **$75,000–$115,000**
 
 Do not present the collection as 114 proven SaaS businesses.
 
@@ -487,7 +487,7 @@ Then wait for my request.
 ### Valuation Baseline (Pre-Revenue)
 | Metric | Range |
 |---|---|
-| Distress / Quick-Sale Floor | **\$128.0k – \$246.0k** (40–60% buyer discount liquidation scenario) |
+| Distress / Quick-Sale Floor | **\$75.0k – \$115.0k** (50–70% buyer liquidation cash floor) |
 | Strategic Buyout Anchor | **\$721.0k** (\$608.0k – \$1.04M range) |
 | Strategic Acquisition Ceiling | **\$1.49M – \$2.85M+** (Deep-tech niche monopoly premium) |
 | Dev Agency Replacement Benchmark | **\$965.0k – \$1.76M** (4,250+ engineering hours @ \$150–\$250/hr) |
