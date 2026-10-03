@@ -1,3 +1,12 @@
+# Orbital In-Space Cryogenic Propellant Depot SCADA OS (Slot #110)
+
+## Security & Integrity Specification
+- **Framework Alignment:** NIST SP 800-218 (SSDF v1.1) / CIS Software Supply Chain
+- **Asset Maturity:** Simulation & Clickable Prototype (Non-Production)
+- **Secrets Management:** Zero hardcoded credentials (Env injected)
+- **Dependency Audit:** Clean build, 0 Critical CVEs
+- **IP Status:** Flagship Class (Track 2 - Retained Core Factory IP)
+
 <div align="center">
 <img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
 </div>

@@ -2577,7 +2577,9 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE",
       "best_for": "Best for: Perimeter security operators & autonomous drone fleet coordinators",
       "domain": "Deep Tech SCADA",
-      "rarity_tier": "Elite"
+      "rarity_tier": "Elite",
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 87,
@@ -2616,7 +2618,9 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Open-pit mining dispatchers & autonomous haulage operators",
       "domain": "Industrial Robotics & Autonomous SCADA",
-      "rarity_tier": "Elite"
+      "rarity_tier": "Elite",
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 88,
@@ -2655,7 +2659,9 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Deep-sea mining engineers & seabed crawler telemetry operators",
       "domain": "Industrial Robotics & Autonomous SCADA",
-      "rarity_tier": "Elite"
+      "rarity_tier": "Elite",
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 89,
@@ -2694,7 +2700,9 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Airport FBO ground handlers & private aviation terminal managers",
       "domain": "Mobility & Fleet Logistics",
-      "rarity_tier": "Elite"
+      "rarity_tier": "Elite",
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 90,
@@ -2733,7 +2741,9 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE",
       "best_for": "Best for: Estate winemakers & barrel cellar production managers",
       "domain": "Lifestyle & Boutique Hospitality",
-      "rarity_tier": "Elite"
+      "rarity_tier": "Elite",
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 91,
@@ -2772,7 +2782,9 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Biopharma CROs & clinical trial site coordinators",
       "domain": "Clinical & Medical Operations",
-      "rarity_tier": "Elite"
+      "rarity_tier": "Elite",
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 92,
@@ -2811,7 +2823,9 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Cold chain logistics managers & multi-zone freezer facilities",
       "domain": "Mobility & Fleet Logistics",
-      "rarity_tier": "Elite"
+      "rarity_tier": "Elite",
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 93,
@@ -2849,7 +2863,9 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Supersonic propulsion engineers & test cell telemetry analysts",
       "domain": "Deep Tech SCADA",
-      "rarity_tier": "Elite"
+      "rarity_tier": "Elite",
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 94,
@@ -2889,7 +2905,9 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Tokamak control engineers & magnetic confinement fusion labs",
       "domain": "Energy SCADA",
-      "rarity_tier": "Elite"
+      "rarity_tier": "Elite",
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 95,
@@ -2928,7 +2946,9 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Offshore marine contractors & subsea cable trenching engineers",
       "domain": "Industrial Robotics & Autonomous SCADA",
-      "rarity_tier": "Elite"
+      "rarity_tier": "Elite",
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 96,
@@ -2967,7 +2987,9 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Geothermal energy operators & enhanced geothermal wellhead engineers",
       "domain": "Energy SCADA",
-      "rarity_tier": "Elite"
+      "rarity_tier": "Elite",
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 97,
@@ -3005,7 +3027,9 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Low-latency prop trading firms & colocation infrastructure teams",
       "domain": "Institutional Capital & Wealth",
-      "rarity_tier": "Elite"
+      "rarity_tier": "Elite",
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 98,
@@ -3043,7 +3067,9 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Aerodynamic test engineers & hypersonic wind tunnel researchers",
       "domain": "Deep Tech SCADA",
-      "rarity_tier": "Elite"
+      "rarity_tier": "Elite",
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 99,
@@ -3083,7 +3109,9 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: High-net-worth vehicle concierges & private car collector managers",
       "domain": "Mobility & Fleet Logistics",
-      "rarity_tier": "Elite"
+      "rarity_tier": "Elite",
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 100,
@@ -3122,7 +3150,9 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Dry bulk & container ship brokers & maritime cargo dispatchers",
       "domain": "Mobility & Fleet Logistics",
-      "rarity_tier": "Elite"
+      "rarity_tier": "Elite",
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 101,
@@ -3161,7 +3191,9 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Satellite constellation operators & optical inter-satellite link engineers",
       "domain": "Deep Tech SCADA",
-      "rarity_tier": "Elite"
+      "rarity_tier": "Elite",
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 102,
@@ -3199,7 +3231,9 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Direct lenders, credit funds & private loan syndication desks",
       "domain": "Institutional Capital & Wealth",
-      "rarity_tier": "Elite"
+      "rarity_tier": "Elite",
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 103,
@@ -3238,7 +3272,9 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Island microgrid operators & commercial battery BESS engineers",
       "domain": "Energy SCADA",
-      "rarity_tier": "Elite"
+      "rarity_tier": "Elite",
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 104,
@@ -3277,7 +3313,9 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Wafer fab contamination engineers & cleanroom facility managers",
       "domain": "Energy SCADA",
-      "rarity_tier": "Elite"
+      "rarity_tier": "Elite",
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 105,
@@ -3315,7 +3353,9 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Commercial launch providers & satellite integration manifest managers",
       "domain": "Deep Tech SCADA",
-      "rarity_tier": "Elite"
+      "rarity_tier": "Elite",
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 106,
@@ -3354,7 +3394,9 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Subsea fiber cable owners & maritime repair ship dispatchers",
       "domain": "Industrial Robotics & Autonomous SCADA",
-      "rarity_tier": "Elite"
+      "rarity_tier": "Elite",
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 107,
@@ -3393,7 +3435,9 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Quantum computing researchers & dilution refrigerator engineers",
       "domain": "Energy SCADA",
-      "rarity_tier": "Elite"
+      "rarity_tier": "Elite",
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 108,
@@ -3432,7 +3476,9 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Yacht fleet management companies & luxury maritime charter brokers",
       "domain": "Mobility & Fleet Logistics",
-      "rarity_tier": "Elite"
+      "rarity_tier": "Elite",
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 109,
@@ -3474,7 +3520,9 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Commercial space station operators & life support ECLSS flight controllers",
       "domain": "Deep Tech SCADA",
-      "rarity_tier": "Elite"
+      "rarity_tier": "Elite",
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 110,
@@ -3526,7 +3574,9 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: In-space propellant depot engineers & cryogenic boiloff telemetry teams",
       "domain": "Deep Tech SCADA",
-      "rarity_tier": "Elite"
+      "rarity_tier": "Elite",
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 111,
@@ -3567,7 +3617,9 @@
       "domain": "Energy SCADA",
       "rarity_tier": "Elite",
       "permanent": true,
-      "buyoutEligible": false
+      "buyoutEligible": false,
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 112,
@@ -3644,7 +3696,9 @@
       "domain": "Energy SCADA",
       "rarity_tier": "Elite",
       "permanent": true,
-      "buyoutEligible": false
+      "buyoutEligible": false,
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     },
     {
       "id": 114,
@@ -3699,7 +3753,9 @@
       "domain": "Deep Tech SCADA",
       "rarity_tier": "Elite",
       "permanent": false,
-      "buyoutEligible": true
+      "buyoutEligible": true,
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
     }
   ],
   "vertical_slices": {

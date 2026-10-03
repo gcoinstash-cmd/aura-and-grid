@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Production Builds
+dist/
+build/
+coverage/
+
+# OS & Logs
+.DS_Store
+*.log
+
+# Secrets & Environment Variables (NIST SP 800-218 SSDF Compliance)
+.env
+.env.local
+.env.*
+!.env.example
