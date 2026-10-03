@@ -231,6 +231,9 @@ export function runMasterSync() {
     }
   }
 
+  // Perform deep Google Drive synchronization (Console dist, source, staging, docs, vaults)
+  syncGoogleDriveFull();
+
   console.log(`\n=======================================================`);
   console.log(`✅ [GHOSTFACTORY SYNC ENGINE] SUCCESS! All targets in sync.`);
   console.log(`   - Master Blueprint Files: ${verifiedSources.length}`);
@@ -239,6 +242,140 @@ export function runMasterSync() {
     console.log(`     • [${dest.id}] -> ${dest.path}`);
   }
   console.log(`=======================================================\n`);
+}
+
+function syncGoogleDriveFull() {
+  const home = os.homedir();
+  const gdriveRootCandidates = [
+    path.join(home, 'Google Drive', 'My Drive', 'Ghost_Factory_Master_Vault'),
+    path.join(home, 'Library', 'CloudStorage', 'GoogleDrive-gcoinstash@gmail.com', 'My Drive', 'Ghost_Factory_Master_Vault')
+  ];
+
+  let gdriveVault = null;
+  for (const c of gdriveRootCandidates) {
+    if (fs.existsSync(c)) {
+      gdriveVault = c;
+      break;
+    }
+  }
+
+  if (!gdriveVault) {
+    console.log('ℹ️ Google Drive Ghost_Factory_Master_Vault not found. Skipping extended Google Drive sync.');
+    return;
+  }
+
+  console.log(`\n=======================================================`);
+  console.log(`☁️ [GOOGLE DRIVE FULL SYNC] Syncing extended assets to:`);
+  console.log(`   ${gdriveVault}`);
+  console.log(`=======================================================`);
+
+  // 1. Sync Ghost_Factory_Staging (Assets 110-114 and blueprints)
+  const localStaging = path.join(ROOT_DIR, 'Ghost_Factory_Staging');
+  const gdriveStaging = path.join(gdriveVault, 'Ghost_Factory_Staging');
+  if (fs.existsSync(localStaging)) {
+    try {
+      execSync(`rsync -avu --delete --exclude=".DS_Store" "${localStaging}/" "${gdriveStaging}/"`, { stdio: 'pipe' });
+      console.log(`✅ Synced Ghost_Factory_Staging (Assets 110-114) -> Google Drive`);
+    } catch (err) {
+      console.warn(`Warning syncing Ghost_Factory_Staging:`, err.message);
+    }
+  }
+
+  // 2. Sync tools/ghost-factory-console/dist -> console_dist
+  const localConsoleDist = path.join(ROOT_DIR, 'tools', 'ghost-factory-console', 'dist');
+  const gdriveConsoleDist = path.join(gdriveVault, 'console_dist');
+  if (fs.existsSync(localConsoleDist)) {
+    try {
+      fs.mkdirSync(gdriveConsoleDist, { recursive: true });
+      execSync(`rsync -avu --delete --exclude=".DS_Store" "${localConsoleDist}/" "${gdriveConsoleDist}/"`, { stdio: 'pipe' });
+      console.log(`✅ Synced console_dist (v1.5.9 production bundle) -> Google Drive`);
+    } catch (err) {
+      console.warn(`Warning syncing console_dist:`, err.message);
+    }
+  }
+
+  // 3. Sync tools/ghost-factory-console/src and configs -> ghost_factory_console_source
+  const localConsole = path.join(ROOT_DIR, 'tools', 'ghost-factory-console');
+  const gdriveConsoleSrc = path.join(gdriveVault, 'ghost_factory_console_source');
+  if (fs.existsSync(localConsole)) {
+    try {
+      fs.mkdirSync(gdriveConsoleSrc, { recursive: true });
+      execSync(`rsync -avu --delete --exclude="node_modules" --exclude="dist" --exclude=".DS_Store" "${path.join(localConsole, 'src')}/" "${path.join(gdriveConsoleSrc, 'src')}/"`, { stdio: 'pipe' });
+      const configs = ['package.json', 'index.html', 'vite.config.ts', 'tsconfig.json', 'tsconfig.node.json', 'tailwind.config.js'];
+      for (const cfg of configs) {
+        const srcCfg = path.join(localConsole, cfg);
+        if (fs.existsSync(srcCfg)) {
+          fs.copyFileSync(srcCfg, path.join(gdriveConsoleSrc, cfg));
+        }
+      }
+      console.log(`✅ Synced ghost_factory_console_source (source code & configs) -> Google Drive`);
+    } catch (err) {
+      console.warn(`Warning syncing console source:`, err.message);
+    }
+  }
+
+  // 4. Update console_backup archive
+  const gdriveConsoleBackup = path.join(gdriveVault, 'console_backup');
+  if (fs.existsSync(localConsoleDist)) {
+    try {
+      fs.mkdirSync(gdriveConsoleBackup, { recursive: true });
+      execSync(`rsync -avu --delete --exclude=".DS_Store" "${localConsoleDist}/" "${path.join(gdriveConsoleBackup, 'dist')}/"`, { stdio: 'pipe' });
+      execSync(`rsync -avu --delete --exclude="node_modules" --exclude="dist" --exclude=".DS_Store" "${path.join(localConsole, 'src')}/" "${path.join(gdriveConsoleBackup, 'src')}/"`, { stdio: 'pipe' });
+      const zipBundle = path.join(gdriveConsoleBackup, 'GFCC_CONSOLE_LATEST_BACKUP.zip');
+      if (fs.existsSync(zipBundle)) fs.unlinkSync(zipBundle);
+      execSync(`cd "${localConsole}" && zip -rq "${zipBundle}" package.json index.html vite.config.ts tsconfig.json dist src -x "*.DS_Store"`, { stdio: 'pipe' });
+      console.log(`✅ Created GFCC_CONSOLE_LATEST_BACKUP.zip in console_backup -> Google Drive`);
+    } catch (err) {
+      console.warn(`Warning updating console_backup:`, err.message);
+    }
+  }
+
+  // 5. Sync docs/ -> Google Drive docs/
+  const localDocs = path.join(ROOT_DIR, 'docs');
+  const gdriveDocs = path.join(gdriveVault, 'docs');
+  if (fs.existsSync(localDocs)) {
+    try {
+      fs.mkdirSync(gdriveDocs, { recursive: true });
+      execSync(`rsync -avu --exclude=".DS_Store" "${localDocs}/" "${gdriveDocs}/"`, { stdio: 'pipe' });
+      console.log(`✅ Synced docs/ -> Google Drive docs/`);
+    } catch (err) {
+      console.warn(`Warning syncing docs:`, err.message);
+    }
+  }
+
+  // 6. Sync dist/vaults -> Google Drive vaults
+  const localVaults = path.join(ROOT_DIR, 'dist', 'vaults');
+  const gdriveVaults = path.join(gdriveVault, 'vaults');
+  if (fs.existsSync(localVaults)) {
+    try {
+      fs.mkdirSync(gdriveVaults, { recursive: true });
+      execSync(`rsync -avu --exclude=".DS_Store" "${localVaults}/" "${gdriveVaults}/"`, { stdio: 'pipe' });
+      console.log(`✅ Synced dist/vaults/ -> Google Drive vaults/`);
+    } catch (err) {
+      console.warn(`Warning syncing vaults:`, err.message);
+    }
+  }
+
+  // 7. Update root of My Drive audit reports
+  const myDriveRootCandidates = [
+    path.join(home, 'Google Drive', 'My Drive'),
+    path.join(home, 'Library', 'CloudStorage', 'GoogleDrive-gcoinstash@gmail.com', 'My Drive')
+  ];
+  for (const mRoot of myDriveRootCandidates) {
+    if (fs.existsSync(mRoot)) {
+      try {
+        const auditSrc = path.join(ROOT_DIR, 'docs', 'AUDIT_360_VERIFIED_REPORT.md');
+        if (fs.existsSync(auditSrc)) {
+          fs.copyFileSync(auditSrc, path.join(mRoot, 'AUDIT_360_VERIFIED_REPORT.md'));
+          fs.copyFileSync(auditSrc, path.join(mRoot, 'GFCC_AUDIT_360_VERIFIED_REPORT_v1.3.1.md'));
+        }
+      } catch (err) {
+        console.warn(`Warning copying audit report to My Drive root:`, err.message);
+      }
+    }
+  }
+
+  console.log(`✅ [GOOGLE DRIVE FULL SYNC] Completed all extended Google Drive synchronizations.`);
 }
 
 function watchMode() {
