@@ -89,6 +89,7 @@ An asset may ONLY be classified as Flagship Tier-2 if it passes all criteria:
 7. Clean demo URL, walkthrough video, screenshots, and concept brief.
 8. Standalone exportable codebase, clean documentation, dependency record, and license terms.
 9. Prominent "simulated data / not production" disclosure.
+10. **Track 2 Mandatory Compliance Gate**: Must automatically instantiate with `COMPLIANCE.md` (NIST SP 800-218 SSDF v1.1 alignment, SBOM tracking, access controls), `.env.example` (zero secrets), `README.md` Security & Integrity block, and Product Truth badge (Prototype/Simulation).
 
 ---
 

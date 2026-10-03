@@ -42,6 +42,8 @@ const MASTER_FILES = [
   { src: 'docs/COMMERCIAL_POSITIONING.md', destName: 'COMMERCIAL_POSITIONING.md' },
   { src: 'docs/INVESTOR_AUDIT_REPORT.md', destName: 'INVESTOR_AUDIT_REPORT.md' },
   { src: 'docs/AUDIT_360_VERIFIED_REPORT.md', destName: 'AUDIT_360_VERIFIED_REPORT.md' },
+  { src: 'templates/compliance/COMPLIANCE.template.md', destName: 'COMPLIANCE.template.md' },
+  { src: 'protocols/INSTITUTIONAL_PRODUCTION_STANDARD.md', destName: 'INSTITUTIONAL_PRODUCTION_STANDARD.md' },
 ];
 
 function getDestinationDirs() {
@@ -375,6 +377,19 @@ function syncGoogleDriveFull() {
       console.log(`✅ Synced site/ -> Google Drive showroom_site/`);
     } catch (err) {
       console.warn(`Warning syncing showroom site:`, err.message);
+    }
+  }
+
+  // 6c. Sync templates/ -> Google Drive templates/
+  const localTemplates = path.join(ROOT_DIR, 'templates');
+  const gdriveTemplates = path.join(gdriveVault, 'templates');
+  if (fs.existsSync(localTemplates)) {
+    try {
+      fs.mkdirSync(gdriveTemplates, { recursive: true });
+      execSync(`rsync -avu --exclude=".DS_Store" "${localTemplates}/" "${gdriveTemplates}/"`, { stdio: 'pipe' });
+      console.log(`✅ Synced templates/ -> Google Drive templates/`);
+    } catch (err) {
+      console.warn(`Warning syncing templates:`, err.message);
     }
   }
 

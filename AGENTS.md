@@ -31,7 +31,7 @@ Never mix tracks. Default to Track 1.
    - Flagship License: $1,500–$3,500
    - Entry Buyout Anchor: $14,500 ($10,000–$18,000 range)
    - Full Buyout: $18,000–$35,000 | Strategic: $35,000–$75,000+
-   - Requires full Flagship Gate qualification pass.
+   - Requires full Flagship Gate qualification pass & NIST SP 800-218 Compliance Gate (COMPLIANCE.md, .env.example, README security block, Product Truth badge).
 
 ## PRODUCT TRUTH LABELS
 - Permitted Labels: Template, Interactive Prototype, Hosted Demo, Simulation, Deployable Source Template, Customer-Configured Deployment, Production Service.
@@ -193,6 +193,11 @@ Do not classify an asset as Flagship Tier-1 unless it has:
 - Source code or an exportable build
 - Documentation, dependency record, and license terms
 - Clear “simulated data / not production” disclosure
+- **TRACK 2 MANDATORY COMPLIANCE GATE**: Every Track 2 flagship created MUST automatically instantiate with:
+  a) `COMPLIANCE.md` (detailing NIST SP 800-218 SSDF v1.1 alignment, SBOM tracking, and access controls)
+  b) `.env.example` (with zero real secrets, strict variable documentation)
+  c) `README.md` Security & Integrity Specification block
+  d) Product Truth badge defining asset maturity as Prototype/Simulation.
 
 If an asset fails this gate, use Track 1 pricing.
 
@@ -253,6 +258,7 @@ Do not count a new product toward the 500-asset target until it has:
 - Sector, vault, and product-family assignment
 - Core / fleet / lease / micro-APA eligibility classification
 - Required demo, simulation, and vertical-risk disclosures
+- Track 2 Mandatory Compliance Gate deliverables (`COMPLIANCE.md`, `.env.example`, `README.md` Security Block, Product Truth badge) if classified as Flagship
 - Current maintenance owner and last-review date
 
 ## VALUATION RULES

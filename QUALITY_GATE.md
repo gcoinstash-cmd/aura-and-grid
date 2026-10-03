@@ -201,7 +201,22 @@ To permanently eliminate external audit friction and guarantee that every bluepr
 4. **Gate 4 (DOM Claim Normalization)**: Mandatory Level 3 Blueprint lexicon; strict ban on "100% Production Ready" or "WCAG AA Certified".
 5. **Gate 5 (Telemetry & Denominator Invariants)**: Strict Retail Shelf MSRP = $N \times \$199$, internal sectors sum to total $N$, HTTP 200 on live preview.
 6. **Gate 6 (APA Schedule A Ingestion)**: 13-column row added to `docs/APA_SCHEDULE_A.csv` and `docs/TECHNICAL_DATA_ROOM.md` with repo-relative `supabase/` paths.
+7. **Gate 7 (Track 2 Mandatory Compliance Gate — NIST SP 800-218 SSDF v1.1)**: Every Track 2 flagship created MUST automatically instantiate with:
+   - a) `COMPLIANCE.md` (detailing NIST SP 800-218 SSDF v1.1 alignment, SBOM tracking, and access controls)
+   - b) `.env.example` (with zero real secrets, strict variable documentation)
+   - c) `README.md` Security & Integrity Specification block
+   - d) Product Truth badge defining asset maturity as Prototype/Simulation.
 
 Automated verification command: `node scripts/verify_institutional_standard.mjs [slug]`. Assets passing this gate are declared Institutional Diligence Approved upon creation without external Perplexity dependency.
+
+---
+
+## PART 8: TRACK 2 MANDATORY COMPLIANCE GATE (NIST SP 800-218 SSDF v1.1)
+
+Every Track 2 flagship model ($14,500 Buyout Anchor / $1,500–$3,500 Commercial License) manufactured within GhostFactoryOS must instantiate from `templates/compliance/COMPLIANCE.template.md` and satisfy the 4 mandatory compliance deliverables:
+1. **`COMPLIANCE.md`**: Dedicated supply chain security specification covering NIST SP 800-218 SSDF v1.1 practices (PO, PS, PW, RV), SBOM integration, and access controls.
+2. **Sanitized `.env.example`**: Strict environment variable schema documenting all required tokens with non-functional placeholders and zero hardcoded secrets.
+3. **`README.md` Security Specification**: Permanent top-fold block declaring framework alignment, maturity level, secrets management, and dependency audit standards.
+4. **Product Truth Badges & Disclosures**: Explicit labeling across UI components establishing the asset as an **Interactive Simulation / Technical Prototype (Non-Production)**, strictly disclaiming live operational, flight, space, or regulatory certification.
 
 

@@ -151,6 +151,11 @@ Do not classify an asset as Flagship Tier-1 unless it has:
 - Source code or an exportable build
 - Documentation, dependency record, and license terms
 - Clear “simulated data / not production” disclosure
+- **TRACK 2 MANDATORY COMPLIANCE GATE**: Every Track 2 flagship created MUST automatically instantiate with:
+  a) `COMPLIANCE.md` (detailing NIST SP 800-218 SSDF v1.1 alignment, SBOM tracking, and access controls)
+  b) `.env.example` (with zero real secrets, strict variable documentation)
+  c) `README.md` Security & Integrity Specification block
+  d) Product Truth badge defining asset maturity as Prototype/Simulation.
 
 If an asset fails this gate, use Track 1 pricing.
 
@@ -211,6 +216,7 @@ Do not count a new product toward the 500-asset target until it has:
 - Sector, vault, and product-family assignment
 - Core / fleet / lease / micro-APA eligibility classification
 - Required demo, simulation, and vertical-risk disclosures
+- Track 2 Mandatory Compliance Gate deliverables (`COMPLIANCE.md`, `.env.example`, `README.md` Security Block, Product Truth badge) if classified as Flagship
 - Current maintenance owner and last-review date
 
 ## VALUATION RULES
