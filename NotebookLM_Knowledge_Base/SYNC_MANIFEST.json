@@ -1,5 +1,5 @@
 {
-  "sync_timestamp": "2026-10-03T20:59:55.153Z",
+  "sync_timestamp": "2026-10-03T21:24:52.697Z",
   "version": "v2.0-master-sync",
   "status": "ALL_SYNCED",
   "portfolio_facts": {
@@ -42,26 +42,36 @@
     "portfolio_retention_floor_percent": 80
   },
   "valuation_summary": {
-    "orderly_fair_market_value_corridor": [
-      105000,
-      235250
-    ],
-    "best_planning_anchor_fmv": 160000,
-    "direct_b2b_ask_target": [
-      195000,
-      265000
+    "distress_liquidation_floor": [
+      75000,
+      115000
     ],
     "realistic_accepted_offer": [
       135000,
       175000
     ],
+    "direct_b2b_ask_target": [
+      195000,
+      265000
+    ],
+    "strategic_buyout_anchor": 721000,
+    "strategic_buyout_range": [
+      608000,
+      1040000
+    ],
     "development_replacement_cost": [
-      715000,
-      2020000
+      965000,
+      1760000
+    ],
+    "strategic_acquisition_ceiling": [
+      1490000,
+      2850000
     ]
   },
-  "total_files_synced": 16,
+  "total_files_synced": 18,
   "checksums": {
+    "README.md": "60eb2f3f82030e26a231066947c5b71e3a6e570a39f4ca8f71b93f47c7d20b9b",
+    "GFCC_README.md": "cdc802312b4f36cf2d9c7676f5118f6cb966aa47badeec064fafb6e09e70eec6",
     "AGENTS.md": "8124724f6b5624674a791e39255d513cedf6c9d9e923abb2925e8b9e270b6693",
     "GEMINI.md": "8124724f6b5624674a791e39255d513cedf6c9d9e923abb2925e8b9e270b6693",
     "instructions.txt": "2745808d0db0aefd33cb03e3dac2facf78ba70b5aab341da568acc588b33191b",

@@ -24,6 +24,8 @@ const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, '..');
 
 const MASTER_FILES = [
+  { src: 'README.md', destName: 'README.md' },
+  { src: 'tools/ghost-factory-console/README.md', destName: 'GFCC_README.md' },
   { src: 'AGENTS.md', destName: 'AGENTS.md' },
   { src: 'GEMINI.md', destName: 'GEMINI.md' },
   { src: 'instructions.txt', destName: 'instructions.txt' },
@@ -211,11 +213,13 @@ export function runMasterSync() {
       portfolio_retention_floor_percent: 80,
     },
     valuation_summary: {
-      orderly_fair_market_value_corridor: [105000, 235250],
-      best_planning_anchor_fmv: 160000,
-      direct_b2b_ask_target: [195000, 265000],
+      distress_liquidation_floor: [75000, 115000],
       realistic_accepted_offer: [135000, 175000],
-      development_replacement_cost: [715000, 2020000],
+      direct_b2b_ask_target: [195000, 265000],
+      strategic_buyout_anchor: 721000,
+      strategic_buyout_range: [608000, 1040000],
+      development_replacement_cost: [965000, 1760000],
+      strategic_acquisition_ceiling: [1490000, 2850000],
     },
     total_files_synced: verifiedSources.length,
     checksums,
@@ -284,11 +288,16 @@ function syncGoogleDriveFull() {
   // 2. Sync tools/ghost-factory-console/dist -> console_dist
   const localConsoleDist = path.join(ROOT_DIR, 'tools', 'ghost-factory-console', 'dist');
   const gdriveConsoleDist = path.join(gdriveVault, 'console_dist');
+  let consoleVersion = 'v1.6.0';
+  try {
+    const pkg = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, 'tools', 'ghost-factory-console', 'package.json'), 'utf8'));
+    consoleVersion = `v${pkg.version}`;
+  } catch {}
   if (fs.existsSync(localConsoleDist)) {
     try {
       fs.mkdirSync(gdriveConsoleDist, { recursive: true });
       execSync(`rsync -avu --delete --exclude=".DS_Store" "${localConsoleDist}/" "${gdriveConsoleDist}/"`, { stdio: 'pipe' });
-      console.log(`✅ Synced console_dist (v1.5.9 production bundle) -> Google Drive`);
+      console.log(`✅ Synced console_dist (${consoleVersion} production bundle) -> Google Drive`);
     } catch (err) {
       console.warn(`Warning syncing console_dist:`, err.message);
     }
@@ -353,6 +362,19 @@ function syncGoogleDriveFull() {
       console.log(`✅ Synced dist/vaults/ -> Google Drive vaults/`);
     } catch (err) {
       console.warn(`Warning syncing vaults:`, err.message);
+    }
+  }
+
+  // 6b. Sync site/ -> Google Drive showroom_site/
+  const localSite = path.join(ROOT_DIR, 'site');
+  const gdriveSite = path.join(gdriveVault, 'showroom_site');
+  if (fs.existsSync(localSite)) {
+    try {
+      fs.mkdirSync(gdriveSite, { recursive: true });
+      execSync(`rsync -avu --exclude=".DS_Store" "${localSite}/" "${gdriveSite}/"`, { stdio: 'pipe' });
+      console.log(`✅ Synced site/ -> Google Drive showroom_site/`);
+    } catch (err) {
+      console.warn(`Warning syncing showroom site:`, err.message);
     }
   }
 
