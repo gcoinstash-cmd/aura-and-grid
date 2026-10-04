@@ -2,7 +2,7 @@
   "catalog_version": "1.2.1",
   "store": "Aura & Grid",
   "store_url": "https://auraandgrid.gumroad.com",
-  "total_flagships": 114,
+  "total_flagships": 122,
   "standards": "Ghost Factory™ 9.0+ Verified Production Grade (Permanent 5-Archetype Rotation & Curated Design Intelligence)",
   "database_engine": "Supabase PostgreSQL (RLS Enabled)",
   "frontend_stack": "React 19 + Tailwind CSS + Lucide Icons + Vite",
@@ -3813,6 +3813,470 @@
       "complianceStandard": "NIST-SP-800-218",
       "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
       "coverImage": "assets/covers/commercial-lunar-regolith-isru-refining-plant-scada-os-cover.webp"
+    },
+    {
+      "id": 115,
+      "name": "AEGIS-SWARM Defense Console",
+      "category": "Autonomous Swarm Perimeter Defense SCADA OS",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/aegis-swarm-defense-console",
+      "preview_url": "https://aegis-swarm-defense-console.onrender.com",
+      "admin_url": "https://aegis-swarm-defense-console.onrender.com/admin",
+      "audit_score": 9.9,
+      "tables": [
+        "interceptor_drones",
+        "target_tracks",
+        "radar_lidar_contacts",
+        "ew_spectrum_sweeps",
+        "perimeter_sectors",
+        "defense_audit_logs"
+      ],
+      "vertical": "aerospace",
+      "archetype_id": "A",
+      "archetype_name": "Archetype A: Dense Operational Console",
+      "archetype_description": "Persistent utility rail, simulated operational triage queue, and slide-out inspection drawer.",
+      "design_benchmark": "Raytheon Swarm Intercept & Palantir Defense Console",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/aegis-swarm-defense-console",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "flagship_license_range": [
+        1500,
+        3500
+      ],
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "full_asset_buyout_range": [
+        18000,
+        35000
+      ],
+      "strategic_acquisition_range": [
+        35000,
+        75000
+      ],
+      "truth_label": "Interactive Prototype (Simulated Data Only) — Concept Demo",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
+      "best_for": "Best for: Defense perimeter engineers & autonomous drone swarm operators",
+      "domain": "Deep Tech SCADA",
+      "rarity_tier": "Elite",
+      "permanent": false,
+      "buyoutEligible": true,
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/aegis-swarm-defense-console-cover.webp"
+    },
+    {
+      "id": 116,
+      "name": "Aetheris Sat-Laser ISL Telemetry OS",
+      "category": "Orbital Inter-Satellite Laser ISL Optical Terminal SCADA OS",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/aetheris-satlaser-isl-telemetry-os",
+      "preview_url": "https://aetheris-satlaser-isl-telemetry-os.onrender.com",
+      "admin_url": "https://aetheris-satlaser-isl-telemetry-os.onrender.com/admin",
+      "audit_score": 9.9,
+      "tables": [
+        "optical_terminals",
+        "laser_links",
+        "constellation_satellites",
+        "buffer_telemetry",
+        "beam_pointing_logs",
+        "pat_raster_searches"
+      ],
+      "vertical": "aerospace",
+      "archetype_id": "A",
+      "archetype_name": "Archetype A: Dense Operational Console",
+      "archetype_description": "Persistent utility rail, simulated operational triage queue, and slide-out inspection drawer.",
+      "design_benchmark": "SpaceX Starlink Laser Crosslink & L3Harris Optical Console",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/aetheris-satlaser-isl-telemetry-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "flagship_license_range": [
+        1500,
+        3500
+      ],
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "full_asset_buyout_range": [
+        18000,
+        35000
+      ],
+      "strategic_acquisition_range": [
+        35000,
+        75000
+      ],
+      "truth_label": "Interactive Prototype (Simulated Data Only) — Concept Demo",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
+      "best_for": "Best for: Satellite constellation engineers & orbital laser optical terminal operators",
+      "domain": "Deep Tech SCADA",
+      "rarity_tier": "Elite",
+      "permanent": true,
+      "buyoutEligible": false,
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/aetheris-satlaser-isl-telemetry-os-cover.webp"
+    },
+    {
+      "id": 117,
+      "name": "Langley Hypersonic Wind Tunnel SCADA",
+      "category": "High-Mach Hypersonic Wind Tunnel Aerodynamics Telemetry OS",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/langley-hypersonic-wind-tunnel-scada",
+      "preview_url": "https://langley-hypersonic-wind-tunnel-scada.onrender.com",
+      "admin_url": "https://langley-hypersonic-wind-tunnel-scada.onrender.com/admin",
+      "audit_score": 9.9,
+      "tables": [
+        "wind_tunnel_runs",
+        "piezo_transducers",
+        "force_balance_sensors",
+        "arc_heater_diagnostics",
+        "mach_shockwave_telemetry",
+        "tunnel_scram_events"
+      ],
+      "vertical": "aerospace",
+      "archetype_id": "A",
+      "archetype_name": "Archetype A: Dense Operational Console",
+      "archetype_description": "Persistent utility rail, simulated operational triage queue, and slide-out inspection drawer.",
+      "design_benchmark": "NASA Langley 8-Foot High-Temp Tunnel SCADA & AEDC Mach 10 Console",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/langley-hypersonic-wind-tunnel-scada",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "flagship_license_range": [
+        1500,
+        3500
+      ],
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "full_asset_buyout_range": [
+        18000,
+        35000
+      ],
+      "strategic_acquisition_range": [
+        35000,
+        75000
+      ],
+      "truth_label": "Interactive Prototype (Simulated Data Only) — Concept Demo",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
+      "best_for": "Best for: Hypersonic aerodynamics engineers & Mach 7+ wind tunnel operators",
+      "domain": "Deep Tech SCADA",
+      "rarity_tier": "Elite",
+      "permanent": true,
+      "buyoutEligible": false,
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/langley-hypersonic-wind-tunnel-scada-cover.webp"
+    },
+    {
+      "id": 118,
+      "name": "Vanguard ECLSS Life Support Systems OS",
+      "category": "Orbital Habitat Environmental Control & Life Support SCADA OS",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/vanguard-eclss-life-support-os",
+      "preview_url": "https://vanguard-eclss-life-support-os.onrender.com",
+      "admin_url": "https://vanguard-eclss-life-support-os.onrender.com/admin",
+      "audit_score": 9.9,
+      "tables": [
+        "metabolic_loops",
+        "sabatier_reactors",
+        "oxygen_generation_assemblies",
+        "cabin_atmosphere_telemetry",
+        "water_recovery_systems",
+        "autonomy_reserves"
+      ],
+      "vertical": "aerospace",
+      "archetype_id": "A",
+      "archetype_name": "Archetype A: Dense Operational Console",
+      "archetype_description": "Persistent utility rail, simulated operational triage queue, and slide-out inspection drawer.",
+      "design_benchmark": "NASA Artemis Gateway ECLSS & Axiom Station Life Support Console",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/vanguard-eclss-life-support-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "flagship_license_range": [
+        1500,
+        3500
+      ],
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "full_asset_buyout_range": [
+        18000,
+        35000
+      ],
+      "strategic_acquisition_range": [
+        35000,
+        75000
+      ],
+      "truth_label": "Interactive Prototype (Simulated Data Only) — Concept Demo",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
+      "best_for": "Best for: Orbital habitat station engineers & closed-loop ECLSS life support operators",
+      "domain": "Deep Tech SCADA",
+      "rarity_tier": "Elite",
+      "permanent": true,
+      "buyoutEligible": false,
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/vanguard-eclss-life-support-os-cover.webp"
+    },
+    {
+      "id": 119,
+      "name": "Cascade Supercritical EGS Geothermal OS",
+      "category": "Supercritical Enhanced Geothermal System Wellhead SCADA OS",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/cascade-supercritical-egs-geothermal-os",
+      "preview_url": "https://cascade-supercritical-egs-geothermal-os.onrender.com",
+      "admin_url": "https://cascade-supercritical-egs-geothermal-os.onrender.com/admin",
+      "audit_score": 9.9,
+      "tables": [
+        "wellhead_clusters",
+        "subsurface_fractures",
+        "supercritical_turbines",
+        "micro_seismic_sensors",
+        "hydro_fracture_logs",
+        "working_fluid_loops"
+      ],
+      "vertical": "clean_energy",
+      "archetype_id": "A",
+      "archetype_name": "Archetype A: Dense Operational Console",
+      "archetype_description": "Persistent utility rail, simulated operational triage queue, and slide-out inspection drawer.",
+      "design_benchmark": "Fervo Energy Geothermal SCADA & Ormat EGS Wellhead Console",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/cascade-supercritical-egs-geothermal-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "flagship_license_range": [
+        1500,
+        3500
+      ],
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "full_asset_buyout_range": [
+        18000,
+        35000
+      ],
+      "strategic_acquisition_range": [
+        35000,
+        75000
+      ],
+      "truth_label": "Interactive Prototype (Simulated Data Only) — Concept Demo",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
+      "best_for": "Best for: Supercritical geothermal reservoir engineers & deep wellhead SCADA operators",
+      "domain": "Energy SCADA",
+      "rarity_tier": "Elite",
+      "permanent": true,
+      "buyoutEligible": false,
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/cascade-supercritical-egs-geothermal-os-cover.webp"
+    },
+    {
+      "id": 120,
+      "name": "Subsea Autonomous Crawler Telemetry OS",
+      "category": "Subsea Seabed Mining & Trenching Autonomous Crawler SCADA OS",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/subsea-autonomous-crawler-telemetry-os",
+      "preview_url": "https://subsea-autonomous-crawler-telemetry-os.onrender.com",
+      "admin_url": "https://subsea-autonomous-crawler-telemetry-os.onrender.com/admin",
+      "audit_score": 9.9,
+      "tables": [
+        "subsea_crawlers",
+        "seabed_trenchers",
+        "hydraulic_manifolds",
+        "acoustic_transponders",
+        "slurry_pump_telemetry",
+        "depth_pressure_sensors"
+      ],
+      "vertical": "subsea",
+      "archetype_id": "A",
+      "archetype_name": "Archetype A: Dense Operational Console",
+      "archetype_description": "Persistent utility rail, simulated operational triage queue, and slide-out inspection drawer.",
+      "design_benchmark": "Fugro Deep-Sea Trenching & Oceaneering Subsea Crawler Console",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/subsea-autonomous-crawler-telemetry-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "flagship_license_range": [
+        1500,
+        3500
+      ],
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "full_asset_buyout_range": [
+        18000,
+        35000
+      ],
+      "strategic_acquisition_range": [
+        35000,
+        75000
+      ],
+      "truth_label": "Interactive Prototype (Simulated Data Only) — Concept Demo",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
+      "best_for": "Best for: Deep-sea mining engineers & subsea autonomous crawler operators",
+      "domain": "Industrial Robotics & Autonomous SCADA",
+      "rarity_tier": "Elite",
+      "permanent": true,
+      "buyoutEligible": false,
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/subsea-autonomous-crawler-telemetry-os-cover.webp"
+    },
+    {
+      "id": 121,
+      "name": "MetroNest-04 Tactical Drone Ops HUD",
+      "category": "Autonomous Tactical Drone Swarm Urban Operations HUD Console",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/metronest-04-tactical-drone-ops-hud",
+      "preview_url": "https://metronest-04-tactical-drone-ops-hud.onrender.com",
+      "admin_url": "https://metronest-04-tactical-drone-ops-hud.onrender.com/admin",
+      "audit_score": 9.9,
+      "tables": [
+        "vertihub_docks",
+        "tactical_drones",
+        "airspace_corridors",
+        "flight_manifests",
+        "payload_telemetry",
+        "battery_swap_stations"
+      ],
+      "vertical": "aerospace",
+      "archetype_id": "A",
+      "archetype_name": "Archetype A: Dense Operational Console",
+      "archetype_description": "Persistent utility rail, simulated operational triage queue, and slide-out inspection drawer.",
+      "design_benchmark": "Anduril Lattice Ghost Ops & Zipline Autonomous Vertihub HUD",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/metronest-04-tactical-drone-ops-hud",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "flagship_license_range": [
+        1500,
+        3500
+      ],
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "full_asset_buyout_range": [
+        18000,
+        35000
+      ],
+      "strategic_acquisition_range": [
+        35000,
+        75000
+      ],
+      "truth_label": "Interactive Prototype (Simulated Data Only) — Concept Demo",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
+      "best_for": "Best for: Perimeter security operators & autonomous tactical drone swarm pilots",
+      "domain": "Deep Tech SCADA",
+      "rarity_tier": "Elite",
+      "permanent": true,
+      "buyoutEligible": false,
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/metronest-04-tactical-drone-ops-hud-cover.webp"
+    },
+    {
+      "id": 122,
+      "name": "VoltGrid EV Fleet Dispatch Telemetry OS",
+      "category": "Commercial Electric Vehicle Fleet Dispatch & Telemetry OS",
+      "gumroad_url": "https://auraandgrid.gumroad.com/l/voltgrid-ev-fleet-dispatch-telemetry-os",
+      "preview_url": "https://voltgrid-ev-fleet-dispatch-telemetry-os.onrender.com",
+      "admin_url": "https://voltgrid-ev-fleet-dispatch-telemetry-os.onrender.com/admin",
+      "audit_score": 9.9,
+      "tables": [
+        "ev_vehicles",
+        "charging_depot_bays",
+        "fleet_telemetry_vectors",
+        "corridor_dispatches",
+        "battery_health_logs",
+        "energy_grid_draws"
+      ],
+      "vertical": "automotive",
+      "archetype_id": "A",
+      "archetype_name": "Archetype A: Dense Operational Console",
+      "archetype_description": "Persistent utility rail, simulated operational triage queue, and slide-out inspection drawer.",
+      "design_benchmark": "Tesla Megacharger Depot SCADA & Rivian Commercial Fleet HQ",
+      "checkout_active": true,
+      "status_badge": "Flagship Interactive Prototype",
+      "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/voltgrid-ev-fleet-dispatch-telemetry-os",
+      "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+      "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+      "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+      "flagship_qualified": true,
+      "flagship_license_msrp": 1500,
+      "flagship_license_range": [
+        1500,
+        3500
+      ],
+      "exclusive_buyout_anchor": 14500,
+      "exclusive_buyout_range": [
+        10000,
+        18000
+      ],
+      "full_asset_buyout_range": [
+        18000,
+        35000
+      ],
+      "strategic_acquisition_range": [
+        35000,
+        75000
+      ],
+      "truth_label": "Interactive Prototype (Simulated Data Only) — Concept Demo",
+      "truth_badge": "Interactive Prototype // Simulated Data Only",
+      "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
+      "best_for": "Best for: Commercial EV fleet dispatch managers & electric vehicle charging hub operators",
+      "domain": "Mobility & Fleet Logistics",
+      "rarity_tier": "Elite",
+      "permanent": true,
+      "buyoutEligible": false,
+      "complianceStandard": "NIST-SP-800-218",
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/voltgrid-ev-fleet-dispatch-telemetry-os-cover.webp"
     }
   ],
   "vertical_slices": {
