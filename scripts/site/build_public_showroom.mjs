@@ -295,37 +295,37 @@ const renderedCardsHtml = publicProducts.map(p => {
           </div>
 
           <!-- Card Body -->
-          <div class="p-6">
-            <div class="text-[11px] font-mono text-neutral-500 uppercase tracking-widest mb-1.5">${escapeHtml(p.archetype_name)}</div>
-            <h3 class="text-xl font-serif font-bold text-white mb-2 leading-snug">${escapeHtml(p.name)}</h3>
+          <div class="p-6 sm:p-8">
+            <div class="text-xs font-mono text-neutral-400 uppercase tracking-widest mb-2">${escapeHtml(p.archetype_name)}</div>
+            <h3 class="text-xl font-semibold text-white tracking-tight mb-2 leading-snug">${escapeHtml(p.name)}</h3>
             
             <!-- High-Contrast Universal Truth Pill Badge (Visible plain text in DOM) -->
-            <div class="my-2">
-              <span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-amber-400 text-black font-black text-[10px] font-mono uppercase tracking-wider shadow-sm">
+            <div class="my-2.5">
+              <span class="inline-flex items-center px-2.5 py-1 rounded-full bg-amber-400 text-black font-black text-xs font-mono uppercase tracking-wider shadow-sm border border-amber-300">
                 [SIMULATED DATA PROTOTYPE]
               </span>
             </div>
 
-            <p class="text-xs text-neutral-400 line-clamp-2 mb-3 leading-relaxed">${escapeHtml(p.category)}</p>
+            <p class="text-sm md:text-base text-zinc-300 line-clamp-2 mb-3 leading-relaxed">${escapeHtml(p.category)}</p>
 
             <!-- Buyer Qualification Row: Best For -->
-            <div class="mb-3 px-3 py-2 rounded-lg bg-black/60 border border-white/10 text-xs font-mono flex items-start gap-1.5">
-              <span class="text-gold font-bold uppercase tracking-wider shrink-0 text-[10px]">Best For:</span>
-              <span class="text-neutral-200 text-[11px] leading-snug">${escapeHtml(p.best_for ? p.best_for.replace(/^Best for:\s*/i, '') : 'Commercial agency client adaptation')}</span>
+            <div class="mb-3.5 px-3.5 py-2.5 rounded-lg bg-black/60 border border-white/10 text-xs sm:text-sm font-mono flex items-start gap-2">
+              <span class="text-gold font-bold uppercase tracking-wider shrink-0 text-xs">Best For:</span>
+              <span class="text-zinc-200 text-xs sm:text-sm leading-snug">${escapeHtml(p.best_for ? p.best_for.replace(/^Best for:\s*/i, '') : 'Commercial agency client adaptation')}</span>
             </div>
 
             <!-- Dual-Track Dealership Window Sticker Grid -->
-            <div class="mb-3 p-3 rounded-lg border text-xs font-mono ${isTrack2 ? 'bg-amber-950/20 border-amber-500/40 text-amber-200' : 'bg-emerald-950/20 border-emerald-500/40 text-emerald-200'}">
+            <div class="mb-3 p-3.5 rounded-lg border text-xs font-mono ${isTrack2 ? 'bg-amber-950/20 border-amber-500/40 text-amber-200' : 'bg-emerald-950/20 border-emerald-500/40 text-emerald-200'}">
               <div class="flex items-center justify-between mb-2">
-                <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider ${isTrack2 ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40' : 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40'}">
+                <span class="px-2.5 py-1 rounded-full text-xs font-mono font-bold tracking-wider uppercase ${isTrack2 ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40' : 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40'}">
                   ${isTrack2 ? 'Track 2 // Flagship Tier-1' : 'Track 1 // Lean Rapid-Sale'}
                 </span>
-                <span class="text-[10px] text-neutral-400 font-medium">
+                <span class="text-[11px] text-neutral-400 font-medium">
                   ${isTrack2 ? 'SCADA / Deep Tech' : 'Turnkey Template'}
                 </span>
               </div>
               ${isTrack2 ? `
-              <div class="space-y-1 text-[11px]">
+              <div class="space-y-1.5 text-xs sm:text-sm">
                 <div class="flex justify-between">
                   <span class="text-neutral-400">Commercial License:</span>
                   <span class="text-amber-300 font-bold">$1,500 – $3,500 USD</span>
@@ -334,13 +334,13 @@ const renderedCardsHtml = publicProducts.map(p => {
                   <span class="text-neutral-400">Buyout Anchor:</span>
                   <span class="text-amber-400 font-bold">$14,500 USD</span>
                 </div>
-                <div class="flex justify-between text-[10px] text-neutral-400 border-t border-amber-500/15 pt-1">
+                <div class="flex justify-between text-xs text-neutral-400 border-t border-amber-500/15 pt-1.5">
                   <span>Exclusive Buyout Range:</span>
-                  <span class="text-amber-200/90">$10,000 – $18,000 USD</span>
+                  <span class="text-amber-200/90 font-medium">$10,000 – $18,000 USD</span>
                 </div>
               </div>
               ` : `
-              <div class="space-y-1 text-[11px]">
+              <div class="space-y-1.5 text-xs sm:text-sm">
                 <div class="flex justify-between">
                   <span class="text-neutral-400">Retail Source License:</span>
                   <span class="text-emerald-300 font-bold">$199 USD</span>
@@ -349,7 +349,7 @@ const renderedCardsHtml = publicProducts.map(p => {
                   <span class="text-neutral-400">Multi-Seat Team Pass:</span>
                   <span class="text-cyan-300 font-bold">$599 USD</span>
                 </div>
-                <div class="flex justify-between text-[10px] text-neutral-400 border-t border-emerald-500/15 pt-1">
+                <div class="flex justify-between text-xs text-neutral-400 border-t border-emerald-500/15 pt-1.5">
                   <span>Exclusive Buyout Floor:</span>
                   <span class="text-emerald-300 font-bold">$3,800 – $6,500 ($4,500 Anchor)</span>
                 </div>
@@ -359,11 +359,11 @@ const renderedCardsHtml = publicProducts.map(p => {
 
             <!-- Expandable Compliance Details Drawer -->
             <details class="mt-3 pt-2 border-t border-white/5 group">
-              <summary class="text-[10px] font-mono text-neutral-400 hover:text-neutral-200 cursor-pointer flex items-center justify-between select-none py-1">
+              <summary class="text-xs font-mono text-neutral-400 hover:text-neutral-200 cursor-pointer flex items-center justify-between select-none py-1">
                 <span>Truth &amp; Compliance</span>
                 <span class="text-neutral-500 group-open:rotate-180 transition-transform">▼</span>
               </summary>
-              <div class="mt-2 p-2.5 rounded bg-amber-950/40 border border-amber-500/30 text-amber-200 text-[10px] font-mono leading-relaxed">
+              <div class="mt-2 p-2.5 rounded bg-amber-950/40 border border-amber-500/30 text-amber-200 text-xs font-mono leading-relaxed">
                 ${disclaimerText}
               </div>
             </details>
@@ -371,7 +371,7 @@ const renderedCardsHtml = publicProducts.map(p => {
         </div>
 
         <!-- Card Actions -->
-        <div class="p-6 pt-0 border-t border-white/5 mt-4 flex items-center justify-between gap-3 text-xs font-mono">
+        <div class="p-6 sm:p-8 pt-0 border-t border-white/5 mt-4 flex items-center justify-between gap-3 text-xs font-mono">
           <a href="${escapeHtml(p.preview_url)}" target="_blank" class="flex-1 py-2.5 rounded bg-panel hairline-border hover:border-gold/40 text-center text-white font-medium hover:text-gold transition-all min-h-[44px] flex items-center justify-center">
             Live Demo ↗
           </a>
@@ -406,7 +406,7 @@ const showroomHtml = `<!DOCTYPE html>
   <!-- Preconnect & Web Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Primary Pre-Compiled Standalone Stylesheet -->
   <link rel="stylesheet" href="assets/style.css?v=1.6.0">
@@ -429,7 +429,7 @@ const showroomHtml = `<!DOCTYPE html>
           fontFamily: {
             serif: ['"Playfair Display"', 'Georgia', 'serif'],
             cinzel: ['Cinzel', 'serif'],
-            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
             mono: ['"JetBrains Mono"', 'monospace']
           }
         }
@@ -456,7 +456,7 @@ const showroomHtml = `<!DOCTYPE html>
     body {
       background-color: #08090A;
       color: #E5E7EB;
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       margin: 0;
       padding: 0;
       -webkit-font-smoothing: antialiased;
@@ -520,7 +520,7 @@ const showroomHtml = `<!DOCTYPE html>
   </nav>
 
   <!-- ================= HERO SECTION ================= -->
-  <header class="pt-36 pb-20 px-6 border-b border-white/5 relative overflow-hidden">
+  <header class="pt-32 pb-20 lg:py-28 px-6 border-b border-white/5 relative overflow-hidden">
     <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gold/10 via-transparent to-transparent pointer-events-none"></div>
     <div class="max-w-6xl mx-auto text-center relative z-10">
       
@@ -530,7 +530,7 @@ const showroomHtml = `<!DOCTYPE html>
         <span>Catalog synchronized with GhostFactoryOS v1.6.0 // 114 Curated Digital Vehicles</span>
       </div>
 
-      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-serif font-bold tracking-tight text-white mb-6 leading-[1.1]">
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.08] max-w-4xl mx-auto mb-6">
         Software Architecture for <br>
         <span class="gold-gradient-text italic font-normal">Next-Generation Studios.</span>
       </h1>
@@ -540,7 +540,7 @@ const showroomHtml = `<!DOCTYPE html>
         Specialized web-app prototypes and deployable source templates for modern agencies.
       </p>
 
-      <p class="max-w-3xl mx-auto text-base sm:text-lg text-neutral-400 font-normal leading-relaxed mb-10">
+      <p class="text-lg sm:text-xl lg:text-2xl text-zinc-400 font-normal leading-relaxed max-w-2xl mx-auto mt-6 mb-10">
         Skip 6 to 8 weeks of custom developer payroll. Deploy turnkey single-tenant web operating system prototypes and templates for high-ticket clients with Supabase PostgreSQL schemas, active Row Level Security patterns, and zero recurring platform royalties.
       </p>
 
@@ -587,7 +587,7 @@ const showroomHtml = `<!DOCTYPE html>
     <div class="max-w-7xl mx-auto">
       <div class="text-center max-w-3xl mx-auto mb-16">
         <div class="text-xs font-mono uppercase tracking-widest text-gold mb-2">Dual-Track Pricing Protocol</div>
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-4">Structured Commercial Acquisition Ladder</h2>
+        <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight text-white mb-4">Structured Commercial Acquisition Ladder</h2>
         <p class="text-neutral-400 text-sm sm:text-base leading-relaxed">
           Engineered for digital agencies and technology operators. From single-seat source code blueprints to selective deep-tech flagship acquisitions. Strict 80% portfolio retention floor enforced at all times.
         </p>
@@ -601,7 +601,7 @@ const showroomHtml = `<!DOCTYPE html>
             <div class="inline-flex items-center px-2.5 py-0.5 rounded text-[10px] font-mono font-bold uppercase tracking-wider bg-emerald/10 border border-emerald/30 text-emerald mb-4">
               Track 1 // Lean Rapid-Sale
             </div>
-            <h3 class="text-xl font-serif font-bold text-white mb-2">Single Source License</h3>
+            <h3 class="text-xl font-semibold tracking-tight text-white mb-2">Single Source License</h3>
             <div class="text-3xl font-mono font-bold text-white mb-4">$199 <span class="text-xs font-sans font-normal text-neutral-400">/ blueprint</span></div>
             <p class="text-xs text-neutral-400 leading-relaxed mb-6">
               Turnkey single-tenant web operating system prototype. Full source code, responsive layout components, and PostgreSQL migrations for a single client project.
@@ -627,7 +627,7 @@ const showroomHtml = `<!DOCTYPE html>
             <div class="inline-flex items-center px-2.5 py-0.5 rounded text-[10px] font-mono font-bold uppercase tracking-wider bg-gold/10 border border-gold/30 text-gold mb-4">
               Track 1 // Agency Multi-Seat
             </div>
-            <h3 class="text-xl font-serif font-bold text-white mb-2">Commercial Team Seat</h3>
+            <h3 class="text-xl font-semibold tracking-tight text-white mb-2">Commercial Team Seat</h3>
             <div class="text-3xl font-mono font-bold text-white mb-4">$599 <span class="text-xs font-sans font-normal text-neutral-400">/ team license</span></div>
             <p class="text-xs text-neutral-400 leading-relaxed mb-6">
               Empower your engineering agency. Deploy across multiple client accounts under your agency brand, bill $3,500–$5,000+ per custom rollout, and keep 100% of billables.
@@ -650,7 +650,7 @@ const showroomHtml = `<!DOCTYPE html>
             <div class="inline-flex items-center px-2.5 py-0.5 rounded text-[10px] font-mono font-bold uppercase tracking-wider bg-cobalt/10 border border-cobalt/30 text-cobalt mb-4">
               Fleet &amp; Infrastructure
             </div>
-            <h3 class="text-xl font-serif font-bold text-white mb-2">Managed Fleet Access</h3>
+            <h3 class="text-xl font-semibold tracking-tight text-white mb-2">Managed Fleet Access</h3>
             <div class="text-3xl font-mono font-bold text-white mb-4">Custom <span class="text-xs font-sans font-normal text-neutral-400">/ tailored scope</span></div>
             <p class="text-xs text-neutral-400 leading-relaxed mb-6">
               Turnkey multi-vehicle portfolios tailored to your vertical. Includes managed cloud staging, domain configuration, CI/CD pipeline automation, and developer onboarding.
@@ -673,7 +673,7 @@ const showroomHtml = `<!DOCTYPE html>
             <div class="inline-flex items-center px-2.5 py-0.5 rounded text-[10px] font-mono font-bold uppercase tracking-wider bg-amber-500/15 border border-amber-500/40 text-amber-300 mb-4">
               Track 2 // Selective Tier-1
             </div>
-            <h3 class="text-xl font-serif font-bold text-white mb-2">Flagship Deep-Tech</h3>
+            <h3 class="text-xl font-semibold tracking-tight text-white mb-2">Flagship Deep-Tech</h3>
             <div class="text-3xl font-mono font-bold text-amber-300 mb-4">$14,500 <span class="text-xs font-sans font-normal text-neutral-400">buyout anchor</span></div>
             <p class="text-xs text-neutral-400 leading-relaxed mb-6">
               Elite SCADA, deep-tech &amp; mission-critical concept prototypes (Subsea Mining Crawler, Drone Swarm AEGIS, Geothermal EGS, Orbital ECLSS, Tokamak Fusion).
@@ -700,7 +700,7 @@ const showroomHtml = `<!DOCTYPE html>
     <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
       <div>
         <div class="text-xs font-mono uppercase tracking-widest text-gold mb-2">Curated Fleet Catalog</div>
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white">The Verified Fleet Index (114 Vehicles)</h2>
+        <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight text-white">The Verified Fleet Index (114 Vehicles)</h2>
         <p class="text-neutral-400 text-sm mt-2">Filter and inspect 114 deployable commercial web operating system prototypes across specialized industry sectors: 86 Track 1 Lean Prototypes and 28 Track 2 Flagships.</p>
       </div>
 
@@ -763,7 +763,7 @@ ${renderedCardsHtml}
     <div class="max-w-6xl mx-auto">
       <div class="text-center max-w-3xl mx-auto mb-16">
         <div class="text-xs font-mono uppercase tracking-widest text-gold mb-2">Technical Diligence</div>
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-4">Engineered for Technical Directors</h2>
+        <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight text-white mb-4">Engineered for Technical Directors</h2>
         <p class="text-neutral-400 text-sm sm:text-base leading-relaxed">
           Every blueprint is authored as a single-tenant, full-stack application. Clean code, zero vendor lock-in, and strict security patterns ensure simple client handover.
         </p>
@@ -801,7 +801,7 @@ ${renderedCardsHtml}
   <section id="licensing" class="py-24 px-6 border-t border-white/5">
     <div class="max-w-5xl mx-auto">
       <div class="text-xs font-mono uppercase tracking-widest text-gold mb-2">Commercial Terms &amp; Governance</div>
-      <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-8">Whitelabel Agency License vs. Micro-APA Buyout</h2>
+      <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight text-white mb-8">Whitelabel Agency License vs. Micro-APA Buyout</h2>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm mb-12">
         <div class="p-6 rounded-xl bg-card hairline-border space-y-4">
