@@ -155,7 +155,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Emerging private equity managers & LP syndicates",
       "domain": "Institutional Capital & Wealth",
-      "rarity_tier": "Pro"
+      "rarity_tier": "Pro",
+      "coverImage": "assets/covers/elevate-capital-cover.webp"
     },
     {
       "id": 6,
@@ -246,7 +247,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Boutique aesthetics clinics & medical spa practitioners",
       "domain": "Lifestyle & Boutique Hospitality",
-      "rarity_tier": "Pro"
+      "rarity_tier": "Pro",
+      "coverImage": "assets/covers/aura-medspa-cover.webp"
     },
     {
       "id": 9,
@@ -276,7 +278,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE",
       "best_for": "Best for: High-end grooming salons & luxury barber ateliers",
       "domain": "Lifestyle & Boutique Hospitality",
-      "rarity_tier": "Core"
+      "rarity_tier": "Core",
+      "coverImage": "assets/covers/royal-apex-cover.webp"
     },
     {
       "id": 10,
@@ -306,7 +309,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE",
       "best_for": "Best for: Private vineyard cellars & allocation tasting estates",
       "domain": "Lifestyle & Boutique Hospitality",
-      "rarity_tier": "Core"
+      "rarity_tier": "Core",
+      "coverImage": "assets/covers/aura-reserve-cover.webp"
     },
     {
       "id": 11,
@@ -724,7 +728,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE",
       "best_for": "Best for: Luxury architectural villa rentals & private island retreats",
       "domain": "Lifestyle & Boutique Hospitality",
-      "rarity_tier": "Pro"
+      "rarity_tier": "Pro",
+      "coverImage": "assets/covers/villa-obsidian-cover.webp"
     },
     {
       "id": 25,
@@ -1023,7 +1028,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE",
       "best_for": "Best for: B2B strategy consultants & high-ticket agency founders",
       "domain": "Institutional Capital & Wealth",
-      "rarity_tier": "Pro"
+      "rarity_tier": "Pro",
+      "coverImage": "assets/covers/high-ticket-offer-architect-cover.webp"
     },
     {
       "id": 35,
@@ -1052,7 +1058,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE",
       "best_for": "Best for: Oak smokehouse barbecue joints with pit telemetry needs",
       "domain": "Lifestyle & Boutique Hospitality",
-      "rarity_tier": "Pro"
+      "rarity_tier": "Pro",
+      "coverImage": "assets/covers/bbq-pit-cover.webp"
     },
     {
       "id": 36,
@@ -1081,7 +1088,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE",
       "best_for": "Best for: California modern interior design & residential architecture studios",
       "domain": "Creative & Media Production",
-      "rarity_tier": "Core"
+      "rarity_tier": "Core",
+      "coverImage": "assets/covers/studio-v-ronique-la-cover.webp"
     },
     {
       "id": 37,
@@ -1111,7 +1119,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE",
       "best_for": "Best for: Neapolitan pizzerias & artisanal fermentation kitchens",
       "domain": "Lifestyle & Boutique Hospitality",
-      "rarity_tier": "Core"
+      "rarity_tier": "Core",
+      "coverImage": "assets/covers/pizza-parlor-os-cover.webp"
     },
     {
       "id": 38,
@@ -1141,7 +1150,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: VIP nightclub bottle service & hospitality promoters",
       "domain": "Lifestyle & Boutique Hospitality",
-      "rarity_tier": "Pro"
+      "rarity_tier": "Pro",
+      "coverImage": "assets/covers/nocturne-nightlife-os-cover.webp"
     },
     {
       "id": 39,
@@ -1172,7 +1182,8 @@
       "best_for": "Best for: High-ticket digital design agencies, kinetic motion studios & creative directors",
       "domain": "Creative & Media Production",
       "rarity_tier": "Pro",
-      "bestFor": "High-ticket digital design agencies, kinetic motion studios & creative directors"
+      "bestFor": "High-ticket digital design agencies, kinetic motion studios & creative directors",
+      "coverImage": "assets/covers/zenith-elite-agency-os-cover.webp"
     },
     {
       "id": 40,
@@ -1202,7 +1213,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE",
       "best_for": "Best for: Food truck operators & ghost kitchen delivery brands",
       "domain": "Lifestyle & Boutique Hospitality",
-      "rarity_tier": "Core"
+      "rarity_tier": "Core",
+      "coverImage": "assets/covers/street-culture-kitchen-os-cover.webp"
     },
     {
       "id": 41,
@@ -1232,7 +1244,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Bitcoin treasury managers & cryptographic asset holders",
       "domain": "Institutional Capital & Wealth",
-      "rarity_tier": "Pro"
+      "rarity_tier": "Pro",
+      "coverImage": "assets/covers/satstacker-asset-vault-os-cover.webp"
     },
     {
       "id": 42,
@@ -1263,7 +1276,8 @@
       "best_for": "Best for: Independent auto repair shops & fleet maintenance operators",
       "bestFor": "Independent auto repair shops & fleet maintenance operators",
       "domain": "Mobility & Fleet Logistics",
-      "rarity_tier": "Pro"
+      "rarity_tier": "Pro",
+      "coverImage": "assets/covers/auto-repair-shop-os-cover.webp"
     },
     {
       "id": 43,
@@ -1293,7 +1307,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE",
       "best_for": "Best for: Destination luxury spas & holistic wellness sanctuaries",
       "domain": "Lifestyle & Boutique Hospitality",
-      "rarity_tier": "Core"
+      "rarity_tier": "Core",
+      "coverImage": "assets/covers/spa-treatment-os-cover.webp"
     },
     {
       "id": 44,
@@ -1322,7 +1337,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE",
       "best_for": "Best for: Heritage culinary concepts & private dining chefs",
       "domain": "Lifestyle & Boutique Hospitality",
-      "rarity_tier": "Core"
+      "rarity_tier": "Core",
+      "coverImage": "assets/covers/soul-spice-os-cover.webp"
     },
     {
       "id": 45,
@@ -1381,7 +1397,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE",
       "best_for": "Best for: Farm-to-table restaurants & local farm partnership networks",
       "domain": "Lifestyle & Boutique Hospitality",
-      "rarity_tier": "Pro"
+      "rarity_tier": "Pro",
+      "coverImage": "assets/covers/heritage-honey-os-cover.webp"
     },
     {
       "id": 47,
@@ -1411,7 +1428,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: High-end residential real estate brokers & property portals",
       "domain": "Lifestyle & Boutique Hospitality",
-      "rarity_tier": "Core"
+      "rarity_tier": "Core",
+      "coverImage": "assets/covers/luxury-real-estate-portal-os-cover.webp"
     },
     {
       "id": 48,
@@ -1440,7 +1458,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE",
       "best_for": "Best for: High-volume drive-thru concepts & late-night wok kitchens",
       "domain": "Lifestyle & Boutique Hospitality",
-      "rarity_tier": "Pro"
+      "rarity_tier": "Pro",
+      "coverImage": "assets/covers/midnight-express-os-cover.webp"
     },
     {
       "id": 49,
@@ -1468,7 +1487,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Real estate private equity analysts & property syndicators",
       "domain": "Institutional Capital & Wealth",
-      "rarity_tier": "Pro"
+      "rarity_tier": "Pro",
+      "coverImage": "assets/covers/real-estate-analytics-hub-os-cover.webp"
     },
     {
       "id": 50,
@@ -1497,7 +1517,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Banquet catering facilities & commercial production kitchens",
       "domain": "Lifestyle & Boutique Hospitality",
-      "rarity_tier": "Pro"
+      "rarity_tier": "Pro",
+      "coverImage": "assets/covers/culinary-operational-workspace-os-cover.webp"
     },
     {
       "id": 51,
@@ -1527,7 +1548,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE",
       "best_for": "Best for: Mobile street food fleets & festival event caterers",
       "domain": "Lifestyle & Boutique Hospitality",
-      "rarity_tier": "Pro"
+      "rarity_tier": "Pro",
+      "coverImage": "assets/covers/trendy-taco-truck-os-cover.webp"
     },
     {
       "id": 52,
@@ -1556,7 +1578,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE",
       "best_for": "Best for: Minimalist Zen dining rooms & sensory gastronomy seatings",
       "domain": "Lifestyle & Boutique Hospitality",
-      "rarity_tier": "Core"
+      "rarity_tier": "Core",
+      "coverImage": "assets/covers/y-gen-sensory-os-cover.webp"
     },
     {
       "id": 53,
@@ -1585,7 +1608,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Pediatric development centers & sensory therapy clinics",
       "domain": "Clinical & Medical Operations",
-      "rarity_tier": "Pro"
+      "rarity_tier": "Pro",
+      "coverImage": "assets/covers/little-roots-wellness-os-cover.webp"
     },
     {
       "id": 54,
@@ -1614,7 +1638,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Hotel asset managers & boutique hospitality investors",
       "domain": "Lifestyle & Boutique Hospitality",
-      "rarity_tier": "Pro"
+      "rarity_tier": "Pro",
+      "coverImage": "assets/covers/hospitality-roi-engine-os-cover.webp"
     },
     {
       "id": 55,
@@ -1643,7 +1668,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Private equity portfolio managers & investment committees",
       "domain": "Institutional Capital & Wealth",
-      "rarity_tier": "Pro"
+      "rarity_tier": "Pro",
+      "coverImage": "assets/covers/zen-capital-os-cover.webp"
     },
     {
       "id": 56,
@@ -1673,7 +1699,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Commercial HVAC contractors & chiller plant technicians",
       "domain": "Trades & Infrastructure",
-      "rarity_tier": "Pro"
+      "rarity_tier": "Pro",
+      "coverImage": "assets/covers/hvac-dispatch-os-cover.webp"
     },
     {
       "id": 57,
@@ -2449,7 +2476,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
       "best_for": "Best for: Aesthetic injection nurses & medical aesthetics practices",
       "domain": "Lifestyle & Boutique Hospitality",
-      "rarity_tier": "Pro"
+      "rarity_tier": "Pro",
+      "coverImage": "assets/covers/medspa-clinic-os-cover.webp"
     },
     {
       "id": 83,
@@ -2539,7 +2567,8 @@
       "disclaimer": "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE",
       "best_for": "Best for: Estate managers & luxury villa rental concierges",
       "domain": "Lifestyle & Boutique Hospitality",
-      "rarity_tier": "Pro"
+      "rarity_tier": "Pro",
+      "coverImage": "assets/covers/private-villa-estate-os-cover.webp"
     },
     {
       "id": 86,
@@ -2579,7 +2608,8 @@
       "domain": "Deep Tech SCADA",
       "rarity_tier": "Elite",
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/autonomous-drone-swarm-perimeter-defense-os-cover.webp"
     },
     {
       "id": 87,
@@ -2620,7 +2650,8 @@
       "domain": "Industrial Robotics & Autonomous SCADA",
       "rarity_tier": "Elite",
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/autonomous-mining-haulage-fleet-dispatch-os-cover.webp"
     },
     {
       "id": 88,
@@ -2661,7 +2692,8 @@
       "domain": "Industrial Robotics & Autonomous SCADA",
       "rarity_tier": "Elite",
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/autonomous-subsea-mining-crawler-telemetry-os-cover.webp"
     },
     {
       "id": 89,
@@ -2702,7 +2734,8 @@
       "domain": "Mobility & Fleet Logistics",
       "rarity_tier": "Elite",
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/aviation-fbo-dispatch-os-cover.webp"
     },
     {
       "id": 90,
@@ -2743,7 +2776,8 @@
       "domain": "Lifestyle & Boutique Hospitality",
       "rarity_tier": "Elite",
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/boutique-winery-production-os-cover.webp"
     },
     {
       "id": 91,
@@ -2784,7 +2818,8 @@
       "domain": "Clinical & Medical Operations",
       "rarity_tier": "Elite",
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/clinical-trial-operations-os-cover.webp"
     },
     {
       "id": 92,
@@ -2825,7 +2860,8 @@
       "domain": "Mobility & Fleet Logistics",
       "rarity_tier": "Elite",
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/cold-storage-logistics-os-cover.webp"
     },
     {
       "id": 93,
@@ -2865,7 +2901,8 @@
       "domain": "Deep Tech SCADA",
       "rarity_tier": "Elite",
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/commercial-supersonic-airliner-engine-inverted-aerospike-telemetry-os-cover.webp"
     },
     {
       "id": 94,
@@ -2907,7 +2944,8 @@
       "domain": "Energy SCADA",
       "rarity_tier": "Elite",
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/commercial-tokamak-fusion-plasma-scada-os-cover.webp"
     },
     {
       "id": 95,
@@ -2948,7 +2986,8 @@
       "domain": "Industrial Robotics & Autonomous SCADA",
       "rarity_tier": "Elite",
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/deep-sea-rov-trenching-cable-burial-os-cover.webp"
     },
     {
       "id": 96,
@@ -2989,7 +3028,8 @@
       "domain": "Energy SCADA",
       "rarity_tier": "Elite",
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/geothermal-supercritical-egs-wellhead-scada-os-cover.webp"
     },
     {
       "id": 97,
@@ -3029,7 +3069,8 @@
       "domain": "Institutional Capital & Wealth",
       "rarity_tier": "Elite",
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/hft-colocation-microwave-telemetry-os-cover.webp"
     },
     {
       "id": 98,
@@ -3069,7 +3110,8 @@
       "domain": "Deep Tech SCADA",
       "rarity_tier": "Elite",
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/hypersonic-wind-tunnel-aerodynamics-telemetry-os-cover.webp"
     },
     {
       "id": 99,
@@ -3111,7 +3153,8 @@
       "domain": "Mobility & Fleet Logistics",
       "rarity_tier": "Elite",
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/luxury-auto-concierge-os-cover.webp"
     },
     {
       "id": 100,
@@ -3152,7 +3195,8 @@
       "domain": "Mobility & Fleet Logistics",
       "rarity_tier": "Elite",
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/maritime-freight-brokerage-os-cover.webp"
     },
     {
       "id": 101,
@@ -3193,7 +3237,8 @@
       "domain": "Deep Tech SCADA",
       "rarity_tier": "Elite",
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/orbital-satellite-laser-isl-optical-terminal-os-cover.webp"
     },
     {
       "id": 102,
@@ -3233,7 +3278,8 @@
       "domain": "Institutional Capital & Wealth",
       "rarity_tier": "Elite",
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/private-credit-syndication-os-cover.webp"
     },
     {
       "id": 103,
@@ -3274,7 +3320,8 @@
       "domain": "Energy SCADA",
       "rarity_tier": "Elite",
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/renewable-energy-microgrid-dispatch-os-cover.webp"
     },
     {
       "id": 104,
@@ -3315,7 +3362,8 @@
       "domain": "Energy SCADA",
       "rarity_tier": "Elite",
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/semiconductor-fab-cleanroom-scada-os-cover.webp"
     },
     {
       "id": 105,
@@ -3355,7 +3403,8 @@
       "domain": "Deep Tech SCADA",
       "rarity_tier": "Elite",
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/space-launch-payload-manifest-os-cover.webp"
     },
     {
       "id": 106,
@@ -3396,7 +3445,8 @@
       "domain": "Industrial Robotics & Autonomous SCADA",
       "rarity_tier": "Elite",
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/subsea-fiber-cable-restoration-os-cover.webp"
     },
     {
       "id": 107,
@@ -3437,7 +3487,8 @@
       "domain": "Energy SCADA",
       "rarity_tier": "Elite",
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/superconducting-quantum-processor-cryostat-os-cover.webp"
     },
     {
       "id": 108,
@@ -3478,7 +3529,8 @@
       "domain": "Mobility & Fleet Logistics",
       "rarity_tier": "Elite",
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/yacht-charter-fleet-ecosystem-cover.webp"
     },
     {
       "id": 109,
@@ -3522,7 +3574,8 @@
       "domain": "Deep Tech SCADA",
       "rarity_tier": "Elite",
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/orbital-habitat-eclss-scada-os-cover.webp"
     },
     {
       "id": 110,
@@ -3576,7 +3629,8 @@
       "domain": "Deep Tech SCADA",
       "rarity_tier": "Elite",
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/orbital-in-space-cryogenic-propellant-depot-scada-os-cover.webp"
     },
     {
       "id": 111,
@@ -3619,7 +3673,8 @@
       "permanent": true,
       "buyoutEligible": false,
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/commercial-tokamak-fusion-sparc-scada-os-cover.webp"
     },
     {
       "id": 112,
@@ -3698,7 +3753,8 @@
       "permanent": true,
       "buyoutEligible": false,
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/superconducting-quantum-cryostat-control-os-cover.webp"
     },
     {
       "id": 114,
@@ -3755,7 +3811,8 @@
       "permanent": false,
       "buyoutEligible": true,
       "complianceStandard": "NIST-SP-800-218",
-      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed"
+      "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+      "coverImage": "assets/covers/commercial-lunar-regolith-isru-refining-plant-scada-os-cover.webp"
     }
   ],
   "vertical_slices": {
