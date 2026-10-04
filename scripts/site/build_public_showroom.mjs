@@ -282,6 +282,320 @@ manifest.products.forEach(p => {
 
 console.log(`📸 Processed covers: ${rasterCoversFound} raster copied + ${svgCoversGenerated} dynamic vector SVGs created (${publicProducts.length} total vehicles)`);
 
+// Render high-contrast inline SVG SCADA telemetry card or cover component
+function renderCoverMarkup(p) {
+  if (p.id === 86) {
+    // Autonomous Drone Swarm Perimeter Defense OS
+    return `
+    <div class="w-full h-full relative overflow-hidden bg-gradient-to-br from-neutral-950 to-neutral-900 border border-cyan-500/30 flex flex-col justify-between p-4 group-hover:border-cyan-400/60 transition-colors">
+      <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-40" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="grid-86" width="28" height="28" patternUnits="userSpaceOnUse">
+            <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#00F0FF" stroke-width="0.5" stroke-opacity="0.25"/>
+          </pattern>
+          <radialGradient id="radarGlow-86" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.3"/>
+            <stop offset="100%" stop-color="#00F0FF" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid-86)"/>
+        <circle cx="75%" cy="50%" r="65" fill="none" stroke="#00F0FF" stroke-width="1" stroke-opacity="0.35" stroke-dasharray="4 4"/>
+        <circle cx="75%" cy="50%" r="42" fill="none" stroke="#00F0FF" stroke-width="1.2" stroke-opacity="0.5"/>
+        <circle cx="75%" cy="50%" r="20" fill="url(#radarGlow-86)"/>
+        <line x1="75%" y1="12%" x2="75%" y2="88%" stroke="#00F0FF" stroke-width="0.75" stroke-opacity="0.35"/>
+        <line x1="52%" y1="50%" x2="98%" y2="50%" stroke="#00F0FF" stroke-width="0.75" stroke-opacity="0.35"/>
+        <circle cx="71%" cy="40%" r="3.5" fill="#00F0FF"/>
+        <circle cx="79%" cy="46%" r="3" fill="#00F0FF"/>
+        <circle cx="68%" cy="60%" r="3" fill="#F59E0B"/>
+        <circle cx="82%" cy="62%" r="3.5" fill="#00F0FF"/>
+      </svg>
+      <div class="relative z-10 flex items-center justify-between text-[11px] font-mono tracking-wider">
+        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-cyan-950/70 border border-cyan-500/40 text-cyan-300 font-bold">
+          <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+          AEGIS SWARM RADAR // SECTOR 04
+        </span>
+        <span class="text-neutral-500 font-mono text-[10px]">SCADA v1.6.0</span>
+      </div>
+      <div class="relative z-10 my-auto flex items-center gap-3.5">
+        <div class="w-12 h-12 rounded-xl bg-cyan-950/60 border border-cyan-500/50 flex items-center justify-center text-cyan-300 shadow-lg shadow-cyan-950/50 shrink-0">
+          <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+            <circle cx="12" cy="12" r="3" fill="#00F0FF" fill-opacity="0.3"/>
+          </svg>
+        </div>
+        <div class="min-w-0">
+          <div class="text-xs font-mono font-bold text-white tracking-wider uppercase">AUTONOMOUS DEFENSE GRID</div>
+          <div class="text-[11px] font-mono text-cyan-300/80">32-NODE AIR PERIMETER TELEMETRY</div>
+        </div>
+      </div>
+      <div class="relative z-10 pt-2 border-t border-cyan-500/20 flex items-center justify-between text-[10px] font-mono text-neutral-300">
+        <span class="text-cyan-400 font-bold tracking-tight">[ACTIVE SCADA FEED // 48.2 kbit/s // 0.04ms LATENCY]</span>
+        <span class="text-amber-400 font-bold">RLS ACTIVE</span>
+      </div>
+    </div>`;
+  }
+
+  if (p.id === 87) {
+    // Autonomous Mining Haulage Fleet Dispatch OS
+    return `
+    <div class="w-full h-full relative overflow-hidden bg-gradient-to-br from-neutral-950 to-neutral-900 border border-amber-500/30 flex flex-col justify-between p-4 group-hover:border-amber-400/60 transition-colors">
+      <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-40" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="grid-87" width="28" height="28" patternUnits="userSpaceOnUse">
+            <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#F59E0B" stroke-width="0.5" stroke-opacity="0.25"/>
+          </pattern>
+          <radialGradient id="amberGlow-87" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.3"/>
+            <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid-87)"/>
+        <polygon points="260,30 340,70 320,150 240,110" fill="none" stroke="#F59E0B" stroke-width="1.2" stroke-opacity="0.4"/>
+        <polygon points="275,50 325,75 310,130 255,100" fill="none" stroke="#F59E0B" stroke-width="1" stroke-opacity="0.6" stroke-dasharray="3 3"/>
+        <circle cx="280" cy="85" r="16" fill="url(#amberGlow-87)"/>
+        <circle cx="270" cy="65" r="3.5" fill="#10B981"/>
+        <circle cx="310" cy="90" r="3.5" fill="#F59E0B"/>
+        <circle cx="285" cy="120" r="3.5" fill="#10B981"/>
+      </svg>
+      <div class="relative z-10 flex items-center justify-between text-[11px] font-mono tracking-wider">
+        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-amber-950/70 border border-amber-500/40 text-amber-300 font-bold">
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
+          OPEN-PIT HAULAGE // DISPATCH BENCH 09
+        </span>
+        <span class="text-neutral-500 font-mono text-[10px]">SCADA v1.6.0</span>
+      </div>
+      <div class="relative z-10 my-auto flex items-center gap-3.5">
+        <div class="w-12 h-12 rounded-xl bg-amber-950/60 border border-amber-500/50 flex items-center justify-center text-amber-400 shadow-lg shadow-amber-950/50 shrink-0">
+          <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1 3h15v13H1zM16 8h4l3 3v5h-7V8z"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+        </div>
+        <div class="min-w-0">
+          <div class="text-xs font-mono font-bold text-white tracking-wider uppercase">AUTONOMOUS HAULAGE DISPATCH</div>
+          <div class="text-[11px] font-mono text-amber-300/80">14 HAUL UNITS // CAT 797F TELEMETRY</div>
+        </div>
+      </div>
+      <div class="relative z-10 pt-2 border-t border-amber-500/20 flex items-center justify-between text-[10px] font-mono text-neutral-300">
+        <span class="text-amber-400 font-bold tracking-tight">[ACTIVE SCADA FEED // 48.2 kbit/s // 0.04ms LATENCY]</span>
+        <span class="text-emerald font-bold">DISPATCH 100%</span>
+      </div>
+    </div>`;
+  }
+
+  if (p.id === 88) {
+    // Autonomous Subsea Mining Crawler Telemetry OS
+    return `
+    <div class="w-full h-full relative overflow-hidden bg-gradient-to-br from-neutral-950 to-neutral-900 border border-cyan-500/30 flex flex-col justify-between p-4 group-hover:border-cyan-400/60 transition-colors">
+      <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-40" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="grid-88" width="28" height="28" patternUnits="userSpaceOnUse">
+            <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#10B981" stroke-width="0.5" stroke-opacity="0.25"/>
+          </pattern>
+          <radialGradient id="sonarGlow-88" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#10B981" stop-opacity="0.3"/>
+            <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid-88)"/>
+        <circle cx="75%" cy="50%" r="65" fill="none" stroke="#10B981" stroke-width="1" stroke-opacity="0.35" stroke-dasharray="4 4"/>
+        <circle cx="75%" cy="50%" r="42" fill="none" stroke="#10B981" stroke-width="1.2" stroke-opacity="0.5"/>
+        <circle cx="75%" cy="50%" r="18" fill="url(#sonarGlow-88)"/>
+        <line x1="75%" y1="12%" x2="75%" y2="88%" stroke="#10B981" stroke-width="0.75" stroke-opacity="0.35"/>
+        <line x1="52%" y1="50%" x2="98%" y2="50%" stroke="#10B981" stroke-width="0.75" stroke-opacity="0.35"/>
+        <circle cx="75%" cy="50%" r="3.5" fill="#10B981"/>
+        <circle cx="82%" cy="42%" r="2.5" fill="#00F0FF"/>
+      </svg>
+      <div class="relative z-10 flex items-center justify-between text-[11px] font-mono tracking-wider">
+        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-cyan-950/70 border border-cyan-500/40 text-cyan-300 font-bold">
+          <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+          BENTHIC SEABED TELEMETRY // -4,200M
+        </span>
+        <span class="text-neutral-500 font-mono text-[10px]">SCADA v1.6.0</span>
+      </div>
+      <div class="relative z-10 my-auto flex items-center gap-3.5">
+        <div class="w-12 h-12 rounded-xl bg-cyan-950/60 border border-cyan-500/50 flex items-center justify-center text-cyan-300 shadow-lg shadow-cyan-950/50 shrink-0">
+          <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a4 4 0 0 1 4 4c0 3-4 6-4 6s-4-3-4-6a4 4 0 0 1 4-4z"/>
+            <path d="M6 14h12M4 18h16M7 22h10"/>
+          </svg>
+        </div>
+        <div class="min-w-0">
+          <div class="text-xs font-mono font-bold text-white tracking-wider uppercase">BENTHIC SEABED HARVESTER</div>
+          <div class="text-[11px] font-mono text-cyan-300/80">420 BAR PRESSURE // UMBILICAL ROV</div>
+        </div>
+      </div>
+      <div class="relative z-10 pt-2 border-t border-cyan-500/20 flex items-center justify-between text-[10px] font-mono text-neutral-300">
+        <span class="text-cyan-400 font-bold tracking-tight">[ACTIVE SCADA FEED // 48.2 kbit/s // 0.04ms LATENCY]</span>
+        <span class="text-emerald font-bold">SONAR LOCKED</span>
+      </div>
+    </div>`;
+  }
+
+  if (p.id === 5) {
+    // Elevate Capital
+    return `
+    <div class="w-full h-full relative overflow-hidden bg-gradient-to-br from-neutral-950 via-zinc-900 to-black border border-emerald-500/30 flex flex-col justify-between p-4 group-hover:border-emerald-400/60 transition-colors">
+      <div class="flex items-center justify-between text-[11px] font-mono tracking-wider">
+        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-emerald-950/70 border border-emerald-500/40 text-emerald font-bold">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          LP CAPITAL WATERFALL
+        </span>
+        <span class="text-neutral-400 font-mono text-[10px]">UNDERWRITING ENGINE</span>
+      </div>
+      <div class="my-auto flex items-center gap-3.5">
+        <div class="w-12 h-12 rounded-xl bg-emerald-950/60 border border-emerald-500/50 flex items-center justify-center text-emerald shrink-0">
+          <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+        </div>
+        <div class="min-w-0">
+          <div class="text-xs font-mono font-bold text-white tracking-wider uppercase">LP SYNDICATION ENGINE</div>
+          <div class="text-[11px] font-mono text-emerald/80">18.4% NET IRR // SEC REG D MODEL</div>
+        </div>
+      </div>
+      <div class="pt-2 border-t border-white/10 flex items-center justify-between text-[10px] font-mono text-neutral-300">
+        <span class="text-emerald font-bold">[ACTIVE UNDERWRITING FEED // CARTA BENCHMARK]</span>
+        <span class="text-gold font-bold">$199 LICENSE</span>
+      </div>
+    </div>`;
+  }
+
+  if (p.id === 8) {
+    // Aura MedSpa
+    return `
+    <div class="w-full h-full relative overflow-hidden bg-gradient-to-br from-neutral-950 via-zinc-900 to-black border border-purple-500/30 flex flex-col justify-between p-4 group-hover:border-purple-400/60 transition-colors">
+      <div class="flex items-center justify-between text-[11px] font-mono tracking-wider">
+        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-purple-950/70 border border-purple-500/40 text-purple-300 font-bold">
+          <span class="w-1.5 h-1.5 rounded-full bg-purple-400 animate-pulse"></span>
+          AESTHETICS CLINICAL SUITE
+        </span>
+        <span class="text-neutral-400 font-mono text-[10px]">ROOM DISPATCH</span>
+      </div>
+      <div class="my-auto flex items-center gap-3.5">
+        <div class="w-12 h-12 rounded-xl bg-purple-950/60 border border-purple-500/50 flex items-center justify-center text-purple-300 shrink-0">
+          <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14"/>
+          </svg>
+        </div>
+        <div class="min-w-0">
+          <div class="text-xs font-mono font-bold text-white tracking-wider uppercase">CLINICAL TREATMENT OPS</div>
+          <div class="text-[11px] font-mono text-purple-300/80">1064nm YAG // EMSELLA PROTOCOL</div>
+        </div>
+      </div>
+      <div class="pt-2 border-t border-white/10 flex items-center justify-between text-[10px] font-mono text-neutral-300">
+        <span class="text-purple-300 font-bold">[CLINICAL TELEMETRY // ROOM ACTIVE]</span>
+        <span class="text-gold font-bold">$199 LICENSE</span>
+      </div>
+    </div>`;
+  }
+
+  if (p.id === 9) {
+    // Royal Apex
+    return `
+    <div class="w-full h-full relative overflow-hidden bg-gradient-to-br from-neutral-950 via-zinc-900 to-black border border-amber-500/30 flex flex-col justify-between p-4 group-hover:border-amber-400/60 transition-colors">
+      <div class="flex items-center justify-between text-[11px] font-mono tracking-wider">
+        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-amber-950/70 border border-amber-500/40 text-amber-300 font-bold">
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
+          LUXURY ATELIER DISPATCH
+        </span>
+        <span class="text-neutral-400 font-mono text-[10px]">CHAIR MATRIX</span>
+      </div>
+      <div class="my-auto flex items-center gap-3.5">
+        <div class="w-12 h-12 rounded-xl bg-amber-950/60 border border-amber-500/50 flex items-center justify-center text-amber-300 shrink-0">
+          <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/>
+          </svg>
+        </div>
+        <div class="min-w-0">
+          <div class="text-xs font-mono font-bold text-white tracking-wider uppercase">ROYAL APEX ATELIER</div>
+          <div class="text-[11px] font-mono text-amber-300/80">98.4% RETENTION // 6 STATIONS</div>
+        </div>
+      </div>
+      <div class="pt-2 border-t border-white/10 flex items-center justify-between text-[10px] font-mono text-neutral-300">
+        <span class="text-amber-300 font-bold">[ATELIER TELEMETRY // ACTIVE]</span>
+        <span class="text-gold font-bold">$199 LICENSE</span>
+      </div>
+    </div>`;
+  }
+
+  if (p.id === 10) {
+    // Aura Reserve
+    return `
+    <div class="w-full h-full relative overflow-hidden bg-gradient-to-br from-neutral-950 via-zinc-900 to-black border border-red-500/30 flex flex-col justify-between p-4 group-hover:border-red-400/60 transition-colors">
+      <div class="flex items-center justify-between text-[11px] font-mono tracking-wider">
+        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-red-950/70 border border-red-500/40 text-red-300 font-bold">
+          <span class="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse"></span>
+          VINEYARD CELLAR VAULT
+        </span>
+        <span class="text-neutral-400 font-mono text-[10px]">ALLOCATION OPS</span>
+      </div>
+      <div class="my-auto flex items-center gap-3.5">
+        <div class="w-12 h-12 rounded-xl bg-red-950/60 border border-red-500/50 flex items-center justify-center text-red-300 shrink-0">
+          <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <path d="M8 22h8M12 11v11M19 3H5l2 8a5 5 0 0 0 10 0z"/>
+          </svg>
+        </div>
+        <div class="min-w-0">
+          <div class="text-xs font-mono font-bold text-white tracking-wider uppercase">AURA RESERVE CELLAR</div>
+          <div class="text-[11px] font-mono text-red-300/80">ALLOCATION MATRIX // BARREL LOT 4</div>
+        </div>
+      </div>
+      <div class="pt-2 border-t border-white/10 flex items-center justify-between text-[10px] font-mono text-neutral-300">
+        <span class="text-red-300 font-bold">[VAULT TELEMETRY // 55°F HUMIDITY 70%]</span>
+        <span class="text-gold font-bold">$199 LICENSE</span>
+      </div>
+    </div>`;
+  }
+
+  // Generic Flagship SCADA Blueprint Card for all other Track 2 models (#89–#114)
+  if (p.isTrack2) {
+    return `
+    <div class="w-full h-full relative overflow-hidden bg-gradient-to-br from-neutral-950 to-neutral-900 border border-cyan-500/30 flex flex-col justify-between p-4 group-hover:border-cyan-400/60 transition-colors">
+      <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-40" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="grid-f${p.id}" width="28" height="28" patternUnits="userSpaceOnUse">
+            <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#00F0FF" stroke-width="0.5" stroke-opacity="0.25"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid-f${p.id})"/>
+        <circle cx="75%" cy="50%" r="55" fill="none" stroke="#00F0FF" stroke-width="1" stroke-opacity="0.35" stroke-dasharray="4 4"/>
+        <circle cx="75%" cy="50%" r="35" fill="none" stroke="#00F0FF" stroke-width="1.2" stroke-opacity="0.5"/>
+        <line x1="75%" y1="15%" x2="75%" y2="85%" stroke="#00F0FF" stroke-width="0.75" stroke-opacity="0.35"/>
+        <line x1="55%" y1="50%" x2="95%" y2="50%" stroke="#00F0FF" stroke-width="0.75" stroke-opacity="0.35"/>
+      </svg>
+      <div class="relative z-10 flex items-center justify-between text-[11px] font-mono tracking-wider">
+        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-cyan-950/70 border border-cyan-500/40 text-cyan-300 font-bold">
+          <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+          FLAGSHIP SCADA TELEMETRY
+        </span>
+        <span class="text-neutral-500 font-mono text-[10px]">SCADA v1.6.0</span>
+      </div>
+      <div class="relative z-10 my-auto flex items-center gap-3.5">
+        <div class="w-12 h-12 rounded-xl bg-cyan-950/60 border border-cyan-500/50 flex items-center justify-center text-cyan-300 shadow-lg shadow-cyan-950/50 shrink-0">
+          <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+            <polyline points="2 17 12 22 22 17"/>
+            <polyline points="2 12 12 17 22 12"/>
+          </svg>
+        </div>
+        <div class="min-w-0">
+          <div class="text-xs font-mono font-bold text-white tracking-wider uppercase truncate">${escapeHtml(p.name)}</div>
+          <div class="text-[11px] font-mono text-cyan-300/80 truncate">${escapeHtml(p.archetype_name || 'SCADA MISSION CONSOLE')}</div>
+        </div>
+      </div>
+      <div class="relative z-10 pt-2 border-t border-cyan-500/20 flex items-center justify-between text-[10px] font-mono text-neutral-300">
+        <span class="text-cyan-400 font-bold tracking-tight">[ACTIVE SCADA FEED // 48.2 kbit/s // 0.04ms LATENCY]</span>
+        <span class="text-amber-400 font-bold">RLS ACTIVE</span>
+      </div>
+    </div>`;
+  }
+
+  // Standard Retail Template Cover with verified cache busting
+  return `<img src="${p.cover_image}?v=1.6.0" alt="${escapeHtml(p.name)}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'640\\' height=\\'360\\' viewBox=\\'0 0 640 360\\'><rect width=\\'640\\' height=\\'360\\' fill=\\'%23111317\\'/><text x=\\'50%\\' y=\\'50%\\' fill=\\'%23C5A880\\' font-family=\\'serif\\' font-size=\\'18\\' font-weight=\\'bold\\' text-anchor=\\'middle\\' dominant-baseline=\\'middle\\'>AURA &amp; GRID // BLUEPRINT</text></svg>'">`;
+}
+
 // Pre-render all 114 cards into static DOM
 const renderedCardsHtml = publicProducts.map(p => {
   const isRegulated = isRegulatedSector(p);
@@ -308,7 +622,7 @@ const renderedCardsHtml = publicProducts.map(p => {
         <div>
           <!-- Cover Mockup Window -->
           <div class="relative bg-obsidian border-b border-white/5 aspect-[16/9] overflow-hidden group">
-            <img src="${p.cover_image}?v=1.6.0" alt="${escapeHtml(p.name)}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'640\\' height=\\'360\\' viewBox=\\'0 0 640 360\\'><rect width=\\'640\\' height=\\'360\\' fill=\\'%23111317\\'/><text x=\\'50%\\' y=\\'50%\\' fill=\\'%23C5A880\\' font-family=\\'serif\\' font-size=\\'18\\' font-weight=\\'bold\\' text-anchor=\\'middle\\' dominant-baseline=\\'middle\\'>AURA &amp; GRID // BLUEPRINT</text></svg>'">
+            ${renderCoverMarkup(p)}
             <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/75 backdrop-blur-md border border-white/10 text-[10px] font-mono uppercase text-gold">
               ${escapeHtml(p.sector)}
             </div>
