@@ -552,7 +552,7 @@ function renderCoverMarkup(p) {
   if (p.id === 115) {
     // AEGIS-SWARM Defense Console
     return `
-    <div class="w-full h-full relative overflow-hidden bg-gradient-to-br from-neutral-950 via-zinc-900 to-black border border-cyan-500/30 flex flex-col justify-between p-4 group-hover:border-cyan-400/60 transition-colors">
+    <div class="w-full h-full relative overflow-hidden bg-gradient-to-br from-neutral-950 via-zinc-900 to-black border border-cyan-500/30 flex flex-col justify-between group-hover:border-cyan-400/60 transition-colors">
       <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-40" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <pattern id="grid-115" width="28" height="28" patternUnits="userSpaceOnUse">
@@ -567,14 +567,16 @@ function renderCoverMarkup(p) {
         <circle cx="75%" cy="50%" r="3.5" fill="#10B981"/>
         <circle cx="85%" cy="42%" r="2.5" fill="#00F0FF"/>
       </svg>
-      <div class="relative z-10 flex items-center justify-between text-[11px] font-mono tracking-wider">
-        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-cyan-950/70 border border-cyan-500/40 text-cyan-300 font-bold">
+      <div class="flex items-center justify-between w-full px-4 pt-3 pb-1 gap-2 relative z-10">
+        <span class="text-[10px] font-mono tracking-wider text-cyan-400 bg-cyan-950/40 border border-cyan-800/60 px-2 py-0.5 rounded flex items-center gap-1.5">
           <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
-          AEGIS SWARM // AIR DEFENSE RADAR
+          FLAGSHIP SCADA TELEMETRY
         </span>
-        <span class="text-neutral-400 font-mono text-[10px]">SCADA v1.7.0</span>
+        <span class="text-[10px] font-mono tracking-wider text-amber-400 bg-amber-950/40 border border-amber-800/60 px-2 py-0.5 rounded font-bold">
+          FLAGSHIP TIER-1
+        </span>
       </div>
-      <div class="relative z-10 my-auto flex items-center gap-3.5">
+      <div class="relative z-10 my-auto flex items-center gap-3.5 px-4">
         <div class="w-12 h-12 rounded-xl bg-cyan-950/60 border border-cyan-500/50 flex items-center justify-center text-cyan-300 shadow-lg shadow-cyan-950/50 shrink-0">
           <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
@@ -586,7 +588,7 @@ function renderCoverMarkup(p) {
           <div class="text-[11px] font-mono text-cyan-300/80 truncate">32-NODE AUTONOMOUS INTERCEPT RADAR</div>
         </div>
       </div>
-      <div class="relative z-10 pt-2 border-t border-cyan-500/20 flex items-center justify-between text-[10px] font-mono text-neutral-300">
+      <div class="relative z-10 pt-2 pb-3 px-4 border-t border-cyan-500/20 flex items-center justify-between text-[10px] font-mono text-neutral-300">
         <span class="text-cyan-400 font-bold tracking-tight font-mono">[ACTIVE SCADA STREAM // VERIFIED PROTOTYPE]</span>
         <span class="text-amber-400 font-bold">RLS ACTIVE</span>
       </div>
@@ -596,7 +598,7 @@ function renderCoverMarkup(p) {
   if (p.id === 116) {
     // Aetheris Sat-Laser ISL Telemetry OS
     return `
-    <div class="w-full h-full relative overflow-hidden bg-gradient-to-br from-neutral-950 via-zinc-900 to-black border border-cyan-500/30 flex flex-col justify-between p-4 group-hover:border-cyan-400/60 transition-colors">
+    <div class="w-full h-full relative overflow-hidden bg-gradient-to-br from-neutral-950 via-zinc-900 to-black border border-cyan-500/30 flex flex-col justify-between group-hover:border-cyan-400/60 transition-colors">
       <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-40" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <pattern id="grid-116" width="28" height="28" patternUnits="userSpaceOnUse">
@@ -609,14 +611,16 @@ function renderCoverMarkup(p) {
         <circle cx="20%" cy="80%" r="8" fill="none" stroke="#10B981" stroke-width="1.5"/>
         <circle cx="50%" cy="50%" r="28" fill="none" stroke="#10B981" stroke-width="0.75" stroke-opacity="0.5"/>
       </svg>
-      <div class="relative z-10 flex items-center justify-between text-[11px] font-mono tracking-wider">
-        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-cyan-950/70 border border-cyan-500/40 text-cyan-300 font-bold">
+      <div class="flex items-center justify-between w-full px-4 pt-3 pb-1 gap-2 relative z-10">
+        <span class="text-[10px] font-mono tracking-wider text-cyan-400 bg-cyan-950/40 border border-cyan-800/60 px-2 py-0.5 rounded flex items-center gap-1.5">
           <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
-          OPTICAL ISL // 100 GBPS CROSSLINK
+          FLAGSHIP SCADA TELEMETRY
         </span>
-        <span class="text-neutral-400 font-mono text-[10px]">SCADA v1.7.0</span>
+        <span class="text-[10px] font-mono tracking-wider text-amber-400 bg-amber-950/40 border border-amber-800/60 px-2 py-0.5 rounded font-bold">
+          FLAGSHIP TIER-1
+        </span>
       </div>
-      <div class="relative z-10 my-auto flex items-center gap-3.5">
+      <div class="relative z-10 my-auto flex items-center gap-3.5 px-4">
         <div class="w-12 h-12 rounded-xl bg-cyan-950/60 border border-cyan-500/50 flex items-center justify-center text-cyan-300 shadow-lg shadow-cyan-950/50 shrink-0">
           <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
             <circle cx="12" cy="12" r="3"/>
@@ -629,7 +633,7 @@ function renderCoverMarkup(p) {
           <div class="text-[11px] font-mono text-cyan-300/80 truncate">CONSTELLATION LASER TERMINAL MESH</div>
         </div>
       </div>
-      <div class="relative z-10 pt-2 border-t border-cyan-500/20 flex items-center justify-between text-[10px] font-mono text-neutral-300">
+      <div class="relative z-10 pt-2 pb-3 px-4 border-t border-cyan-500/20 flex items-center justify-between text-[10px] font-mono text-neutral-300">
         <span class="text-cyan-400 font-bold tracking-tight font-mono">[ACTIVE SCADA STREAM // VERIFIED PROTOTYPE]</span>
         <span class="text-emerald font-bold">BEAM LOCKED</span>
       </div>
@@ -639,7 +643,7 @@ function renderCoverMarkup(p) {
   if (p.id === 117) {
     // Langley Hypersonic Wind Tunnel SCADA
     return `
-    <div class="w-full h-full relative overflow-hidden bg-gradient-to-br from-neutral-950 via-zinc-900 to-black border border-amber-500/30 flex flex-col justify-between p-4 group-hover:border-amber-400/60 transition-colors">
+    <div class="w-full h-full relative overflow-hidden bg-gradient-to-br from-neutral-950 via-zinc-900 to-black border border-amber-500/30 flex flex-col justify-between group-hover:border-amber-400/60 transition-colors">
       <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-40" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <pattern id="grid-117" width="28" height="28" patternUnits="userSpaceOnUse">
@@ -651,14 +655,16 @@ function renderCoverMarkup(p) {
         <path d="M 230,20 Q 330,90 230,160" fill="none" stroke="#00F0FF" stroke-width="1.5" stroke-opacity="0.5" stroke-dasharray="4 2"/>
         <line x1="50" y1="90" x2="350" y2="90" stroke="#10B981" stroke-width="1" stroke-opacity="0.4"/>
       </svg>
-      <div class="relative z-10 flex items-center justify-between text-[11px] font-mono tracking-wider">
-        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-amber-950/70 border border-amber-500/40 text-amber-300 font-bold">
-          <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-          MACH 7.4 // SHOCKWAVE TELEMETRY
+      <div class="flex items-center justify-between w-full px-4 pt-3 pb-1 gap-2 relative z-10">
+        <span class="text-[10px] font-mono tracking-wider text-cyan-400 bg-cyan-950/40 border border-cyan-800/60 px-2 py-0.5 rounded flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+          FLAGSHIP SCADA TELEMETRY
         </span>
-        <span class="text-neutral-400 font-mono text-[10px]">SCADA v1.7.0</span>
+        <span class="text-[10px] font-mono tracking-wider text-amber-400 bg-amber-950/40 border border-amber-800/60 px-2 py-0.5 rounded font-bold">
+          FLAGSHIP TIER-1
+        </span>
       </div>
-      <div class="relative z-10 my-auto flex items-center gap-3.5">
+      <div class="relative z-10 my-auto flex items-center gap-3.5 px-4">
         <div class="w-12 h-12 rounded-xl bg-amber-950/60 border border-amber-500/50 flex items-center justify-center text-amber-400 shadow-lg shadow-amber-950/50 shrink-0">
           <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
             <path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"/>
@@ -671,7 +677,7 @@ function renderCoverMarkup(p) {
           <div class="text-[11px] font-mono text-amber-300/80 truncate">MACH 5-8 AERODYNAMIC SCADA BENCH</div>
         </div>
       </div>
-      <div class="relative z-10 pt-2 border-t border-amber-500/20 flex items-center justify-between text-[10px] font-mono text-neutral-300">
+      <div class="relative z-10 pt-2 pb-3 px-4 border-t border-amber-500/20 flex items-center justify-between text-[10px] font-mono text-neutral-300">
         <span class="text-amber-400 font-bold tracking-tight font-mono">[ACTIVE SCADA STREAM // VERIFIED PROTOTYPE]</span>
         <span class="text-emerald font-bold">FLOW STABLE</span>
       </div>
@@ -681,7 +687,7 @@ function renderCoverMarkup(p) {
   if (p.id === 118) {
     // Vanguard ECLSS Life Support Systems OS
     return `
-    <div class="w-full h-full relative overflow-hidden bg-gradient-to-br from-neutral-950 via-zinc-900 to-black border border-cyan-500/30 flex flex-col justify-between p-4 group-hover:border-cyan-400/60 transition-colors">
+    <div class="w-full h-full relative overflow-hidden bg-gradient-to-br from-neutral-950 via-zinc-900 to-black border border-cyan-500/30 flex flex-col justify-between group-hover:border-cyan-400/60 transition-colors">
       <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-40" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <pattern id="grid-118" width="28" height="28" patternUnits="userSpaceOnUse">
@@ -693,14 +699,16 @@ function renderCoverMarkup(p) {
         <circle cx="75%" cy="50%" r="30" fill="none" stroke="#00F0FF" stroke-width="1" stroke-dasharray="4 2"/>
         <circle cx="75%" cy="50%" r="12" fill="#10B981" fill-opacity="0.2"/>
       </svg>
-      <div class="relative z-10 flex items-center justify-between text-[11px] font-mono tracking-wider">
-        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-emerald-950/70 border border-emerald-500/40 text-emerald-300 font-bold">
-          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-          ORBITAL ECLSS // 98.2% O2 LOOP
+      <div class="flex items-center justify-between w-full px-4 pt-3 pb-1 gap-2 relative z-10">
+        <span class="text-[10px] font-mono tracking-wider text-cyan-400 bg-cyan-950/40 border border-cyan-800/60 px-2 py-0.5 rounded flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+          FLAGSHIP SCADA TELEMETRY
         </span>
-        <span class="text-neutral-400 font-mono text-[10px]">SCADA v1.7.0</span>
+        <span class="text-[10px] font-mono tracking-wider text-amber-400 bg-amber-950/40 border border-amber-800/60 px-2 py-0.5 rounded font-bold">
+          FLAGSHIP TIER-1
+        </span>
       </div>
-      <div class="relative z-10 my-auto flex items-center gap-3.5">
+      <div class="relative z-10 my-auto flex items-center gap-3.5 px-4">
         <div class="w-12 h-12 rounded-xl bg-emerald-950/60 border border-emerald-500/50 flex items-center justify-center text-emerald-300 shadow-lg shadow-emerald-950/50 shrink-0">
           <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
             <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/>
@@ -712,7 +720,7 @@ function renderCoverMarkup(p) {
           <div class="text-[11px] font-mono text-emerald-300/80 truncate">CLOSED-LOOP LIFE SUPPORT SCADA</div>
         </div>
       </div>
-      <div class="relative z-10 pt-2 border-t border-emerald-500/20 flex items-center justify-between text-[10px] font-mono text-neutral-300">
+      <div class="relative z-10 pt-2 pb-3 px-4 border-t border-emerald-500/20 flex items-center justify-between text-[10px] font-mono text-neutral-300">
         <span class="text-emerald-400 font-bold tracking-tight font-mono">[ACTIVE SCADA STREAM // VERIFIED PROTOTYPE]</span>
         <span class="text-cyan-400 font-bold">CABIN 101.3 kPa</span>
       </div>
@@ -722,7 +730,7 @@ function renderCoverMarkup(p) {
   if (p.id === 119) {
     // Cascade Supercritical EGS Geothermal OS
     return `
-    <div class="w-full h-full relative overflow-hidden bg-gradient-to-br from-neutral-950 via-zinc-900 to-black border border-amber-500/30 flex flex-col justify-between p-4 group-hover:border-amber-400/60 transition-colors">
+    <div class="w-full h-full relative overflow-hidden bg-gradient-to-br from-neutral-950 via-zinc-900 to-black border border-amber-500/30 flex flex-col justify-between group-hover:border-amber-400/60 transition-colors">
       <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-40" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <pattern id="grid-119" width="28" height="28" patternUnits="userSpaceOnUse">
@@ -734,14 +742,16 @@ function renderCoverMarkup(p) {
         <circle cx="75%" cy="80%" r="22" fill="#F59E0B" fill-opacity="0.2" stroke="#F59E0B" stroke-width="1.5"/>
         <circle cx="75%" cy="80%" r="10" fill="#EF4444" fill-opacity="0.5"/>
       </svg>
-      <div class="relative z-10 flex items-center justify-between text-[11px] font-mono tracking-wider">
-        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-amber-950/70 border border-amber-500/40 text-amber-300 font-bold">
-          <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-          SUPERCRITICAL EGS // 420°C WELLHEAD
+      <div class="flex items-center justify-between w-full px-4 pt-3 pb-1 gap-2 relative z-10">
+        <span class="text-[10px] font-mono tracking-wider text-cyan-400 bg-cyan-950/40 border border-cyan-800/60 px-2 py-0.5 rounded flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+          FLAGSHIP SCADA TELEMETRY
         </span>
-        <span class="text-neutral-400 font-mono text-[10px]">SCADA v1.7.0</span>
+        <span class="text-[10px] font-mono tracking-wider text-amber-400 bg-amber-950/40 border border-amber-800/60 px-2 py-0.5 rounded font-bold">
+          FLAGSHIP TIER-1
+        </span>
       </div>
-      <div class="relative z-10 my-auto flex items-center gap-3.5">
+      <div class="relative z-10 my-auto flex items-center gap-3.5 px-4">
         <div class="w-12 h-12 rounded-xl bg-amber-950/60 border border-amber-500/50 flex items-center justify-center text-amber-400 shadow-lg shadow-amber-950/50 shrink-0">
           <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
             <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
@@ -752,7 +762,7 @@ function renderCoverMarkup(p) {
           <div class="text-[11px] font-mono text-amber-300/80 truncate">5,200M CRUSTAL HEAT EXCHANGE SCADA</div>
         </div>
       </div>
-      <div class="relative z-10 pt-2 border-t border-amber-500/20 flex items-center justify-between text-[10px] font-mono text-neutral-300">
+      <div class="relative z-10 pt-2 pb-3 px-4 border-t border-amber-500/20 flex items-center justify-between text-[10px] font-mono text-neutral-300">
         <span class="text-amber-400 font-bold tracking-tight font-mono">[ACTIVE SCADA STREAM // VERIFIED PROTOTYPE]</span>
         <span class="text-emerald font-bold">28.4 MW OUTPUT</span>
       </div>
@@ -762,7 +772,7 @@ function renderCoverMarkup(p) {
   if (p.id === 120) {
     // Subsea Autonomous Crawler Telemetry OS
     return `
-    <div class="w-full h-full relative overflow-hidden bg-gradient-to-br from-neutral-950 via-zinc-900 to-black border border-cyan-500/30 flex flex-col justify-between p-4 group-hover:border-cyan-400/60 transition-colors">
+    <div class="w-full h-full relative overflow-hidden bg-gradient-to-br from-neutral-950 via-zinc-900 to-black border border-cyan-500/30 flex flex-col justify-between group-hover:border-cyan-400/60 transition-colors">
       <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-40" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <pattern id="grid-120" width="28" height="28" patternUnits="userSpaceOnUse">
@@ -774,14 +784,16 @@ function renderCoverMarkup(p) {
         <circle cx="75%" cy="50%" r="35" fill="none" stroke="#00F0FF" stroke-width="1"/>
         <circle cx="75%" cy="50%" r="15" fill="#00F0FF" fill-opacity="0.25"/>
       </svg>
-      <div class="relative z-10 flex items-center justify-between text-[11px] font-mono tracking-wider">
-        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-cyan-950/70 border border-cyan-500/40 text-cyan-300 font-bold">
+      <div class="flex items-center justify-between w-full px-4 pt-3 pb-1 gap-2 relative z-10">
+        <span class="text-[10px] font-mono tracking-wider text-cyan-400 bg-cyan-950/40 border border-cyan-800/60 px-2 py-0.5 rounded flex items-center gap-1.5">
           <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
-          BENTHIC CRAWLER // -4,500M ABYSS
+          FLAGSHIP SCADA TELEMETRY
         </span>
-        <span class="text-neutral-400 font-mono text-[10px]">SCADA v1.7.0</span>
+        <span class="text-[10px] font-mono tracking-wider text-amber-400 bg-amber-950/40 border border-amber-800/60 px-2 py-0.5 rounded font-bold">
+          FLAGSHIP TIER-1
+        </span>
       </div>
-      <div class="relative z-10 my-auto flex items-center gap-3.5">
+      <div class="relative z-10 my-auto flex items-center gap-3.5 px-4">
         <div class="w-12 h-12 rounded-xl bg-cyan-950/60 border border-cyan-500/50 flex items-center justify-center text-cyan-300 shadow-lg shadow-cyan-950/50 shrink-0">
           <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
             <path d="M12 2a4 4 0 0 1 4 4c0 3-4 6-4 6s-4-3-4-6a4 4 0 0 1 4-4z"/>
@@ -793,7 +805,7 @@ function renderCoverMarkup(p) {
           <div class="text-[11px] font-mono text-cyan-300/80 truncate">AUTONOMOUS POLYMETALLIC HARVESTER</div>
         </div>
       </div>
-      <div class="relative z-10 pt-2 border-t border-cyan-500/20 flex items-center justify-between text-[10px] font-mono text-neutral-300">
+      <div class="relative z-10 pt-2 pb-3 px-4 border-t border-cyan-500/20 flex items-center justify-between text-[10px] font-mono text-neutral-300">
         <span class="text-cyan-400 font-bold tracking-tight font-mono">[ACTIVE SCADA STREAM // VERIFIED PROTOTYPE]</span>
         <span class="text-emerald font-bold">PRESSURE 450 BAR</span>
       </div>
@@ -803,7 +815,7 @@ function renderCoverMarkup(p) {
   if (p.id === 121) {
     // MetroNest-04 Tactical Drone Ops HUD
     return `
-    <div class="w-full h-full relative overflow-hidden bg-gradient-to-br from-neutral-950 via-zinc-900 to-black border border-cyan-500/30 flex flex-col justify-between p-4 group-hover:border-cyan-400/60 transition-colors">
+    <div class="w-full h-full relative overflow-hidden bg-gradient-to-br from-neutral-950 via-zinc-900 to-black border border-cyan-500/30 flex flex-col justify-between group-hover:border-cyan-400/60 transition-colors">
       <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-40" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <pattern id="grid-121" width="28" height="28" patternUnits="userSpaceOnUse">
@@ -818,14 +830,16 @@ function renderCoverMarkup(p) {
         <circle cx="70%" cy="40%" r="3" fill="#10B981"/>
         <circle cx="82%" cy="60%" r="3" fill="#00F0FF"/>
       </svg>
-      <div class="relative z-10 flex items-center justify-between text-[11px] font-mono tracking-wider">
-        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-cyan-950/70 border border-cyan-500/40 text-cyan-300 font-bold">
+      <div class="flex items-center justify-between w-full px-4 pt-3 pb-1 gap-2 relative z-10">
+        <span class="text-[10px] font-mono tracking-wider text-cyan-400 bg-cyan-950/40 border border-cyan-800/60 px-2 py-0.5 rounded flex items-center gap-1.5">
           <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
-          URBAN NEST 04 // ROOFTOP DISPATCH
+          FLAGSHIP SCADA TELEMETRY
         </span>
-        <span class="text-neutral-400 font-mono text-[10px]">SCADA v1.7.0</span>
+        <span class="text-[10px] font-mono tracking-wider text-amber-400 bg-amber-950/40 border border-amber-800/60 px-2 py-0.5 rounded font-bold">
+          FLAGSHIP TIER-1
+        </span>
       </div>
-      <div class="relative z-10 my-auto flex items-center gap-3.5">
+      <div class="relative z-10 my-auto flex items-center gap-3.5 px-4">
         <div class="w-12 h-12 rounded-xl bg-cyan-950/60 border border-cyan-500/50 flex items-center justify-center text-cyan-300 shadow-lg shadow-cyan-950/50 shrink-0">
           <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
             <circle cx="12" cy="12" r="3"/>
@@ -838,7 +852,7 @@ function renderCoverMarkup(p) {
           <div class="text-[11px] font-mono text-cyan-300/80 truncate">4-UAV AUTONOMOUS FLIGHT CORRIDOR</div>
         </div>
       </div>
-      <div class="relative z-10 pt-2 border-t border-cyan-500/20 flex items-center justify-between text-[10px] font-mono text-neutral-300">
+      <div class="relative z-10 pt-2 pb-3 px-4 border-t border-cyan-500/20 flex items-center justify-between text-[10px] font-mono text-neutral-300">
         <span class="text-cyan-400 font-bold tracking-tight font-mono">[ACTIVE SCADA STREAM // VERIFIED PROTOTYPE]</span>
         <span class="text-emerald font-bold">AIRSPACE CLEAR</span>
       </div>
@@ -848,7 +862,7 @@ function renderCoverMarkup(p) {
   if (p.id === 122) {
     // VoltGrid EV Fleet Dispatch Telemetry OS
     return `
-    <div class="w-full h-full relative overflow-hidden bg-gradient-to-br from-neutral-950 via-zinc-900 to-black border border-emerald-500/30 flex flex-col justify-between p-4 group-hover:border-emerald-400/60 transition-colors">
+    <div class="w-full h-full relative overflow-hidden bg-gradient-to-br from-neutral-950 via-zinc-900 to-black border border-emerald-500/30 flex flex-col justify-between group-hover:border-emerald-400/60 transition-colors">
       <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-40" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <pattern id="grid-122" width="28" height="28" patternUnits="userSpaceOnUse">
@@ -861,14 +875,16 @@ function renderCoverMarkup(p) {
         <circle cx="65%" cy="50%" r="6" fill="#00F0FF"/>
         <circle cx="50%" cy="50%" r="35" fill="none" stroke="#00F0FF" stroke-width="1" stroke-dasharray="4 2"/>
       </svg>
-      <div class="relative z-10 flex items-center justify-between text-[11px] font-mono tracking-wider">
-        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-emerald-950/70 border border-emerald-500/40 text-emerald-300 font-bold">
-          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-          MEGAWATT DEPOT // 480kW MCS
+      <div class="flex items-center justify-between w-full px-4 pt-3 pb-1 gap-2 relative z-10">
+        <span class="text-[10px] font-mono tracking-wider text-cyan-400 bg-cyan-950/40 border border-cyan-800/60 px-2 py-0.5 rounded flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+          FLAGSHIP SCADA TELEMETRY
         </span>
-        <span class="text-neutral-400 font-mono text-[10px]">SCADA v1.7.0</span>
+        <span class="text-[10px] font-mono tracking-wider text-amber-400 bg-amber-950/40 border border-amber-800/60 px-2 py-0.5 rounded font-bold">
+          FLAGSHIP TIER-1
+        </span>
       </div>
-      <div class="relative z-10 my-auto flex items-center gap-3.5">
+      <div class="relative z-10 my-auto flex items-center gap-3.5 px-4">
         <div class="w-12 h-12 rounded-xl bg-emerald-950/60 border border-emerald-500/50 flex items-center justify-center text-emerald-300 shadow-lg shadow-emerald-950/50 shrink-0">
           <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
             <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
@@ -879,7 +895,7 @@ function renderCoverMarkup(p) {
           <div class="text-[11px] font-mono text-emerald-300/80 truncate">COMMERCIAL EV FLEET DISPATCH HUD</div>
         </div>
       </div>
-      <div class="relative z-10 pt-2 border-t border-emerald-500/20 flex items-center justify-between text-[10px] font-mono text-neutral-300">
+      <div class="relative z-10 pt-2 pb-3 px-4 border-t border-emerald-500/20 flex items-center justify-between text-[10px] font-mono text-neutral-300">
         <span class="text-emerald-400 font-bold tracking-tight font-mono">[ACTIVE SCADA STREAM // VERIFIED PROTOTYPE]</span>
         <span class="text-cyan-400 font-bold">99.4% SOC FLEET</span>
       </div>
@@ -889,7 +905,7 @@ function renderCoverMarkup(p) {
   // Generic Flagship SCADA Blueprint Card for all other Track 2 models (#89–#114)
   if (p.isTrack2) {
     return `
-    <div class="w-full h-full relative overflow-hidden bg-gradient-to-br from-neutral-950 via-zinc-900 to-black border border-cyan-500/30 flex flex-col justify-between p-4 group-hover:border-cyan-400/60 transition-colors">
+    <div class="w-full h-full relative overflow-hidden bg-gradient-to-br from-neutral-950 via-zinc-900 to-black border border-cyan-500/30 flex flex-col justify-between group-hover:border-cyan-400/60 transition-colors">
       <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-40" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <pattern id="grid-f${p.id}" width="28" height="28" patternUnits="userSpaceOnUse">
@@ -904,14 +920,16 @@ function renderCoverMarkup(p) {
         <circle cx="75%" cy="50%" r="4" fill="#10B981"/>
         <circle cx="85%" cy="42%" r="3" fill="#00F0FF"/>
       </svg>
-      <div class="relative z-10 flex items-center justify-between text-[11px] font-mono tracking-wider">
-        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-cyan-950/70 border border-cyan-500/40 text-cyan-300 font-bold">
-          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+      <div class="flex items-center justify-between w-full px-4 pt-3 pb-1 gap-2 relative z-10">
+        <span class="text-[10px] font-mono tracking-wider text-cyan-400 bg-cyan-950/40 border border-cyan-800/60 px-2 py-0.5 rounded flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
           FLAGSHIP SCADA TELEMETRY
         </span>
-        <span class="text-neutral-400 font-mono text-[10px]">SCADA v1.7.0</span>
+        <span class="text-[10px] font-mono tracking-wider text-amber-400 bg-amber-950/40 border border-amber-800/60 px-2 py-0.5 rounded font-bold">
+          FLAGSHIP TIER-1
+        </span>
       </div>
-      <div class="relative z-10 my-auto flex items-center gap-3.5">
+      <div class="relative z-10 my-auto flex items-center gap-3.5 px-4">
         <div class="w-12 h-12 rounded-xl bg-cyan-950/60 border border-cyan-500/50 flex items-center justify-center text-cyan-300 shadow-lg shadow-cyan-950/50 shrink-0">
           <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
             <polygon points="12 2 2 7 12 12 22 7 12 2"/>
@@ -924,7 +942,7 @@ function renderCoverMarkup(p) {
           <div class="text-[11px] font-mono text-cyan-300/80 truncate">${escapeHtml(p.archetype_name || 'SCADA MISSION CONSOLE')}</div>
         </div>
       </div>
-      <div class="relative z-10 pt-2 border-t border-cyan-500/20 flex items-center justify-between text-[10px] font-mono text-neutral-300">
+      <div class="relative z-10 pt-2 pb-3 px-4 border-t border-cyan-500/20 flex items-center justify-between text-[10px] font-mono text-neutral-300">
         <span class="text-emerald-400 font-bold tracking-tight font-mono">[ACTIVE SCADA STREAM // VERIFIED PROTOTYPE]</span>
         <span class="text-amber-400 font-bold">RLS ACTIVE</span>
       </div>
@@ -943,9 +961,13 @@ const renderedCardsHtml = publicProducts.map(p => {
     ? "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE. NOT PRODUCTION OR PROFESSIONAL ADVICE."
     : "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE.";
 
+  const coverMarkup = renderCoverMarkup(p);
+  const isCustomVectorCard = coverMarkup.trim().startsWith('<div');
+
   return `
       <!-- Blueprint Card #${p.id} -->
-      <div class="product-card rounded-xl bg-card hairline-border overflow-hidden card-glow transition-all flex flex-col justify-between"
+      <div class="product-card rounded-xl bg-card hairline-border overflow-hidden card-glow transition-all flex flex-col justify-between scroll-mt-32"
+           id="vehicle-${p.id}"
            data-id="${p.id}"
            data-name="${escapeHtml(p.name)}"
            data-category="${escapeHtml(p.category)}"
@@ -961,13 +983,14 @@ const renderedCardsHtml = publicProducts.map(p => {
         <div>
           <!-- Cover Mockup Window -->
           <div class="relative bg-obsidian border-b border-white/5 aspect-[16/9] overflow-hidden group">
-            ${renderCoverMarkup(p)}
+            ${coverMarkup}
+            ${!isCustomVectorCard ? `
             <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/75 backdrop-blur-md border border-white/10 text-[10px] font-mono uppercase text-gold">
               ${escapeHtml(p.sector)}
             </div>
             <div class="absolute top-3 right-3 px-2 py-0.5 rounded ${isTrack2 ? 'bg-amber-500/20 border-amber-500/40 text-amber-300' : 'bg-emerald/20 border-emerald/40 text-emerald'} border text-[10px] font-mono font-bold">
               ${isTrack2 ? 'FLAGSHIP TIER-1' : 'ACTIVE CHECKOUT'}
-            </div>
+            </div>` : ''}
           </div>
 
           <!-- Card Body -->
@@ -1151,6 +1174,12 @@ const showroomHtml = `<!DOCTYPE html>
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
     }
+    html {
+      scroll-behavior: smooth;
+    }
+    section[id], .product-card[id] {
+      scroll-margin-top: 8rem;
+    }
     .card-glow:hover {
       box-shadow: 0 12px 40px -10px rgba(197, 168, 128, 0.15);
       border-color: rgba(197, 168, 128, 0.4);
@@ -1201,7 +1230,7 @@ const showroomHtml = `<!DOCTYPE html>
   </header>
 
   <!-- ================= HERO SECTION ================= -->
-  <section id="hero" class="pt-32 sm:pt-36 pb-20 lg:pt-36 lg:pb-28 px-6 border-b border-white/5 relative overflow-hidden">
+  <section id="hero" class="scroll-mt-32 pt-28 sm:pt-32 pb-20 lg:pt-32 lg:pb-28 px-6 border-b border-white/5 relative overflow-hidden">
     <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gold/10 via-transparent to-transparent pointer-events-none"></div>
     <div class="max-w-6xl mx-auto text-center relative z-10">
       
@@ -1264,7 +1293,7 @@ const showroomHtml = `<!DOCTYPE html>
   </section>
 
   <!-- ================= STRUCTURED COMMERCIAL ACQUISITION LADDER (DUAL-TRACK) ================= -->
-  <section id="pricing" class="py-24 px-6 border-b border-white/5 relative">
+  <section id="pricing" class="scroll-mt-32 py-24 px-6 border-b border-white/5 relative">
     <div class="max-w-7xl mx-auto">
       <div class="text-center max-w-3xl mx-auto mb-16">
         <div class="text-xs font-mono uppercase tracking-widest text-gold mb-2">Dual-Track Pricing Protocol</div>
@@ -1377,7 +1406,7 @@ const showroomHtml = `<!DOCTYPE html>
   </section>
 
   <!-- ================= PUBLIC FLEET CATALOG (122 DIGITAL VEHICLES) ================= -->
-  <section id="catalog" class="py-24 px-6 max-w-7xl mx-auto">
+  <section id="catalog" class="scroll-mt-32 py-24 px-6 max-w-7xl mx-auto">
     <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
       <div>
         <div class="text-xs font-mono uppercase tracking-widest text-gold mb-2">Curated Fleet Catalog</div>
@@ -1440,7 +1469,7 @@ ${renderedCardsHtml}
   </section>
 
   <!-- ================= TECHNICAL ARCHITECTURE SECTION ================= -->
-  <section id="architecture" class="py-24 px-6 border-t border-white/5 bg-panel/30">
+  <section id="architecture" class="scroll-mt-32 py-24 px-6 border-t border-white/5 bg-panel/30">
     <div class="max-w-6xl mx-auto">
       <div class="text-center max-w-3xl mx-auto mb-16">
         <div class="text-xs font-mono uppercase tracking-widest text-gold mb-2">Technical Diligence</div>
@@ -1479,7 +1508,7 @@ ${renderedCardsHtml}
   </section>
 
   <!-- ================= COMMERCIAL WHITELABEL & MICRO-APA TERMS ================= -->
-  <section id="licensing" class="py-24 px-6 border-t border-white/5">
+  <section id="licensing" class="scroll-mt-32 py-24 px-6 border-t border-white/5">
     <div class="max-w-5xl mx-auto">
       <div class="text-xs font-mono uppercase tracking-widest text-gold mb-2">Commercial Terms &amp; Governance</div>
       <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight text-white mb-8">Whitelabel Agency License vs. Micro-APA Buyout</h2>
