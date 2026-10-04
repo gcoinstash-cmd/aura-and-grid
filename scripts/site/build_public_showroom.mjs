@@ -4,8 +4,8 @@
  * Ghost Factory™ — Public Brand Showroom Compiler
  * Builds an isolated, decoupled public showroom for Aura & Grid (site/index.html)
  * Extracts public metadata from CATALOG_MANIFEST.json and copies canonical covers into site/assets/covers/
- * Statically pre-renders all 122 digital vehicle cards with visible Truth Badges and Compliance Drawers.
- * Synchronized with GhostFactoryOS v1.7.0.
+ * Statically pre-renders all 136 digital vehicle cards with visible Truth Badges and Compliance Drawers.
+ * Synchronized with GhostFactoryOS v1.8.0.
  */
 
 import fs from 'node:fs';
@@ -23,7 +23,7 @@ const SITE_ASSETS_DIR = path.join(SITE_DIR, 'assets', 'covers');
 const OUTPUT_HTML_PATH = path.join(SITE_DIR, 'index.html');
 const STYLE_CSS_PATH = path.join(SITE_DIR, 'assets', 'style.css');
 
-console.log('⚡ [Aura & Grid] Compiling Decoupled Public Brand Showroom (122 Vehicles)...');
+console.log('⚡ [Aura & Grid] Compiling Decoupled Public Brand Showroom (136 Vehicles)...');
 
 if (!fs.existsSync(MANIFEST_PATH)) {
   console.error(`❌ Missing CATALOG_MANIFEST.json at: ${MANIFEST_PATH}`);
@@ -61,7 +61,7 @@ const REGULATED_ASSET_IDS = new Set([
   5, 8, 10, 14, 17, 24, 27, 30, 31, 32, 33, 34, 35, 41, 43, 47, 49, 53, 54, 55,
   57, 58, 61, 62, 63, 65, 66, 67, 68, 69, 70, 73, 80, 82, 84, 86, 87, 88, 89,
   90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106,
-  107, 108, 109, 110, 111, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122
+  107, 108, 109, 110, 111, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136
 ]);
 
 function isRegulatedSector(product) {
@@ -169,7 +169,7 @@ function generateSvgCover(p, isTrack2, sector) {
   <!-- Footer Bar -->
   <rect x="60" y="615" width="1160" height="50" fill="#14161C" rx="8" stroke="#232630" stroke-width="1"/>
   <text x="90" y="646" fill="#C5A880" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="bold">VEHICLE #${cleanId}</text>
-  <text x="360" y="646" fill="#6B7280" font-family="'JetBrains Mono', monospace" font-size="12">CATALOG SYNCHRONIZED WITH GHOSTFACTORYOS v1.7.0</text>
+  <text x="360" y="646" fill="#6B7280" font-family="'JetBrains Mono', monospace" font-size="12">CATALOG SYNCHRONIZED WITH GHOSTFACTORYOS v1.8.0</text>
   <text x="1200" y="646" text-anchor="end" fill="#E5E7EB" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="bold">${priceLabel}</text>
 </svg>`;
 }
@@ -314,7 +314,7 @@ function renderCoverMarkup(p) {
           <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
           AEGIS SWARM RADAR // SECTOR 04
         </span>
-        <span class="text-neutral-400 font-mono text-[10px]">SCADA v1.7.0</span>
+        <span class="text-neutral-400 font-mono text-[10px]">SCADA v1.8.0</span>
       </div>
       <div class="relative z-10 my-auto flex items-center gap-3.5">
         <div class="w-12 h-12 rounded-xl bg-cyan-950/60 border border-cyan-500/50 flex items-center justify-center text-cyan-300 shadow-lg shadow-cyan-950/50 shrink-0">
@@ -362,7 +362,7 @@ function renderCoverMarkup(p) {
           <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
           OPEN-PIT HAULAGE // DISPATCH BENCH 09
         </span>
-        <span class="text-neutral-400 font-mono text-[10px]">SCADA v1.7.0</span>
+        <span class="text-neutral-400 font-mono text-[10px]">SCADA v1.8.0</span>
       </div>
       <div class="relative z-10 my-auto flex items-center gap-3.5">
         <div class="w-12 h-12 rounded-xl bg-amber-950/60 border border-amber-500/50 flex items-center justify-center text-amber-400 shadow-lg shadow-amber-950/50 shrink-0">
@@ -412,7 +412,7 @@ function renderCoverMarkup(p) {
           <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
           BENTHIC SEABED TELEMETRY // -4,200M
         </span>
-        <span class="text-neutral-400 font-mono text-[10px]">SCADA v1.7.0</span>
+        <span class="text-neutral-400 font-mono text-[10px]">SCADA v1.8.0</span>
       </div>
       <div class="relative z-10 my-auto flex items-center gap-3.5">
         <div class="w-12 h-12 rounded-xl bg-cyan-950/60 border border-cyan-500/50 flex items-center justify-center text-cyan-300 shadow-lg shadow-cyan-950/50 shrink-0">
@@ -950,10 +950,10 @@ function renderCoverMarkup(p) {
   }
 
   // Standard Retail Template Cover with verified cache busting
-  return `<img src="${p.cover_image}?v=1.7.0" alt="${escapeHtml(p.name)}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'640\\' height=\\'360\\' viewBox=\\'0 0 640 360\\'><rect width=\\'640\\' height=\\'360\\' fill=\\'%23111317\\'/><text x=\\'50%\\' y=\\'50%\\' fill=\\'%23C5A880\\' font-family=\\'serif\\' font-size=\\'18\\' font-weight=\\'bold\\' text-anchor=\\'middle\\' dominant-baseline=\\'middle\\'>AURA &amp; GRID // BLUEPRINT</text></svg>'">`;
+  return `<img src="${p.cover_image}?v=1.8.0" alt="${escapeHtml(p.name)}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'640\\' height=\\'360\\' viewBox=\\'0 0 640 360\\'><rect width=\\'640\\' height=\\'360\\' fill=\\'%23111317\\'/><text x=\\'50%\\' y=\\'50%\\' fill=\\'%23C5A880\\' font-family=\\'serif\\' font-size=\\'18\\' font-weight=\\'bold\\' text-anchor=\\'middle\\' dominant-baseline=\\'middle\\'>AURA &amp; GRID // BLUEPRINT</text></svg>'">`;
 }
 
-// Pre-render all 122 cards into static DOM
+// Pre-render all 136 cards into static DOM
 const renderedCardsHtml = publicProducts.map(p => {
   const isRegulated = isRegulatedSector(p);
   const isTrack2 = p.isTrack2;
@@ -1097,9 +1097,9 @@ const showroomHtml = `<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>Aura & Grid — The Institutional Software Foundry for Modern Agencies</title>
-  <meta name="description" content="A curated fleet of 122 deployable commercial web operating system blueprints (86 Track 1 Lean Prototypes + 36 Track 2 Flagships) engineered on React 19, Tailwind CSS, and Supabase PostgreSQL with active Row Level Security patterns.">
-  <meta name="version" content="v1.7.0-institutional-pass">
-  <meta name="telemetry:sync" content="GhostFactoryOS v1.7.0">
+  <meta name="description" content="A curated fleet of 136 deployable commercial web operating system blueprints (86 Track 1 Lean Prototypes + 50 Track 2 Flagships) engineered on React 19, Tailwind CSS, and Supabase PostgreSQL with active Row Level Security patterns.">
+  <meta name="version" content="v1.8.0-institutional-pass">
+  <meta name="telemetry:sync" content="GhostFactoryOS v1.8.0">
   <link rel="canonical" href="https://auraandgrid.com/">
   
   <!-- Preconnect & Web Fonts -->
@@ -1108,7 +1108,7 @@ const showroomHtml = `<!DOCTYPE html>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Primary Pre-Compiled Standalone Stylesheet -->
-  <link rel="stylesheet" href="assets/style.css?v=1.7.0">
+  <link rel="stylesheet" href="assets/style.css?v=1.8.0">
 
   <!-- Progressive Fallback Tailwind CDN Engine -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -1206,7 +1206,7 @@ const showroomHtml = `<!DOCTYPE html>
         <span class="text-neutral-700">/</span>
         <span class="flex items-center gap-1.5 text-[10px] font-mono uppercase bg-neutral-900 text-amber-400 px-2 py-0.5 rounded border border-neutral-800">
           <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-          122 FLEET // GHOSTFACTORYOS V1.7.0
+          136 FLEET // GHOSTFACTORYOS V1.8.0
         </span>
       </div>
 
@@ -1236,7 +1236,7 @@ const showroomHtml = `<!DOCTYPE html>
       <!-- Synced dynamic badge with GhostFactoryOS v1.7.0 -->
       <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-gold/10 border border-gold/30 text-gold text-xs font-mono uppercase tracking-widest mb-6">
         <span class="w-2 h-2 rounded-full bg-emerald animate-pulse"></span>
-        <span>Catalog synchronized with GhostFactoryOS v1.7.0 // 122 Curated Digital Vehicles</span>
+        <span>Catalog synchronized with GhostFactoryOS v1.8.0 // 136 Curated Digital Vehicles</span>
       </div>
 
       <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.08] max-w-4xl mx-auto mb-6">
@@ -1255,7 +1255,7 @@ const showroomHtml = `<!DOCTYPE html>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
         <a href="#catalog" class="w-full sm:w-auto px-8 py-3.5 rounded-lg bg-white text-black font-semibold text-sm hover:bg-neutral-200 transition-all flex items-center justify-center space-x-2">
-          <span>Explore 122 Digital Vehicles</span>
+          <span>Explore 136 Digital Vehicles</span>
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </a>
         <a href="#pricing" class="w-full sm:w-auto px-8 py-3.5 rounded-lg bg-panel hairline-border hover:border-gold/50 text-white font-medium text-sm transition-all flex items-center justify-center space-x-2">
@@ -1268,7 +1268,7 @@ const showroomHtml = `<!DOCTYPE html>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto text-left font-mono">
         <div class="p-4 rounded-lg bg-panel hairline-border">
           <div class="text-xs uppercase text-neutral-500 mb-1">Fleet Inventory</div>
-          <div class="text-xl font-bold text-white">122 Vehicles</div>
+          <div class="text-xl font-bold text-white">136 Vehicles</div>
           <div class="text-[11px] text-emerald mt-1">● 86 Lean + 36 Flagships</div>
         </div>
         <div class="p-4 rounded-lg bg-panel hairline-border">
@@ -1283,7 +1283,7 @@ const showroomHtml = `<!DOCTYPE html>
         </div>
         <div class="p-4 rounded-lg bg-panel hairline-border">
           <div class="text-xs uppercase text-neutral-500 mb-1">Foundry Status</div>
-          <div class="text-xl font-bold text-gold">GhostFactoryOS v1.7.0</div>
+          <div class="text-xl font-bold text-gold">GhostFactoryOS v1.8.0</div>
           <div class="text-[11px] text-neutral-400 mt-1">Audit 360 Institutional Pass</div>
         </div>
       </div>
@@ -1405,24 +1405,24 @@ const showroomHtml = `<!DOCTYPE html>
     </div>
   </section>
 
-  <!-- ================= PUBLIC FLEET CATALOG (122 DIGITAL VEHICLES) ================= -->
+  <!-- ================= PUBLIC FLEET CATALOG (136 DIGITAL VEHICLES) ================= -->
   <section id="catalog" class="scroll-mt-32 py-24 px-6 max-w-7xl mx-auto">
     <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
       <div>
         <div class="text-xs font-mono uppercase tracking-widest text-gold mb-2">Curated Fleet Catalog</div>
-        <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight text-white">The Verified Fleet Index (122 Vehicles)</h2>
-        <p class="text-neutral-400 text-sm mt-2">Filter and inspect 122 deployable commercial web operating system prototypes across specialized industry sectors: 86 Track 1 Lean Prototypes and 36 Track 2 Flagships.</p>
+        <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight text-white">The Verified Fleet Index (136 Vehicles)</h2>
+        <p class="text-neutral-400 text-sm mt-2">Filter and inspect 136 deployable commercial web operating system prototypes across specialized industry sectors: 86 Track 1 Lean Prototypes and 50 Track 2 Flagships.</p>
       </div>
 
       <!-- Search Input -->
       <div class="w-full md:w-80">
-        <input type="text" id="searchInput" placeholder="Search 122 blueprints by niche, title, or stack..." class="w-full bg-card hairline-border rounded-lg px-4 py-2.5 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-gold">
+        <input type="text" id="searchInput" placeholder="Search 136 blueprints by niche, title, or stack..." class="w-full bg-card hairline-border rounded-lg px-4 py-2.5 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-gold">
       </div>
     </div>
 
     <!-- Sector & Track Filter Pills -->
     <div class="flex flex-wrap gap-2 mb-10 text-xs font-medium" id="filterContainer">
-      <button class="filter-btn active px-4 py-2 rounded-full bg-gold text-black font-semibold transition-all min-h-[44px] flex items-center" data-filter="all">All Vehicles (122)</button>
+      <button class="filter-btn active px-4 py-2 rounded-full bg-gold text-black font-semibold transition-all min-h-[44px] flex items-center" data-filter="all">All Vehicles (136)</button>
       <button class="filter-btn px-4 py-2 rounded-full bg-card hairline-border text-amber-300 hover:text-amber-200 border-amber-500/30 transition-all min-h-[44px] flex items-center" data-filter="track2">Track 2 Flagships (36)</button>
       <button class="filter-btn px-4 py-2 rounded-full bg-card hairline-border text-emerald hover:text-white border-emerald/30 transition-all min-h-[44px] flex items-center" data-filter="track1">Track 1 Lean Prototypes (86)</button>
       <button class="filter-btn px-4 py-2 rounded-full bg-card hairline-border text-neutral-300 hover:text-white transition-all min-h-[44px] flex items-center" data-filter="Hospitality & Dining">Hospitality &amp; Dining</button>
@@ -1443,7 +1443,7 @@ ${renderedCardsHtml}
     <!-- Showroom Pagination & Fleet Navigation (24 Blueprints / Page) -->
     <div id="paginationContainer" class="mt-12 flex flex-col md:flex-row items-center justify-between gap-6 font-mono text-xs border-t border-white/5 pt-8">
       <div id="paginationInfo" class="text-neutral-400 text-center md:text-left">
-        Showing <span id="pageRangeStart" class="text-white font-bold">1</span>–<span id="pageRangeEnd" class="text-white font-bold">24</span> of <span id="pageTotalCount" class="text-gold font-bold">122</span> Catalog Blueprints
+        Showing <span id="pageRangeStart" class="text-white font-bold">1</span>–<span id="pageRangeEnd" class="text-white font-bold">24</span> of <span id="pageTotalCount" class="text-gold font-bold">136</span> Catalog Blueprints
       </div>
       <div class="flex items-center gap-2">
         <button id="prevPageBtn" class="px-3.5 py-2 rounded-lg bg-card hairline-border text-neutral-300 hover:text-white hover:border-gold/50 disabled:opacity-30 disabled:cursor-not-allowed transition-all font-semibold min-h-[44px] flex items-center">
@@ -1458,7 +1458,7 @@ ${renderedCardsHtml}
       </div>
       <div>
         <button id="viewAllToggle" class="px-4 py-2 rounded-lg bg-card hairline-border text-neutral-400 hover:text-gold hover:border-gold/40 transition-all min-h-[44px] flex items-center">
-          Show All (122)
+          Show All (136)
         </button>
       </div>
     </div>
@@ -1569,7 +1569,7 @@ ${renderedCardsHtml}
           <div class="text-xs font-mono uppercase tracking-widest text-gold mb-1">Portfolio Governance Standard</div>
           <h4 class="text-base font-serif font-bold text-white mb-1">Strict 80% Retained Fleet Floor Lock</h4>
           <p class="text-xs text-neutral-400 leading-relaxed">
-            Aura &amp; Grid maintains an institutional retention floor: a minimum of 80% of all cataloged digital vehicles (currently 98 of 122) are permanently vaulted and retained. Maximum micro-APA buyout capacity across the fleet is strictly capped at 24 vehicles. Every micro-APA transfers defined rights/code to one specific asset and permanently excludes GhostFactoryOS core infrastructure and shared IP.
+            Aura &amp; Grid maintains an institutional retention floor: a minimum of 80% of all cataloged digital vehicles (currently 109 of 136) are permanently vaulted and retained. Maximum micro-APA buyout capacity across the fleet is strictly capped at 27 vehicles. Every micro-APA transfers defined rights/code to one specific asset and permanently excludes GhostFactoryOS core infrastructure and shared IP.
           </p>
         </div>
         <button onclick="openLegalModal('license')" class="px-5 py-2.5 rounded-lg bg-white/5 hover:bg-white/10 text-white font-mono text-xs uppercase tracking-wider shrink-0 transition-all border border-white/10 min-h-[44px]">
@@ -1598,7 +1598,7 @@ ${renderedCardsHtml}
           </p>
           <div class="pt-2 text-[11px] text-neutral-500">
             An asset holding of ZoMae Media LLC.<br>
-            Synchronized with GhostFactoryOS v1.7.0.
+            Synchronized with GhostFactoryOS v1.8.0.
           </div>
         </div>
 
@@ -1606,7 +1606,7 @@ ${renderedCardsHtml}
         <div>
           <div class="text-white font-bold uppercase tracking-wider mb-3 text-[11px]">Fleet Navigation</div>
           <ul class="space-y-2 text-xs">
-            <li><a href="#catalog" class="hover:text-gold transition-colors">Catalog (122 Vehicles)</a></li>
+            <li><a href="#catalog" class="hover:text-gold transition-colors">Catalog (136 Vehicles)</a></li>
             <li><a href="#catalog" onclick="filterByTrack('track2')" class="hover:text-gold transition-colors">Track 2 Flagships (36)</a></li>
             <li><a href="#catalog" onclick="filterByTrack('track1')" class="hover:text-gold transition-colors">Track 1 Lean Prototypes (86)</a></li>
             <li><a href="#architecture" class="hover:text-gold transition-colors">Technical Diligence &amp; RLS</a></li>
@@ -1645,7 +1645,7 @@ ${renderedCardsHtml}
         <div class="flex items-center space-x-4 shrink-0">
           <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10 text-neutral-400">NIST SP 800-218 Aligned</span>
           <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10 text-neutral-400">WCAG 2.2 AA Target</span>
-          <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10 text-neutral-400">GhostFactoryOS v1.7.0</span>
+          <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10 text-neutral-400">GhostFactoryOS v1.8.0</span>
         </div>
       </div>
 
@@ -1709,7 +1709,7 @@ ${renderedCardsHtml}
           <div class="text-gold font-bold uppercase tracking-wider text-sm sm:text-base mb-2">License vs. Ownership APA Distinction:</div>
           <p>• <strong>License:</strong> Grants usage and client deployment rights. Does NOT transfer copyright or ownership of the underlying framework templates.</p>
           <p>• <strong>Micro-APA (Asset Purchase Agreement):</strong> A selective agreement transferring exclusive code rights to one defined asset only. A micro-APA NEVER transfers GhostFactoryOS core infrastructure, Aura &amp; Grid showroom brands, shared design tokens, component libraries, or future catalog rights.</p>
-          <p>• <strong>80% Retention Floor:</strong> ZoMae Media LLC permanently vaults and retains at least 80% of all digital vehicles in the catalog (minimum 98 of 122 assets retained). Maximum micro-APA transfer capacity across the entire collection is capped at 24 assets.</p>
+          <p>• <strong>80% Retention Floor:</strong> ZoMae Media LLC permanently vaults and retains at least 80% of all digital vehicles in the catalog (minimum 109 of 136 assets retained). Maximum micro-APA transfer capacity across the entire collection is capped at 27 assets.</p>
         </div>
         <p class="text-base text-neutral-300 leading-relaxed mt-4">
           <strong>Prohibited:</strong> Redistribution, reselling, or public dissemination of raw source code, SQL migrations, or zip archives on third-party template marketplaces or public repositories.

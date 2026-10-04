@@ -1,0 +1,8 @@
+{
+  "name": "VORTEX Apex-GT Hypercar Telemetry Deck (export) ",
+  "description": "High-performance institutional hypercar telemetry console, quad-motor torque vectoring, active aero diagnostics, and lap sector manifest.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

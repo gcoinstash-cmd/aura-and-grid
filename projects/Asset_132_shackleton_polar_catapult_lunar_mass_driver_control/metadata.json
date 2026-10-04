@@ -1,0 +1,8 @@
+{
+  "name": "Shackleton Polar Catapult - Lunar Mass Driver Control (export) ",
+  "description": "High-performance institutional telemetry and firing control deck for the Shackleton Crater 1,200m electromagnetic lunar mass driver.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -4269,5 +4269,812 @@
     "complianceStandard": "NIST-SP-800-218",
     "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
     "coverImage": "assets/covers/voltgrid-ev-fleet-dispatch-telemetry-os-cover.webp"
+  },
+  {
+    "id": 123,
+    "name": "Chrono Tachyon Flight Deck",
+    "category": "Hypersonic Scramjet Hypercar Telemetry & Electromagnetic Skid Flight Deck",
+    "gumroad_url": "https://auraandgrid.gumroad.com/l/chrono-tachyon-flight-deck",
+    "preview_url": "https://chrono-tachyon-flight-deck.onrender.com",
+    "admin_url": "https://chrono-tachyon-flight-deck.onrender.com/admin",
+    "audit_score": 9.9,
+    "tables": [
+      "scramjet_hypercar_vehicles",
+      "hypersonic_telemetry_snapshots",
+      "mag_skid_telemetry_logs",
+      "velocity_sector_records",
+      "inlet_diagnostic_events"
+    ],
+    "vertical": "aerospace",
+    "archetype_id": "A",
+    "archetype_name": "Archetype A: Dense Operational Console",
+    "archetype_description": "Persistent utility rail, simulated operational triage queue, and slide-out inspection drawer.",
+    "design_benchmark": "DARPA Falcon HTV-2 & X-43A Hypersonic Scramjet Flight Console",
+    "checkout_active": true,
+    "status_badge": "Flagship Interactive Prototype",
+    "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/chrono-tachyon-flight-deck",
+    "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+    "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+    "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+    "flagship_qualified": true,
+    "flagship_license_msrp": 1500,
+    "flagship_license_range": [
+      1500,
+      3500
+    ],
+    "exclusive_buyout_anchor": 14500,
+    "exclusive_buyout_range": [
+      10000,
+      18000
+    ],
+    "full_asset_buyout_range": [
+      18000,
+      35000
+    ],
+    "strategic_acquisition_range": [
+      35000,
+      75000
+    ],
+    "truth_label": "Interactive Prototype (Simulated Data Only) — Concept Demo",
+    "truth_badge": "Interactive Prototype // Simulated Data Only",
+    "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
+    "best_for": "Best for: Hypersonic flight test engineers & scramjet vehicle telemetry operators",
+    "domain": "Deep Tech SCADA",
+    "rarity_tier": "Elite",
+    "permanent": true,
+    "buyoutEligible": false,
+    "complianceStandard": "NIST-SP-800-218",
+    "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+    "coverImage": "assets/covers/chrono-tachyon-flight-deck-cover.webp"
+  },
+  {
+    "id": 124,
+    "name": "Valkyrie Aerospike-VMax Telemetry Deck",
+    "category": "Supersonic Aerospike Rocket Hypercar Flight Deck & Telemetry Console",
+    "gumroad_url": "https://auraandgrid.gumroad.com/l/valkyrie-aerospike-vmax-telemetry-deck",
+    "preview_url": "https://valkyrie-aerospike-vmax-telemetry-deck.onrender.com",
+    "admin_url": "https://valkyrie-aerospike-vmax-telemetry-deck.onrender.com/admin",
+    "audit_score": 9.9,
+    "tables": [
+      "aerospike_hypercar_vehicles",
+      "propulsion_telemetry_snapshots",
+      "cryo_propellant_logs",
+      "velocity_run_records",
+      "staged_ignition_events"
+    ],
+    "vertical": "aerospace",
+    "archetype_id": "A",
+    "archetype_name": "Archetype A: Dense Operational Console",
+    "archetype_description": "Persistent utility rail, simulated operational triage queue, and slide-out inspection drawer.",
+    "design_benchmark": "Lockheed Martin X-33 Linear Aerospike & Bloodhound LSR Console",
+    "checkout_active": true,
+    "status_badge": "Flagship Interactive Prototype",
+    "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/valkyrie-aerospike-vmax-telemetry-deck",
+    "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+    "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+    "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+    "flagship_qualified": true,
+    "flagship_license_msrp": 1500,
+    "flagship_license_range": [
+      1500,
+      3500
+    ],
+    "exclusive_buyout_anchor": 14500,
+    "exclusive_buyout_range": [
+      10000,
+      18000
+    ],
+    "full_asset_buyout_range": [
+      18000,
+      35000
+    ],
+    "strategic_acquisition_range": [
+      35000,
+      75000
+    ],
+    "truth_label": "Interactive Prototype (Simulated Data Only) — Concept Demo",
+    "truth_badge": "Interactive Prototype // Simulated Data Only",
+    "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
+    "best_for": "Best for: Supersonic propulsion engineers & linear aerospike flight-deck operators",
+    "domain": "Deep Tech SCADA",
+    "rarity_tier": "Elite",
+    "permanent": true,
+    "buyoutEligible": false,
+    "complianceStandard": "NIST-SP-800-218",
+    "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+    "coverImage": "assets/covers/valkyrie-aerospike-vmax-telemetry-deck-cover.webp"
+  },
+  {
+    "id": 125,
+    "name": "Chronos Morph-GT Telemetry Deck",
+    "category": "Morphing Aero-Composite Stealth Interceptor & Hypercar Telemetry OS",
+    "gumroad_url": "https://auraandgrid.gumroad.com/l/chronos-morph-gt-telemetry-deck",
+    "preview_url": "https://chronos-morph-gt-telemetry-deck.onrender.com",
+    "admin_url": "https://chronos-morph-gt-telemetry-deck.onrender.com/admin",
+    "audit_score": 9.9,
+    "tables": [
+      "morph_hypercar_vehicles",
+      "aero_surface_snapshots",
+      "actuator_thermal_logs",
+      "morph_sector_records",
+      "alloy_diagnostic_events"
+    ],
+    "vertical": "automotive",
+    "archetype_id": "A",
+    "archetype_name": "Archetype A: Dense Operational Console",
+    "archetype_description": "Persistent utility rail, simulated operational triage queue, and slide-out inspection drawer.",
+    "design_benchmark": "Pagani Huayra Active Aero & NASA Shape Memory Alloy Console",
+    "checkout_active": true,
+    "status_badge": "Flagship Interactive Prototype",
+    "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/chronos-morph-gt-telemetry-deck",
+    "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+    "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+    "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+    "flagship_qualified": true,
+    "flagship_license_msrp": 1500,
+    "flagship_license_range": [
+      1500,
+      3500
+    ],
+    "exclusive_buyout_anchor": 14500,
+    "exclusive_buyout_range": [
+      10000,
+      18000
+    ],
+    "full_asset_buyout_range": [
+      18000,
+      35000
+    ],
+    "strategic_acquisition_range": [
+      35000,
+      75000
+    ],
+    "truth_label": "Interactive Prototype (Simulated Data Only) — Concept Demo",
+    "truth_badge": "Interactive Prototype // Simulated Data Only",
+    "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
+    "best_for": "Best for: Exotic supercar aerodynamicists & active composite morphing vehicle telemetry operators",
+    "domain": "Mobility & Fleet Logistics",
+    "rarity_tier": "Elite",
+    "permanent": true,
+    "buyoutEligible": false,
+    "complianceStandard": "NIST-SP-800-218",
+    "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+    "coverImage": "assets/covers/chronos-morph-gt-telemetry-deck-cover.webp"
+  },
+  {
+    "id": 126,
+    "name": "Pulsar Magneto-GT Telemetry Deck",
+    "category": "Plasma Tokamak Fusion Hypercar Cockpit & MagLev Telemetry Deck",
+    "gumroad_url": "https://auraandgrid.gumroad.com/l/pulsar-magneto-gt-telemetry-deck",
+    "preview_url": "https://pulsar-magneto-gt-telemetry-deck.onrender.com",
+    "admin_url": "https://pulsar-magneto-gt-telemetry-deck.onrender.com/admin",
+    "audit_score": 9.9,
+    "tables": [
+      "fusion_hypercar_vehicles",
+      "plasma_telemetry_snapshots",
+      "maglev_coil_logs",
+      "fusion_sector_records",
+      "magnetic_quench_events"
+    ],
+    "vertical": "clean_energy",
+    "archetype_id": "A",
+    "archetype_name": "Archetype A: Dense Operational Console",
+    "archetype_description": "Persistent utility rail, simulated operational triage queue, and slide-out inspection drawer.",
+    "design_benchmark": "ITER Magnetics SCADA & Central Solenoid Plasma Diagnostics",
+    "checkout_active": true,
+    "status_badge": "Flagship Interactive Prototype",
+    "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/pulsar-magneto-gt-telemetry-deck",
+    "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+    "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+    "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+    "flagship_qualified": true,
+    "flagship_license_msrp": 1500,
+    "flagship_license_range": [
+      1500,
+      3500
+    ],
+    "exclusive_buyout_anchor": 14500,
+    "exclusive_buyout_range": [
+      10000,
+      18000
+    ],
+    "full_asset_buyout_range": [
+      18000,
+      35000
+    ],
+    "strategic_acquisition_range": [
+      35000,
+      75000
+    ],
+    "truth_label": "Interactive Prototype (Simulated Data Only) — Concept Demo",
+    "truth_badge": "Interactive Prototype // Simulated Data Only",
+    "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
+    "best_for": "Best for: Compact fusion tokamak powertrain researchers & magnetic plasma telemetry operators",
+    "domain": "Energy SCADA",
+    "rarity_tier": "Elite",
+    "permanent": true,
+    "buyoutEligible": false,
+    "complianceStandard": "NIST-SP-800-218",
+    "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+    "coverImage": "assets/covers/pulsar-magneto-gt-telemetry-deck-cover.webp"
+  },
+  {
+    "id": 127,
+    "name": "Solaris Vac-Wing RCS Telemetry Deck",
+    "category": "Orbital Reaction-Control Telemetry Console & Cold-Gas RCS Flight Deck",
+    "gumroad_url": "https://auraandgrid.gumroad.com/l/solaris-vac-wing-rcs-telemetry-deck",
+    "preview_url": "https://solaris-vac-wing-rcs-telemetry-deck.onrender.com",
+    "admin_url": "https://solaris-vac-wing-rcs-telemetry-deck.onrender.com/admin",
+    "audit_score": 9.9,
+    "tables": [
+      "rcs_hypercar_vehicles",
+      "thruster_telemetry_snapshots",
+      "nitrogen_gas_logs",
+      "sector_dynamics_records",
+      "rcs_diagnostic_events"
+    ],
+    "vertical": "aerospace",
+    "archetype_id": "A",
+    "archetype_name": "Archetype A: Dense Operational Console",
+    "archetype_description": "Persistent utility rail, simulated operational triage queue, and slide-out inspection drawer.",
+    "design_benchmark": "SpaceX Dragon Cold-Gas Thruster Matrix & Gemini RCS Deck",
+    "checkout_active": true,
+    "status_badge": "Flagship Interactive Prototype",
+    "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/solaris-vac-wing-rcs-telemetry-deck",
+    "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+    "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+    "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+    "flagship_qualified": true,
+    "flagship_license_msrp": 1500,
+    "flagship_license_range": [
+      1500,
+      3500
+    ],
+    "exclusive_buyout_anchor": 14500,
+    "exclusive_buyout_range": [
+      10000,
+      18000
+    ],
+    "full_asset_buyout_range": [
+      18000,
+      35000
+    ],
+    "strategic_acquisition_range": [
+      35000,
+      75000
+    ],
+    "truth_label": "Interactive Prototype (Simulated Data Only) — Concept Demo",
+    "truth_badge": "Interactive Prototype // Simulated Data Only",
+    "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
+    "best_for": "Best for: Space vehicle reaction control specialists & cold-gas RCS telemetry operators",
+    "domain": "Deep Tech SCADA",
+    "rarity_tier": "Elite",
+    "permanent": true,
+    "buyoutEligible": false,
+    "complianceStandard": "NIST-SP-800-218",
+    "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+    "coverImage": "assets/covers/solaris-vac-wing-rcs-telemetry-deck-cover.webp"
+  },
+  {
+    "id": 128,
+    "name": "Hydra Endurance Deck",
+    "category": "Le Mans 24H Liquid H2 Fuel-Cell Hypercar Telemetry Console",
+    "gumroad_url": "https://auraandgrid.gumroad.com/l/hydra-endurance-deck",
+    "preview_url": "https://hydra-endurance-deck.onrender.com",
+    "admin_url": "https://hydra-endurance-deck.onrender.com/admin",
+    "audit_score": 9.9,
+    "tables": [
+      "endurance_vehicles",
+      "h2_telemetry_snapshots",
+      "supercapacitor_cycle_logs",
+      "stint_strategy_records",
+      "pit_telemetry_events"
+    ],
+    "vertical": "automotive",
+    "archetype_id": "A",
+    "archetype_name": "Archetype A: Dense Operational Console",
+    "archetype_description": "Persistent utility rail, simulated operational triage queue, and slide-out inspection drawer.",
+    "design_benchmark": "Toyota Gazoo Racing GR010 Le Mans Telemetry & MissionH24 Console",
+    "checkout_active": true,
+    "status_badge": "Flagship Interactive Prototype",
+    "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/hydra-endurance-deck",
+    "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+    "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+    "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+    "flagship_qualified": true,
+    "flagship_license_msrp": 1500,
+    "flagship_license_range": [
+      1500,
+      3500
+    ],
+    "exclusive_buyout_anchor": 14500,
+    "exclusive_buyout_range": [
+      10000,
+      18000
+    ],
+    "full_asset_buyout_range": [
+      18000,
+      35000
+    ],
+    "strategic_acquisition_range": [
+      35000,
+      75000
+    ],
+    "truth_label": "Interactive Prototype (Simulated Data Only) — Concept Demo",
+    "truth_badge": "Interactive Prototype // Simulated Data Only",
+    "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
+    "best_for": "Best for: Endurance racing telemetry directors & hydrogen fuel-cell supercar fleet strategists",
+    "domain": "Mobility & Fleet Logistics",
+    "rarity_tier": "Elite",
+    "permanent": true,
+    "buyoutEligible": false,
+    "complianceStandard": "NIST-SP-800-218",
+    "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+    "coverImage": "assets/covers/hydra-endurance-deck-cover.webp"
+  },
+  {
+    "id": 129,
+    "name": "Aeon Suction-GT Aero Console",
+    "category": "Active Ground-Effect Aerodynamics Wind-Tunnel & Vacuum Telemetry Deck",
+    "gumroad_url": "https://auraandgrid.gumroad.com/l/aeon-suction-gt-aero-console",
+    "preview_url": "https://aeon-suction-gt-aero-console.onrender.com",
+    "admin_url": "https://aeon-suction-gt-aero-console.onrender.com/admin",
+    "audit_score": 9.9,
+    "tables": [
+      "ground_effect_vehicles",
+      "vacuum_telemetry_snapshots",
+      "turbine_fan_logs",
+      "cornering_apex_records",
+      "aero_event_logs"
+    ],
+    "vertical": "aerospace",
+    "archetype_id": "A",
+    "archetype_name": "Archetype A: Dense Operational Console",
+    "archetype_description": "Persistent utility rail, simulated operational triage queue, and slide-out inspection drawer.",
+    "design_benchmark": "Brabham BT46B Fan Car & McMurtry Spéirling Vacuum Aero SCADA",
+    "checkout_active": true,
+    "status_badge": "Flagship Interactive Prototype",
+    "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/aeon-suction-gt-aero-console",
+    "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+    "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+    "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+    "flagship_qualified": true,
+    "flagship_license_msrp": 1500,
+    "flagship_license_range": [
+      1500,
+      3500
+    ],
+    "exclusive_buyout_anchor": 14500,
+    "exclusive_buyout_range": [
+      10000,
+      18000
+    ],
+    "full_asset_buyout_range": [
+      18000,
+      35000
+    ],
+    "strategic_acquisition_range": [
+      35000,
+      75000
+    ],
+    "truth_label": "Interactive Prototype (Simulated Data Only) — Concept Demo",
+    "truth_badge": "Interactive Prototype // Simulated Data Only",
+    "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
+    "best_for": "Best for: Aerodynamics engineers & active ground-effect wind tunnel telemetry operators",
+    "domain": "Deep Tech SCADA",
+    "rarity_tier": "Elite",
+    "permanent": true,
+    "buyoutEligible": false,
+    "complianceStandard": "NIST-SP-800-218",
+    "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+    "coverImage": "assets/covers/aeon-suction-gt-aero-console-cover.webp"
+  },
+  {
+    "id": 130,
+    "name": "VORTEX Apex-GT Hypercar Telemetry Deck",
+    "category": "Quad-Motor Torque Vectoring & Active Aero Hypercar Telemetry Console",
+    "gumroad_url": "https://auraandgrid.gumroad.com/l/vortex-apex-gt-hypercar-telemetry-deck",
+    "preview_url": "https://vortex-apex-gt-hypercar-telemetry-deck.onrender.com",
+    "admin_url": "https://vortex-apex-gt-hypercar-telemetry-deck.onrender.com/admin",
+    "audit_score": 9.9,
+    "tables": [
+      "hypercar_vehicles",
+      "telemetry_snapshots",
+      "motor_torque_logs",
+      "lap_sector_records",
+      "driver_event_logs"
+    ],
+    "vertical": "automotive",
+    "archetype_id": "A",
+    "archetype_name": "Archetype A: Dense Operational Console",
+    "archetype_description": "Persistent utility rail, simulated operational triage queue, and slide-out inspection drawer.",
+    "design_benchmark": "Rimac Nevera Torque Vectoring HUD & Porsche Mission X Telemetry",
+    "checkout_active": true,
+    "status_badge": "Flagship Interactive Prototype",
+    "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/vortex-apex-gt-hypercar-telemetry-deck",
+    "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+    "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+    "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+    "flagship_qualified": true,
+    "flagship_license_msrp": 1500,
+    "flagship_license_range": [
+      1500,
+      3500
+    ],
+    "exclusive_buyout_anchor": 14500,
+    "exclusive_buyout_range": [
+      10000,
+      18000
+    ],
+    "full_asset_buyout_range": [
+      18000,
+      35000
+    ],
+    "strategic_acquisition_range": [
+      35000,
+      75000
+    ],
+    "truth_label": "Interactive Prototype (Simulated Data Only) — Concept Demo",
+    "truth_badge": "Interactive Prototype // Simulated Data Only",
+    "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
+    "best_for": "Best for: High-performance supercar track engineers & electric hypercar vehicle telemetry directors",
+    "domain": "Mobility & Fleet Logistics",
+    "rarity_tier": "Elite",
+    "permanent": true,
+    "buyoutEligible": false,
+    "complianceStandard": "NIST-SP-800-218",
+    "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+    "coverImage": "assets/covers/vortex-apex-gt-hypercar-telemetry-deck-cover.webp"
+  },
+  {
+    "id": 131,
+    "name": "Apex Ascent Space Elevator & Climber Flight Deck",
+    "category": "Space Elevator Carbon Nanotube Tether & Heavy Climber Robotics Console",
+    "gumroad_url": "https://auraandgrid.gumroad.com/l/apex-ascent-space-elevator-climber-flight-deck",
+    "preview_url": "https://apex-ascent-space-elevator-climber-flight-deck.onrender.com",
+    "admin_url": "https://apex-ascent-space-elevator-climber-flight-deck.onrender.com/admin",
+    "audit_score": 9.9,
+    "tables": [
+      "climbers",
+      "tether_telemetry",
+      "photovoltaic_receivers",
+      "traction_drive_telemetry",
+      "cargo_manifest",
+      "tether_inspection_events",
+      "operator_action_logs"
+    ],
+    "vertical": "aerospace",
+    "archetype_id": "A",
+    "archetype_name": "Archetype A: Dense Operational Console",
+    "archetype_description": "Persistent utility rail, simulated operational triage queue, and slide-out inspection drawer.",
+    "design_benchmark": "Obayashi Space Elevator Concept & NASA Carbon Nanotube Tether SCADA",
+    "checkout_active": true,
+    "status_badge": "Flagship Interactive Prototype",
+    "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/apex-ascent-space-elevator-climber-flight-deck",
+    "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+    "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+    "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+    "flagship_qualified": true,
+    "flagship_license_msrp": 1500,
+    "flagship_license_range": [
+      1500,
+      3500
+    ],
+    "exclusive_buyout_anchor": 14500,
+    "exclusive_buyout_range": [
+      10000,
+      18000
+    ],
+    "full_asset_buyout_range": [
+      18000,
+      35000
+    ],
+    "strategic_acquisition_range": [
+      35000,
+      75000
+    ],
+    "truth_label": "Interactive Prototype (Simulated Data Only) — Concept Demo",
+    "truth_badge": "Interactive Prototype // Simulated Data Only",
+    "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
+    "best_for": "Best for: Space elevator infrastructure engineers & ultra-high altitude climber robotics controllers",
+    "domain": "Deep Tech SCADA",
+    "rarity_tier": "Elite",
+    "permanent": true,
+    "buyoutEligible": false,
+    "complianceStandard": "NIST-SP-800-218",
+    "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+    "coverImage": "assets/covers/apex-ascent-space-elevator-climber-flight-deck-cover.webp"
+  },
+  {
+    "id": 132,
+    "name": "Shackleton Polar Catapult Lunar Mass Driver Control",
+    "category": "Lunar Surface Electromagnetic Mass Driver Firing & Telemetry Control Deck",
+    "gumroad_url": "https://auraandgrid.gumroad.com/l/shackleton-polar-catapult-lunar-mass-driver-control",
+    "preview_url": "https://shackleton-polar-catapult-lunar-mass-driver-control.onrender.com",
+    "admin_url": "https://shackleton-polar-catapult-lunar-mass-driver-control.onrender.com/admin",
+    "audit_score": 9.9,
+    "tables": [
+      "mass_driver_facilities",
+      "telemetry_snapshots",
+      "stator_coil_stages",
+      "payload_manifest",
+      "firing_cycles",
+      "system_interlocks_and_alerts"
+    ],
+    "vertical": "aerospace",
+    "archetype_id": "A",
+    "archetype_name": "Archetype A: Dense Operational Console",
+    "archetype_description": "Persistent utility rail, simulated operational triage queue, and slide-out inspection drawer.",
+    "design_benchmark": "NASA Lunar Surface Innovation Initiative & General Atomics EMALS Launch Deck",
+    "checkout_active": true,
+    "status_badge": "Flagship Interactive Prototype",
+    "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/shackleton-polar-catapult-lunar-mass-driver-control",
+    "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+    "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+    "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+    "flagship_qualified": true,
+    "flagship_license_msrp": 1500,
+    "flagship_license_range": [
+      1500,
+      3500
+    ],
+    "exclusive_buyout_anchor": 14500,
+    "exclusive_buyout_range": [
+      10000,
+      18000
+    ],
+    "full_asset_buyout_range": [
+      18000,
+      35000
+    ],
+    "strategic_acquisition_range": [
+      35000,
+      75000
+    ],
+    "truth_label": "Interactive Prototype (Simulated Data Only) — Concept Demo",
+    "truth_badge": "Interactive Prototype // Simulated Data Only",
+    "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
+    "best_for": "Best for: Lunar surface launch controllers & electromagnetic mass driver payload manifest operators",
+    "domain": "Deep Tech SCADA",
+    "rarity_tier": "Elite",
+    "permanent": true,
+    "buyoutEligible": false,
+    "complianceStandard": "NIST-SP-800-218",
+    "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+    "coverImage": "assets/covers/shackleton-polar-catapult-lunar-mass-driver-control-cover.webp"
+  },
+  {
+    "id": 133,
+    "name": "Oceanus CryoDrill Sub-Ice ROV Command Deck",
+    "category": "Deep-Submergence Sub-Ice Planetary Ocean Penetrator ROV Command Deck",
+    "gumroad_url": "https://auraandgrid.gumroad.com/l/oceanus-cryodrill-sub-ice-rov-command-deck",
+    "preview_url": "https://oceanus-cryodrill-sub-ice-rov-command-deck.onrender.com",
+    "admin_url": "https://oceanus-cryodrill-sub-ice-rov-command-deck.onrender.com/admin",
+    "audit_score": 9.9,
+    "tables": [
+      "probe_units",
+      "probe_telemetry_logs",
+      "science_payload_manifest",
+      "vent_water_chemistry_logs",
+      "niskin_sample_bays",
+      "ice_column_waypoints",
+      "flight_deck_operators",
+      "operator_command_actions",
+      "telemetry_alerts"
+    ],
+    "vertical": "subsea",
+    "archetype_id": "A",
+    "archetype_name": "Archetype A: Dense Operational Console",
+    "archetype_description": "Persistent utility rail, simulated operational triage queue, and slide-out inspection drawer.",
+    "design_benchmark": "WHOI Nereid Under-Ice ROV & NASA Europa CryoBot Exploration Deck",
+    "checkout_active": true,
+    "status_badge": "Flagship Interactive Prototype",
+    "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/oceanus-cryodrill-sub-ice-rov-command-deck",
+    "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+    "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+    "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+    "flagship_qualified": true,
+    "flagship_license_msrp": 1500,
+    "flagship_license_range": [
+      1500,
+      3500
+    ],
+    "exclusive_buyout_anchor": 14500,
+    "exclusive_buyout_range": [
+      10000,
+      18000
+    ],
+    "full_asset_buyout_range": [
+      18000,
+      35000
+    ],
+    "strategic_acquisition_range": [
+      35000,
+      75000
+    ],
+    "truth_label": "Interactive Prototype (Simulated Data Only) — Concept Demo",
+    "truth_badge": "Interactive Prototype // Simulated Data Only",
+    "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
+    "best_for": "Best for: Deep-sea oceanographic researchers & planetary sub-ice ROV robotics directors",
+    "domain": "Industrial Robotics & Autonomous SCADA",
+    "rarity_tier": "Elite",
+    "permanent": true,
+    "buyoutEligible": false,
+    "complianceStandard": "NIST-SP-800-218",
+    "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+    "coverImage": "assets/covers/oceanus-cryodrill-sub-ice-rov-command-deck-cover.webp"
+  },
+  {
+    "id": 134,
+    "name": "Sierra Orbital Valkyrie-X Flight Deck",
+    "category": "Suborbital Spaceplane Aerospike Propulsion & Attitude Flight Deck",
+    "gumroad_url": "https://auraandgrid.gumroad.com/l/sierra-orbital-valkyrie-x-flight-deck",
+    "preview_url": "https://sierra-orbital-valkyrie-x-flight-deck.onrender.com",
+    "admin_url": "https://sierra-orbital-valkyrie-x-flight-deck.onrender.com/admin",
+    "audit_score": 9.9,
+    "tables": [
+      "spaceplanes",
+      "missions",
+      "rcs_thrusters",
+      "propulsion_telemetry_logs",
+      "attitude_commands",
+      "anomaly_events"
+    ],
+    "vertical": "aerospace",
+    "archetype_id": "A",
+    "archetype_name": "Archetype A: Dense Operational Console",
+    "archetype_description": "Persistent utility rail, simulated operational triage queue, and slide-out inspection drawer.",
+    "design_benchmark": "Sierra Space Dream Chaser & North American X-15 Flight Telemetry Console",
+    "checkout_active": true,
+    "status_badge": "Flagship Interactive Prototype",
+    "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/sierra-orbital-valkyrie-x-flight-deck",
+    "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+    "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+    "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+    "flagship_qualified": true,
+    "flagship_license_msrp": 1500,
+    "flagship_license_range": [
+      1500,
+      3500
+    ],
+    "exclusive_buyout_anchor": 14500,
+    "exclusive_buyout_range": [
+      10000,
+      18000
+    ],
+    "full_asset_buyout_range": [
+      18000,
+      35000
+    ],
+    "strategic_acquisition_range": [
+      35000,
+      75000
+    ],
+    "truth_label": "Interactive Prototype (Simulated Data Only) — Concept Demo",
+    "truth_badge": "Interactive Prototype // Simulated Data Only",
+    "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
+    "best_for": "Best for: Suborbital spaceplane mission controllers & linear aerospike flight operations directors",
+    "domain": "Deep Tech SCADA",
+    "rarity_tier": "Elite",
+    "permanent": true,
+    "buyoutEligible": false,
+    "complianceStandard": "NIST-SP-800-218",
+    "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+    "coverImage": "assets/covers/sierra-orbital-valkyrie-x-flight-deck-cover.webp"
+  },
+  {
+    "id": 135,
+    "name": "NASA VF6 X3 100kW Hall Thruster Control",
+    "category": "High-Power Electric Propulsion Vacuum Chamber SCADA & Thruster Control Deck",
+    "gumroad_url": "https://auraandgrid.gumroad.com/l/nasa-vf6-x3-100kw-hall-thruster-control",
+    "preview_url": "https://nasa-vf6-x3-100kw-hall-thruster-control.onrender.com",
+    "admin_url": "https://nasa-vf6-x3-100kw-hall-thruster-control.onrender.com/admin",
+    "audit_score": 9.9,
+    "tables": [
+      "test_campaigns",
+      "firing_telemetry_snapshots",
+      "faraday_sweeps",
+      "facility_subsystems",
+      "incident_trip_logs"
+    ],
+    "vertical": "aerospace",
+    "archetype_id": "A",
+    "archetype_name": "Archetype A: Dense Operational Console",
+    "archetype_description": "Persistent utility rail, simulated operational triage queue, and slide-out inspection drawer.",
+    "design_benchmark": "NASA Glenn Vacuum Facility 6 & PEPL X3 Nested-Channel Hall Effect Thruster Deck",
+    "checkout_active": true,
+    "status_badge": "Flagship Interactive Prototype",
+    "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/nasa-vf6-x3-100kw-hall-thruster-control",
+    "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+    "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+    "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+    "flagship_qualified": true,
+    "flagship_license_msrp": 1500,
+    "flagship_license_range": [
+      1500,
+      3500
+    ],
+    "exclusive_buyout_anchor": 14500,
+    "exclusive_buyout_range": [
+      10000,
+      18000
+    ],
+    "full_asset_buyout_range": [
+      18000,
+      35000
+    ],
+    "strategic_acquisition_range": [
+      35000,
+      75000
+    ],
+    "truth_label": "Interactive Prototype (Simulated Data Only) — Concept Demo",
+    "truth_badge": "Interactive Prototype // Simulated Data Only",
+    "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
+    "best_for": "Best for: Electric propulsion test leads & high-power Hall thruster space vacuum chamber operators",
+    "domain": "Deep Tech SCADA",
+    "rarity_tier": "Elite",
+    "permanent": true,
+    "buyoutEligible": false,
+    "complianceStandard": "NIST-SP-800-218",
+    "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+    "coverImage": "assets/covers/nasa-vf6-x3-100kw-hall-thruster-control-cover.webp"
+  },
+  {
+    "id": 136,
+    "name": "Tokamak Plasma Control ARC-02 Operations Deck",
+    "category": "High-Field Magnetic Confinement & Burning Plasma Tokamak Operations Control Deck",
+    "gumroad_url": "https://auraandgrid.gumroad.com/l/tokamak-plasma-control-arc-02-operations-deck",
+    "preview_url": "https://tokamak-plasma-control-arc-02-operations-deck.onrender.com",
+    "admin_url": "https://tokamak-plasma-control-arc-02-operations-deck.onrender.com/admin",
+    "audit_score": 9.9,
+    "tables": [
+      "tokamak_shots",
+      "magnetic_equilibrium_snapshots",
+      "divertor_target_plates",
+      "auxiliary_heating_systems",
+      "hts_cryogenic_monitoring",
+      "plasma_actuator_events"
+    ],
+    "vertical": "clean_energy",
+    "archetype_id": "A",
+    "archetype_name": "Archetype A: Dense Operational Console",
+    "archetype_description": "Persistent utility rail, simulated operational triage queue, and slide-out inspection drawer.",
+    "design_benchmark": "Commonwealth Fusion Systems SPARC SCADA & UKAEA STEP Plasma Flight Deck",
+    "checkout_active": true,
+    "status_badge": "Flagship Interactive Prototype",
+    "commercial_checkout_url": "https://auraandgrid.gumroad.com/l/tokamak-plasma-control-arc-02-operations-deck",
+    "demo_passcode_type": "DEMO PASSCODE (READ-ONLY SANDBOX)",
+    "security_architecture": "Level 3: SCADA/Aerospace Blueprint (Frontend + Schema + Demo RLS Policies)",
+    "pricing_track": "Track 2 — Flagship Tier-1 ($14,500 Anchor)",
+    "flagship_qualified": true,
+    "flagship_license_msrp": 1500,
+    "flagship_license_range": [
+      1500,
+      3500
+    ],
+    "exclusive_buyout_anchor": 14500,
+    "exclusive_buyout_range": [
+      10000,
+      18000
+    ],
+    "full_asset_buyout_range": [
+      18000,
+      35000
+    ],
+    "strategic_acquisition_range": [
+      35000,
+      75000
+    ],
+    "truth_label": "Interactive Prototype (Simulated Data Only) — Concept Demo",
+    "truth_badge": "Interactive Prototype // Simulated Data Only",
+    "disclaimer": "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE",
+    "best_for": "Best for: Commercial fusion energy scientists & burning plasma tokamak SCADA controllers",
+    "domain": "Energy SCADA",
+    "rarity_tier": "Elite",
+    "permanent": true,
+    "buyoutEligible": false,
+    "complianceStandard": "NIST-SP-800-218",
+    "gate_criterion_7": "NIST SP 800-218 SSDF v1.1 Alignment Passed",
+    "coverImage": "assets/covers/tokamak-plasma-control-arc-02-operations-deck-cover.webp"
   }
 ]

@@ -1,0 +1,8 @@
+{
+  "name": "Tokamak Plasma Control // ARC-02 Operations Deck (export) ",
+  "description": "Commonwealth Tokamak Alliance ARC-02 High-Field Magnetic Confinement & Burning Plasma Operations Control Deck",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

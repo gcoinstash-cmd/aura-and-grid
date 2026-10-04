@@ -1,0 +1,8 @@
+{
+  "name": "Chronos Morph-GT Telemetry Deck (export) ",
+  "description": "Morphing aero-composite stealth interceptor console and high-performance hypercar telemetry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

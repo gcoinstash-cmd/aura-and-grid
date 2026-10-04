@@ -1,0 +1,8 @@
+{
+  "name": "Pulsar Magneto-GT Telemetry Deck (export)",
+  "description": "Plasma tokamak fusion hypercar telemetry cockpit featuring real-time magnetic confinement monitoring, superconducting MagLev ride-height matrices, and high-speed stint telemetry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

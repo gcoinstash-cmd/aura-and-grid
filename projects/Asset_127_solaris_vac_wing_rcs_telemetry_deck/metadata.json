@@ -1,0 +1,8 @@
+{
+  "name": "Solaris Vac-Wing RCS Telemetry Deck (export) ",
+  "description": "Orbital reaction-control telemetry console for the Solaris Vac-Wing Proto-12 cold-gas RCS hypercar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

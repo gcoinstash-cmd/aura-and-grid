@@ -1,0 +1,8 @@
+{
+  "name": "Hydra Endurance Deck (export) ",
+  "description": "Le Mans 24-Hour Night-Stint Telemetry Console for Liquid H2 Fuel-Cell Hypercar Proto-11",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

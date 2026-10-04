@@ -1,0 +1,8 @@
+{
+  "name": "Oceanus CryoDrill // Sub-Ice ROV Command Deck (export) ",
+  "description": "High-performance institutional deep-submergence robotics and planetary ocean-exploration cryo-drill command deck for sub-ice tethered penetrator operations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

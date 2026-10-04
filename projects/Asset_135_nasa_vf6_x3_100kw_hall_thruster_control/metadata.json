@@ -1,0 +1,8 @@
+{
+  "name": "NASA VF6 X3 100kW Hall Thruster Control (export) ",
+  "description": "High-power electric propulsion vacuum test facility control and telemetry console for the X3 100kW nested-channel Hall effect thruster.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

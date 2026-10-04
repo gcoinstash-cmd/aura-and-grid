@@ -1,0 +1,8 @@
+{
+  "name": "Apex Ascent Space Elevator & Climber Flight Deck (export) ",
+  "description": "High-performance institutional space elevator tether infrastructure and heavy climber robotics telemetry console.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

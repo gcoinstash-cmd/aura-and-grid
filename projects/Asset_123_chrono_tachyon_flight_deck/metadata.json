@@ -1,0 +1,8 @@
+{
+  "name": "Chrono Tachyon Flight Deck (export)",
+  "description": "High-performance hypersonic scramjet hypercar telemetry console and electromagnetic skid flight deck.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

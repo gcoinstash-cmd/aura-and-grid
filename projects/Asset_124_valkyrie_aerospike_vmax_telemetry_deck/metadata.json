@@ -1,0 +1,8 @@
+{
+  "name": "Valkyrie Aerospike-VMax Telemetry Deck (export)",
+  "description": "Supersonic aerospike rocket hypercar flight-deck console with dual-propulsion methalox telemetry, linear aerospike plume modeling, and real-time acceleration vectors.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
