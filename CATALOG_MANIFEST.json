@@ -3580,8 +3580,8 @@
     },
     {
       "id": 111,
-      "name": "Commercial Tokamak Fusion Plasma SCADA OS",
-      "category": "Commercial Tokamak Fusion Plasma SCADA OS Console",
+      "name": "Commercial Tokamak Fusion SPARC SCADA OS",
+      "category": "Commercial Tokamak Fusion SPARC SCADA OS Console",
       "gumroad_url": "https://auraandgrid.gumroad.com/l/commercial-tokamak-fusion-plasma-scada-os",
       "preview_url": "https://commercial-tokamak-fusion-plasma-scada-os.onrender.com",
       "admin_url": "https://commercial-tokamak-fusion-plasma-scada-os.onrender.com/admin",
@@ -3659,8 +3659,8 @@
     },
     {
       "id": 113,
-      "name": "Superconducting Quantum Processor Cryostat OS",
-      "category": "Superconducting Quantum Processor Cryostat OS Console",
+      "name": "Superconducting Quantum Cryostat Control OS",
+      "category": "Superconducting Quantum Cryostat Control OS Console",
       "gumroad_url": "https://auraandgrid.gumroad.com/l/superconducting-quantum-processor-cryostat-os",
       "preview_url": "https://superconducting-quantum-processor-cryostat-os.onrender.com",
       "admin_url": "https://superconducting-quantum-processor-cryostat-os.onrender.com/admin",

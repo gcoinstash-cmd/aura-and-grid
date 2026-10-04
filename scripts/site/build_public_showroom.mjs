@@ -192,14 +192,21 @@ manifest.products.forEach(p => {
     return d === normP || normD === normP || d === gumroadSlug || normD === gumroadSlug || d === previewSlug || normD === previewSlug;
   });
 
-  let coverRelPath = `assets/covers/${cleanSlug}-cover.jpg`;
+  let coverRelPath = `assets/covers/${cleanSlug}-cover.webp`;
   let foundLocalRaster = false;
 
-  if (match) {
+  // Priority 1: High-fidelity optimized WebP cover in site/assets/covers/
+  if (fs.existsSync(path.join(SITE_ASSETS_DIR, `${cleanSlug}-cover.webp`))) {
+    coverRelPath = `assets/covers/${cleanSlug}-cover.webp`;
+    rasterCoversFound++;
+    foundLocalRaster = true;
+  }
+
+  if (!foundLocalRaster && match) {
     const matchPath = path.join(rootDir, 'dist', match);
     if (fs.existsSync(matchPath) && fs.statSync(matchPath).isDirectory()) {
       const files = fs.readdirSync(matchPath);
-      const coverFile = files.find(f => f.includes('cover') && (f.endsWith('.jpg') || f.endsWith('.png')));
+      const coverFile = files.find(f => f.includes('cover') && (f.endsWith('.webp') || f.endsWith('.jpg') || f.endsWith('.png')));
       if (coverFile) {
         const srcPath = path.join(matchPath, coverFile);
         const ext = path.extname(coverFile);
@@ -215,7 +222,11 @@ manifest.products.forEach(p => {
 
   // Check if raster already exists in SITE_ASSETS_DIR from previous compilation
   if (!foundLocalRaster) {
-    if (fs.existsSync(path.join(SITE_ASSETS_DIR, `${cleanSlug}-cover.jpg`))) {
+    if (fs.existsSync(path.join(SITE_ASSETS_DIR, `${cleanSlug}-cover.webp`))) {
+      coverRelPath = `assets/covers/${cleanSlug}-cover.webp`;
+      rasterCoversFound++;
+      foundLocalRaster = true;
+    } else if (fs.existsSync(path.join(SITE_ASSETS_DIR, `${cleanSlug}-cover.jpg`))) {
       coverRelPath = `assets/covers/${cleanSlug}-cover.jpg`;
       rasterCoversFound++;
       foundLocalRaster = true;

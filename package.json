@@ -21,5 +21,9 @@
   "devDependencies": {
     "@axe-core/playwright": "^4.13.0",
     "playwright": "^1.63.0"
+  },
+  "dependencies": {
+    "@google/genai": "^2.27.0",
+    "sharp": "^0.35.5"
   }
 }
