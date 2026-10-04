@@ -5,11 +5,11 @@
 **Entity**: ZoMae Media LLC (Parent Holding Entity)  
 **Private Foundry Engine**: GhostFactoryOS (Autonomous Digital Vehicle Foundry & Command Center)  
 **Commercial Dealership**: Aura & Grid™ (Public Dealership for Interactive Demos, Leases, Licenses & Selective Micro-APAs)  
-**Current Portfolio Status**: 114 Pre-Revenue Digital Assets (86 Track 1 Lean Rapid-Sale + 28 Track 2 Flagship Tier-1)  
-**Retention Floor**: Minimum 80% Retained Floor Enforced at Every Stage (Current Floor: 91 Assets Retained / Max 23 Micro-APAs)  
-**Strategic Acquisition Ceiling**: $1,490,000 – $2,850,000+ (Deep-tech niche monopoly premium)  
-**Dev Agency Replacement Benchmark**: $965,000 – $1,760,000 (4,250+ engineering hours @ $150–$250/hr)  
-**Strategic Buyout Anchor**: $721,000 ($608,000 – $1,040,000 range)  
+**Current Portfolio Status**: 136 Pre-Revenue Digital Assets (86 Track 1 Lean Rapid-Sale + 50 Track 2 Flagship Tier-1)  
+**Retention Floor**: Minimum 80% Retained Floor Enforced at Every Stage (Current Floor: 109 Assets Retained / Max 27 Micro-APAs)  
+**Strategic Acquisition Ceiling**: $2,150,000 – $3,850,000+ (Deep-tech niche monopoly premium)  
+**Dev Agency Replacement Benchmark**: $1,320,000 – $2,400,000 (5,600+ engineering hours @ $150–$250/hr)  
+**Strategic Buyout Anchor**: $1,112,000 (~$1.11M) ($935,000 – $1,600,000 range)  
 **Direct B2B Ask (Data Room)**: $195,000 – $265,000 | **Realistic Accepted Offer**: $135,000 – $175,000  
 
 ---
@@ -24,20 +24,20 @@ GhostFactoryOS operates as a specialized digital car manufacturer, and Aura & Gr
 
 ### 1.2 Portfolio Retention Floor & IP Defense
 The foundry strictly operates under an **80% Minimum Retained Floor**:
-- **Current Fleet (114 Assets)**: At least **91 assets** remain permanently in the foundry; maximum transfer capacity is **23 assets**.
+- **Current Fleet (136 Assets)**: At least **109 assets** remain permanently in the foundry; maximum transfer capacity is **27 assets**.
 - **Target Fleet (500 Assets)**: At least **400 assets** remain permanently in the foundry; maximum transfer capacity is **100 assets**.
 - **Permanent IP Boundary**: Micro-APAs transfer defined rights/code to **one specific asset only**. Micro-APAs **NEVER** transfer GhostFactoryOS core infrastructure, Aura & Grid brand/showroom, shared design tokens, component libraries, deployment pipelines, factory prompts, or future catalog rights.
 - **Capacity is Not a Sales Target**: Never treat micro-APA maximum capacity as a sales target.
 
 ### 1.3 Grounded Valuation Reality
-The entire 114-asset collection is currently **pre-revenue**.
-- **Strategic Acquisition Ceiling**: **$1,490,000 – $2,850,000+** (Deep-tech niche monopoly premium).
-- **Dev Agency Replacement Benchmark**: **$965,000 – $1,760,000** (4,250+ engineering hours @ $150–$250/hr avoided).
-- **Strategic Buyout Anchor**: **$721,000** ($608,000 – $1,040,000 range).
+The entire 136-asset collection is currently **pre-revenue**.
+- **Strategic Acquisition Ceiling**: **$2,150,000 – $3,850,000+** (Deep-tech niche monopoly premium).
+- **Dev Agency Replacement Benchmark**: **$1,320,000 – $2,400,000** (5,600+ engineering hours @ $150–$250/hr avoided).
+- **Strategic Buyout Anchor**: **$1,112,000** ($935,000 – $1,600,000 range; 86 T1 @ $4.5k + 50 Flagship @ $14.5k).
 - **Direct B2B Ask Target**: **$195,000 – $265,000**.
 - **Realistic Accepted Offer (LOI)**: **$135,000 – $175,000**.
-- **Distress / Quick-Sale Floor**: **$75,000 – $115,000** (50–70% buyer liquidation cash floor).
-- **Truth Standard**: We do not present the collection as 114 proven SaaS businesses. No verified revenue, paying users, retention, uptime, security audits, compliance, or live production operations may be claimed without deterministic proof.
+- **Distress / Quick-Sale Floor**: **$95,000 – $145,000** (50–70% buyer liquidation cash floor).
+- **Truth Standard**: We do not present the collection as 136 proven SaaS businesses. No verified revenue, paying users, retention, uptime, security audits, compliance, or live production operations may be claimed without deterministic proof.
 
 ---
 
@@ -153,7 +153,7 @@ All marketing copy, sales offers, and technical data sheets must strictly employ
 ## 7. Operational Roadmap & Milestone Tracking
 
 - **Phase 1: 50 Assets (Archive Clearance & Standards Lock)**: Complete ✅ (All schemas standardized, dark obsidian aesthetic enforced).
-- **Phase 2: 100 Assets (Century Milestone & Multi-Track Launch)**: Complete ✅ (114 assets cataloged: 86 Track 1 Lean Rapid-Sale + 28 Track 2 Flagship Tier-1 models).
+- **Phase 2: 100 Assets (Century Milestone & Multi-Track Launch)**: Complete ✅ (136 assets cataloged: 86 Track 1 Lean Rapid-Sale + 50 Track 2 Flagship Tier-1 models).
 - **Phase 3: 350 Assets (Niche Depth & Vertical Expansion)**: In Progress 🟢 Expansion into specialized technical and industrial workflows.
 - **Phase 4: 500 Assets (Full Catalog Saturation & Retention Maturity)**: 400 assets permanently retained in the foundry, up to 100 maximum cumulative micro-APAs.
 
@@ -162,4 +162,4 @@ All marketing copy, sales offers, and technical data sheets must strictly employ
 ## 8. Next 3 Moves
 1. **Deploy Track 1 Pricing as Default Across Showroom**: Re-align all active storefront SKUs to $199 retail / $599 team seat / $4,500 exclusive buyout anchor.
 2. **Execute Flagship Gate Diligence on Top Candidates**: Verify 8–15 screens, physics solvers, and simulation disclosures before offering Track 2 pricing.
-3. **Mirror Telemetry to GhostFactoryOS Console**: Ensure the console dashboard displays the 80% retained floor (91 assets retained) and current strategic buyout anchor ($721,000 / $1.49M–$2.85M+ ceiling).
+3. **Mirror Telemetry to GhostFactoryOS Console**: Ensure the console dashboard displays the 80% retained floor (109 assets retained) and current strategic buyout anchor ($1,112,000 / $2.15M–$3.85M+ ceiling).

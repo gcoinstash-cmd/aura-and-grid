@@ -24,16 +24,16 @@
 
 ---
 
-## 3. Active Fleet Composition (114 Total Vehicles)
-- Current Fleet Staged: 114 Digital Vehicles
+## 3. Active Fleet Composition (136 Total Vehicles)
+- Current Fleet Staged: 136 Digital Vehicles
 - Collection Fleet Goal: 500 Digital Vehicles
 - Track 1 Units (Lean Rapid-Sale): 86 Turnkey Concept Consoles ($199 Retail MSRP / $599 Team Seat / $4,500 Anchor)
-- Track 2 Units (Flagship Hypercars): 28 Deep-Tech / SCADA Vehicles ($1,500–$3,500 License / $14,500 Anchor)
-- 80% Retention Floor Lock: Minimum 91 units permanently held in the vault; exactly 23 units transferable via micro-APA.
+- Track 2 Units (Flagship Hypercars): 50 Deep-Tech / SCADA Vehicles ($1,500–$3,500 License / $14,500 Anchor)
+- 80% Retention Floor Lock: Minimum 109 units permanently held in the vault; exactly 27 units transferable via micro-APA.
 
 ---
 
-## 4. Master Valuation Ledger (114 Units Sold Individually)
+## 4. Master Valuation Ledger (136 Units Sold Individually)
 
 ### Section 1: Non-Exclusive Licensing & Lease Hub
 - Annualized Fair Market Value (FMV): $54,415 – $121,330 / year
@@ -41,17 +41,16 @@
 - Realistic Accepted Offer (Target Close): $62,000 – $104,750 / year
 
 ### Section 2: Exclusive Buyout & Dev Replacement Hub
-- Distress / Quick-Sale Buyer Cash Floor: $75,000 – $115,000 (50–70% buyer liquidation cash floor)
-- Dual-Track Strategic Buyout Range: $608,000 – $1,040,000 (Planning Anchor: $721,000)
-- Strategic Deep-Tech Monopoly Ceiling: $1,490,000 – $2,850,000+
-- Dev Agency Replacement Benchmark: $965,000 – $1,760,000 (4,250+ engineering hours @ $150–$250/hr)
+- Distress / Quick-Sale Buyer Cash Floor: $95,000 – $145,000 (50–70% buyer liquidation cash floor)
+- Dual-Track Strategic Buyout Range: $935,000 – $1,600,000 (Planning Anchor: $1,112,000)
+- Strategic Deep-Tech Monopoly Ceiling: $2,150,000 – $3,850,000+
+- Dev Agency Replacement Benchmark: $1,320,000 – $2,400,000 (5,600+ engineering hours @ $150–$250/hr)
 
 Disclaimer: INTERNAL SCENARIO MODELING ONLY — PRE-REVENUE ASSET PORTFOLIO — VALUES ARE ESTIMATES FOR MANAGEMENT STRATEGY AND NOT GUARANTEED MARKET APPRAISALS.
 
 ---
 
 ## 5. Technical Deployment Audit Record
-- Live Deployment Tag: Build v1.5.0
-- Verified Git Commits: 7e43696 (console), 4d90a82 (storefront), b648315 (verification docs)
-- Compiled Production Bundles: index-iMVwGL6Q.js / index-Bj6x1kQ8.js
+- Live Deployment Tag: Build v1.8.0
+- Verified Git Commits: Synchronized HEAD
 - Header Seal: [AUDIT 360 VERIFIED // 9.7/10] mounted permanently on production UI.

@@ -5,16 +5,16 @@
 - **Aura & Grid**: Public premium showroom and digital dealership for interactive demos, source-code licenses, managed leases, agency fleet licenses, bespoke deployments, support plans, and selective micro-APAs.
 - **Digital Asset Metaphor**: The portfolio is managed as an elite "digital car collection" inside a video game—manufactured with high precision and leased, licensed, or selectively transferred.
 - **Target Scale**: 500 cataloged assets.
-- **Current Portfolio Scale**: **114 pre-revenue digital assets** (86 Track 1 Lean Rapid-Sale + 28 Track 2 Flagship Tier-1).
+- **Current Portfolio Scale**: **136 pre-revenue digital assets** (86 Track 1 Lean Rapid-Sale + 50 Track 2 Flagship Tier-1).
 
 ---
 
 ## 2. Portfolio Status & 80% Retention Floor Rule
 
 The portfolio strictly enforces an **80% Minimum Retained Floor** across all operational phases:
-- **Current Collection (114 assets)**:
-  - Minimum Retained Floor: **91 assets** permanently kept in the foundry.
-  - Maximum Transfer Capacity: **23 assets** eligible for selective micro-APAs.
+- **Current Collection (136 assets)**:
+  - Minimum Retained Floor: **109 assets** permanently kept in the foundry.
+  - Maximum Transfer Capacity: **27 assets** eligible for selective micro-APAs.
 - **At 500 Assets Target**:
   - Minimum Retained Floor: **400 assets** permanently kept.
   - Maximum Transfer Capacity: **100 assets** max cumulative transfer capacity.
@@ -27,20 +27,20 @@ The portfolio strictly enforces an **80% Minimum Retained Floor** across all ope
 
 ## 3. Current Pre-Revenue Portfolio Valuation
 
-The full 114-asset collection is currently **pre-revenue**. It is valued on orderly fair-market fundamentals:
+The full 136-asset collection is currently **pre-revenue**. It is valued on orderly fair-market fundamentals:
 
 | Metric | Valuation Range | Anchor / Planning Value | Notes |
 |:---|:---:|:---:|:---|
-| **Strategic Acquisition Ceiling** | **$1,490,000 – $2,850,000+** | **$2,170,000** | Deep-tech niche monopoly premium |
-| **Dev Agency Replacement Benchmark** | **$965,000 – $1,760,000** | **~$1.36M** | 4,250+ engineering hours @ $150–$250/hr avoided |
-| **Strategic Buyout Anchor** | **$608,000 – $1,040,000** | **$721,000** | Structured enterprise portfolio buyout |
+| **Strategic Acquisition Ceiling** | **$2,150,000 – $3,850,000+** | **$3,000,000** | Deep-tech niche monopoly premium |
+| **Dev Agency Replacement Benchmark** | **$1,320,000 – $2,400,000** | **~$1.86M** | 5,600+ engineering hours @ $150–$250/hr avoided |
+| **Strategic Buyout Anchor** | **$935,000 – $1,600,000** | **$1,112,000** | Structured enterprise portfolio buyout (86 T1 @ $4.5k + 50 Flagship @ $14.5k) |
 | **Direct B2B Ask (Data Room)** | **$195,000 – $265,000** | **$225,000** | Asking target for enterprise / private equity rollup |
 | **Realistic Accepted Offer** | **$135,000 – $175,000** | **$150,000** | Quick-close wire / cash-in-hand negotiated buyout |
-| **Distress / Quick-Sale Floor** | **$75,000 – $115,000** | **$95,000** | 50–70% buyer liquidation cash floor (below negotiated targets) |
-| **Retail Shelf Replacement MSRP** | **$59,114** | $199 T1 / $1,500 T2 | Catalog MSRP sum (86 × $199 + 28 × $1,500) |
+| **Distress / Quick-Sale Floor** | **$95,000 – $145,000** | **$120,000** | 50–70% buyer liquidation cash floor (below negotiated targets) |
+| **Retail Shelf Replacement MSRP** | **$92,114** | $199 T1 / $1,500 T2 | Catalog MSRP sum (86 × $199 + 50 × $1,500) |
 
 > [!CAUTION]
-> Do not present the collection as 114 proven SaaS businesses. No verified revenue, customers, retention, profit, uptime, security audits, compliance, or production status may be claimed without deterministic proof.
+> Do not present the collection as 136 proven SaaS businesses. No verified revenue, customers, retention, profit, uptime, security audits, compliance, or production status may be claimed without deterministic proof.
 
 ---
 

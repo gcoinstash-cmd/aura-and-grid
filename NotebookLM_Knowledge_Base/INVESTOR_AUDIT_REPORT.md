@@ -32,15 +32,15 @@
 ## 3. Commercial Valuation Appraisal & Dual-Track Protocol
 
 ### 3.1 Current Market Reality (Pre-Revenue Inventory)
-* **Audited Code Replacement Cost:** The quoted development cost for a single full-stack application typically ranges from $4,000 to $10,000+. Across 114 assets (including 28 multi-screen SCADA flagships), replacement engineering labor is benchmarked at **$965,000 – $1,760,000** (4,250+ engineering hours @ $150–$250/hr).
+* **Audited Code Replacement Cost:** The quoted development cost for a single full-stack application typically ranges from $4,000 to $10,000+. Across 136 assets (including 50 multi-screen SCADA flagships), replacement engineering labor is benchmarked at **$1,320,000 – $2,400,000** (5,600+ engineering hours @ $150–$250/hr).
 * **Current Orderly Fair-Market Value Estimate:**
-  * **Strategic Acquisition Ceiling:** **$1,490,000 – $2,850,000+** (Deep-tech niche monopoly premium)
-  * **Dev Agency Replacement Benchmark:** **$965,000 – $1,760,000**
-  * **Strategic Buyout Anchor:** **$721,000** ($608,000 – $1,040,000 range)
+  * **Strategic Acquisition Ceiling:** **$2,150,000 – $3,850,000+** (Deep-tech niche monopoly premium)
+  * **Dev Agency Replacement Benchmark:** **$1,320,000 – $2,400,000**
+  * **Strategic Buyout Anchor:** **$1,112,000** ($935,000 – $1,600,000 range; 86 T1 @ $4.5k + 50 Flagship @ $14.5k)
   * **Direct B2B Ask (Data Room Target):** **$195,000 – $265,000**
   * **Realistic Accepted Offer (Quick-Close Wire / LOI):** **$135,000 – $175,000**
-  * **Distress / Quick-Sale Floor:** **$75,000 – $115,000** (50–70% buyer liquidation cash floor)
-  * **Retail Shelf Replacement MSRP:** **$59,114** (86 × $199 + 28 × $1,500)
+  * **Distress / Quick-Sale Floor:** **$95,000 – $145,000** (50–70% buyer liquidation cash floor)
+  * **Retail Shelf Replacement MSRP:** **$92,114** (86 × $199 + 50 × $1,500)
 
 ### 3.2 Dual-Track Pricing Protocol
 1. **Track 1 — Lean Rapid-Sale (Default Standard)**:
@@ -54,7 +54,7 @@
    * Qualification Gate: Requires 8–15 interactive screens, domain physics solvers, operator journeys, and simulated-data disclosures.
 
 ### 3.3 Portfolio Governance & 80% Retained Floor
-* **Retention Floor**: Minimum **91 assets** remain permanently in the factory. Maximum transfer capacity is strictly **23 assets**.
+* **Retention Floor**: Minimum **109 assets** remain permanently in the factory. Maximum transfer capacity is strictly **27 assets**.
 * **Micro-APA Scope**: Transfers defined rights/code to **one specific asset only**. A micro-APA never transfers GhostFactoryOS, Aura & Grid, shared IP, or the full portfolio.
 
 ---

@@ -43,11 +43,11 @@ To ensure secure software development practices under NIST SP 800-218:
 
 | Parameter | Track 1: Lean Rapid-Sale (Default) | Track 2: Flagship Tier-1 (Selective) |
 |---|---|---|
-| **Fleet Count** | 86 Assets | 28 Deep-Tech SCADA Assets |
+| **Fleet Count** | 86 Assets | 50 Deep-Tech SCADA Assets |
 | **Retail License** | \$199 | \$1,500 – \$3,500 |
 | **Commercial Team Seat** | \$599 | Custom Fleet Lease |
 | **Exclusive Buyout Anchor** | \$4,500 (\$3,800 – \$6,500 floor) | \$14,500 (\$10,000 – \$18,000 entry) |
-| **Retention Policy** | Transferable via Micro-APA | Strict 80% Retained Factory Floor (Max 23 APAs across fleet) |
+| **Retention Policy** | Transferable via Micro-APA | Strict 80% Retained Factory Floor (Max 27 APAs across fleet) |
 
 ---
 

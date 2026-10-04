@@ -75,9 +75,9 @@ Imagine owning an ultra-luxury automotive showroom holding **114 precision-engin
 
 ## 6. Cold Reality: Separation of Technical Floor vs. Commercial Valuation
 
-1. **The Technical Baseline Floor**: Passing all 114 applications through automated Playwright + Axe-Core testing (0 P0 defects, 9.7/10 score) guarantees that the software compiles, runs, and will not be disqualified during buyer technical due diligence.
+1. **The Technical Baseline Floor**: Passing all 136 applications through automated Playwright + Axe-Core testing (0 P0 defects, 9.7/10 score) guarantees that the software compiles, runs, and will not be disqualified during buyer technical due diligence.
 2. **The Commercial Exit Valuation**: Code health alone does not guarantee a high buyout. Actual institutional exit valuation requires **verifiable business metrics**: signed agency licenses, paying end-users, distribution volume, and audited revenue deposits.
-3. **Current Pre-Revenue Valuation**: The orderly fair-market value of the 114-asset collection is anchored at **$721,000** ($608,000 – $1,040,000 range), with a deep-tech strategic monopoly ceiling of **$1.49M – $2.85M+**. Direct B2B asking target is **$195,000 – $265,000**. Realistic accepted offer is **$135,000 – $175,000**. Dev replacement labor benchmark is **$965,000 – $1,760,000** (4,250+ engineering hours @ $150–$250/hr).
+3. **Current Pre-Revenue Valuation**: The orderly fair-market value of the 136-asset collection is anchored at **$1,112,000** ($935,000 – $1,600,000 range), with a deep-tech strategic monopoly ceiling of **$2.15M – $3.85M+**. Direct B2B asking target is **$195,000 – $265,000**. Realistic accepted offer is **$135,000 – $175,000**. Dev replacement labor benchmark is **$1,320,000 – $2,400,000** (5,600+ engineering hours @ $150–$250/hr).
 
 ---
 *ZoMae Media LLC © 2026. All Rights Reserved.*

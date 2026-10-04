@@ -11,11 +11,11 @@
 
 ## 1. System Overview & Product Truth
 
-Ghost Factory Command Console (GFCC) is the private operations dashboard, portfolio valuation engine, and licensing ledger for the 114-asset digital vehicle fleet.
+Ghost Factory Command Console (GFCC) is the private operations dashboard, portfolio valuation engine, and licensing ledger for the 136-asset digital vehicle fleet.
 
 > [!IMPORTANT]
 > **SIMULATION & PROTOTYPE NOTICE:**
-> The console and all 114 cataloged assets are **Interactive Simulations & Clickable Technical Prototypes**.
+> The console and all 136 cataloged assets are **Interactive Simulations & Clickable Technical Prototypes**.
 > - Not certified for live industrial operations, flight control, or safety-critical automation.
 > - Telemetry streams, plasma diagnostics, cryostat thermal loops, and orbit trajectories represent client-side mathematical physics models.
 > - Pre-revenue inventory modeling is provided for management strategy and does not constitute certified appraisal valuations or audited financial statements.
@@ -25,11 +25,11 @@ Ghost Factory Command Console (GFCC) is the private operations dashboard, portfo
 ## 2. Hardened Quality Gates (Build Pipeline)
 
 Every production build executes 5 deterministic audit gates before Vite packaging:
-1. `scripts/audit/assert_best_for.mjs`: Validates 114/114 domain mappings.
-2. `scripts/assert-disclaimer.mjs`: Ensures 100% disclaimer compliance across all 59 regulated assets.
+1. `scripts/audit/assert_best_for.mjs`: Validates 136/136 domain mappings.
+2. `scripts/assert-disclaimer.mjs`: Ensures 100% disclaimer compliance across all regulated assets.
 3. `scripts/assert-no-claims.mjs`: Guarantees 0 forbidden marketing claims ("enterprise-grade", "production-ready", "flight-qualified").
-4. `scripts/assert-license-matrix.mjs`: Verifies SKU and licensing consistency across 114 blueprints.
-5. `scripts/assert-flagships-gate4.mjs`: Validates schema integrity, SQL migration policies, and RLS tables for all 28 Flagships.
+4. `scripts/assert-license-matrix.mjs`: Verifies SKU and licensing consistency across 136 blueprints.
+5. `scripts/assert-flagships-gate4.mjs`: Validates schema integrity, SQL migration policies, and RLS tables for all 50 Flagships.
 
 ---
 

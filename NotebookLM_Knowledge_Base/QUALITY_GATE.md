@@ -1,9 +1,9 @@
 # QUALITY_GATE.md — The Consolidated Six-Layer Governance Architecture & Master Diligence Framework
 
 **Entity**: Aura & Grid Storefront Engine & The Ghost Factory™ Foundry  
-**Scope**: All 114 Existing Operating System Blueprints (86 Track 1 + 28 Track 2) & 500-Asset Roadmap Target  
-**Valuation Standard**: Grounded Orderly Fair-Market Valuation ($721,000 Strategic Anchor / $1.49M–$2.85M+ Ceiling) & Dual-Track Protocol  
-**Retention Floor**: 80% Minimum Retained Floor (Current: 91 Assets Retained / Max 23 Micro-APAs)  
+**Scope**: All 136 Existing Operating System Blueprints (86 Track 1 + 50 Track 2) & 500-Asset Roadmap Target  
+**Valuation Standard**: Grounded Orderly Fair-Market Valuation ($1,112,000 Strategic Anchor / $2.15M–$3.85M+ Ceiling) & Dual-Track Protocol  
+**Retention Floor**: 80% Minimum Retained Floor (Current: 109 Assets Retained / Max 27 Micro-APAs)  
 
 ---
 
@@ -111,11 +111,11 @@ Every digital asset within the portfolio is governed by a three-stage release ga
 
 ### Institutional Valuation & Grounded Dual-Track Defense
 1. **Orderly Fair-Market Valuation Standard**:
-   $$\text{Catalog Fair-Market Value} = \$608,000 – \$1,040,000 \quad (\text{Strategic Buyout Anchor: } \sim\$721,000)$$
+   $$\text{Catalog Fair-Market Value} = \$935,000 – \$1,600,000 \quad (\text{Strategic Buyout Anchor: } \sim\$1,112,000)$$
    Every template certified at **🟢 S-Tier (9.6–10.0)** satisfies the baseline technical floor, eliminating technical due diligence discounts.
    - **Track 1 — Lean Rapid-Sale (Default)**: $199 Retail / $599 Team Seat / Exclusive Buyout Floor: $3,800–$6,500 (Anchor: **$4,500**).
    - **Track 2 — Flagship $10K+ (Selective Tier-1)**: $1,500–$3,500 Flagship License / Entry Exclusive Buyout Anchor: **$14,500** ($10,000–$18,000 range) / Full Buyout: $18,000–$35,000 / Strategic Acquisition: $35,000–$75,000+.
-   - **80% Minimum Retained Floor**: Always retain at least 80% of the collection (Current: 91 assets permanently kept / max 23 transfer capacity; at 500 assets: 400 permanently kept / max 100 transfer capacity).
+   - **80% Minimum Retained Floor**: Always retain at least 80% of the collection (Current: 109 assets permanently kept / max 27 transfer capacity; at 500 assets: 400 permanently kept / max 100 transfer capacity).
    - **Micro-APA Scope**: Transfers defined rights/code to **one specific asset only**. A micro-APA never transfers GhostFactoryOS, Aura & Grid, shared IP, or the full portfolio.
 
 2. **Zero-Discount Due Diligence Guarantee**:
