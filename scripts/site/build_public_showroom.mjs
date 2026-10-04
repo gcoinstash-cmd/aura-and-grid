@@ -1479,4 +1479,23 @@ if (fs.existsSync(tailwindBin) && fs.existsSync(tailwindConfig) && fs.existsSync
   console.warn('⚠️ Warning: Tailwind binary or config not found; using existing style.css');
 }
 
+// Mirror to repository root for hosting environments configured for root publishing (Render, GitHub Pages, Vercel)
+const ROOT_HTML_PATH = path.join(rootDir, 'index.html');
+fs.copyFileSync(OUTPUT_HTML_PATH, ROOT_HTML_PATH);
+console.log(`🪞 [Aura & Grid] Mirrored showroom index.html to repository root: ${ROOT_HTML_PATH}`);
+
+// Ensure root assets/ has style.css and covers/ synchronized
+const ROOT_ASSETS_DIR = path.join(rootDir, 'assets');
+const ROOT_COVERS_DIR = path.join(ROOT_ASSETS_DIR, 'covers');
+fs.mkdirSync(ROOT_COVERS_DIR, { recursive: true });
+if (fs.existsSync(STYLE_CSS_PATH)) {
+  fs.copyFileSync(STYLE_CSS_PATH, path.join(ROOT_ASSETS_DIR, 'style.css'));
+}
+const siteCoverFiles = fs.readdirSync(SITE_ASSETS_DIR);
+for (const file of siteCoverFiles) {
+  fs.copyFileSync(path.join(SITE_ASSETS_DIR, file), path.join(ROOT_COVERS_DIR, file));
+}
+console.log(`🪞 [Aura & Grid] Mirrored ${siteCoverFiles.length} covers and style.css to root assets/ directory`);
+
 console.log('🏁 [Aura & Grid] Showroom Rebuild & Compliance Sync Complete.');
+
