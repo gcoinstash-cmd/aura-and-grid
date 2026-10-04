@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #07090e;
+    color: #e2e8f0;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom subtle radar sweep and pulse keyframes */
+@keyframes radar-pulse {
+  0% { transform: scale(0.6); opacity: 0.9; }
+  100% { transform: scale(2.4); opacity: 0; }
+}
+
+@keyframes fluid-flow {
+  0% { stroke-dashoffset: 40; }
+  100% { stroke-dashoffset: 0; }
+}
+
+@keyframes magma-glow {
+  0%, 100% { opacity: 0.45; filter: drop-shadow(0 0 12px rgba(249, 115, 22, 0.4)); }
+  50% { opacity: 0.75; filter: drop-shadow(0 0 24px rgba(249, 115, 22, 0.7)); }
+}
+
+.animate-radar-pulse {
+  animation: radar-pulse 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.animate-fluid-flow {
+  stroke-dasharray: 6 4;
+  animation: fluid-flow 1.5s linear infinite;
+}
+
+.animate-fluid-flow-fast {
+  stroke-dasharray: 6 3;
+  animation: fluid-flow 0.8s linear infinite;
+}
+
+.animate-magma-glow {
+  animation: magma-glow 4s ease-in-out infinite;
+}

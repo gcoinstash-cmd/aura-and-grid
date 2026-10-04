@@ -1,0 +1,6 @@
+{
+  "name": "Aegis Swarm Control",
+  "description": "Institutional tactical defense operations deck for autonomous aerial swarm surveillance, electronic warfare diagnostics, and kinetic intercept authorization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

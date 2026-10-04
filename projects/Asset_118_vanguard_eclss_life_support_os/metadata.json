@@ -1,0 +1,6 @@
+{
+  "name": "Aegis Orbital ECLSS Control Deck",
+  "description": "Deep-space mission control avionics for AEGIS Orbital Habitat environmental life support systems, closed-loop metabolic recycling, and atmospheric telemetry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

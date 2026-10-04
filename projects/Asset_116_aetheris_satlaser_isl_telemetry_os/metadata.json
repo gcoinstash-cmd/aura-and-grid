@@ -1,0 +1,6 @@
+{
+  "name": "Aetheris-Mesh SatLaser ISL Deck",
+  "description": "High-performance deep-space intersatellite laser communications operational terminal deck with real-time coherent beam routing and PAT diagnostics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

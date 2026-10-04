@@ -1,0 +1,6 @@
+{
+  "name": "MetroNest-04 Delta: Tactical Drone Operations HUD",
+  "description": "Mission control command system for autonomous drone nest hubs, airspace telemetry, automated bay charging, and real-time delivery logistics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

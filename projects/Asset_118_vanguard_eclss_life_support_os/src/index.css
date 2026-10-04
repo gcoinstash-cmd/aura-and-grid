@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer utilities {
+  @keyframes flowPulseCyan {
+    0% {
+      stroke-dashoffset: 40;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes flowPulseAmber {
+    0% {
+      stroke-dashoffset: 40;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes flowPulseBlue {
+    0% {
+      stroke-dashoffset: 40;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes scanline {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(1000%);
+    }
+  }
+
+  .animate-flow-cyan {
+    stroke-dasharray: 6 4;
+    animation: flowPulseCyan 1.4s linear infinite;
+  }
+
+  .animate-flow-amber {
+    stroke-dasharray: 6 4;
+    animation: flowPulseAmber 1.8s linear infinite;
+  }
+
+  .animate-flow-blue {
+    stroke-dasharray: 6 4;
+    animation: flowPulseBlue 1.2s linear infinite;
+  }
+
+  .animate-flow-violet {
+    stroke-dasharray: 5 4;
+    animation: flowPulseCyan 2s linear infinite;
+  }
+
+  .animate-flow-gray {
+    stroke-dasharray: 4 4;
+    animation: flowPulseCyan 2.4s linear infinite;
+  }
+}

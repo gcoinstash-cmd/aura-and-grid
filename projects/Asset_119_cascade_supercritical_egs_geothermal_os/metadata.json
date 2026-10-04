@@ -1,0 +1,6 @@
+{
+  "name": "Cascade EGS Telemetry Deck",
+  "description": "Deep-earth supercritical thermodynamic telemetry and geothermal enhanced geothermal system (EGS) operations deck.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

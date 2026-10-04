@@ -1,0 +1,6 @@
+{
+  "name": "VoltGrid Fleet HQ - EV Telemetry HUD",
+  "description": "Tactical EV commercial fleet command HUD, real-time telemetry tracking, DC fast-charging depot matrix, and logistics dispatch manifest.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

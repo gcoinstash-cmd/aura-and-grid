@@ -1,0 +1,8 @@
+{
+  "name": "Subsea Crawler Operations Deck (export) ",
+  "description": "Deep-ocean heavy industrial telemetry and autonomous subsea crawler operations dashboard for abyssal seafloor manganese nodule harvesting in Sector 11B.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

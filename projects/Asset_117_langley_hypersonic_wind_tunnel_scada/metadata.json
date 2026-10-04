@@ -1,0 +1,8 @@
+{
+  "name": "Langley Hypersonic Tunnel Control (export) ",
+  "description": "Mach 7.5 high-enthalpy blowdown facility telemetry deck with Schlieren optical flow, arc-heater driver diagnostics, and 6-DOF force balance ledger.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
