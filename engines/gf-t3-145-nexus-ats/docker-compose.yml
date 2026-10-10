@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  nexus-ats-engine:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: gf-t3-145-nexus-ats:1.0.0
+    container_name: gf_t3_145_nexus_ats
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+      - LOG_LEVEL=INFO
+      - ALLOYDB_HOST=alloydb-primary.internal
+      - ALLOYDB_PORT=5432
+      - ALLOYDB_DB=nexus_ats_telemetry
+      - ALLOYDB_USER=nexus_ats_app
+      - INSTRUMENT_ID=GF-US-100
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8080/healthz')"]
+      interval: 10s
+      timeout: 3s
+      retries: 3

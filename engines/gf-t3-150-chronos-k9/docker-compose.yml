@@ -1,0 +1,19 @@
+services:
+  chronos-k9:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: gf-t3-150-chronos-k9:1.0.0
+    container_name: gf-t3-150-chronos-k9
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+      - ENVIRONMENT=production
+      - LOG_LEVEL=info
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8080/healthz')"]
+      interval: 10s
+      timeout: 3s
+      retries: 3

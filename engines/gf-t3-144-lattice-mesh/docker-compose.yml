@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  lattice-mesh-engine:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: gf-t3-144-lattice-mesh:1.0.0
+    container_name: gf_t3_144_lattice_mesh
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+      - LOG_LEVEL=INFO
+      - ALLOYDB_HOST=alloydb-primary.internal
+      - ALLOYDB_PORT=5432
+      - ALLOYDB_DB=lattice_mesh_telemetry
+      - ALLOYDB_USER=lattice_mesh_app
+      - NODE_ID=node-edge-001
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8080/healthz')"]
+      interval: 10s
+      timeout: 3s
+      retries: 3

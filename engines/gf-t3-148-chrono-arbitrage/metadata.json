@@ -1,0 +1,7 @@
+{
+  "name": "Chrono-Arbitrage T3-QUANT-02 Engine",
+  "description": "Sub-millisecond cross-venue latency and triangular arbitrage engine with Bellman-Ford negative cycle solver, real-time telemetry cockpit, and institutional asset vault specifications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

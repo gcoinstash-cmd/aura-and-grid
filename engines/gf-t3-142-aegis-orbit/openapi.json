@@ -1,0 +1,309 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Aegis-Orbit Autonomous Constellation Flight Dynamics & CARA Engine",
+    "version": "1.0.0",
+    "description": "Ghost FactoryOS Fleet Track 3 F1 Skunkworks Engine (Asset GF-T3-142). Zero-placeholder REST API specification for autonomous LEO constellation stationkeeping, high-order gravitational perturbation propagation, Clohessy-Wiltshire proximity operations, and Conjunction Assessment & Risk Analysis (CARA).",
+    "contact": {
+      "name": "Ghost FactoryOS Systems Flight Operations",
+      "email": "ops@ghostfactoryos.internal"
+    },
+    "license": {
+      "name": "Apache-2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://aegis-engine.internal/api/v1",
+      "description": "Production Flight Dynamics On-Orbit Controller"
+    }
+  ],
+  "security": [
+    {
+      "AegisBearerAuth": [
+        "flight:ops",
+        "cara:evaluate",
+        "maneuver:execute"
+      ]
+    }
+  ],
+  "paths": {
+    "/orbit/propagate": {
+      "post": {
+        "summary": "Propagate 6-DOF Orbital State Vector with J2-J4 Harmonics & Atmospheric Drag",
+        "operationId": "propagateOrbitStep",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PropagateOrbitRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful orbital step propagation with updated Cartesian and Keplerian states",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PropagateOrbitResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/Rfc7807Problem"
+          },
+          "500": {
+            "$ref": "#/components/responses/Rfc7807Problem"
+          }
+        }
+      }
+    },
+    "/conjunction/evaluate": {
+      "post": {
+        "summary": "Evaluate Encounter Risk, Miss Distance Vector, and Foster Probability of Collision (Pc)",
+        "operationId": "evaluateConjunctionRisk",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConjunctionEvaluationRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Conjunction assessment risk analysis with B-plane covariance projection",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConjunctionEvaluationResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/Rfc7807Problem"
+          }
+        }
+      }
+    },
+    "/maneuver/optimize": {
+      "post": {
+        "summary": "Optimize Clohessy-Wiltshire Impulsive Collision Avoidance Delta-V Vector",
+        "operationId": "optimizeAvoidanceManeuver",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ManeuverOptimizationRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Calculated optimal delta-V burn schedule with propellant consumption and duty cycle",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ManeuverOptimizationResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/Rfc7807Problem"
+          }
+        }
+      }
+    },
+    "/telemetry/stream": {
+      "get": {
+        "summary": "Stream Real-Time EKF State and P99 Latency Metrics for Constellation Fleet",
+        "operationId": "getFleetTelemetryStream",
+        "parameters": [
+          {
+            "name": "satellite_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Real-time state snapshot stream",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TelemetryStreamPayload"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "AegisBearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    },
+    "schemas": {
+      "PropagateOrbitRequest": {
+        "type": "object",
+        "required": ["initial_state", "step_duration_seconds"],
+        "properties": {
+          "satellite_id": { "type": "string", "example": "SAT-AEGIS-01" },
+          "initial_state": {
+            "type": "object",
+            "required": ["r_eci_km", "v_eci_km_s", "epoch_utc"],
+            "properties": {
+              "r_eci_km": {
+                "type": "array",
+                "items": { "type": "number" },
+                "minItems": 3,
+                "maxItems": 3,
+                "example": [6878.137, 0.0, 0.0]
+              },
+              "v_eci_km_s": {
+                "type": "array",
+                "items": { "type": "number" },
+                "minItems": 3,
+                "maxItems": 3,
+                "example": [0.0, 5.385, 5.385]
+              },
+              "epoch_utc": { "type": "string", "format": "date-time" }
+            }
+          },
+          "step_duration_seconds": { "type": "number", "minimum": 0.1, "maximum": 86400, "example": 60.0 },
+          "mass_kg": { "type": "number", "default": 260.0 },
+          "cross_sectional_area_m2": { "type": "number", "default": 1.8 }
+        }
+      },
+      "PropagateOrbitResponse": {
+        "type": "object",
+        "required": ["final_state", "keplerian_elements", "computation_time_ms"],
+        "properties": {
+          "final_state": {
+            "type": "object",
+            "properties": {
+              "r_eci_km": { "type": "array", "items": { "type": "number" } },
+              "v_eci_km_s": { "type": "array", "items": { "type": "number" } },
+              "epoch_utc": { "type": "string", "format": "date-time" }
+            }
+          },
+          "keplerian_elements": {
+            "type": "object",
+            "properties": {
+              "semi_major_axis_km": { "type": "number" },
+              "eccentricity": { "type": "number" },
+              "inclination_deg": { "type": "number" },
+              "raan_deg": { "type": "number" },
+              "arg_perigee_deg": { "type": "number" },
+              "true_anomaly_deg": { "type": "number" }
+            }
+          },
+          "computation_time_ms": { "type": "number", "example": 0.42 }
+        }
+      },
+      "ConjunctionEvaluationRequest": {
+        "type": "object",
+        "required": ["primary_state", "secondary_state", "tca_epoch_utc"],
+        "properties": {
+          "primary_norad_id": { "type": "integer", "example": 54201 },
+          "secondary_norad_id": { "type": "integer", "example": 98402 },
+          "miss_distance_ric_meters": {
+            "type": "array",
+            "items": { "type": "number" },
+            "minItems": 3,
+            "maxItems": 3,
+            "example": [42.5, 120.8, -18.4]
+          },
+          "primary_covariance_3sigma_m": { "type": "array", "items": { "type": "number" }, "example": [12.0, 45.0, 18.0] },
+          "secondary_covariance_3sigma_m": { "type": "array", "items": { "type": "number" }, "example": [35.0, 110.0, 42.0] },
+          "combined_hard_body_radius_m": { "type": "number", "default": 8.5 },
+          "tca_epoch_utc": { "type": "string", "format": "date-time" }
+        }
+      },
+      "ConjunctionEvaluationResponse": {
+        "type": "object",
+        "required": ["probability_of_collision_pc", "miss_distance_total_m", "action_required"],
+        "properties": {
+          "probability_of_collision_pc": { "type": "number", "example": 0.000342 },
+          "miss_distance_total_m": { "type": "number", "example": 129.4 },
+          "b_plane_sigma_x_m": { "type": "number" },
+          "b_plane_sigma_y_m": { "type": "number" },
+          "mahalanobis_distance": { "type": "number" },
+          "action_required": { "type": "boolean", "example": true },
+          "severity": { "type": "string", "enum": ["MONITORING", "ACTION_REQUIRED", "CRITICAL"] }
+        }
+      },
+      "ManeuverOptimizationRequest": {
+        "type": "object",
+        "required": ["satellite_id", "semi_major_axis_km", "time_to_tca_seconds", "current_miss_ric_m"],
+        "properties": {
+          "satellite_id": { "type": "string", "example": "SAT-AEGIS-01" },
+          "semi_major_axis_km": { "type": "number", "example": 6928.137 },
+          "time_to_tca_seconds": { "type": "number", "example": 7200 },
+          "target_miss_distance_m": { "type": "number", "default": 1000.0 },
+          "current_miss_ric_m": { "type": "array", "items": { "type": "number" } },
+          "thruster_isp_seconds": { "type": "number", "default": 1800.0 }
+        }
+      },
+      "ManeuverOptimizationResponse": {
+        "type": "object",
+        "required": ["delta_v_ric_mps", "magnitude_mps", "propellant_kg", "burn_duration_seconds"],
+        "properties": {
+          "delta_v_ric_mps": { "type": "array", "items": { "type": "number" } },
+          "magnitude_mps": { "type": "number", "example": 0.142 },
+          "propellant_kg": { "type": "number", "example": 0.0021 },
+          "burn_duration_seconds": { "type": "number", "example": 568.0 },
+          "projected_new_miss_distance_m": { "type": "number", "example": 1024.5 }
+        }
+      },
+      "TelemetryStreamPayload": {
+        "type": "object",
+        "properties": {
+          "active_satellites_count": { "type": "integer" },
+          "p99_compute_latency_ms": { "type": "number" },
+          "sla_budget_ms": { "type": "number", "example": 8.2 },
+          "active_warnings_count": { "type": "integer" }
+        }
+      }
+    },
+    "responses": {
+      "Rfc7807Problem": {
+        "description": "RFC 7807 Problem Details for HTTP APIs",
+        "content": {
+          "application/problem+json": {
+            "schema": {
+              "type": "object",
+              "required": ["type", "title", "status"],
+              "properties": {
+                "type": { "type": "string", "format": "uri" },
+                "title": { "type": "string" },
+                "status": { "type": "integer" },
+                "detail": { "type": "string" },
+                "instance": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

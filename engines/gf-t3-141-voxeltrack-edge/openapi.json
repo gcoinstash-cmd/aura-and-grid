@@ -1,0 +1,128 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Ghost FactoryOS VoxelTrack-Edge 125Hz Spatial Ingestion API",
+    "version": "3.4.0",
+    "description": "High-performance low-latency API for 3D LiDAR point cloud streaming, octree voxel processing, and collision trajectory evaluation for Track 3 Engine GF-T3-141.",
+    "license": {
+      "name": "Apache-2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://edge-node.ghostfactory.internal/v1",
+      "description": "In-Vehicle Real-Time Edge Daemon"
+    },
+    {
+      "url": "https://sandbox.ghostfactory.internal/v1",
+      "description": "Engineering Workstation Live Sandbox"
+    }
+  ],
+  "paths": {
+    "/healthz": {
+      "get": {
+        "summary": "Cloud Run Liveness Probe",
+        "operationId": "healthCheck",
+        "responses": {
+          "200": {
+            "description": "System Healthy"
+          }
+        }
+      }
+    },
+    "/v1/perception/sweep": {
+      "post": {
+        "summary": "Ingest Raw 64-Beam LiDAR Point Cloud Sweep",
+        "description": "Submit 64-beam LiDAR packet stream for instant octree voxelization and track update at 125Hz.",
+        "operationId": "submitPerceptionSweep",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "vehicle_id": { "type": "string", "example": "GHOST-F1-APOLLO" },
+                  "frame_seq": { "type": "integer", "example": 1048576 },
+                  "timestamp_ns": { "type": "integer", "example": 1791384000125000 },
+                  "raw_point_count": { "type": "integer", "example": 98304 },
+                  "lidar_beams": { "type": "integer", "example": 64 },
+                  "format": { "type": "string", "enum": ["CARTESIAN_PACKED", "SPHERICAL_PTP"], "example": "CARTESIAN_PACKED" }
+                },
+                "required": ["vehicle_id", "frame_seq", "timestamp_ns", "raw_point_count"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Sweep Processed with Zero Packet Drop",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "sweep_id": { "type": "string", "format": "uuid" },
+                    "status": { "type": "string", "example": "PROCESSED" },
+                    "latency_ms": { "type": "number", "example": 7.34 },
+                    "octree_voxel_nodes": { "type": "integer", "example": 14280 },
+                    "detected_tracks_count": { "type": "integer", "example": 6 },
+                    "critical_ttc_alert": { "type": "boolean", "example": true }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/perception/tracks": {
+      "get": {
+        "summary": "Query Active 3D Tracked Objects",
+        "description": "Returns currently tracked objects with 3D kinematic bounding vectors and velocities.",
+        "operationId": "getActiveTracks",
+        "responses": {
+          "200": {
+            "description": "List of active tracked objects"
+          }
+        }
+      }
+    },
+    "/v1/perception/threats": {
+      "get": {
+        "summary": "Fetch Critical Collision Threat List",
+        "description": "Returns immediate collision hazards with Time-to-Collision (TTC) under 1.5 seconds.",
+        "operationId": "getThreatAlerts",
+        "responses": {
+          "200": {
+            "description": "Active threat list"
+          }
+        }
+      }
+    },
+    "/v1/health": {
+      "get": {
+        "summary": "Perception Engine Real-Time Health & Synchronicity",
+        "description": "Telemetry metrics covering loop frequency, jitter, drift, and AlloyDB write-lag.",
+        "operationId": "getEngineHealth",
+        "responses": {
+          "200": {
+            "description": "Engine Health Status"
+          }
+        }
+      }
+    },
+    "/audit/compliance": {
+      "get": {
+        "summary": "NIST SP 800-218 & Clean-Room IP Audit Attestation",
+        "operationId": "getAuditCompliance",
+        "responses": {
+          "200": {
+            "description": "Cryptographic compliance verification"
+          }
+        }
+      }
+    }
+  }
+}

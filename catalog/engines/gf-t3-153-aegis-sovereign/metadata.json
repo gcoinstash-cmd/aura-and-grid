@@ -1,0 +1,8 @@
+{
+  "name": "Aegis Sovereign GF-T3-153 (export) ",
+  "description": "Multi-Party Threshold Signature Scheme (TSS) & Atomic DvP Settlement Core — Sub-15ms 3-of-5 FROST/Feldman VSS consensus and zero-reorg atomic Delivery-versus-Payment escrow engine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

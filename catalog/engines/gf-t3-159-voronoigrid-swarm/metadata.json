@@ -1,0 +1,8 @@
+{
+  "name": "GF-T3-159 VoronoiGrid Swarm (export) ",
+  "description": "Defense-grade telemetry cockpit and reference engine for decentralized dynamic Voronoi partitioning and spatial load balancing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

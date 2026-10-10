@@ -1,0 +1,8 @@
+{
+  "name": "CHRONOS KINETIC-9: MagLev Telemetry & Vector Rig (export) ",
+  "description": "High-performance tactical MagLev telemetry, cryogenic coil dynamics, guidance vector grid, and linear inductor cockpit dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

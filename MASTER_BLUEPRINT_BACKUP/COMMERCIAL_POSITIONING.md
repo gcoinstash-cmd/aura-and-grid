@@ -3,8 +3,8 @@
 
 **Document Version**: 2.0 (Dual-Track Valuation & Portfolio Retention Edition)  
 **Parent Entity**: ZoMae Media LLC  
-**Target Catalog**: 114 Pre-Revenue Full-Stack Operating System (OS) Blueprints (86 Track 1 + 28 Track 2 / Target: 500 Assets)  
-**Retention Floor**: 80% Minimum Retained Floor (Current: 91 Assets Retained / Max 23 Micro-APAs)  
+**Target Catalog**: 137 Custom Full-Stack Web Applications (86 Track 1 + 50 Track 2 + 1 Track 3 active, 13 Track 3 queued / Target: 500 Assets)  
+**Retention Floor**: 80% Minimum Retained Floor (Current: 110 Assets Retained / Max 27 Micro-APAs)  
 
 ---
 
@@ -77,7 +77,7 @@ Imagine owning an ultra-luxury automotive showroom holding **114 precision-engin
 
 1. **The Technical Baseline Floor**: Passing all 136 applications through automated Playwright + Axe-Core testing (0 P0 defects, 9.7/10 score) guarantees that the software compiles, runs, and will not be disqualified during buyer technical due diligence.
 2. **The Commercial Exit Valuation**: Code health alone does not guarantee a high buyout. Actual institutional exit valuation requires **verifiable business metrics**: signed agency licenses, paying end-users, distribution volume, and audited revenue deposits.
-3. **Current Pre-Revenue Valuation**: The orderly fair-market value of the 136-asset collection is anchored at **$1,112,000** ($935,000 – $1,600,000 range), with a deep-tech strategic monopoly ceiling of **$2.15M – $3.85M+**. Direct B2B asking target is **$195,000 – $265,000**. Realistic accepted offer is **$135,000 – $175,000**. Dev replacement labor benchmark is **$1,320,000 – $2,400,000** (5,600+ engineering hours @ $150–$250/hr).
+3. **Current Pre-Revenue Valuation & ASC 350-40 Replacement Appraisal**: The master catalog (137 sovereign web apps) is appraised under ASC 350/985 replacement methodologies. Enterprise Showroom Asking Price: **$3.11M**. Agency Build-Cost Appraisal: **$1.95M**. Senior Architect Hard Floor: **$1.50M** (13,700 engineering hrs @ $109.49/hr). "As-Is" Bare Minimum Baseline Trim Floor: **$1.15M reserve** (41% bulk asset discount applied to $1.95M). The Hard Walk-Away Floor: **$1.15M – $1.50M**. The Panic Floor Price: **$95,000 – $145,000**. Strategic deep-tech monopoly ceiling: **$2.15M – $3.85M+**. Direct B2B asking target: **$195,000 – $265,000**. Realistic accepted offer: **$135,000 – $175,000**.
 
 ---
 *ZoMae Media LLC © 2026. All Rights Reserved.*

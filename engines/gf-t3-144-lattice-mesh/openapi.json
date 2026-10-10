@@ -1,0 +1,316 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "GF-T3-144 Lattice-Mesh Post-Quantum KEM & Ratchet Engine API",
+    "version": "1.0.0",
+    "description": "Production REST & Ephemeral Handshake Protocol Specification for Ghost FactoryOS Fleet Track 3. Implements NIST FIPS 203 (ML-KEM-1024) lattice encapsulation, decapsulation, WireGuard PSK epoch rotation, and zero-trust edge node lifecycle management.",
+    "contact": {
+      "name": "Ghost FactoryOS Systems Architecture Group",
+      "email": "arch@ghostfactory.os"
+    },
+    "license": {
+      "name": "Apache-2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://pqc-mesh.internal.net/api/v1",
+      "description": "Zero-Trust Edge Fleet Overlay Network Gateways"
+    }
+  ],
+  "paths": {
+    "/pqc/kem/encapsulate": {
+      "post": {
+        "summary": "Execute ML-KEM-1024 Ephemeral Encapsulation",
+        "description": "Generates a randomized ephemeral ciphertext (u, v) and establishes an unshared 256-bit entropy buffer against the target peer's ML-KEM-1024 public key vector.",
+        "operationId": "encapsulateKey",
+        "security": [{ "BearerAuth": [] }],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/EncapsulateRequest" }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Encapsulation successful. Returns ciphertext vectors and SHA-256 digest of post-quantum shared secret.",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/EncapsulateResponse" }
+              }
+            }
+          },
+          "400": { "$ref": "#/components/responses/ProblemDetails400" },
+          "401": { "$ref": "#/components/responses/ProblemDetails401" },
+          "422": { "$ref": "#/components/responses/ProblemDetails422" }
+        }
+      }
+    },
+    "/pqc/kem/decapsulate": {
+      "post": {
+        "summary": "Execute ML-KEM-1024 Secret Decapsulation",
+        "description": "Recovers message entropy from ciphertext vectors using local hardware secret key and performs Fujisaki-Okamoto implicit rejection validation.",
+        "operationId": "decapsulateKey",
+        "security": [{ "BearerAuth": [] }],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/DecapsulateRequest" }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Decapsulation verified. Returns bit-exact recovered shared secret.",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/DecapsulateResponse" }
+              }
+            }
+          },
+          "400": { "$ref": "#/components/responses/ProblemDetails400" },
+          "401": { "$ref": "#/components/responses/ProblemDetails401" },
+          "422": { "$ref": "#/components/responses/ProblemDetails422" }
+        }
+      }
+    },
+    "/pqc/mesh/ratchet": {
+      "post": {
+        "summary": "Advance Ephemeral WireGuard PSK Epoch",
+        "description": "Fuses classical Curve25519 ECDH and ML-KEM-1024 shared secrets via HKDF-SHA512 to atomically inject next-epoch PSK into active kernel WireGuard tunnels.",
+        "operationId": "advanceRatchetEpoch",
+        "security": [{ "BearerAuth": [] }],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/RatchetRequest" }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Ratchet epoch advanced without packet drop.",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/RatchetResponse" }
+              }
+            }
+          },
+          "400": { "$ref": "#/components/responses/ProblemDetails400" },
+          "401": { "$ref": "#/components/responses/ProblemDetails401" }
+        }
+      }
+    },
+    "/pqc/mesh/nodes": {
+      "get": {
+        "summary": "Query Mesh Fleet Topology and Node Health",
+        "description": "Retrieves the real-time status, lattice parameter config, keep-alive timers, and P99 latency metrics across all active mesh nodes.",
+        "operationId": "listMeshNodes",
+        "security": [{ "BearerAuth": [] }],
+        "parameters": [
+          {
+            "name": "region",
+            "in": "query",
+            "required": false,
+            "schema": { "type": "string" }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": { "type": "integer", "default": 64, "maximum": 256 }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of active edge nodes with telemetry state.",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/NodeListResponse" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pqc/mesh/telemetry": {
+      "get": {
+        "summary": "Fetch Real-time Quantum Threat Assessment (QTA) & Latency Stats",
+        "description": "Delivers global fleet P99 latency histograms, Shor resistance margins, Grover speedup indices, and active epoch counters.",
+        "operationId": "getFleetTelemetry",
+        "security": [{ "BearerAuth": [] }],
+        "responses": {
+          "200": {
+            "description": "Comprehensive fleet quantum telemetry metrics.",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/FleetTelemetryResponse" }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    },
+    "schemas": {
+      "EncapsulateRequest": {
+        "type": "object",
+        "required": ["initiator_node_id", "target_node_id", "peer_public_key_t_hex", "seed_a_hex"],
+        "properties": {
+          "initiator_node_id": { "type": "string", "example": "node-edge-001" },
+          "target_node_id": { "type": "string", "example": "node-edge-002" },
+          "peer_public_key_t_hex": { "type": "string", "description": "1568-byte formatted hex vector for ML-KEM-1024 public key." },
+          "seed_a_hex": { "type": "string", "example": "3a8f9b7c210d" },
+          "lattice_params": {
+            "type": "object",
+            "properties": {
+              "k": { "type": "integer", "enum": [4], "default": 4 },
+              "q": { "type": "integer", "enum": [3329], "default": 3329 },
+              "eta1": { "type": "integer", "enum": [2], "default": 2 },
+              "eta2": { "type": "integer", "enum": [2], "default": 2 }
+            }
+          }
+        }
+      },
+      "EncapsulateResponse": {
+        "type": "object",
+        "required": ["ciphertext_u_hex", "ciphertext_v_hex", "shared_secret_hash_sha256", "compute_duration_ms"],
+        "properties": {
+          "ciphertext_u_hex": { "type": "string" },
+          "ciphertext_v_hex": { "type": "string" },
+          "shared_secret_hash_sha256": { "type": "string", "example": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" },
+          "compute_duration_ms": { "type": "number", "example": 1.14 }
+        }
+      },
+      "DecapsulateRequest": {
+        "type": "object",
+        "required": ["node_id", "hsm_secret_handle", "ciphertext_u_hex", "ciphertext_v_hex"],
+        "properties": {
+          "node_id": { "type": "string", "example": "node-edge-002" },
+          "hsm_secret_handle": { "type": "string", "example": "hsm-slot-04-key-pqc" },
+          "ciphertext_u_hex": { "type": "string" },
+          "ciphertext_v_hex": { "type": "string" }
+        }
+      },
+      "DecapsulateResponse": {
+        "type": "object",
+        "required": ["shared_secret_hex", "shared_secret_hash_sha256", "is_valid", "decapsulation_duration_ms"],
+        "properties": {
+          "shared_secret_hex": { "type": "string" },
+          "shared_secret_hash_sha256": { "type": "string" },
+          "is_valid": { "type": "boolean", "example": true },
+          "decapsulation_duration_ms": { "type": "number", "example": 1.28 }
+        }
+      },
+      "RatchetRequest": {
+        "type": "object",
+        "required": ["node_id", "peer_node_id", "current_epoch_counter"],
+        "properties": {
+          "node_id": { "type": "string", "example": "node-edge-001" },
+          "peer_node_id": { "type": "string", "example": "node-edge-002" },
+          "current_epoch_counter": { "type": "integer", "example": 142 }
+        }
+      },
+      "RatchetResponse": {
+        "type": "object",
+        "required": ["new_epoch_sequence", "active_psk_hash", "standby_psk_hash", "epoch_expires_at", "rollover_status"],
+        "properties": {
+          "new_epoch_sequence": { "type": "integer", "example": 143 },
+          "active_psk_hash": { "type": "string", "example": "8f31d044a2c1" },
+          "standby_psk_hash": { "type": "string", "example": "b47e22109cd7" },
+          "epoch_expires_at": { "type": "string", "format": "date-time" },
+          "rollover_status": { "type": "string", "example": "SYNCHRONIZED_ZERO_LOSS" }
+        }
+      },
+      "NodeListResponse": {
+        "type": "object",
+        "required": ["total_nodes", "online_nodes", "nodes"],
+        "properties": {
+          "total_nodes": { "type": "integer", "example": 24 },
+          "online_nodes": { "type": "integer", "example": 24 },
+          "nodes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": { "type": "string" },
+                "name": { "type": "string" },
+                "region": { "type": "string" },
+                "status": { "type": "string" },
+                "rtt_ms": { "type": "number" },
+                "quantum_resistance_score": { "type": "number" }
+              }
+            }
+          }
+        }
+      },
+      "FleetTelemetryResponse": {
+        "type": "object",
+        "required": ["p99_latency_ms", "average_handshake_ms", "qta_matrix", "active_epoch_interval_sec"],
+        "properties": {
+          "p99_latency_ms": { "type": "number", "example": 2.85 },
+          "average_handshake_ms": { "type": "number", "example": 2.42 },
+          "active_epoch_interval_sec": { "type": "integer", "example": 120 },
+          "qta_matrix": {
+            "type": "object",
+            "properties": {
+              "shor_resistance_nist_level": { "type": "integer", "example": 5 },
+              "grover_speedup_margin_bits": { "type": "integer", "example": 256 },
+              "hndl_mitigation_index_pct": { "type": "number", "example": 100.0 }
+            }
+          }
+        }
+      },
+      "ProblemDetails": {
+        "type": "object",
+        "required": ["type", "title", "status", "detail", "instance"],
+        "properties": {
+          "type": { "type": "string", "format": "uri" },
+          "title": { "type": "string" },
+          "status": { "type": "integer" },
+          "detail": { "type": "string" },
+          "instance": { "type": "string" }
+        }
+      }
+    },
+    "responses": {
+      "ProblemDetails400": {
+        "description": "Bad Request (RFC 7807)",
+        "content": {
+          "application/problem+json": {
+            "schema": { "$ref": "#/components/schemas/ProblemDetails" }
+          }
+        }
+      },
+      "ProblemDetails401": {
+        "description": "Unauthorized Authentication (RFC 7807)",
+        "content": {
+          "application/problem+json": {
+            "schema": { "$ref": "#/components/schemas/ProblemDetails" }
+          }
+        }
+      },
+      "ProblemDetails422": {
+        "description": "Unprocessable Entity / Cryptographic Verification Failure",
+        "content": {
+          "application/problem+json": {
+            "schema": { "$ref": "#/components/schemas/ProblemDetails" }
+          }
+        }
+      }
+    }
+  }
+}

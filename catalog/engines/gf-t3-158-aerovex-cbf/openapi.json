@@ -1,0 +1,181 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "AeroVex CBF Deconfliction API",
+    "description": "GF-T3-158 Multi-Agent Trajectory Deconfliction via Control Barrier Functions",
+    "version": "1.5.8-T3"
+  },
+  "paths": {
+    "/healthz": {
+      "get": {
+        "tags": [
+          "Telemetry"
+        ],
+        "summary": "Healthz",
+        "operationId": "healthz_healthz_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/cbf/solve": {
+      "post": {
+        "tags": [
+          "Deconfliction"
+        ],
+        "summary": "Solve Cbf",
+        "operationId": "solve_cbf_api_v1_cbf_solve_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeconflictRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/telemetry": {
+      "get": {
+        "tags": [
+          "Telemetry"
+        ],
+        "summary": "Get Telemetry",
+        "operationId": "get_telemetry_api_v1_telemetry_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "DeconflictRequest": {
+        "properties": {
+          "agent_id": {
+            "type": "integer",
+            "title": "Agent Id",
+            "default": 1
+          },
+          "pos": {
+            "items": {
+              "type": "number"
+            },
+            "type": "array",
+            "title": "Pos",
+            "default": [
+              100.0,
+              100.0
+            ]
+          },
+          "vel": {
+            "items": {
+              "type": "number"
+            },
+            "type": "array",
+            "title": "Vel",
+            "default": [
+              2.0,
+              0.0
+            ]
+          },
+          "nominal_vel": {
+            "items": {
+              "type": "number"
+            },
+            "type": "array",
+            "title": "Nominal Vel",
+            "default": [
+              2.0,
+              0.0
+            ]
+          }
+        },
+        "type": "object",
+        "title": "DeconflictRequest"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}

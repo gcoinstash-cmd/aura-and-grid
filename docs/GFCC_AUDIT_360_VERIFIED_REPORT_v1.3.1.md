@@ -24,27 +24,31 @@
 
 ---
 
-## 3. Active Fleet Composition (136 Total Vehicles)
-- Current Fleet Staged: 136 Digital Vehicles
+## 3. Active Fleet Composition (137 Total Vehicles)
+- Current Master Catalog: 137 Custom Full-Stack Web Applications (86 Track 1 + 50 Track 2 + 1 Track 3 active, 13 Track 3 queued in ~/Downloads)
 - Collection Fleet Goal: 500 Digital Vehicles
 - Track 1 Units (Lean Rapid-Sale): 86 Turnkey Concept Consoles ($199 Retail MSRP / $599 Team Seat / $4,500 Anchor)
 - Track 2 Units (Flagship Hypercars): 50 Deep-Tech / SCADA Vehicles ($1,500–$3,500 License / $14,500 Anchor)
-- 80% Retention Floor Lock: Minimum 109 units permanently held in the vault; exactly 27 units transferable via micro-APA.
+- 80% Retention Floor Lock: Minimum 110 units permanently held in the vault; exactly 27 units transferable via micro-APA.
 
 ---
 
-## 4. Master Valuation Ledger (136 Units Sold Individually)
+## 4. Master Valuation Ledger & ASC 350-40 Replacement Appraisal (137 Units)
 
 ### Section 1: Non-Exclusive Licensing & Lease Hub
 - Annualized Fair Market Value (FMV): $54,415 – $121,330 / year
-- Direct B2B Enterprise Ask: $88,000 – $155,000 / year
-- Realistic Accepted Offer (Target Close): $62,000 – $104,750 / year
+- Direct B2B Enterprise Ask: $195,000 – $265,000 / year
+- Realistic Accepted Offer (Target Close): $135,000 – $175,000 / year
 
-### Section 2: Exclusive Buyout & Dev Replacement Hub
-- Distress / Quick-Sale Buyer Cash Floor: $95,000 – $145,000 (50–70% buyer liquidation cash floor)
-- Dual-Track Strategic Buyout Range: $935,000 – $1,600,000 (Planning Anchor: $1,112,000)
-- Strategic Deep-Tech Monopoly Ceiling: $2,150,000 – $3,850,000+
-- Dev Agency Replacement Benchmark: $1,320,000 – $2,400,000 (5,600+ engineering hours @ $150–$250/hr)
+### Section 2: Capitalized Replacement & Dealership Appraisal Hub
+- **Enterprise Showroom Asking Price:** **$3,110,000 (~$3.11M)**
+- **Agency Build-Cost Appraisal:** **$1,950,000 (~$1.95M)**
+- **Senior Architect Hard Floor:** **$1,500,000 (~$1.50M)** (13,700 engineering hrs @ $109.49/hr)
+- **"As-Is" Bare Minimum (Baseline Trim Floor):** **$1,150,000 (~$1.15M reserve)** (41% bulk asset discount applied to $1.95M)
+- **The Hard Walk-Away Floor:** **$1,150,000 – $1,500,000** (Internal reserve threshold; bids below rejected)
+- **The Panic Floor Price:** **$95,000 – $145,000** (Distressed 50–70% cash liquidation baseline)
+- **Strategic Deep-Tech Monopoly Ceiling:** **$2,150,000 – $3,850,000+**
+- **Valuation Legend:** ASC 350/985 enterprise replacement cost methodologies applied with 41% bulk asset discount.
 
 Disclaimer: INTERNAL SCENARIO MODELING ONLY — PRE-REVENUE ASSET PORTFOLIO — VALUES ARE ESTIMATES FOR MANAGEMENT STRATEGY AND NOT GUARANTEED MARKET APPRAISALS.
 

@@ -1,0 +1,61 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "AeroKinetic Engine API",
+    "description": "GF-T3-156 6-DoF Sensor Fusion ES-EKF Service",
+    "version": "1.5.6-T3"
+  },
+  "paths": {
+    "/healthz": {
+      "get": {
+        "summary": "Healthz",
+        "description": "Cloud Run health probe.",
+        "operationId": "healthz_healthz_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/telemetry": {
+      "get": {
+        "summary": "Get Telemetry",
+        "description": "Returns serialized snapshot of 16-state vector and covariances.",
+        "operationId": "get_telemetry_api_v1_telemetry_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/fixed-point": {
+      "get": {
+        "summary": "Get Fixed Point",
+        "description": "Returns fixed-point scaled telemetry (10^7 ticks/rad, 10^4 ticks/m).",
+        "operationId": "get_fixed_point_api_v1_fixed_point_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

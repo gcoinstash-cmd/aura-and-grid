@@ -1,95 +1,87 @@
 {
-  "sync_timestamp": "2026-10-04T23:32:49.890Z",
+  "sync_timestamp": "2026-10-08T22:21:24.480Z",
   "version": "v2.0-master-sync",
   "status": "ALL_SYNCED",
+  "backup_filter_policy": {
+    "strictly_ignored": [
+      "node_modules",
+      ".git",
+      "dist",
+      ".vite"
+    ],
+    "strictly_included": [
+      "source_code",
+      "markdown_documentation",
+      "blueprints",
+      "production_zip_bundles"
+    ]
+  },
   "portfolio_facts": {
-    "total_catalog_assets": 114,
+    "total_catalog_assets": 151,
     "track_1_lean_rapid_sale_assets": 86,
-    "track_2_flagship_tier_1_assets": 28,
+    "track_2_flagship_tier_1_assets": 50,
+    "track_3_service_engines": 14,
     "retention_floor_percent": 80,
-    "retained_floor_assets": 91,
-    "max_apa_capacity_assets": 23
+    "retained_floor_assets": 120,
+    "max_apa_capacity_assets": 31
   },
   "pricing_protocol": {
     "track_1_lean_rapid_sale": {
       "retail_msrp": 199,
       "team_seat": 599,
-      "exclusive_buyout_floor": [
-        3800,
-        6500
-      ],
+      "exclusive_buyout_floor_avg": 5150,
       "exclusive_buyout_anchor": 4500
     },
     "track_2_flagship_tier_1": {
-      "commercial_license": [
-        1500,
-        3500
-      ],
+      "commercial_license_avg": 2500,
       "entry_buyout_anchor": 14500,
-      "entry_buyout_range": [
-        10000,
-        18000
-      ],
-      "full_buyout_range": [
-        18000,
-        35000
-      ],
-      "strategic_acquisition_range": [
-        35000,
-        75000
-      ]
+      "full_buyout_avg": 26500,
+      "strategic_acquisition_avg": 55000
+    },
+    "track_3_service_engines": {
+      "monthly_enterprise_seat_license": 1500,
+      "baseline_apa_buyout_floor": 50000,
+      "monopoly_vault_buyout_avg": 112500
     },
     "portfolio_retention_floor_percent": 80
   },
   "valuation_summary": {
-    "distress_liquidation_floor": [
-      75000,
-      115000
-    ],
-    "realistic_accepted_offer": [
-      135000,
-      175000
-    ],
-    "direct_b2b_ask_target": [
-      195000,
-      265000
-    ],
-    "strategic_buyout_anchor": 721000,
-    "strategic_buyout_range": [
-      608000,
-      1040000
-    ],
-    "development_replacement_cost": [
-      965000,
-      1760000
-    ],
-    "strategic_acquisition_ceiling": [
-      1490000,
-      2850000
-    ]
+    "distress_liquidation_floor": 900000,
+    "realistic_accepted_offer": 155000,
+    "direct_b2b_ask_target": 230000,
+    "strategic_buyout_anchor": 1880000,
+    "development_replacement_cost": 2300000,
+    "strategic_acquisition_ceiling": 3680000
   },
-  "total_files_synced": 20,
+  "total_files_synced": 27,
   "checksums": {
-    "README.md": "f080c1c3a53fa6970f4d407d46cf4714922c62fe7a2a2d4824dbb7c4220b5cd1",
+    "README.md": "71a26da8e9384a9139a96d7e39b9b18bad7f9b7abf53f04db2caf8476c59d13d",
     "GFCC_README.md": "aa70c5966c82235dce1447215b828c6722a34a8c46eb02cede98b76f450dd979",
-    "AGENTS.md": "617e46cf7864b50820bdfc5c9417f8b84eed940103722185cd995ea4b49f3685",
-    "GEMINI.md": "617e46cf7864b50820bdfc5c9417f8b84eed940103722185cd995ea4b49f3685",
-    "instructions.txt": "2745808d0db0aefd33cb03e3dac2facf78ba70b5aab341da568acc588b33191b",
-    "ghostfactory-master.md": "2745808d0db0aefd33cb03e3dac2facf78ba70b5aab341da568acc588b33191b",
-    "GHOSTFACTORY_V2_MASTER_SYNC.md": "ba12a56e3e92dcd5aefe127aba3d1ccb0191ad74e69d5d0004c67a9f2bd5bfbb",
-    "BUSINESS_MODEL_AND_FOUNDRY_STRATEGY.md": "dc2b4fc0c8e0be89ad171074af224a2858c9f15f9590c845c9ea9408f41b2135",
-    "MASTER_BUSINESS_PLAN.md": "3ec1064af9a53a5d3a04009baa092239fdebe9f0c0901c1715abcceb90d97649",
-    "NOTEBOOKLM_MASTER_FOUNDRY_BRIEF.md": "9cce00a9f5413e8475d0078628554cf2367958de70256c7aded950b1a9cfcd09",
+    "AGENTS.md": "c99c78213b93dae8dbf8fd2a3b61e34f90af7a1015c304bdaf8e2959d378f31d",
+    "AGENT.md": "c99c78213b93dae8dbf8fd2a3b61e34f90af7a1015c304bdaf8e2959d378f31d",
+    "GEMINI.md": "c99c78213b93dae8dbf8fd2a3b61e34f90af7a1015c304bdaf8e2959d378f31d",
+    "instructions.txt": "d36f0f081a939449e9823b872810412d94639aeed746ce57f30d01ee9ac1ac6e",
+    "ghostfactory-master.md": "d36f0f081a939449e9823b872810412d94639aeed746ce57f30d01ee9ac1ac6e",
+    "GHOSTFACTORY_V2_MASTER_SYNC.md": "2ac688c5cd429fbc14cd6e46f2d1130eb8129167ad8f378a1307f8ed7a65d494",
+    "BUSINESS_MODEL_AND_FOUNDRY_STRATEGY.md": "3f6281379253a8dc098f2ccb94b4bd6e9a9e46ab64d497218bdaf4dddbd89d8e",
+    "MASTER_BUSINESS_PLAN.md": "c66e3a3694690414a805b15fae942f3e51e1871e5942293045d5df76bc8594bd",
+    "NOTEBOOKLM_MASTER_FOUNDRY_BRIEF.md": "b2bbcf19ddad2ea165c5cd9fe8e1d16d2414f88b91a9bb63be94b3500afdcc9b",
     "COMMERCIAL_AGENCY_LICENSE.md": "9190e32534791b87a92a86fb5a22b0ae9bf31929926395a706841a341b57fd79",
     "QUALITY_GATE.md": "d43d2eabbba24f9e3c67942ba5e50e73e2890ce91b9619378f1f2a7b1505224d",
-    "CATALOG_MANIFEST.json": "a0ae6fabc6252d5fb49b3e2c5a6b99f57ee0e85708f393cf42976fe1e0aaacf8",
+    "CATALOG_MANIFEST.json": "abb8c804f2ded2067af34f0786d5c75dfec557496ab4fae670d4a9fa1cd03748",
     "EMERGENCY_RECOVERY_README.md": "3bbcb99f9453aceab4d3163b6f3ddc404268cb3287aa85c69c90dc8bc66ca2ac",
     "AUDIT_SNAPSHOT.md": "c88756e5840c6f0ec0e861ca7991e2c73645ba446e131b7de31f094705545322",
-    "COMMERCIAL_POSITIONING.md": "65a4aa446a7444def5fb5a0e2d3db0c000d93139effba11e84d0ec0e047b6f59",
-    "INVESTOR_AUDIT_REPORT.md": "a3f6fbca7162c1bc3508bcacdb2c2d9ad890d519ea13a082551780c3562248f4",
-    "AUDIT_360_VERIFIED_REPORT.md": "74421cbe2fb24a2f6e6e68ed3497dc521dd0b507b572436cff955bbb8365a72a",
+    "COMMERCIAL_POSITIONING.md": "328fd416c08a16b6347f1621a2f149062adb4bd2093e956e59142f382ed75666",
+    "INVESTOR_AUDIT_REPORT.md": "499748f8db640ce4dad89ba74ed14ca986d773253011be3681689840ea396ffa",
+    "AUDIT_360_VERIFIED_REPORT.md": "6362ebf5f72738f72ef04b4a5de509f5cad48417a1f93b3c3c7fb910bca76ac2",
+    "TRACK3_INCOMING_REGISTRATION.md": "0d503c3315f43e109396a0a472693c229eed0baa446a7e5055dc5a3b179076d3",
+    "FLEET_VALUATION_APPRAISAL_ASC350.md": "926b51f2646607abdfed9b143009c9e98ea920c43f97940f7bab6eb1cc283b3c",
     "COMPLIANCE.template.md": "f0c342e26ba280915fd532b7ade387dfc8044bda936749cba843606d982a73f5",
-    "INSTITUTIONAL_PRODUCTION_STANDARD.md": "8e6daf5d900cb1b2343c707b006548bf80bfa7ee414b29d92a6c814420ba5d27"
+    "INSTITUTIONAL_PRODUCTION_STANDARD.md": "8e6daf5d900cb1b2343c707b006548bf80bfa7ee414b29d92a6c814420ba5d27",
+    "track3Engines.ts": "04402d9741d568a96cb055a7a32202d580c355ddb1d016247098ae927a360ce6",
+    "Track2Harness.tsx": "622b1e36e699ca7355df4da9e3e77aaba1e7d51f029c8512360a4d51eb12b206",
+    "catalogData.ts": "8bea2da59ede952dd2f3da0522a40657a20345ae0a3c6f2fbf700fa892cf581f",
+    "licenseMatrix.ts": "12ed8d0e32840cb14256e0faa46381f5d00a0a0db96ae3dff61cb0000e0f1d73"
   },
   "synced_destinations": [
     "/Users/gmane/Documents/ZoMae Media LLC/Aura & Grid/MASTER_BLUEPRINT_BACKUP",

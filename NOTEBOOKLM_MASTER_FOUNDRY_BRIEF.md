@@ -9,16 +9,16 @@
 - **Private Foundry Engine**: **GhostFactoryOS** — Private digital factory, portfolio command center, inventory system, licensing ledger, maintenance tracker, and operations dashboard.
 - **Commercial Showroom & Dealership**: **Aura & Grid** — Public premium showroom and digital dealership for interactive demos, source-code licenses, managed leases, agency fleet licenses, bespoke deployments, support plans, and selective micro-APAs.
 - **Mental Model**: The digital software portfolio is an elite **"digital car collection"** inside a video game—manufactured with high precision and leased, licensed, or selectively transferred.
-- **Catalog Status**: **136 pre-revenue digital assets** (86 Track 1 Lean Rapid-Sale + 50 Track 2 Flagship Tier-1, target: 500 cataloged assets).
+- **Catalog Status**: **150 custom full-stack web applications & production engines** (86 Track 1 Lean + 50 Track 2 Flagship + 14 Track 3 Working Service Engines active and standardized via the Universal Track 2 Telemetry Harness; target: 500 assets).
 
 ---
 
 ## 2. Portfolio Status & 80% Retention Floor Rule
 
 The foundry strictly maintains an **80% Minimum Retained Floor** at all stages:
-- **Current Fleet (136 Assets)**:
-  - Minimum Retained Floor: **109 assets** permanently kept in the foundry.
-  - Maximum Transfer Capacity: **27 assets** eligible for selective micro-APAs.
+- **Current Fleet (150 Assets)**:
+  - Minimum Retained Floor: **120 assets** permanently vaulted in the foundry.
+  - Maximum Transfer Capacity: **30 assets** eligible for selective micro-APAs.
 - **Target Fleet (500 Assets)**:
   - Minimum Retained Floor: **400 assets** permanently kept.
   - Maximum Transfer Capacity: **100 assets** max cumulative transfer capacity.
@@ -46,39 +46,67 @@ The full 136-asset collection is currently **pre-revenue**:
 
 ---
 
-## 4. Dual-Track Valuation & Pricing Protocol
+## 4. Multi-Track Valuation & Pricing Protocol
 
 Never mix tracks in the same offer. Default to Track 1.
 
 ```
- [ DUAL-TRACK PRICING PROTOCOL ]
+ [ MULTI-TRACK PRICING PROTOCOL ]
     │
-    ├── TRACK 1: LEAN RAPID-SALE (DEFAULT)
+    ├── TRACK 1: LEAN RAPID-SALE (Lean Tuner / Daily Driver)
     │   ├── Retail License: $199
     │   ├── Commercial Team Seat: $599
     │   ├── Exclusive Buyout Floor: $3,800 – $6,500
     │   └── Exclusive Buyout Anchor: $4,500
     │
-    └── TRACK 2: FLAGSHIP $10K+ (SELECTIVE TIER-1)
-        ├── Flagship License: $1,500 – $3,500
-        ├── Entry Exclusive Buyout Anchor: $14,500 ($10,000 – $18,000 range)
-        ├── Full Asset Buyout: $18,000 – $35,000
-        └── Strategic Acquisition: $35,000 – $75,000+
+    ├── TRACK 2: FLAGSHIP $10K+ (Hypercar Flagship)
+    │   ├── Flagship License: $1,500 – $3,500
+    │   ├── Entry Exclusive Buyout Anchor: $14,500 ($10,000 – $18,000 range)
+    │   ├── Full Asset Buyout: $18,000 – $35,000
+    │   └── Strategic Acquisition: $35,000 – $75,000+
+    │
+    └── TRACK 3: F1 SKUNKWORKS SERVICE ENGINE (Working Service Engine)
+        ├── Monthly Enterprise Seat License: $1,500/mo (5.0x ARR SaaS multiple)
+        ├── Baseline APA Buyout Floor: $35,000 – $65,000 ($1.225M – $2.275M fleet floor)
+        └── Monopoly Vault Buyout Ceiling: $75,000 – $150,000+ ($2.625M – $5.250M fleet ceiling)
 ```
 
-### Track 1 — Lean Rapid-Sale Track (Default)
+### Track 1 — Lean Rapid-Sale Track (Lean Tuner / Daily Driver)
 Standard prototypes and fast marketplace sales:
+- **Focus:** Rapid assembly, clean UI modularity, zero external dependencies.
+- **Output:** Single-bundle frontend components, verified asset packaging, minimal test verification.
 - **Retail License**: $199
 - **Commercial Team Seat**: $599
 - **Exclusive Buyout Floor**: $3,800 – $6,500
 - **Exclusive Buyout Anchor**: **$4,500**
 
-### Track 2 — Flagship $10K+ Track (Selective Tier-1)
-Elite, domain-heavy assets passing the Flagship Qualification Gate:
+### Track 2 — Flagship $10K+ Track (Hypercar Flagship)
+Elite, domain-heavy assets passing the Flagship Qualification Gate (including the NIST SP 800-218 Compliance Gate):
+- **Focus:** High-density interactive UI, canvas/WebGL state, mock telemetry stability.
+- **Output:** Fully clickable client-side prototypes, simulated WebSocket/state engines, responsive telemetry HUDs.
 - **Flagship Commercial License**: $1,500 – $3,500
 - **Entry Exclusive Buyout Anchor**: **$14,500** ($10,000 – $18,000 range)
 - **Full Asset Buyout**: $18,000 – $35,000
 - **Strategic Acquisition**: $35,000 – $75,000+
+
+### Track 3 — F1 Skunkworks Service Engine Protocol
+Working Service Engines / Production Reference Architectures (Curated 35 Units total):
+- **Core Moat:** R&D bypass value. Zero mock client state. Full-stack containerized deployments with live ingestion and persistent data schemas.
+- **Allocation Matrix:** Vertical A (12 Units): Autonomous Telemetry, Aerospace & C2 Infrastructure. Vertical B (12 Units): Algorithmic Liquidity & Institutional FinTech Risk Engines. Vertical C (11 Units): Edge AI & Autonomous Multi-Agent Consensus Loops.
+- **Monthly Enterprise Seat License:** $1,500/mo (Valued at 5.0x ARR SaaS multiple).
+- **Baseline APA Buyout Floor:** $35,000 – $65,000 per engine ($1.225M – $2.275M pre-revenue fleet floor).
+- **Monopoly / Vault Buyout Ceiling:** $75,000 – $150,000+ per engine ($2.625M – $5.250M fleet ceiling).
+
+**The 5 Monopoly Vault Requirements:**
+1. **Proprietary Algorithmic Logic:** Deterministic state machines, mathematical models (Kalman filtering, order-book reconstruction, multi-agent consensus).
+2. **Clean-Room IP:** Permissive licenses only (MIT/Apache 2.0/BSD). ZERO GPL, AGPL, or SSPL copyleft packages.
+3. **Enterprise Hardening:** Strict `.env` separation, automated idempotent migrations (Alembic/Prisma), RBAC security, audit logging.
+4. **Niche Domain Specialization:** Autonomous Telemetry, FinTech/Quant, or Edge AI.
+5. **Turnkey 15-Minute Deploy:** 1-click Google Cloud Run deployment (`cloudbuild.yaml` / `cloudrun.yaml`), >80% pytest coverage, OpenAPI 3.1.
+
+**The 70/30 Production Pipeline:**
+- **70% in Google AI Studio:** Core math proofs, SQL schemas, OpenAPI 3.1 contracts, and APA legal manifests compiled into `ENGINE_SPEC.md`.
+- **30% in Google Antigravity:** Phase 1 Scaffold (`app/`, models, routes, Dockerfile) → Phase 2 Verification (pytest >80% coverage) → Phase 3 Cloud Run Deploy (`gcloud run deploy [engine-name] --source . --region us-central1 --allow-unauthenticated --min-instances 0`, requires Dealership Principal terminal approval; verify 200 OK + latency) → Phase 4 Vault Packaging (`LEGAL_IP_AUDIT.md`, `ENTERPRISE_APA_AGREEMENT.md`).
 
 ---
 
@@ -122,7 +150,7 @@ These 28 assets are classified under the Flagship $10K+ Track ($14,500 Buyout An
 ## 6. Product Truth Rules & Authorized Labels
 
 Always use accurate, verifiable labels:
-- **Permitted Labels**: `Template`, `Interactive Prototype`, `Hosted Demo`, `Simulation`, `Deployable Source Template`, `Customer-Configured Deployment`, `Production Service`.
+- **Permitted Labels**: `Template`, `Interactive Prototype`, `Hosted Demo`, `Simulation`, `Deployable Source Template`, `Customer-Configured Deployment`, `Working Service Engine`, `Production Reference Architecture`, `Production Service`.
 - **Prohibited Claims (Unless proven)**: "Production-ready", "Enterprise-grade", "Full compliance", "Real-time", "Verified", "Secure", "Audited", "WCAG compliant", "HIPAA-ready", "Financial-grade", "Flight-qualified", "Space-qualified", "Safety-certified".
 
 ---

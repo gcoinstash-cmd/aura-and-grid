@@ -1,0 +1,417 @@
+export const OPENAPI_SPEC_JSON = {
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Hyperion-Flux Neuromorphic Event-Vision & Microsecond Optical Flow Engine API",
+    "version": "1.0.0",
+    "description": "Ghost FactoryOS Fleet Track 3 (F1 Skunkworks) production REST and streaming binary protocol specification for asset GF-T3-146.",
+    "contact": {
+      "name": "Ghost FactoryOS Skunkworks Core",
+      "email": "skunkworks@ghostfactoryos.internal"
+    },
+    "license": {
+      "name": "Apache-2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://edge-node-01.hyperion.ghostfactoryos.internal",
+      "description": "Primary Low-Latency Edge PCIe Gateway (Local Bus)"
+    },
+    {
+      "url": "https://api.fleet.ghostfactoryos.internal/v1",
+      "description": "Regional Autonomous Fleet Telemetry Aggregator"
+    }
+  ],
+  "paths": {
+    "/api/v1/event/stream/ingest": {
+      "post": {
+        "summary": "Ingest Raw Asynchronous DVS Event Stream Buffer",
+        "description": "Direct lock-free ingestion endpoint accepting packed binary DVS packets [x:16, y:16, t:64, p:8] or structured batch JSON payloads.",
+        "operationId": "ingestEventStream",
+        "tags": ["Event Ingestion"],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EventIngestBatchRequest"
+              }
+            },
+            "application/octet-stream": {
+              "schema": {
+                "type": "string",
+                "format": "binary",
+                "description": "Little-endian packed DVS event stream buffer with 15-byte aligned stride."
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Event batch successfully buffered into ring buffer",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EventIngestResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/Rfc7807BadRequest"
+          },
+          "429": {
+            "$ref": "#/components/responses/Rfc7807RateLimited"
+          },
+          "500": {
+            "$ref": "#/components/responses/Rfc7807InternalError"
+          }
+        }
+      }
+    },
+    "/api/v1/flow/calculate": {
+      "post": {
+        "summary": "Calculate Microsecond Surface-of-Active-Events Lucas-Kanade Optical Flow",
+        "description": "Computes instantaneous closed-form 2D velocity vector over local spatial-temporal event manifolds, enforcing aperture condition checking kappa <= 12.5.",
+        "operationId": "calculateOpticalFlow",
+        "tags": ["Optical Flow"],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FlowCalculateRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Calculated optical flow vector with condition metrics",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FlowCalculateResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "$ref": "#/components/responses/Rfc7807ApertureIllConditioned"
+          }
+        }
+      }
+    },
+    "/api/v1/spiking/track": {
+      "post": {
+        "summary": "Execute Leaky Integrate-and-Fire (LIF) Spike Clustering & Time-To-Collision Tracking",
+        "description": "Evaluates membrane potential dynamics, detects threshold crossing spikes, and computes microsecond obstacle collision forecasts.",
+        "operationId": "trackSpikingCentroid",
+        "tags": ["Spiking Estimator"],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SpikingTrackRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Target centroid, trajectory, and Time-To-Collision alert status",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SpikingTrackResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sensor/dvs/calibrate": {
+      "put": {
+        "summary": "Update Dynamic Vision Sensor Refractory & Contrast Threshold Parameters",
+        "description": "Dynamically tunes active refractory period, ON/OFF log-contrast thresholds, and spatial-temporal SAE decay constants.",
+        "operationId": "calibrateDvsSensor",
+        "tags": ["Hardware Calibration"],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SensorCalibrationRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Sensor configuration verified and written to FPGA registers",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SensorCalibrationResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/telemetry/p99-audit": {
+      "get": {
+        "summary": "Retrieve Real-Time P99 Latency & Compute Budget Telemetry",
+        "description": "Audits compute budget consumption ensuring event processing latency remains strictly under 750 microseconds at 10M events/second throughput.",
+        "operationId": "getTelemetryAudit",
+        "tags": ["Telemetry & Health"],
+        "responses": {
+          "200": {
+            "description": "Current P99 latency and system health profile",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TelemetryAuditResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "EventIngestBatchRequest": {
+        "type": "object",
+        "required": ["sensorId", "events"],
+        "properties": {
+          "sensorId": {
+            "type": "string",
+            "format": "uuid",
+            "example": "a8f34120-7b24-4df8-9d41-3b7c2d140e01"
+          },
+          "events": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DvsEventItem"
+            }
+          }
+        }
+      },
+      "DvsEventItem": {
+        "type": "object",
+        "required": ["x", "y", "timestampUs", "polarity"],
+        "properties": {
+          "x": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 4096,
+            "example": 142
+          },
+          "y": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 4096,
+            "example": 98
+          },
+          "timestampUs": {
+            "type": "integer",
+            "format": "int64",
+            "example": 1728169200142055
+          },
+          "polarity": {
+            "type": "integer",
+            "enum": [1, -1],
+            "example": 1
+          }
+        }
+      },
+      "EventIngestResponse": {
+        "type": "object",
+        "required": ["status", "eventsIngested", "droppedCount", "ringBufferOccupancyRatio", "executionTimeUs"],
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": ["BUFFERED_OK", "RING_OVERFLOW", "DROPPED_THROTTLED"],
+            "example": "BUFFERED_OK"
+          },
+          "eventsIngested": {
+            "type": "integer",
+            "example": 4096
+          },
+          "droppedCount": {
+            "type": "integer",
+            "example": 0
+          },
+          "ringBufferOccupancyRatio": {
+            "type": "number",
+            "format": "float",
+            "example": 0.284
+          },
+          "executionTimeUs": {
+            "type": "number",
+            "format": "float",
+            "example": 112.4
+          }
+        }
+      },
+      "FlowCalculateRequest": {
+        "type": "object",
+        "required": ["sensorId", "spatialRoi", "temporalSliceUs"],
+        "properties": {
+          "sensorId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "spatialRoi": {
+            "type": "object",
+            "required": ["xMin", "yMin", "xMax", "yMax"],
+            "properties": {
+              "xMin": { "type": "integer", "example": 120 },
+              "yMin": { "type": "integer", "example": 80 },
+              "xMax": { "type": "integer", "example": 160 },
+              "yMax": { "type": "integer", "example": 120 }
+            }
+          },
+          "temporalSliceUs": {
+            "type": "integer",
+            "minimum": 100,
+            "maximum": 100000,
+            "example": 5000
+          }
+        }
+      },
+      "FlowCalculateResponse": {
+        "type": "object",
+        "required": ["velocityVx", "velocityVy", "magnitudePxUs", "angleRad", "conditionNumber", "confidence", "latencyUs"],
+        "properties": {
+          "velocityVx": { "type": "number", "example": 0.0452 },
+          "velocityVy": { "type": "number", "example": -0.0128 },
+          "magnitudePxUs": { "type": "number", "example": 0.0469 },
+          "angleRad": { "type": "number", "example": -0.276 },
+          "conditionNumber": { "type": "number", "example": 3.42 },
+          "confidence": { "type": "number", "example": 0.942 },
+          "latencyUs": { "type": "number", "example": 384.5 }
+        }
+      },
+      "SpikingTrackRequest": {
+        "type": "object",
+        "required": ["sensorId", "regionOfInterest", "decayTimeConstantUs"],
+        "properties": {
+          "sensorId": { "type": "string", "format": "uuid" },
+          "regionOfInterest": {
+            "type": "object",
+            "properties": {
+              "centerX": { "type": "number", "example": 128 },
+              "centerY": { "type": "number", "example": 128 },
+              "radius": { "type": "number", "example": 45 }
+            }
+          },
+          "decayTimeConstantUs": { "type": "integer", "example": 20000 }
+        }
+      },
+      "SpikingTrackResponse": {
+        "type": "object",
+        "required": ["targetFound", "centroidX", "centroidY", "velocityVx", "velocityVy", "timeToCollisionMs", "threatLevel"],
+        "properties": {
+          "targetFound": { "type": "boolean", "example": true },
+          "targetId": { "type": "string", "example": "TRK-ALPHA-01" },
+          "centroidX": { "type": "number", "example": 134.2 },
+          "centroidY": { "type": "number", "example": 122.8 },
+          "velocityVx": { "type": "number", "example": 145.6 },
+          "velocityVy": { "type": "number", "example": -22.4 },
+          "activeSpikeDensity": { "type": "number", "example": 0.021 },
+          "timeToCollisionMs": { "type": "number", "example": 68.4 },
+          "threatLevel": {
+            "type": "string",
+            "enum": ["NOMINAL", "MONITORED", "CRITICAL_BRAKING_REQUIRED"],
+            "example": "CRITICAL_BRAKING_REQUIRED"
+          }
+        }
+      },
+      "SensorCalibrationRequest": {
+        "type": "object",
+        "required": ["sensorId", "contrastThresholdOn", "contrastThresholdOff", "refractoryPeriodUs"],
+        "properties": {
+          "sensorId": { "type": "string", "format": "uuid" },
+          "contrastThresholdOn": { "type": "number", "example": 0.18 },
+          "contrastThresholdOff": { "type": "number", "example": -0.18 },
+          "refractoryPeriodUs": { "type": "number", "example": 10.0 },
+          "hotPixelSuppression": { "type": "boolean", "example": true }
+        }
+      },
+      "SensorCalibrationResponse": {
+        "type": "object",
+        "required": ["success", "appliedTimestampUs", "hardwareRegisterCrc"],
+        "properties": {
+          "success": { "type": "boolean", "example": true },
+          "appliedTimestampUs": { "type": "integer", "example": 1728169200880122 },
+          "hardwareRegisterCrc": { "type": "string", "example": "0x9E4B21F7" }
+        }
+      },
+      "TelemetryAuditResponse": {
+        "type": "object",
+        "required": ["status", "p99LatencyUs", "p95LatencyUs", "meanLatencyUs", "throughputEvSec", "budgetRemainingUs"],
+        "properties": {
+          "status": { "type": "string", "example": "COMPLIANT_WITHIN_750US_BUDGET" },
+          "p99LatencyUs": { "type": "number", "example": 418.6 },
+          "p95LatencyUs": { "type": "number", "example": 312.2 },
+          "meanLatencyUs": { "type": "number", "example": 224.8 },
+          "throughputEvSec": { "type": "number", "example": 10420000 },
+          "budgetRemainingUs": { "type": "number", "example": 331.4 },
+          "zeroGcViolations": { "type": "integer", "example": 0 }
+        }
+      },
+      "Rfc7807Error": {
+        "type": "object",
+        "required": ["type", "title", "status", "detail", "instance"],
+        "properties": {
+          "type": { "type": "string", "format": "uri", "example": "https://ghostfactoryos.internal/errors/bad-request" },
+          "title": { "type": "string", "example": "Invalid Payload Structure" },
+          "status": { "type": "integer", "example": 400 },
+          "detail": { "type": "string", "example": "The coordinate x=5120 exceeds sensor boundary 4096." },
+          "instance": { "type": "string", "example": "/api/v1/event/stream/ingest/txn-890214" }
+        }
+      }
+    },
+    "responses": {
+      "Rfc7807BadRequest": {
+        "description": "Malformed Request or Invalid Sensor Bounds",
+        "content": {
+          "application/problem+json": {
+            "schema": { "$ref": "#/components/schemas/Rfc7807Error" }
+          }
+        }
+      },
+      "Rfc7807RateLimited": {
+        "description": "PCIe Bus or Ingestion Buffer Saturated",
+        "content": {
+          "application/problem+json": {
+            "schema": { "$ref": "#/components/schemas/Rfc7807Error" }
+          }
+        }
+      },
+      "Rfc7807InternalError": {
+        "description": "Unrecoverable Edge Processing Failure",
+        "content": {
+          "application/problem+json": {
+            "schema": { "$ref": "#/components/schemas/Rfc7807Error" }
+          }
+        }
+      },
+      "Rfc7807ApertureIllConditioned": {
+        "description": "Aperture Condition Failure (kappa > 12.5)",
+        "content": {
+          "application/problem+json": {
+            "schema": { "$ref": "#/components/schemas/Rfc7807Error" }
+          }
+        }
+      }
+    }
+  }
+};

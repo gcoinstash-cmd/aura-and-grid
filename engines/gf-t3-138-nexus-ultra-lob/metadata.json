@@ -1,0 +1,8 @@
+{
+  "name": "Ghost FactoryOS: Nexus Ultra-LOB Engine Workstation (export) ",
+  "description": "Lead Systems Architect workstation and live execution workbench for Engine GF-T3-138: Nexus Ultra-LOB matching engine, OpenAPI 3.1 contracts, AlloyDB schemas, and Monopoly Vault specifications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

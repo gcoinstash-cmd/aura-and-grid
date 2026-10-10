@@ -1,0 +1,84 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Chrono-Arbitrage Sub-Millisecond Engine API",
+    "version": "1.0.0",
+    "description": "Production REST & WebSocket API specification for T3-QUANT-02 Chrono-Arbitrage.",
+    "license": {
+      "name": "Apache-2.0 / MIT Dual Permissive",
+      "url": "https://opensource.org/licenses/Apache-2.0"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://chrono-arb.production.internal/api/v1",
+      "description": "Internal Quant Low-Latency Mesh"
+    }
+  ],
+  "paths": {
+    "/healthz": {
+      "get": {
+        "summary": "Liveness and Readiness Probe",
+        "operationId": "getHealth",
+        "responses": {
+          "200": {
+            "description": "Engine operational and ring buffer active."
+          }
+        }
+      }
+    },
+    "/api/v1/routes/triangular": {
+      "get": {
+        "summary": "Retrieve currently detected profitable triangular arbitrage cycles",
+        "operationId": "getTriangularRoutes",
+        "parameters": [
+          {
+            "name": "min_profit_bps",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "number",
+              "default": 5
+            }
+          },
+          {
+            "name": "max_hops",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 4
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Array of currently active negative-log cycles."
+          }
+        }
+      }
+    },
+    "/api/v1/execute/arb": {
+      "post": {
+        "summary": "Execute atomic multi-hop arbitrage route",
+        "operationId": "executeArbitrageRoute",
+        "responses": {
+          "200": {
+            "description": "Dispatch outcome and execution metrics."
+          }
+        }
+      }
+    },
+    "/api/v1/latency/venues": {
+      "get": {
+        "summary": "High-frequency ping and execution latency telemetry across connected venues",
+        "operationId": "getVenueLatencies",
+        "responses": {
+          "200": {
+            "description": "Real-time telemetry per exchange venue."
+          }
+        }
+      }
+    }
+  }
+}

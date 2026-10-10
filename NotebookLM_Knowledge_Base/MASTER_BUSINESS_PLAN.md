@@ -5,12 +5,13 @@
 **Entity**: ZoMae Media LLC (Parent Holding Entity)  
 **Private Foundry Engine**: GhostFactoryOS (Autonomous Digital Vehicle Foundry & Command Center)  
 **Commercial Dealership**: Aura & Grid™ (Public Dealership for Interactive Demos, Leases, Licenses & Selective Micro-APAs)  
-**Current Portfolio Status**: 136 Pre-Revenue Digital Assets (86 Track 1 Lean Rapid-Sale + 50 Track 2 Flagship Tier-1)  
-**Retention Floor**: Minimum 80% Retained Floor Enforced at Every Stage (Current Floor: 109 Assets Retained / Max 27 Micro-APAs)  
-**Strategic Acquisition Ceiling**: $2,150,000 – $3,850,000+ (Deep-tech niche monopoly premium)  
-**Dev Agency Replacement Benchmark**: $1,320,000 – $2,400,000 (5,600+ engineering hours @ $150–$250/hr)  
-**Strategic Buyout Anchor**: $1,112,000 (~$1.11M) ($935,000 – $1,600,000 range)  
-**Direct B2B Ask (Data Room)**: $195,000 – $265,000 | **Realistic Accepted Offer**: $135,000 – $175,000  
+**Current Portfolio Status**: 150 Custom Full-Stack Web Applications & Production Engines (86 Track 1 Lean + 50 Track 2 Flagship + 14 Track 3 Service Engines active and wired to Track 2 Telemetry Harness)  
+**Retention Floor**: Minimum 80% Retained Floor Enforced at Every Stage (Current Floor: 120 Assets Retained / Max 30 Micro-APAs)  
+**Senior Architect Hard Floor**: $1,500,000 (~$1.50M) (13,700 engineering hrs @ $109.49/hr)  
+**Agency Build-Cost Appraisal**: $1,950,000 (~$1.95M)  
+**Enterprise Showroom Asking Price**: $3,110,000 (~$3.11M)  
+**"As-Is" Bare Minimum (Baseline Trim Floor)**: $1,150,000 (~$1.15M reserve) | **The Hard Walk-Away Floor**: $1,150,000 – $1,500,000  
+**Valuation Legend**: ASC 350/985 enterprise replacement cost methodologies applied with 41% bulk asset discount.  
 
 ---
 
@@ -24,20 +25,24 @@ GhostFactoryOS operates as a specialized digital car manufacturer, and Aura & Gr
 
 ### 1.2 Portfolio Retention Floor & IP Defense
 The foundry strictly operates under an **80% Minimum Retained Floor**:
-- **Current Fleet (136 Assets)**: At least **109 assets** remain permanently in the foundry; maximum transfer capacity is **27 assets**.
+- **Current Fleet (150 Assets)**: At least **120 assets** remain permanently in the foundry; maximum transfer capacity is **30 assets**.
 - **Target Fleet (500 Assets)**: At least **400 assets** remain permanently in the foundry; maximum transfer capacity is **100 assets**.
 - **Permanent IP Boundary**: Micro-APAs transfer defined rights/code to **one specific asset only**. Micro-APAs **NEVER** transfer GhostFactoryOS core infrastructure, Aura & Grid brand/showroom, shared design tokens, component libraries, deployment pipelines, factory prompts, or future catalog rights.
 - **Capacity is Not a Sales Target**: Never treat micro-APA maximum capacity as a sales target.
 
-### 1.3 Grounded Valuation Reality
-The entire 136-asset collection is currently **pre-revenue**.
-- **Strategic Acquisition Ceiling**: **$2,150,000 – $3,850,000+** (Deep-tech niche monopoly premium).
-- **Dev Agency Replacement Benchmark**: **$1,320,000 – $2,400,000** (5,600+ engineering hours @ $150–$250/hr avoided).
-- **Strategic Buyout Anchor**: **$1,112,000** ($935,000 – $1,600,000 range; 86 T1 @ $4.5k + 50 Flagship @ $14.5k).
-- **Direct B2B Ask Target**: **$195,000 – $265,000**.
-- **Realistic Accepted Offer (LOI)**: **$135,000 – $175,000**.
-- **Distress / Quick-Sale Floor**: **$95,000 – $145,000** (50–70% buyer liquidation cash floor).
-- **Truth Standard**: We do not present the collection as 136 proven SaaS businesses. No verified revenue, paying users, retention, uptime, security audits, compliance, or live production operations may be claimed without deterministic proof.
+### 1.3 Grounded Valuation Reality & ASC 350-40 Replacement Appraisal
+The entire 150-asset collection is currently **pre-revenue**.
+- **Enterprise Showroom Asking Price:** **$3,110,000 (~$3.11M)**.
+- **Agency Build-Cost Appraisal:** **$1,950,000 (~$1.95M)**.
+- **Senior Architect Hard Floor:** **$1,500,000 (~$1.50M)** (13,700 engineering hrs @ $109.49/hr).
+- **"As-Is" Bare Minimum (Baseline Trim Floor):** **$1,150,000 (~$1.15M reserve)** (41% bulk asset discount applied to $1.95M).
+- **The Hard Walk-Away Floor:** **$1,150,000 – $1,500,000** (Internal reserve threshold; bids below rejected).
+- **The Panic Floor Price:** **$95,000 – $145,000** (Distressed 50–70% buyer liquidation cash floor).
+- **Strategic Acquisition Ceiling:** **$2,150,000 – $3,850,000+** (Deep-tech niche monopoly premium).
+- **Direct B2B Ask Target:** **$195,000 – $265,000**.
+- **Realistic Accepted Offer (LOI):** **$135,000 – $175,000**.
+- **Valuation Legend:** ASC 350/985 enterprise replacement cost methodologies applied with 41% bulk asset discount.
+- **Truth Standard**: We do not present the collection as proven SaaS businesses. No verified revenue, paying users, retention, uptime, security audits, compliance, or live production operations may be claimed without deterministic proof.
 
 ---
 
@@ -52,38 +57,48 @@ Prioritize recurring cash flow and proven customer demand over raw app count:
 5. **Annual Updates & Maintenance Subscriptions**: Ongoing maintenance credits and component update subscriptions.
 6. **Selective Micro-APAs (Non-Core Only)**: Individual asset acquisitions for buyers requiring exclusive title to a specific workflow direction.
 7. **Flagship $10K+ Exclusive Buyouts**: Premium exclusive transactions reserved for elite, domain-heavy prototypes qualifying under Track 2.
+8. **Track 3 Working Service Engines & Multi-Tenant Leases**: Containerized backend engines with live ingestion, OpenAPI 3.1 contracts, and $1,500/mo enterprise seat licenses.
 
 ---
 
-## 3. Dual-Track Valuation & Pricing Protocol
+## 3. Multi-Track Valuation & Pricing Protocol
 
-Assets are strictly categorized into one of two pricing tracks. Never mix tracks in the same commercial offer. Default to Track 1.
+Assets are strictly categorized into one of three execution and pricing tracks. Never mix tracks in the same commercial offer. Default to Track 1.
 
 ```
- [ DUAL-TRACK PRICING PROTOCOL ]
+ [ MULTI-TRACK PRICING PROTOCOL ]
     │
-    ├── TRACK 1: LEAN RAPID-SALE (DEFAULT)
+    ├── TRACK 1: LEAN RAPID-SALE (Lean Tuner / Daily Driver)
     │   ├── Retail License: $199
     │   ├── Commercial Team Seat: $599
     │   ├── Exclusive Buyout Floor: $3,800 – $6,500
     │   └── Exclusive Buyout Anchor: $4,500
     │
-    └── TRACK 2: FLAGSHIP $10K+ (SELECTIVE TIER-1)
-        ├── Flagship Commercial License: $1,500 – $3,500
-        ├── Entry Exclusive Buyout Anchor: $14,500 ($10,000 – $18,000 range)
-        ├── Full Asset Buyout: $18,000 – $35,000
-        └── Strategic Acquisition: $35,000 – $75,000+
+    ├── TRACK 2: FLAGSHIP $10K+ (Hypercar Flagship)
+    │   ├── Flagship Commercial License: $1,500 – $3,500
+    │   ├── Entry Exclusive Buyout Anchor: $14,500 ($10,000 – $18,000 range)
+    │   ├── Full Asset Buyout: $18,000 – $35,000
+    │   └── Strategic Acquisition: $35,000 – $75,000+
+    │
+    └── TRACK 3: F1 SKUNKWORKS SERVICE ENGINE (Working Service Engine)
+        ├── Monthly Enterprise Seat License: $1,500/mo (5.0x ARR SaaS multiple)
+        ├── Baseline APA Buyout Floor: $35,000 – $65,000 ($1.225M – $2.275M fleet floor)
+        └── Monopoly Vault Buyout Ceiling: $75,000 – $150,000+ ($2.625M – $5.250M fleet ceiling)
 ```
 
-### 3.1 Track 1 — Lean Rapid-Sale Track (Default Standard)
+### 3.1 Track 1 — Lean Rapid-Sale Track (Lean Tuner / Daily Driver)
 Applies to turn-key single-view interactive telemetry prototypes with PostgreSQL schema and seed datasets:
+- **Focus:** Rapid assembly, clean UI modularity, zero external dependencies.
+- **Output:** Single-bundle frontend components, verified asset packaging, minimal test verification.
 - **Retail License**: $199
 - **Commercial Team Seat**: $599
 - **Exclusive Buyout Floor**: $3,800 – $6,500
 - **Exclusive Buyout Anchor**: **$4,500**
 
-### 3.2 Track 2 — Flagship $10K+ Track (Selective Tier-1)
+### 3.2 Track 2 — Flagship $10K+ Track (Hypercar Flagship)
 Applies strictly to complex, domain-heavy systems qualifying under the Flagship Gate:
+- **Focus:** High-density interactive UI, canvas/WebGL state, mock telemetry stability.
+- **Output:** Fully clickable client-side prototypes, simulated WebSocket/state engines, responsive telemetry HUDs.
 - **Flagship Commercial License**: $1,500 – $3,500
 - **Entry Exclusive Buyout Anchor**: **$14,500** (Entry range: $10,000 – $18,000)
 - **Full Asset Buyout**: $18,000 – $35,000
@@ -100,7 +115,36 @@ An asset must strictly satisfy all 10 criteria before receiving Track 2 pricing:
 7. Clean demo URL, walkthrough video, screenshots, and concept brief.
 8. Standalone exportable codebase, clean documentation, dependency record, and license terms.
 9. Prominent "simulated data / not production" disclosure.
-10. If an asset fails this gate, it remains strictly on Track 1.
+10. **Track 2 Mandatory Compliance Gate**: Must automatically instantiate with `COMPLIANCE.md` (NIST SP 800-218 SSDF v1.1 alignment, SBOM tracking, access controls), `.env.example` (zero secrets), `README.md` Security & Integrity block, and Product Truth badge (Prototype/Simulation).
+
+### 3.4 Track 3 — F1 Skunkworks Service Engine Protocol
+Reserved exclusively for production reference architectures and working service engines:
+- **Tier Classification:** Working Service Engines / Production Reference Architectures (Curated 35 Units total).
+- **Core Moat:** R&D bypass value. Zero mock client state. Full-stack containerized deployments with live ingestion and persistent data schemas.
+- **Allocation Matrix (Curated 35 Units total):**
+  * **Vertical A (12 Units):** Autonomous Telemetry, Aerospace & C2 Infrastructure.
+  * **Vertical B (12 Units):** Algorithmic Liquidity & Institutional FinTech Risk Engines.
+  * **Vertical C (11 Units):** Edge AI & Autonomous Multi-Agent Consensus Loops.
+- **Valuation & Pricing Gates:**
+  * **Monthly Enterprise Seat License:** $1,500/mo (Valued at 5.0x ARR SaaS multiple).
+  * **Baseline APA Buyout Floor:** $35,000 – $65,000 per engine ($1.225M – $2.275M pre-revenue fleet floor).
+  * **Monopoly / Vault Buyout Ceiling:** $75,000 – $150,000+ per engine ($2.625M – $5.250M fleet ceiling).
+
+#### The 5 Monopoly Vault Requirements
+1. **Proprietary Algorithmic Logic:** Deterministic state machines, mathematical models (Kalman filtering, order-book reconstruction, multi-agent consensus).
+2. **Clean-Room IP:** Permissive licenses only (MIT/Apache 2.0/BSD). ZERO GPL, AGPL, or SSPL copyleft packages to guarantee clean M&A legal audit.
+3. **Enterprise Hardening:** Strict `.env` separation, automated idempotent migrations (Alembic/Prisma), RBAC security, audit logging.
+4. **Niche Domain Specialization:** Autonomous Telemetry, FinTech/Quant, or Edge AI.
+5. **Turnkey 15-Minute Deploy:** 1-click Google Cloud Run deployment (`cloudbuild.yaml` / `cloudrun.yaml`), >80% pytest coverage, OpenAPI 3.1.
+
+#### The 70/30 Production Pipeline
+Execute the remaining 30% of the production pipeline by ingesting `ENGINE_SPEC.md`:
+- **70% in Google AI Studio:** Core math proofs, SQL schemas, OpenAPI 3.1 contracts, and APA legal manifests compiled into `ENGINE_SPEC.md`.
+- **30% in Google Antigravity (Execution Sequence):**
+  * **Phase 1 (Scaffold):** Ingest `ENGINE_SPEC.md` and generate `app/` structure, models, API routes, and Dockerfile. Permissive libraries only.
+  * **Phase 2 (Verification):** Generate and run pytest test suites ensuring >80% path/branch coverage.
+  * **Phase 3 (Cloud Run Deploy):** Prompt Dealership Principal for terminal approval to execute `gcloud run deploy [engine-name] --source . --region us-central1 --allow-unauthenticated --min-instances 0`. Verify live URL health check (200 OK) and latency benchmarks.
+  * **Phase 4 (Vault Packaging):** Generate `LEGAL_IP_AUDIT.md` and `ENTERPRISE_APA_AGREEMENT.md`.
 
 ---
 

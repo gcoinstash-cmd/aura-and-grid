@@ -1,0 +1,428 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ * 
+ * Ghost FactoryOS GF-T3-145 (Nexus-ATS)
+ * OpenAPI 3.1.0 High-Frequency Gateway Specification
+ */
+
+export const OPENAPI_SPEC_JSON = {
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Nexus-ATS Ultra-Low Latency Order Gateway",
+    "version": "1.0.0",
+    "description": "Production REST/SBE Gateway for Ghost FactoryOS Fleet Track 3 Asset GF-T3-145 (Nexus-ATS Hybrid Central Limit Order Book & Dark Pool Crossing Engine).",
+    "contact": {
+      "name": "Ghost FactoryOS Skunkworks Institutional Desk",
+      "email": "skunkworks@ghostfactory.internal"
+    },
+    "license": {
+      "name": "Ghost FactoryOS Enterprise Commercial License",
+      "url": "https://ghostfactory.internal/licenses/gf-t3-145"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://engine-pri.nexus-ats.internal:8443",
+      "description": "Primary Core Direct Connect Gateway (Solarflare Kernel Bypass)"
+    },
+    {
+      "url": "https://engine-sec.nexus-ats.internal:8443",
+      "description": "Secondary Standby Disaster Recovery Hot Node"
+    }
+  ],
+  "paths": {
+    "/api/v1/order/submit": {
+      "post": {
+        "summary": "Submit Institutional Order (Lit CLOB or Dark Pool Peg)",
+        "description": "Ingests Limit, Market, IOC, FOK, or Midpoint Peg orders into the deterministic matching ring with microsecond routing.",
+        "operationId": "submitOrder",
+        "parameters": [
+          {
+            "name": "X-Participant-MPID",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "GHTF"
+            },
+            "description": "Registered 4-character Market Participant Identifier"
+          },
+          {
+            "name": "X-SBE-Sequence-Num",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "example": 1049281
+            },
+            "description": "Deterministic SBE / FIX sequence counter for idempotent deduplication"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrderSubmissionRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Order successfully routed and processed by matching engine",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrderSubmissionResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid order parameters or format violation (RFC 7807)",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Risk check or credit limit breach",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/order/cancel": {
+      "post": {
+        "summary": "Cancel Active Resting Order (O(1) Tree Pruning)",
+        "description": "Instantly cancels an unallocated resting limit or dark peg order from the double-linked priority ring.",
+        "operationId": "cancelOrder",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrderCancelRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Order cancellation confirmed and remaining capacity released",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrderCancelResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Order ID not found or already filled",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/book/depth": {
+      "get": {
+        "summary": "Query Real-Time L2 Order Book Depth & NBBO Midpoint",
+        "description": "Returns top N aggregated price tiers, aggregate volumes, cumulative depths, and prevailing NBBO spread.",
+        "operationId": "getBookDepth",
+        "parameters": [
+          {
+            "name": "instrument_id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "GF-US-100"
+            }
+          },
+          {
+            "name": "levels",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 10,
+              "maximum": 50
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Current snapshot of L2 Order Book",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrderBookSnapshotResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/dark/cross": {
+      "post": {
+        "summary": "Execute Discretionary Dark Pool Midpoint Cross",
+        "description": "Direct crossing against non-displayed institutional peg orders at (NBBO_bid + NBBO_ask)/2 with MinQty enforcement.",
+        "operationId": "executeDarkCross",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DarkCrossRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Dark cross execution report with price improvement calculations",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DarkCrossResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/telemetry/vpin-hawkes": {
+      "get": {
+        "summary": "Retrieve Microstructure Flow Toxicity & Hawkes Process Metrics",
+        "description": "Live VPIN index, volume bucket progress, Hawkes cancellation arrival intensity lambda2, and predatory spoofing scores.",
+        "operationId": "getToxicityTelemetry",
+        "parameters": [
+          {
+            "name": "instrument_id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "GF-US-100"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Real-time mathematical toxicity metrics",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToxicityMetricsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "OrderSubmissionRequest": {
+        "type": "object",
+        "required": ["instrument_id", "side", "order_type", "quantity"],
+        "properties": {
+          "client_order_id": {
+            "type": "string",
+            "example": "CL-ORD-98412"
+          },
+          "instrument_id": {
+            "type": "string",
+            "example": "GF-US-100"
+          },
+          "side": {
+            "type": "string",
+            "enum": ["BUY", "SELL"]
+          },
+          "order_type": {
+            "type": "string",
+            "enum": ["LIMIT", "MARKET", "MIDPOINT_PEG", "IOC", "FOK"]
+          },
+          "execution_venue": {
+            "type": "string",
+            "enum": ["LIT", "DARK", "HYBRID_SWEEP"],
+            "default": "LIT"
+          },
+          "limit_price": {
+            "type": "number",
+            "format": "double",
+            "example": 99.95,
+            "description": "Required for LIMIT orders; ignored for MARKET and MIDPOINT_PEG"
+          },
+          "quantity": {
+            "type": "integer",
+            "example": 500,
+            "minimum": 1
+          },
+          "min_quantity": {
+            "type": "integer",
+            "example": 100,
+            "default": 0,
+            "description": "Minimum fill quantity required for execution (MinQty block protection)"
+          },
+          "anti_internalization": {
+            "type": "boolean",
+            "default": true,
+            "description": "Prevent crossing against resting orders originating from the same MPID"
+          }
+        }
+      },
+      "OrderSubmissionResponse": {
+        "type": "object",
+        "properties": {
+          "order_id": { "type": "string", "example": "ORD-17282039-A1B2" },
+          "client_order_id": { "type": "string", "example": "CL-ORD-98412" },
+          "status": { "type": "string", "enum": ["NEW", "PARTIALLY_FILLED", "FILLED", "CANCELED", "REJECTED", "RESTING_DARK"] },
+          "filled_quantity": { "type": "integer", "example": 500 },
+          "remaining_quantity": { "type": "integer", "example": 0 },
+          "average_execution_price": { "type": "number", "example": 99.975 },
+          "matching_latency_us": { "type": "integer", "example": 48 },
+          "trades": {
+            "type": "array",
+            "items": { "$ref": "#/components/schemas/TradeReport" }
+          }
+        }
+      },
+      "TradeReport": {
+        "type": "object",
+        "properties": {
+          "trade_id": { "type": "string", "example": "EX-LIT-2026-991" },
+          "price": { "type": "number", "example": 99.95 },
+          "quantity": { "type": "integer", "example": 500 },
+          "venue": { "type": "string", "enum": ["LIT", "DARK"] },
+          "maker_order_id": { "type": "string", "example": "ORD-17282030-C4D5" },
+          "taker_order_id": { "type": "string", "example": "ORD-17282039-A1B2" },
+          "maker_mpid": { "type": "string", "example": "CITD" },
+          "taker_mpid": { "type": "string", "example": "GHTF" },
+          "is_dark_cross": { "type": "boolean", "example": false },
+          "price_saved_usd": { "type": "number", "example": 0.00 },
+          "execution_epoch_ns": { "type": "integer", "example": 1728203912000000 }
+        }
+      },
+      "OrderCancelRequest": {
+        "type": "object",
+        "required": ["order_id", "instrument_id"],
+        "properties": {
+          "order_id": { "type": "string", "example": "ORD-17282030-C4D5" },
+          "instrument_id": { "type": "string", "example": "GF-US-100" }
+        }
+      },
+      "OrderCancelResponse": {
+        "type": "object",
+        "properties": {
+          "order_id": { "type": "string", "example": "ORD-17282030-C4D5" },
+          "status": { "type": "string", "example": "CANCELED" },
+          "unallocated_quantity": { "type": "integer", "example": 300 },
+          "cancellation_latency_us": { "type": "integer", "example": 22 }
+        }
+      },
+      "OrderBookSnapshotResponse": {
+        "type": "object",
+        "properties": {
+          "instrument_id": { "type": "string", "example": "GF-US-100" },
+          "nbbo_bid": { "type": "number", "example": 99.95 },
+          "nbbo_ask": { "type": "number", "example": 100.00 },
+          "midpoint": { "type": "number", "example": 99.975 },
+          "spread_bps": { "type": "number", "example": 5.00 },
+          "bids": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "price": { "type": "number" },
+                "volume": { "type": "integer" },
+                "order_count": { "type": "integer" },
+                "cumulative_volume": { "type": "integer" }
+              }
+            }
+          },
+          "asks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "price": { "type": "number" },
+                "volume": { "type": "integer" },
+                "order_count": { "type": "integer" },
+                "cumulative_volume": { "type": "integer" }
+              }
+            }
+          }
+        }
+      },
+      "DarkCrossRequest": {
+        "type": "object",
+        "required": ["instrument_id", "side", "quantity"],
+        "properties": {
+          "instrument_id": { "type": "string", "example": "GF-US-100" },
+          "side": { "type": "string", "enum": ["BUY", "SELL"] },
+          "quantity": { "type": "integer", "example": 2500 },
+          "min_quantity": { "type": "integer", "example": 500 },
+          "discretionary_limit_price": { "type": "number", "example": 100.10 },
+          "sweep_to_lit_on_unfilled": { "type": "boolean", "default": false }
+        }
+      },
+      "DarkCrossResponse": {
+        "type": "object",
+        "properties": {
+          "cross_status": { "type": "string", "example": "FILLED" },
+          "midpoint_execution_price": { "type": "number", "example": 99.975 },
+          "executed_quantity": { "type": "integer", "example": 2500 },
+          "price_improvement_total_usd": { "type": "number", "example": 62.50 },
+          "matching_latency_us": { "type": "integer", "example": 38 }
+        }
+      },
+      "ToxicityMetricsResponse": {
+        "type": "object",
+        "properties": {
+          "instrument_id": { "type": "string", "example": "GF-US-100" },
+          "current_vpin": { "type": "number", "example": 0.225 },
+          "vpin_threshold": { "type": "number", "example": 0.420 },
+          "is_toxic_flow_detected": { "type": "boolean", "example": false },
+          "hawkes_trade_intensity_lambda1": { "type": "number", "example": 3.42 },
+          "hawkes_cancel_intensity_lambda2": { "type": "number", "example": 4.15 },
+          "predatory_cancel_ratio": { "type": "number", "example": 0.548 },
+          "spoofing_alert": { "type": "boolean", "example": false }
+        }
+      },
+      "ProblemDetails": {
+        "type": "object",
+        "required": ["type", "title", "status", "detail"],
+        "properties": {
+          "type": { "type": "string", "format": "uri", "example": "https://nexus-ats.internal/errors/insufficient-liquidity" },
+          "title": { "type": "string", "example": "FOK Order Insufficient Liquidity" },
+          "status": { "type": "integer", "example": 400 },
+          "detail": { "type": "string", "example": "Cannot execute Fill-Or-Kill order of 5000 units within limit price $99.90." },
+          "instance": { "type": "string", "example": "/api/v1/order/submit" },
+          "timestamp": { "type": "string", "format": "date-time" }
+        }
+      }
+    }
+  }
+};

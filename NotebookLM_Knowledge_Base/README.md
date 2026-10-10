@@ -39,15 +39,25 @@ To ensure secure software development practices under NIST SP 800-218:
 
 ---
 
-## 4. Dual-Track Portfolio Structure
+## 4. Multi-Track Portfolio Structure & ASC 350-40 Appraisal
 
-| Parameter | Track 1: Lean Rapid-Sale (Default) | Track 2: Flagship Tier-1 (Selective) |
-|---|---|---|
-| **Fleet Count** | 86 Assets | 50 Deep-Tech SCADA Assets |
-| **Retail License** | \$199 | \$1,500 – \$3,500 |
-| **Commercial Team Seat** | \$599 | Custom Fleet Lease |
-| **Exclusive Buyout Anchor** | \$4,500 (\$3,800 – \$6,500 floor) | \$14,500 (\$10,000 – \$18,000 entry) |
-| **Retention Policy** | Transferable via Micro-APA | Strict 80% Retained Factory Floor (Max 27 APAs across fleet) |
+| Parameter | Track 1: Lean Rapid-Sale (Default) | Track 2: Flagship Tier-1 (Selective) | Track 3: F1 Skunkworks Engine (Production Ref) |
+|---|---|---|---|
+| **Fleet Count** | 86 Assets | 50 Deep-Tech SCADA Assets | 14 Onboarded & Standardized (`T3-NEXUS-01`, `GF-T3-138` to `GF-T3-150` via Universal Track 2 Telemetry Harness) |
+| **Retail License** | \$199 | \$1,500 – \$3,500 | \$1,500/mo Enterprise Seat License |
+| **Commercial Team Seat** | \$599 | Custom Fleet Lease | Managed VPC / Dedicated Cluster |
+| **Exclusive Buyout Anchor** | \$4,500 (\$3,800 – \$6,500 floor) | \$14,500 (\$10,000 – \$18,000 entry) | \$35,000 – \$65,000 Floor / \$75,000 – \$150,000+ Ceiling |
+| **Retention Policy** | Transferable via Micro-APA | Strict 80% Retained Factory Floor | Retained Sovereign Fleet (Curated 35 Units Target) |
+
+### ASC 350-40 Enterprise Replacement Valuation Ledger (150 Master Vault Assets & Production Engines)
+- **Enterprise Showroom Asking Price:** **\$3,110,000 (~$3.11M)**
+- **Agency Build-Cost Appraisal:** **\$1,950,000 (~$1.95M)**
+- **Senior Architect Hard Floor:** **\$1,500,000 (~$1.50M)** (13,700 direct engineering hrs @ \$109.49/hr)
+- **\"As-Is\" Bare Minimum (Baseline Trim Floor):** **\$1,150,000 (~$1.15M reserve)** (41% bulk asset discount applied to \$1.95M)
+- **The Hard Walk-Away Floor:** **\$1,150,000 – \$1,500,000** (Internal reserve threshold; bids below rejected)
+- **The Panic Floor Price:** **\$95,000 – \$145,000** (Distressed 50–70% cash liquidation baseline)
+- **80% Retention Lock:** 120 assets permanently vaulted / max 30 micro-APAs across fleet.
+- **Valuation Legend:** ASC 350/985 enterprise replacement cost methodologies applied with 41% bulk asset discount.
 
 ---
 

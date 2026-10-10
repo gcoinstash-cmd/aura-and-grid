@@ -1,0 +1,7 @@
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+pytest>=8.1.0
+google-cloud-secret-manager>=2.18.0
+google-cloud-trace>=1.11.0
+google-cloud-logging>=3.9.0
+google-cloud-kms>=2.21.0

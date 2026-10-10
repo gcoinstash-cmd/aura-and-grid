@@ -19,5 +19,21 @@ scratch/
 Ghost_Factory_Staging/
 ghost-factory-staging
 MASTER_BLUEPRINT_BACKUP/VALUATION_FRAMEWORK_PRIVATE.json
-MASTER_BLUEPRINT_BACKUP/portfolio-metrics.json
 *PRIVATE*.json
+
+# Catalog engines dependencies & virtual environments (Google Drive sync lock prevention)
+**/node_modules/
+**/.venv/
+**/.venv*/
+**/__pycache__/
+**/.pytest_cache/
+**/.coverage
+**/coverage/
+catalog/engines/**/node_modules/
+catalog/engines/**/.venv/
+catalog/engines/**/__pycache__/
+catalog/engines/**/.pytest_cache/
+engines/**/node_modules/
+engines/**/.venv/
+engines/**/__pycache__/
+engines/**/.pytest_cache/

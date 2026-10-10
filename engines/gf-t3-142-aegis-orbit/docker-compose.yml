@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  aegis-orbit-engine:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: gf-t3-142-aegis-orbit
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+      - APP_ENV=production
+      - ALLOYDB_HOST=alloydb-primary
+      - ALLOYDB_PORT=5432
+      - ALLOYDB_DB=aegis_orbit_db
+      - ALLOYDB_USER=orbit_operator
+      - ALLOYDB_PASSWORD=secret_local_dev
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1:8080/healthz"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+    restart: unless-stopped
+    depends_on:
+      - alloydb-primary
+
+  alloydb-primary:
+    image: postgres:16-alpine
+    container_name: gf-t3-142-alloydb-mock
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=aegis_orbit_db
+      - POSTGRES_USER=orbit_operator
+      - POSTGRES_PASSWORD=secret_local_dev
+    volumes:
+      - ./migrations/001_initial_schema.sql:/docker-entrypoint-initdb.d/001_initial_schema.sql:ro
+    restart: unless-stopped

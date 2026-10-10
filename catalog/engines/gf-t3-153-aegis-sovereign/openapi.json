@@ -1,0 +1,245 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "AegisSovereign Engine // GF-T3-153",
+    "description": "Multi-Party Threshold Signature Scheme (TSS) & Atomic DvP Settlement Core",
+    "version": "1.0.0-PROD"
+  },
+  "paths": {
+    "/healthz": {
+      "get": {
+        "summary": "Health Check",
+        "description": "Cloud Run container liveness and readiness probe.",
+        "operationId": "health_check_healthz_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/settlement/initiate": {
+      "post": {
+        "summary": "Initiate Settlement",
+        "operationId": "initiate_settlement_api_v1_settlement_initiate_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SettlementInitiateRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/settlement/execute": {
+      "post": {
+        "summary": "Execute Settlement",
+        "operationId": "execute_settlement_api_v1_settlement_execute_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SettlementExecuteRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "SettlementExecuteRequest": {
+        "properties": {
+          "trade_id": {
+            "type": "string",
+            "title": "Trade Id"
+          },
+          "participating_nodes": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "title": "Participating Nodes",
+            "default": [
+              1,
+              2,
+              3
+            ],
+            "example": [
+              1,
+              2,
+              3
+            ]
+          },
+          "simulate_cash_leg_timeout": {
+            "type": "boolean",
+            "title": "Simulate Cash Leg Timeout",
+            "default": false
+          },
+          "simulate_rogue_node_id": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Simulate Rogue Node Id"
+          }
+        },
+        "type": "object",
+        "required": [
+          "trade_id"
+        ],
+        "title": "SettlementExecuteRequest"
+      },
+      "SettlementInitiateRequest": {
+        "properties": {
+          "asset_ticker": {
+            "type": "string",
+            "title": "Asset Ticker",
+            "example": "UST-2028-TKN"
+          },
+          "asset_units": {
+            "type": "integer",
+            "title": "Asset Units",
+            "example": 5000000000000
+          },
+          "cash_ticker": {
+            "type": "string",
+            "title": "Cash Ticker",
+            "example": "USDC-INSTITUTIONAL"
+          },
+          "cash_units": {
+            "type": "integer",
+            "title": "Cash Units",
+            "example": 49850000000000
+          },
+          "asset_seller": {
+            "type": "string",
+            "title": "Asset Seller",
+            "example": "BLACKROCK_TREASURY_DESK"
+          },
+          "cash_buyer": {
+            "type": "string",
+            "title": "Cash Buyer",
+            "example": "JPM_INSTITUTIONAL_DVP"
+          },
+          "timeout_ms": {
+            "type": "integer",
+            "title": "Timeout Ms",
+            "default": 5000,
+            "example": 5000
+          }
+        },
+        "type": "object",
+        "required": [
+          "asset_ticker",
+          "asset_units",
+          "cash_ticker",
+          "cash_units",
+          "asset_seller",
+          "cash_buyer"
+        ],
+        "title": "SettlementInitiateRequest"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}

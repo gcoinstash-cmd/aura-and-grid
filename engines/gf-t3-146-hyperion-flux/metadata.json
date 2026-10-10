@@ -1,0 +1,8 @@
+{
+  "name": "Hyperion-Flux Optical Flow Engine (export) ",
+  "description": "F1 Skunkworks Track 3 Reference Engine (GF-T3-146) for Neuromorphic Event-Vision, Surface of Active Events (SAE) Lucas-Kanade Optical Flow, and Leaky Integrate-and-Fire (LIF) Spiking Estimators.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

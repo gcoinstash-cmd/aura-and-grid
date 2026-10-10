@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --font-base-size: 18px;
+  }
+
+  html {
+    font-size: 18px;
+  }
+
+  body {
+    background-color: #060913;
+    color: #f1f5f9;
+    font-size: 1.125rem; /* 18px */
+    font-weight: 500;
+    line-height: 1.65;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  /* Custom high-contrast scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a0f1d;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #06b6d4;
+  }
+}
+
+.text-cyber-cyan {
+  color: #06b6d4;
+}
+
+.bg-cyber-cyan {
+  background-color: #06b6d4;
+}
+
+.border-cyber-cyan {
+  border-color: #06b6d4;
+}
+
+.text-emerald-mint {
+  color: #10b981;
+}
+
+.bg-emerald-mint {
+  background-color: #10b981;
+}
+
+.text-signal-amber {
+  color: #f59e0b;
+}
+
+.bg-signal-amber {
+  background-color: #f59e0b;
+}
+
+/* Pulsing radar dot */
+@keyframes radar-pulse {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+.animate-radar {
+  animation: radar-pulse 2s infinite ease-in-out;
+}

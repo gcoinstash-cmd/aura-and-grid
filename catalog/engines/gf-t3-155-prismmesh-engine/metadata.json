@@ -1,0 +1,8 @@
+{
+  "name": "PrismMesh Engine GF-T3-155 (export)",
+  "description": "PBS MEV Auction & Deterministic Bundle Sequencing Core for Ultra-Low Latency Validator Block Space Packing",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

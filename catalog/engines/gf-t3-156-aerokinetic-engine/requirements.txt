@@ -1,0 +1,9 @@
+# AeroKinetic Engine GF-T3-156
+# Clean-Room Permissive Dependency Whitelist (MIT / BSD / Apache-2.0 only)
+# Zero GPL / AGPL / SSPL copyleft packages
+
+numpy>=1.26.0,<2.2.0
+pytest>=8.0.0
+fastapi>=0.110.0
+uvicorn[standard]>=0.28.0
+pydantic>=2.6.0

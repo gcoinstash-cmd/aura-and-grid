@@ -1,0 +1,8 @@
+{
+  "name": "GF-T3-147: Sol-Rotor (export)",
+  "description": "Enterprise-grade 6-DOF nonlinear flight dynamics simulator, Blade Element Momentum (BEM) aerodynamic solver, distributed consensus swarm HUD, AlloyDB time-series telemetry architecture, and $140,000 Monopoly Asset Purchase Agreement for Ghost FactoryOS Track 3 F1 Skunkworks asset GF-T3-147.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

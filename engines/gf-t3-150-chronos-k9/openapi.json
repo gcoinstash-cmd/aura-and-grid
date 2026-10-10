@@ -1,0 +1,130 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Chronos Kinetic-9 MagLev Telemetry Rig API",
+    "version": "1.0.0-PROD",
+    "description": "Production REST & High-Frequency Telemetry API for GF-T3-150 Chronos-K9.",
+    "license": {
+      "name": "Apache-2.0 / MIT Dual Permissive",
+      "url": "https://opensource.org/licenses/Apache-2.0"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://chronos-k9.production.internal/api/v1",
+      "description": "High-Frequency MagLev Avionics Gateway"
+    }
+  ],
+  "paths": {
+    "/healthz": {
+      "get": {
+        "summary": "Liveness Probe",
+        "operationId": "healthz",
+        "responses": {
+          "200": {
+            "description": "Service healthy"
+          }
+        }
+      }
+    },
+    "/v1/health": {
+      "get": {
+        "summary": "Engine Health Telemetry",
+        "operationId": "engineHealth",
+        "responses": {
+          "200": {
+            "description": "Subsystem health and superconducting coil state"
+          }
+        }
+      }
+    },
+    "/audit/compliance": {
+      "get": {
+        "summary": "Audit & Compliance Manifest",
+        "operationId": "auditCompliance",
+        "responses": {
+          "200": {
+            "description": "Clean-Room IP and NIST SP 800-218 certification"
+          }
+        }
+      }
+    },
+    "/api/v1/telemetry/state": {
+      "get": {
+        "summary": "Full MagLev Telemetry State",
+        "operationId": "getTelemetryState",
+        "responses": {
+          "200": {
+            "description": "Real-time bogie airgaps, cryogenic loops, and stator excitation"
+          }
+        }
+      }
+    },
+    "/api/v1/telemetry/run-mode": {
+      "post": {
+        "summary": "Set MagLev Run Mode",
+        "operationId": "setRunMode",
+        "responses": {
+          "200": {
+            "description": "Run mode updated"
+          }
+        }
+      }
+    },
+    "/api/v1/telemetry/bogie/flux-bias": {
+      "post": {
+        "summary": "Set Magnetic Flux Bias",
+        "operationId": "setFluxBias",
+        "responses": {
+          "200": {
+            "description": "Flux bias applied across quad bogies"
+          }
+        }
+      }
+    },
+    "/api/v1/telemetry/suspension/stiffness": {
+      "post": {
+        "summary": "Set Suspension Stiffness",
+        "operationId": "setSuspensionStiffness",
+        "responses": {
+          "200": {
+            "description": "Active suspension stiffness updated"
+          }
+        }
+      }
+    },
+    "/api/v1/telemetry/brake/linear": {
+      "post": {
+        "summary": "Toggle Linear Eddy-Current Braking",
+        "operationId": "toggleLinearBraking",
+        "responses": {
+          "200": {
+            "description": "Linear braking toggled"
+          }
+        }
+      }
+    },
+    "/api/v1/telemetry/emergency/scram": {
+      "post": {
+        "summary": "Trigger Emergency Magnetic SCRAM",
+        "operationId": "triggerEmergencyScram",
+        "responses": {
+          "200": {
+            "description": "Emergency SCRAM state executed"
+          }
+        }
+      }
+    },
+    "/api/v1/telemetry/cryo/purge": {
+      "post": {
+        "summary": "Trigger Cryogenic Purge Cycle",
+        "operationId": "triggerCryoPurge",
+        "responses": {
+          "200": {
+            "description": "Cryogenic purge cycle completed"
+          }
+        }
+      }
+    }
+  }
+}

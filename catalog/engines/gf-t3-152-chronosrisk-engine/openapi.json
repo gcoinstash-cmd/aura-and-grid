@@ -1,0 +1,303 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "ChronosRisk Engine // GF-T3-152",
+    "description": "Real-Time Portfolio Value-at-Risk (VaR), Expected Shortfall (CVaR), and Historical Shock Simulation Core",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/healthz": {
+      "get": {
+        "summary": "Health Check",
+        "description": "Cloud Run liveness and readiness probe endpoint",
+        "operationId": "health_check_healthz_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Health Check Healthz Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/risk/calculate": {
+      "post": {
+        "summary": "Calculate Risk",
+        "description": "Sub-50 microsecond analytical closed-form VaR & CVaR calculation endpoint",
+        "operationId": "calculate_risk_api_v1_risk_calculate_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VaRRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Calculate Risk Api V1 Risk Calculate Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/risk/stress-test": {
+      "post": {
+        "summary": "Stress Test",
+        "description": "Historical Macro Shock Stress-Testing Endpoint",
+        "operationId": "stress_test_api_v1_risk_stress_test_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StressRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Stress Test Api V1 Risk Stress Test Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AssetInput": {
+        "properties": {
+          "symbol": {
+            "type": "string",
+            "title": "Symbol"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "weight": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Weight"
+          },
+          "annual_vol": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Annual Vol"
+          },
+          "skewness": {
+            "type": "number",
+            "title": "Skewness"
+          },
+          "excess_kurtosis": {
+            "type": "number",
+            "title": "Excess Kurtosis"
+          },
+          "price_cents": {
+            "type": "integer",
+            "title": "Price Cents",
+            "default": 10000
+          }
+        },
+        "type": "object",
+        "required": [
+          "symbol",
+          "name",
+          "weight",
+          "annual_vol",
+          "skewness",
+          "excess_kurtosis"
+        ],
+        "title": "AssetInput"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "StressRequest": {
+        "properties": {
+          "scenario_key": {
+            "type": "string",
+            "title": "Scenario Key"
+          },
+          "portfolio_equity": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Portfolio Equity"
+          },
+          "assets": {
+            "items": {
+              "$ref": "#/components/schemas/AssetInput"
+            },
+            "type": "array",
+            "title": "Assets"
+          },
+          "correlation_matrix": {
+            "items": {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            "type": "array",
+            "title": "Correlation Matrix"
+          }
+        },
+        "type": "object",
+        "required": [
+          "scenario_key",
+          "portfolio_equity",
+          "assets",
+          "correlation_matrix"
+        ],
+        "title": "StressRequest"
+      },
+      "VaRRequest": {
+        "properties": {
+          "portfolio_equity": {
+            "type": "number",
+            "exclusiveMinimum": 0.0,
+            "title": "Portfolio Equity"
+          },
+          "confidence_interval": {
+            "type": "number",
+            "exclusiveMaximum": 1.0,
+            "exclusiveMinimum": 0.5,
+            "title": "Confidence Interval",
+            "default": 0.99
+          },
+          "time_horizon_days": {
+            "type": "integer",
+            "maximum": 252.0,
+            "minimum": 1.0,
+            "title": "Time Horizon Days",
+            "default": 1
+          },
+          "vol_multiplier": {
+            "type": "number",
+            "maximum": 10.0,
+            "exclusiveMinimum": 0.1,
+            "title": "Vol Multiplier",
+            "default": 1.0
+          },
+          "enable_cornish_fisher": {
+            "type": "boolean",
+            "title": "Enable Cornish Fisher",
+            "default": true
+          },
+          "assets": {
+            "items": {
+              "$ref": "#/components/schemas/AssetInput"
+            },
+            "type": "array",
+            "title": "Assets"
+          },
+          "correlation_matrix": {
+            "items": {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            "type": "array",
+            "title": "Correlation Matrix"
+          }
+        },
+        "type": "object",
+        "required": [
+          "portfolio_equity",
+          "assets",
+          "correlation_matrix"
+        ],
+        "title": "VaRRequest"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}

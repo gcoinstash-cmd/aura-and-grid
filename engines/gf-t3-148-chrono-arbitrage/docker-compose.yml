@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  chrono-arbitrage:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: gf-t3-148-chrono-arbitrage
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+      - LOG_LEVEL=INFO
+      - ENGINE_ID=GF-T3-148
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8080/healthz')"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+    restart: unless-stopped

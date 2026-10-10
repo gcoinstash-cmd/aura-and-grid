@@ -1,0 +1,167 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Ghost FactoryOS AeroDyn-RT 1000Hz Telemetry API",
+    "description": "High-throughput deterministic 1000Hz telemetry ingestion and active aerodynamic control API for Track 3 Engine GF-T3-139.",
+    "version": "3.1.0"
+  },
+  "servers": [
+    {
+      "url": "https://telemetry-rt.ghostfactoryos.internal/v1",
+      "description": "Deterministic Edge Ingest Node"
+    }
+  ],
+  "paths": {
+    "/telemetry/frame": {
+      "post": {
+        "summary": "Submit 1000Hz Telemetry Frame Batch",
+        "operationId": "submitTelemetryFrame",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TelemetryFrameInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Frame successfully ingested into memory ring buffer",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TelemetryAck"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/aero/state": {
+      "get": {
+        "summary": "Fetch Dynamic Aero State & CoP Balance",
+        "operationId": "getAeroState",
+        "responses": {
+          "200": {
+            "description": "Current aerodynamic estimation and downforce loads",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AeroStateResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/aero/drs": {
+      "post": {
+        "summary": "Command DRS / Airbrake Flap Angle",
+        "operationId": "commandDrsFlap",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DrsCommandInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Flap angle dispatched to CAN-Bus actuator"
+          }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "summary": "1000Hz Engine Health & Ring-Buffer Telemetry",
+        "operationId": "getEngineHealth",
+        "responses": {
+          "200": {
+            "description": "Engine health and zero-drop buffer metrics"
+          }
+        }
+      }
+    },
+    "/audit/compliance": {
+      "get": {
+        "summary": "External Third-Party Regulatory & Clean-Room Verification",
+        "operationId": "getAuditCompliance",
+        "responses": {
+          "200": {
+            "description": "Cryptographic compliance attestation"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "TelemetryFrameInput": {
+        "type": "object",
+        "required": ["chassis_id", "timestamp_ns", "ride_height_mm", "imu"],
+        "properties": {
+          "chassis_id": { "type": "string", "example": "GHOST-F1-PROTOTYPE" },
+          "timestamp_ns": { "type": "integer", "example": 1728169200000000 },
+          "speed_mph": { "type": "number", "example": 198.4 },
+          "ride_height_mm": {
+            "type": "object",
+            "properties": {
+              "fl": { "type": "number", "example": 18.2 },
+              "fr": { "type": "number", "example": 18.9 },
+              "rl": { "type": "number", "example": 32.1 },
+              "rr": { "type": "number", "example": 31.4 }
+            }
+          },
+          "imu": {
+            "type": "object",
+            "properties": {
+              "pitch_deg": { "type": "number", "example": -0.84 },
+              "roll_deg": { "type": "number", "example": 0.12 },
+              "yaw_rate_dps": { "type": "number", "example": 0.45 },
+              "lat_g": { "type": "number", "example": 0.15 },
+              "long_g": { "type": "number", "example": -3.85 }
+            }
+          }
+        }
+      },
+      "TelemetryAck": {
+        "type": "object",
+        "properties": {
+          "status": { "type": "string", "example": "INGESTED_RING_BUFFER" },
+          "frame_seq_id": { "type": "integer", "example": 894102 },
+          "latency_us": { "type": "integer", "example": 12 },
+          "ekf_residual_norm": { "type": "number", "example": 0.0031 }
+        }
+      },
+      "AeroStateResponse": {
+        "type": "object",
+        "properties": {
+          "cop_front_pct": { "type": "number", "example": 41.2 },
+          "cop_rear_pct": { "type": "number", "example": 58.8 },
+          "downforce_total_kgf": { "type": "number", "example": 2450.0 },
+          "downforce_front_kgf": { "type": "number", "example": 1009.4 },
+          "downforce_rear_kgf": { "type": "number", "example": 1440.6 },
+          "drag_kgf": { "type": "number", "example": 680.5 },
+          "wing_flap_deg": { "type": "number", "example": 42.0 },
+          "stall_risk": { "type": "number", "example": 0.002 }
+        }
+      },
+      "DrsCommandInput": {
+        "type": "object",
+        "required": ["requested_angle_deg", "reason"],
+        "properties": {
+          "requested_angle_deg": { "type": "number", "example": 42.0 },
+          "reason": { "type": "string", "example": "HIGH_SPEED_BRAKING_200MPH" }
+        }
+      }
+    }
+  }
+}

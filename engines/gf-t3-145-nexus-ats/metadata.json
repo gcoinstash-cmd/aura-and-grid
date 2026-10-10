@@ -1,0 +1,6 @@
+{
+  "name": "Ghost FactoryOS GF-T3-145 Nexus-ATS Engine",
+  "description": "Nexus-ATS: Hybrid Central Limit Order Book & Sub-Millisecond Dark Pool Crossing Engine. Track 3 F1 Skunkworks Engine with real-time L2 order book, VPIN toxicity filter, Hawkes intensity meter, and 10/10 Monopoly Vault documentation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

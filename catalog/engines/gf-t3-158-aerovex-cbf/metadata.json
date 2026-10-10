@@ -1,0 +1,8 @@
+{
+  "name": "GF-T3-158 AeroVex CBF Telemetry Cockpit (export) ",
+  "description": "Defense-grade telemetry cockpit and reference engine for AeroVex CBF decentralized multi-agent trajectory deconfliction with sub-microsecond QP solver and formal safety invariance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

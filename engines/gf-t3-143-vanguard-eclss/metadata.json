@@ -1,0 +1,8 @@
+{
+  "name": "Vanguard-ECLSS (GF-T3-143) (export) ",
+  "description": "Enterprise-grade reference engine, live telemetry mission control, MIMO-MPC gas balancer, psychrometric thermodynamic solver, and zero-RPO FDIR triage for deep-space habitat environmental control.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

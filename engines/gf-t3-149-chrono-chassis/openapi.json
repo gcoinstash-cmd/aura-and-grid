@@ -1,0 +1,119 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Chrono-Chassis Telemetry Interface API",
+    "version": "1.0.0-PROD",
+    "description": "Production REST & Telemetry Streaming Gateway for GF-T3-149 Chrono-Chassis.",
+    "license": {
+      "name": "Apache-2.0 / MIT Dual Permissive",
+      "url": "https://opensource.org/licenses/Apache-2.0"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://chrono-chassis.production.internal/api/v1",
+      "description": "High-Frequency Internal Telemetry Gateway"
+    }
+  ],
+  "paths": {
+    "/healthz": {
+      "get": {
+        "summary": "Liveness Probe",
+        "operationId": "healthz",
+        "responses": {
+          "200": {
+            "description": "Service healthy"
+          }
+        }
+      }
+    },
+    "/v1/health": {
+      "get": {
+        "summary": "Engine Health Telemetry",
+        "operationId": "engineHealth",
+        "responses": {
+          "200": {
+            "description": "Subsystem health and clock status"
+          }
+        }
+      }
+    },
+    "/audit/compliance": {
+      "get": {
+        "summary": "Audit & Compliance Manifest",
+        "operationId": "auditCompliance",
+        "responses": {
+          "200": {
+            "description": "Clean-Room IP and NIST SP 800-218 certification"
+          }
+        }
+      }
+    },
+    "/api/v1/telemetry/state": {
+      "get": {
+        "summary": "Full Telemetry State Snapshot",
+        "operationId": "getTelemetryState",
+        "responses": {
+          "200": {
+            "description": "Comprehensive quantum, aerodynamic, and arbitrage state"
+          }
+        }
+      }
+    },
+    "/api/v1/telemetry/drive-mode": {
+      "post": {
+        "summary": "Set Drive Mode",
+        "operationId": "setDriveMode",
+        "responses": {
+          "200": {
+            "description": "Mode updated and aerodynamic modifiers applied"
+          }
+        }
+      }
+    },
+    "/api/v1/telemetry/diffuser-angle": {
+      "post": {
+        "summary": "Update Aerodynamic Diffuser Angle",
+        "operationId": "setDiffuserAngle",
+        "responses": {
+          "200": {
+            "description": "Diffuser angle updated and downforce recomputed"
+          }
+        }
+      }
+    },
+    "/api/v1/telemetry/shock-event": {
+      "post": {
+        "summary": "Trigger Telemetry Shock Event",
+        "operationId": "triggerShockEvent",
+        "responses": {
+          "200": {
+            "description": "Shock event executed"
+          }
+        }
+      }
+    },
+    "/api/v1/telemetry/routes": {
+      "get": {
+        "summary": "List Global Arbitrage Vectors",
+        "operationId": "getRoutes",
+        "responses": {
+          "200": {
+            "description": "Active arbitrage routes and latency differentials"
+          }
+        }
+      }
+    },
+    "/api/v1/telemetry/cryo-pump/toggle": {
+      "post": {
+        "summary": "Toggle Cryogenic Cooling Pump",
+        "operationId": "toggleCryoPump",
+        "responses": {
+          "200": {
+            "description": "Cryogenic pump state toggled"
+          }
+        }
+      }
+    }
+  }
+}

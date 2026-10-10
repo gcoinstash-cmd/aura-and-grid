@@ -1,0 +1,7 @@
+{
+  "name": "GF-T3-142 Aegis-Orbit Mission Control",
+  "description": "Ghost FactoryOS Track 3 F1 Skunkworks Autonomous LEO Constellation Stationkeeping & Collision Avoidance Engine",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

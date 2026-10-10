@@ -1,0 +1,8 @@
+{
+  "name": "Ghost FactoryOS: AeroDyn-RT 1000Hz Telemetry Engine Workstation (export) ",
+  "description": "Production-grade dark-mode engineering workstation for Track 3 Engine GF-T3-139 1000Hz autonomous aerodynamic telemetry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "GF-T3-144 Lattice-Mesh: Post-Quantum Cryptographic Engine (export) ",
+  "description": "Enterprise-ready reference engine, interactive telemetry dashboard, and zero-trust key-encapsulation suite for ML-KEM-1024 post-quantum edge fleets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

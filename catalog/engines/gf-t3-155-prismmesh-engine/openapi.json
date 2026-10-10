@@ -1,0 +1,197 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "PrismMesh PBS MEV Auction API",
+    "description": "GF-T3-155 High-Frequency MEV Bundle Auction Engine",
+    "version": "1.5.5-T3"
+  },
+  "paths": {
+    "/healthz": {
+      "get": {
+        "tags": [
+          "Telemetry"
+        ],
+        "summary": "Healthz",
+        "operationId": "healthz_healthz_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/auction/submit": {
+      "post": {
+        "tags": [
+          "Auction"
+        ],
+        "summary": "Submit Bundle",
+        "operationId": "submit_bundle_api_v1_auction_submit_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BundleSubmitRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/auction/resolve": {
+      "post": {
+        "tags": [
+          "Auction"
+        ],
+        "summary": "Resolve Auction",
+        "operationId": "resolve_auction_api_v1_auction_resolve_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/telemetry": {
+      "get": {
+        "tags": [
+          "Telemetry"
+        ],
+        "summary": "Get Telemetry",
+        "operationId": "get_telemetry_api_v1_telemetry_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "BundleSubmitRequest": {
+        "properties": {
+          "builder_id": {
+            "type": "string",
+            "title": "Builder Id",
+            "default": "builder_alpha"
+          },
+          "tip_wei": {
+            "type": "integer",
+            "title": "Tip Wei",
+            "default": 500000000000000000
+          },
+          "gas_limit": {
+            "type": "integer",
+            "title": "Gas Limit",
+            "default": 300000
+          },
+          "read_keys": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Read Keys",
+            "default": [
+              "storage_pool_0x1"
+            ]
+          },
+          "write_keys": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Write Keys",
+            "default": [
+              "storage_pool_0x1"
+            ]
+          }
+        },
+        "type": "object",
+        "title": "BundleSubmitRequest"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}

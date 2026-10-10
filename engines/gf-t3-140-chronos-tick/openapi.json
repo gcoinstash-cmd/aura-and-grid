@@ -1,0 +1,126 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Chronos-Tick Algorithmic Execution Core API",
+    "version": "1.4.1",
+    "description": "Institutional REST & Streaming Execution API for Almgren-Chriss Slicing, Dynamic VWAP Curves, and AlloyDB Slippage Audit.",
+    "contact": {
+      "name": "Ghost FactoryOS Systems Architecture",
+      "url": "https://ghostfactory.io"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://algo-core.chronos-tick.internal/v1",
+      "description": "Production High-Throughput Cloud Run Cluster (Low Latency < 4.8ms)"
+    }
+  ],
+  "paths": {
+    "/healthz": {
+      "get": {
+        "summary": "Cloud Run Liveness Probe",
+        "operationId": "healthCheck",
+        "responses": {
+          "200": {
+            "description": "Liveness status OK"
+          }
+        }
+      }
+    },
+    "/v1/algo/mandates": {
+      "post": {
+        "summary": "Submit Parent Order Mandate for Almgren-Chriss Slicing",
+        "operationId": "createMandate",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["symbol", "side", "total_notional_usd", "duration_minutes"],
+                "properties": {
+                  "symbol": { "type": "string", "example": "BTC-USD" },
+                  "side": { "type": "string", "enum": ["BUY", "SELL"], "example": "BUY" },
+                  "total_notional_usd": { "type": "number", "example": 10000000 },
+                  "duration_minutes": { "type": "integer", "example": 60 },
+                  "strategy": { "type": "string", "enum": ["VWAP", "TWAP", "ALMGREN_CHRISS"], "default": "ALMGREN_CHRISS" },
+                  "risk_aversion_lambda": { "type": "number", "example": 0.000001 },
+                  "target_slippage_bps_cap": { "type": "number", "example": 3.0 }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Mandate Created & Slices Dispatched to RingBuffer",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "mandate_id": { "type": "string" },
+                    "status": { "type": "string", "example": "ACTIVE" },
+                    "total_slices": { "type": "integer", "example": 100 },
+                    "arrival_price": { "type": "number", "example": 64250.0 },
+                    "estimated_slippage_bps": { "type": "number", "example": 0.8 }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/algo/mandates/{id}": {
+      "delete": {
+        "summary": "Emergency Stop / Cancel Open Child Slices",
+        "operationId": "cancelMandate",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "string", "example": "MAN-2026-BTC-8921-ALPHA" } }
+        ],
+        "responses": {
+          "200": {
+            "description": "Mandate Cancelled & Remaining Slices Purged"
+          }
+        }
+      }
+    },
+    "/v1/algo/mandates/{id}/performance": {
+      "get": {
+        "summary": "Fetch Live VWAP & Slippage Audit Performance",
+        "operationId": "getMandatePerformance",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "string", "example": "MAN-2026-BTC-8921-ALPHA" } }
+        ],
+        "responses": {
+          "200": {
+            "description": "Realized Slippage and Benchmark Audit Metrics"
+          }
+        }
+      }
+    },
+    "/v1/health": {
+      "get": {
+        "summary": "Engine Clock Drift & AlloyDB Connection Health",
+        "operationId": "getEngineHealth",
+        "responses": {
+          "200": {
+            "description": "System Healthy"
+          }
+        }
+      }
+    },
+    "/audit/compliance": {
+      "get": {
+        "summary": "Clean-Room IP & NIST SP 800-218 Audit Attestation",
+        "operationId": "getAuditCompliance",
+        "responses": {
+          "200": {
+            "description": "Cryptographic compliance verification"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "catalogTotal": 160,
+  "track1Count": 85,
+  "track2Count": 25,
+  "unitRetailPrice": 199,
+  "retailShelfMSRP": 52915,
+  "buildVerified": 110,
+  "previewHttp200": 110,
+  "diligenceGrade": "L3-SUPABASE-READY",
+  "buildIntegrity": "110/110 VERIFIED (HTTP 200)",
+  "retentionFloorPercent": 80,
+  "retainedFloorCount": 88,
+  "maxApaCapacity": 22,
+  "valuationAppraisal": {
+    "planningFmv": 160000,
+    "fmvRange": [
+      105000,
+      235250
+    ],
+    "strategicAskRange": [
+      195000,
+      265000
+    ],
+    "realisticAcceptedRange": [
+      135000,
+      175000
+    ],
+    "replacementDevLabor": [
+      715000,
+      2020000
+    ],
+    "status": "PRE_REVENUE_SIMULATED_DEMOS",
+    "notes": "85 Lean Rapid-Sale Track 1 ($4.5k anchor) + 25 Flagship Candidate Track 2 ($14.5k anchor)"
+  },
+  "pricingProtocol": {
+    "track1": {
+      "name": "Lean Rapid-Sale Track (85 Models)",
+      "retailMsrp": 199,
+      "teamSeat": 599,
+      "buyoutFloor": [
+        3800,
+        6500
+      ],
+      "buyoutAnchor": 4500
+    },
+    "track2": {
+      "name": "Track 2 \u2014 Flagship Candidate Track ($14,500 Anchor, 25 Models)",
+      "commercialLicense": [
+        1500,
+        3500
+      ],
+      "entryBuyoutAnchor": 14500,
+      "entryBuyoutRange": [
+        10000,
+        18000
+      ],
+      "fullBuyoutRange": [
+        18000,
+        35000
+      ],
+      "strategicAcquisitionRange": [
+        35000,
+        75000
+      ]
+    }
+  },
+  "sectors": {
+    "fitness": 5,
+    "creative": 12,
+    "automotive": 6,
+    "wealth": 18,
+    "hospitality": 24,
+    "medical": 14,
+    "home_services": 5,
+    "heavy_fleet": 9,
+    "defense": 1,
+    "subsea": 4,
+    "aerospace": 7,
+    "clean_energy": 3,
+    "deep_tech": 2
+  },
+  "archetypes": {
+    "A": 20,
+    "B": 20,
+    "D": 26,
+    "C": 30,
+    "E": 14
+  },
+  "verifiedTimestamp": "2026-09-30T10:26:00Z",
+  "track1LeanTotal": 86,
+  "track2FlagshipTotal": 51,
+  "track3ServiceEngineTotal": 23,
+  "retainedFloorMinimum": 128,
+  "maxOwnershipTransferCapacity": 32,
+  "valuation": {
+    "asc350ReplacementFloor": 1751840,
+    "commercialAgencyBuildReplacement": 2280000,
+    "masterVaultCollectionAskingPrice": 3630000,
+    "distressedFloorCard4": 1050000
+  }
+}

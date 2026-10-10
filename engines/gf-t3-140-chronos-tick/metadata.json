@@ -1,0 +1,8 @@
+{
+  "name": "Chronos-Tick Algorithmic Execution Core Workstation (export) ",
+  "description": "Production-grade Track 3 FinTech/Quant Algorithmic Execution Core Workstation for GF-T3-141 featuring Almgren-Chriss VWAP slicing simulation, OpenAPI 3.1 live sandbox, AlloyDB DDL schemas, architectural topology, and institutional Monopoly Vault APA documentation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

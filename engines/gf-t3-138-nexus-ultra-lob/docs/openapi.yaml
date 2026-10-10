@@ -1,0 +1,177 @@
+openapi: 3.1.0
+info:
+  title: T3-NEXUS-ORDERBOOK Institutional API
+  version: 1.0.0
+  description: Sub-millisecond continuous double auction matching engine and market feed protocol.
+paths:
+  /healthz:
+    get:
+      summary: Engine Health & Liveness Probe
+      operationId: getHealth
+      responses:
+        "200":
+          description: Engine operational
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status: { type: string, example: "HEALTHY" }
+                  uptime_seconds: { type: number, example: 86400 }
+                  active_symbols: { type: array, items: { type: string } }
+                  memory_usage_mb: { type: number, example: 42.15 }
+
+  /api/v1/orders:
+    post:
+      summary: Submit New Limit or Market Order
+      operationId: placeOrder
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/OrderCreateRequest"
+      responses:
+        "201":
+          description: Order processed and matched/resting
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OrderExecutionResult"
+        "400":
+          description: Validation or business rule rejection
+        "422":
+          description: Malformed schema payload
+
+  /api/v1/orders/{order_id}:
+    delete:
+      summary: Cancel Resting Limit Order
+      operationId: cancelOrder
+      parameters:
+        - name: order_id
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "200":
+          description: Order cancelled successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OrderRecord"
+        "404":
+          description: Order ID not found or already filled
+
+  /api/v1/orderbook/l2:
+    get:
+      summary: Retrieve L2 Depth Ladder Snapshot
+      operationId: getL2Snapshot
+      parameters:
+        - name: symbol
+          in: query
+          required: true
+          schema: { type: string, example: "BTC-USDT" }
+        - name: depth
+          in: query
+          required: false
+          schema: { type: integer, default: 50, maximum: 200 }
+      responses:
+        "200":
+          description: Aggregated Price-Level Depth
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MarketDepthSnapshot"
+
+  /api/v1/trades/recent:
+    get:
+      summary: Retrieve Recent Executed Trades
+      operationId: getRecentTrades
+      parameters:
+        - name: symbol
+          in: query
+          required: true
+          schema: { type: string }
+        - name: limit
+          in: query
+          required: false
+          schema: { type: integer, default: 50, maximum: 500 }
+      responses:
+        "200":
+          description: Chronological trade list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/TradeExecution"
+
+components:
+  schemas:
+    OrderCreateRequest:
+      type: object
+      required: [symbol, side, order_type, quantity, trader_id]
+      properties:
+        client_order_id: { type: string }
+        symbol: { type: string }
+        side: { type: string, enum: [BUY, SELL] }
+        order_type: { type: string, enum: [LIMIT, MARKET] }
+        price: { type: string, description: "Decimal string for precision" }
+        quantity: { type: string }
+        time_in_force: { type: string, enum: [GTC, IOC, FOK], default: GTC }
+        trader_id: { type: string }
+        stp_mode: { type: string, enum: [CANCEL_MAKER, CANCEL_TAKER, DECREMENT_AND_CANCEL], default: CANCEL_TAKER }
+
+    OrderRecord:
+      type: object
+      properties:
+        order_id: { type: string, format: uuid }
+        client_order_id: { type: string }
+        symbol: { type: string }
+        side: { type: string }
+        order_type: { type: string }
+        price: { type: string }
+        original_quantity: { type: string }
+        remaining_quantity: { type: string }
+        filled_quantity: { type: string }
+        status: { type: string }
+        created_at_ns: { type: integer }
+
+    TradeExecution:
+      type: object
+      properties:
+        trade_id: { type: string, format: uuid }
+        sequence_id: { type: integer }
+        symbol: { type: string }
+        taker_order_id: { type: string }
+        maker_order_id: { type: string }
+        side: { type: string }
+        price: { type: string }
+        quantity: { type: string }
+        maker_fee_rebate: { type: string }
+        taker_fee_paid: { type: string }
+        executed_at_ns: { type: integer }
+
+    OrderExecutionResult:
+      type: object
+      properties:
+        order: { $ref: "#/components/schemas/OrderRecord" }
+        trades:
+          type: array
+          items: { $ref: "#/components/schemas/TradeExecution" }
+
+    OrderBookLevel:
+      type: object
+      properties:
+        price: { type: string }
+        quantity: { type: string }
+        order_count: { type: integer }
+
+    MarketDepthSnapshot:
+      type: object
+      properties:
+        symbol: { type: string }
+        sequence_id: { type: integer }
+        timestamp_ns: { type: integer }
+        bids: { type: array, items: { $ref: "#/components/schemas/OrderBookLevel" } }
+        asks: { type: array, items: { $ref: "#/components/schemas/OrderBookLevel" } }

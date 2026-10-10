@@ -1,0 +1,67 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "VoronoiGrid Swarm Partitioning API",
+    "description": "GF-T3-159 Decentralized Voronoi Coverage & Dynamic Partitioning Engine",
+    "version": "1.5.9-T3"
+  },
+  "paths": {
+    "/healthz": {
+      "get": {
+        "tags": [
+          "Telemetry"
+        ],
+        "summary": "Healthz",
+        "operationId": "healthz_healthz_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/voronoi/step": {
+      "post": {
+        "tags": [
+          "Simulation"
+        ],
+        "summary": "Step Voronoi",
+        "operationId": "step_voronoi_api_v1_voronoi_step_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/telemetry": {
+      "get": {
+        "tags": [
+          "Telemetry"
+        ],
+        "summary": "Get Telemetry",
+        "operationId": "get_telemetry_api_v1_telemetry_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "AeroKinetic Engine // GF-T3-156 (export) ",
+  "description": "Multi-Rate Extended Kalman Filter (ES-EKF) & 6-DoF Sensor Fusion Core with sub-15µs quaternion state prediction and Chi-squared outlier rejection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

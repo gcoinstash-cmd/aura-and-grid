@@ -1,10 +1,10 @@
 # Operational Due Diligence Audit & Investment Memo v2
 
 **Entity:** GhostFactoryOS / Aura & Grid  
-**Asset Fleet:** 114 Pre-Revenue Full-Stack Niche Operating System Blueprints (86 Track 1 + 28 Track 2)  
+**Asset Fleet:** 137 Custom Full-Stack Web Applications (86 Track 1 + 50 Track 2 + 1 Track 3 Engine active, 13 Track 3 queued)  
 **Audit Standard:** Institutional Micro-Acquisition & Technical Asset Valuation  
 **Date:** October 2026  
-**Retention Floor:** 80% Minimum Retained Floor Enforced (91 Assets Retained / Max 23 Micro-APAs)  
+**Retention Floor:** 80% Minimum Retained Floor Enforced (110 Assets Retained / Max 27 Micro-APAs)  
 
 ---
 
@@ -31,16 +31,18 @@
 
 ## 3. Commercial Valuation Appraisal & Dual-Track Protocol
 
-### 3.1 Current Market Reality (Pre-Revenue Inventory)
-* **Audited Code Replacement Cost:** The quoted development cost for a single full-stack application typically ranges from $4,000 to $10,000+. Across 136 assets (including 50 multi-screen SCADA flagships), replacement engineering labor is benchmarked at **$1,320,000 – $2,400,000** (5,600+ engineering hours @ $150–$250/hr).
-* **Current Orderly Fair-Market Value Estimate:**
-  * **Strategic Acquisition Ceiling:** **$2,150,000 – $3,850,000+** (Deep-tech niche monopoly premium)
-  * **Dev Agency Replacement Benchmark:** **$1,320,000 – $2,400,000**
-  * **Strategic Buyout Anchor:** **$1,112,000** ($935,000 – $1,600,000 range; 86 T1 @ $4.5k + 50 Flagship @ $14.5k)
-  * **Direct B2B Ask (Data Room Target):** **$195,000 – $265,000**
-  * **Realistic Accepted Offer (Quick-Close Wire / LOI):** **$135,000 – $175,000**
-  * **Distress / Quick-Sale Floor:** **$95,000 – $145,000** (50–70% buyer liquidation cash floor)
-  * **Retail Shelf Replacement MSRP:** **$92,114** (86 × $199 + 50 × $1,500)
+### 3.1 Current Market Reality & ASC 350-40 Replacement Appraisal
+* **Senior Architect Hard Floor:** **$1,500,000 (~$1.50M)** based on **13,700 direct engineering hours @ $109.49/hr** (100 hrs/app baseline across 137 custom full-stack web applications).
+* **Agency Build-Cost Appraisal:** **$1,950,000 (~$1.95M)** based on third-party custom enterprise software agency development quotes ($12k–$25k/app).
+* **Enterprise Showroom Asking Price:** **$3,110,000 (~$3.11M)**.
+* **Dealership Commercial Valuation Labels:**
+  * **"As-Is" Bare Minimum (Baseline Trim floor):** **$1,150,000 (~$1.15M reserve)** (41% bulk asset discount applied to $1.95M Agency Appraisal).
+  * **The Hard Walk-Away Floor:** **$1,150,000 – $1,500,000** (Internal reserve buyout; reject below).
+  * **The Panic Floor Price:** **$95,000 – $145,000** (Distressed 50–70% cash liquidation baseline).
+  * **Strategic Acquisition Ceiling:** **$2,150,000 – $3,850,000+** (Deep-tech niche monopoly premium).
+  * **Direct B2B Ask (Data Room Target):** **$195,000 – $265,000**.
+  * **Realistic Accepted Offer (Quick-Close Wire / LOI):** **$135,000 – $175,000**.
+  * **Valuation Legend:** ASC 350/985 enterprise replacement cost methodologies applied with 41% bulk asset discount.
 
 ### 3.2 Dual-Track Pricing Protocol
 1. **Track 1 — Lean Rapid-Sale (Default Standard)**:
@@ -54,7 +56,7 @@
    * Qualification Gate: Requires 8–15 interactive screens, domain physics solvers, operator journeys, and simulated-data disclosures.
 
 ### 3.3 Portfolio Governance & 80% Retained Floor
-* **Retention Floor**: Minimum **109 assets** remain permanently in the factory. Maximum transfer capacity is strictly **27 assets**.
+* **Retention Floor**: Minimum **110 assets** remain permanently in the factory. Maximum transfer capacity is strictly **27 assets**.
 * **Micro-APA Scope**: Transfers defined rights/code to **one specific asset only**. A micro-APA never transfers GhostFactoryOS, Aura & Grid, shared IP, or the full portfolio.
 
 ---
