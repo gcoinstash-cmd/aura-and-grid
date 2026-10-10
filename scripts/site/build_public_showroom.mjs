@@ -3,9 +3,9 @@
 /**
  * Ghost Factory™ — Public Brand Showroom Compiler
  * Builds an isolated, decoupled public showroom for Aura & Grid (site/index.html)
- * Extracts public metadata from CATALOG_MANIFEST.json and copies canonical covers into site/assets/covers/
- * Statically pre-renders all 136 digital vehicle cards with visible Truth Badges and Compliance Drawers.
- * Synchronized with GhostFactoryOS v1.8.0.
+ * Extracts public metadata from src/data/fleet.json and CATALOG_MANIFEST.json and copies canonical covers into site/assets/covers/
+ * Statically pre-renders all 160 digital vehicle cards with visible Truth Badges and Compliance Drawers.
+ * Synchronized with GhostFactoryOS v2.0-PROD.
  */
 
 import fs from 'node:fs';
@@ -18,12 +18,13 @@ const __dirname = path.dirname(__filename);
 const rootDir = path.resolve(__dirname, '../..');
 
 const MANIFEST_PATH = path.join(rootDir, 'CATALOG_MANIFEST.json');
+const FLEET_PATH = path.join(rootDir, 'src', 'data', 'fleet.json');
 const SITE_DIR = path.join(rootDir, 'site');
 const SITE_ASSETS_DIR = path.join(SITE_DIR, 'assets', 'covers');
 const OUTPUT_HTML_PATH = path.join(SITE_DIR, 'index.html');
 const STYLE_CSS_PATH = path.join(SITE_DIR, 'assets', 'style.css');
 
-console.log('⚡ [Aura & Grid] Compiling Decoupled Public Brand Showroom (136 Vehicles)...');
+console.log('⚡ [Aura & Grid] Compiling Decoupled Public Brand Showroom (160 Vehicles)...');
 
 if (!fs.existsSync(MANIFEST_PATH)) {
   console.error(`❌ Missing CATALOG_MANIFEST.json at: ${MANIFEST_PATH}`);
@@ -34,6 +35,7 @@ if (!fs.existsSync(MANIFEST_PATH)) {
 fs.mkdirSync(SITE_ASSETS_DIR, { recursive: true });
 
 const manifest = JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf-8'));
+const fleetData = fs.existsSync(FLEET_PATH) ? JSON.parse(fs.readFileSync(FLEET_PATH, 'utf-8')) : manifest.products;
 const distDirs = fs.existsSync(path.join(rootDir, 'dist'))
   ? fs.readdirSync(path.join(rootDir, 'dist')).filter(d => 
       !d.startsWith('.') && !d.startsWith('_') && fs.statSync(path.join(rootDir, 'dist', d)).isDirectory()
@@ -54,7 +56,15 @@ const sectorMap = {
   subsea: 'Deep Tech & SCADA',
   aerospace: 'Deep Tech & SCADA',
   clean_energy: 'Deep Tech & SCADA',
-  deep_tech: 'Deep Tech & SCADA'
+  deep_tech: 'Deep Tech & SCADA',
+  fintech_quant: 'Legal, Wealth & Advisory',
+  autonomous_telemetry: 'Deep Tech & SCADA',
+  edge_ai: 'Deep Tech & SCADA',
+  telemetry_aerospace: 'Deep Tech & SCADA',
+  'FinTech & Quant': 'Legal, Wealth & Advisory',
+  'Zero-Trust Cyber': 'Deep Tech & SCADA',
+  'Autonomous Telemetry / Guidance': 'Deep Tech & SCADA',
+  'Edge AI Swarms': 'Deep Tech & SCADA'
 };
 
 const REGULATED_ASSET_IDS = new Set([
@@ -112,11 +122,12 @@ function escapeHtml(str) {
     .replace(/>/g, '&gt;');
 }
 
-function generateSvgCover(p, isTrack2, sector) {
+function generateSvgCover(p, isTrack2, sector, isTrack3 = false) {
   const cleanId = String(p.id).padStart(3, '0');
-  const trackLabel = isTrack2 ? 'TRACK 2 // FLAGSHIP TIER-1' : 'TRACK 1 // LEAN PROTOTYPE';
-  const priceLabel = isTrack2 ? '$14,500 BUYOUT ANCHOR' : '$199 SOURCE LICENSE';
-  const archetype = p.archetype_name ? p.archetype_name.split(':')[1]?.trim() || p.archetype_name : 'Dense Operational Console';
+  const trackLabel = isTrack3 ? 'TRACK 3 // F1 SERVICE ENGINE' : isTrack2 ? 'TRACK 2 // FLAGSHIP TIER-1' : 'TRACK 1 // LEAN PROTOTYPE';
+  const priceLabel = isTrack3 ? '$35,000 BUYOUT FLOOR' : isTrack2 ? '$14,500 BUYOUT ANCHOR' : '$199 SOURCE LICENSE';
+  const trackColor = isTrack3 ? '#38BDF8' : isTrack2 ? '#F59E0B' : '#10B981';
+  const archetype = p.archetype_name ? p.archetype_name.split(':')[1]?.trim() || p.archetype_name : (isTrack3 ? 'F1 Skunkworks Service Engine' : 'Dense Operational Console');
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
   <defs>
@@ -140,7 +151,7 @@ function generateSvgCover(p, isTrack2, sector) {
   <!-- Header Bar -->
   <rect x="60" y="50" width="1160" height="40" fill="#14161C" rx="6" stroke="#232630" stroke-width="1"/>
   <text x="80" y="75" fill="#C5A880" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="600" letter-spacing="2">AURA &amp; GRID // TECHNICAL REPOSITORY</text>
-  <text x="1200" y="75" text-anchor="end" fill="${isTrack2 ? '#F59E0B' : '#10B981'}" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold">● ${trackLabel}</text>
+  <text x="1200" y="75" text-anchor="end" fill="${trackColor}" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold">● ${trackLabel}</text>
   
   <!-- Title Block -->
   <text x="60" y="150" fill="#C5A880" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="bold" letter-spacing="3">${escapeHtml(sector.toUpperCase())} // ${escapeHtml(archetype.toUpperCase())}</text>
@@ -152,24 +163,24 @@ function generateSvgCover(p, isTrack2, sector) {
   <line x1="60" y1="400" x2="1220" y2="400" stroke="#232630" stroke-width="1"/>
   
   <text x="90" y="365" fill="#6B7280" font-family="'JetBrains Mono', monospace" font-size="13">ARCHITECTURE</text>
-  <text x="260" y="365" fill="#E5E7EB" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="bold">React 19 + TypeScript + Tailwind CSS</text>
+  <text x="260" y="365" fill="#E5E7EB" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="bold">${isTrack3 ? 'Deterministic Containerized Python 3.11 / FastAPI' : 'React 19 + TypeScript + Tailwind CSS'}</text>
   
   <text x="680" y="365" fill="#6B7280" font-family="'JetBrains Mono', monospace" font-size="13">DATABASE ENGINE</text>
-  <text x="840" y="365" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="bold">Supabase PostgreSQL + Active RLS</text>
+  <text x="840" y="365" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="bold">${isTrack3 ? 'PostgreSQL AlloyDB + In-Memory State' : 'Supabase PostgreSQL + Active RLS'}</text>
   
   <text x="90" y="450" fill="#6B7280" font-family="'JetBrains Mono', monospace" font-size="13">BENCHMARK</text>
-  <text x="260" y="450" fill="#C5A880" font-family="'JetBrains Mono', monospace" font-size="14">${escapeHtml(p.design_benchmark || 'Industry Standard')}</text>
+  <text x="260" y="450" fill="#C5A880" font-family="'JetBrains Mono', monospace" font-size="14">${escapeHtml(p.design_benchmark || (isTrack3 ? 'Production Reference Engine' : 'Industry Standard'))}</text>
   
   <text x="680" y="450" fill="#6B7280" font-family="'JetBrains Mono', monospace" font-size="13">RELATIONAL TABLES</text>
-  <text x="840" y="450" fill="#93C5FD" font-family="'JetBrains Mono', monospace" font-size="14">${escapeHtml(p.tables ? p.tables.slice(0, 4).join(', ') : 'profiles, audit_logs')}</text>
+  <text x="840" y="450" fill="#93C5FD" font-family="'JetBrains Mono', monospace" font-size="14">${escapeHtml(p.tables ? p.tables.slice(0, 4).join(', ') : 'state_frames, audit_logs')}</text>
   
   <text x="90" y="525" fill="#6B7280" font-family="'JetBrains Mono', monospace" font-size="13">PRODUCT TRUTH</text>
-  <text x="260" y="525" fill="#F59E0B" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="600">[SIMULATED DATA PROTOTYPE] — CONCEPT DEMONSTRATION &amp; DEPLOYABLE SOURCE</text>
+  <text x="260" y="525" fill="#F59E0B" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="600">${isTrack3 ? '[WORKING SERVICE ENGINE] — VERIFIED CLEAN-ROOM PRODUCTION REFERENCE ARCHITECTURE' : '[SIMULATED DATA PROTOTYPE] — CONCEPT DEMONSTRATION &amp; DEPLOYABLE SOURCE'}</text>
   
   <!-- Footer Bar -->
   <rect x="60" y="615" width="1160" height="50" fill="#14161C" rx="8" stroke="#232630" stroke-width="1"/>
   <text x="90" y="646" fill="#C5A880" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="bold">VEHICLE #${cleanId}</text>
-  <text x="360" y="646" fill="#6B7280" font-family="'JetBrains Mono', monospace" font-size="12">CATALOG SYNCHRONIZED WITH GHOSTFACTORYOS v1.8.0</text>
+  <text x="360" y="646" fill="#6B7280" font-family="'JetBrains Mono', monospace" font-size="12">CATALOG SYNCHRONIZED WITH GHOSTFACTORYOS v2.0-PROD</text>
   <text x="1200" y="646" text-anchor="end" fill="#E5E7EB" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="bold">${priceLabel}</text>
 </svg>`;
 }
@@ -178,10 +189,11 @@ const publicProducts = [];
 let rasterCoversFound = 0;
 let svgCoversGenerated = 0;
 
-manifest.products.forEach(p => {
-  const isTrack2 = Boolean(p.flagship_qualified) || (p.pricing_track && p.pricing_track.includes('Track 2')) || (p.id >= 86 && p.id !== 112);
+fleetData.forEach(p => {
+  const isTrack3 = Boolean(p.pricing_track && p.pricing_track.includes('Track 3')) || (p.id >= 138);
+  const isTrack2 = !isTrack3 && (Boolean(p.flagship_qualified) || (p.pricing_track && p.pricing_track.includes('Track 2')) || (p.id >= 86 && p.id !== 112));
   const cleanSlug = p.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-  const sector = sectorMap[p.vertical] || (isTrack2 ? 'Deep Tech & SCADA' : 'Specialized Operations');
+  const sector = sectorMap[p.vertical] || (isTrack3 || isTrack2 ? 'Deep Tech & SCADA' : 'Specialized Operations');
 
   // Find matching dist dir
   const match = distDirs.find(d => {
@@ -252,7 +264,7 @@ manifest.products.forEach(p => {
   if (!foundLocalRaster) {
     const svgFilename = `${cleanSlug}-cover.svg`;
     const svgDestPath = path.join(SITE_ASSETS_DIR, svgFilename);
-    const svgContent = generateSvgCover(p, isTrack2, sector);
+    const svgContent = generateSvgCover(p, isTrack2, sector, isTrack3);
     fs.writeFileSync(svgDestPath, svgContent, 'utf-8');
     coverRelPath = `assets/covers/${svgFilename}`;
     svgCoversGenerated++;
@@ -267,16 +279,17 @@ manifest.products.forEach(p => {
     preview_url: p.preview_url,
     gumroad_url: p.gumroad_url || 'https://auraandgrid.gumroad.com',
     checkout_active: p.checkout_active ?? true,
-    status_badge: p.status_badge || (isTrack2 ? 'Track 2 Flagship' : 'Active Checkout'),
-    commercial_checkout_url: p.commercial_checkout_url || (isTrack2 ? '#pricing' : 'https://auraandgrid.gumroad.com'),
+    status_badge: p.status_badge || (isTrack3 ? 'Track 3 Working Service Engine' : isTrack2 ? 'Track 2 Flagship' : 'Active Checkout'),
+    commercial_checkout_url: p.commercial_checkout_url || (isTrack3 ? '#pricing' : isTrack2 ? '#pricing' : 'https://auraandgrid.gumroad.com'),
     cover_image: coverRelPath,
     coverImage: coverRelPath,
     best_for: p.best_for || '',
-    pricing_track: isTrack2 ? 'Track 2 — Flagship Tier-1 ($14,500 Anchor)' : 'Track 1 — Lean Rapid-Sale ($4,500 Anchor)',
+    pricing_track: isTrack3 ? 'Track 3 — F1 Skunkworks Engine ($35,000 Floor)' : isTrack2 ? 'Track 2 — Flagship Tier-1 ($14,500 Anchor)' : 'Track 1 — Lean Rapid-Sale ($4,500 Anchor)',
     isTrack2,
+    isTrack3,
     tables: p.tables || ['profiles', 'audit_logs', 'orders'],
-    archetype_name: p.archetype_name ? p.archetype_name.split(':')[1]?.trim() || p.archetype_name : 'Dense Operational Console',
-    design_benchmark: p.design_benchmark || 'Industry Standard Bespoke UI'
+    archetype_name: p.archetype_name ? p.archetype_name.split(':')[1]?.trim() || p.archetype_name : (isTrack3 ? 'F1 Skunkworks Service Engine' : 'Dense Operational Console'),
+    design_benchmark: p.design_benchmark || (isTrack3 ? 'Production Reference Engine' : 'Industry Standard Bespoke UI')
   });
 });
 
@@ -314,7 +327,7 @@ function renderCoverMarkup(p) {
           <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
           AEGIS SWARM RADAR // SECTOR 04
         </span>
-        <span class="text-neutral-400 font-mono text-[10px]">SCADA v1.8.0</span>
+        <span class="text-neutral-400 font-mono text-[10px]">SCADA v2.0-PROD</span>
       </div>
       <div class="relative z-10 my-auto flex items-center gap-3.5">
         <div class="w-12 h-12 rounded-xl bg-cyan-950/60 border border-cyan-500/50 flex items-center justify-center text-cyan-300 shadow-lg shadow-cyan-950/50 shrink-0">
@@ -362,7 +375,7 @@ function renderCoverMarkup(p) {
           <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
           OPEN-PIT HAULAGE // DISPATCH BENCH 09
         </span>
-        <span class="text-neutral-400 font-mono text-[10px]">SCADA v1.8.0</span>
+        <span class="text-neutral-400 font-mono text-[10px]">SCADA v2.0-PROD</span>
       </div>
       <div class="relative z-10 my-auto flex items-center gap-3.5">
         <div class="w-12 h-12 rounded-xl bg-amber-950/60 border border-amber-500/50 flex items-center justify-center text-amber-400 shadow-lg shadow-amber-950/50 shrink-0">
@@ -412,7 +425,7 @@ function renderCoverMarkup(p) {
           <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
           BENTHIC SEABED TELEMETRY // -4,200M
         </span>
-        <span class="text-neutral-400 font-mono text-[10px]">SCADA v1.8.0</span>
+        <span class="text-neutral-400 font-mono text-[10px]">SCADA v2.0-PROD</span>
       </div>
       <div class="relative z-10 my-auto flex items-center gap-3.5">
         <div class="w-12 h-12 rounded-xl bg-cyan-950/60 border border-cyan-500/50 flex items-center justify-center text-cyan-300 shadow-lg shadow-cyan-950/50 shrink-0">
@@ -950,19 +963,23 @@ function renderCoverMarkup(p) {
   }
 
   // Standard Retail Template Cover with verified cache busting
-  return `<img src="${p.cover_image}?v=1.8.0" alt="${escapeHtml(p.name)}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'640\\' height=\\'360\\' viewBox=\\'0 0 640 360\\'><rect width=\\'640\\' height=\\'360\\' fill=\\'%23111317\\'/><text x=\\'50%\\' y=\\'50%\\' fill=\\'%23C5A880\\' font-family=\\'serif\\' font-size=\\'18\\' font-weight=\\'bold\\' text-anchor=\\'middle\\' dominant-baseline=\\'middle\\'>AURA &amp; GRID // BLUEPRINT</text></svg>'">`;
+  return `<img src="${p.cover_image}?v=2.0-PROD" alt="${escapeHtml(p.name)}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'640\\' height=\\'360\\' viewBox=\\'0 0 640 360\\'><rect width=\\'640\\' height=\\'360\\' fill=\\'%23111317\\'/><text x=\\'50%\\' y=\\'50%\\' fill=\\'%23C5A880\\' font-family=\\'serif\\' font-size=\\'18\\' font-weight=\\'bold\\' text-anchor=\\'middle\\' dominant-baseline=\\'middle\\'>AURA &amp; GRID // BLUEPRINT</text></svg>'">`;
 }
 
-// Pre-render all 136 cards into static DOM
+// Pre-render all 160 cards into static DOM
 const renderedCardsHtml = publicProducts.map(p => {
-  const isRegulated = isRegulatedSector(p);
-  const isTrack2 = p.isTrack2;
-  const disclaimerText = isRegulated
+  const isTrack3 = Boolean(p.isTrack3);
+  const isTrack2 = Boolean(p.isTrack2);
+  const isRegulated = isTrack3 || isTrack2 || isRegulatedSector(p);
+  const disclaimerText = isTrack3
+    ? "WORKING SERVICE ENGINE — CLEAN-ROOM MIT/APACHE-2.0 PRODUCTION REFERENCE ARCHITECTURE. TESTED TO >80% PYTEST COVERAGE. IN-MEMORY / ALLOYDB PERSISTENT SCHEMAS. NOT A LIVE BROKERAGE OR CERTIFIED FINANCIAL SYSTEM."
+    : isRegulated
     ? "SIMULATED DATA PROTOTYPE — NOT CERTIFIED FOR OPERATIONAL, REGULATORY, OR LIFE-CRITICAL USE. NOT PRODUCTION OR PROFESSIONAL ADVICE."
     : "SIMULATED DATA PROTOTYPE — FOR CONCEPT DEMO ONLY — NOT PRODUCTION OR ADVICE.";
 
   const coverMarkup = renderCoverMarkup(p);
   const isCustomVectorCard = coverMarkup.trim().startsWith('<div');
+  const trackAttr = isTrack3 ? 'track3' : isTrack2 ? 'track2' : 'track1';
 
   return `
       <!-- Blueprint Card #${p.id} -->
@@ -972,7 +989,7 @@ const renderedCardsHtml = publicProducts.map(p => {
            data-name="${escapeHtml(p.name)}"
            data-category="${escapeHtml(p.category)}"
            data-sector="${escapeHtml(p.sector)}"
-           data-track="${isTrack2 ? 'track2' : 'track1'}"
+           data-track="${trackAttr}"
            data-benchmark="${escapeHtml(p.design_benchmark)}"
            data-archetype="${escapeHtml(p.archetype_name)}"
            data-tables="${escapeHtml(p.tables ? p.tables.join(', ') : '')}"
@@ -988,8 +1005,8 @@ const renderedCardsHtml = publicProducts.map(p => {
             <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/75 backdrop-blur-md border border-white/10 text-[10px] font-mono uppercase text-gold">
               ${escapeHtml(p.sector)}
             </div>
-            <div class="absolute top-3 right-3 px-2 py-0.5 rounded ${isTrack2 ? 'bg-amber-500/20 border-amber-500/40 text-amber-300' : 'bg-emerald/20 border-emerald/40 text-emerald'} border text-[10px] font-mono font-bold">
-              ${isTrack2 ? 'FLAGSHIP TIER-1' : 'ACTIVE CHECKOUT'}
+            <div class="absolute top-3 right-3 px-2 py-0.5 rounded ${isTrack3 ? 'bg-sky-500/20 border-sky-500/40 text-sky-300' : isTrack2 ? 'bg-amber-500/20 border-amber-500/40 text-amber-300' : 'bg-emerald/20 border-emerald/40 text-emerald'} border text-[10px] font-mono font-bold">
+              ${isTrack3 ? 'TRACK 3 F1 ENGINE' : isTrack2 ? 'FLAGSHIP TIER-1' : 'ACTIVE CHECKOUT'}
             </div>` : ''}
           </div>
 
@@ -1000,8 +1017,8 @@ const renderedCardsHtml = publicProducts.map(p => {
             
             <!-- High-Contrast Universal Truth Pill Badge (Visible plain text in DOM) -->
             <div class="my-2.5">
-              <span class="inline-flex items-center px-2.5 py-1 rounded-full bg-amber-400 text-black font-black text-xs font-mono uppercase tracking-wider shadow-sm border border-amber-300">
-                [SIMULATED DATA PROTOTYPE]
+              <span class="inline-flex items-center px-2.5 py-1 rounded-full ${isTrack3 ? 'bg-sky-400 text-black border-sky-300' : 'bg-amber-400 text-black border-amber-300'} font-black text-xs font-mono uppercase tracking-wider shadow-sm border">
+                ${isTrack3 ? '[WORKING SERVICE ENGINE]' : '[SIMULATED DATA PROTOTYPE]'}
               </span>
             </div>
 
@@ -1013,17 +1030,32 @@ const renderedCardsHtml = publicProducts.map(p => {
               <span class="text-zinc-200 text-xs sm:text-sm leading-snug">${escapeHtml(p.best_for ? p.best_for.replace(/^Best for:\s*/i, '') : 'Commercial agency client adaptation')}</span>
             </div>
 
-            <!-- Dual-Track Dealership Window Sticker Grid -->
-            <div class="mb-3 p-3.5 rounded-lg border text-xs font-mono ${isTrack2 ? 'bg-amber-950/20 border-amber-500/40 text-amber-200' : 'bg-emerald-950/20 border-emerald-500/40 text-emerald-200'}">
+            <!-- Multi-Track Dealership Window Sticker Grid -->
+            <div class="mb-3 p-3.5 rounded-lg border text-xs font-mono ${isTrack3 ? 'bg-sky-950/20 border-sky-500/40 text-sky-200' : isTrack2 ? 'bg-amber-950/20 border-amber-500/40 text-amber-200' : 'bg-emerald-950/20 border-emerald-500/40 text-emerald-200'}">
               <div class="flex items-center justify-between mb-2">
-                <span class="px-2.5 py-1 rounded-full text-xs font-mono font-bold tracking-wider uppercase ${isTrack2 ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40' : 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40'}">
-                  ${isTrack2 ? 'Track 2 // Flagship Tier-1' : 'Track 1 // Lean Rapid-Sale'}
+                <span class="px-2.5 py-1 rounded-full text-xs font-mono font-bold tracking-wider uppercase ${isTrack3 ? 'bg-sky-500/20 text-sky-300 border border-sky-500/40' : isTrack2 ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40' : 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40'}">
+                  ${isTrack3 ? 'Track 3 // F1 Service Engine' : isTrack2 ? 'Track 2 // Flagship Tier-1' : 'Track 1 // Lean Rapid-Sale'}
                 </span>
                 <span class="text-[11px] text-neutral-400 font-medium">
-                  ${isTrack2 ? 'SCADA / Deep Tech' : 'Turnkey Template'}
+                  ${isTrack3 ? 'Production Reference Engine' : isTrack2 ? 'SCADA / Deep Tech' : 'Turnkey Template'}
                 </span>
               </div>
-              ${isTrack2 ? `
+              ${isTrack3 ? `
+              <div class="space-y-1.5 text-xs sm:text-sm">
+                <div class="flex justify-between">
+                  <span class="text-neutral-400">Enterprise Seat:</span>
+                  <span class="text-sky-300 font-bold">$1,500 / month</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-neutral-400">APA Buyout Floor:</span>
+                  <span class="text-sky-400 font-bold">$35,000 – $65,000 USD</span>
+                </div>
+                <div class="flex justify-between text-xs text-neutral-400 border-t border-sky-500/15 pt-1.5">
+                  <span>Monopoly Vault Ceiling:</span>
+                  <span class="text-sky-200/90 font-medium">$75,000 – $150,000+ USD</span>
+                </div>
+              </div>
+              ` : isTrack2 ? `
               <div class="space-y-1.5 text-xs sm:text-sm">
                 <div class="flex justify-between">
                   <span class="text-neutral-400">Commercial License:</span>
@@ -1077,8 +1109,12 @@ const renderedCardsHtml = publicProducts.map(p => {
           <button onclick="openModal(this)" class="px-3.5 py-2.5 rounded bg-white/5 hover:bg-white/10 text-neutral-300 hover:text-white transition-all cursor-pointer min-h-[44px] flex items-center justify-center">
             Specs
           </button>
-          ${isTrack2 ? `
-          <button onclick="openFlagshipModal(${p.id}, '${escapeHtml(p.name).replace(/'/g, "\\'")}', '${escapeHtml(p.sector).replace(/'/g, "\\'")}')" class="py-2.5 px-3.5 rounded bg-amber-500/15 border-amber-500/40 text-amber-300 hover:bg-amber-500 hover:text-black border font-semibold transition-all min-h-[44px] flex items-center justify-center whitespace-nowrap">
+          ${isTrack3 ? `
+          <button onclick="openFlagshipModal(${p.id}, '${escapeHtml(p.name).replace(/'/g, "\\'")}', '${escapeHtml(p.sector).replace(/'/g, "\\'")}', 'track3')" class="py-2.5 px-3.5 rounded bg-sky-500/15 border-sky-500/40 text-sky-300 hover:bg-sky-500 hover:text-black border font-semibold transition-all min-h-[44px] flex items-center justify-center whitespace-nowrap">
+            Engine Terms ➔
+          </button>
+          ` : isTrack2 ? `
+          <button onclick="openFlagshipModal(${p.id}, '${escapeHtml(p.name).replace(/'/g, "\\'")}', '${escapeHtml(p.sector).replace(/'/g, "\\'")}', 'track2')" class="py-2.5 px-3.5 rounded bg-amber-500/15 border-amber-500/40 text-amber-300 hover:bg-amber-500 hover:text-black border font-semibold transition-all min-h-[44px] flex items-center justify-center whitespace-nowrap">
             Request Terms ➔
           </button>
           ` : `
@@ -1097,9 +1133,9 @@ const showroomHtml = `<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>Aura & Grid — The Institutional Software Foundry for Modern Agencies</title>
-  <meta name="description" content="A curated fleet of 136 deployable commercial web operating system blueprints (86 Track 1 Lean Prototypes + 50 Track 2 Flagships) engineered on React 19, Tailwind CSS, and Supabase PostgreSQL with active Row Level Security patterns.">
-  <meta name="version" content="v1.8.0-institutional-pass">
-  <meta name="telemetry:sync" content="GhostFactoryOS v1.8.0">
+  <meta name="description" content="A curated fleet of 160 deployable commercial web operating system blueprints (86 Track 1 Lean Prototypes + 51 Track 2 Flagships + 23 Track 3 F1 Skunkworks Engines) engineered on React 19, Tailwind CSS, and Supabase PostgreSQL with active Row Level Security patterns.">
+  <meta name="version" content="v2.0-PROD">
+  <meta name="telemetry:sync" content="GhostFactoryOS v2.0-PROD">
   <link rel="canonical" href="https://auraandgrid.com/">
   
   <!-- Preconnect & Web Fonts -->
@@ -1108,7 +1144,7 @@ const showroomHtml = `<!DOCTYPE html>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Primary Pre-Compiled Standalone Stylesheet -->
-  <link rel="stylesheet" href="assets/style.css?v=1.8.0">
+  <link rel="stylesheet" href="assets/style.css?v=2.0-PROD">
 
   <!-- Progressive Fallback Tailwind CDN Engine -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -1206,7 +1242,7 @@ const showroomHtml = `<!DOCTYPE html>
         <span class="text-neutral-700">/</span>
         <span class="flex items-center gap-1.5 text-[10px] font-mono uppercase bg-neutral-900 text-amber-400 px-2 py-0.5 rounded border border-neutral-800">
           <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-          136 FLEET // GHOSTFACTORYOS V1.8.0
+          160 FLEET // GHOSTFACTORYOS v2.0-PROD
         </span>
       </div>
 
@@ -1233,10 +1269,10 @@ const showroomHtml = `<!DOCTYPE html>
     <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gold/10 via-transparent to-transparent pointer-events-none"></div>
     <div class="max-w-6xl mx-auto text-center relative z-10">
       
-      <!-- Synced dynamic badge with GhostFactoryOS v1.7.0 -->
+      <!-- Synced dynamic badge with GhostFactoryOS v2.0-PROD -->
       <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-gold/10 border border-gold/30 text-gold text-xs font-mono uppercase tracking-widest mb-6">
         <span class="w-2 h-2 rounded-full bg-emerald animate-pulse"></span>
-        <span>Catalog synchronized with GhostFactoryOS v1.8.0 // 136 Curated Digital Vehicles</span>
+        <span>CATALOG SYNCHRONIZED WITH GHOSTFACTORYOS v2.0-PROD // 160 CURATED DIGITAL VEHICLES</span>
       </div>
 
       <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.08] max-w-4xl mx-auto mb-6">
@@ -1255,7 +1291,7 @@ const showroomHtml = `<!DOCTYPE html>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
         <a href="#catalog" class="w-full sm:w-auto px-8 py-3.5 rounded-lg bg-white text-black font-semibold text-sm hover:bg-neutral-200 transition-all flex items-center justify-center space-x-2">
-          <span>Explore 136 Digital Vehicles</span>
+          <span>Explore 160 Digital Vehicles</span>
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </a>
         <a href="#pricing" class="w-full sm:w-auto px-8 py-3.5 rounded-lg bg-panel hairline-border hover:border-gold/50 text-white font-medium text-sm transition-all flex items-center justify-center space-x-2">
@@ -1268,8 +1304,8 @@ const showroomHtml = `<!DOCTYPE html>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto text-left font-mono">
         <div class="p-4 rounded-lg bg-panel hairline-border">
           <div class="text-xs uppercase text-neutral-500 mb-1">Fleet Inventory</div>
-          <div class="text-xl font-bold text-white">136 Vehicles</div>
-          <div class="text-[11px] text-emerald mt-1">● 86 Lean + 36 Flagships</div>
+          <div class="text-xl font-bold text-white">160 Vehicles</div>
+          <div class="text-[11px] text-emerald mt-1">● 86 Track 1 + 51 Track 2 + 23 Track 3 Engines</div>
         </div>
         <div class="p-4 rounded-lg bg-panel hairline-border">
           <div class="text-xs uppercase text-neutral-500 mb-1">Architecture Stack</div>
@@ -1283,7 +1319,7 @@ const showroomHtml = `<!DOCTYPE html>
         </div>
         <div class="p-4 rounded-lg bg-panel hairline-border">
           <div class="text-xs uppercase text-neutral-500 mb-1">Foundry Status</div>
-          <div class="text-xl font-bold text-gold">GhostFactoryOS v1.8.0</div>
+          <div class="text-xl font-bold text-gold">GhostFactoryOS v2.0-PROD</div>
           <div class="text-[11px] text-neutral-400 mt-1">Audit 360 Institutional Pass</div>
         </div>
       </div>
@@ -1393,7 +1429,7 @@ const showroomHtml = `<!DOCTYPE html>
               <li class="flex items-center space-x-2"><span class="text-amber-400">✓</span> <span>Exclusive Buyout: $10,000–$18,000</span></li>
               <li class="flex items-center space-x-2"><span class="text-amber-400">✓</span> <span>8–15 interactive operator panels</span></li>
               <li class="flex items-center space-x-2"><span class="text-amber-400">✓</span> <span>NIST SSDF &amp; SBOM compliance pack</span></li>
-              <li class="flex items-center space-x-2"><span class="text-amber-400">✓</span> <span>Max 23 Micro-APAs across portfolio</span></li>
+              <li class="flex items-center space-x-2"><span class="text-amber-400">✓</span> <span>Max 32 Micro-APAs across portfolio</span></li>
             </ul>
           </div>
           <button onclick="openFlagshipModal(null, null, null)" class="w-full py-3 rounded-lg bg-amber-500/15 hover:bg-amber-500 text-amber-300 hover:text-black border border-amber-500/40 font-bold text-center text-xs uppercase tracking-wider transition-all min-h-[44px] flex items-center justify-center cursor-pointer">
@@ -1405,25 +1441,26 @@ const showroomHtml = `<!DOCTYPE html>
     </div>
   </section>
 
-  <!-- ================= PUBLIC FLEET CATALOG (136 DIGITAL VEHICLES) ================= -->
+  <!-- ================= PUBLIC FLEET CATALOG (160 DIGITAL VEHICLES) ================= -->
   <section id="catalog" class="scroll-mt-32 py-24 px-6 max-w-7xl mx-auto">
     <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
       <div>
         <div class="text-xs font-mono uppercase tracking-widest text-gold mb-2">Curated Fleet Catalog</div>
-        <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight text-white">The Verified Fleet Index (136 Vehicles)</h2>
-        <p class="text-neutral-400 text-sm mt-2">Filter and inspect 136 deployable commercial web operating system prototypes across specialized industry sectors: 86 Track 1 Lean Prototypes and 50 Track 2 Flagships.</p>
+        <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight text-white">The Verified Fleet Index (160 Vehicles)</h2>
+        <p class="text-neutral-400 text-sm mt-2">Filter and inspect 160 deployable commercial web operating system prototypes across specialized industry sectors: 86 Track 1 Lean Prototypes, 51 Track 2 Flagships, and 23 Track 3 F1 Skunkworks Engines.</p>
       </div>
 
       <!-- Search Input -->
       <div class="w-full md:w-80">
-        <input type="text" id="searchInput" placeholder="Search 136 blueprints by niche, title, or stack..." class="w-full bg-card hairline-border rounded-lg px-4 py-2.5 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-gold">
+        <input type="text" id="searchInput" placeholder="Search 160 blueprints by niche, title, or stack..." class="w-full bg-card hairline-border rounded-lg px-4 py-2.5 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-gold">
       </div>
     </div>
 
     <!-- Sector & Track Filter Pills -->
     <div class="flex flex-wrap gap-2 mb-10 text-xs font-medium" id="filterContainer">
-      <button class="filter-btn active px-4 py-2 rounded-full bg-gold text-black font-semibold transition-all min-h-[44px] flex items-center" data-filter="all">All Vehicles (136)</button>
-      <button class="filter-btn px-4 py-2 rounded-full bg-card hairline-border text-amber-300 hover:text-amber-200 border-amber-500/30 transition-all min-h-[44px] flex items-center" data-filter="track2">Track 2 Flagships (36)</button>
+      <button class="filter-btn active px-4 py-2 rounded-full bg-gold text-black font-semibold transition-all min-h-[44px] flex items-center" data-filter="all">All Vehicles (160)</button>
+      <button class="filter-btn px-4 py-2 rounded-full bg-card hairline-border text-sky-400 hover:text-sky-300 border-sky-500/30 transition-all min-h-[44px] flex items-center" data-filter="track3">Track 3 Service Engines (23)</button>
+      <button class="filter-btn px-4 py-2 rounded-full bg-card hairline-border text-amber-300 hover:text-amber-200 border-amber-500/30 transition-all min-h-[44px] flex items-center" data-filter="track2">Track 2 Flagships (51)</button>
       <button class="filter-btn px-4 py-2 rounded-full bg-card hairline-border text-emerald hover:text-white border-emerald/30 transition-all min-h-[44px] flex items-center" data-filter="track1">Track 1 Lean Prototypes (86)</button>
       <button class="filter-btn px-4 py-2 rounded-full bg-card hairline-border text-neutral-300 hover:text-white transition-all min-h-[44px] flex items-center" data-filter="Hospitality & Dining">Hospitality &amp; Dining</button>
       <button class="filter-btn px-4 py-2 rounded-full bg-card hairline-border text-neutral-300 hover:text-white transition-all min-h-[44px] flex items-center" data-filter="Legal, Wealth & Advisory">Legal, Wealth &amp; Advisory</button>
@@ -1435,7 +1472,7 @@ const showroomHtml = `<!DOCTYPE html>
       <button class="filter-btn px-4 py-2 rounded-full bg-card hairline-border text-neutral-300 hover:text-white transition-all min-h-[44px] flex items-center" data-filter="Deep Tech & SCADA">Deep Tech &amp; SCADA</button>
     </div>
 
-    <!-- Catalog Cards Grid (Pre-rendered 136 Blueprints) -->
+    <!-- Catalog Cards Grid (Pre-rendered 160 Blueprints) -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="productsGrid">
 ${renderedCardsHtml}
     </div>
@@ -1443,7 +1480,7 @@ ${renderedCardsHtml}
     <!-- Showroom Pagination & Fleet Navigation (24 Blueprints / Page) -->
     <div id="paginationContainer" class="mt-12 flex flex-col md:flex-row items-center justify-between gap-6 font-mono text-xs border-t border-white/5 pt-8">
       <div id="paginationInfo" class="text-neutral-400 text-center md:text-left">
-        Showing <span id="pageRangeStart" class="text-white font-bold">1</span>–<span id="pageRangeEnd" class="text-white font-bold">24</span> of <span id="pageTotalCount" class="text-gold font-bold">136</span> Catalog Blueprints
+        Showing <span id="pageRangeStart" class="text-white font-bold">1</span>–<span id="pageRangeEnd" class="text-white font-bold">24</span> of <span id="pageTotalCount" class="text-gold font-bold">160</span> Catalog Blueprints
       </div>
       <div class="flex items-center gap-2">
         <button id="prevPageBtn" class="px-3.5 py-2 rounded-lg bg-card hairline-border text-neutral-300 hover:text-white hover:border-gold/50 disabled:opacity-30 disabled:cursor-not-allowed transition-all font-semibold min-h-[44px] flex items-center">
@@ -1458,7 +1495,7 @@ ${renderedCardsHtml}
       </div>
       <div>
         <button id="viewAllToggle" class="px-4 py-2 rounded-lg bg-card hairline-border text-neutral-400 hover:text-gold hover:border-gold/40 transition-all min-h-[44px] flex items-center">
-          Show All (136)
+          Show All (160)
         </button>
       </div>
     </div>
@@ -1569,7 +1606,7 @@ ${renderedCardsHtml}
           <div class="text-xs font-mono uppercase tracking-widest text-gold mb-1">Portfolio Governance Standard</div>
           <h4 class="text-base font-serif font-bold text-white mb-1">Strict 80% Retained Fleet Floor Lock</h4>
           <p class="text-xs text-neutral-400 leading-relaxed">
-            Aura &amp; Grid maintains an institutional retention floor: a minimum of 80% of all cataloged digital vehicles (currently 109 of 136) are permanently vaulted and retained. Maximum micro-APA buyout capacity across the fleet is strictly capped at 27 vehicles. Every micro-APA transfers defined rights/code to one specific asset and permanently excludes GhostFactoryOS core infrastructure and shared IP.
+            Aura &amp; Grid maintains an institutional retention floor: a minimum of 80% of all cataloged digital vehicles (currently 128 of 160) are permanently vaulted and retained. Maximum micro-APA buyout capacity across the fleet is strictly capped at 32 vehicles. Every micro-APA transfers defined rights/code to one specific asset and permanently excludes GhostFactoryOS core infrastructure and shared IP.
           </p>
         </div>
         <button onclick="openLegalModal('license')" class="px-5 py-2.5 rounded-lg bg-white/5 hover:bg-white/10 text-white font-mono text-xs uppercase tracking-wider shrink-0 transition-all border border-white/10 min-h-[44px]">
@@ -1598,7 +1635,7 @@ ${renderedCardsHtml}
           </p>
           <div class="pt-2 text-[11px] text-neutral-500">
             An asset holding of ZoMae Media LLC.<br>
-            Synchronized with GhostFactoryOS v1.8.0.
+            Synchronized with GhostFactoryOS v2.0-PROD.
           </div>
         </div>
 
@@ -1606,8 +1643,9 @@ ${renderedCardsHtml}
         <div>
           <div class="text-white font-bold uppercase tracking-wider mb-3 text-[11px]">Fleet Navigation</div>
           <ul class="space-y-2 text-xs">
-            <li><a href="#catalog" class="hover:text-gold transition-colors">Catalog (136 Vehicles)</a></li>
-            <li><a href="#catalog" onclick="filterByTrack('track2')" class="hover:text-gold transition-colors">Track 2 Flagships (50)</a></li>
+            <li><a href="#catalog" class="hover:text-gold transition-colors">Catalog (160 Vehicles)</a></li>
+            <li><a href="#catalog" onclick="filterByTrack('track3')" class="hover:text-gold transition-colors">Track 3 Service Engines (23)</a></li>
+            <li><a href="#catalog" onclick="filterByTrack('track2')" class="hover:text-gold transition-colors">Track 2 Flagships (51)</a></li>
             <li><a href="#catalog" onclick="filterByTrack('track1')" class="hover:text-gold transition-colors">Track 1 Lean Prototypes (86)</a></li>
             <li><a href="#architecture" class="hover:text-gold transition-colors">Technical Diligence &amp; RLS</a></li>
           </ul>
@@ -1645,7 +1683,7 @@ ${renderedCardsHtml}
         <div class="flex items-center space-x-4 shrink-0">
           <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10 text-neutral-400">NIST SP 800-218 Aligned</span>
           <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10 text-neutral-400">WCAG 2.2 AA Target</span>
-          <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10 text-neutral-400">GhostFactoryOS v1.8.0</span>
+          <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10 text-neutral-400">GhostFactoryOS v2.0-PROD</span>
         </div>
       </div>
 
@@ -1709,7 +1747,7 @@ ${renderedCardsHtml}
           <div class="text-gold font-bold uppercase tracking-wider text-sm sm:text-base mb-2">License vs. Ownership APA Distinction:</div>
           <p>• <strong>License:</strong> Grants usage and client deployment rights. Does NOT transfer copyright or ownership of the underlying framework templates.</p>
           <p>• <strong>Micro-APA (Asset Purchase Agreement):</strong> A selective agreement transferring exclusive code rights to one defined asset only. A micro-APA NEVER transfers GhostFactoryOS core infrastructure, Aura &amp; Grid showroom brands, shared design tokens, component libraries, or future catalog rights.</p>
-          <p>• <strong>80% Retention Floor:</strong> ZoMae Media LLC permanently vaults and retains at least 80% of all digital vehicles in the catalog (minimum 109 of 136 assets retained). Maximum micro-APA transfer capacity across the entire collection is capped at 27 assets.</p>
+          <p>• <strong>80% Retention Floor:</strong> ZoMae Media LLC permanently vaults and retains at least 80% of all digital vehicles in the catalog (minimum 128 of 160 assets retained). Maximum micro-APA transfer capacity across the entire collection is capped at 32 assets.</p>
         </div>
         <p class="text-base text-neutral-300 leading-relaxed mt-4">
           <strong>Prohibited:</strong> Redistribution, reselling, or public dissemination of raw source code, SQL migrations, or zip archives on third-party template marketplaces or public repositories.
@@ -1793,29 +1831,29 @@ ${renderedCardsHtml}
       <button onclick="closeFlagshipModal()" class="absolute top-4 right-4 text-neutral-400 hover:text-white text-lg font-mono p-2 cursor-pointer">✕</button>
       
       <div class="inline-flex items-center px-2.5 py-0.5 rounded text-[10px] font-mono font-bold uppercase tracking-wider bg-amber-500/15 border border-amber-500/40 text-amber-300 mb-3">
-        Track 2 // Flagship Acquisition Gate
+        Track 2 &amp; Track 3 // Institutional Acquisition Gate
       </div>
-      <h3 class="text-2xl font-serif font-bold text-white mb-2" id="flagshipModalTitle">Request Flagship Terms</h3>
-      <p class="text-xs text-neutral-400 mb-6 font-mono" id="flagshipModalSector">Deep Tech &amp; SCADA Prototype Fleet</p>
+      <h3 class="text-2xl font-serif font-bold text-white mb-2" id="flagshipModalTitle">Request Acquisition Terms</h3>
+      <p class="text-xs text-neutral-400 mb-6 font-mono" id="flagshipModalSector">Deep Tech, SCADA &amp; Service Engine Fleet</p>
 
       <div class="space-y-3 text-xs font-mono mb-6 bg-obsidian p-4 rounded-lg hairline-border">
-        <div class="flex justify-between"><span class="text-neutral-500">Commercial Flagship License:</span> <span class="text-amber-300 font-bold">$1,500 – $3,500 USD</span></div>
-        <div class="flex justify-between"><span class="text-neutral-500">Entry Buyout Anchor:</span> <span class="text-amber-400 font-bold">$14,500 USD</span></div>
-        <div class="flex justify-between"><span class="text-neutral-500">Exclusive Buyout Range:</span> <span class="text-amber-200/90">$10,000 – $18,000 USD</span></div>
-        <div class="flex justify-between"><span class="text-neutral-500">Full Strategic Buyout:</span> <span class="text-white">$18,000 – $35,000+ USD</span></div>
-        <div class="flex justify-between border-t border-white/5 pt-2"><span class="text-neutral-500">Governance Lock:</span> <span class="text-emerald">Max 23 Micro-APAs (80% Floor)</span></div>
+        <div class="flex justify-between"><span class="text-neutral-500">Track 2 Flagship License:</span> <span class="text-amber-300 font-bold">$1,500 – $3,500 USD</span></div>
+        <div class="flex justify-between"><span class="text-neutral-500">Track 3 Enterprise Seat:</span> <span class="text-sky-300 font-bold">$1,500 / month</span></div>
+        <div class="flex justify-between"><span class="text-neutral-500">Track 2 Buyout Anchor:</span> <span class="text-amber-400 font-bold">$14,500 USD</span></div>
+        <div class="flex justify-between"><span class="text-neutral-500">Track 3 APA Buyout Floor:</span> <span class="text-sky-400 font-bold">$35,000 – $65,000 USD</span></div>
+        <div class="flex justify-between border-t border-white/5 pt-2"><span class="text-neutral-500">Governance Lock:</span> <span class="text-emerald">Max 32 Micro-APAs (80% Floor)</span></div>
       </div>
 
       <div class="p-3.5 bg-black/40 rounded-lg hairline-border text-xs text-neutral-300 space-y-2 mb-6 font-mono">
-        <div class="text-gold font-bold uppercase tracking-wider">What Flagship Terms Include:</div>
-        <p>• Complete source code repository with 8–15 polished interactive operator panels.</p>
-        <p>• Domain physics solvers, operational logic, and Supabase PostgreSQL schema with demo RLS.</p>
+        <div class="text-gold font-bold uppercase tracking-wider">What Acquisition Terms Include:</div>
+        <p>• Complete source code repository with polished interactive operator panels or production service engine.</p>
+        <p>• Domain physics solvers, operational logic, and PostgreSQL database schemas with security policies.</p>
         <p>• NIST SP 800-218 SSDF v1.1 compliance alignment document &amp; Software Bill of Materials (SBOM).</p>
-        <p>• 1-on-1 architecture walkthrough and technical handover session with our lead engineer.</p>
+        <p>• 1-on-1 architecture walkthrough and technical handover session with our lead systems engineer.</p>
       </div>
 
       <div class="flex flex-col sm:flex-row gap-3">
-        <a href="mailto:advisory@auraandgrid.com?subject=Flagship%20Terms%20Inquiry%20-%20Aura%20%26%20Grid" id="flagshipMailtoBtn" class="flex-1 py-3 rounded-lg bg-amber-500 hover:bg-amber-400 text-black font-bold text-xs text-center uppercase tracking-wider transition-all min-h-[44px] flex items-center justify-center">
+        <a href="mailto:advisory@auraandgrid.com?subject=Acquisition%20Terms%20Inquiry%20-%20Aura%20%26%20Grid" id="flagshipMailtoBtn" class="flex-1 py-3 rounded-lg bg-amber-500 hover:bg-amber-400 text-black font-bold text-xs text-center uppercase tracking-wider transition-all min-h-[44px] flex items-center justify-center">
           Email Advisory Desk ➔
         </a>
         <button onclick="navigator.clipboard.writeText('advisory@auraandgrid.com'); alert('Advisory email copied to clipboard: advisory@auraandgrid.com');" class="py-3 px-4 rounded-lg bg-white/10 hover:bg-white/20 text-white font-mono text-xs uppercase tracking-wider transition-all min-h-[44px]">
@@ -1860,6 +1898,8 @@ ${renderedCardsHtml}
           matchesFilter = (track === 'track1');
         } else if (activeFilter === 'track2') {
           matchesFilter = (track === 'track2');
+        } else if (activeFilter === 'track3') {
+          matchesFilter = (track === 'track3');
         } else {
           matchesFilter = (sector === activeFilter);
         }
@@ -2011,6 +2051,7 @@ ${renderedCardsHtml}
     function openModal(btn) {
       const card = btn.closest('.product-card');
       if (!card) return;
+      const isTrack3 = card.getAttribute('data-track') === 'track3';
       const isTrack2 = card.getAttribute('data-track') === 'track2';
       const pName = card.getAttribute('data-name') || '';
       const pSector = card.getAttribute('data-sector') || '';
@@ -2019,7 +2060,7 @@ ${renderedCardsHtml}
       document.getElementById('modalSector').innerText = pSector;
       document.getElementById('modalTitle').innerText = pName;
       document.getElementById('modalCategory').innerText = card.getAttribute('data-category') || '';
-      document.getElementById('modalTrack').innerText = isTrack2 ? 'Track 2 — Flagship Tier-1' : 'Track 1 — Lean Rapid-Sale';
+      document.getElementById('modalTrack').innerText = isTrack3 ? 'Track 3 — F1 Skunkworks Engine' : isTrack2 ? 'Track 2 — Flagship Tier-1' : 'Track 1 — Lean Rapid-Sale';
       document.getElementById('modalBenchmark').innerText = card.getAttribute('data-benchmark') || '';
       document.getElementById('modalArchetype').innerText = card.getAttribute('data-archetype') || '';
       document.getElementById('modalBestFor').innerText = card.getAttribute('data-bestfor') ? card.getAttribute('data-bestfor').replace(/^Best for:\s*/i, '') : 'Commercial agency client adaptation';
@@ -2030,14 +2071,23 @@ ${renderedCardsHtml}
       document.getElementById('modalLiveDemo').href = card.getAttribute('data-preview') || '#';
       
       const gumroadBtn = document.getElementById('modalGumroad');
-      if (isTrack2) {
+      if (isTrack3) {
+        gumroadBtn.innerText = 'Request Engine Terms ➔';
+        gumroadBtn.removeAttribute('target');
+        gumroadBtn.href = '#';
+        gumroadBtn.onclick = (e) => {
+          e.preventDefault();
+          closeModal();
+          openFlagshipModal(pId, pName, pSector, 'track3');
+        };
+      } else if (isTrack2) {
         gumroadBtn.innerText = 'Request Flagship Terms ➔';
         gumroadBtn.removeAttribute('target');
         gumroadBtn.href = '#';
         gumroadBtn.onclick = (e) => {
           e.preventDefault();
           closeModal();
-          openFlagshipModal(pId, pName, pSector);
+          openFlagshipModal(pId, pName, pSector, 'track2');
         };
       } else {
         gumroadBtn.innerText = 'License Blueprint ($199) ➔';
@@ -2090,7 +2140,7 @@ ${renderedCardsHtml}
     }
 
     // Flagship Modal Helpers
-    function openFlagshipModal(id, name, sector) {
+    function openFlagshipModal(id, name, sector, track) {
       const modal = document.getElementById('flagshipModal');
       if (!modal) return;
       const titleEl = document.getElementById('flagshipModalTitle');
@@ -2099,14 +2149,14 @@ ${renderedCardsHtml}
 
       if (name) {
         titleEl.innerText = name;
-        sectorEl.innerText = (sector || 'Deep Tech & SCADA') + ' // Vehicle #' + (id ? String(id).padStart(3, '0') : '');
-        const subject = encodeURIComponent('Flagship Terms Inquiry — ' + name + ' (Asset #' + id + ')');
+        sectorEl.innerText = (sector || 'Deep Tech & SCADA') + ' // ' + (track === 'track3' ? 'Engine #' : 'Vehicle #') + (id ? String(id).padStart(3, '0') : '');
+        const subject = encodeURIComponent((track === 'track3' ? 'Track 3 Service Engine Inquiry — ' : 'Flagship Terms Inquiry — ') + name + ' (Asset #' + id + ')');
         const body = encodeURIComponent('Hello Aura & Grid Advisory Team,\\n\\nI am inquiring regarding commercial license and micro-APA buyout terms for ' + name + ' (Asset #' + id + ').\\n\\nBuyer Organization:\\nIntended Use / Deployment Scope:\\n\\nThank you.');
         mailtoBtn.href = 'mailto:advisory@auraandgrid.com?subject=' + subject + '&body=' + body;
       } else {
-        titleEl.innerText = 'Request Flagship Terms';
-        sectorEl.innerText = 'Track 2 // Deep Tech & SCADA Fleet (36 Vehicles)';
-        mailtoBtn.href = 'mailto:advisory@auraandgrid.com?subject=Flagship%20Portfolio%20Inquiry%20-%20Aura%20%26%20Grid';
+        titleEl.innerText = 'Request Acquisition Terms';
+        sectorEl.innerText = 'Track 2 & Track 3 Deep Tech & SCADA Fleet';
+        mailtoBtn.href = 'mailto:advisory@auraandgrid.com?subject=Acquisition%20Terms%20Inquiry%20-%20Aura%20%26%20Grid';
       }
 
       modal.classList.remove('hidden');
